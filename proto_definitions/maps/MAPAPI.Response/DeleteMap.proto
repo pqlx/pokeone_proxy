@@ -1,0 +1,6 @@
+syntax = "proto2";
+package MAPAPI.Response6;
+
+message DeleteMap {
+   optional string MapName = 1;
+}

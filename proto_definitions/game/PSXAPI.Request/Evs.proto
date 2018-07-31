@@ -1,0 +1,19 @@
+syntax = "proto2";
+package PSXAPI.Request19;
+import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+
+message Evs {
+   optional .bcl.Guid Pokemon = 1 ;
+   optional EvsAction Action = 2 [default = Request];
+   optional int32 Hp = 3 [default = 0];
+   optional int32 Atk = 4 [default = 0];
+   optional int32 Def = 5 [default = 0];
+   optional int32 Speed = 6 [default = 0];
+   optional int32 SpAtk = 7 [default = 0];
+   optional int32 SpDef = 8 [default = 0];
+}
+enum EvsAction {
+   Request = 0;
+   Skill = 1;
+   Reset = 2;
+}

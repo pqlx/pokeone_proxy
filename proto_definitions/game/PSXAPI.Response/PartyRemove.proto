@@ -1,0 +1,12 @@
+syntax = "proto2";
+package PSXAPI.Response60;
+import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+
+message PartyRemove {
+   optional .bcl.Guid UserId = 1 ;
+   optional PartyRemoveReason Reason = 2 [default = Left];
+}
+enum PartyRemoveReason {
+   Left = 0;
+   Kicked = 1;
+}

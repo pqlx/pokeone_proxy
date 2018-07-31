@@ -1,0 +1,12 @@
+syntax = "proto2";
+package PSXAPI.Response11;
+
+message ChatJoin {
+   optional ChatJoinResult Result = 1 [default = Error];
+   optional string Channel = 2;
+}
+enum ChatJoinResult {
+   Error = 0;
+   Joined = 1;
+   Left = 2;
+}

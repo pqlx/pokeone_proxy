@@ -1,0 +1,13 @@
+syntax = "proto2";
+package PSXAPI.Response1;
+
+message Achievement {
+   optional string ID = 1;
+   optional uint32 Progress = 2 [default = 0];
+   repeated Achievement Payload = 3;
+}
+message Achievements {
+   optional string Username = 1;
+   optional uint32 Points = 2 [default = 0];
+   repeated Achievement List = 3;
+}

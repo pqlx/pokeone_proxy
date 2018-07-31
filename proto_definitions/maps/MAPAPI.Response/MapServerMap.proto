@@ -1,0 +1,9 @@
+syntax = "proto2";
+package MAPAPI.Response20;
+
+message MapServerMap {
+   optional string MapName = 1;
+   optional bytes MapData = 2;
+   optional bool IsSession = 3 [default = false];
+   optional string Hash = 4;
+}

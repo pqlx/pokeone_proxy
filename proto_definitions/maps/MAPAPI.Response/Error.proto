@@ -1,0 +1,13 @@
+syntax = "proto2";
+package MAPAPI.Response9;
+
+message Error {
+   optional ErrorType ErrorType = 1 [default = __None];
+   optional string Message = 2;
+}
+enum ErrorType {
+   __None = 0;
+   InvalidLogin = 1;
+   InvalidMap = 2;
+   InvalidSession = 3;
+}

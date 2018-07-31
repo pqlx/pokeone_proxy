@@ -1,0 +1,26 @@
+syntax = "proto2";
+
+package PSXAPI.Reponse1234;
+
+enum GuildAction {
+   Request = 0;
+   Create = 1;
+   Leave = 2;
+   Message = 5;
+   Emblem = 6;
+}
+enum GuildActionResult {
+   Failed = 0;
+   Success = 1;
+   NotInGuild = 2;
+   InGuild = 3;
+   NotEnoughGold = 4;
+   InvalidGuildName = 5;
+   InvalidRank = 6;
+   InvalidImage = 7;
+}
+message GuildResult {
+   optional string GuildName = 1;
+   optional GuildAction Action = 2 [default = Request];
+   optional GuildActionResult Result = 3 [default = Failed];
+}

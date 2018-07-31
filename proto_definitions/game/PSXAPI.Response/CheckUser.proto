@@ -1,0 +1,11 @@
+syntax = "proto2";
+package PSXAPI.Response15;
+
+message CheckUser {
+   required string Name = 1;
+   optional CheckUserResult Result = 2 [default = Failed];
+}
+enum CheckUserResult {
+   Failed = 0;
+   Available = 1;
+}

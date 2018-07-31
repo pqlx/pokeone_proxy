@@ -1,0 +1,5 @@
+syntax = "proto2";
+package PSXAPI.Request3;
+
+message Badges {
+}

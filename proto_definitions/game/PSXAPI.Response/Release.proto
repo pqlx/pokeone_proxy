@@ -1,0 +1,12 @@
+syntax = "proto2";
+package PSXAPI.Response69;
+import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+
+message Release {
+   optional ReleaseResult Result = 1 [default = Failed];
+   optional .bcl.Guid Pokemon = 2 ;
+}
+enum ReleaseResult {
+   Failed = 0;
+   Success = 1;
+}

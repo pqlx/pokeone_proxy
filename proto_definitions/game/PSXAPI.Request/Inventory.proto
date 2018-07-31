@@ -1,0 +1,5 @@
+syntax = "proto2";
+package PSXAPI.Request28;
+
+message Inventory {
+}

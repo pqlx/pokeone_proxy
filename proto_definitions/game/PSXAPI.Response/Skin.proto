@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+package PSXAPI_Response491841;
+
+message Skin {
+   optional SkinAction Action = 1 [default = __None0];
+   optional SkinType Type = 2 [default = __None1];
+   optional int32 SpriteID = 3 [default = 0];
+}
+enum SkinAction {
+   __None0 = 0;
+   Add = 1;
+}
+enum SkinType {
+   __None1 = 0;
+   Clothe = 1;
+   Hat = 2;
+   Mount = 3;
+   Surf = 4;
+   Fly = 5;
+}

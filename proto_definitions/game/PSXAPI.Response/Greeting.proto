@@ -1,0 +1,7 @@
+syntax = "proto2";
+package PSXAPI.Response30;
+
+message Greeting {
+   optional string ServerVersion = 1;
+   optional int32 UsersOnline = 2 [default = 0];
+}

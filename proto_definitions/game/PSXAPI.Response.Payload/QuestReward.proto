@@ -1,0 +1,13 @@
+syntax = "proto2";
+package PSXAPI.Response.Payload31;
+
+message QuestReward {
+   optional uint32 Money = 1 [default = 0];
+   optional uint32 Gold = 2 [default = 0];
+   repeated int32 Items = 3;
+   optional int32 Pokemon = 4 [default = 0];
+   optional int32 PokemonLevel = 5 [default = 0];
+   optional bool PokemonShiny = 6 [default = false];
+   optional int32 Badge = 7 [default = 0];
+   optional int32 Exp = 8 [default = 0];
+}

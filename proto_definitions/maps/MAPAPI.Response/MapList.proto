@@ -1,0 +1,6 @@
+syntax = "proto2";
+package MAPAPI.Response18;
+
+message MapList {
+   repeated string MapNames = 1;
+}

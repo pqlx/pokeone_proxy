@@ -1,0 +1,18 @@
+syntax = "proto2";
+package PSXAPI.Response.Payload35;
+
+enum SpinMode {
+   // this is a composite/flags enumeration
+   HorizontalCenter = 1;
+   HorizontalMulti = 2;
+   Diagonal = 4;
+   HorizintalAll = 3;
+   All = 7;
+}
+message SpinWinningSymbol {
+   optional SpinMode Mode = 1 [default = All];
+   optional uint32 ID = 2 [default = 0];
+   optional int32 Required = 3 [default = 0];
+   optional int32 WinPoints = 4 [default = 0];
+   optional int32 Row = 5 [default = 0];
+}

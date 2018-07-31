@@ -1,0 +1,10 @@
+syntax = "proto2";
+package MAPAPI.Response8;
+
+message DrawTileStruct {
+   optional int32 X = 1 [default = 0];
+   optional int32 Y = 2 [default = 0];
+   optional int32 Type = 3 [default = 0];
+   optional int32 Layer = 4 [default = 0];
+   optional int32 NewType = 5 [default = 0];
+}

@@ -1,0 +1,16 @@
+syntax = "proto2";
+package PSXAPI.Request55;
+
+message Request {
+   required RequestType Type = 1;
+   required string Sender = 2;
+   optional bool Accepted = 3 [default = false];
+}
+enum RequestType {
+   __None = 0;
+   Friend = 1;
+   Trade = 2;
+   Battle = 3;
+   Party = 4;
+   Guild = 5;
+}

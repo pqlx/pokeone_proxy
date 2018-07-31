@@ -1,0 +1,13 @@
+syntax = "proto2";
+package PSXAPI.Request60;
+
+message Spin {
+   optional int32 ID = 1 [default = 0];
+   optional SpinBet Bet = 2 [default = __None];
+}
+enum SpinBet {
+   __None = 0;
+   Coin1 = 1;
+   Coin2 = 2;
+   Coin3 = 3;
+}

@@ -1,0 +1,19 @@
+syntax = "proto2";
+import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+
+import "Evolve.proto";
+
+package PSXAPI.Response35157105;
+
+message Ivs {
+   optional .bcl.Guid PokemonUID = 1 ;
+   optional uint32 Money = 2 [default = 0];
+   optional uint32 Gold = 3 [default = 0];
+   optional InventoryPokemon Pokemon = 4;
+   optional IvsResult Result = 5 [default = Failed0];
+}
+enum IvsResult {
+   Failed0 = 0;
+   Changed = 1;
+   Request = 2;
+}

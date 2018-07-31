@@ -1,0 +1,6 @@
+syntax = "proto2";
+package PSXAPI.Response19;
+
+message Discovered {
+   optional string Area = 1;
+}

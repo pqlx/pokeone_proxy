@@ -1,0 +1,11 @@
+syntax = "proto2";
+package PSXAPI.Response46;
+
+message LobbyRemove {
+   optional string Name = 1;
+   optional LobbyRemoveReason Reason = 2 [default = Left];
+}
+enum LobbyRemoveReason {
+   Left = 0;
+   Kicked = 1;
+}

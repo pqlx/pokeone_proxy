@@ -1,0 +1,11 @@
+syntax = "proto2";
+package PSXAPI.Request32;
+
+message LobbyAccept {
+   required LobbyActorState State = 1;
+}
+enum LobbyActorState {
+   Idle = 0;
+   Accept = 1;
+   Confirm = 2;
+}

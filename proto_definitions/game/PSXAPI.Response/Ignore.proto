@@ -1,0 +1,12 @@
+syntax = "proto2";
+package PSXAPI.Response36;
+
+message Ignore {
+   repeated Ignore List = 1;
+   optional IgnoreAction Action = 2 [default = All];
+}
+enum IgnoreAction {
+   All = 0;
+   Add = 1;
+   Remove = 2;
+}

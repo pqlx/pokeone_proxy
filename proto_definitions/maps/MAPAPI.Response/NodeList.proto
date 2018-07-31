@@ -1,0 +1,6 @@
+syntax = "proto2";
+package MAPAPI.Response25;
+
+message NodeList {
+   repeated string Nodes = 1;
+}

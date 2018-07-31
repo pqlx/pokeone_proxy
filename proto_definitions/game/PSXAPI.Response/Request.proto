@@ -1,0 +1,20 @@
+syntax = "proto2";
+package PSXAPI.Response71;
+
+message Request {
+   required RequestType Type = 1;
+   required string Sender = 2;
+}
+enum RequestType {
+   __None = 0;
+   Friend = 1;
+   Trade = 2;
+   Battle = 3;
+   Party = 4;
+   Guild = 5;
+   FriendDecline = 11;
+   TradeDecline = 12;
+   BattleDecline = 13;
+   PartyDecline = 14;
+   GuildDecline = 15;
+}

@@ -1,0 +1,32 @@
+syntax = "proto2";
+package PSXAPI.Response72;
+import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+
+message Script {
+   optional .bcl.Guid ScriptID = 1 ;
+   optional ScriptRequestType Type = 2 [default = Unknown];
+   repeated Script Text = 3;
+   repeated string Data = 4;
+}
+enum ScriptRequestType {
+   Unknown = 0;
+   __None = 1;
+   Choice = 2;
+   Input = 3;
+   InputNumeric = 4;
+   SelectPokemon = 5;
+   SelectMove = 6;
+   MessageBox = 7;
+   MessageBoxYesNo = 8;
+   WaitForInput = 9;
+   Unfreeze = 10;
+   SelectItem = 11;
+   WalkUser = 12;
+   WalkNpc = 13;
+   EnableNpc = 14;
+   SetNpcLos = 15;
+   Customize = 16;
+   Shop = 17;
+   PC = 18;
+   Tutor = 19;
+}

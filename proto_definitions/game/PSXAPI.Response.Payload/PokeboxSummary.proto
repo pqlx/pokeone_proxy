@@ -1,0 +1,10 @@
+syntax = "proto2";
+package PSXAPI.Response.Payload25;
+
+message PokeboxSummary {
+   optional int32 CurrentBoxes = 1 [default = 0];
+   optional int32 MaxBoxes = 2 [default = 0];
+   optional uint32 UpgradeMoney = 3 [default = 0];
+   optional uint32 UpgradeGold = 4 [default = 0];
+   map<int32,int32> UsedBoxes = 5;
+}

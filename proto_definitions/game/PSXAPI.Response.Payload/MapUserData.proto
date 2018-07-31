@@ -1,0 +1,63 @@
+syntax = "proto2";
+
+package PSXAPI_ResponsePayload6351756798135;
+
+message Equip {
+   optional int32 Clothe = 1 [default = 0];
+   optional int32 Hat = 2 [default = 0];
+}
+enum Gender {
+   Male = 0;
+   Female = 1;
+}
+message MapUserData {
+   optional Style Style = 1;
+   optional PlayerDirection Direction = 2 [default = Default];
+   optional Equip Equip = 3;
+   optional Mount Mount = 4;
+   optional bool Away = 5 [default = false];
+   optional bool Battle = 6 [default = false];
+   optional MemberRank MemberRank = 7 [default = __None0];
+   optional StaffRank StaffRank = 8 [default = __None];
+   optional string GuildName = 9;
+   optional uint32 EmblemId = 10 [default = 0];
+   optional uint32 Level = 11 [default = 0];
+   optional int32 Follow = 12 [default = 0];
+   optional int32 FollowPersonality = 13 [default = 0];
+   optional bool Lobby = 14 [default = false];
+   optional bool FollowShiny = 15 [default = false];
+}
+enum MemberRank {
+   __None0 = 0;
+   Member = 1;
+}
+message Mount {
+   optional int32 MountID = 1 [default = 0];
+   optional MountType MountType = 2 [default = __None1];
+}
+enum MountType {
+   __None1 = 0;
+   Surfing = 1;
+   Bike = 2;
+   Pokemon = 3;
+}
+enum PlayerDirection {
+   Default = 0;
+   Up = 1;
+   Down = 2;
+   Left = 3;
+   Right = 4;
+}
+enum StaffRank {
+   __None = 0;
+   Developer = 1;
+   GameModerator = 2;
+   Moderator = 3;
+}
+message Style {
+   optional Gender Gender = 1 [default = Male];
+   optional int32 Skin = 2 [default = 0];
+   optional int32 Eyes = 3 [default = 0];
+   optional int32 Hair = 4 [default = 0];
+   optional int32 HairColor = 5 [default = 0];
+}

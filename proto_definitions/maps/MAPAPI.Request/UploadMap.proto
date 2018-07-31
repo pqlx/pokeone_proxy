@@ -1,0 +1,7 @@
+syntax = "proto2";
+package MAPAPI.Request9;
+
+message UploadMap {
+   optional string MapName = 1;
+   optional bytes MapData = 2;
+}

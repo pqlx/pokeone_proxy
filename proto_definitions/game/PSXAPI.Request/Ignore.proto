@@ -1,0 +1,12 @@
+syntax = "proto2";
+package PSXAPI.Request27;
+
+message Ignore {
+   required IgnoreAction Action = 1;
+   optional string Data = 2;
+}
+enum IgnoreAction {
+   RequestAll = 0;
+   Add = 1;
+   Remove = 2;
+}

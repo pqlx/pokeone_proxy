@@ -1,0 +1,6 @@
+syntax = "proto2";
+package MAPAPI.Response36;
+
+message StickyNote {
+   optional string Note = 1;
+}

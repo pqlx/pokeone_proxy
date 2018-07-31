@@ -1,0 +1,27 @@
+syntax = "proto2";
+package PSXAPI.Response56;
+import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+
+message Move {
+   required string Map = 1;
+   required int32 X = 2;
+   required int32 Y = 3;
+   optional MoveAction Action = 4 [default = Set];
+   optional PlayerDirection Direction = 5 [default = Default];
+   repeated .bcl.Guid Scripts = 6;
+   optional int32 Height = 7 [default = 0];
+}
+enum MoveAction {
+   Set = 0;
+   Up0 = 1;
+   Down0 = 2;
+   Left0 = 3;
+   Right0 = 4;
+}
+enum PlayerDirection {
+   Default = 0;
+   Up1 = 1;
+   Down1 = 2;
+   Left1 = 3;
+   Right1 = 4;
+}

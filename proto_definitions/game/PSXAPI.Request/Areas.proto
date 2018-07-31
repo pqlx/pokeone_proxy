@@ -1,0 +1,6 @@
+syntax = "proto2";
+package PSXAPI.Request2;
+
+message Areas {
+   optional int32 PokemonID = 1 [default = 0];
+}

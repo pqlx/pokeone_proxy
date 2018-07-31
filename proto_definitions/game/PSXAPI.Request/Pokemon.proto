@@ -1,0 +1,6 @@
+syntax = "proto2";
+package PSXAPI.Request51;
+
+message Pokemon {
+   optional int32 Box = 1 [default = 0];
+}

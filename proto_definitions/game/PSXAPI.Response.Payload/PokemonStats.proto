@@ -1,0 +1,11 @@
+syntax = "proto2";
+package PSXAPI.Response.Payload30;
+
+message PokemonStats {
+   optional int32 HP = 1 [default = 0];
+   optional int32 Atk = 2 [default = 0];
+   optional int32 Def = 3 [default = 0];
+   optional int32 SpAtk = 4 [default = 0];
+   optional int32 SpDef = 5 [default = 0];
+   optional int32 Speed = 6 [default = 0];
+}

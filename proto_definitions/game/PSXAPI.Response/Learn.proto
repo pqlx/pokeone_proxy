@@ -1,0 +1,18 @@
+syntax = "proto2";
+import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+
+import "Evolve.proto";
+
+package PSXAPI.Response2951985139;
+
+message Learn {
+   optional LearnResult Result = 1 [default = Failed0];
+   optional .bcl.Guid PokemonUID = 2 ;
+   optional PokemonMoveID Move = 3 [default = none];
+   optional InventoryPokemon Pokemon = 4;
+}
+enum LearnResult {
+   Failed0 = 0;
+   Canceled = 1;
+   Success = 2;
+}

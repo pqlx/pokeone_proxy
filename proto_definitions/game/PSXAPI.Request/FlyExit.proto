@@ -1,0 +1,6 @@
+syntax = "proto2";
+package PSXAPI.Request21;
+
+message FlyExit {
+   optional string Area = 1;
+}

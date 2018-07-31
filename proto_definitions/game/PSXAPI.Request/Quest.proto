@@ -1,0 +1,13 @@
+syntax = "proto2";
+package PSXAPI.Request52;
+
+message Quest {
+   optional string ID = 1;
+   optional QuestAction Action = 2 [default = __None];
+}
+enum QuestAction {
+   __None = 0;
+   Complete = 1;
+   Cancel = 2;
+   Share = 3;
+}

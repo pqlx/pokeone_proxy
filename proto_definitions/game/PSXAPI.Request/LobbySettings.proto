@@ -1,0 +1,8 @@
+syntax = "proto2";
+package PSXAPI.Request37;
+
+message LobbySettings {
+   optional bool Ranked = 1 [default = false];
+   optional bool Items = 2 [default = false];
+   optional bool AdjustPokemons = 3 [default = false];
+}

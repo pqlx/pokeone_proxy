@@ -1,0 +1,6 @@
+syntax = "proto2";
+package MAPAPI.Response5;
+
+message DebugMessage {
+   optional string Message = 1;
+}

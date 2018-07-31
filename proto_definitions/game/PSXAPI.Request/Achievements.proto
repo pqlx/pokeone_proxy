@@ -1,0 +1,6 @@
+syntax = "proto2";
+package PSXAPI.Request0;
+
+message Achievements {
+   optional string Username = 1;
+}

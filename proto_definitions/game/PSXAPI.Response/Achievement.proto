@@ -1,0 +1,8 @@
+syntax = "proto2";
+package PSXAPI.Response0;
+
+message Achievement {
+   optional string ID = 1;
+   optional uint32 Progress = 2 [default = 0];
+   repeated Achievement Payload = 3;
+}

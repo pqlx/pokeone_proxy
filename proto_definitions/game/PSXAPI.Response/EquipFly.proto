@@ -1,0 +1,6 @@
+syntax = "proto2";
+package PSXAPI.Response23;
+
+message EquipFly {
+   optional int32 Skin = 1 [default = 0];
+}

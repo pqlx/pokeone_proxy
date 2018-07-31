@@ -1,0 +1,13 @@
+syntax = "proto2";
+package PSXAPI.Response55;
+
+message Mount {
+   optional int32 MountID = 1 [default = 0];
+   optional MountType MountType = 2 [default = __None];
+}
+enum MountType {
+   __None = 0;
+   Surfing = 1;
+   Bike = 2;
+   Pokemon = 3;
+}

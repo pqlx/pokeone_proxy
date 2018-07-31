@@ -1,0 +1,29 @@
+syntax = "proto2";
+
+package PSXAPI_Response412847214;
+
+message Spin {
+   optional int32 ID = 1 [default = 0];
+   optional int32 Score = 2 [default = 0];
+   repeated SpinWinningSymbol WinningSymbols = 3;
+   repeated SpinColumn Columns = 4;
+   optional uint32 Total = 5 [default = 0];
+}
+message SpinColumn {
+   repeated uint32 Symbols = 1;
+}
+enum SpinMode {
+   
+   HorizontalCenter = 1;
+   HorizontalMulti = 2;
+   Diagonal = 4;
+   HorizintalAll = 3;
+   All = 7;
+}
+message SpinWinningSymbol {
+   optional SpinMode Mode = 1 [default = All];
+   optional uint32 ID = 2 [default = 0];
+   optional int32 Required = 3 [default = 0];
+   optional int32 WinPoints = 4 [default = 0];
+   optional int32 Row = 5 [default = 0];
+}

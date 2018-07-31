@@ -1,0 +1,22 @@
+syntax = "proto2";
+package PSXAPI.Response.Payload19;
+
+enum LootType {
+   __None = 0;
+   Money = 1;
+   Gold = 2;
+   Item = 3;
+   Pokemon = 4;
+   Clothe = 5;
+   Hat = 6;
+   Mount = 7;
+   SurfMount = 8;
+   FlyMount = 9;
+}
+message LootboxRoll {
+   optional LootType LootType = 1 [default = __None];
+   optional int32 Num = 2 [default = 0];
+   optional bool Duplicate = 3 [default = false];
+   optional uint32 DuplicateGold = 4 [default = 0];
+   optional uint32 DuplicateMoney = 5 [default = 0];
+}

@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+message FlyUserData {
+   optional int32 FlyMount = 1 [default = 0];
+   optional bool Away = 2 [default = false];
+   optional bool Battle = 3 [default = false];
+   optional MemberRank MemberRank = 4 [default = __None0];
+   optional StaffRank StaffRank = 5 [default = __None1];
+   optional string GuildName = 6;
+   optional uint32 EmblemId = 7 [default = 0];
+   optional uint32 Level = 8 [default = 0];
+   optional bool Lobby = 9 [default = false];
+}
+enum MemberRank {
+   __None0 = 0;
+   Member = 1;
+}
+enum StaffRank {
+   __None1 = 0;
+   Developer = 1;
+   GameModerator = 2;
+   Moderator = 3;
+}

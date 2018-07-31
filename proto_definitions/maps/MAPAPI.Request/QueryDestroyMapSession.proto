@@ -1,0 +1,6 @@
+syntax = "proto2";
+package MAPAPI.Request5;
+
+message QueryDestroyMapSession {
+   optional string MapName = 1;
+}

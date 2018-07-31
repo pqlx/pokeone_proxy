@@ -1,0 +1,11 @@
+syntax = "proto2";
+package PSXAPI.Response.Payload4;
+
+message BattleMove {
+   optional string move = 1;
+   optional string id = 2;
+   optional int32 pp = 3 [default = 0];
+   optional int32 maxpp = 4 [default = 0];
+   optional string target = 5;
+   optional bool disabled = 6 [default = false];
+}

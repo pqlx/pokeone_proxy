@@ -1,0 +1,33 @@
+syntax = "proto2";
+package PSXAPI.Response81;
+import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+
+
+
+enum GameDayTime {
+   Unset0 = 0;
+   Morning = 1;
+   Day = 2;
+   Evening = 3;
+   Night = 4;
+}
+enum GameSeason {
+   Unset1 = 0;
+   Spring = 1;
+   Summer = 2;
+   Autumn = 3;
+   Winter = 4;
+}
+message Time {
+   optional .bcl.DateTime ServerTimeUtc = 1;
+   optional .bcl.TimeSpan GameTime = 2;
+   optional GameDayTime GameDayTime = 3 [default = Unset0];
+   optional GameSeason GameSeason = 4 [default = Unset1];
+   optional double TimeFactor = 5 [default = 0];
+   optional WeatherState Weather = 6 [default = Normal];
+}
+enum WeatherState {
+   Normal = 0;
+   Rain = 1;
+   Snow = 2;
+}

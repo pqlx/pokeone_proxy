@@ -1,0 +1,14 @@
+syntax = "proto2";
+package PSXAPI.Response10;
+
+message Broadcast {
+   optional BroadcastMessageType Type = 1 [default = __None];
+   optional string Message = 2;
+}
+enum BroadcastMessageType {
+   __None = 0;
+   System = 1;
+   Message = 2;
+   Splash = 3;
+   Notification = 4;
+}

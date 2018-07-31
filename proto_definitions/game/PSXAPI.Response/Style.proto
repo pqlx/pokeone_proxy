@@ -1,0 +1,14 @@
+syntax = "proto2";
+package PSXAPI.Response78;
+
+enum Gender {
+   Male = 0;
+   Female = 1;
+}
+message Style {
+   optional Gender Gender = 1 [default = Male];
+   optional int32 Skin = 2 [default = 0];
+   optional int32 Eyes = 3 [default = 0];
+   optional int32 Hair = 4 [default = 0];
+   optional int32 HairColor = 5 [default = 0];
+}

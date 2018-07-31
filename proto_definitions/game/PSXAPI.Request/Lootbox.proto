@@ -1,0 +1,16 @@
+syntax = "proto2";
+package PSXAPI.Request42;
+
+message Lootbox {
+   required LootboxAction Action = 1;
+   required LootboxType Type = 2;
+}
+enum LootboxAction {
+   __None = 0;
+   Open = 1;
+}
+enum LootboxType {
+   __None0 = 0;
+   Small = 1;
+   Normal = 2;
+}

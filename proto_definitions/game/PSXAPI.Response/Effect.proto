@@ -1,0 +1,13 @@
+syntax = "proto2";
+package PSXAPI.Response20;
+
+message Effect {
+   optional EffectUpdateType Type = 1 [default = __None];
+   repeated Effect Effects = 2;
+}
+enum EffectUpdateType {
+   __None = 0;
+   All = 1;
+   AddOrUpdate = 2;
+   Remove = 3;
+}

@@ -1,0 +1,6 @@
+syntax = "proto2";
+package PSXAPI.Response.Payload34;
+
+message SpinColumn {
+   repeated uint32 Symbols = 1;
+}

@@ -1,0 +1,25 @@
+syntax = "proto2";
+package MAPAPI.Response34;
+
+enum EncounterRates {
+   Normal = 0;
+   Low = 1;
+   VeryLow = 2;
+}
+message Settings {
+   optional string MapName = 1;
+   optional string LightColour_String = 2;
+   optional string Weather = 3;
+   optional string Song = 4;
+   optional bool Indoors = 5 [default = false];
+   optional bool Dark = 6 [default = false];
+   optional bool Underwater = 7 [default = false];
+   optional bool CanMount = 8 [default = false];
+   optional bool CanEscapeRope = 9 [default = false];
+   optional bool Instanced = 10 [default = false];
+   optional bool Cave = 11 [default = false];
+   optional string Region = 12;
+   optional bool WhiteFog = 13 [default = false];
+   optional EncounterRates EncounterRate = 14 [default = Normal];
+   optional bool CantFlyTeleport = 15 [default = false];
+}

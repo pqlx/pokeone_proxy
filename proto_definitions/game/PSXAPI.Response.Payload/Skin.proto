@@ -1,0 +1,18 @@
+syntax = "proto2";
+package PSXAPI.Response.Payload33;
+
+message Skin {
+   optional string Name = 1;
+   optional int32 SpriteID = 2 [default = 0];
+   optional SkinType Type = 3 [default = __None];
+   optional uint32 GoldPrice = 4 [default = 0];
+   optional uint32 MoneyPrice = 5 [default = 0];
+}
+enum SkinType {
+   __None = 0;
+   Clothe = 1;
+   Hat = 2;
+   Mount = 3;
+   Surf = 4;
+   Fly = 5;
+}

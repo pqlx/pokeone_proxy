@@ -1,0 +1,5 @@
+syntax = "proto2";
+package PSXAPI.Request34;
+
+message LobbyLeave {
+}

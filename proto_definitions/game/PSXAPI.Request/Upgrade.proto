@@ -1,0 +1,11 @@
+syntax = "proto2";
+package PSXAPI.Request70;
+
+message Upgrade {
+   optional UpgradeType Type = 1 [default = __None];
+}
+enum UpgradeType {
+   __None = 0;
+   Pokebox = 1;
+   Guild = 2;
+}

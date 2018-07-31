@@ -1,0 +1,32 @@
+syntax = "proto2";
+package PSXAPI.Response.Payload5;
+
+message BattleMove {
+   optional string move = 1;
+   optional string id = 2;
+   optional int32 pp = 3 [default = 0];
+   optional int32 maxpp = 4 [default = 0];
+   optional string target = 5;
+   optional bool disabled = 6 [default = false];
+}
+message BattlePokemon {
+   optional string ident = 1;
+   optional string details = 2;
+   optional string condition = 3;
+   optional bool active = 4 [default = false];
+   optional BattlePokemonStats stats = 5;
+   repeated string moves = 6;
+   optional string baseAbility = 7;
+   optional string item = 8;
+   optional string pokeball = 9;
+   optional string trainer = 10;
+   optional int32 personality = 11 [default = 0];
+   repeated BattleMove moveData = 12;
+}
+message BattlePokemonStats {
+   optional int32 atk = 1 [default = 0];
+   optional int32 def = 2 [default = 0];
+   optional int32 spa = 3 [default = 0];
+   optional int32 spd = 4 [default = 0];
+   optional int32 spe = 5 [default = 0];
+}

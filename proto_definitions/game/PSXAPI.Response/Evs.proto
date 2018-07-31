@@ -1,0 +1,18 @@
+syntax = "proto2";
+import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+
+import "Evolve.proto";
+
+message Evs {
+   optional .bcl.Guid PokemonUID = 1 ;
+   optional uint32 Money = 2 [default = 0];
+   optional uint32 Gold = 3 [default = 0];
+   optional InventoryPokemon Pokemon = 4;
+   optional EvsResult Result = 5 [default = Failed1];
+}
+enum EvsResult {
+   Failed1 = 0;
+   Request = 1;
+   Skilled = 2;
+   Reset = 3;
+}

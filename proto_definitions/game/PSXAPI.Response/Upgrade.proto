@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+package PSXAPI_Response125192521;
+
+message Upgrade {
+   optional UpgradeResult Result = 1 [default = Failed];
+   optional UpgradeType Type = 2 [default = __None];
+}
+enum UpgradeResult {
+   Failed = 0;
+   Success = 1;
+}
+enum UpgradeType {
+   __None = 0;
+   Pokebox = 1;
+   Guild = 2;
+}

@@ -1,0 +1,10 @@
+syntax = "proto2";
+package PSXAPI.Request5;
+
+message BattleItem {
+   required int32 RequestID = 1;
+   optional int32 Item = 2 [default = 0];
+   optional int32 Target = 3 [default = 0];
+   optional int32 TargetMove = 4 [default = 0];
+   optional int32 Position = 5 [default = 0];
+}

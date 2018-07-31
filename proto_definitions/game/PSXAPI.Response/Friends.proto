@@ -1,0 +1,23 @@
+syntax = "proto2";
+import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+
+message Friend {
+   optional string Name = 1;
+   optional bool Online = 2 [default = false];
+   optional .bcl.TimeSpan OnlineSince = 3;
+   optional .bcl.TimeSpan FriendSince = 4;
+   optional string Map = 5;
+   optional bool Away = 6 [default = false];
+   optional string Message = 7;
+   optional uint32 Level = 8 [default = 0];
+}
+message Friends {
+   repeated Friend List = 1;
+   optional FriendsAction Action = 2 [default = All];
+}
+enum FriendsAction {
+   All = 0;
+   Add = 1;
+   Remove = 2;
+   Update = 3;
+}

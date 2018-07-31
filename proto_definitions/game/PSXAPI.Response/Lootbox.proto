@@ -1,0 +1,39 @@
+syntax = "proto2";
+
+package PSXAPI_Response68926927062;
+
+enum LootType {
+   __None = 0;
+   Money = 1;
+   Gold = 2;
+   Item = 3;
+   Pokemon = 4;
+   Clothe = 5;
+   Hat = 6;
+   Mount = 7;
+   SurfMount = 8;
+   FlyMount = 9;
+}
+message Lootbox {
+   optional LootboxAction Action = 1 [default = __None1];
+   optional LootboxType Type = 2 [default = __None2];
+   optional uint32 Remaining = 3 [default = 0];
+   repeated LootboxRoll Rolls = 4;
+}
+enum LootboxAction {
+   __None1 = 0;
+   Opened = 1;
+   Update = 2;
+}
+message LootboxRoll {
+   optional LootType LootType = 1 [default = __None];
+   optional int32 Num = 2 [default = 0];
+   optional bool Duplicate = 3 [default = false];
+   optional uint32 DuplicateGold = 4 [default = 0];
+   optional uint32 DuplicateMoney = 5 [default = 0];
+}
+enum LootboxType {
+   __None2 = 0;
+   Small = 1;
+   Normal = 2;
+}

@@ -1,0 +1,13 @@
+syntax = "proto2";
+package PSXAPI.Request72;
+
+message VerifyEmail {
+   optional VerifyEmailAction Action = 1 [default = __None];
+   optional string Username = 2;
+   optional int32 Code = 3 [default = 0];
+}
+enum VerifyEmailAction {
+   __None = 0;
+   Verify = 1;
+   Resend = 2;
+}

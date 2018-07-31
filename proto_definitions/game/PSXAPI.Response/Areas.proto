@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "Area.proto";
+
+message Areas {
+   optional int32 PokemonID = 1 [default = 0];
+   repeated Area AreaList = 2;
+}

@@ -1,0 +1,42 @@
+syntax = "proto2";
+package PSXAPI.Response40;
+
+message InventoryItem {
+   optional int32 ItemID = 1 [default = 0];
+   optional uint32 Count = 2 [default = 0];
+   optional bool CanHold = 3 [default = false];
+   optional bool CanUseOutsideBattle = 4 [default = false];
+   optional bool CanUseInBattle = 5 [default = false];
+   optional bool CanUseOnParty = 6 [default = false];
+   optional bool CanTrade = 7 [default = false];
+   optional ItemTarget Target = 8 [default = __None];
+   optional ItemPocket Pocket = 9 [default = Unknown1];
+   optional ItemCategory Category = 10 [default = Unknown0];
+}
+enum ItemCategory {
+   Unknown0 = 0;
+   General = 1;
+   Pokeball0 = 2;
+   Medicine0 = 3;
+   Machine0 = 4;
+   Berry0 = 5;
+   Battle = 6;
+   Hold = 7;
+}
+enum ItemPocket {
+   Unknown1 = 0;
+   Items1 = 1;
+   Medicine1 = 2;
+   Berry1 = 3;
+   Key = 4;
+   Machine1 = 5;
+   Z_Crystal = 6;
+}
+enum ItemTarget {
+   __None = 0;
+   Pokemon = 1;
+   Move = 2;
+}
+message Items {
+   repeated InventoryItem All = 1;
+}

@@ -1,0 +1,6 @@
+syntax = "proto2";
+package MAPAPI.Response14;
+
+message LeaveSession {
+   optional string MapName = 1;
+}
