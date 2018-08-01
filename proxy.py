@@ -1,55 +1,61 @@
 from typing import *
-
 import sys
 import asyncio
-
 import traceback
 
-class ProxyServer(object):
-    __slots__ = ('loop', 'proxy')
+class ProxyServer:
+    __slots__ = ('loop', 'addr')
 
     def __init__(self, loop=None):
         self.loop = loop or asyncio.get_event_loop()
-
-    def start(self, host: str, port: int, local_host: str="0.0.0.0") -> Awaitable:
-        self.proxy = (host, port)
-        return asyncio.start_server(self.__handle__, local_host, port, loop=self.loop)
 
     async def handle_send(self, packet: bytes) -> bytes:
         return packet
 
     async def handle_recv(self, packet: bytes) -> bytes:
         return packet
-    
-    async def __connect__(self) -> Optional[Tuple[asyncio.StreamReader, asyncio.StreamWriter]]:
-        try:
-            return await asyncio.open_connection(*self.proxy, loop=self.loop)
-        except Exception as exc:
-            print(f'Failed to create connection to proxy:', file=sys.stderr)
-            return None
-
-    async def __handle__(self, client_reader: asyncio.StreamReader, client_writer: asyncio.StreamWriter) -> None:
-        proxy_connection = await self.__connect__()
-        if not proxy_connection:
-            return client_writer.close()
-        proxy_reader, proxy_writer = proxy_connection
-
-        while True:
-            try:
-                packet = await self.read_packet(client_reader)
-                print(packet)
-                proxy_writer.write(self.handle_send(packet))
-                proxy_writer.drain()
-
-                packet = await self.read_packet(proxy_reader)
-                client_writer.write(self.handle_recv(packet))
-                client_writer.drain()
-            except Exception as exc:
-                print(f'Client closed with exception: {exc} \n\n{traceback.format_exc()}', file=sys.stderr)
-                break
-
-        proxy_writer.close()
-        client_writer.close()
 
     async def read_packet(self, reader: asyncio.StreamReader) -> bytes:
-        return reader.readline()
+        return await reader.readline()
+
+    def start(self, host: str, port: int, localhost: str="0.0.0.0"):
+        self.addr = (host, port)
+        return asyncio.start_server(self.on_client, localhost, port, loop=self.loop)
+        
+    async def on_client(self, client_reader: asyncio.StreamReader, client_writer: asyncio.StreamWriter):
+        try:
+            proxy_reader, proxy_writer = await asyncio.open_connection(*self.addr, loop=self.loop)
+            connection = ProxyConnection(self)
+            self.loop.create_task(connection.pipe(proxy_reader, client_writer, self.handle_recv))
+            self.loop.create_task(connection.pipe(client_reader, proxy_writer, self.handle_send))
+        except Exception as ex:
+            print(ex)
+            client_writer.close()
+
+class ProxyConnection:
+    __slots__ = ('server', 'is_closed')
+    
+    def __init__(self, server: ProxyServer):
+        self.server = server
+        self.is_closed = False
+
+    def close(self, writer: asyncio.StreamWriter):
+        self.is_closed = True
+        writer.close()
+
+    async def pipe(self, reader: asyncio.StreamReader, writer: asyncio.StreamWriter, handler: Callable[[bytes], Awaitable]):
+        try:
+            while True:
+                packet = await self.server.read_packet(reader)
+
+                if packet == b'': # EOF
+                    self.close(writer)
+                    return None
+
+                packet = await handler(packet)
+                writer.write(packet)
+                await writer.drain()
+        except Exception as exc:
+            if not self.is_closed:
+                print(f"[x] {writer.get_extra_info('perrname')} error: {traceback.format_exc()}", file=sys.stderr)
+        self.close(writer)

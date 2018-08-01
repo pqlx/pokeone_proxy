@@ -21,4 +21,9 @@ class GameServer(ProxyServer):
         # ... do stuff with data
         # ... convert data back into bytes
 
+        decoded = packet_decode(packet, 'game', True)
+        print(decoded)
+
+        return packet
+
         return packet
