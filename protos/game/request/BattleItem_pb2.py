@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='BattleItem.proto',
-  package='PSXAPI.Request5',
+  package='PSXAPI.Request1652398070',
   syntax='proto2',
-  serialized_pb=_b('\n\x10\x42\x61ttleItem.proto\x12\x0fPSXAPI.Request5\"o\n\nBattleItem\x12\x11\n\tRequestID\x18\x01 \x02(\x05\x12\x0f\n\x04Item\x18\x02 \x01(\x05:\x01\x30\x12\x11\n\x06Target\x18\x03 \x01(\x05:\x01\x30\x12\x15\n\nTargetMove\x18\x04 \x01(\x05:\x01\x30\x12\x13\n\x08Position\x18\x05 \x01(\x05:\x01\x30')
+  serialized_pb=_b('\n\x10\x42\x61ttleItem.proto\x12\x18PSXAPI.Request1652398070\"o\n\nBattleItem\x12\x11\n\tRequestID\x18\x01 \x02(\x05\x12\x0f\n\x04Item\x18\x02 \x01(\x05:\x01\x30\x12\x11\n\x06Target\x18\x03 \x01(\x05:\x01\x30\x12\x15\n\nTargetMove\x18\x04 \x01(\x05:\x01\x30\x12\x13\n\x08Position\x18\x05 \x01(\x05:\x01\x30')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,41 +28,41 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _BATTLEITEM = _descriptor.Descriptor(
   name='BattleItem',
-  full_name='PSXAPI.Request5.BattleItem',
+  full_name='PSXAPI.Request1652398070.BattleItem',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='RequestID', full_name='PSXAPI.Request5.BattleItem.RequestID', index=0,
+      name='RequestID', full_name='PSXAPI.Request1652398070.BattleItem.RequestID', index=0,
       number=1, type=5, cpp_type=1, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Item', full_name='PSXAPI.Request5.BattleItem.Item', index=1,
+      name='Item', full_name='PSXAPI.Request1652398070.BattleItem.Item', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Target', full_name='PSXAPI.Request5.BattleItem.Target', index=2,
+      name='Target', full_name='PSXAPI.Request1652398070.BattleItem.Target', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='TargetMove', full_name='PSXAPI.Request5.BattleItem.TargetMove', index=3,
+      name='TargetMove', full_name='PSXAPI.Request1652398070.BattleItem.TargetMove', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Position', full_name='PSXAPI.Request5.BattleItem.Position', index=4,
+      name='Position', full_name='PSXAPI.Request1652398070.BattleItem.Position', index=4,
       number=5, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -80,8 +80,8 @@ _BATTLEITEM = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=37,
-  serialized_end=148,
+  serialized_start=46,
+  serialized_end=157,
 )
 
 DESCRIPTOR.message_types_by_name['BattleItem'] = _BATTLEITEM
@@ -89,7 +89,7 @@ DESCRIPTOR.message_types_by_name['BattleItem'] = _BATTLEITEM
 BattleItem = _reflection.GeneratedProtocolMessageType('BattleItem', (_message.Message,), dict(
   DESCRIPTOR = _BATTLEITEM,
   __module__ = 'BattleItem_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request5.BattleItem)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request1652398070.BattleItem)
   ))
 _sym_db.RegisterMessage(BattleItem)
 

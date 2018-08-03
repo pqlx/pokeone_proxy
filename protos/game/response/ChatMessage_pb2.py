@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='ChatMessage.proto',
-  package='PSXAPI.Response12',
+  package='PSXAPI.Response298736313',
   syntax='proto2',
-  serialized_pb=_b('\n\x11\x43hatMessage.proto\x12\x11PSXAPI.Response12\"P\n\x0b\x43hatMessage\x12\x30\n\x08Messages\x18\x01 \x03(\x0b\x32\x1e.PSXAPI.Response12.ChatMessage\x12\x0f\n\x07\x43hannel\x18\x02 \x01(\t')
+  serialized_pb=_b('\n\x11\x43hatMessage.proto\x12\x18PSXAPI.Response298736313\"W\n\x0b\x43hatMessage\x12\x37\n\x08Messages\x18\x01 \x03(\x0b\x32%.PSXAPI.Response298736313.ChatMessage\x12\x0f\n\x07\x43hannel\x18\x02 \x01(\t')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,20 +28,20 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _CHATMESSAGE = _descriptor.Descriptor(
   name='ChatMessage',
-  full_name='PSXAPI.Response12.ChatMessage',
+  full_name='PSXAPI.Response298736313.ChatMessage',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Messages', full_name='PSXAPI.Response12.ChatMessage.Messages', index=0,
+      name='Messages', full_name='PSXAPI.Response298736313.ChatMessage.Messages', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Channel', full_name='PSXAPI.Response12.ChatMessage.Channel', index=1,
+      name='Channel', full_name='PSXAPI.Response298736313.ChatMessage.Channel', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -59,8 +59,8 @@ _CHATMESSAGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=40,
-  serialized_end=120,
+  serialized_start=47,
+  serialized_end=134,
 )
 
 _CHATMESSAGE.fields_by_name['Messages'].message_type = _CHATMESSAGE
@@ -69,7 +69,7 @@ DESCRIPTOR.message_types_by_name['ChatMessage'] = _CHATMESSAGE
 ChatMessage = _reflection.GeneratedProtocolMessageType('ChatMessage', (_message.Message,), dict(
   DESCRIPTOR = _CHATMESSAGE,
   __module__ = 'ChatMessage_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response12.ChatMessage)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response298736313.ChatMessage)
   ))
 _sym_db.RegisterMessage(ChatMessage)
 

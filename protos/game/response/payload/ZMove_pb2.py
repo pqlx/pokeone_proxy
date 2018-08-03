@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='ZMove.proto',
-  package='PSXAPI.Response.Payload38',
+  package='PSXAPI.Response.Payload236918709',
   syntax='proto2',
-  serialized_pb=_b('\n\x0bZMove.proto\x12\x19PSXAPI.Response.Payload38\"%\n\x05ZMove\x12\x0c\n\x04move\x18\x01 \x01(\t\x12\x0e\n\x06target\x18\x02 \x01(\t')
+  serialized_pb=_b('\n\x0bZMove.proto\x12 PSXAPI.Response.Payload236918709\"%\n\x05ZMove\x12\x0c\n\x04move\x18\x01 \x01(\t\x12\x0e\n\x06target\x18\x02 \x01(\t')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,20 +28,20 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _ZMOVE = _descriptor.Descriptor(
   name='ZMove',
-  full_name='PSXAPI.Response.Payload38.ZMove',
+  full_name='PSXAPI.Response.Payload236918709.ZMove',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='move', full_name='PSXAPI.Response.Payload38.ZMove.move', index=0,
+      name='move', full_name='PSXAPI.Response.Payload236918709.ZMove.move', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='target', full_name='PSXAPI.Response.Payload38.ZMove.target', index=1,
+      name='target', full_name='PSXAPI.Response.Payload236918709.ZMove.target', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -59,8 +59,8 @@ _ZMOVE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=42,
-  serialized_end=79,
+  serialized_start=49,
+  serialized_end=86,
 )
 
 DESCRIPTOR.message_types_by_name['ZMove'] = _ZMOVE
@@ -68,7 +68,7 @@ DESCRIPTOR.message_types_by_name['ZMove'] = _ZMOVE
 ZMove = _reflection.GeneratedProtocolMessageType('ZMove', (_message.Message,), dict(
   DESCRIPTOR = _ZMOVE,
   __module__ = 'ZMove_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response.Payload38.ZMove)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response.Payload236918709.ZMove)
   ))
 _sym_db.RegisterMessage(ZMove)
 

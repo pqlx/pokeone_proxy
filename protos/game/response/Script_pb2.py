@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -14,21 +13,23 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
-import bcl_pb2 as bcl__pb2
+from protobuf_net import bcl_pb2 as protobuf__net_dot_bcl__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Script.proto',
-  package='PSXAPI.Response72',
+  package='PSXAPI.Response936311564',
   syntax='proto2',
-  serialized_pb=_b('\n\x0cScript.proto\x12\x11PSXAPI.Response72\x1a\tbcl.proto\"\x99\x01\n\x06Script\x12\x1b\n\x08ScriptID\x18\x01 \x01(\x0b\x32\t.bcl.Guid\x12;\n\x04Type\x18\x02 \x01(\x0e\x32$.PSXAPI.Response72.ScriptRequestType:\x07Unknown\x12\'\n\x04Text\x18\x03 \x03(\x0b\x32\x19.PSXAPI.Response72.Script\x12\x0c\n\x04\x44\x61ta\x18\x04 \x03(\t*\xb2\x02\n\x11ScriptRequestType\x12\x0b\n\x07Unknown\x10\x00\x12\n\n\x06__None\x10\x01\x12\n\n\x06\x43hoice\x10\x02\x12\t\n\x05Input\x10\x03\x12\x10\n\x0cInputNumeric\x10\x04\x12\x11\n\rSelectPokemon\x10\x05\x12\x0e\n\nSelectMove\x10\x06\x12\x0e\n\nMessageBox\x10\x07\x12\x13\n\x0fMessageBoxYesNo\x10\x08\x12\x10\n\x0cWaitForInput\x10\t\x12\x0c\n\x08Unfreeze\x10\n\x12\x0e\n\nSelectItem\x10\x0b\x12\x0c\n\x08WalkUser\x10\x0c\x12\x0b\n\x07WalkNpc\x10\r\x12\r\n\tEnableNpc\x10\x0e\x12\r\n\tSetNpcLos\x10\x0f\x12\r\n\tCustomize\x10\x10\x12\x08\n\x04Shop\x10\x11\x12\x06\n\x02PC\x10\x12\x12\t\n\x05Tutor\x10\x13')
+  serialized_pb=_b('\n\x0cScript.proto\x12\x18PSXAPI.Response936311564\x1a\x16protobuf-net/bcl.proto\"\xc1\x01\n\x06Script\x12\x1b\n\x08ScriptID\x18\x01 \x01(\x0b\x32\t.bcl.Guid\x12\\\n\x04Type\x18\x02 \x01(\x0e\x32\x45.PSXAPI.Response936311564.PREFIX_AGDFASBV1325666745.ScriptRequestType:\x07Unknown\x12.\n\x04Text\x18\x03 \x03(\x0b\x32 .PSXAPI.Response936311564.Script\x12\x0c\n\x04\x44\x61ta\x18\x04 \x03(\t\"\xd3\x02\n\x19PREFIX_AGDFASBV1325666745\"\xb5\x02\n\x11ScriptRequestType\x12\x0b\n\x07Unknown\x10\x00\x12\r\n\tNoneValue\x10\x01\x12\n\n\x06\x43hoice\x10\x02\x12\t\n\x05Input\x10\x03\x12\x10\n\x0cInputNumeric\x10\x04\x12\x11\n\rSelectPokemon\x10\x05\x12\x0e\n\nSelectMove\x10\x06\x12\x0e\n\nMessageBox\x10\x07\x12\x13\n\x0fMessageBoxYesNo\x10\x08\x12\x10\n\x0cWaitForInput\x10\t\x12\x0c\n\x08Unfreeze\x10\n\x12\x0e\n\nSelectItem\x10\x0b\x12\x0c\n\x08WalkUser\x10\x0c\x12\x0b\n\x07WalkNpc\x10\r\x12\r\n\tEnableNpc\x10\x0e\x12\r\n\tSetNpcLos\x10\x0f\x12\r\n\tCustomize\x10\x10\x12\x08\n\x04Shop\x10\x11\x12\x06\n\x02PC\x10\x12\x12\t\n\x05Tutor\x10\x13')
   ,
-  dependencies=[bcl__pb2.DESCRIPTOR,])
+  dependencies=[protobuf__net_dot_bcl__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_SCRIPTREQUESTTYPE = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV1325666745_SCRIPTREQUESTTYPE = _descriptor.EnumDescriptor(
   name='ScriptRequestType',
-  full_name='PSXAPI.Response72.ScriptRequestType',
+  full_name='PSXAPI.Response936311564.PREFIX_AGDFASBV1325666745.ScriptRequestType',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -37,7 +38,7 @@ _SCRIPTREQUESTTYPE = _descriptor.EnumDescriptor(
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='__None', index=1, number=1,
+      name='NoneValue', index=1, number=1,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -115,65 +116,42 @@ _SCRIPTREQUESTTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=203,
-  serialized_end=509,
+  serialized_start=293,
+  serialized_end=602,
 )
-_sym_db.RegisterEnumDescriptor(_SCRIPTREQUESTTYPE)
-
-ScriptRequestType = enum_type_wrapper.EnumTypeWrapper(_SCRIPTREQUESTTYPE)
-Unknown = 0
-__None = 1
-Choice = 2
-Input = 3
-InputNumeric = 4
-SelectPokemon = 5
-SelectMove = 6
-MessageBox = 7
-MessageBoxYesNo = 8
-WaitForInput = 9
-Unfreeze = 10
-SelectItem = 11
-WalkUser = 12
-WalkNpc = 13
-EnableNpc = 14
-SetNpcLos = 15
-Customize = 16
-Shop = 17
-PC = 18
-Tutor = 19
-
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1325666745_SCRIPTREQUESTTYPE)
 
 
 _SCRIPT = _descriptor.Descriptor(
   name='Script',
-  full_name='PSXAPI.Response72.Script',
+  full_name='PSXAPI.Response936311564.Script',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='ScriptID', full_name='PSXAPI.Response72.Script.ScriptID', index=0,
+      name='ScriptID', full_name='PSXAPI.Response936311564.Script.ScriptID', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Type', full_name='PSXAPI.Response72.Script.Type', index=1,
+      name='Type', full_name='PSXAPI.Response936311564.Script.Type', index=1,
       number=2, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Text', full_name='PSXAPI.Response72.Script.Text', index=2,
+      name='Text', full_name='PSXAPI.Response936311564.Script.Text', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Data', full_name='PSXAPI.Response72.Script.Data', index=3,
+      name='Data', full_name='PSXAPI.Response936311564.Script.Data', index=3,
       number=4, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -191,22 +169,55 @@ _SCRIPT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=47,
-  serialized_end=200,
+  serialized_start=67,
+  serialized_end=260,
 )
 
-_SCRIPT.fields_by_name['ScriptID'].message_type = bcl__pb2._GUID
-_SCRIPT.fields_by_name['Type'].enum_type = _SCRIPTREQUESTTYPE
+
+_PREFIX_AGDFASBV1325666745 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1325666745',
+  full_name='PSXAPI.Response936311564.PREFIX_AGDFASBV1325666745',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1325666745_SCRIPTREQUESTTYPE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=263,
+  serialized_end=602,
+)
+
+_SCRIPT.fields_by_name['ScriptID'].message_type = protobuf__net_dot_bcl__pb2._GUID
+_SCRIPT.fields_by_name['Type'].enum_type = _PREFIX_AGDFASBV1325666745_SCRIPTREQUESTTYPE
 _SCRIPT.fields_by_name['Text'].message_type = _SCRIPT
+_PREFIX_AGDFASBV1325666745_SCRIPTREQUESTTYPE.containing_type = _PREFIX_AGDFASBV1325666745
 DESCRIPTOR.message_types_by_name['Script'] = _SCRIPT
-DESCRIPTOR.enum_types_by_name['ScriptRequestType'] = _SCRIPTREQUESTTYPE
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1325666745'] = _PREFIX_AGDFASBV1325666745
 
 Script = _reflection.GeneratedProtocolMessageType('Script', (_message.Message,), dict(
   DESCRIPTOR = _SCRIPT,
   __module__ = 'Script_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response72.Script)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response936311564.Script)
   ))
 _sym_db.RegisterMessage(Script)
+
+PREFIX_AGDFASBV1325666745 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1325666745', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1325666745,
+  __module__ = 'Script_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response936311564.PREFIX_AGDFASBV1325666745)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1325666745)
 
 
 # @@protoc_insertion_point(module_scope)

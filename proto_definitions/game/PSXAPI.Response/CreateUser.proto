@@ -1,10 +1,12 @@
 syntax = "proto2";
-package PSXAPI.Response16;
+package PSXAPI.Response1893323167;
 
 message CreateUser {
-   optional CreateUserResult Result = 1 [default = Error];
+   optional PREFIX_AGDFASBV2013162786.CreateUserResult Result = 1 [default = Error];
 }
-enum CreateUserResult {
+message PREFIX_AGDFASBV2013162786 {
+    enum CreateUserResult {
    Error = 0;
    Success = 1;
-}
+} //PREFIX_AGDFASBV
+};

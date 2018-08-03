@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Inventory.proto',
-  package='PSXAPI.Request28',
+  package='PSXAPI.Request2084831848',
   syntax='proto2',
-  serialized_pb=_b('\n\x0fInventory.proto\x12\x10PSXAPI.Request28\"\x0b\n\tInventory')
+  serialized_pb=_b('\n\x0fInventory.proto\x12\x18PSXAPI.Request2084831848\"\x0b\n\tInventory')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,7 +28,7 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _INVENTORY = _descriptor.Descriptor(
   name='Inventory',
-  full_name='PSXAPI.Request28.Inventory',
+  full_name='PSXAPI.Request2084831848.Inventory',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
@@ -45,8 +45,8 @@ _INVENTORY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=37,
-  serialized_end=48,
+  serialized_start=45,
+  serialized_end=56,
 )
 
 DESCRIPTOR.message_types_by_name['Inventory'] = _INVENTORY
@@ -54,7 +54,7 @@ DESCRIPTOR.message_types_by_name['Inventory'] = _INVENTORY
 Inventory = _reflection.GeneratedProtocolMessageType('Inventory', (_message.Message,), dict(
   DESCRIPTOR = _INVENTORY,
   __module__ = 'Inventory_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request28.Inventory)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request2084831848.Inventory)
   ))
 _sym_db.RegisterMessage(Inventory)
 

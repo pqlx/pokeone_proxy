@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='LobbyKick.proto',
-  package='PSXAPI.Request33',
+  package='PSXAPI.Request426618449',
   syntax='proto2',
-  serialized_pb=_b('\n\x0fLobbyKick.proto\x12\x10PSXAPI.Request33\"\x1d\n\tLobbyKick\x12\x10\n\x08Username\x18\x01 \x02(\t')
+  serialized_pb=_b('\n\x0fLobbyKick.proto\x12\x17PSXAPI.Request426618449\"\x1d\n\tLobbyKick\x12\x10\n\x08Username\x18\x01 \x02(\t')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,13 +28,13 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _LOBBYKICK = _descriptor.Descriptor(
   name='LobbyKick',
-  full_name='PSXAPI.Request33.LobbyKick',
+  full_name='PSXAPI.Request426618449.LobbyKick',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Username', full_name='PSXAPI.Request33.LobbyKick.Username', index=0,
+      name='Username', full_name='PSXAPI.Request426618449.LobbyKick.Username', index=0,
       number=1, type=9, cpp_type=9, label=2,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -52,8 +52,8 @@ _LOBBYKICK = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=37,
-  serialized_end=66,
+  serialized_start=44,
+  serialized_end=73,
 )
 
 DESCRIPTOR.message_types_by_name['LobbyKick'] = _LOBBYKICK
@@ -61,7 +61,7 @@ DESCRIPTOR.message_types_by_name['LobbyKick'] = _LOBBYKICK
 LobbyKick = _reflection.GeneratedProtocolMessageType('LobbyKick', (_message.Message,), dict(
   DESCRIPTOR = _LOBBYKICK,
   __module__ = 'LobbyKick_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request33.LobbyKick)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request426618449.LobbyKick)
   ))
 _sym_db.RegisterMessage(LobbyKick)
 

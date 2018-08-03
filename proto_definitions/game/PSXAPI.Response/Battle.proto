@@ -1,4 +1,5 @@
 syntax = "proto2";
+package PSXAPI.Response243775801;
 
 message Battle {
    repeated string Log = 1;

@@ -1,43 +1,46 @@
 syntax = "proto2";
-
-package PSXAPI_ResponsePayloasd1571856197256;
+package PSXAPI.Response.Payload1679764169;
 
 message Equip {
    optional int32 Clothe = 1 [default = 0];
    optional int32 Hat = 2 [default = 0];
 }
-enum Gender {
+message PREFIX_AGDFASBV73548827 {
+    enum Gender {
    Male = 0;
    Female = 1;
-}
+} //PREFIX_AGDFASBV
+};
 message MapUser {
    optional string Username = 1;
    repeated MapUserActionData Actions = 2;
    optional MapUserData Data = 3;
 }
-enum MapUserAction {
+message PREFIX_AGDFASBV638706269 {
+    enum MapUserAction {
    Set = 0;
-   Up0 = 1;
-   Down0 = 2;
-   Left0 = 3;
-   Right0 = 4;
+   Up = 1;
+   Down = 2;
+   Left = 3;
+   Right = 4;
    Enter = 5;
    Leave = 6;
    Fishing = 7;
-}
+} //PREFIX_AGDFASBV
+};
 message MapUserActionData {
-   optional MapUserAction Action = 1 [default = Set];
+   optional PREFIX_AGDFASBV638706269.MapUserAction Action = 1 [default = Set];
    optional MapUserPosition Position = 2;
 }
 message MapUserData {
    optional Style Style = 1;
-   optional PlayerDirection Direction = 2 [default = Default];
+   optional PREFIX_AGDFASBV1904764243.PlayerDirection Direction = 2 [default = Default];
    optional Equip Equip = 3;
    optional Mount Mount = 4;
    optional bool Away = 5 [default = false];
    optional bool Battle = 6 [default = false];
-   optional MemberRank MemberRank = 7 [default = __None0];
-   optional StaffRank StaffRank = 8 [default = __None2];
+   optional PREFIX_AGDFASBV991273964.MemberRank MemberRank = 7 [default = NoneValue];
+   optional PREFIX_AGDFASBV161096188.StaffRank StaffRank = 8 [default = NoneValue];
    optional string GuildName = 9;
    optional uint32 EmblemId = 10 [default = 0];
    optional uint32 Level = 11 [default = 0];
@@ -51,35 +54,43 @@ message MapUserPosition {
    optional int32 Y = 2 [default = 0];
    optional int32 Height = 3 [default = 0];
 }
-enum MemberRank {
-   __None0 = 0;
+message PREFIX_AGDFASBV991273964 {
+    enum MemberRank {
+   NoneValue = 0;
    Member = 1;
-}
+} //PREFIX_AGDFASBV
+};
 message Mount {
    optional int32 MountID = 1 [default = 0];
-   optional MountType MountType = 2 [default = __None1];
+   optional PREFIX_AGDFASBV874245947.MountType MountType = 2 [default = NoneValue];
 }
-enum MountType {
-   __None1 = 0;
+message PREFIX_AGDFASBV874245947 {
+    enum MountType {
+   NoneValue = 0;
    Surfing = 1;
    Bike = 2;
    Pokemon = 3;
-}
-enum PlayerDirection {
+} //PREFIX_AGDFASBV
+};
+message PREFIX_AGDFASBV1904764243 {
+    enum PlayerDirection {
    Default = 0;
-   Up1 = 1;
-   Down1 = 2;
-   Left1 = 3;
-   Right1 = 4;
-}
-enum StaffRank {
-   __None2 = 0;
+   Up = 1;
+   Down = 2;
+   Left = 3;
+   Right = 4;
+} //PREFIX_AGDFASBV
+};
+message PREFIX_AGDFASBV161096188 {
+    enum StaffRank {
+   NoneValue = 0;
    Developer = 1;
    GameModerator = 2;
    Moderator = 3;
-}
+} //PREFIX_AGDFASBV
+};
 message Style {
-   optional Gender Gender = 1 [default = Male];
+   optional PREFIX_AGDFASBV73548827.Gender Gender = 1 [default = Male];
    optional int32 Skin = 2 [default = 0];
    optional int32 Eyes = 3 [default = 0];
    optional int32 Hair = 4 [default = 0];

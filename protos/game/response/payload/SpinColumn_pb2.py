@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='SpinColumn.proto',
-  package='PSXAPI.Response.Payload34',
+  package='PSXAPI.Response.Payload620082600',
   syntax='proto2',
-  serialized_pb=_b('\n\x10SpinColumn.proto\x12\x19PSXAPI.Response.Payload34\"\x1d\n\nSpinColumn\x12\x0f\n\x07Symbols\x18\x01 \x03(\r')
+  serialized_pb=_b('\n\x10SpinColumn.proto\x12 PSXAPI.Response.Payload620082600\"\x1d\n\nSpinColumn\x12\x0f\n\x07Symbols\x18\x01 \x03(\r')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,13 +28,13 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _SPINCOLUMN = _descriptor.Descriptor(
   name='SpinColumn',
-  full_name='PSXAPI.Response.Payload34.SpinColumn',
+  full_name='PSXAPI.Response.Payload620082600.SpinColumn',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Symbols', full_name='PSXAPI.Response.Payload34.SpinColumn.Symbols', index=0,
+      name='Symbols', full_name='PSXAPI.Response.Payload620082600.SpinColumn.Symbols', index=0,
       number=1, type=13, cpp_type=3, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -52,8 +52,8 @@ _SPINCOLUMN = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=47,
-  serialized_end=76,
+  serialized_start=54,
+  serialized_end=83,
 )
 
 DESCRIPTOR.message_types_by_name['SpinColumn'] = _SPINCOLUMN
@@ -61,7 +61,7 @@ DESCRIPTOR.message_types_by_name['SpinColumn'] = _SPINCOLUMN
 SpinColumn = _reflection.GeneratedProtocolMessageType('SpinColumn', (_message.Message,), dict(
   DESCRIPTOR = _SPINCOLUMN,
   __module__ = 'SpinColumn_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response.Payload34.SpinColumn)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response.Payload620082600.SpinColumn)
   ))
 _sym_db.RegisterMessage(SpinColumn)
 

@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Areas.proto',
-  package='PSXAPI.Request2',
+  package='PSXAPI.Request60528238',
   syntax='proto2',
-  serialized_pb=_b('\n\x0b\x41reas.proto\x12\x0fPSXAPI.Request2\"\x1d\n\x05\x41reas\x12\x14\n\tPokemonID\x18\x01 \x01(\x05:\x01\x30')
+  serialized_pb=_b('\n\x0b\x41reas.proto\x12\x16PSXAPI.Request60528238\"\x1d\n\x05\x41reas\x12\x14\n\tPokemonID\x18\x01 \x01(\x05:\x01\x30')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,13 +28,13 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _AREAS = _descriptor.Descriptor(
   name='Areas',
-  full_name='PSXAPI.Request2.Areas',
+  full_name='PSXAPI.Request60528238.Areas',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='PokemonID', full_name='PSXAPI.Request2.Areas.PokemonID', index=0,
+      name='PokemonID', full_name='PSXAPI.Request60528238.Areas.PokemonID', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -52,8 +52,8 @@ _AREAS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=32,
-  serialized_end=61,
+  serialized_start=39,
+  serialized_end=68,
 )
 
 DESCRIPTOR.message_types_by_name['Areas'] = _AREAS
@@ -61,7 +61,7 @@ DESCRIPTOR.message_types_by_name['Areas'] = _AREAS
 Areas = _reflection.GeneratedProtocolMessageType('Areas', (_message.Message,), dict(
   DESCRIPTOR = _AREAS,
   __module__ = 'Areas_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request2.Areas)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request60528238.Areas)
   ))
 _sym_db.RegisterMessage(Areas)
 

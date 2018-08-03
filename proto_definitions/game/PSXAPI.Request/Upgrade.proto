@@ -1,11 +1,13 @@
 syntax = "proto2";
-package PSXAPI.Request70;
+package PSXAPI.Request65146253;
 
 message Upgrade {
-   optional UpgradeType Type = 1 [default = __None];
+   optional PREFIX_AGDFASBV1100222149.UpgradeType Type = 1 [default = NoneValue];
 }
-enum UpgradeType {
-   __None = 0;
+message PREFIX_AGDFASBV1100222149 {
+    enum UpgradeType {
+   NoneValue = 0;
    Pokebox = 1;
    Guild = 2;
-}
+} //PREFIX_AGDFASBV
+};

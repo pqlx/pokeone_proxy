@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -18,15 +17,17 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Upgrade.proto',
-  package='PSXAPI_Response125192521',
+  package='PSXAPI.Response953836751',
   syntax='proto2',
-  serialized_pb=_b('\n\rUpgrade.proto\x12\x18PSXAPI_Response125192521\"\x87\x01\n\x07Upgrade\x12?\n\x06Result\x18\x01 \x01(\x0e\x32\'.PSXAPI_Response125192521.UpgradeResult:\x06\x46\x61iled\x12;\n\x04Type\x18\x02 \x01(\x0e\x32%.PSXAPI_Response125192521.UpgradeType:\x06__None*(\n\rUpgradeResult\x12\n\n\x06\x46\x61iled\x10\x00\x12\x0b\n\x07Success\x10\x01*1\n\x0bUpgradeType\x12\n\n\x06__None\x10\x00\x12\x0b\n\x07Pokebox\x10\x01\x12\t\n\x05Guild\x10\x02')
+  serialized_pb=_b('\n\rUpgrade.proto\x12\x18PSXAPI.Response953836751\"\xbd\x01\n\x07Upgrade\x12Y\n\x06Result\x18\x01 \x01(\x0e\x32\x41.PSXAPI.Response953836751.PREFIX_AGDFASBV1213679696.UpgradeResult:\x06\x46\x61iled\x12W\n\x04Type\x18\x02 \x01(\x0e\x32>.PSXAPI.Response953836751.PREFIX_AGDFASBV362541919.UpgradeType:\tNoneValue\"E\n\x19PREFIX_AGDFASBV1213679696\"(\n\rUpgradeResult\x12\n\n\x06\x46\x61iled\x10\x00\x12\x0b\n\x07Success\x10\x01\"P\n\x18PREFIX_AGDFASBV362541919\"4\n\x0bUpgradeType\x12\r\n\tNoneValue\x10\x00\x12\x0b\n\x07Pokebox\x10\x01\x12\t\n\x05Guild\x10\x02')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_UPGRADERESULT = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV1213679696_UPGRADERESULT = _descriptor.EnumDescriptor(
   name='UpgradeResult',
-  full_name='PSXAPI_Response125192521.UpgradeResult',
+  full_name='PSXAPI.Response953836751.PREFIX_AGDFASBV1213679696.UpgradeResult',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -41,20 +42,19 @@ _UPGRADERESULT = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=181,
-  serialized_end=221,
+  serialized_start=264,
+  serialized_end=304,
 )
-_sym_db.RegisterEnumDescriptor(_UPGRADERESULT)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1213679696_UPGRADERESULT)
 
-UpgradeResult = enum_type_wrapper.EnumTypeWrapper(_UPGRADERESULT)
-_UPGRADETYPE = _descriptor.EnumDescriptor(
+_PREFIX_AGDFASBV362541919_UPGRADETYPE = _descriptor.EnumDescriptor(
   name='UpgradeType',
-  full_name='PSXAPI_Response125192521.UpgradeType',
+  full_name='PSXAPI.Response953836751.PREFIX_AGDFASBV362541919.UpgradeType',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='__None', index=0, number=0,
+      name='NoneValue', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -68,36 +68,28 @@ _UPGRADETYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=223,
-  serialized_end=272,
+  serialized_start=334,
+  serialized_end=386,
 )
-_sym_db.RegisterEnumDescriptor(_UPGRADETYPE)
-
-UpgradeType = enum_type_wrapper.EnumTypeWrapper(_UPGRADETYPE)
-Failed = 0
-Success = 1
-__None = 0
-Pokebox = 1
-Guild = 2
-
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV362541919_UPGRADETYPE)
 
 
 _UPGRADE = _descriptor.Descriptor(
   name='Upgrade',
-  full_name='PSXAPI_Response125192521.Upgrade',
+  full_name='PSXAPI.Response953836751.Upgrade',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Result', full_name='PSXAPI_Response125192521.Upgrade.Result', index=0,
+      name='Result', full_name='PSXAPI.Response953836751.Upgrade.Result', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Type', full_name='PSXAPI_Response125192521.Upgrade.Type', index=1,
+      name='Type', full_name='PSXAPI.Response953836751.Upgrade.Type', index=1,
       number=2, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -116,21 +108,87 @@ _UPGRADE = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=44,
-  serialized_end=179,
+  serialized_end=233,
 )
 
-_UPGRADE.fields_by_name['Result'].enum_type = _UPGRADERESULT
-_UPGRADE.fields_by_name['Type'].enum_type = _UPGRADETYPE
+
+_PREFIX_AGDFASBV1213679696 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1213679696',
+  full_name='PSXAPI.Response953836751.PREFIX_AGDFASBV1213679696',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1213679696_UPGRADERESULT,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=235,
+  serialized_end=304,
+)
+
+
+_PREFIX_AGDFASBV362541919 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV362541919',
+  full_name='PSXAPI.Response953836751.PREFIX_AGDFASBV362541919',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV362541919_UPGRADETYPE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=306,
+  serialized_end=386,
+)
+
+_UPGRADE.fields_by_name['Result'].enum_type = _PREFIX_AGDFASBV1213679696_UPGRADERESULT
+_UPGRADE.fields_by_name['Type'].enum_type = _PREFIX_AGDFASBV362541919_UPGRADETYPE
+_PREFIX_AGDFASBV1213679696_UPGRADERESULT.containing_type = _PREFIX_AGDFASBV1213679696
+_PREFIX_AGDFASBV362541919_UPGRADETYPE.containing_type = _PREFIX_AGDFASBV362541919
 DESCRIPTOR.message_types_by_name['Upgrade'] = _UPGRADE
-DESCRIPTOR.enum_types_by_name['UpgradeResult'] = _UPGRADERESULT
-DESCRIPTOR.enum_types_by_name['UpgradeType'] = _UPGRADETYPE
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1213679696'] = _PREFIX_AGDFASBV1213679696
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV362541919'] = _PREFIX_AGDFASBV362541919
 
 Upgrade = _reflection.GeneratedProtocolMessageType('Upgrade', (_message.Message,), dict(
   DESCRIPTOR = _UPGRADE,
   __module__ = 'Upgrade_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI_Response125192521.Upgrade)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response953836751.Upgrade)
   ))
 _sym_db.RegisterMessage(Upgrade)
+
+PREFIX_AGDFASBV1213679696 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1213679696', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1213679696,
+  __module__ = 'Upgrade_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response953836751.PREFIX_AGDFASBV1213679696)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1213679696)
+
+PREFIX_AGDFASBV362541919 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV362541919', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV362541919,
+  __module__ = 'Upgrade_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response953836751.PREFIX_AGDFASBV362541919)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV362541919)
 
 
 # @@protoc_insertion_point(module_scope)

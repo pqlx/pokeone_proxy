@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='DestroyMapSession.proto',
-  package='MAPAPI.Request1',
+  package='MAPAPI.Request516389433',
   syntax='proto2',
-  serialized_pb=_b('\n\x17\x44\x65stroyMapSession.proto\x12\x0fMAPAPI.Request1\"$\n\x11\x44\x65stroyMapSession\x12\x0f\n\x07MapName\x18\x01 \x01(\t')
+  serialized_pb=_b('\n\x17\x44\x65stroyMapSession.proto\x12\x17MAPAPI.Request516389433\"$\n\x11\x44\x65stroyMapSession\x12\x0f\n\x07MapName\x18\x01 \x01(\t')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,13 +28,13 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _DESTROYMAPSESSION = _descriptor.Descriptor(
   name='DestroyMapSession',
-  full_name='MAPAPI.Request1.DestroyMapSession',
+  full_name='MAPAPI.Request516389433.DestroyMapSession',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='MapName', full_name='MAPAPI.Request1.DestroyMapSession.MapName', index=0,
+      name='MapName', full_name='MAPAPI.Request516389433.DestroyMapSession.MapName', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -52,8 +52,8 @@ _DESTROYMAPSESSION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=44,
-  serialized_end=80,
+  serialized_start=52,
+  serialized_end=88,
 )
 
 DESCRIPTOR.message_types_by_name['DestroyMapSession'] = _DESTROYMAPSESSION
@@ -61,7 +61,7 @@ DESCRIPTOR.message_types_by_name['DestroyMapSession'] = _DESTROYMAPSESSION
 DestroyMapSession = _reflection.GeneratedProtocolMessageType('DestroyMapSession', (_message.Message,), dict(
   DESCRIPTOR = _DESTROYMAPSESSION,
   __module__ = 'DestroyMapSession_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Request1.DestroyMapSession)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Request516389433.DestroyMapSession)
   ))
 _sym_db.RegisterMessage(DestroyMapSession)
 

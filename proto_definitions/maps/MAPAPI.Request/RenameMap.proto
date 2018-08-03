@@ -1,5 +1,5 @@
 syntax = "proto2";
-package MAPAPI.Request6;
+package MAPAPI.Request2088766862;
 
 message RenameMap {
    optional string MapNameFrom = 1;

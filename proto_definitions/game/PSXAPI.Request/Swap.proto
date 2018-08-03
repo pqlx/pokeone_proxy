@@ -1,8 +1,8 @@
 syntax = "proto2";
-package PSXAPI.Request64;
-import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+package PSXAPI.Request1927086296;
+import "protobuf-net/bcl.proto"; // schema for protobuf-net's handling of core .NET types
 
 message Swap {
-   optional .bcl.Guid Pokemon1 = 1 ;
-   optional .bcl.Guid Pokemon2 = 2 ;
+   optional .bcl.Guid Pokemon1 = 1;
+   optional .bcl.Guid Pokemon2 = 2;
 }

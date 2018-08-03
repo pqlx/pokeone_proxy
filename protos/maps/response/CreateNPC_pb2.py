@@ -13,16 +13,16 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
-import bcl_pb2 as bcl__pb2
+from protobuf_net import bcl_pb2 as protobuf__net_dot_bcl__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='CreateNPC.proto',
-  package='MAPAPI.Response4',
+  package='MAPAPI.Response1953207448',
   syntax='proto2',
-  serialized_pb=_b('\n\x0f\x43reateNPC.proto\x12\x10MAPAPI.Response4\x1a\tbcl.proto\"V\n\tCreateNPC\x12\x16\n\x07\x44\x65stroy\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x31\n\x06Object\x18\x02 \x01(\x0b\x32!.MAPAPI.Response4.NPCObjectStruct\"R\n\x0fNPCObjectStruct\x12\x0c\n\x01x\x18\x01 \x01(\x05:\x01\x30\x12\x0c\n\x01y\x18\x02 \x01(\x05:\x01\x30\x12\x0c\n\x01z\x18\x03 \x01(\x05:\x01\x30\x12\x15\n\x02ID\x18\x04 \x01(\x0b\x32\t.bcl.Guid')
+  serialized_pb=_b('\n\x0f\x43reateNPC.proto\x12\x19MAPAPI.Response1953207448\x1a\x16protobuf-net/bcl.proto\"_\n\tCreateNPC\x12\x16\n\x07\x44\x65stroy\x18\x01 \x01(\x08:\x05\x66\x61lse\x12:\n\x06Object\x18\x02 \x01(\x0b\x32*.MAPAPI.Response1953207448.NPCObjectStruct\"R\n\x0fNPCObjectStruct\x12\x0c\n\x01x\x18\x01 \x01(\x05:\x01\x30\x12\x0c\n\x01y\x18\x02 \x01(\x05:\x01\x30\x12\x0c\n\x01z\x18\x03 \x01(\x05:\x01\x30\x12\x15\n\x02ID\x18\x04 \x01(\x0b\x32\t.bcl.Guid')
   ,
-  dependencies=[bcl__pb2.DESCRIPTOR,])
+  dependencies=[protobuf__net_dot_bcl__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
@@ -30,20 +30,20 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _CREATENPC = _descriptor.Descriptor(
   name='CreateNPC',
-  full_name='MAPAPI.Response4.CreateNPC',
+  full_name='MAPAPI.Response1953207448.CreateNPC',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Destroy', full_name='MAPAPI.Response4.CreateNPC.Destroy', index=0,
+      name='Destroy', full_name='MAPAPI.Response1953207448.CreateNPC.Destroy', index=0,
       number=1, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Object', full_name='MAPAPI.Response4.CreateNPC.Object', index=1,
+      name='Object', full_name='MAPAPI.Response1953207448.CreateNPC.Object', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -61,41 +61,41 @@ _CREATENPC = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=48,
-  serialized_end=134,
+  serialized_start=70,
+  serialized_end=165,
 )
 
 
 _NPCOBJECTSTRUCT = _descriptor.Descriptor(
   name='NPCObjectStruct',
-  full_name='MAPAPI.Response4.NPCObjectStruct',
+  full_name='MAPAPI.Response1953207448.NPCObjectStruct',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='x', full_name='MAPAPI.Response4.NPCObjectStruct.x', index=0,
+      name='x', full_name='MAPAPI.Response1953207448.NPCObjectStruct.x', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='y', full_name='MAPAPI.Response4.NPCObjectStruct.y', index=1,
+      name='y', full_name='MAPAPI.Response1953207448.NPCObjectStruct.y', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='z', full_name='MAPAPI.Response4.NPCObjectStruct.z', index=2,
+      name='z', full_name='MAPAPI.Response1953207448.NPCObjectStruct.z', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='ID', full_name='MAPAPI.Response4.NPCObjectStruct.ID', index=3,
+      name='ID', full_name='MAPAPI.Response1953207448.NPCObjectStruct.ID', index=3,
       number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -113,26 +113,26 @@ _NPCOBJECTSTRUCT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=136,
-  serialized_end=218,
+  serialized_start=167,
+  serialized_end=249,
 )
 
 _CREATENPC.fields_by_name['Object'].message_type = _NPCOBJECTSTRUCT
-_NPCOBJECTSTRUCT.fields_by_name['ID'].message_type = bcl__pb2._GUID
+_NPCOBJECTSTRUCT.fields_by_name['ID'].message_type = protobuf__net_dot_bcl__pb2._GUID
 DESCRIPTOR.message_types_by_name['CreateNPC'] = _CREATENPC
 DESCRIPTOR.message_types_by_name['NPCObjectStruct'] = _NPCOBJECTSTRUCT
 
 CreateNPC = _reflection.GeneratedProtocolMessageType('CreateNPC', (_message.Message,), dict(
   DESCRIPTOR = _CREATENPC,
   __module__ = 'CreateNPC_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response4.CreateNPC)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response1953207448.CreateNPC)
   ))
 _sym_db.RegisterMessage(CreateNPC)
 
 NPCObjectStruct = _reflection.GeneratedProtocolMessageType('NPCObjectStruct', (_message.Message,), dict(
   DESCRIPTOR = _NPCOBJECTSTRUCT,
   __module__ = 'CreateNPC_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response4.NPCObjectStruct)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response1953207448.NPCObjectStruct)
   ))
 _sym_db.RegisterMessage(NPCObjectStruct)
 

@@ -1,15 +1,16 @@
 syntax = "proto2";
-package PSXAPI.Request46;
+package PSXAPI.Request480767140;
 
 message Move {
    required string Map = 1;
    optional int32 X = 2 [default = 0];
    optional int32 Y = 3 [default = 0];
-   optional MoveAction Action = 4 [default = __None];
-   repeated MoveAction Actions = 5;
+   optional PREFIX_AGDFASBV602369894.MoveAction Action = 4 [default = NoneValue];
+   repeated PREFIX_AGDFASBV602369894.MoveAction Actions = 5;
 }
-enum MoveAction {
-   __None = 0;
+message PREFIX_AGDFASBV602369894 {
+    enum MoveAction {
+   NoneValue = 0;
    Up = 1;
    Down = 2;
    Left = 3;
@@ -18,4 +19,5 @@ enum MoveAction {
    TurnDown = 6;
    TurnLeft = 7;
    TurnRight = 8;
-}
+} //PREFIX_AGDFASBV
+};

@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Request20;
+package PSXAPI.Request177081666;
 
 message FlyEnter {
    optional FlyMove Move = 1;

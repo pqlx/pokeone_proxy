@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='LeaveSession.proto',
-  package='MAPAPI.Response14',
+  package='MAPAPI.Response282865535',
   syntax='proto2',
-  serialized_pb=_b('\n\x12LeaveSession.proto\x12\x11MAPAPI.Response14\"\x1f\n\x0cLeaveSession\x12\x0f\n\x07MapName\x18\x01 \x01(\t')
+  serialized_pb=_b('\n\x12LeaveSession.proto\x12\x18MAPAPI.Response282865535\"\x1f\n\x0cLeaveSession\x12\x0f\n\x07MapName\x18\x01 \x01(\t')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,13 +28,13 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _LEAVESESSION = _descriptor.Descriptor(
   name='LeaveSession',
-  full_name='MAPAPI.Response14.LeaveSession',
+  full_name='MAPAPI.Response282865535.LeaveSession',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='MapName', full_name='MAPAPI.Response14.LeaveSession.MapName', index=0,
+      name='MapName', full_name='MAPAPI.Response282865535.LeaveSession.MapName', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -52,8 +52,8 @@ _LEAVESESSION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=41,
-  serialized_end=72,
+  serialized_start=48,
+  serialized_end=79,
 )
 
 DESCRIPTOR.message_types_by_name['LeaveSession'] = _LEAVESESSION
@@ -61,7 +61,7 @@ DESCRIPTOR.message_types_by_name['LeaveSession'] = _LEAVESESSION
 LeaveSession = _reflection.GeneratedProtocolMessageType('LeaveSession', (_message.Message,), dict(
   DESCRIPTOR = _LEAVESESSION,
   __module__ = 'LeaveSession_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response14.LeaveSession)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response282865535.LeaveSession)
   ))
 _sym_db.RegisterMessage(LeaveSession)
 

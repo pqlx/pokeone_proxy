@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='UploadMap.proto',
-  package='MAPAPI.Request9',
+  package='MAPAPI.Request556004732',
   syntax='proto2',
-  serialized_pb=_b('\n\x0fUploadMap.proto\x12\x0fMAPAPI.Request9\"-\n\tUploadMap\x12\x0f\n\x07MapName\x18\x01 \x01(\t\x12\x0f\n\x07MapData\x18\x02 \x01(\x0c')
+  serialized_pb=_b('\n\x0fUploadMap.proto\x12\x17MAPAPI.Request556004732\"-\n\tUploadMap\x12\x0f\n\x07MapName\x18\x01 \x01(\t\x12\x0f\n\x07MapData\x18\x02 \x01(\x0c')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,20 +28,20 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _UPLOADMAP = _descriptor.Descriptor(
   name='UploadMap',
-  full_name='MAPAPI.Request9.UploadMap',
+  full_name='MAPAPI.Request556004732.UploadMap',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='MapName', full_name='MAPAPI.Request9.UploadMap.MapName', index=0,
+      name='MapName', full_name='MAPAPI.Request556004732.UploadMap.MapName', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='MapData', full_name='MAPAPI.Request9.UploadMap.MapData', index=1,
+      name='MapData', full_name='MAPAPI.Request556004732.UploadMap.MapData', index=1,
       number=2, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
@@ -59,8 +59,8 @@ _UPLOADMAP = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=36,
-  serialized_end=81,
+  serialized_start=44,
+  serialized_end=89,
 )
 
 DESCRIPTOR.message_types_by_name['UploadMap'] = _UPLOADMAP
@@ -68,7 +68,7 @@ DESCRIPTOR.message_types_by_name['UploadMap'] = _UPLOADMAP
 UploadMap = _reflection.GeneratedProtocolMessageType('UploadMap', (_message.Message,), dict(
   DESCRIPTOR = _UPLOADMAP,
   __module__ = 'UploadMap_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Request9.UploadMap)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Request556004732.UploadMap)
   ))
 _sym_db.RegisterMessage(UploadMap)
 

@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='wallTypes.proto',
-  package='MAPAPI.Response39',
+  package='MAPAPI.Response1104436662',
   syntax='proto2',
-  serialized_pb=_b('\n\x0fwallTypes.proto\x12\x11MAPAPI.Response39\"A\n\twallTypes\x12\x10\n\x05Side0\x18\x01 \x01(\x05:\x01\x30\x12\x10\n\x05Side1\x18\x02 \x01(\x05:\x01\x30\x12\x10\n\x05Side2\x18\x03 \x01(\x05:\x01\x30')
+  serialized_pb=_b('\n\x0fwallTypes.proto\x12\x19MAPAPI.Response1104436662\"A\n\twallTypes\x12\x10\n\x05Side0\x18\x01 \x01(\x05:\x01\x30\x12\x10\n\x05Side1\x18\x02 \x01(\x05:\x01\x30\x12\x10\n\x05Side2\x18\x03 \x01(\x05:\x01\x30')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,27 +28,27 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _WALLTYPES = _descriptor.Descriptor(
   name='wallTypes',
-  full_name='MAPAPI.Response39.wallTypes',
+  full_name='MAPAPI.Response1104436662.wallTypes',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Side0', full_name='MAPAPI.Response39.wallTypes.Side0', index=0,
+      name='Side0', full_name='MAPAPI.Response1104436662.wallTypes.Side0', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Side1', full_name='MAPAPI.Response39.wallTypes.Side1', index=1,
+      name='Side1', full_name='MAPAPI.Response1104436662.wallTypes.Side1', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Side2', full_name='MAPAPI.Response39.wallTypes.Side2', index=2,
+      name='Side2', full_name='MAPAPI.Response1104436662.wallTypes.Side2', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -66,8 +66,8 @@ _WALLTYPES = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=38,
-  serialized_end=103,
+  serialized_start=46,
+  serialized_end=111,
 )
 
 DESCRIPTOR.message_types_by_name['wallTypes'] = _WALLTYPES
@@ -75,7 +75,7 @@ DESCRIPTOR.message_types_by_name['wallTypes'] = _WALLTYPES
 wallTypes = _reflection.GeneratedProtocolMessageType('wallTypes', (_message.Message,), dict(
   DESCRIPTOR = _WALLTYPES,
   __module__ = 'wallTypes_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response39.wallTypes)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response1104436662.wallTypes)
   ))
 _sym_db.RegisterMessage(wallTypes)
 

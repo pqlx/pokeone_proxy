@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='CheckGuild.proto',
-  package='PSXAPI.Request14',
+  package='PSXAPI.Request621152527',
   syntax='proto2',
-  serialized_pb=_b('\n\x10\x43heckGuild.proto\x12\x10PSXAPI.Request14\"\x1a\n\nCheckGuild\x12\x0c\n\x04Name\x18\x01 \x02(\t')
+  serialized_pb=_b('\n\x10\x43heckGuild.proto\x12\x17PSXAPI.Request621152527\"\x1a\n\nCheckGuild\x12\x0c\n\x04Name\x18\x01 \x02(\t')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,13 +28,13 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _CHECKGUILD = _descriptor.Descriptor(
   name='CheckGuild',
-  full_name='PSXAPI.Request14.CheckGuild',
+  full_name='PSXAPI.Request621152527.CheckGuild',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Name', full_name='PSXAPI.Request14.CheckGuild.Name', index=0,
+      name='Name', full_name='PSXAPI.Request621152527.CheckGuild.Name', index=0,
       number=1, type=9, cpp_type=9, label=2,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -52,8 +52,8 @@ _CHECKGUILD = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=38,
-  serialized_end=64,
+  serialized_start=45,
+  serialized_end=71,
 )
 
 DESCRIPTOR.message_types_by_name['CheckGuild'] = _CHECKGUILD
@@ -61,7 +61,7 @@ DESCRIPTOR.message_types_by_name['CheckGuild'] = _CHECKGUILD
 CheckGuild = _reflection.GeneratedProtocolMessageType('CheckGuild', (_message.Message,), dict(
   DESCRIPTOR = _CHECKGUILD,
   __module__ = 'CheckGuild_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request14.CheckGuild)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request621152527.CheckGuild)
   ))
 _sym_db.RegisterMessage(CheckGuild)
 

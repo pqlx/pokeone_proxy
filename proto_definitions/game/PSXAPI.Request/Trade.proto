@@ -1,16 +1,17 @@
 syntax = "proto2";
-package PSXAPI.Request68;
-import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+package PSXAPI.Request230124799;
+import "protobuf-net/bcl.proto"; // schema for protobuf-net's handling of core .NET types
 
 message Trade {
-   optional TradeAction Action = 1 [default = Cancel];
-   optional .bcl.Guid Pokemon = 2 ;
+   optional PREFIX_AGDFASBV1446123149.TradeAction Action = 1 [default = Cancel];
+   optional .bcl.Guid Pokemon = 2;
    optional int32 ItemID = 3 [default = 0];
    optional int32 ItemAmount = 4 [default = 0];
    optional uint32 Money = 5 [default = 0];
    optional bool Accept = 6 [default = false];
 }
-enum TradeAction {
+message PREFIX_AGDFASBV1446123149 {
+    enum TradeAction {
    Cancel = 0;
    AddPokemon = 1;
    RemovePokemon = 2;
@@ -18,4 +19,5 @@ enum TradeAction {
    SetMoney = 4;
    SetAccept = 5;
    Confirm = 6;
-}
+} //PREFIX_AGDFASBV
+};

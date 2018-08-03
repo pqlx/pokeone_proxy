@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Response30;
+package PSXAPI.Response380943574;
 
 message Greeting {
    optional string ServerVersion = 1;

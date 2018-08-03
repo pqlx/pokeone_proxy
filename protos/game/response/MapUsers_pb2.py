@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -18,15 +17,39 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='MapUsers.proto',
-  package='PSXAPI_Response512158129581',
+  package='PSXAPI.Response1383144890',
   syntax='proto2',
-  serialized_pb=_b('\n\x0eMapUsers.proto\x12\x1bPSXAPI_Response512158129581\"*\n\x05\x45quip\x12\x11\n\x06\x43lothe\x18\x01 \x01(\x05:\x01\x30\x12\x0e\n\x03Hat\x18\x02 \x01(\x05:\x01\x30\"\x94\x01\n\x07MapUser\x12\x10\n\x08Username\x18\x01 \x01(\t\x12?\n\x07\x41\x63tions\x18\x02 \x03(\x0b\x32..PSXAPI_Response512158129581.MapUserActionData\x12\x36\n\x04\x44\x61ta\x18\x03 \x01(\x0b\x32(.PSXAPI_Response512158129581.MapUserData\"\x94\x01\n\x11MapUserActionData\x12?\n\x06\x41\x63tion\x18\x01 \x01(\x0e\x32*.PSXAPI_Response512158129581.MapUserAction:\x03Set\x12>\n\x08Position\x18\x02 \x01(\x0b\x32,.PSXAPI_Response512158129581.MapUserPosition\"\xc3\x04\n\x0bMapUserData\x12\x31\n\x05Style\x18\x01 \x01(\x0b\x32\".PSXAPI_Response512158129581.Style\x12H\n\tDirection\x18\x02 \x01(\x0e\x32,.PSXAPI_Response512158129581.PlayerDirection:\x07\x44\x65\x66\x61ult\x12\x31\n\x05\x45quip\x18\x03 \x01(\x0b\x32\".PSXAPI_Response512158129581.Equip\x12\x31\n\x05Mount\x18\x04 \x01(\x0b\x32\".PSXAPI_Response512158129581.Mount\x12\x13\n\x04\x41way\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x15\n\x06\x42\x61ttle\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x44\n\nMemberRank\x18\x07 \x01(\x0e\x32\'.PSXAPI_Response512158129581.MemberRank:\x07__None0\x12\x42\n\tStaffRank\x18\x08 \x01(\x0e\x32&.PSXAPI_Response512158129581.StaffRank:\x07__None2\x12\x11\n\tGuildName\x18\t \x01(\t\x12\x13\n\x08\x45mblemId\x18\n \x01(\r:\x01\x30\x12\x10\n\x05Level\x18\x0b \x01(\r:\x01\x30\x12\x11\n\x06\x46ollow\x18\x0c \x01(\x05:\x01\x30\x12\x1c\n\x11\x46ollowPersonality\x18\r \x01(\x05:\x01\x30\x12\x14\n\x05Lobby\x18\x0e \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0b\x46ollowShiny\x18\x0f \x01(\x08:\x05\x66\x61lse\"@\n\x0fMapUserPosition\x12\x0c\n\x01X\x18\x01 \x01(\x05:\x01\x30\x12\x0c\n\x01Y\x18\x02 \x01(\x05:\x01\x30\x12\x11\n\x06Height\x18\x03 \x01(\x05:\x01\x30\"L\n\x08MapUsers\x12\x33\n\x05Users\x18\x01 \x03(\x0b\x32$.PSXAPI_Response512158129581.MapUser\x12\x0b\n\x03Map\x18\x02 \x01(\t\"_\n\x05Mount\x12\x12\n\x07MountID\x18\x01 \x01(\x05:\x01\x30\x12\x42\n\tMountType\x18\x02 \x01(\x0e\x32&.PSXAPI_Response512158129581.MountType:\x07__None1\"\x8b\x01\n\x05Style\x12\x39\n\x06Gender\x18\x01 \x01(\x0e\x32#.PSXAPI_Response512158129581.Gender:\x04Male\x12\x0f\n\x04Skin\x18\x02 \x01(\x05:\x01\x30\x12\x0f\n\x04\x45yes\x18\x03 \x01(\x05:\x01\x30\x12\x0f\n\x04Hair\x18\x04 \x01(\x05:\x01\x30\x12\x14\n\tHairColor\x18\x05 \x01(\x05:\x01\x30*f\n\rMapUserAction\x12\x07\n\x03Set\x10\x00\x12\x07\n\x03Up0\x10\x01\x12\t\n\x05\x44own0\x10\x02\x12\t\n\x05Left0\x10\x03\x12\n\n\x06Right0\x10\x04\x12\t\n\x05\x45nter\x10\x05\x12\t\n\x05Leave\x10\x06\x12\x0b\n\x07\x46ishing\x10\x07*%\n\nMemberRank\x12\x0b\n\x07__None0\x10\x00\x12\n\n\x06Member\x10\x01*<\n\tMountType\x12\x0b\n\x07__None1\x10\x00\x12\x0b\n\x07Surfing\x10\x01\x12\x08\n\x04\x42ike\x10\x02\x12\x0b\n\x07Pokemon\x10\x03*I\n\x0fPlayerDirection\x12\x0b\n\x07\x44\x65\x66\x61ult\x10\x00\x12\x07\n\x03Up1\x10\x01\x12\t\n\x05\x44own1\x10\x02\x12\t\n\x05Left1\x10\x03\x12\n\n\x06Right1\x10\x04*I\n\tStaffRank\x12\x0b\n\x07__None2\x10\x00\x12\r\n\tDeveloper\x10\x01\x12\x11\n\rGameModerator\x10\x02\x12\r\n\tModerator\x10\x03*\x1e\n\x06Gender\x12\x08\n\x04Male\x10\x00\x12\n\n\x06\x46\x65male\x10\x01')
+  serialized_pb=_b('\n\x0eMapUsers.proto\x12\x19PSXAPI.Response1383144890\"*\n\x05\x45quip\x12\x11\n\x06\x43lothe\x18\x01 \x01(\x05:\x01\x30\x12\x0e\n\x03Hat\x18\x02 \x01(\x05:\x01\x30\";\n\x19PREFIX_AGDFASBV1304894073\"\x1e\n\x06Gender\x12\x08\n\x04Male\x10\x00\x12\n\n\x06\x46\x65male\x10\x01\"\x90\x01\n\x07MapUser\x12\x10\n\x08Username\x18\x01 \x01(\t\x12=\n\x07\x41\x63tions\x18\x02 \x03(\x0b\x32,.PSXAPI.Response1383144890.MapUserActionData\x12\x34\n\x04\x44\x61ta\x18\x03 \x01(\x0b\x32&.PSXAPI.Response1383144890.MapUserData\"}\n\x17PREFIX_AGDFASBV98647645\"b\n\rMapUserAction\x12\x07\n\x03Set\x10\x00\x12\x06\n\x02Up\x10\x01\x12\x08\n\x04\x44own\x10\x02\x12\x08\n\x04Left\x10\x03\x12\t\n\x05Right\x10\x04\x12\t\n\x05\x45nter\x10\x05\x12\t\n\x05Leave\x10\x06\x12\x0b\n\x07\x46ishing\x10\x07\"\xa8\x01\n\x11MapUserActionData\x12U\n\x06\x41\x63tion\x18\x01 \x01(\x0e\x32@.PSXAPI.Response1383144890.PREFIX_AGDFASBV98647645.MapUserAction:\x03Set\x12<\n\x08Position\x18\x02 \x01(\x0b\x32*.PSXAPI.Response1383144890.MapUserPosition\"\x88\x05\n\x0bMapUserData\x12/\n\x05Style\x18\x01 \x01(\x0b\x32 .PSXAPI.Response1383144890.Style\x12_\n\tDirection\x18\x02 \x01(\x0e\x32\x43.PSXAPI.Response1383144890.PREFIX_AGDFASBV782650884.PlayerDirection:\x07\x44\x65\x66\x61ult\x12/\n\x05\x45quip\x18\x03 \x01(\x0b\x32 .PSXAPI.Response1383144890.Equip\x12/\n\x05Mount\x18\x04 \x01(\x0b\x32 .PSXAPI.Response1383144890.Mount\x12\x13\n\x04\x41way\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x15\n\x06\x42\x61ttle\x18\x06 \x01(\x08:\x05\x66\x61lse\x12^\n\nMemberRank\x18\x07 \x01(\x0e\x32?.PSXAPI.Response1383144890.PREFIX_AGDFASBV1562331986.MemberRank:\tNoneValue\x12\\\n\tStaffRank\x18\x08 \x01(\x0e\x32>.PSXAPI.Response1383144890.PREFIX_AGDFASBV1434800924.StaffRank:\tNoneValue\x12\x11\n\tGuildName\x18\t \x01(\t\x12\x13\n\x08\x45mblemId\x18\n \x01(\r:\x01\x30\x12\x10\n\x05Level\x18\x0b \x01(\r:\x01\x30\x12\x11\n\x06\x46ollow\x18\x0c \x01(\x05:\x01\x30\x12\x1c\n\x11\x46ollowPersonality\x18\r \x01(\x05:\x01\x30\x12\x14\n\x05Lobby\x18\x0e \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0b\x46ollowShiny\x18\x0f \x01(\x08:\x05\x66\x61lse\"@\n\x0fMapUserPosition\x12\x0c\n\x01X\x18\x01 \x01(\x05:\x01\x30\x12\x0c\n\x01Y\x18\x02 \x01(\x05:\x01\x30\x12\x11\n\x06Height\x18\x03 \x01(\x05:\x01\x30\"J\n\x08MapUsers\x12\x31\n\x05Users\x18\x01 \x03(\x0b\x32\".PSXAPI.Response1383144890.MapUser\x12\x0b\n\x03Map\x18\x02 \x01(\t\"D\n\x19PREFIX_AGDFASBV1562331986\"\'\n\nMemberRank\x12\r\n\tNoneValue\x10\x00\x12\n\n\x06Member\x10\x01\"x\n\x05Mount\x12\x12\n\x07MountID\x18\x01 \x01(\x05:\x01\x30\x12[\n\tMountType\x18\x02 \x01(\x0e\x32=.PSXAPI.Response1383144890.PREFIX_AGDFASBV676010584.MountType:\tNoneValue\"Z\n\x18PREFIX_AGDFASBV676010584\">\n\tMountType\x12\r\n\tNoneValue\x10\x00\x12\x0b\n\x07Surfing\x10\x01\x12\x08\n\x04\x42ike\x10\x02\x12\x0b\n\x07Pokemon\x10\x03\"a\n\x18PREFIX_AGDFASBV782650884\"E\n\x0fPlayerDirection\x12\x0b\n\x07\x44\x65\x66\x61ult\x10\x00\x12\x06\n\x02Up\x10\x01\x12\x08\n\x04\x44own\x10\x02\x12\x08\n\x04Left\x10\x03\x12\t\n\x05Right\x10\x04\"h\n\x19PREFIX_AGDFASBV1434800924\"K\n\tStaffRank\x12\r\n\tNoneValue\x10\x00\x12\r\n\tDeveloper\x10\x01\x12\x11\n\rGameModerator\x10\x02\x12\r\n\tModerator\x10\x03\"\xa3\x01\n\x05Style\x12Q\n\x06Gender\x18\x01 \x01(\x0e\x32;.PSXAPI.Response1383144890.PREFIX_AGDFASBV1304894073.Gender:\x04Male\x12\x0f\n\x04Skin\x18\x02 \x01(\x05:\x01\x30\x12\x0f\n\x04\x45yes\x18\x03 \x01(\x05:\x01\x30\x12\x0f\n\x04Hair\x18\x04 \x01(\x05:\x01\x30\x12\x14\n\tHairColor\x18\x05 \x01(\x05:\x01\x30')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_MAPUSERACTION = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV1304894073_GENDER = _descriptor.EnumDescriptor(
+  name='Gender',
+  full_name='PSXAPI.Response1383144890.PREFIX_AGDFASBV1304894073.Gender',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='Male', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Female', index=1, number=1,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=118,
+  serialized_end=148,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1304894073_GENDER)
+
+_PREFIX_AGDFASBV98647645_MAPUSERACTION = _descriptor.EnumDescriptor(
   name='MapUserAction',
-  full_name='PSXAPI_Response512158129581.MapUserAction',
+  full_name='PSXAPI.Response1383144890.PREFIX_AGDFASBV98647645.MapUserAction',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -35,19 +58,19 @@ _MAPUSERACTION = _descriptor.EnumDescriptor(
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='Up0', index=1, number=1,
+      name='Up', index=1, number=1,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='Down0', index=2, number=2,
+      name='Down', index=2, number=2,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='Left0', index=3, number=3,
+      name='Left', index=3, number=3,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='Right0', index=4, number=4,
+      name='Right', index=4, number=4,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -65,20 +88,19 @@ _MAPUSERACTION = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=1358,
-  serialized_end=1460,
+  serialized_start=324,
+  serialized_end=422,
 )
-_sym_db.RegisterEnumDescriptor(_MAPUSERACTION)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV98647645_MAPUSERACTION)
 
-MapUserAction = enum_type_wrapper.EnumTypeWrapper(_MAPUSERACTION)
-_MEMBERRANK = _descriptor.EnumDescriptor(
+_PREFIX_AGDFASBV1562331986_MEMBERRANK = _descriptor.EnumDescriptor(
   name='MemberRank',
-  full_name='PSXAPI_Response512158129581.MemberRank',
+  full_name='PSXAPI.Response1383144890.PREFIX_AGDFASBV1562331986.MemberRank',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='__None0', index=0, number=0,
+      name='NoneValue', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -88,20 +110,19 @@ _MEMBERRANK = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=1462,
-  serialized_end=1499,
+  serialized_start=1417,
+  serialized_end=1456,
 )
-_sym_db.RegisterEnumDescriptor(_MEMBERRANK)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1562331986_MEMBERRANK)
 
-MemberRank = enum_type_wrapper.EnumTypeWrapper(_MEMBERRANK)
-_MOUNTTYPE = _descriptor.EnumDescriptor(
+_PREFIX_AGDFASBV676010584_MOUNTTYPE = _descriptor.EnumDescriptor(
   name='MountType',
-  full_name='PSXAPI_Response512158129581.MountType',
+  full_name='PSXAPI.Response1383144890.PREFIX_AGDFASBV676010584.MountType',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='__None1', index=0, number=0,
+      name='NoneValue', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -119,15 +140,14 @@ _MOUNTTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=1501,
-  serialized_end=1561,
+  serialized_start=1608,
+  serialized_end=1670,
 )
-_sym_db.RegisterEnumDescriptor(_MOUNTTYPE)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV676010584_MOUNTTYPE)
 
-MountType = enum_type_wrapper.EnumTypeWrapper(_MOUNTTYPE)
-_PLAYERDIRECTION = _descriptor.EnumDescriptor(
+_PREFIX_AGDFASBV782650884_PLAYERDIRECTION = _descriptor.EnumDescriptor(
   name='PlayerDirection',
-  full_name='PSXAPI_Response512158129581.PlayerDirection',
+  full_name='PSXAPI.Response1383144890.PREFIX_AGDFASBV782650884.PlayerDirection',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -136,38 +156,37 @@ _PLAYERDIRECTION = _descriptor.EnumDescriptor(
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='Up1', index=1, number=1,
+      name='Up', index=1, number=1,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='Down1', index=2, number=2,
+      name='Down', index=2, number=2,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='Left1', index=3, number=3,
+      name='Left', index=3, number=3,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='Right1', index=4, number=4,
+      name='Right', index=4, number=4,
       options=None,
       type=None),
   ],
   containing_type=None,
   options=None,
-  serialized_start=1563,
-  serialized_end=1636,
+  serialized_start=1700,
+  serialized_end=1769,
 )
-_sym_db.RegisterEnumDescriptor(_PLAYERDIRECTION)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV782650884_PLAYERDIRECTION)
 
-PlayerDirection = enum_type_wrapper.EnumTypeWrapper(_PLAYERDIRECTION)
-_STAFFRANK = _descriptor.EnumDescriptor(
+_PREFIX_AGDFASBV1434800924_STAFFRANK = _descriptor.EnumDescriptor(
   name='StaffRank',
-  full_name='PSXAPI_Response512158129581.StaffRank',
+  full_name='PSXAPI.Response1383144890.PREFIX_AGDFASBV1434800924.StaffRank',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='__None2', index=0, number=0,
+      name='NoneValue', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -185,79 +204,28 @@ _STAFFRANK = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=1638,
-  serialized_end=1711,
+  serialized_start=1800,
+  serialized_end=1875,
 )
-_sym_db.RegisterEnumDescriptor(_STAFFRANK)
-
-StaffRank = enum_type_wrapper.EnumTypeWrapper(_STAFFRANK)
-_GENDER = _descriptor.EnumDescriptor(
-  name='Gender',
-  full_name='PSXAPI_Response512158129581.Gender',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='Male', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Female', index=1, number=1,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=1713,
-  serialized_end=1743,
-)
-_sym_db.RegisterEnumDescriptor(_GENDER)
-
-Gender = enum_type_wrapper.EnumTypeWrapper(_GENDER)
-Set = 0
-Up0 = 1
-Down0 = 2
-Left0 = 3
-Right0 = 4
-Enter = 5
-Leave = 6
-Fishing = 7
-__None0 = 0
-Member = 1
-__None1 = 0
-Surfing = 1
-Bike = 2
-Pokemon = 3
-Default = 0
-Up1 = 1
-Down1 = 2
-Left1 = 3
-Right1 = 4
-__None2 = 0
-Developer = 1
-GameModerator = 2
-Moderator = 3
-Male = 0
-Female = 1
-
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1434800924_STAFFRANK)
 
 
 _EQUIP = _descriptor.Descriptor(
   name='Equip',
-  full_name='PSXAPI_Response512158129581.Equip',
+  full_name='PSXAPI.Response1383144890.Equip',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Clothe', full_name='PSXAPI_Response512158129581.Equip.Clothe', index=0,
+      name='Clothe', full_name='PSXAPI.Response1383144890.Equip.Clothe', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Hat', full_name='PSXAPI_Response512158129581.Equip.Hat', index=1,
+      name='Hat', full_name='PSXAPI.Response1383144890.Equip.Hat', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -275,34 +243,59 @@ _EQUIP = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=47,
-  serialized_end=89,
+  serialized_start=45,
+  serialized_end=87,
+)
+
+
+_PREFIX_AGDFASBV1304894073 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1304894073',
+  full_name='PSXAPI.Response1383144890.PREFIX_AGDFASBV1304894073',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1304894073_GENDER,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=89,
+  serialized_end=148,
 )
 
 
 _MAPUSER = _descriptor.Descriptor(
   name='MapUser',
-  full_name='PSXAPI_Response512158129581.MapUser',
+  full_name='PSXAPI.Response1383144890.MapUser',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Username', full_name='PSXAPI_Response512158129581.MapUser.Username', index=0,
+      name='Username', full_name='PSXAPI.Response1383144890.MapUser.Username', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Actions', full_name='PSXAPI_Response512158129581.MapUser.Actions', index=1,
+      name='Actions', full_name='PSXAPI.Response1383144890.MapUser.Actions', index=1,
       number=2, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Data', full_name='PSXAPI_Response512158129581.MapUser.Data', index=2,
+      name='Data', full_name='PSXAPI.Response1383144890.MapUser.Data', index=2,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -320,27 +313,52 @@ _MAPUSER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=92,
-  serialized_end=240,
+  serialized_start=151,
+  serialized_end=295,
+)
+
+
+_PREFIX_AGDFASBV98647645 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV98647645',
+  full_name='PSXAPI.Response1383144890.PREFIX_AGDFASBV98647645',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV98647645_MAPUSERACTION,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=297,
+  serialized_end=422,
 )
 
 
 _MAPUSERACTIONDATA = _descriptor.Descriptor(
   name='MapUserActionData',
-  full_name='PSXAPI_Response512158129581.MapUserActionData',
+  full_name='PSXAPI.Response1383144890.MapUserActionData',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Action', full_name='PSXAPI_Response512158129581.MapUserActionData.Action', index=0,
+      name='Action', full_name='PSXAPI.Response1383144890.MapUserActionData.Action', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Position', full_name='PSXAPI_Response512158129581.MapUserActionData.Position', index=1,
+      name='Position', full_name='PSXAPI.Response1383144890.MapUserActionData.Position', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -358,118 +376,118 @@ _MAPUSERACTIONDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=243,
-  serialized_end=391,
+  serialized_start=425,
+  serialized_end=593,
 )
 
 
 _MAPUSERDATA = _descriptor.Descriptor(
   name='MapUserData',
-  full_name='PSXAPI_Response512158129581.MapUserData',
+  full_name='PSXAPI.Response1383144890.MapUserData',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Style', full_name='PSXAPI_Response512158129581.MapUserData.Style', index=0,
+      name='Style', full_name='PSXAPI.Response1383144890.MapUserData.Style', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Direction', full_name='PSXAPI_Response512158129581.MapUserData.Direction', index=1,
+      name='Direction', full_name='PSXAPI.Response1383144890.MapUserData.Direction', index=1,
       number=2, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Equip', full_name='PSXAPI_Response512158129581.MapUserData.Equip', index=2,
+      name='Equip', full_name='PSXAPI.Response1383144890.MapUserData.Equip', index=2,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Mount', full_name='PSXAPI_Response512158129581.MapUserData.Mount', index=3,
+      name='Mount', full_name='PSXAPI.Response1383144890.MapUserData.Mount', index=3,
       number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Away', full_name='PSXAPI_Response512158129581.MapUserData.Away', index=4,
+      name='Away', full_name='PSXAPI.Response1383144890.MapUserData.Away', index=4,
       number=5, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Battle', full_name='PSXAPI_Response512158129581.MapUserData.Battle', index=5,
+      name='Battle', full_name='PSXAPI.Response1383144890.MapUserData.Battle', index=5,
       number=6, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='MemberRank', full_name='PSXAPI_Response512158129581.MapUserData.MemberRank', index=6,
+      name='MemberRank', full_name='PSXAPI.Response1383144890.MapUserData.MemberRank', index=6,
       number=7, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='StaffRank', full_name='PSXAPI_Response512158129581.MapUserData.StaffRank', index=7,
+      name='StaffRank', full_name='PSXAPI.Response1383144890.MapUserData.StaffRank', index=7,
       number=8, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='GuildName', full_name='PSXAPI_Response512158129581.MapUserData.GuildName', index=8,
+      name='GuildName', full_name='PSXAPI.Response1383144890.MapUserData.GuildName', index=8,
       number=9, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='EmblemId', full_name='PSXAPI_Response512158129581.MapUserData.EmblemId', index=9,
+      name='EmblemId', full_name='PSXAPI.Response1383144890.MapUserData.EmblemId', index=9,
       number=10, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Level', full_name='PSXAPI_Response512158129581.MapUserData.Level', index=10,
+      name='Level', full_name='PSXAPI.Response1383144890.MapUserData.Level', index=10,
       number=11, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Follow', full_name='PSXAPI_Response512158129581.MapUserData.Follow', index=11,
+      name='Follow', full_name='PSXAPI.Response1383144890.MapUserData.Follow', index=11,
       number=12, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='FollowPersonality', full_name='PSXAPI_Response512158129581.MapUserData.FollowPersonality', index=12,
+      name='FollowPersonality', full_name='PSXAPI.Response1383144890.MapUserData.FollowPersonality', index=12,
       number=13, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Lobby', full_name='PSXAPI_Response512158129581.MapUserData.Lobby', index=13,
+      name='Lobby', full_name='PSXAPI.Response1383144890.MapUserData.Lobby', index=13,
       number=14, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='FollowShiny', full_name='PSXAPI_Response512158129581.MapUserData.FollowShiny', index=14,
+      name='FollowShiny', full_name='PSXAPI.Response1383144890.MapUserData.FollowShiny', index=14,
       number=15, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -487,34 +505,34 @@ _MAPUSERDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=394,
-  serialized_end=973,
+  serialized_start=596,
+  serialized_end=1244,
 )
 
 
 _MAPUSERPOSITION = _descriptor.Descriptor(
   name='MapUserPosition',
-  full_name='PSXAPI_Response512158129581.MapUserPosition',
+  full_name='PSXAPI.Response1383144890.MapUserPosition',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='X', full_name='PSXAPI_Response512158129581.MapUserPosition.X', index=0,
+      name='X', full_name='PSXAPI.Response1383144890.MapUserPosition.X', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Y', full_name='PSXAPI_Response512158129581.MapUserPosition.Y', index=1,
+      name='Y', full_name='PSXAPI.Response1383144890.MapUserPosition.Y', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Height', full_name='PSXAPI_Response512158129581.MapUserPosition.Height', index=2,
+      name='Height', full_name='PSXAPI.Response1383144890.MapUserPosition.Height', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -532,27 +550,27 @@ _MAPUSERPOSITION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=975,
-  serialized_end=1039,
+  serialized_start=1246,
+  serialized_end=1310,
 )
 
 
 _MAPUSERS = _descriptor.Descriptor(
   name='MapUsers',
-  full_name='PSXAPI_Response512158129581.MapUsers',
+  full_name='PSXAPI.Response1383144890.MapUsers',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Users', full_name='PSXAPI_Response512158129581.MapUsers.Users', index=0,
+      name='Users', full_name='PSXAPI.Response1383144890.MapUsers.Users', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Map', full_name='PSXAPI_Response512158129581.MapUsers.Map', index=1,
+      name='Map', full_name='PSXAPI.Response1383144890.MapUsers.Map', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -570,27 +588,52 @@ _MAPUSERS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1041,
-  serialized_end=1117,
+  serialized_start=1312,
+  serialized_end=1386,
+)
+
+
+_PREFIX_AGDFASBV1562331986 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1562331986',
+  full_name='PSXAPI.Response1383144890.PREFIX_AGDFASBV1562331986',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1562331986_MEMBERRANK,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1388,
+  serialized_end=1456,
 )
 
 
 _MOUNT = _descriptor.Descriptor(
   name='Mount',
-  full_name='PSXAPI_Response512158129581.Mount',
+  full_name='PSXAPI.Response1383144890.Mount',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='MountID', full_name='PSXAPI_Response512158129581.Mount.MountID', index=0,
+      name='MountID', full_name='PSXAPI.Response1383144890.Mount.MountID', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='MountType', full_name='PSXAPI_Response512158129581.Mount.MountType', index=1,
+      name='MountType', full_name='PSXAPI.Response1383144890.Mount.MountType', index=1,
       number=2, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -608,48 +651,123 @@ _MOUNT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1119,
-  serialized_end=1214,
+  serialized_start=1458,
+  serialized_end=1578,
+)
+
+
+_PREFIX_AGDFASBV676010584 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV676010584',
+  full_name='PSXAPI.Response1383144890.PREFIX_AGDFASBV676010584',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV676010584_MOUNTTYPE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1580,
+  serialized_end=1670,
+)
+
+
+_PREFIX_AGDFASBV782650884 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV782650884',
+  full_name='PSXAPI.Response1383144890.PREFIX_AGDFASBV782650884',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV782650884_PLAYERDIRECTION,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1672,
+  serialized_end=1769,
+)
+
+
+_PREFIX_AGDFASBV1434800924 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1434800924',
+  full_name='PSXAPI.Response1383144890.PREFIX_AGDFASBV1434800924',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1434800924_STAFFRANK,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1771,
+  serialized_end=1875,
 )
 
 
 _STYLE = _descriptor.Descriptor(
   name='Style',
-  full_name='PSXAPI_Response512158129581.Style',
+  full_name='PSXAPI.Response1383144890.Style',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Gender', full_name='PSXAPI_Response512158129581.Style.Gender', index=0,
+      name='Gender', full_name='PSXAPI.Response1383144890.Style.Gender', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Skin', full_name='PSXAPI_Response512158129581.Style.Skin', index=1,
+      name='Skin', full_name='PSXAPI.Response1383144890.Style.Skin', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Eyes', full_name='PSXAPI_Response512158129581.Style.Eyes', index=2,
+      name='Eyes', full_name='PSXAPI.Response1383144890.Style.Eyes', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Hair', full_name='PSXAPI_Response512158129581.Style.Hair', index=3,
+      name='Hair', full_name='PSXAPI.Response1383144890.Style.Hair', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='HairColor', full_name='PSXAPI_Response512158129581.Style.HairColor', index=4,
+      name='HairColor', full_name='PSXAPI.Response1383144890.Style.HairColor', index=4,
       number=5, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -667,91 +785,139 @@ _STYLE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1217,
-  serialized_end=1356,
+  serialized_start=1878,
+  serialized_end=2041,
 )
 
+_PREFIX_AGDFASBV1304894073_GENDER.containing_type = _PREFIX_AGDFASBV1304894073
 _MAPUSER.fields_by_name['Actions'].message_type = _MAPUSERACTIONDATA
 _MAPUSER.fields_by_name['Data'].message_type = _MAPUSERDATA
-_MAPUSERACTIONDATA.fields_by_name['Action'].enum_type = _MAPUSERACTION
+_PREFIX_AGDFASBV98647645_MAPUSERACTION.containing_type = _PREFIX_AGDFASBV98647645
+_MAPUSERACTIONDATA.fields_by_name['Action'].enum_type = _PREFIX_AGDFASBV98647645_MAPUSERACTION
 _MAPUSERACTIONDATA.fields_by_name['Position'].message_type = _MAPUSERPOSITION
 _MAPUSERDATA.fields_by_name['Style'].message_type = _STYLE
-_MAPUSERDATA.fields_by_name['Direction'].enum_type = _PLAYERDIRECTION
+_MAPUSERDATA.fields_by_name['Direction'].enum_type = _PREFIX_AGDFASBV782650884_PLAYERDIRECTION
 _MAPUSERDATA.fields_by_name['Equip'].message_type = _EQUIP
 _MAPUSERDATA.fields_by_name['Mount'].message_type = _MOUNT
-_MAPUSERDATA.fields_by_name['MemberRank'].enum_type = _MEMBERRANK
-_MAPUSERDATA.fields_by_name['StaffRank'].enum_type = _STAFFRANK
+_MAPUSERDATA.fields_by_name['MemberRank'].enum_type = _PREFIX_AGDFASBV1562331986_MEMBERRANK
+_MAPUSERDATA.fields_by_name['StaffRank'].enum_type = _PREFIX_AGDFASBV1434800924_STAFFRANK
 _MAPUSERS.fields_by_name['Users'].message_type = _MAPUSER
-_MOUNT.fields_by_name['MountType'].enum_type = _MOUNTTYPE
-_STYLE.fields_by_name['Gender'].enum_type = _GENDER
+_PREFIX_AGDFASBV1562331986_MEMBERRANK.containing_type = _PREFIX_AGDFASBV1562331986
+_MOUNT.fields_by_name['MountType'].enum_type = _PREFIX_AGDFASBV676010584_MOUNTTYPE
+_PREFIX_AGDFASBV676010584_MOUNTTYPE.containing_type = _PREFIX_AGDFASBV676010584
+_PREFIX_AGDFASBV782650884_PLAYERDIRECTION.containing_type = _PREFIX_AGDFASBV782650884
+_PREFIX_AGDFASBV1434800924_STAFFRANK.containing_type = _PREFIX_AGDFASBV1434800924
+_STYLE.fields_by_name['Gender'].enum_type = _PREFIX_AGDFASBV1304894073_GENDER
 DESCRIPTOR.message_types_by_name['Equip'] = _EQUIP
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1304894073'] = _PREFIX_AGDFASBV1304894073
 DESCRIPTOR.message_types_by_name['MapUser'] = _MAPUSER
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV98647645'] = _PREFIX_AGDFASBV98647645
 DESCRIPTOR.message_types_by_name['MapUserActionData'] = _MAPUSERACTIONDATA
 DESCRIPTOR.message_types_by_name['MapUserData'] = _MAPUSERDATA
 DESCRIPTOR.message_types_by_name['MapUserPosition'] = _MAPUSERPOSITION
 DESCRIPTOR.message_types_by_name['MapUsers'] = _MAPUSERS
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1562331986'] = _PREFIX_AGDFASBV1562331986
 DESCRIPTOR.message_types_by_name['Mount'] = _MOUNT
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV676010584'] = _PREFIX_AGDFASBV676010584
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV782650884'] = _PREFIX_AGDFASBV782650884
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1434800924'] = _PREFIX_AGDFASBV1434800924
 DESCRIPTOR.message_types_by_name['Style'] = _STYLE
-DESCRIPTOR.enum_types_by_name['MapUserAction'] = _MAPUSERACTION
-DESCRIPTOR.enum_types_by_name['MemberRank'] = _MEMBERRANK
-DESCRIPTOR.enum_types_by_name['MountType'] = _MOUNTTYPE
-DESCRIPTOR.enum_types_by_name['PlayerDirection'] = _PLAYERDIRECTION
-DESCRIPTOR.enum_types_by_name['StaffRank'] = _STAFFRANK
-DESCRIPTOR.enum_types_by_name['Gender'] = _GENDER
 
 Equip = _reflection.GeneratedProtocolMessageType('Equip', (_message.Message,), dict(
   DESCRIPTOR = _EQUIP,
   __module__ = 'MapUsers_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI_Response512158129581.Equip)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1383144890.Equip)
   ))
 _sym_db.RegisterMessage(Equip)
+
+PREFIX_AGDFASBV1304894073 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1304894073', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1304894073,
+  __module__ = 'MapUsers_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1383144890.PREFIX_AGDFASBV1304894073)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1304894073)
 
 MapUser = _reflection.GeneratedProtocolMessageType('MapUser', (_message.Message,), dict(
   DESCRIPTOR = _MAPUSER,
   __module__ = 'MapUsers_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI_Response512158129581.MapUser)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1383144890.MapUser)
   ))
 _sym_db.RegisterMessage(MapUser)
+
+PREFIX_AGDFASBV98647645 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV98647645', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV98647645,
+  __module__ = 'MapUsers_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1383144890.PREFIX_AGDFASBV98647645)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV98647645)
 
 MapUserActionData = _reflection.GeneratedProtocolMessageType('MapUserActionData', (_message.Message,), dict(
   DESCRIPTOR = _MAPUSERACTIONDATA,
   __module__ = 'MapUsers_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI_Response512158129581.MapUserActionData)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1383144890.MapUserActionData)
   ))
 _sym_db.RegisterMessage(MapUserActionData)
 
 MapUserData = _reflection.GeneratedProtocolMessageType('MapUserData', (_message.Message,), dict(
   DESCRIPTOR = _MAPUSERDATA,
   __module__ = 'MapUsers_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI_Response512158129581.MapUserData)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1383144890.MapUserData)
   ))
 _sym_db.RegisterMessage(MapUserData)
 
 MapUserPosition = _reflection.GeneratedProtocolMessageType('MapUserPosition', (_message.Message,), dict(
   DESCRIPTOR = _MAPUSERPOSITION,
   __module__ = 'MapUsers_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI_Response512158129581.MapUserPosition)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1383144890.MapUserPosition)
   ))
 _sym_db.RegisterMessage(MapUserPosition)
 
 MapUsers = _reflection.GeneratedProtocolMessageType('MapUsers', (_message.Message,), dict(
   DESCRIPTOR = _MAPUSERS,
   __module__ = 'MapUsers_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI_Response512158129581.MapUsers)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1383144890.MapUsers)
   ))
 _sym_db.RegisterMessage(MapUsers)
+
+PREFIX_AGDFASBV1562331986 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1562331986', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1562331986,
+  __module__ = 'MapUsers_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1383144890.PREFIX_AGDFASBV1562331986)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1562331986)
 
 Mount = _reflection.GeneratedProtocolMessageType('Mount', (_message.Message,), dict(
   DESCRIPTOR = _MOUNT,
   __module__ = 'MapUsers_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI_Response512158129581.Mount)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1383144890.Mount)
   ))
 _sym_db.RegisterMessage(Mount)
+
+PREFIX_AGDFASBV676010584 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV676010584', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV676010584,
+  __module__ = 'MapUsers_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1383144890.PREFIX_AGDFASBV676010584)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV676010584)
+
+PREFIX_AGDFASBV782650884 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV782650884', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV782650884,
+  __module__ = 'MapUsers_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1383144890.PREFIX_AGDFASBV782650884)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV782650884)
+
+PREFIX_AGDFASBV1434800924 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1434800924', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1434800924,
+  __module__ = 'MapUsers_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1383144890.PREFIX_AGDFASBV1434800924)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1434800924)
 
 Style = _reflection.GeneratedProtocolMessageType('Style', (_message.Message,), dict(
   DESCRIPTOR = _STYLE,
   __module__ = 'MapUsers_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI_Response512158129581.Style)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1383144890.Style)
   ))
 _sym_db.RegisterMessage(Style)
 

@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -14,21 +13,23 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
-import bcl_pb2 as bcl__pb2
+from protobuf_net import bcl_pb2 as protobuf__net_dot_bcl__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Move.proto',
-  package='PSXAPI.Response56',
+  package='PSXAPI.Response968928463',
   syntax='proto2',
-  serialized_pb=_b('\n\nMove.proto\x12\x11PSXAPI.Response56\x1a\tbcl.proto\"\xcc\x01\n\x04Move\x12\x0b\n\x03Map\x18\x01 \x02(\t\x12\t\n\x01X\x18\x02 \x02(\x05\x12\t\n\x01Y\x18\x03 \x02(\x05\x12\x32\n\x06\x41\x63tion\x18\x04 \x01(\x0e\x32\x1d.PSXAPI.Response56.MoveAction:\x03Set\x12>\n\tDirection\x18\x05 \x01(\x0e\x32\".PSXAPI.Response56.PlayerDirection:\x07\x44\x65\x66\x61ult\x12\x1a\n\x07Scripts\x18\x06 \x03(\x0b\x32\t.bcl.Guid\x12\x11\n\x06Height\x18\x07 \x01(\x05:\x01\x30*@\n\nMoveAction\x12\x07\n\x03Set\x10\x00\x12\x07\n\x03Up0\x10\x01\x12\t\n\x05\x44own0\x10\x02\x12\t\n\x05Left0\x10\x03\x12\n\n\x06Right0\x10\x04*I\n\x0fPlayerDirection\x12\x0b\n\x07\x44\x65\x66\x61ult\x10\x00\x12\x07\n\x03Up1\x10\x01\x12\t\n\x05\x44own1\x10\x02\x12\t\n\x05Left1\x10\x03\x12\n\n\x06Right1\x10\x04')
+  serialized_pb=_b('\n\nMove.proto\x12\x18PSXAPI.Response968928463\x1a\x16protobuf-net/bcl.proto\"\x8e\x02\n\x04Move\x12\x0b\n\x03Map\x18\x01 \x02(\t\x12\t\n\x01X\x18\x02 \x02(\x05\x12\t\n\x01Y\x18\x03 \x02(\x05\x12S\n\x06\x41\x63tion\x18\x04 \x01(\x0e\x32>.PSXAPI.Response968928463.PREFIX_AGDFASBV1527605497.MoveAction:\x03Set\x12_\n\tDirection\x18\x05 \x01(\x0e\x32\x43.PSXAPI.Response968928463.PREFIX_AGDFASBV2140906505.PlayerDirection:\x07\x44\x65\x66\x61ult\x12\x1a\n\x07Scripts\x18\x06 \x03(\x0b\x32\t.bcl.Guid\x12\x11\n\x06Height\x18\x07 \x01(\x05:\x01\x30\"Y\n\x19PREFIX_AGDFASBV1527605497\"<\n\nMoveAction\x12\x07\n\x03Set\x10\x00\x12\x06\n\x02Up\x10\x01\x12\x08\n\x04\x44own\x10\x02\x12\x08\n\x04Left\x10\x03\x12\t\n\x05Right\x10\x04\"b\n\x19PREFIX_AGDFASBV2140906505\"E\n\x0fPlayerDirection\x12\x0b\n\x07\x44\x65\x66\x61ult\x10\x00\x12\x06\n\x02Up\x10\x01\x12\x08\n\x04\x44own\x10\x02\x12\x08\n\x04Left\x10\x03\x12\t\n\x05Right\x10\x04')
   ,
-  dependencies=[bcl__pb2.DESCRIPTOR,])
+  dependencies=[protobuf__net_dot_bcl__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_MOVEACTION = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV1527605497_MOVEACTION = _descriptor.EnumDescriptor(
   name='MoveAction',
-  full_name='PSXAPI.Response56.MoveAction',
+  full_name='PSXAPI.Response968928463.PREFIX_AGDFASBV1527605497.MoveAction',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -37,33 +38,32 @@ _MOVEACTION = _descriptor.EnumDescriptor(
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='Up0', index=1, number=1,
+      name='Up', index=1, number=1,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='Down0', index=2, number=2,
+      name='Down', index=2, number=2,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='Left0', index=3, number=3,
+      name='Left', index=3, number=3,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='Right0', index=4, number=4,
+      name='Right', index=4, number=4,
       options=None,
       type=None),
   ],
   containing_type=None,
   options=None,
-  serialized_start=251,
-  serialized_end=315,
+  serialized_start=366,
+  serialized_end=426,
 )
-_sym_db.RegisterEnumDescriptor(_MOVEACTION)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1527605497_MOVEACTION)
 
-MoveAction = enum_type_wrapper.EnumTypeWrapper(_MOVEACTION)
-_PLAYERDIRECTION = _descriptor.EnumDescriptor(
+_PREFIX_AGDFASBV2140906505_PLAYERDIRECTION = _descriptor.EnumDescriptor(
   name='PlayerDirection',
-  full_name='PSXAPI.Response56.PlayerDirection',
+  full_name='PSXAPI.Response968928463.PREFIX_AGDFASBV2140906505.PlayerDirection',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -72,94 +72,81 @@ _PLAYERDIRECTION = _descriptor.EnumDescriptor(
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='Up1', index=1, number=1,
+      name='Up', index=1, number=1,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='Down1', index=2, number=2,
+      name='Down', index=2, number=2,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='Left1', index=3, number=3,
+      name='Left', index=3, number=3,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='Right1', index=4, number=4,
+      name='Right', index=4, number=4,
       options=None,
       type=None),
   ],
   containing_type=None,
   options=None,
-  serialized_start=317,
-  serialized_end=390,
+  serialized_start=457,
+  serialized_end=526,
 )
-_sym_db.RegisterEnumDescriptor(_PLAYERDIRECTION)
-
-PlayerDirection = enum_type_wrapper.EnumTypeWrapper(_PLAYERDIRECTION)
-Set = 0
-Up0 = 1
-Down0 = 2
-Left0 = 3
-Right0 = 4
-Default = 0
-Up1 = 1
-Down1 = 2
-Left1 = 3
-Right1 = 4
-
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV2140906505_PLAYERDIRECTION)
 
 
 _MOVE = _descriptor.Descriptor(
   name='Move',
-  full_name='PSXAPI.Response56.Move',
+  full_name='PSXAPI.Response968928463.Move',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Map', full_name='PSXAPI.Response56.Move.Map', index=0,
+      name='Map', full_name='PSXAPI.Response968928463.Move.Map', index=0,
       number=1, type=9, cpp_type=9, label=2,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='X', full_name='PSXAPI.Response56.Move.X', index=1,
+      name='X', full_name='PSXAPI.Response968928463.Move.X', index=1,
       number=2, type=5, cpp_type=1, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Y', full_name='PSXAPI.Response56.Move.Y', index=2,
+      name='Y', full_name='PSXAPI.Response968928463.Move.Y', index=2,
       number=3, type=5, cpp_type=1, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Action', full_name='PSXAPI.Response56.Move.Action', index=3,
+      name='Action', full_name='PSXAPI.Response968928463.Move.Action', index=3,
       number=4, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Direction', full_name='PSXAPI.Response56.Move.Direction', index=4,
+      name='Direction', full_name='PSXAPI.Response968928463.Move.Direction', index=4,
       number=5, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Scripts', full_name='PSXAPI.Response56.Move.Scripts', index=5,
+      name='Scripts', full_name='PSXAPI.Response968928463.Move.Scripts', index=5,
       number=6, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Height', full_name='PSXAPI.Response56.Move.Height', index=6,
+      name='Height', full_name='PSXAPI.Response968928463.Move.Height', index=6,
       number=7, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -177,23 +164,89 @@ _MOVE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=45,
-  serialized_end=249,
+  serialized_start=65,
+  serialized_end=335,
 )
 
-_MOVE.fields_by_name['Action'].enum_type = _MOVEACTION
-_MOVE.fields_by_name['Direction'].enum_type = _PLAYERDIRECTION
-_MOVE.fields_by_name['Scripts'].message_type = bcl__pb2._GUID
+
+_PREFIX_AGDFASBV1527605497 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1527605497',
+  full_name='PSXAPI.Response968928463.PREFIX_AGDFASBV1527605497',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1527605497_MOVEACTION,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=337,
+  serialized_end=426,
+)
+
+
+_PREFIX_AGDFASBV2140906505 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV2140906505',
+  full_name='PSXAPI.Response968928463.PREFIX_AGDFASBV2140906505',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV2140906505_PLAYERDIRECTION,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=428,
+  serialized_end=526,
+)
+
+_MOVE.fields_by_name['Action'].enum_type = _PREFIX_AGDFASBV1527605497_MOVEACTION
+_MOVE.fields_by_name['Direction'].enum_type = _PREFIX_AGDFASBV2140906505_PLAYERDIRECTION
+_MOVE.fields_by_name['Scripts'].message_type = protobuf__net_dot_bcl__pb2._GUID
+_PREFIX_AGDFASBV1527605497_MOVEACTION.containing_type = _PREFIX_AGDFASBV1527605497
+_PREFIX_AGDFASBV2140906505_PLAYERDIRECTION.containing_type = _PREFIX_AGDFASBV2140906505
 DESCRIPTOR.message_types_by_name['Move'] = _MOVE
-DESCRIPTOR.enum_types_by_name['MoveAction'] = _MOVEACTION
-DESCRIPTOR.enum_types_by_name['PlayerDirection'] = _PLAYERDIRECTION
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1527605497'] = _PREFIX_AGDFASBV1527605497
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV2140906505'] = _PREFIX_AGDFASBV2140906505
 
 Move = _reflection.GeneratedProtocolMessageType('Move', (_message.Message,), dict(
   DESCRIPTOR = _MOVE,
   __module__ = 'Move_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response56.Move)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response968928463.Move)
   ))
 _sym_db.RegisterMessage(Move)
+
+PREFIX_AGDFASBV1527605497 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1527605497', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1527605497,
+  __module__ = 'Move_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response968928463.PREFIX_AGDFASBV1527605497)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1527605497)
+
+PREFIX_AGDFASBV2140906505 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV2140906505', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV2140906505,
+  __module__ = 'Move_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response968928463.PREFIX_AGDFASBV2140906505)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV2140906505)
 
 
 # @@protoc_insertion_point(module_scope)

@@ -1,30 +1,37 @@
 syntax = "proto2";
+package PSXAPI.Response348901312;
 
-package PSXAPI.Response1515991517;
-
-enum ActorAvatarType {
-   __None0 = 0;
-   User0 = 1;
-   NPC0 = 2;
-}
-enum ActorTeam {
-   __None1 = 0;
+message PREFIX_AGDFASBV778283405 {
+    enum ActorAvatarType {
+   NoneValue = 0;
+   User = 1;
+   NPC = 2;
+} //PREFIX_AGDFASBV
+};
+message PREFIX_AGDFASBV130267509 {
+    enum ActorTeam {
+   NoneValue = 0;
    Team1 = 1;
    Team2 = 2;
-}
-enum ActorTimer {
+} //PREFIX_AGDFASBV
+};
+message PREFIX_AGDFASBV1660818445 {
+    enum ActorTimer {
    Disabled = 0;
    NotRequired = 1;
    Enabled = 2;
-}
-enum ActorType {
-   __None2 = 0;
+} //PREFIX_AGDFASBV
+};
+message PREFIX_AGDFASBV398339486 {
+    enum ActorType {
+   NoneValue = 0;
    Leader = 1;
-   User1 = 2;
-   NPC1 = 3;
+   User = 2;
+   NPC = 3;
    Inactive = 4;
    Offline = 5;
-}
+} //PREFIX_AGDFASBV
+};
 message Lobby {
    optional bool Leader = 1 [default = false];
    optional bool CanChangeSettings = 2 [default = false];
@@ -36,17 +43,17 @@ message Lobby {
    optional bool AdjustLevels = 8 [default = false];
    optional bool ItemAllowed = 9 [default = false];
    optional bool IsRanked = 10 [default = false];
-   optional ActorTimer Timer = 11 [default = Disabled];
+   optional PREFIX_AGDFASBV1660818445.ActorTimer Timer = 11 [default = Disabled];
    repeated LobbyActor Actors = 12;
 }
 message LobbyActor {
-   optional ActorType Type = 1 [default = __None2];
+   optional PREFIX_AGDFASBV398339486.ActorType Type = 1 [default = NoneValue];
    optional string Name = 2;
-   optional ActorTeam Team = 3 [default = __None1];
+   optional PREFIX_AGDFASBV130267509.ActorTeam Team = 3 [default = NoneValue];
    optional int32 PokemonCount = 4 [default = 0];
    optional int32 ActiveCount = 5 [default = 0];
    optional bool Accepted = 6 [default = false];
-   optional ActorAvatarType AvatarType = 7 [default = __None0];
+   optional PREFIX_AGDFASBV778283405.ActorAvatarType AvatarType = 7 [default = NoneValue];
    optional int32 NpcSpriteID = 8 [default = 0];
    optional int32 AverageLevel = 9 [default = 0];
    optional int32 HighestLevel = 10 [default = 0];

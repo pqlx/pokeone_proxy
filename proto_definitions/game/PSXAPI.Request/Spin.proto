@@ -1,13 +1,15 @@
 syntax = "proto2";
-package PSXAPI.Request60;
+package PSXAPI.Request784181591;
 
 message Spin {
    optional int32 ID = 1 [default = 0];
-   optional SpinBet Bet = 2 [default = __None];
+   optional PREFIX_AGDFASBV2137981436.SpinBet Bet = 2 [default = NoneValue];
 }
-enum SpinBet {
-   __None = 0;
+message PREFIX_AGDFASBV2137981436 {
+    enum SpinBet {
+   NoneValue = 0;
    Coin1 = 1;
    Coin2 = 2;
    Coin3 = 3;
-}
+} //PREFIX_AGDFASBV
+};

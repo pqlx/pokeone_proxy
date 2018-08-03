@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='FlyExit.proto',
-  package='PSXAPI.Request21',
+  package='PSXAPI.Request1198756185',
   syntax='proto2',
-  serialized_pb=_b('\n\rFlyExit.proto\x12\x10PSXAPI.Request21\"\x17\n\x07\x46lyExit\x12\x0c\n\x04\x41rea\x18\x01 \x01(\t')
+  serialized_pb=_b('\n\rFlyExit.proto\x12\x18PSXAPI.Request1198756185\"\x17\n\x07\x46lyExit\x12\x0c\n\x04\x41rea\x18\x01 \x01(\t')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,13 +28,13 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _FLYEXIT = _descriptor.Descriptor(
   name='FlyExit',
-  full_name='PSXAPI.Request21.FlyExit',
+  full_name='PSXAPI.Request1198756185.FlyExit',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Area', full_name='PSXAPI.Request21.FlyExit.Area', index=0,
+      name='Area', full_name='PSXAPI.Request1198756185.FlyExit.Area', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -52,8 +52,8 @@ _FLYEXIT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=35,
-  serialized_end=58,
+  serialized_start=43,
+  serialized_end=66,
 )
 
 DESCRIPTOR.message_types_by_name['FlyExit'] = _FLYEXIT
@@ -61,7 +61,7 @@ DESCRIPTOR.message_types_by_name['FlyExit'] = _FLYEXIT
 FlyExit = _reflection.GeneratedProtocolMessageType('FlyExit', (_message.Message,), dict(
   DESCRIPTOR = _FLYEXIT,
   __module__ = 'FlyExit_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request21.FlyExit)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request1198756185.FlyExit)
   ))
 _sym_db.RegisterMessage(FlyExit)
 

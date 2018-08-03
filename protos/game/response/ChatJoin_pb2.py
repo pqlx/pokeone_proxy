@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -18,15 +17,17 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='ChatJoin.proto',
-  package='PSXAPI.Response11',
+  package='PSXAPI.Response2067513315',
   syntax='proto2',
-  serialized_pb=_b('\n\x0e\x43hatJoin.proto\x12\x11PSXAPI.Response11\"U\n\x08\x43hatJoin\x12\x38\n\x06Result\x18\x01 \x01(\x0e\x32!.PSXAPI.Response11.ChatJoinResult:\x05\x45rror\x12\x0f\n\x07\x43hannel\x18\x02 \x01(\t*1\n\x0e\x43hatJoinResult\x12\t\n\x05\x45rror\x10\x00\x12\n\n\x06Joined\x10\x01\x12\x08\n\x04Left\x10\x02')
+  serialized_pb=_b('\n\x0e\x43hatJoin.proto\x12\x19PSXAPI.Response2067513315\"v\n\x08\x43hatJoin\x12Y\n\x06Result\x18\x01 \x01(\x0e\x32\x42.PSXAPI.Response2067513315.PREFIX_AGDFASBV510775748.ChatJoinResult:\x05\x45rror\x12\x0f\n\x07\x43hannel\x18\x02 \x01(\t\"M\n\x18PREFIX_AGDFASBV510775748\"1\n\x0e\x43hatJoinResult\x12\t\n\x05\x45rror\x10\x00\x12\n\n\x06Joined\x10\x01\x12\x08\n\x04Left\x10\x02')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_CHATJOINRESULT = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV510775748_CHATJOINRESULT = _descriptor.EnumDescriptor(
   name='ChatJoinResult',
-  full_name='PSXAPI.Response11.ChatJoinResult',
+  full_name='PSXAPI.Response2067513315.PREFIX_AGDFASBV510775748.ChatJoinResult',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -45,34 +46,28 @@ _CHATJOINRESULT = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=124,
-  serialized_end=173,
+  serialized_start=193,
+  serialized_end=242,
 )
-_sym_db.RegisterEnumDescriptor(_CHATJOINRESULT)
-
-ChatJoinResult = enum_type_wrapper.EnumTypeWrapper(_CHATJOINRESULT)
-Error = 0
-Joined = 1
-Left = 2
-
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV510775748_CHATJOINRESULT)
 
 
 _CHATJOIN = _descriptor.Descriptor(
   name='ChatJoin',
-  full_name='PSXAPI.Response11.ChatJoin',
+  full_name='PSXAPI.Response2067513315.ChatJoin',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Result', full_name='PSXAPI.Response11.ChatJoin.Result', index=0,
+      name='Result', full_name='PSXAPI.Response2067513315.ChatJoin.Result', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Channel', full_name='PSXAPI.Response11.ChatJoin.Channel', index=1,
+      name='Channel', full_name='PSXAPI.Response2067513315.ChatJoin.Channel', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -90,20 +85,53 @@ _CHATJOIN = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=37,
-  serialized_end=122,
+  serialized_start=45,
+  serialized_end=163,
 )
 
-_CHATJOIN.fields_by_name['Result'].enum_type = _CHATJOINRESULT
+
+_PREFIX_AGDFASBV510775748 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV510775748',
+  full_name='PSXAPI.Response2067513315.PREFIX_AGDFASBV510775748',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV510775748_CHATJOINRESULT,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=165,
+  serialized_end=242,
+)
+
+_CHATJOIN.fields_by_name['Result'].enum_type = _PREFIX_AGDFASBV510775748_CHATJOINRESULT
+_PREFIX_AGDFASBV510775748_CHATJOINRESULT.containing_type = _PREFIX_AGDFASBV510775748
 DESCRIPTOR.message_types_by_name['ChatJoin'] = _CHATJOIN
-DESCRIPTOR.enum_types_by_name['ChatJoinResult'] = _CHATJOINRESULT
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV510775748'] = _PREFIX_AGDFASBV510775748
 
 ChatJoin = _reflection.GeneratedProtocolMessageType('ChatJoin', (_message.Message,), dict(
   DESCRIPTOR = _CHATJOIN,
   __module__ = 'ChatJoin_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response11.ChatJoin)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response2067513315.ChatJoin)
   ))
 _sym_db.RegisterMessage(ChatJoin)
+
+PREFIX_AGDFASBV510775748 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV510775748', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV510775748,
+  __module__ = 'ChatJoin_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response2067513315.PREFIX_AGDFASBV510775748)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV510775748)
 
 
 # @@protoc_insertion_point(module_scope)

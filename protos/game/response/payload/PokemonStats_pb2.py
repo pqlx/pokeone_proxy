@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='PokemonStats.proto',
-  package='PSXAPI.Response.Payload30',
+  package='PSXAPI.Response.Payload2063384285',
   syntax='proto2',
-  serialized_pb=_b('\n\x12PokemonStats.proto\x12\x19PSXAPI.Response.Payload30\"s\n\x0cPokemonStats\x12\r\n\x02HP\x18\x01 \x01(\x05:\x01\x30\x12\x0e\n\x03\x41tk\x18\x02 \x01(\x05:\x01\x30\x12\x0e\n\x03\x44\x65\x66\x18\x03 \x01(\x05:\x01\x30\x12\x10\n\x05SpAtk\x18\x04 \x01(\x05:\x01\x30\x12\x10\n\x05SpDef\x18\x05 \x01(\x05:\x01\x30\x12\x10\n\x05Speed\x18\x06 \x01(\x05:\x01\x30')
+  serialized_pb=_b('\n\x12PokemonStats.proto\x12!PSXAPI.Response.Payload2063384285\"s\n\x0cPokemonStats\x12\r\n\x02HP\x18\x01 \x01(\x05:\x01\x30\x12\x0e\n\x03\x41tk\x18\x02 \x01(\x05:\x01\x30\x12\x0e\n\x03\x44\x65\x66\x18\x03 \x01(\x05:\x01\x30\x12\x10\n\x05SpAtk\x18\x04 \x01(\x05:\x01\x30\x12\x10\n\x05SpDef\x18\x05 \x01(\x05:\x01\x30\x12\x10\n\x05Speed\x18\x06 \x01(\x05:\x01\x30')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,48 +28,48 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _POKEMONSTATS = _descriptor.Descriptor(
   name='PokemonStats',
-  full_name='PSXAPI.Response.Payload30.PokemonStats',
+  full_name='PSXAPI.Response.Payload2063384285.PokemonStats',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='HP', full_name='PSXAPI.Response.Payload30.PokemonStats.HP', index=0,
+      name='HP', full_name='PSXAPI.Response.Payload2063384285.PokemonStats.HP', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Atk', full_name='PSXAPI.Response.Payload30.PokemonStats.Atk', index=1,
+      name='Atk', full_name='PSXAPI.Response.Payload2063384285.PokemonStats.Atk', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Def', full_name='PSXAPI.Response.Payload30.PokemonStats.Def', index=2,
+      name='Def', full_name='PSXAPI.Response.Payload2063384285.PokemonStats.Def', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='SpAtk', full_name='PSXAPI.Response.Payload30.PokemonStats.SpAtk', index=3,
+      name='SpAtk', full_name='PSXAPI.Response.Payload2063384285.PokemonStats.SpAtk', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='SpDef', full_name='PSXAPI.Response.Payload30.PokemonStats.SpDef', index=4,
+      name='SpDef', full_name='PSXAPI.Response.Payload2063384285.PokemonStats.SpDef', index=4,
       number=5, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Speed', full_name='PSXAPI.Response.Payload30.PokemonStats.Speed', index=5,
+      name='Speed', full_name='PSXAPI.Response.Payload2063384285.PokemonStats.Speed', index=5,
       number=6, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -87,8 +87,8 @@ _POKEMONSTATS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=49,
-  serialized_end=164,
+  serialized_start=57,
+  serialized_end=172,
 )
 
 DESCRIPTOR.message_types_by_name['PokemonStats'] = _POKEMONSTATS
@@ -96,7 +96,7 @@ DESCRIPTOR.message_types_by_name['PokemonStats'] = _POKEMONSTATS
 PokemonStats = _reflection.GeneratedProtocolMessageType('PokemonStats', (_message.Message,), dict(
   DESCRIPTOR = _POKEMONSTATS,
   __module__ = 'PokemonStats_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response.Payload30.PokemonStats)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response.Payload2063384285.PokemonStats)
   ))
 _sym_db.RegisterMessage(PokemonStats)
 

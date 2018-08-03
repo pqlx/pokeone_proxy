@@ -1,9 +1,9 @@
 syntax = "proto2";
-package PSXAPI.Response79;
-import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+package PSXAPI.Response1385703756;
+import "protobuf-net/bcl.proto"; // schema for protobuf-net's handling of core .NET types
 
 message Sync {
-   optional .bcl.Guid ID = 1 ;
+   optional .bcl.Guid ID = 1;
    optional string Map = 2;
    optional int32 PosX = 3 [default = 0];
    optional int32 PosY = 4 [default = 0];

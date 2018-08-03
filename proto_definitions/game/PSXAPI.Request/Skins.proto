@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Request59;
+package PSXAPI.Request615616321;
 
 message Skins {
 }

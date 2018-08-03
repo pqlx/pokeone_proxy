@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Time.proto',
-  package='PSXAPI.Request67',
+  package='PSXAPI.Request974141224',
   syntax='proto2',
-  serialized_pb=_b('\n\nTime.proto\x12\x10PSXAPI.Request67\"\x06\n\x04Time')
+  serialized_pb=_b('\n\nTime.proto\x12\x17PSXAPI.Request974141224\"\x06\n\x04Time')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,7 +28,7 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _TIME = _descriptor.Descriptor(
   name='Time',
-  full_name='PSXAPI.Request67.Time',
+  full_name='PSXAPI.Request974141224.Time',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
@@ -45,8 +45,8 @@ _TIME = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=32,
-  serialized_end=38,
+  serialized_start=39,
+  serialized_end=45,
 )
 
 DESCRIPTOR.message_types_by_name['Time'] = _TIME
@@ -54,7 +54,7 @@ DESCRIPTOR.message_types_by_name['Time'] = _TIME
 Time = _reflection.GeneratedProtocolMessageType('Time', (_message.Message,), dict(
   DESCRIPTOR = _TIME,
   __module__ = 'Time_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request67.Time)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request974141224.Time)
   ))
 _sym_db.RegisterMessage(Time)
 

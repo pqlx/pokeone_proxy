@@ -14,157 +14,21 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
-import bcl_pb2 as bcl__pb2
+from protobuf_net import bcl_pb2 as protobuf__net_dot_bcl__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Search.proto',
-  package='PSXAPI_Response24917846189246',
+  package='PSXAPI.Response1559120870',
   syntax='proto2',
-  serialized_pb=_b('\n\x0cSearch.proto\x12\x1dPSXAPI_Response24917846189246\x1a\tbcl.proto\"\x80\x02\n\x10InventoryPokemon\x12;\n\x07Pokemon\x18\x01 \x01(\x0b\x32*.PSXAPI_Response24917846189246.PokemonData\x12\x13\n\x08Position\x18\x02 \x01(\x05:\x01\x30\x12\x0e\n\x03\x42ox\x18\x03 \x01(\x05:\x01\x30\x12\x46\n\tCanEvolve\x18\x04 \x01(\x0e\x32(.PSXAPI_Response24917846189246.PokemonID:\tmissingno\x12\x42\n\x0c\x43\x61nLearnMove\x18\x05 \x03(\x0e\x32,.PSXAPI_Response24917846189246.PokemonMoveID\"\xb9\x07\n\x07Pokemon\x12\x46\n\tPokemonID\x18\x01 \x01(\x0e\x32(.PSXAPI_Response24917846189246.PokemonID:\tmissingno\x12\x10\n\x05Level\x18\x02 \x01(\x05:\x01\x30\x12\x0e\n\x03\x45xp\x18\x03 \x01(\x05:\x01\x30\x12\r\n\x02HP\x18\x04 \x01(\x05:\x01\x30\x12\x39\n\x05Moves\x18\x05 \x03(\x0b\x32*.PSXAPI_Response24917846189246.PokemonMove\x12L\n\x0b\x41\x62ilitySlot\x18\x06 \x01(\x0e\x32..PSXAPI_Response24917846189246.AbilitySlotType:\x07__None0\x12\x14\n\tHappiness\x18\x07 \x01(\x05:\x01\x30\x12\x46\n\x06Nature\x18\x08 \x01(\x0e\x32-.PSXAPI_Response24917846189246.PokemonNatures:\x07__None4\x12\x14\n\x05Shiny\x18\t \x01(\x08:\x05\x66\x61lse\x12\x38\n\x03IVs\x18\n \x01(\x0b\x32+.PSXAPI_Response24917846189246.PokemonStats\x12\x38\n\x03\x45Vs\x18\x0b \x01(\x0b\x32+.PSXAPI_Response24917846189246.PokemonStats\x12\x45\n\x06Gender\x18\x0c \x01(\x0e\x32,.PSXAPI_Response24917846189246.PokemonGender:\x07__None3\x12\"\n\x0fOriginalTrainer\x18\r \x01(\x0b\x32\t.bcl.Guid\x12\x1a\n\x07Trainer\x18\x0e \x01(\x0b\x32\t.bcl.Guid\x12\x10\n\x08Nickname\x18\x0f \x01(\t\x12\x13\n\x08Pokeball\x18\x10 \x01(\x05:\x01\x30\x12\x13\n\x08HoldItem\x18\x11 \x01(\x05:\x01\x30\x12\x16\n\x0bPersonality\x18\x12 \x01(\x05:\x01\x30\x12K\n\tCondition\x18\x13 \x01(\x0e\x32/.PSXAPI_Response24917846189246.PokemonCondition:\x07__None2\x12\x41\n\x0c\x45VsCollected\x18\x14 \x01(\x0b\x32+.PSXAPI_Response24917846189246.PokemonStats\x12$\n\rCaughtDateUtc\x18\x15 \x01(\x0b\x32\r.bcl.DateTime\x12\x16\n\x0b\x43\x61ughtLevel\x18\x16 \x01(\x05:\x01\x30\x12\x1b\n\x0cNotTradeable\x18\x17 \x01(\x08:\x05\x66\x61lse\"\xc7\x02\n\x0bPokemonData\x12\x1b\n\x08UniqueID\x18\x01 \x01(\x0b\x32\t.bcl.Guid\x12\x37\n\x07Payload\x18\x02 \x01(\x0b\x32&.PSXAPI_Response24917846189246.Pokemon\x12:\n\x05Stats\x18\x03 \x01(\x0b\x32+.PSXAPI_Response24917846189246.PokemonStats\x12\x0f\n\x07Trainer\x18\x04 \x01(\t\x12\x17\n\x0fOriginalTrainer\x18\x05 \x01(\t\x12\x0f\n\x07\x41\x62ility\x18\x06 \x01(\t\x12\x13\n\x08\x45xpStart\x18\x07 \x01(\x05:\x01\x30\x12\x12\n\x07\x45xpNext\x18\x08 \x01(\x05:\x01\x30\x12\x42\n\x08\x45ggState\x18\t \x01(\x0e\x32\'.PSXAPI_Response24917846189246.EggState:\x07__None1\"p\n\x0bPokemonMove\x12@\n\x04Move\x18\x01 \x01(\x0e\x32,.PSXAPI_Response24917846189246.PokemonMoveID:\x04none\x12\r\n\x02PP\x18\x02 \x01(\x05:\x01\x30\x12\x10\n\x05MaxPP\x18\x03 \x01(\x05:\x01\x30\"s\n\x0cPokemonStats\x12\r\n\x02HP\x18\x01 \x01(\x05:\x01\x30\x12\x0e\n\x03\x41tk\x18\x02 \x01(\x05:\x01\x30\x12\x0e\n\x03\x44\x65\x66\x18\x03 \x01(\x05:\x01\x30\x12\x10\n\x05SpAtk\x18\x04 \x01(\x05:\x01\x30\x12\x10\n\x05SpDef\x18\x05 \x01(\x05:\x01\x30\x12\x10\n\x05Speed\x18\x06 \x01(\x05:\x01\x30\"\xa0\x01\n\x06Search\x12\x1b\n\x08SearchID\x18\x01 \x01(\x0b\x32\t.bcl.Guid\x12\x15\n\nMaxResults\x18\x02 \x01(\x05:\x01\x30\x12\x0e\n\x03\x42ox\x18\x03 \x01(\x05:\x01\x30\x12\x10\n\x05\x46ound\x18\x04 \x01(\x05:\x01\x30\x12@\n\x07Results\x18\x05 \x03(\x0b\x32/.PSXAPI_Response24917846189246.InventoryPokemon*@\n\x0f\x41\x62ilitySlotType\x12\x0b\n\x07__None0\x10\x00\x12\t\n\x05Slot1\x10\x01\x12\t\n\x05Slot2\x10\x02\x12\n\n\x06Hidden\x10\x03*J\n\x08\x45ggState\x12\x0b\n\x07__None1\x10\x00\x12\n\n\x06Sounds\x10\x01\x12\t\n\x05Moves\x10\x02\x12\x0c\n\x08MoreTime\x10\x03\x12\x0c\n\x08LongTime\x10\x04*h\n\x10PokemonCondition\x12\x0b\n\x07__None2\x10\x00\x12\x0b\n\x07\x46\x61inted\x10\x01\x12\x08\n\x04\x42urn\x10\x02\x12\n\n\x06\x46reeze\x10\x03\x12\r\n\tParalysis\x10\x04\x12\n\n\x06Poison\x10\x05\x12\t\n\x05Sleep\x10\x06*2\n\rPokemonGender\x12\x0b\n\x07__None3\x10\x00\x12\x08\n\x04Male\x10\x01\x12\n\n\x06\x46\x65male\x10\x02*\xf0Y\n\tPokemonID\x12\r\n\tmissingno\x10\x00\x12\x12\n\x05Unset\x10\xff\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12\r\n\tbulbasaur\x10\x01\x12\x0b\n\x07ivysaur\x10\x02\x12\x0c\n\x08venusaur\x10\x03\x12\x0e\n\ncharmander\x10\x04\x12\x0e\n\ncharmeleon\x10\x05\x12\r\n\tcharizard\x10\x06\x12\x0c\n\x08squirtle\x10\x07\x12\r\n\twartortle\x10\x08\x12\r\n\tblastoise\x10\t\x12\x0c\n\x08\x63\x61terpie\x10\n\x12\x0b\n\x07metapod\x10\x0b\x12\x0e\n\nbutterfree\x10\x0c\x12\n\n\x06weedle\x10\r\x12\n\n\x06kakuna\x10\x0e\x12\x0c\n\x08\x62\x65\x65\x64rill\x10\x0f\x12\n\n\x06pidgey\x10\x10\x12\r\n\tpidgeotto\x10\x11\x12\x0b\n\x07pidgeot\x10\x12\x12\x0b\n\x07rattata\x10\x13\x12\x0c\n\x08raticate\x10\x14\x12\x0b\n\x07spearow\x10\x15\x12\n\n\x06\x66\x65\x61row\x10\x16\x12\t\n\x05\x65kans\x10\x17\x12\t\n\x05\x61rbok\x10\x18\x12\x0b\n\x07pikachu\x10\x19\x12\n\n\x06raichu\x10\x1a\x12\r\n\tsandshrew\x10\x1b\x12\r\n\tsandslash\x10\x1c\x12\x0c\n\x08nidoranf\x10\x1d\x12\x0c\n\x08nidorina\x10\x1e\x12\r\n\tnidoqueen\x10\x1f\x12\x0c\n\x08nidoranm\x10 \x12\x0c\n\x08nidorino\x10!\x12\x0c\n\x08nidoking\x10\"\x12\x0c\n\x08\x63lefairy\x10#\x12\x0c\n\x08\x63lefable\x10$\x12\n\n\x06vulpix\x10%\x12\r\n\tninetales\x10&\x12\x0e\n\njigglypuff\x10\'\x12\x0e\n\nwigglytuff\x10(\x12\t\n\x05zubat\x10)\x12\n\n\x06golbat\x10*\x12\n\n\x06oddish\x10+\x12\t\n\x05gloom\x10,\x12\r\n\tvileplume\x10-\x12\t\n\x05paras\x10.\x12\x0c\n\x08parasect\x10/\x12\x0b\n\x07venonat\x10\x30\x12\x0c\n\x08venomoth\x10\x31\x12\x0b\n\x07\x64iglett\x10\x32\x12\x0b\n\x07\x64ugtrio\x10\x33\x12\n\n\x06meowth\x10\x34\x12\x0b\n\x07persian\x10\x35\x12\x0b\n\x07psyduck\x10\x36\x12\x0b\n\x07golduck\x10\x37\x12\n\n\x06mankey\x10\x38\x12\x0c\n\x08primeape\x10\x39\x12\r\n\tgrowlithe\x10:\x12\x0c\n\x08\x61rcanine\x10;\x12\x0b\n\x07poliwag\x10<\x12\r\n\tpoliwhirl\x10=\x12\r\n\tpoliwrath\x10>\x12\x08\n\x04\x61\x62ra\x10?\x12\x0b\n\x07kadabra\x10@\x12\x0c\n\x08\x61lakazam\x10\x41\x12\n\n\x06machop\x10\x42\x12\x0b\n\x07machoke\x10\x43\x12\x0b\n\x07machamp\x10\x44\x12\x0e\n\nbellsprout\x10\x45\x12\x0e\n\nweepinbell\x10\x46\x12\x0e\n\nvictreebel\x10G\x12\r\n\ttentacool\x10H\x12\x0e\n\ntentacruel\x10I\x12\x0b\n\x07geodude\x10J\x12\x0c\n\x08graveler\x10K\x12\t\n\x05golem\x10L\x12\n\n\x06ponyta\x10M\x12\x0c\n\x08rapidash\x10N\x12\x0c\n\x08slowpoke\x10O\x12\x0b\n\x07slowbro\x10P\x12\r\n\tmagnemite\x10Q\x12\x0c\n\x08magneton\x10R\x12\r\n\tfarfetchd\x10S\x12\t\n\x05\x64oduo\x10T\x12\n\n\x06\x64odrio\x10U\x12\x08\n\x04seel\x10V\x12\x0b\n\x07\x64\x65wgong\x10W\x12\n\n\x06grimer\x10X\x12\x07\n\x03muk\x10Y\x12\x0c\n\x08shellder\x10Z\x12\x0c\n\x08\x63loyster\x10[\x12\n\n\x06gastly\x10\\\x12\x0b\n\x07haunter\x10]\x12\n\n\x06gengar\x10^\x12\x08\n\x04onix\x10_\x12\x0b\n\x07\x64rowzee\x10`\x12\t\n\x05hypno\x10\x61\x12\n\n\x06krabby\x10\x62\x12\x0b\n\x07kingler\x10\x63\x12\x0b\n\x07voltorb\x10\x64\x12\r\n\telectrode\x10\x65\x12\r\n\texeggcute\x10\x66\x12\r\n\texeggutor\x10g\x12\n\n\x06\x63ubone\x10h\x12\x0b\n\x07marowak\x10i\x12\r\n\thitmonlee\x10j\x12\x0e\n\nhitmonchan\x10k\x12\r\n\tlickitung\x10l\x12\x0b\n\x07koffing\x10m\x12\x0b\n\x07weezing\x10n\x12\x0b\n\x07rhyhorn\x10o\x12\n\n\x06rhydon\x10p\x12\x0b\n\x07\x63hansey\x10q\x12\x0b\n\x07tangela\x10r\x12\x0e\n\nkangaskhan\x10s\x12\n\n\x06horsea\x10t\x12\n\n\x06seadra\x10u\x12\x0b\n\x07goldeen\x10v\x12\x0b\n\x07seaking\x10w\x12\n\n\x06staryu\x10x\x12\x0b\n\x07starmie\x10y\x12\n\n\x06mrmime\x10z\x12\x0b\n\x07scyther\x10{\x12\x08\n\x04jynx\x10|\x12\x0e\n\nelectabuzz\x10}\x12\n\n\x06magmar\x10~\x12\n\n\x06pinsir\x10\x7f\x12\x0b\n\x06tauros\x10\x80\x01\x12\r\n\x08magikarp\x10\x81\x01\x12\r\n\x08gyarados\x10\x82\x01\x12\x0b\n\x06lapras\x10\x83\x01\x12\n\n\x05\x64itto\x10\x84\x01\x12\n\n\x05\x65\x65vee\x10\x85\x01\x12\r\n\x08vaporeon\x10\x86\x01\x12\x0c\n\x07jolteon\x10\x87\x01\x12\x0c\n\x07\x66lareon\x10\x88\x01\x12\x0c\n\x07porygon\x10\x89\x01\x12\x0c\n\x07omanyte\x10\x8a\x01\x12\x0c\n\x07omastar\x10\x8b\x01\x12\x0b\n\x06kabuto\x10\x8c\x01\x12\r\n\x08kabutops\x10\x8d\x01\x12\x0f\n\naerodactyl\x10\x8e\x01\x12\x0c\n\x07snorlax\x10\x8f\x01\x12\r\n\x08\x61rticuno\x10\x90\x01\x12\x0b\n\x06zapdos\x10\x91\x01\x12\x0c\n\x07moltres\x10\x92\x01\x12\x0c\n\x07\x64ratini\x10\x93\x01\x12\x0e\n\tdragonair\x10\x94\x01\x12\x0e\n\tdragonite\x10\x95\x01\x12\x0b\n\x06mewtwo\x10\x96\x01\x12\x08\n\x03mew\x10\x97\x01\x12\x0e\n\tchikorita\x10\x98\x01\x12\x0c\n\x07\x62\x61yleef\x10\x99\x01\x12\r\n\x08meganium\x10\x9a\x01\x12\x0e\n\tcyndaquil\x10\x9b\x01\x12\x0c\n\x07quilava\x10\x9c\x01\x12\x0f\n\ntyphlosion\x10\x9d\x01\x12\r\n\x08totodile\x10\x9e\x01\x12\r\n\x08\x63roconaw\x10\x9f\x01\x12\x0f\n\nferaligatr\x10\xa0\x01\x12\x0c\n\x07sentret\x10\xa1\x01\x12\x0b\n\x06\x66urret\x10\xa2\x01\x12\r\n\x08hoothoot\x10\xa3\x01\x12\x0c\n\x07noctowl\x10\xa4\x01\x12\x0b\n\x06ledyba\x10\xa5\x01\x12\x0b\n\x06ledian\x10\xa6\x01\x12\r\n\x08spinarak\x10\xa7\x01\x12\x0c\n\x07\x61riados\x10\xa8\x01\x12\x0b\n\x06\x63robat\x10\xa9\x01\x12\r\n\x08\x63hinchou\x10\xaa\x01\x12\x0c\n\x07lanturn\x10\xab\x01\x12\n\n\x05pichu\x10\xac\x01\x12\x0b\n\x06\x63leffa\x10\xad\x01\x12\x0e\n\tigglybuff\x10\xae\x01\x12\x0b\n\x06togepi\x10\xaf\x01\x12\x0c\n\x07togetic\x10\xb0\x01\x12\t\n\x04natu\x10\xb1\x01\x12\t\n\x04xatu\x10\xb2\x01\x12\x0b\n\x06mareep\x10\xb3\x01\x12\x0c\n\x07\x66laaffy\x10\xb4\x01\x12\r\n\x08\x61mpharos\x10\xb5\x01\x12\x0e\n\tbellossom\x10\xb6\x01\x12\x0b\n\x06marill\x10\xb7\x01\x12\x0e\n\tazumarill\x10\xb8\x01\x12\x0e\n\tsudowoodo\x10\xb9\x01\x12\r\n\x08politoed\x10\xba\x01\x12\x0b\n\x06hoppip\x10\xbb\x01\x12\r\n\x08skiploom\x10\xbc\x01\x12\r\n\x08jumpluff\x10\xbd\x01\x12\n\n\x05\x61ipom\x10\xbe\x01\x12\x0c\n\x07sunkern\x10\xbf\x01\x12\r\n\x08sunflora\x10\xc0\x01\x12\n\n\x05yanma\x10\xc1\x01\x12\x0b\n\x06wooper\x10\xc2\x01\x12\r\n\x08quagsire\x10\xc3\x01\x12\x0b\n\x06\x65speon\x10\xc4\x01\x12\x0c\n\x07umbreon\x10\xc5\x01\x12\x0c\n\x07murkrow\x10\xc6\x01\x12\r\n\x08slowking\x10\xc7\x01\x12\x0f\n\nmisdreavus\x10\xc8\x01\x12\n\n\x05unown\x10\xc9\x01\x12\x0e\n\twobbuffet\x10\xca\x01\x12\x0e\n\tgirafarig\x10\xcb\x01\x12\x0b\n\x06pineco\x10\xcc\x01\x12\x0f\n\nforretress\x10\xcd\x01\x12\x0e\n\tdunsparce\x10\xce\x01\x12\x0b\n\x06gligar\x10\xcf\x01\x12\x0c\n\x07steelix\x10\xd0\x01\x12\r\n\x08snubbull\x10\xd1\x01\x12\r\n\x08granbull\x10\xd2\x01\x12\r\n\x08qwilfish\x10\xd3\x01\x12\x0b\n\x06scizor\x10\xd4\x01\x12\x0c\n\x07shuckle\x10\xd5\x01\x12\x0e\n\theracross\x10\xd6\x01\x12\x0c\n\x07sneasel\x10\xd7\x01\x12\x0e\n\tteddiursa\x10\xd8\x01\x12\r\n\x08ursaring\x10\xd9\x01\x12\x0b\n\x06slugma\x10\xda\x01\x12\r\n\x08magcargo\x10\xdb\x01\x12\x0b\n\x06swinub\x10\xdc\x01\x12\x0e\n\tpiloswine\x10\xdd\x01\x12\x0c\n\x07\x63orsola\x10\xde\x01\x12\r\n\x08remoraid\x10\xdf\x01\x12\x0e\n\toctillery\x10\xe0\x01\x12\r\n\x08\x64\x65libird\x10\xe1\x01\x12\x0c\n\x07mantine\x10\xe2\x01\x12\r\n\x08skarmory\x10\xe3\x01\x12\r\n\x08houndour\x10\xe4\x01\x12\r\n\x08houndoom\x10\xe5\x01\x12\x0c\n\x07kingdra\x10\xe6\x01\x12\x0b\n\x06phanpy\x10\xe7\x01\x12\x0c\n\x07\x64onphan\x10\xe8\x01\x12\r\n\x08porygon2\x10\xe9\x01\x12\r\n\x08stantler\x10\xea\x01\x12\r\n\x08smeargle\x10\xeb\x01\x12\x0c\n\x07tyrogue\x10\xec\x01\x12\x0e\n\thitmontop\x10\xed\x01\x12\r\n\x08smoochum\x10\xee\x01\x12\x0b\n\x06\x65lekid\x10\xef\x01\x12\n\n\x05magby\x10\xf0\x01\x12\x0c\n\x07miltank\x10\xf1\x01\x12\x0c\n\x07\x62lissey\x10\xf2\x01\x12\x0b\n\x06raikou\x10\xf3\x01\x12\n\n\x05\x65ntei\x10\xf4\x01\x12\x0c\n\x07suicune\x10\xf5\x01\x12\r\n\x08larvitar\x10\xf6\x01\x12\x0c\n\x07pupitar\x10\xf7\x01\x12\x0e\n\ttyranitar\x10\xf8\x01\x12\n\n\x05lugia\x10\xf9\x01\x12\t\n\x04hooh\x10\xfa\x01\x12\x0b\n\x06\x63\x65lebi\x10\xfb\x01\x12\x0c\n\x07treecko\x10\xfc\x01\x12\x0c\n\x07grovyle\x10\xfd\x01\x12\r\n\x08sceptile\x10\xfe\x01\x12\x0c\n\x07torchic\x10\xff\x01\x12\x0e\n\tcombusken\x10\x80\x02\x12\r\n\x08\x62laziken\x10\x81\x02\x12\x0b\n\x06mudkip\x10\x82\x02\x12\x0e\n\tmarshtomp\x10\x83\x02\x12\r\n\x08swampert\x10\x84\x02\x12\x0e\n\tpoochyena\x10\x85\x02\x12\x0e\n\tmightyena\x10\x86\x02\x12\x0e\n\tzigzagoon\x10\x87\x02\x12\x0c\n\x07linoone\x10\x88\x02\x12\x0c\n\x07wurmple\x10\x89\x02\x12\x0c\n\x07silcoon\x10\x8a\x02\x12\x0e\n\tbeautifly\x10\x8b\x02\x12\x0c\n\x07\x63\x61scoon\x10\x8c\x02\x12\x0b\n\x06\x64ustox\x10\x8d\x02\x12\n\n\x05lotad\x10\x8e\x02\x12\x0b\n\x06lombre\x10\x8f\x02\x12\r\n\x08ludicolo\x10\x90\x02\x12\x0b\n\x06seedot\x10\x91\x02\x12\x0c\n\x07nuzleaf\x10\x92\x02\x12\x0c\n\x07shiftry\x10\x93\x02\x12\x0c\n\x07taillow\x10\x94\x02\x12\x0c\n\x07swellow\x10\x95\x02\x12\x0c\n\x07wingull\x10\x96\x02\x12\r\n\x08pelipper\x10\x97\x02\x12\n\n\x05ralts\x10\x98\x02\x12\x0b\n\x06kirlia\x10\x99\x02\x12\x0e\n\tgardevoir\x10\x9a\x02\x12\x0c\n\x07surskit\x10\x9b\x02\x12\x0f\n\nmasquerain\x10\x9c\x02\x12\x0e\n\tshroomish\x10\x9d\x02\x12\x0c\n\x07\x62reloom\x10\x9e\x02\x12\x0c\n\x07slakoth\x10\x9f\x02\x12\r\n\x08vigoroth\x10\xa0\x02\x12\x0c\n\x07slaking\x10\xa1\x02\x12\x0c\n\x07nincada\x10\xa2\x02\x12\x0c\n\x07ninjask\x10\xa3\x02\x12\r\n\x08shedinja\x10\xa4\x02\x12\x0c\n\x07whismur\x10\xa5\x02\x12\x0c\n\x07loudred\x10\xa6\x02\x12\x0c\n\x07\x65xploud\x10\xa7\x02\x12\r\n\x08makuhita\x10\xa8\x02\x12\r\n\x08hariyama\x10\xa9\x02\x12\x0c\n\x07\x61zurill\x10\xaa\x02\x12\r\n\x08nosepass\x10\xab\x02\x12\x0b\n\x06skitty\x10\xac\x02\x12\r\n\x08\x64\x65lcatty\x10\xad\x02\x12\x0c\n\x07sableye\x10\xae\x02\x12\x0b\n\x06mawile\x10\xaf\x02\x12\t\n\x04\x61ron\x10\xb0\x02\x12\x0b\n\x06lairon\x10\xb1\x02\x12\x0b\n\x06\x61ggron\x10\xb2\x02\x12\r\n\x08meditite\x10\xb3\x02\x12\r\n\x08medicham\x10\xb4\x02\x12\x0e\n\telectrike\x10\xb5\x02\x12\x0e\n\tmanectric\x10\xb6\x02\x12\x0b\n\x06plusle\x10\xb7\x02\x12\n\n\x05minun\x10\xb8\x02\x12\x0c\n\x07volbeat\x10\xb9\x02\x12\r\n\x08illumise\x10\xba\x02\x12\x0c\n\x07roselia\x10\xbb\x02\x12\x0b\n\x06gulpin\x10\xbc\x02\x12\x0b\n\x06swalot\x10\xbd\x02\x12\r\n\x08\x63\x61rvanha\x10\xbe\x02\x12\r\n\x08sharpedo\x10\xbf\x02\x12\x0c\n\x07wailmer\x10\xc0\x02\x12\x0c\n\x07wailord\x10\xc1\x02\x12\n\n\x05numel\x10\xc2\x02\x12\r\n\x08\x63\x61merupt\x10\xc3\x02\x12\x0c\n\x07torkoal\x10\xc4\x02\x12\x0b\n\x06spoink\x10\xc5\x02\x12\x0c\n\x07grumpig\x10\xc6\x02\x12\x0b\n\x06spinda\x10\xc7\x02\x12\r\n\x08trapinch\x10\xc8\x02\x12\x0c\n\x07vibrava\x10\xc9\x02\x12\x0b\n\x06\x66lygon\x10\xca\x02\x12\x0b\n\x06\x63\x61\x63nea\x10\xcb\x02\x12\r\n\x08\x63\x61\x63turne\x10\xcc\x02\x12\x0b\n\x06swablu\x10\xcd\x02\x12\x0c\n\x07\x61ltaria\x10\xce\x02\x12\r\n\x08zangoose\x10\xcf\x02\x12\x0c\n\x07seviper\x10\xd0\x02\x12\r\n\x08lunatone\x10\xd1\x02\x12\x0c\n\x07solrock\x10\xd2\x02\x12\r\n\x08\x62\x61rboach\x10\xd3\x02\x12\r\n\x08whiscash\x10\xd4\x02\x12\r\n\x08\x63orphish\x10\xd5\x02\x12\x0e\n\tcrawdaunt\x10\xd6\x02\x12\x0b\n\x06\x62\x61ltoy\x10\xd7\x02\x12\x0c\n\x07\x63laydol\x10\xd8\x02\x12\x0b\n\x06lileep\x10\xd9\x02\x12\x0c\n\x07\x63radily\x10\xda\x02\x12\x0c\n\x07\x61norith\x10\xdb\x02\x12\x0c\n\x07\x61rmaldo\x10\xdc\x02\x12\x0b\n\x06\x66\x65\x65\x62\x61s\x10\xdd\x02\x12\x0c\n\x07milotic\x10\xde\x02\x12\r\n\x08\x63\x61stform\x10\xdf\x02\x12\x0c\n\x07kecleon\x10\xe0\x02\x12\x0c\n\x07shuppet\x10\xe1\x02\x12\x0c\n\x07\x62\x61nette\x10\xe2\x02\x12\x0c\n\x07\x64uskull\x10\xe3\x02\x12\r\n\x08\x64usclops\x10\xe4\x02\x12\x0c\n\x07tropius\x10\xe5\x02\x12\r\n\x08\x63himecho\x10\xe6\x02\x12\n\n\x05\x61\x62sol\x10\xe7\x02\x12\x0b\n\x06wynaut\x10\xe8\x02\x12\x0c\n\x07snorunt\x10\xe9\x02\x12\x0b\n\x06glalie\x10\xea\x02\x12\x0b\n\x06spheal\x10\xeb\x02\x12\x0b\n\x06sealeo\x10\xec\x02\x12\x0c\n\x07walrein\x10\xed\x02\x12\r\n\x08\x63lamperl\x10\xee\x02\x12\x0c\n\x07huntail\x10\xef\x02\x12\r\n\x08gorebyss\x10\xf0\x02\x12\x0e\n\trelicanth\x10\xf1\x02\x12\x0c\n\x07luvdisc\x10\xf2\x02\x12\n\n\x05\x62\x61gon\x10\xf3\x02\x12\x0c\n\x07shelgon\x10\xf4\x02\x12\x0e\n\tsalamence\x10\xf5\x02\x12\x0b\n\x06\x62\x65ldum\x10\xf6\x02\x12\x0b\n\x06metang\x10\xf7\x02\x12\x0e\n\tmetagross\x10\xf8\x02\x12\r\n\x08regirock\x10\xf9\x02\x12\x0b\n\x06regice\x10\xfa\x02\x12\x0e\n\tregisteel\x10\xfb\x02\x12\x0b\n\x06latias\x10\xfc\x02\x12\x0b\n\x06latios\x10\xfd\x02\x12\x0b\n\x06kyogre\x10\xfe\x02\x12\x0c\n\x07groudon\x10\xff\x02\x12\r\n\x08rayquaza\x10\x80\x03\x12\x0c\n\x07jirachi\x10\x81\x03\x12\x0b\n\x06\x64\x65oxys\x10\x82\x03\x12\x0c\n\x07turtwig\x10\x83\x03\x12\x0b\n\x06grotle\x10\x84\x03\x12\r\n\x08torterra\x10\x85\x03\x12\r\n\x08\x63himchar\x10\x86\x03\x12\r\n\x08monferno\x10\x87\x03\x12\x0e\n\tinfernape\x10\x88\x03\x12\x0b\n\x06piplup\x10\x89\x03\x12\r\n\x08prinplup\x10\x8a\x03\x12\r\n\x08\x65mpoleon\x10\x8b\x03\x12\x0b\n\x06starly\x10\x8c\x03\x12\r\n\x08staravia\x10\x8d\x03\x12\x0e\n\tstaraptor\x10\x8e\x03\x12\x0b\n\x06\x62idoof\x10\x8f\x03\x12\x0c\n\x07\x62ibarel\x10\x90\x03\x12\x0e\n\tkricketot\x10\x91\x03\x12\x0f\n\nkricketune\x10\x92\x03\x12\n\n\x05shinx\x10\x93\x03\x12\n\n\x05luxio\x10\x94\x03\x12\x0b\n\x06luxray\x10\x95\x03\x12\n\n\x05\x62udew\x10\x96\x03\x12\r\n\x08roserade\x10\x97\x03\x12\r\n\x08\x63ranidos\x10\x98\x03\x12\x0e\n\trampardos\x10\x99\x03\x12\r\n\x08shieldon\x10\x9a\x03\x12\x0e\n\tbastiodon\x10\x9b\x03\x12\n\n\x05\x62urmy\x10\x9c\x03\x12\r\n\x08wormadam\x10\x9d\x03\x12\x0b\n\x06mothim\x10\x9e\x03\x12\x0b\n\x06\x63ombee\x10\x9f\x03\x12\x0e\n\tvespiquen\x10\xa0\x03\x12\x0e\n\tpachirisu\x10\xa1\x03\x12\x0b\n\x06\x62uizel\x10\xa2\x03\x12\r\n\x08\x66loatzel\x10\xa3\x03\x12\x0c\n\x07\x63herubi\x10\xa4\x03\x12\x0c\n\x07\x63herrim\x10\xa5\x03\x12\x0c\n\x07shellos\x10\xa6\x03\x12\x0e\n\tgastrodon\x10\xa7\x03\x12\x0c\n\x07\x61mbipom\x10\xa8\x03\x12\r\n\x08\x64rifloon\x10\xa9\x03\x12\r\n\x08\x64rifblim\x10\xaa\x03\x12\x0c\n\x07\x62uneary\x10\xab\x03\x12\x0c\n\x07lopunny\x10\xac\x03\x12\x0e\n\tmismagius\x10\xad\x03\x12\x0e\n\thonchkrow\x10\xae\x03\x12\x0c\n\x07glameow\x10\xaf\x03\x12\x0c\n\x07purugly\x10\xb0\x03\x12\x0e\n\tchingling\x10\xb1\x03\x12\x0b\n\x06stunky\x10\xb2\x03\x12\r\n\x08skuntank\x10\xb3\x03\x12\x0c\n\x07\x62ronzor\x10\xb4\x03\x12\r\n\x08\x62ronzong\x10\xb5\x03\x12\x0b\n\x06\x62onsly\x10\xb6\x03\x12\x0b\n\x06mimejr\x10\xb7\x03\x12\x0c\n\x07happiny\x10\xb8\x03\x12\x0b\n\x06\x63hatot\x10\xb9\x03\x12\x0e\n\tspiritomb\x10\xba\x03\x12\n\n\x05gible\x10\xbb\x03\x12\x0b\n\x06gabite\x10\xbc\x03\x12\r\n\x08garchomp\x10\xbd\x03\x12\r\n\x08munchlax\x10\xbe\x03\x12\n\n\x05riolu\x10\xbf\x03\x12\x0c\n\x07lucario\x10\xc0\x03\x12\x0f\n\nhippopotas\x10\xc1\x03\x12\x0e\n\thippowdon\x10\xc2\x03\x12\x0c\n\x07skorupi\x10\xc3\x03\x12\x0c\n\x07\x64rapion\x10\xc4\x03\x12\r\n\x08\x63roagunk\x10\xc5\x03\x12\x0e\n\ttoxicroak\x10\xc6\x03\x12\x0e\n\tcarnivine\x10\xc7\x03\x12\x0c\n\x07\x66inneon\x10\xc8\x03\x12\r\n\x08lumineon\x10\xc9\x03\x12\x0c\n\x07mantyke\x10\xca\x03\x12\x0b\n\x06snover\x10\xcb\x03\x12\x0e\n\tabomasnow\x10\xcc\x03\x12\x0c\n\x07weavile\x10\xcd\x03\x12\x0e\n\tmagnezone\x10\xce\x03\x12\x0f\n\nlickilicky\x10\xcf\x03\x12\x0e\n\trhyperior\x10\xd0\x03\x12\x0e\n\ttangrowth\x10\xd1\x03\x12\x0f\n\nelectivire\x10\xd2\x03\x12\x0e\n\tmagmortar\x10\xd3\x03\x12\r\n\x08togekiss\x10\xd4\x03\x12\x0c\n\x07yanmega\x10\xd5\x03\x12\x0c\n\x07leafeon\x10\xd6\x03\x12\x0c\n\x07glaceon\x10\xd7\x03\x12\x0c\n\x07gliscor\x10\xd8\x03\x12\x0e\n\tmamoswine\x10\xd9\x03\x12\r\n\x08porygonz\x10\xda\x03\x12\x0c\n\x07gallade\x10\xdb\x03\x12\x0e\n\tprobopass\x10\xdc\x03\x12\r\n\x08\x64usknoir\x10\xdd\x03\x12\r\n\x08\x66roslass\x10\xde\x03\x12\n\n\x05rotom\x10\xdf\x03\x12\t\n\x04uxie\x10\xe0\x03\x12\x0c\n\x07mesprit\x10\xe1\x03\x12\n\n\x05\x61zelf\x10\xe2\x03\x12\x0b\n\x06\x64ialga\x10\xe3\x03\x12\x0b\n\x06palkia\x10\xe4\x03\x12\x0c\n\x07heatran\x10\xe5\x03\x12\x0e\n\tregigigas\x10\xe6\x03\x12\r\n\x08giratina\x10\xe7\x03\x12\x0e\n\tcresselia\x10\xe8\x03\x12\x0b\n\x06phione\x10\xe9\x03\x12\x0c\n\x07manaphy\x10\xea\x03\x12\x0c\n\x07\x64\x61rkrai\x10\xeb\x03\x12\x0c\n\x07shaymin\x10\xec\x03\x12\x0b\n\x06\x61rceus\x10\xed\x03\x12\x0c\n\x07victini\x10\xee\x03\x12\n\n\x05snivy\x10\xef\x03\x12\x0c\n\x07servine\x10\xf0\x03\x12\x0e\n\tserperior\x10\xf1\x03\x12\n\n\x05tepig\x10\xf2\x03\x12\x0c\n\x07pignite\x10\xf3\x03\x12\x0b\n\x06\x65mboar\x10\xf4\x03\x12\r\n\x08oshawott\x10\xf5\x03\x12\x0b\n\x06\x64\x65wott\x10\xf6\x03\x12\r\n\x08samurott\x10\xf7\x03\x12\x0b\n\x06patrat\x10\xf8\x03\x12\x0c\n\x07watchog\x10\xf9\x03\x12\r\n\x08lillipup\x10\xfa\x03\x12\x0c\n\x07herdier\x10\xfb\x03\x12\x0e\n\tstoutland\x10\xfc\x03\x12\r\n\x08purrloin\x10\xfd\x03\x12\x0c\n\x07liepard\x10\xfe\x03\x12\x0c\n\x07pansage\x10\xff\x03\x12\r\n\x08simisage\x10\x80\x04\x12\x0c\n\x07pansear\x10\x81\x04\x12\r\n\x08simisear\x10\x82\x04\x12\x0c\n\x07panpour\x10\x83\x04\x12\r\n\x08simipour\x10\x84\x04\x12\n\n\x05munna\x10\x85\x04\x12\r\n\x08musharna\x10\x86\x04\x12\x0b\n\x06pidove\x10\x87\x04\x12\x0e\n\ttranquill\x10\x88\x04\x12\r\n\x08unfezant\x10\x89\x04\x12\x0c\n\x07\x62litzle\x10\x8a\x04\x12\x0e\n\tzebstrika\x10\x8b\x04\x12\x0f\n\nroggenrola\x10\x8c\x04\x12\x0c\n\x07\x62oldore\x10\x8d\x04\x12\r\n\x08gigalith\x10\x8e\x04\x12\x0b\n\x06woobat\x10\x8f\x04\x12\x0c\n\x07swoobat\x10\x90\x04\x12\x0c\n\x07\x64rilbur\x10\x91\x04\x12\x0e\n\texcadrill\x10\x92\x04\x12\x0b\n\x06\x61udino\x10\x93\x04\x12\x0c\n\x07timburr\x10\x94\x04\x12\x0c\n\x07gurdurr\x10\x95\x04\x12\x0f\n\nconkeldurr\x10\x96\x04\x12\x0c\n\x07tympole\x10\x97\x04\x12\x0e\n\tpalpitoad\x10\x98\x04\x12\x0f\n\nseismitoad\x10\x99\x04\x12\n\n\x05throh\x10\x9a\x04\x12\t\n\x04sawk\x10\x9b\x04\x12\r\n\x08sewaddle\x10\x9c\x04\x12\r\n\x08swadloon\x10\x9d\x04\x12\r\n\x08leavanny\x10\x9e\x04\x12\r\n\x08venipede\x10\x9f\x04\x12\x0f\n\nwhirlipede\x10\xa0\x04\x12\x0e\n\tscolipede\x10\xa1\x04\x12\r\n\x08\x63ottonee\x10\xa2\x04\x12\x0f\n\nwhimsicott\x10\xa3\x04\x12\x0c\n\x07petilil\x10\xa4\x04\x12\x0e\n\tlilligant\x10\xa5\x04\x12\r\n\x08\x62\x61sculin\x10\xa6\x04\x12\x0c\n\x07sandile\x10\xa7\x04\x12\r\n\x08krokorok\x10\xa8\x04\x12\x0f\n\nkrookodile\x10\xa9\x04\x12\r\n\x08\x64\x61rumaka\x10\xaa\x04\x12\x0f\n\ndarmanitan\x10\xab\x04\x12\r\n\x08maractus\x10\xac\x04\x12\x0c\n\x07\x64webble\x10\xad\x04\x12\x0c\n\x07\x63rustle\x10\xae\x04\x12\x0c\n\x07scraggy\x10\xaf\x04\x12\x0c\n\x07scrafty\x10\xb0\x04\x12\r\n\x08sigilyph\x10\xb1\x04\x12\x0b\n\x06yamask\x10\xb2\x04\x12\x0f\n\ncofagrigus\x10\xb3\x04\x12\r\n\x08tirtouga\x10\xb4\x04\x12\x0f\n\ncarracosta\x10\xb5\x04\x12\x0b\n\x06\x61rchen\x10\xb6\x04\x12\r\n\x08\x61rcheops\x10\xb7\x04\x12\r\n\x08trubbish\x10\xb8\x04\x12\r\n\x08garbodor\x10\xb9\x04\x12\n\n\x05zorua\x10\xba\x04\x12\x0c\n\x07zoroark\x10\xbb\x04\x12\r\n\x08minccino\x10\xbc\x04\x12\r\n\x08\x63inccino\x10\xbd\x04\x12\x0c\n\x07gothita\x10\xbe\x04\x12\x0e\n\tgothorita\x10\xbf\x04\x12\x0f\n\ngothitelle\x10\xc0\x04\x12\x0c\n\x07solosis\x10\xc1\x04\x12\x0c\n\x07\x64uosion\x10\xc2\x04\x12\x0e\n\treuniclus\x10\xc3\x04\x12\r\n\x08\x64ucklett\x10\xc4\x04\x12\x0b\n\x06swanna\x10\xc5\x04\x12\x0e\n\tvanillite\x10\xc6\x04\x12\x0e\n\tvanillish\x10\xc7\x04\x12\x0e\n\tvanilluxe\x10\xc8\x04\x12\r\n\x08\x64\x65\x65rling\x10\xc9\x04\x12\r\n\x08sawsbuck\x10\xca\x04\x12\x0b\n\x06\x65molga\x10\xcb\x04\x12\x0f\n\nkarrablast\x10\xcc\x04\x12\x0f\n\nescavalier\x10\xcd\x04\x12\x0c\n\x07\x66oongus\x10\xce\x04\x12\x0e\n\tamoonguss\x10\xcf\x04\x12\r\n\x08\x66rillish\x10\xd0\x04\x12\x0e\n\tjellicent\x10\xd1\x04\x12\x0e\n\talomomola\x10\xd2\x04\x12\x0b\n\x06joltik\x10\xd3\x04\x12\x0f\n\ngalvantula\x10\xd4\x04\x12\x0e\n\tferroseed\x10\xd5\x04\x12\x0f\n\nferrothorn\x10\xd6\x04\x12\n\n\x05klink\x10\xd7\x04\x12\n\n\x05klang\x10\xd8\x04\x12\x0e\n\tklinklang\x10\xd9\x04\x12\x0b\n\x06tynamo\x10\xda\x04\x12\x0e\n\teelektrik\x10\xdb\x04\x12\x0f\n\neelektross\x10\xdc\x04\x12\x0b\n\x06\x65lgyem\x10\xdd\x04\x12\r\n\x08\x62\x65heeyem\x10\xde\x04\x12\x0c\n\x07litwick\x10\xdf\x04\x12\x0c\n\x07lampent\x10\xe0\x04\x12\x0f\n\nchandelure\x10\xe1\x04\x12\t\n\x04\x61xew\x10\xe2\x04\x12\x0c\n\x07\x66raxure\x10\xe3\x04\x12\x0c\n\x07haxorus\x10\xe4\x04\x12\x0c\n\x07\x63ubchoo\x10\xe5\x04\x12\x0c\n\x07\x62\x65\x61rtic\x10\xe6\x04\x12\x0e\n\tcryogonal\x10\xe7\x04\x12\x0c\n\x07shelmet\x10\xe8\x04\x12\r\n\x08\x61\x63\x63\x65lgor\x10\xe9\x04\x12\r\n\x08stunfisk\x10\xea\x04\x12\x0c\n\x07mienfoo\x10\xeb\x04\x12\r\n\x08mienshao\x10\xec\x04\x12\x0e\n\tdruddigon\x10\xed\x04\x12\x0b\n\x06golett\x10\xee\x04\x12\x0b\n\x06golurk\x10\xef\x04\x12\r\n\x08pawniard\x10\xf0\x04\x12\x0c\n\x07\x62isharp\x10\xf1\x04\x12\x0f\n\nbouffalant\x10\xf2\x04\x12\x0c\n\x07rufflet\x10\xf3\x04\x12\r\n\x08\x62raviary\x10\xf4\x04\x12\x0c\n\x07vullaby\x10\xf5\x04\x12\x0e\n\tmandibuzz\x10\xf6\x04\x12\x0c\n\x07heatmor\x10\xf7\x04\x12\x0b\n\x06\x64urant\x10\xf8\x04\x12\n\n\x05\x64\x65ino\x10\xf9\x04\x12\r\n\x08zweilous\x10\xfa\x04\x12\x0e\n\thydreigon\x10\xfb\x04\x12\r\n\x08larvesta\x10\xfc\x04\x12\x0e\n\tvolcarona\x10\xfd\x04\x12\r\n\x08\x63obalion\x10\xfe\x04\x12\x0e\n\tterrakion\x10\xff\x04\x12\r\n\x08virizion\x10\x80\x05\x12\r\n\x08tornadus\x10\x81\x05\x12\x0e\n\tthundurus\x10\x82\x05\x12\r\n\x08reshiram\x10\x83\x05\x12\x0b\n\x06zekrom\x10\x84\x05\x12\r\n\x08landorus\x10\x85\x05\x12\x0b\n\x06kyurem\x10\x86\x05\x12\x0b\n\x06keldeo\x10\x87\x05\x12\r\n\x08meloetta\x10\x88\x05\x12\r\n\x08genesect\x10\x89\x05\x12\x0c\n\x07\x63hespin\x10\x8a\x05\x12\x0e\n\tquilladin\x10\x8b\x05\x12\x0f\n\nchesnaught\x10\x8c\x05\x12\r\n\x08\x66\x65nnekin\x10\x8d\x05\x12\x0c\n\x07\x62raixen\x10\x8e\x05\x12\x0c\n\x07\x64\x65lphox\x10\x8f\x05\x12\x0c\n\x07\x66roakie\x10\x90\x05\x12\x0e\n\tfrogadier\x10\x91\x05\x12\r\n\x08greninja\x10\x92\x05\x12\r\n\x08\x62unnelby\x10\x93\x05\x12\x0e\n\tdiggersby\x10\x94\x05\x12\x0f\n\nfletchling\x10\x95\x05\x12\x10\n\x0b\x66letchinder\x10\x96\x05\x12\x0f\n\ntalonflame\x10\x97\x05\x12\x0f\n\nscatterbug\x10\x98\x05\x12\x0b\n\x06spewpa\x10\x99\x05\x12\r\n\x08vivillon\x10\x9a\x05\x12\x0b\n\x06litleo\x10\x9b\x05\x12\x0b\n\x06pyroar\x10\x9c\x05\x12\n\n\x05\x66labb\x10\x9d\x05\x12\x0c\n\x07\x66loette\x10\x9e\x05\x12\x0c\n\x07\x66lorges\x10\x9f\x05\x12\x0b\n\x06skiddo\x10\xa0\x05\x12\x0b\n\x06gogoat\x10\xa1\x05\x12\x0c\n\x07pancham\x10\xa2\x05\x12\x0c\n\x07pangoro\x10\xa3\x05\x12\x0c\n\x07\x66urfrou\x10\xa4\x05\x12\x0b\n\x06\x65spurr\x10\xa5\x05\x12\r\n\x08meowstic\x10\xa6\x05\x12\x0c\n\x07honedge\x10\xa7\x05\x12\r\n\x08\x64oublade\x10\xa8\x05\x12\x0e\n\taegislash\x10\xa9\x05\x12\r\n\x08spritzee\x10\xaa\x05\x12\x0f\n\naromatisse\x10\xab\x05\x12\x0c\n\x07swirlix\x10\xac\x05\x12\r\n\x08slurpuff\x10\xad\x05\x12\n\n\x05inkay\x10\xae\x05\x12\x0c\n\x07malamar\x10\xaf\x05\x12\x0c\n\x07\x62inacle\x10\xb0\x05\x12\x0f\n\nbarbaracle\x10\xb1\x05\x12\x0b\n\x06skrelp\x10\xb2\x05\x12\r\n\x08\x64ragalge\x10\xb3\x05\x12\x0e\n\tclauncher\x10\xb4\x05\x12\x0e\n\tclawitzer\x10\xb5\x05\x12\x0f\n\nhelioptile\x10\xb6\x05\x12\x0e\n\theliolisk\x10\xb7\x05\x12\x0b\n\x06tyrunt\x10\xb8\x05\x12\x0e\n\ttyrantrum\x10\xb9\x05\x12\x0b\n\x06\x61maura\x10\xba\x05\x12\x0c\n\x07\x61urorus\x10\xbb\x05\x12\x0c\n\x07sylveon\x10\xbc\x05\x12\r\n\x08hawlucha\x10\xbd\x05\x12\x0c\n\x07\x64\x65\x64\x65nne\x10\xbe\x05\x12\x0c\n\x07\x63\x61rbink\x10\xbf\x05\x12\n\n\x05goomy\x10\xc0\x05\x12\x0c\n\x07sliggoo\x10\xc1\x05\x12\x0b\n\x06goodra\x10\xc2\x05\x12\x0b\n\x06klefki\x10\xc3\x05\x12\r\n\x08phantump\x10\xc4\x05\x12\x0e\n\ttrevenant\x10\xc5\x05\x12\x0e\n\tpumpkaboo\x10\xc6\x05\x12\x0e\n\tgourgeist\x10\xc7\x05\x12\r\n\x08\x62\x65rgmite\x10\xc8\x05\x12\x0c\n\x07\x61valugg\x10\xc9\x05\x12\x0b\n\x06noibat\x10\xca\x05\x12\x0c\n\x07noivern\x10\xcb\x05\x12\x0c\n\x07xerneas\x10\xcc\x05\x12\x0c\n\x07yveltal\x10\xcd\x05\x12\x0c\n\x07zygarde\x10\xce\x05\x12\x0c\n\x07\x64iancie\x10\xcf\x05\x12\n\n\x05hoopa\x10\xd0\x05\x12\x0e\n\tvolcanion\x10\xd1\x05\x12\x0b\n\x06rowlet\x10\xd2\x05\x12\x0c\n\x07\x64\x61rtrix\x10\xd3\x05\x12\x0e\n\tdecidueye\x10\xd4\x05\x12\x0b\n\x06litten\x10\xd5\x05\x12\r\n\x08torracat\x10\xd6\x05\x12\x0f\n\nincineroar\x10\xd7\x05\x12\x0c\n\x07popplio\x10\xd8\x05\x12\x0c\n\x07\x62rionne\x10\xd9\x05\x12\x0e\n\tprimarina\x10\xda\x05\x12\x0c\n\x07pikipek\x10\xdb\x05\x12\r\n\x08trumbeak\x10\xdc\x05\x12\x0e\n\ttoucannon\x10\xdd\x05\x12\x0c\n\x07yungoos\x10\xde\x05\x12\r\n\x08gumshoos\x10\xdf\x05\x12\x0c\n\x07grubbin\x10\xe0\x05\x12\x0e\n\tcharjabug\x10\xe1\x05\x12\r\n\x08vikavolt\x10\xe2\x05\x12\x0f\n\ncrabrawler\x10\xe3\x05\x12\x11\n\x0c\x63rabominable\x10\xe4\x05\x12\r\n\x08oricorio\x10\xe5\x05\x12\r\n\x08\x63utiefly\x10\xe6\x05\x12\r\n\x08ribombee\x10\xe7\x05\x12\r\n\x08rockruff\x10\xe8\x05\x12\r\n\x08lycanroc\x10\xe9\x05\x12\x0f\n\nwishiwashi\x10\xea\x05\x12\r\n\x08mareanie\x10\xeb\x05\x12\x0c\n\x07toxapex\x10\xec\x05\x12\x0c\n\x07mudbray\x10\xed\x05\x12\r\n\x08mudsdale\x10\xee\x05\x12\r\n\x08\x64\x65wpider\x10\xef\x05\x12\x0e\n\taraquanid\x10\xf0\x05\x12\r\n\x08\x66omantis\x10\xf1\x05\x12\r\n\x08lurantis\x10\xf2\x05\x12\r\n\x08morelull\x10\xf3\x05\x12\x0e\n\tshiinotic\x10\xf4\x05\x12\r\n\x08salandit\x10\xf5\x05\x12\r\n\x08salazzle\x10\xf6\x05\x12\x0c\n\x07stufful\x10\xf7\x05\x12\x0b\n\x06\x62\x65wear\x10\xf8\x05\x12\x0e\n\tbounsweet\x10\xf9\x05\x12\x0c\n\x07steenee\x10\xfa\x05\x12\r\n\x08tsareena\x10\xfb\x05\x12\x0b\n\x06\x63omfey\x10\xfc\x05\x12\r\n\x08oranguru\x10\xfd\x05\x12\x0e\n\tpassimian\x10\xfe\x05\x12\x0b\n\x06wimpod\x10\xff\x05\x12\x0e\n\tgolisopod\x10\x80\x06\x12\x0e\n\tsandygast\x10\x81\x06\x12\x0e\n\tpalossand\x10\x82\x06\x12\x0e\n\tpyukumuku\x10\x83\x06\x12\r\n\x08typenull\x10\x84\x06\x12\r\n\x08silvally\x10\x85\x06\x12\x0b\n\x06minior\x10\x86\x06\x12\x0b\n\x06komala\x10\x87\x06\x12\x0f\n\nturtonator\x10\x88\x06\x12\x0f\n\ntogedemaru\x10\x89\x06\x12\x0c\n\x07mimikyu\x10\x8a\x06\x12\x0c\n\x07\x62ruxish\x10\x8b\x06\x12\x0b\n\x06\x64rampa\x10\x8c\x06\x12\r\n\x08\x64helmise\x10\x8d\x06\x12\x0c\n\x07jangmoo\x10\x8e\x06\x12\x0c\n\x07hakamoo\x10\x8f\x06\x12\x0b\n\x06kommoo\x10\x90\x06\x12\r\n\x08tapukoko\x10\x91\x06\x12\r\n\x08tapulele\x10\x92\x06\x12\r\n\x08tapubulu\x10\x93\x06\x12\r\n\x08tapufini\x10\x94\x06\x12\x0b\n\x06\x63osmog\x10\x95\x06\x12\x0c\n\x07\x63osmoem\x10\x96\x06\x12\r\n\x08solgaleo\x10\x97\x06\x12\x0b\n\x06lunala\x10\x98\x06\x12\r\n\x08nihilego\x10\x99\x06\x12\r\n\x08\x62uzzwole\x10\x9a\x06\x12\x0e\n\tpheromosa\x10\x9b\x06\x12\x0e\n\txurkitree\x10\x9c\x06\x12\x0f\n\ncelesteela\x10\x9d\x06\x12\x0c\n\x07kartana\x10\x9e\x06\x12\r\n\x08guzzlord\x10\x9f\x06\x12\r\n\x08necrozma\x10\xa0\x06\x12\r\n\x08magearna\x10\xa1\x06\x12\x0e\n\tmarshadow\x10\xa2\x06*\x91X\n\rPokemonMoveID\x12\x08\n\x04none\x10\x00\x12\t\n\x05pound\x10\x01\x12\x0e\n\nkaratechop\x10\x02\x12\x0e\n\ndoubleslap\x10\x03\x12\x0e\n\ncometpunch\x10\x04\x12\r\n\tmegapunch\x10\x05\x12\n\n\x06payday\x10\x06\x12\r\n\tfirepunch\x10\x07\x12\x0c\n\x08icepunch\x10\x08\x12\x10\n\x0cthunderpunch\x10\t\x12\x0b\n\x07scratch\x10\n\x12\x0c\n\x08vicegrip\x10\x0b\x12\x0e\n\nguillotine\x10\x0c\x12\r\n\trazorwind\x10\r\x12\x0f\n\x0bswordsdance\x10\x0e\x12\x07\n\x03\x63ut\x10\x0f\x12\x08\n\x04gust\x10\x10\x12\x0e\n\nwingattack\x10\x11\x12\r\n\twhirlwind\x10\x12\x12\x07\n\x03\x66ly\x10\x13\x12\x08\n\x04\x62ind\x10\x14\x12\x08\n\x04slam\x10\x15\x12\x0c\n\x08vinewhip\x10\x16\x12\t\n\x05stomp\x10\x17\x12\x0e\n\ndoublekick\x10\x18\x12\x0c\n\x08megakick\x10\x19\x12\x0c\n\x08jumpkick\x10\x1a\x12\x0f\n\x0brollingkick\x10\x1b\x12\x0e\n\nsandattack\x10\x1c\x12\x0c\n\x08headbutt\x10\x1d\x12\x0e\n\nhornattack\x10\x1e\x12\x0e\n\nfuryattack\x10\x1f\x12\r\n\thorndrill\x10 \x12\n\n\x06tackle\x10!\x12\x0c\n\x08\x62odyslam\x10\"\x12\x08\n\x04wrap\x10#\x12\x0c\n\x08takedown\x10$\x12\n\n\x06thrash\x10%\x12\x0e\n\ndoubleedge\x10&\x12\x0c\n\x08tailwhip\x10\'\x12\x0f\n\x0bpoisonsting\x10(\x12\r\n\ttwineedle\x10)\x12\x0e\n\npinmissile\x10*\x12\x08\n\x04leer\x10+\x12\x08\n\x04\x62ite\x10,\x12\t\n\x05growl\x10-\x12\x08\n\x04roar\x10.\x12\x08\n\x04sing\x10/\x12\x0e\n\nsupersonic\x10\x30\x12\r\n\tsonicboom\x10\x31\x12\x0b\n\x07\x64isable\x10\x32\x12\x08\n\x04\x61\x63id\x10\x33\x12\t\n\x05\x65mber\x10\x34\x12\x10\n\x0c\x66lamethrower\x10\x35\x12\x08\n\x04mist\x10\x36\x12\x0c\n\x08watergun\x10\x37\x12\r\n\thydropump\x10\x38\x12\x08\n\x04surf\x10\x39\x12\x0b\n\x07icebeam\x10:\x12\x0c\n\x08\x62lizzard\x10;\x12\x0b\n\x07psybeam\x10<\x12\x0e\n\nbubblebeam\x10=\x12\x0e\n\naurorabeam\x10>\x12\r\n\thyperbeam\x10?\x12\x08\n\x04peck\x10@\x12\r\n\tdrillpeck\x10\x41\x12\x0e\n\nsubmission\x10\x42\x12\x0b\n\x07lowkick\x10\x43\x12\x0b\n\x07\x63ounter\x10\x44\x12\x0f\n\x0bseismictoss\x10\x45\x12\x0c\n\x08strength\x10\x46\x12\n\n\x06\x61\x62sorb\x10G\x12\r\n\tmegadrain\x10H\x12\r\n\tleechseed\x10I\x12\n\n\x06growth\x10J\x12\r\n\trazorleaf\x10K\x12\r\n\tsolarbeam\x10L\x12\x10\n\x0cpoisonpowder\x10M\x12\r\n\tstunspore\x10N\x12\x0f\n\x0bsleeppowder\x10O\x12\x0e\n\npetaldance\x10P\x12\x0e\n\nstringshot\x10Q\x12\x0e\n\ndragonrage\x10R\x12\x0c\n\x08\x66irespin\x10S\x12\x10\n\x0cthundershock\x10T\x12\x0f\n\x0bthunderbolt\x10U\x12\x0f\n\x0bthunderwave\x10V\x12\x0b\n\x07thunder\x10W\x12\r\n\trockthrow\x10X\x12\x0e\n\nearthquake\x10Y\x12\x0b\n\x07\x66issure\x10Z\x12\x07\n\x03\x64ig\x10[\x12\t\n\x05toxic\x10\\\x12\r\n\tconfusion\x10]\x12\x0b\n\x07psychic\x10^\x12\x0c\n\x08hypnosis\x10_\x12\x0c\n\x08meditate\x10`\x12\x0b\n\x07\x61gility\x10\x61\x12\x0f\n\x0bquickattack\x10\x62\x12\x08\n\x04rage\x10\x63\x12\x0c\n\x08teleport\x10\x64\x12\x0e\n\nnightshade\x10\x65\x12\t\n\x05mimic\x10\x66\x12\x0b\n\x07screech\x10g\x12\x0e\n\ndoubleteam\x10h\x12\x0b\n\x07recover\x10i\x12\n\n\x06harden\x10j\x12\x0c\n\x08minimize\x10k\x12\x0f\n\x0bsmokescreen\x10l\x12\x0e\n\nconfuseray\x10m\x12\x0c\n\x08withdraw\x10n\x12\x0f\n\x0b\x64\x65\x66\x65nsecurl\x10o\x12\x0b\n\x07\x62\x61rrier\x10p\x12\x0f\n\x0blightscreen\x10q\x12\x08\n\x04haze\x10r\x12\x0b\n\x07reflect\x10s\x12\x0f\n\x0b\x66ocusenergy\x10t\x12\x08\n\x04\x62ide\x10u\x12\r\n\tmetronome\x10v\x12\x0e\n\nmirrormove\x10w\x12\x10\n\x0cselfdestruct\x10x\x12\x0b\n\x07\x65ggbomb\x10y\x12\x08\n\x04lick\x10z\x12\x08\n\x04smog\x10{\x12\n\n\x06sludge\x10|\x12\x0c\n\x08\x62oneclub\x10}\x12\r\n\tfireblast\x10~\x12\r\n\twaterfall\x10\x7f\x12\n\n\x05\x63lamp\x10\x80\x01\x12\n\n\x05swift\x10\x81\x01\x12\x0e\n\tskullbash\x10\x82\x01\x12\x10\n\x0bspikecannon\x10\x83\x01\x12\x0e\n\tconstrict\x10\x84\x01\x12\x0c\n\x07\x61mnesia\x10\x85\x01\x12\x0c\n\x07kinesis\x10\x86\x01\x12\x0f\n\nsoftboiled\x10\x87\x01\x12\x11\n\x0chighjumpkick\x10\x88\x01\x12\n\n\x05glare\x10\x89\x01\x12\x0f\n\ndreameater\x10\x8a\x01\x12\x0e\n\tpoisongas\x10\x8b\x01\x12\x0c\n\x07\x62\x61rrage\x10\x8c\x01\x12\x0e\n\tleechlife\x10\x8d\x01\x12\x0f\n\nlovelykiss\x10\x8e\x01\x12\x0e\n\tskyattack\x10\x8f\x01\x12\x0e\n\ttransform\x10\x90\x01\x12\x0b\n\x06\x62ubble\x10\x91\x01\x12\x0f\n\ndizzypunch\x10\x92\x01\x12\n\n\x05spore\x10\x93\x01\x12\n\n\x05\x66lash\x10\x94\x01\x12\x0c\n\x07psywave\x10\x95\x01\x12\x0b\n\x06splash\x10\x96\x01\x12\x0e\n\tacidarmor\x10\x97\x01\x12\x0f\n\ncrabhammer\x10\x98\x01\x12\x0e\n\texplosion\x10\x99\x01\x12\x0f\n\nfuryswipes\x10\x9a\x01\x12\x0f\n\nbonemerang\x10\x9b\x01\x12\t\n\x04rest\x10\x9c\x01\x12\x0e\n\trockslide\x10\x9d\x01\x12\x0e\n\thyperfang\x10\x9e\x01\x12\x0c\n\x07sharpen\x10\x9f\x01\x12\x0f\n\nconversion\x10\xa0\x01\x12\x0e\n\ttriattack\x10\xa1\x01\x12\x0e\n\tsuperfang\x10\xa2\x01\x12\n\n\x05slash\x10\xa3\x01\x12\x0f\n\nsubstitute\x10\xa4\x01\x12\r\n\x08struggle\x10\xa5\x01\x12\x0b\n\x06sketch\x10\xa6\x01\x12\x0f\n\ntriplekick\x10\xa7\x01\x12\n\n\x05thief\x10\xa8\x01\x12\x0e\n\tspiderweb\x10\xa9\x01\x12\x0f\n\nmindreader\x10\xaa\x01\x12\x0e\n\tnightmare\x10\xab\x01\x12\x0f\n\nflamewheel\x10\xac\x01\x12\n\n\x05snore\x10\xad\x01\x12\n\n\x05\x63urse\x10\xae\x01\x12\n\n\x05\x66lail\x10\xaf\x01\x12\x10\n\x0b\x63onversion2\x10\xb0\x01\x12\x0e\n\taeroblast\x10\xb1\x01\x12\x10\n\x0b\x63ottonspore\x10\xb2\x01\x12\r\n\x08reversal\x10\xb3\x01\x12\n\n\x05spite\x10\xb4\x01\x12\x0f\n\npowdersnow\x10\xb5\x01\x12\x0c\n\x07protect\x10\xb6\x01\x12\x0e\n\tmachpunch\x10\xb7\x01\x12\x0e\n\tscaryface\x10\xb8\x01\x12\x10\n\x0b\x66\x65intattack\x10\xb9\x01\x12\x0e\n\tsweetkiss\x10\xba\x01\x12\x0e\n\tbellydrum\x10\xbb\x01\x12\x0f\n\nsludgebomb\x10\xbc\x01\x12\x0c\n\x07mudslap\x10\xbd\x01\x12\x0e\n\toctazooka\x10\xbe\x01\x12\x0b\n\x06spikes\x10\xbf\x01\x12\x0e\n\tzapcannon\x10\xc0\x01\x12\x0e\n\tforesight\x10\xc1\x01\x12\x10\n\x0b\x64\x65stinybond\x10\xc2\x01\x12\x0f\n\nperishsong\x10\xc3\x01\x12\x0c\n\x07icywind\x10\xc4\x01\x12\x0b\n\x06\x64\x65tect\x10\xc5\x01\x12\r\n\x08\x62onerush\x10\xc6\x01\x12\x0b\n\x06lockon\x10\xc7\x01\x12\x0c\n\x07outrage\x10\xc8\x01\x12\x0e\n\tsandstorm\x10\xc9\x01\x12\x0e\n\tgigadrain\x10\xca\x01\x12\x0b\n\x06\x65ndure\x10\xcb\x01\x12\n\n\x05\x63harm\x10\xcc\x01\x12\x0c\n\x07rollout\x10\xcd\x01\x12\x0f\n\nfalseswipe\x10\xce\x01\x12\x0c\n\x07swagger\x10\xcf\x01\x12\x0e\n\tmilkdrink\x10\xd0\x01\x12\n\n\x05spark\x10\xd1\x01\x12\x0f\n\nfurycutter\x10\xd2\x01\x12\x0e\n\tsteelwing\x10\xd3\x01\x12\r\n\x08meanlook\x10\xd4\x01\x12\x0c\n\x07\x61ttract\x10\xd5\x01\x12\x0e\n\tsleeptalk\x10\xd6\x01\x12\r\n\x08healbell\x10\xd7\x01\x12\r\n\x08__return\x10\xd8\x01\x12\x0c\n\x07present\x10\xd9\x01\x12\x10\n\x0b\x66rustration\x10\xda\x01\x12\x0e\n\tsafeguard\x10\xdb\x01\x12\x0e\n\tpainsplit\x10\xdc\x01\x12\x0f\n\nsacredfire\x10\xdd\x01\x12\x0e\n\tmagnitude\x10\xde\x01\x12\x11\n\x0c\x64ynamicpunch\x10\xdf\x01\x12\r\n\x08megahorn\x10\xe0\x01\x12\x11\n\x0c\x64ragonbreath\x10\xe1\x01\x12\x0e\n\tbatonpass\x10\xe2\x01\x12\x0b\n\x06\x65ncore\x10\xe3\x01\x12\x0c\n\x07pursuit\x10\xe4\x01\x12\x0e\n\trapidspin\x10\xe5\x01\x12\x0f\n\nsweetscent\x10\xe6\x01\x12\r\n\x08irontail\x10\xe7\x01\x12\x0e\n\tmetalclaw\x10\xe8\x01\x12\x0f\n\nvitalthrow\x10\xe9\x01\x12\x0f\n\nmorningsun\x10\xea\x01\x12\x0e\n\tsynthesis\x10\xeb\x01\x12\x0e\n\tmoonlight\x10\xec\x01\x12\x10\n\x0bhiddenpower\x10\xed\x01\x12\x0e\n\tcrosschop\x10\xee\x01\x12\x0c\n\x07twister\x10\xef\x01\x12\x0e\n\traindance\x10\xf0\x01\x12\r\n\x08sunnyday\x10\xf1\x01\x12\x0b\n\x06\x63runch\x10\xf2\x01\x12\x0f\n\nmirrorcoat\x10\xf3\x01\x12\x0c\n\x07psychup\x10\xf4\x01\x12\x11\n\x0c\x65xtremespeed\x10\xf5\x01\x12\x11\n\x0c\x61ncientpower\x10\xf6\x01\x12\x0f\n\nshadowball\x10\xf7\x01\x12\x10\n\x0b\x66uturesight\x10\xf8\x01\x12\x0e\n\trocksmash\x10\xf9\x01\x12\x0e\n\twhirlpool\x10\xfa\x01\x12\x0b\n\x06\x62\x65\x61tup\x10\xfb\x01\x12\x0c\n\x07\x66\x61keout\x10\xfc\x01\x12\x0b\n\x06uproar\x10\xfd\x01\x12\x0e\n\tstockpile\x10\xfe\x01\x12\x0b\n\x06spitup\x10\xff\x01\x12\x0c\n\x07swallow\x10\x80\x02\x12\r\n\x08heatwave\x10\x81\x02\x12\t\n\x04hail\x10\x82\x02\x12\x0c\n\x07torment\x10\x83\x02\x12\x0c\n\x07\x66latter\x10\x84\x02\x12\x0e\n\twillowisp\x10\x85\x02\x12\x0c\n\x07memento\x10\x86\x02\x12\x0b\n\x06\x66\x61\x63\x61\x64\x65\x10\x87\x02\x12\x0f\n\nfocuspunch\x10\x88\x02\x12\x12\n\rsmellingsalts\x10\x89\x02\x12\r\n\x08\x66ollowme\x10\x8a\x02\x12\x10\n\x0bnaturepower\x10\x8b\x02\x12\x0b\n\x06\x63harge\x10\x8c\x02\x12\n\n\x05taunt\x10\x8d\x02\x12\x10\n\x0bhelpinghand\x10\x8e\x02\x12\n\n\x05trick\x10\x8f\x02\x12\r\n\x08roleplay\x10\x90\x02\x12\t\n\x04wish\x10\x91\x02\x12\x0b\n\x06\x61ssist\x10\x92\x02\x12\x0c\n\x07ingrain\x10\x93\x02\x12\x0f\n\nsuperpower\x10\x94\x02\x12\x0e\n\tmagiccoat\x10\x95\x02\x12\x0c\n\x07recycle\x10\x96\x02\x12\x0c\n\x07revenge\x10\x97\x02\x12\x0f\n\nbrickbreak\x10\x98\x02\x12\t\n\x04yawn\x10\x99\x02\x12\r\n\x08knockoff\x10\x9a\x02\x12\r\n\x08\x65ndeavor\x10\x9b\x02\x12\r\n\x08\x65ruption\x10\x9c\x02\x12\x0e\n\tskillswap\x10\x9d\x02\x12\r\n\x08imprison\x10\x9e\x02\x12\x0c\n\x07refresh\x10\x9f\x02\x12\x0b\n\x06grudge\x10\xa0\x02\x12\x0b\n\x06snatch\x10\xa1\x02\x12\x10\n\x0bsecretpower\x10\xa2\x02\x12\t\n\x04\x64ive\x10\xa3\x02\x12\x0e\n\tarmthrust\x10\xa4\x02\x12\x0f\n\ncamouflage\x10\xa5\x02\x12\r\n\x08tailglow\x10\xa6\x02\x12\x10\n\x0blusterpurge\x10\xa7\x02\x12\r\n\x08mistball\x10\xa8\x02\x12\x11\n\x0c\x66\x65\x61therdance\x10\xa9\x02\x12\x10\n\x0bteeterdance\x10\xaa\x02\x12\x0e\n\tblazekick\x10\xab\x02\x12\r\n\x08mudsport\x10\xac\x02\x12\x0c\n\x07iceball\x10\xad\x02\x12\x0e\n\tneedlearm\x10\xae\x02\x12\r\n\x08slackoff\x10\xaf\x02\x12\x0f\n\nhypervoice\x10\xb0\x02\x12\x0f\n\npoisonfang\x10\xb1\x02\x12\x0e\n\tcrushclaw\x10\xb2\x02\x12\x0e\n\tblastburn\x10\xb3\x02\x12\x10\n\x0bhydrocannon\x10\xb4\x02\x12\x0f\n\nmeteormash\x10\xb5\x02\x12\r\n\x08\x61stonish\x10\xb6\x02\x12\x10\n\x0bweatherball\x10\xb7\x02\x12\x11\n\x0c\x61romatherapy\x10\xb8\x02\x12\x0e\n\tfaketears\x10\xb9\x02\x12\x0e\n\taircutter\x10\xba\x02\x12\r\n\x08overheat\x10\xbb\x02\x12\x0f\n\nodorsleuth\x10\xbc\x02\x12\r\n\x08rocktomb\x10\xbd\x02\x12\x0f\n\nsilverwind\x10\xbe\x02\x12\x0f\n\nmetalsound\x10\xbf\x02\x12\x11\n\x0cgrasswhistle\x10\xc0\x02\x12\x0b\n\x06tickle\x10\xc1\x02\x12\x10\n\x0b\x63osmicpower\x10\xc2\x02\x12\x0f\n\nwaterspout\x10\xc3\x02\x12\x0f\n\nsignalbeam\x10\xc4\x02\x12\x10\n\x0bshadowpunch\x10\xc5\x02\x12\x11\n\x0c\x65xtrasensory\x10\xc6\x02\x12\x10\n\x0bskyuppercut\x10\xc7\x02\x12\r\n\x08sandtomb\x10\xc8\x02\x12\x0e\n\tsheercold\x10\xc9\x02\x12\x0f\n\nmuddywater\x10\xca\x02\x12\x0f\n\nbulletseed\x10\xcb\x02\x12\x0e\n\taerialace\x10\xcc\x02\x12\x10\n\x0biciclespear\x10\xcd\x02\x12\x10\n\x0birondefense\x10\xce\x02\x12\n\n\x05\x62lock\x10\xcf\x02\x12\t\n\x04howl\x10\xd0\x02\x12\x0f\n\ndragonclaw\x10\xd1\x02\x12\x10\n\x0b\x66renzyplant\x10\xd2\x02\x12\x0b\n\x06\x62ulkup\x10\xd3\x02\x12\x0b\n\x06\x62ounce\x10\xd4\x02\x12\x0c\n\x07mudshot\x10\xd5\x02\x12\x0f\n\npoisontail\x10\xd6\x02\x12\n\n\x05\x63ovet\x10\xd7\x02\x12\x0f\n\nvolttackle\x10\xd8\x02\x12\x10\n\x0bmagicalleaf\x10\xd9\x02\x12\x0f\n\nwatersport\x10\xda\x02\x12\r\n\x08\x63\x61lmmind\x10\xdb\x02\x12\x0e\n\tleafblade\x10\xdc\x02\x12\x10\n\x0b\x64ragondance\x10\xdd\x02\x12\x0e\n\trockblast\x10\xde\x02\x12\x0e\n\tshockwave\x10\xdf\x02\x12\x0f\n\nwaterpulse\x10\xe0\x02\x12\x0f\n\ndoomdesire\x10\xe1\x02\x12\x10\n\x0bpsychoboost\x10\xe2\x02\x12\n\n\x05roost\x10\xe3\x02\x12\x0c\n\x07gravity\x10\xe4\x02\x12\x0f\n\nmiracleeye\x10\xe5\x02\x12\x0f\n\nwakeupslap\x10\xe6\x02\x12\x0e\n\thammerarm\x10\xe7\x02\x12\r\n\x08gyroball\x10\xe8\x02\x12\x10\n\x0bhealingwish\x10\xe9\x02\x12\n\n\x05\x62rine\x10\xea\x02\x12\x10\n\x0bnaturalgift\x10\xeb\x02\x12\n\n\x05\x66\x65int\x10\xec\x02\x12\n\n\x05pluck\x10\xed\x02\x12\r\n\x08tailwind\x10\xee\x02\x12\x10\n\x0b\x61\x63upressure\x10\xef\x02\x12\x0f\n\nmetalburst\x10\xf0\x02\x12\n\n\x05uturn\x10\xf1\x02\x12\x10\n\x0b\x63losecombat\x10\xf2\x02\x12\x0c\n\x07payback\x10\xf3\x02\x12\x0e\n\tassurance\x10\xf4\x02\x12\x0c\n\x07\x65mbargo\x10\xf5\x02\x12\n\n\x05\x66ling\x10\xf6\x02\x12\x10\n\x0bpsychoshift\x10\xf7\x02\x12\x0e\n\ttrumpcard\x10\xf8\x02\x12\x0e\n\thealblock\x10\xf9\x02\x12\r\n\x08wringout\x10\xfa\x02\x12\x0f\n\npowertrick\x10\xfb\x02\x12\x0f\n\ngastroacid\x10\xfc\x02\x12\x0f\n\nluckychant\x10\xfd\x02\x12\x0c\n\x07mefirst\x10\xfe\x02\x12\x0c\n\x07\x63opycat\x10\xff\x02\x12\x0e\n\tpowerswap\x10\x80\x03\x12\x0e\n\tguardswap\x10\x81\x03\x12\x0f\n\npunishment\x10\x82\x03\x12\x0f\n\nlastresort\x10\x83\x03\x12\x0e\n\tworryseed\x10\x84\x03\x12\x10\n\x0bsuckerpunch\x10\x85\x03\x12\x10\n\x0btoxicspikes\x10\x86\x03\x12\x0e\n\theartswap\x10\x87\x03\x12\r\n\x08\x61quaring\x10\x88\x03\x12\x0f\n\nmagnetrise\x10\x89\x03\x12\x0f\n\nflareblitz\x10\x8a\x03\x12\x0e\n\tforcepalm\x10\x8b\x03\x12\x0f\n\naurasphere\x10\x8c\x03\x12\x0f\n\nrockpolish\x10\x8d\x03\x12\x0e\n\tpoisonjab\x10\x8e\x03\x12\x0e\n\tdarkpulse\x10\x8f\x03\x12\x0f\n\nnightslash\x10\x90\x03\x12\r\n\x08\x61quatail\x10\x91\x03\x12\r\n\x08seedbomb\x10\x92\x03\x12\r\n\x08\x61irslash\x10\x93\x03\x12\r\n\x08xscissor\x10\x94\x03\x12\x0c\n\x07\x62ugbuzz\x10\x95\x03\x12\x10\n\x0b\x64ragonpulse\x10\x96\x03\x12\x0f\n\ndragonrush\x10\x97\x03\x12\r\n\x08powergem\x10\x98\x03\x12\x0f\n\ndrainpunch\x10\x99\x03\x12\x0f\n\nvacuumwave\x10\x9a\x03\x12\x0f\n\nfocusblast\x10\x9b\x03\x12\x0f\n\nenergyball\x10\x9c\x03\x12\x0e\n\tbravebird\x10\x9d\x03\x12\x0f\n\nearthpower\x10\x9e\x03\x12\x0f\n\nswitcheroo\x10\x9f\x03\x12\x0f\n\ngigaimpact\x10\xa0\x03\x12\x0e\n\tnastyplot\x10\xa1\x03\x12\x10\n\x0b\x62ulletpunch\x10\xa2\x03\x12\x0e\n\tavalanche\x10\xa3\x03\x12\r\n\x08iceshard\x10\xa4\x03\x12\x0f\n\nshadowclaw\x10\xa5\x03\x12\x10\n\x0bthunderfang\x10\xa6\x03\x12\x0c\n\x07icefang\x10\xa7\x03\x12\r\n\x08\x66irefang\x10\xa8\x03\x12\x10\n\x0bshadowsneak\x10\xa9\x03\x12\x0c\n\x07mudbomb\x10\xaa\x03\x12\x0e\n\tpsychocut\x10\xab\x03\x12\x10\n\x0bzenheadbutt\x10\xac\x03\x12\x0f\n\nmirrorshot\x10\xad\x03\x12\x10\n\x0b\x66lashcannon\x10\xae\x03\x12\x0e\n\trockclimb\x10\xaf\x03\x12\n\n\x05\x64\x65\x66og\x10\xb0\x03\x12\x0e\n\ttrickroom\x10\xb1\x03\x12\x10\n\x0b\x64racometeor\x10\xb2\x03\x12\x0e\n\tdischarge\x10\xb3\x03\x12\x0e\n\tlavaplume\x10\xb4\x03\x12\x0e\n\tleafstorm\x10\xb5\x03\x12\x0e\n\tpowerwhip\x10\xb6\x03\x12\x10\n\x0brockwrecker\x10\xb7\x03\x12\x10\n\x0b\x63rosspoison\x10\xb8\x03\x12\r\n\x08gunkshot\x10\xb9\x03\x12\r\n\x08ironhead\x10\xba\x03\x12\x0f\n\nmagnetbomb\x10\xbb\x03\x12\x0e\n\tstoneedge\x10\xbc\x03\x12\x0e\n\tcaptivate\x10\xbd\x03\x12\x10\n\x0bstealthrock\x10\xbe\x03\x12\x0e\n\tgrassknot\x10\xbf\x03\x12\x0c\n\x07\x63hatter\x10\xc0\x03\x12\r\n\x08judgment\x10\xc1\x03\x12\x0c\n\x07\x62ugbite\x10\xc2\x03\x12\x0f\n\nchargebeam\x10\xc3\x03\x12\x0f\n\nwoodhammer\x10\xc4\x03\x12\x0c\n\x07\x61quajet\x10\xc5\x03\x12\x10\n\x0b\x61ttackorder\x10\xc6\x03\x12\x10\n\x0b\x64\x65\x66\x65ndorder\x10\xc7\x03\x12\x0e\n\thealorder\x10\xc8\x03\x12\x0e\n\theadsmash\x10\xc9\x03\x12\x0e\n\tdoublehit\x10\xca\x03\x12\x0f\n\nroaroftime\x10\xcb\x03\x12\x10\n\x0bspacialrend\x10\xcc\x03\x12\x0f\n\nlunardance\x10\xcd\x03\x12\x0e\n\tcrushgrip\x10\xce\x03\x12\x0f\n\nmagmastorm\x10\xcf\x03\x12\r\n\x08\x64\x61rkvoid\x10\xd0\x03\x12\x0e\n\tseedflare\x10\xd1\x03\x12\x10\n\x0bominouswind\x10\xd2\x03\x12\x10\n\x0bshadowforce\x10\xd3\x03\x12\x0e\n\thoneclaws\x10\xd4\x03\x12\x0e\n\twideguard\x10\xd5\x03\x12\x0f\n\nguardsplit\x10\xd6\x03\x12\x0f\n\npowersplit\x10\xd7\x03\x12\x0f\n\nwonderroom\x10\xd8\x03\x12\r\n\x08psyshock\x10\xd9\x03\x12\x0e\n\tvenoshock\x10\xda\x03\x12\x0f\n\nautotomize\x10\xdb\x03\x12\x0f\n\nragepowder\x10\xdc\x03\x12\x10\n\x0btelekinesis\x10\xdd\x03\x12\x0e\n\tmagicroom\x10\xde\x03\x12\x0e\n\tsmackdown\x10\xdf\x03\x12\x0f\n\nstormthrow\x10\xe0\x03\x12\x0f\n\nflameburst\x10\xe1\x03\x12\x0f\n\nsludgewave\x10\xe2\x03\x12\x10\n\x0bquiverdance\x10\xe3\x03\x12\x0e\n\theavyslam\x10\xe4\x03\x12\x11\n\x0csynchronoise\x10\xe5\x03\x12\x10\n\x0b\x65lectroball\x10\xe6\x03\x12\t\n\x04soak\x10\xe7\x03\x12\x10\n\x0b\x66lamecharge\x10\xe8\x03\x12\t\n\x04\x63oil\x10\xe9\x03\x12\r\n\x08lowsweep\x10\xea\x03\x12\x0e\n\tacidspray\x10\xeb\x03\x12\r\n\x08\x66oulplay\x10\xec\x03\x12\x0f\n\nsimplebeam\x10\xed\x03\x12\x10\n\x0b\x65ntrainment\x10\xee\x03\x12\r\n\x08\x61\x66teryou\x10\xef\x03\x12\n\n\x05round\x10\xf0\x03\x12\x10\n\x0b\x65\x63hoedvoice\x10\xf1\x03\x12\r\n\x08\x63hipaway\x10\xf2\x03\x12\x0e\n\tclearsmog\x10\xf3\x03\x12\x10\n\x0bstoredpower\x10\xf4\x03\x12\x0f\n\nquickguard\x10\xf5\x03\x12\x0f\n\nallyswitch\x10\xf6\x03\x12\n\n\x05scald\x10\xf7\x03\x12\x0f\n\nshellsmash\x10\xf8\x03\x12\x0e\n\thealpulse\x10\xf9\x03\x12\x08\n\x03hex\x10\xfa\x03\x12\x0c\n\x07skydrop\x10\xfb\x03\x12\x0e\n\tshiftgear\x10\xfc\x03\x12\x10\n\x0b\x63irclethrow\x10\xfd\x03\x12\x0f\n\nincinerate\x10\xfe\x03\x12\n\n\x05quash\x10\xff\x03\x12\x0f\n\nacrobatics\x10\x80\x04\x12\x10\n\x0breflecttype\x10\x81\x04\x12\x0e\n\tretaliate\x10\x82\x04\x12\x10\n\x0b\x66inalgambit\x10\x83\x04\x12\x0b\n\x06\x62\x65stow\x10\x84\x04\x12\x0c\n\x07inferno\x10\x85\x04\x12\x10\n\x0bwaterpledge\x10\x86\x04\x12\x0f\n\nfirepledge\x10\x87\x04\x12\x10\n\x0bgrasspledge\x10\x88\x04\x12\x0f\n\nvoltswitch\x10\x89\x04\x12\x10\n\x0bstrugglebug\x10\x8a\x04\x12\r\n\x08\x62ulldoze\x10\x8b\x04\x12\x10\n\x0b\x66rostbreath\x10\x8c\x04\x12\x0f\n\ndragontail\x10\x8d\x04\x12\x0b\n\x06workup\x10\x8e\x04\x12\x0f\n\nelectroweb\x10\x8f\x04\x12\x0f\n\nwildcharge\x10\x90\x04\x12\r\n\x08\x64rillrun\x10\x91\x04\x12\r\n\x08\x64ualchop\x10\x92\x04\x12\x0f\n\nheartstamp\x10\x93\x04\x12\x0e\n\thornleech\x10\x94\x04\x12\x10\n\x0bsacredsword\x10\x95\x04\x12\x0f\n\nrazorshell\x10\x96\x04\x12\x0e\n\theatcrash\x10\x97\x04\x12\x10\n\x0bleaftornado\x10\x98\x04\x12\x10\n\x0bsteamroller\x10\x99\x04\x12\x10\n\x0b\x63ottonguard\x10\x9a\x04\x12\x0e\n\tnightdaze\x10\x9b\x04\x12\x0e\n\tpsystrike\x10\x9c\x04\x12\r\n\x08tailslap\x10\x9d\x04\x12\x0e\n\thurricane\x10\x9e\x04\x12\x0f\n\nheadcharge\x10\x9f\x04\x12\x0e\n\tgeargrind\x10\xa0\x04\x12\x10\n\x0bsearingshot\x10\xa1\x04\x12\x10\n\x0btechnoblast\x10\xa2\x04\x12\x0e\n\trelicsong\x10\xa3\x04\x12\x10\n\x0bsecretsword\x10\xa4\x04\x12\r\n\x08glaciate\x10\xa5\x04\x12\x0f\n\nboltstrike\x10\xa6\x04\x12\x0e\n\tblueflare\x10\xa7\x04\x12\x0f\n\nfierydance\x10\xa8\x04\x12\x10\n\x0b\x66reezeshock\x10\xa9\x04\x12\x0c\n\x07iceburn\x10\xaa\x04\x12\n\n\x05snarl\x10\xab\x04\x12\x10\n\x0biciclecrash\x10\xac\x04\x12\x0c\n\x07vcreate\x10\xad\x04\x12\x10\n\x0b\x66usionflare\x10\xae\x04\x12\x0f\n\nfusionbolt\x10\xaf\x04\x12\x10\n\x0b\x66lyingpress\x10\xb0\x04\x12\r\n\x08matblock\x10\xb1\x04\x12\n\n\x05\x62\x65lch\x10\xb2\x04\x12\x0f\n\nrototiller\x10\xb3\x04\x12\x0e\n\tstickyweb\x10\xb4\x04\x12\x10\n\x0b\x66\x65llstinger\x10\xb5\x04\x12\x11\n\x0cphantomforce\x10\xb6\x04\x12\x11\n\x0ctrickortreat\x10\xb7\x04\x12\x0e\n\tnobleroar\x10\xb8\x04\x12\x0e\n\tiondeluge\x10\xb9\x04\x12\x14\n\x0fparaboliccharge\x10\xba\x04\x12\x11\n\x0c\x66orestscurse\x10\xbb\x04\x12\x12\n\rpetalblizzard\x10\xbc\x04\x12\x0e\n\tfreezedry\x10\xbd\x04\x12\x13\n\x0e\x64isarmingvoice\x10\xbe\x04\x12\x10\n\x0bpartingshot\x10\xbf\x04\x12\x0f\n\ntopsyturvy\x10\xc0\x04\x12\x11\n\x0c\x64rainingkiss\x10\xc1\x04\x12\x11\n\x0c\x63raftyshield\x10\xc2\x04\x12\x11\n\x0c\x66lowershield\x10\xc3\x04\x12\x12\n\rgrassyterrain\x10\xc4\x04\x12\x11\n\x0cmistyterrain\x10\xc5\x04\x12\x0e\n\telectrify\x10\xc6\x04\x12\x0e\n\tplayrough\x10\xc7\x04\x12\x0e\n\tfairywind\x10\xc8\x04\x12\x0e\n\tmoonblast\x10\xc9\x04\x12\x0e\n\tboomburst\x10\xca\x04\x12\x0e\n\tfairylock\x10\xcb\x04\x12\x10\n\x0bkingsshield\x10\xcc\x04\x12\r\n\x08playnice\x10\xcd\x04\x12\x0c\n\x07\x63onfide\x10\xce\x04\x12\x11\n\x0c\x64iamondstorm\x10\xcf\x04\x12\x12\n\rsteameruption\x10\xd0\x04\x12\x13\n\x0ehyperspacehole\x10\xd1\x04\x12\x12\n\rwatershuriken\x10\xd2\x04\x12\x11\n\x0cmysticalfire\x10\xd3\x04\x12\x10\n\x0bspikyshield\x10\xd4\x04\x12\x11\n\x0c\x61romaticmist\x10\xd5\x04\x12\x11\n\x0c\x65\x65rieimpulse\x10\xd6\x04\x12\x10\n\x0bvenomdrench\x10\xd7\x04\x12\x0b\n\x06powder\x10\xd8\x04\x12\r\n\x08geomancy\x10\xd9\x04\x12\x11\n\x0cmagneticflux\x10\xda\x04\x12\x0e\n\thappyhour\x10\xdb\x04\x12\x14\n\x0f\x65lectricterrain\x10\xdc\x04\x12\x12\n\rdazzlinggleam\x10\xdd\x04\x12\x0e\n\tcelebrate\x10\xde\x04\x12\x0e\n\tholdhands\x10\xdf\x04\x12\x11\n\x0c\x62\x61\x62ydolleyes\x10\xe0\x04\x12\x0b\n\x06nuzzle\x10\xe1\x04\x12\r\n\x08holdback\x10\xe2\x04\x12\x10\n\x0binfestation\x10\xe3\x04\x12\x11\n\x0cpoweruppunch\x10\xe4\x04\x12\x11\n\x0coblivionwing\x10\xe5\x04\x12\x13\n\x0ethousandarrows\x10\xe6\x04\x12\x12\n\rthousandwaves\x10\xe7\x04\x12\x0f\n\nlandswrath\x10\xe8\x04\x12\x10\n\x0blightofruin\x10\xe9\x04\x12\x10\n\x0boriginpulse\x10\xea\x04\x12\x14\n\x0fprecipiceblades\x10\xeb\x04\x12\x11\n\x0c\x64ragonascent\x10\xec\x04\x12\x13\n\x0ehyperspacefury\x10\xed\x04\x12\x13\n\x0e\x62reakneckblitz\x10\xee\x04\x12\x14\n\x0f\x61lloutpummeling\x10\xf0\x04\x12\x18\n\x13supersonicskystrike\x10\xf2\x04\x12\x11\n\x0c\x61\x63iddownpour\x10\xf4\x04\x12\x11\n\x0ctectonicrage\x10\xf6\x04\x12\x15\n\x10\x63ontinentalcrush\x10\xf8\x04\x12\x12\n\rsavagespinout\x10\xfa\x04\x12\x19\n\x14neverendingnightmare\x10\xfc\x04\x12\x13\n\x0e\x63orkscrewcrash\x10\xfe\x04\x12\x15\n\x10infernooverdrive\x10\x80\x05\x12\x10\n\x0bhydrovortex\x10\x82\x05\x12\x0e\n\tbloomdoom\x10\x84\x05\x12\x12\n\rgigavolthavoc\x10\x86\x05\x12\x14\n\x0fshatteredpsyche\x10\x88\x05\x12\x13\n\x0esubzeroslammer\x10\x8a\x05\x12\x15\n\x10\x64\x65vastatingdrake\x10\x8c\x05\x12\x15\n\x10\x62lackholeeclipse\x10\x8e\x05\x12\x12\n\rtwinkletackle\x10\x90\x05\x12\x11\n\x0c\x63\x61tastropika\x10\x92\x05\x12\x0c\n\x07shoreup\x10\x93\x05\x12\x14\n\x0f\x66irstimpression\x10\x94\x05\x12\x12\n\rbanefulbunker\x10\x95\x05\x12\x12\n\rspiritshackle\x10\x96\x05\x12\x12\n\rdarkestlariat\x10\x97\x05\x12\x12\n\rsparklingaria\x10\x98\x05\x12\x0e\n\ticehammer\x10\x99\x05\x12\x12\n\rfloralhealing\x10\x9a\x05\x12\x13\n\x0ehighhorsepower\x10\x9b\x05\x12\x10\n\x0bstrengthsap\x10\x9c\x05\x12\x0f\n\nsolarblade\x10\x9d\x05\x12\x0c\n\x07leafage\x10\x9e\x05\x12\x0e\n\tspotlight\x10\x9f\x05\x12\x10\n\x0btoxicthread\x10\xa0\x05\x12\x0f\n\nlaserfocus\x10\xa1\x05\x12\x0b\n\x06gearup\x10\xa2\x05\x12\x0f\n\nthroatchop\x10\xa3\x05\x12\x0f\n\npollenpuff\x10\xa4\x05\x12\x0f\n\nanchorshot\x10\xa5\x05\x12\x13\n\x0epsychicterrain\x10\xa6\x05\x12\n\n\x05lunge\x10\xa7\x05\x12\r\n\x08\x66irelash\x10\xa8\x05\x12\x0e\n\tpowertrip\x10\xa9\x05\x12\x0b\n\x06\x62urnup\x10\xaa\x05\x12\x0e\n\tspeedswap\x10\xab\x05\x12\x10\n\x0bsmartstrike\x10\xac\x05\x12\x0b\n\x06purify\x10\xad\x05\x12\x14\n\x0frevelationdance\x10\xae\x05\x12\x11\n\x0c\x63oreenforcer\x10\xaf\x05\x12\r\n\x08tropkick\x10\xb0\x05\x12\r\n\x08instruct\x10\xb1\x05\x12\x0e\n\tbeakblast\x10\xb2\x05\x12\x13\n\x0e\x63langingscales\x10\xb3\x05\x12\x11\n\x0c\x64ragonhammer\x10\xb4\x05\x12\x10\n\x0b\x62rutalswing\x10\xb5\x05\x12\x0f\n\nauroraveil\x10\xb6\x05\x12\x16\n\x11sinisterarrowraid\x10\xb7\x05\x12\x17\n\x12maliciousmoonsault\x10\xb8\x05\x12\x14\n\x0foceanicoperetta\x10\xb9\x05\x12\x14\n\x0fguardianofalola\x10\xba\x05\x12\x1c\n\x17soulstealing7starstrike\x10\xbb\x05\x12\x16\n\x11stokedsparksurfer\x10\xbc\x05\x12\x17\n\x12pulverizingpancake\x10\xbd\x05\x12\x14\n\x0f\x65xtremeevoboost\x10\xbe\x05\x12\x15\n\x10genesissupernova\x10\xbf\x05\x12\x0e\n\tshelltrap\x10\xc0\x05\x12\x10\n\x0b\x66leurcannon\x10\xc1\x05\x12\x11\n\x0cpsychicfangs\x10\xc2\x05\x12\x14\n\x0fstompingtantrum\x10\xc3\x05\x12\x0f\n\nshadowbone\x10\xc4\x05\x12\x0f\n\naccelerock\x10\xc5\x05\x12\x10\n\x0bliquidation\x10\xc6\x05\x12\x13\n\x0eprismaticlaser\x10\xc7\x05\x12\x12\n\rspectralthief\x10\xc8\x05\x12\x13\n\x0esunsteelstrike\x10\xc9\x05\x12\x12\n\rmoongeistbeam\x10\xca\x05\x12\x10\n\x0btearfullook\x10\xcb\x05\x12\x0c\n\x07zingzap\x10\xcc\x05\x12\x13\n\x0enaturesmadness\x10\xcd\x05\x12\x10\n\x0bmultiattack\x10\xce\x05\x12\x1d\n\x18_10000000voltthunderbolt\x10\xcf\x05*\xbc\x02\n\x0ePokemonNatures\x12\x0b\n\x07__None4\x10\x00\x12\x0b\n\x07\x61\x64\x61mant\x10\x01\x12\x0b\n\x07\x62\x61shful\x10\x02\x12\x08\n\x04\x62old\x10\x03\x12\t\n\x05\x62rave\x10\x04\x12\x08\n\x04\x63\x61lm\x10\x05\x12\x0b\n\x07\x63\x61reful\x10\x06\x12\n\n\x06\x64ocile\x10\x07\x12\n\n\x06gentle\x10\x08\x12\t\n\x05hardy\x10\t\x12\t\n\x05hasty\x10\n\x12\n\n\x06impish\x10\x0b\x12\t\n\x05jolly\x10\x0c\x12\x07\n\x03lax\x10\r\x12\n\n\x06lonely\x10\x0e\x12\x08\n\x04mild\x10\x0f\x12\n\n\x06modest\x10\x10\x12\t\n\x05naive\x10\x11\x12\x0b\n\x07naughty\x10\x12\x12\t\n\x05quiet\x10\x13\x12\n\n\x06quirky\x10\x14\x12\x08\n\x04rash\x10\x15\x12\x0b\n\x07relaxed\x10\x16\x12\t\n\x05sassy\x10\x17\x12\x0b\n\x07serious\x10\x18\x12\t\n\x05timid\x10\x19')
+  serialized_pb=_b('\n\x0cSearch.proto\x12\x19PSXAPI.Response1559120870\x1a\x16protobuf-net/bcl.proto\"_\n\x19PREFIX_AGDFASBV1211782128\"B\n\x0f\x41\x62ilitySlotType\x12\r\n\tNoneValue\x10\x00\x12\t\n\x05Slot1\x10\x01\x12\t\n\x05Slot2\x10\x02\x12\n\n\x06Hidden\x10\x03\"h\n\x18PREFIX_AGDFASBV217888935\"L\n\x08\x45ggState\x12\r\n\tNoneValue\x10\x00\x12\n\n\x06Sounds\x10\x01\x12\t\n\x05Moves\x10\x02\x12\x0c\n\x08MoreTime\x10\x03\x12\x0c\n\x08LongTime\x10\x04\"\x8e\x02\n\x10InventoryPokemon\x12\x37\n\x07Pokemon\x18\x01 \x01(\x0b\x32&.PSXAPI.Response1559120870.PokemonData\x12\x13\n\x08Position\x18\x02 \x01(\x05:\x01\x30\x12\x0e\n\x03\x42ox\x18\x03 \x01(\x05:\x01\x30\x12\x42\n\tCanEvolve\x18\x04 \x01(\x0e\x32$.PSXAPI.Response1559120870.PokemonID:\tmissingno\x12X\n\x0c\x43\x61nLearnMove\x18\x05 \x03(\x0e\x32\x42.PSXAPI.Response1559120870.PREFIX_AGDFASBV2087144784.PokemonMoveID\"\x83\x08\n\x07Pokemon\x12\x42\n\tPokemonID\x18\x01 \x01(\x0e\x32$.PSXAPI.Response1559120870.PokemonID:\tmissingno\x12\x10\n\x05Level\x18\x02 \x01(\x05:\x01\x30\x12\x0e\n\x03\x45xp\x18\x03 \x01(\x05:\x01\x30\x12\r\n\x02HP\x18\x04 \x01(\x05:\x01\x30\x12\x35\n\x05Moves\x18\x05 \x03(\x0b\x32&.PSXAPI.Response1559120870.PokemonMove\x12\x64\n\x0b\x41\x62ilitySlot\x18\x06 \x01(\x0e\x32\x44.PSXAPI.Response1559120870.PREFIX_AGDFASBV1211782128.AbilitySlotType:\tNoneValue\x12\x14\n\tHappiness\x18\x07 \x01(\x05:\x01\x30\x12^\n\x06Nature\x18\x08 \x01(\x0e\x32\x43.PSXAPI.Response1559120870.PREFIX_AGDFASBV1284323517.PokemonNatures:\tNoneValue\x12\x14\n\x05Shiny\x18\t \x01(\x08:\x05\x66\x61lse\x12\x34\n\x03IVs\x18\n \x01(\x0b\x32\'.PSXAPI.Response1559120870.PokemonStats\x12\x34\n\x03\x45Vs\x18\x0b \x01(\x0b\x32\'.PSXAPI.Response1559120870.PokemonStats\x12\\\n\x06Gender\x18\x0c \x01(\x0e\x32\x41.PSXAPI.Response1559120870.PREFIX_AGDFASBV264064132.PokemonGender:\tNoneValue\x12\"\n\x0fOriginalTrainer\x18\r \x01(\x0b\x32\t.bcl.Guid\x12\x1a\n\x07Trainer\x18\x0e \x01(\x0b\x32\t.bcl.Guid\x12\x10\n\x08Nickname\x18\x0f \x01(\t\x12\x13\n\x08Pokeball\x18\x10 \x01(\x05:\x01\x30\x12\x13\n\x08HoldItem\x18\x11 \x01(\x05:\x01\x30\x12\x16\n\x0bPersonality\x18\x12 \x01(\x05:\x01\x30\x12\x62\n\tCondition\x18\x13 \x01(\x0e\x32\x44.PSXAPI.Response1559120870.PREFIX_AGDFASBV252416967.PokemonCondition:\tNoneValue\x12=\n\x0c\x45VsCollected\x18\x14 \x01(\x0b\x32\'.PSXAPI.Response1559120870.PokemonStats\x12$\n\rCaughtDateUtc\x18\x15 \x01(\x0b\x32\r.bcl.DateTime\x12\x16\n\x0b\x43\x61ughtLevel\x18\x16 \x01(\x05:\x01\x30\x12\x1b\n\x0cNotTradeable\x18\x17 \x01(\x08:\x05\x66\x61lse\"\x86\x01\n\x18PREFIX_AGDFASBV252416967\"j\n\x10PokemonCondition\x12\r\n\tNoneValue\x10\x00\x12\x0b\n\x07\x46\x61inted\x10\x01\x12\x08\n\x04\x42urn\x10\x02\x12\n\n\x06\x46reeze\x10\x03\x12\r\n\tParalysis\x10\x04\x12\n\n\x06Poison\x10\x05\x12\t\n\x05Sleep\x10\x06\"\xd6\x02\n\x0bPokemonData\x12\x1b\n\x08UniqueID\x18\x01 \x01(\x0b\x32\t.bcl.Guid\x12\x33\n\x07Payload\x18\x02 \x01(\x0b\x32\".PSXAPI.Response1559120870.Pokemon\x12\x36\n\x05Stats\x18\x03 \x01(\x0b\x32\'.PSXAPI.Response1559120870.PokemonStats\x12\x0f\n\x07Trainer\x18\x04 \x01(\t\x12\x17\n\x0fOriginalTrainer\x18\x05 \x01(\t\x12\x0f\n\x07\x41\x62ility\x18\x06 \x01(\t\x12\x13\n\x08\x45xpStart\x18\x07 \x01(\x05:\x01\x30\x12\x12\n\x07\x45xpNext\x18\x08 \x01(\x05:\x01\x30\x12Y\n\x08\x45ggState\x18\t \x01(\x0e\x32<.PSXAPI.Response1559120870.PREFIX_AGDFASBV217888935.EggState:\tNoneValue\"P\n\x18PREFIX_AGDFASBV264064132\"4\n\rPokemonGender\x12\r\n\tNoneValue\x10\x00\x12\x08\n\x04Male\x10\x01\x12\n\n\x06\x46\x65male\x10\x02\"\x86\x01\n\x0bPokemonMove\x12V\n\x04Move\x18\x01 \x01(\x0e\x32\x42.PSXAPI.Response1559120870.PREFIX_AGDFASBV2087144784.PokemonMoveID:\x04none\x12\r\n\x02PP\x18\x02 \x01(\x05:\x01\x30\x12\x10\n\x05MaxPP\x18\x03 \x01(\x05:\x01\x30\"\xaeX\n\x19PREFIX_AGDFASBV2087144784\"\x90X\n\rPokemonMoveID\x12\x08\n\x04none\x10\x00\x12\t\n\x05pound\x10\x01\x12\x0e\n\nkaratechop\x10\x02\x12\x0e\n\ndoubleslap\x10\x03\x12\x0e\n\ncometpunch\x10\x04\x12\r\n\tmegapunch\x10\x05\x12\n\n\x06payday\x10\x06\x12\r\n\tfirepunch\x10\x07\x12\x0c\n\x08icepunch\x10\x08\x12\x10\n\x0cthunderpunch\x10\t\x12\x0b\n\x07scratch\x10\n\x12\x0c\n\x08vicegrip\x10\x0b\x12\x0e\n\nguillotine\x10\x0c\x12\r\n\trazorwind\x10\r\x12\x0f\n\x0bswordsdance\x10\x0e\x12\x07\n\x03\x63ut\x10\x0f\x12\x08\n\x04gust\x10\x10\x12\x0e\n\nwingattack\x10\x11\x12\r\n\twhirlwind\x10\x12\x12\x07\n\x03\x66ly\x10\x13\x12\x08\n\x04\x62ind\x10\x14\x12\x08\n\x04slam\x10\x15\x12\x0c\n\x08vinewhip\x10\x16\x12\t\n\x05stomp\x10\x17\x12\x0e\n\ndoublekick\x10\x18\x12\x0c\n\x08megakick\x10\x19\x12\x0c\n\x08jumpkick\x10\x1a\x12\x0f\n\x0brollingkick\x10\x1b\x12\x0e\n\nsandattack\x10\x1c\x12\x0c\n\x08headbutt\x10\x1d\x12\x0e\n\nhornattack\x10\x1e\x12\x0e\n\nfuryattack\x10\x1f\x12\r\n\thorndrill\x10 \x12\n\n\x06tackle\x10!\x12\x0c\n\x08\x62odyslam\x10\"\x12\x08\n\x04wrap\x10#\x12\x0c\n\x08takedown\x10$\x12\n\n\x06thrash\x10%\x12\x0e\n\ndoubleedge\x10&\x12\x0c\n\x08tailwhip\x10\'\x12\x0f\n\x0bpoisonsting\x10(\x12\r\n\ttwineedle\x10)\x12\x0e\n\npinmissile\x10*\x12\x08\n\x04leer\x10+\x12\x08\n\x04\x62ite\x10,\x12\t\n\x05growl\x10-\x12\x08\n\x04roar\x10.\x12\x08\n\x04sing\x10/\x12\x0e\n\nsupersonic\x10\x30\x12\r\n\tsonicboom\x10\x31\x12\x0b\n\x07\x64isable\x10\x32\x12\x08\n\x04\x61\x63id\x10\x33\x12\t\n\x05\x65mber\x10\x34\x12\x10\n\x0c\x66lamethrower\x10\x35\x12\x08\n\x04mist\x10\x36\x12\x0c\n\x08watergun\x10\x37\x12\r\n\thydropump\x10\x38\x12\x08\n\x04surf\x10\x39\x12\x0b\n\x07icebeam\x10:\x12\x0c\n\x08\x62lizzard\x10;\x12\x0b\n\x07psybeam\x10<\x12\x0e\n\nbubblebeam\x10=\x12\x0e\n\naurorabeam\x10>\x12\r\n\thyperbeam\x10?\x12\x08\n\x04peck\x10@\x12\r\n\tdrillpeck\x10\x41\x12\x0e\n\nsubmission\x10\x42\x12\x0b\n\x07lowkick\x10\x43\x12\x0b\n\x07\x63ounter\x10\x44\x12\x0f\n\x0bseismictoss\x10\x45\x12\x0c\n\x08strength\x10\x46\x12\n\n\x06\x61\x62sorb\x10G\x12\r\n\tmegadrain\x10H\x12\r\n\tleechseed\x10I\x12\n\n\x06growth\x10J\x12\r\n\trazorleaf\x10K\x12\r\n\tsolarbeam\x10L\x12\x10\n\x0cpoisonpowder\x10M\x12\r\n\tstunspore\x10N\x12\x0f\n\x0bsleeppowder\x10O\x12\x0e\n\npetaldance\x10P\x12\x0e\n\nstringshot\x10Q\x12\x0e\n\ndragonrage\x10R\x12\x0c\n\x08\x66irespin\x10S\x12\x10\n\x0cthundershock\x10T\x12\x0f\n\x0bthunderbolt\x10U\x12\x0f\n\x0bthunderwave\x10V\x12\x0b\n\x07thunder\x10W\x12\r\n\trockthrow\x10X\x12\x0e\n\nearthquake\x10Y\x12\x0b\n\x07\x66issure\x10Z\x12\x07\n\x03\x64ig\x10[\x12\t\n\x05toxic\x10\\\x12\r\n\tconfusion\x10]\x12\x0b\n\x07psychic\x10^\x12\x0c\n\x08hypnosis\x10_\x12\x0c\n\x08meditate\x10`\x12\x0b\n\x07\x61gility\x10\x61\x12\x0f\n\x0bquickattack\x10\x62\x12\x08\n\x04rage\x10\x63\x12\x0c\n\x08teleport\x10\x64\x12\x0e\n\nnightshade\x10\x65\x12\t\n\x05mimic\x10\x66\x12\x0b\n\x07screech\x10g\x12\x0e\n\ndoubleteam\x10h\x12\x0b\n\x07recover\x10i\x12\n\n\x06harden\x10j\x12\x0c\n\x08minimize\x10k\x12\x0f\n\x0bsmokescreen\x10l\x12\x0e\n\nconfuseray\x10m\x12\x0c\n\x08withdraw\x10n\x12\x0f\n\x0b\x64\x65\x66\x65nsecurl\x10o\x12\x0b\n\x07\x62\x61rrier\x10p\x12\x0f\n\x0blightscreen\x10q\x12\x08\n\x04haze\x10r\x12\x0b\n\x07reflect\x10s\x12\x0f\n\x0b\x66ocusenergy\x10t\x12\x08\n\x04\x62ide\x10u\x12\r\n\tmetronome\x10v\x12\x0e\n\nmirrormove\x10w\x12\x10\n\x0cselfdestruct\x10x\x12\x0b\n\x07\x65ggbomb\x10y\x12\x08\n\x04lick\x10z\x12\x08\n\x04smog\x10{\x12\n\n\x06sludge\x10|\x12\x0c\n\x08\x62oneclub\x10}\x12\r\n\tfireblast\x10~\x12\r\n\twaterfall\x10\x7f\x12\n\n\x05\x63lamp\x10\x80\x01\x12\n\n\x05swift\x10\x81\x01\x12\x0e\n\tskullbash\x10\x82\x01\x12\x10\n\x0bspikecannon\x10\x83\x01\x12\x0e\n\tconstrict\x10\x84\x01\x12\x0c\n\x07\x61mnesia\x10\x85\x01\x12\x0c\n\x07kinesis\x10\x86\x01\x12\x0f\n\nsoftboiled\x10\x87\x01\x12\x11\n\x0chighjumpkick\x10\x88\x01\x12\n\n\x05glare\x10\x89\x01\x12\x0f\n\ndreameater\x10\x8a\x01\x12\x0e\n\tpoisongas\x10\x8b\x01\x12\x0c\n\x07\x62\x61rrage\x10\x8c\x01\x12\x0e\n\tleechlife\x10\x8d\x01\x12\x0f\n\nlovelykiss\x10\x8e\x01\x12\x0e\n\tskyattack\x10\x8f\x01\x12\x0e\n\ttransform\x10\x90\x01\x12\x0b\n\x06\x62ubble\x10\x91\x01\x12\x0f\n\ndizzypunch\x10\x92\x01\x12\n\n\x05spore\x10\x93\x01\x12\n\n\x05\x66lash\x10\x94\x01\x12\x0c\n\x07psywave\x10\x95\x01\x12\x0b\n\x06splash\x10\x96\x01\x12\x0e\n\tacidarmor\x10\x97\x01\x12\x0f\n\ncrabhammer\x10\x98\x01\x12\x0e\n\texplosion\x10\x99\x01\x12\x0f\n\nfuryswipes\x10\x9a\x01\x12\x0f\n\nbonemerang\x10\x9b\x01\x12\t\n\x04rest\x10\x9c\x01\x12\x0e\n\trockslide\x10\x9d\x01\x12\x0e\n\thyperfang\x10\x9e\x01\x12\x0c\n\x07sharpen\x10\x9f\x01\x12\x0f\n\nconversion\x10\xa0\x01\x12\x0e\n\ttriattack\x10\xa1\x01\x12\x0e\n\tsuperfang\x10\xa2\x01\x12\n\n\x05slash\x10\xa3\x01\x12\x0f\n\nsubstitute\x10\xa4\x01\x12\r\n\x08struggle\x10\xa5\x01\x12\x0b\n\x06sketch\x10\xa6\x01\x12\x0f\n\ntriplekick\x10\xa7\x01\x12\n\n\x05thief\x10\xa8\x01\x12\x0e\n\tspiderweb\x10\xa9\x01\x12\x0f\n\nmindreader\x10\xaa\x01\x12\x0e\n\tnightmare\x10\xab\x01\x12\x0f\n\nflamewheel\x10\xac\x01\x12\n\n\x05snore\x10\xad\x01\x12\n\n\x05\x63urse\x10\xae\x01\x12\n\n\x05\x66lail\x10\xaf\x01\x12\x10\n\x0b\x63onversion2\x10\xb0\x01\x12\x0e\n\taeroblast\x10\xb1\x01\x12\x10\n\x0b\x63ottonspore\x10\xb2\x01\x12\r\n\x08reversal\x10\xb3\x01\x12\n\n\x05spite\x10\xb4\x01\x12\x0f\n\npowdersnow\x10\xb5\x01\x12\x0c\n\x07protect\x10\xb6\x01\x12\x0e\n\tmachpunch\x10\xb7\x01\x12\x0e\n\tscaryface\x10\xb8\x01\x12\x10\n\x0b\x66\x65intattack\x10\xb9\x01\x12\x0e\n\tsweetkiss\x10\xba\x01\x12\x0e\n\tbellydrum\x10\xbb\x01\x12\x0f\n\nsludgebomb\x10\xbc\x01\x12\x0c\n\x07mudslap\x10\xbd\x01\x12\x0e\n\toctazooka\x10\xbe\x01\x12\x0b\n\x06spikes\x10\xbf\x01\x12\x0e\n\tzapcannon\x10\xc0\x01\x12\x0e\n\tforesight\x10\xc1\x01\x12\x10\n\x0b\x64\x65stinybond\x10\xc2\x01\x12\x0f\n\nperishsong\x10\xc3\x01\x12\x0c\n\x07icywind\x10\xc4\x01\x12\x0b\n\x06\x64\x65tect\x10\xc5\x01\x12\r\n\x08\x62onerush\x10\xc6\x01\x12\x0b\n\x06lockon\x10\xc7\x01\x12\x0c\n\x07outrage\x10\xc8\x01\x12\x0e\n\tsandstorm\x10\xc9\x01\x12\x0e\n\tgigadrain\x10\xca\x01\x12\x0b\n\x06\x65ndure\x10\xcb\x01\x12\n\n\x05\x63harm\x10\xcc\x01\x12\x0c\n\x07rollout\x10\xcd\x01\x12\x0f\n\nfalseswipe\x10\xce\x01\x12\x0c\n\x07swagger\x10\xcf\x01\x12\x0e\n\tmilkdrink\x10\xd0\x01\x12\n\n\x05spark\x10\xd1\x01\x12\x0f\n\nfurycutter\x10\xd2\x01\x12\x0e\n\tsteelwing\x10\xd3\x01\x12\r\n\x08meanlook\x10\xd4\x01\x12\x0c\n\x07\x61ttract\x10\xd5\x01\x12\x0e\n\tsleeptalk\x10\xd6\x01\x12\r\n\x08healbell\x10\xd7\x01\x12\x0c\n\x07_return\x10\xd8\x01\x12\x0c\n\x07present\x10\xd9\x01\x12\x10\n\x0b\x66rustration\x10\xda\x01\x12\x0e\n\tsafeguard\x10\xdb\x01\x12\x0e\n\tpainsplit\x10\xdc\x01\x12\x0f\n\nsacredfire\x10\xdd\x01\x12\x0e\n\tmagnitude\x10\xde\x01\x12\x11\n\x0c\x64ynamicpunch\x10\xdf\x01\x12\r\n\x08megahorn\x10\xe0\x01\x12\x11\n\x0c\x64ragonbreath\x10\xe1\x01\x12\x0e\n\tbatonpass\x10\xe2\x01\x12\x0b\n\x06\x65ncore\x10\xe3\x01\x12\x0c\n\x07pursuit\x10\xe4\x01\x12\x0e\n\trapidspin\x10\xe5\x01\x12\x0f\n\nsweetscent\x10\xe6\x01\x12\r\n\x08irontail\x10\xe7\x01\x12\x0e\n\tmetalclaw\x10\xe8\x01\x12\x0f\n\nvitalthrow\x10\xe9\x01\x12\x0f\n\nmorningsun\x10\xea\x01\x12\x0e\n\tsynthesis\x10\xeb\x01\x12\x0e\n\tmoonlight\x10\xec\x01\x12\x10\n\x0bhiddenpower\x10\xed\x01\x12\x0e\n\tcrosschop\x10\xee\x01\x12\x0c\n\x07twister\x10\xef\x01\x12\x0e\n\traindance\x10\xf0\x01\x12\r\n\x08sunnyday\x10\xf1\x01\x12\x0b\n\x06\x63runch\x10\xf2\x01\x12\x0f\n\nmirrorcoat\x10\xf3\x01\x12\x0c\n\x07psychup\x10\xf4\x01\x12\x11\n\x0c\x65xtremespeed\x10\xf5\x01\x12\x11\n\x0c\x61ncientpower\x10\xf6\x01\x12\x0f\n\nshadowball\x10\xf7\x01\x12\x10\n\x0b\x66uturesight\x10\xf8\x01\x12\x0e\n\trocksmash\x10\xf9\x01\x12\x0e\n\twhirlpool\x10\xfa\x01\x12\x0b\n\x06\x62\x65\x61tup\x10\xfb\x01\x12\x0c\n\x07\x66\x61keout\x10\xfc\x01\x12\x0b\n\x06uproar\x10\xfd\x01\x12\x0e\n\tstockpile\x10\xfe\x01\x12\x0b\n\x06spitup\x10\xff\x01\x12\x0c\n\x07swallow\x10\x80\x02\x12\r\n\x08heatwave\x10\x81\x02\x12\t\n\x04hail\x10\x82\x02\x12\x0c\n\x07torment\x10\x83\x02\x12\x0c\n\x07\x66latter\x10\x84\x02\x12\x0e\n\twillowisp\x10\x85\x02\x12\x0c\n\x07memento\x10\x86\x02\x12\x0b\n\x06\x66\x61\x63\x61\x64\x65\x10\x87\x02\x12\x0f\n\nfocuspunch\x10\x88\x02\x12\x12\n\rsmellingsalts\x10\x89\x02\x12\r\n\x08\x66ollowme\x10\x8a\x02\x12\x10\n\x0bnaturepower\x10\x8b\x02\x12\x0b\n\x06\x63harge\x10\x8c\x02\x12\n\n\x05taunt\x10\x8d\x02\x12\x10\n\x0bhelpinghand\x10\x8e\x02\x12\n\n\x05trick\x10\x8f\x02\x12\r\n\x08roleplay\x10\x90\x02\x12\t\n\x04wish\x10\x91\x02\x12\x0b\n\x06\x61ssist\x10\x92\x02\x12\x0c\n\x07ingrain\x10\x93\x02\x12\x0f\n\nsuperpower\x10\x94\x02\x12\x0e\n\tmagiccoat\x10\x95\x02\x12\x0c\n\x07recycle\x10\x96\x02\x12\x0c\n\x07revenge\x10\x97\x02\x12\x0f\n\nbrickbreak\x10\x98\x02\x12\t\n\x04yawn\x10\x99\x02\x12\r\n\x08knockoff\x10\x9a\x02\x12\r\n\x08\x65ndeavor\x10\x9b\x02\x12\r\n\x08\x65ruption\x10\x9c\x02\x12\x0e\n\tskillswap\x10\x9d\x02\x12\r\n\x08imprison\x10\x9e\x02\x12\x0c\n\x07refresh\x10\x9f\x02\x12\x0b\n\x06grudge\x10\xa0\x02\x12\x0b\n\x06snatch\x10\xa1\x02\x12\x10\n\x0bsecretpower\x10\xa2\x02\x12\t\n\x04\x64ive\x10\xa3\x02\x12\x0e\n\tarmthrust\x10\xa4\x02\x12\x0f\n\ncamouflage\x10\xa5\x02\x12\r\n\x08tailglow\x10\xa6\x02\x12\x10\n\x0blusterpurge\x10\xa7\x02\x12\r\n\x08mistball\x10\xa8\x02\x12\x11\n\x0c\x66\x65\x61therdance\x10\xa9\x02\x12\x10\n\x0bteeterdance\x10\xaa\x02\x12\x0e\n\tblazekick\x10\xab\x02\x12\r\n\x08mudsport\x10\xac\x02\x12\x0c\n\x07iceball\x10\xad\x02\x12\x0e\n\tneedlearm\x10\xae\x02\x12\r\n\x08slackoff\x10\xaf\x02\x12\x0f\n\nhypervoice\x10\xb0\x02\x12\x0f\n\npoisonfang\x10\xb1\x02\x12\x0e\n\tcrushclaw\x10\xb2\x02\x12\x0e\n\tblastburn\x10\xb3\x02\x12\x10\n\x0bhydrocannon\x10\xb4\x02\x12\x0f\n\nmeteormash\x10\xb5\x02\x12\r\n\x08\x61stonish\x10\xb6\x02\x12\x10\n\x0bweatherball\x10\xb7\x02\x12\x11\n\x0c\x61romatherapy\x10\xb8\x02\x12\x0e\n\tfaketears\x10\xb9\x02\x12\x0e\n\taircutter\x10\xba\x02\x12\r\n\x08overheat\x10\xbb\x02\x12\x0f\n\nodorsleuth\x10\xbc\x02\x12\r\n\x08rocktomb\x10\xbd\x02\x12\x0f\n\nsilverwind\x10\xbe\x02\x12\x0f\n\nmetalsound\x10\xbf\x02\x12\x11\n\x0cgrasswhistle\x10\xc0\x02\x12\x0b\n\x06tickle\x10\xc1\x02\x12\x10\n\x0b\x63osmicpower\x10\xc2\x02\x12\x0f\n\nwaterspout\x10\xc3\x02\x12\x0f\n\nsignalbeam\x10\xc4\x02\x12\x10\n\x0bshadowpunch\x10\xc5\x02\x12\x11\n\x0c\x65xtrasensory\x10\xc6\x02\x12\x10\n\x0bskyuppercut\x10\xc7\x02\x12\r\n\x08sandtomb\x10\xc8\x02\x12\x0e\n\tsheercold\x10\xc9\x02\x12\x0f\n\nmuddywater\x10\xca\x02\x12\x0f\n\nbulletseed\x10\xcb\x02\x12\x0e\n\taerialace\x10\xcc\x02\x12\x10\n\x0biciclespear\x10\xcd\x02\x12\x10\n\x0birondefense\x10\xce\x02\x12\n\n\x05\x62lock\x10\xcf\x02\x12\t\n\x04howl\x10\xd0\x02\x12\x0f\n\ndragonclaw\x10\xd1\x02\x12\x10\n\x0b\x66renzyplant\x10\xd2\x02\x12\x0b\n\x06\x62ulkup\x10\xd3\x02\x12\x0b\n\x06\x62ounce\x10\xd4\x02\x12\x0c\n\x07mudshot\x10\xd5\x02\x12\x0f\n\npoisontail\x10\xd6\x02\x12\n\n\x05\x63ovet\x10\xd7\x02\x12\x0f\n\nvolttackle\x10\xd8\x02\x12\x10\n\x0bmagicalleaf\x10\xd9\x02\x12\x0f\n\nwatersport\x10\xda\x02\x12\r\n\x08\x63\x61lmmind\x10\xdb\x02\x12\x0e\n\tleafblade\x10\xdc\x02\x12\x10\n\x0b\x64ragondance\x10\xdd\x02\x12\x0e\n\trockblast\x10\xde\x02\x12\x0e\n\tshockwave\x10\xdf\x02\x12\x0f\n\nwaterpulse\x10\xe0\x02\x12\x0f\n\ndoomdesire\x10\xe1\x02\x12\x10\n\x0bpsychoboost\x10\xe2\x02\x12\n\n\x05roost\x10\xe3\x02\x12\x0c\n\x07gravity\x10\xe4\x02\x12\x0f\n\nmiracleeye\x10\xe5\x02\x12\x0f\n\nwakeupslap\x10\xe6\x02\x12\x0e\n\thammerarm\x10\xe7\x02\x12\r\n\x08gyroball\x10\xe8\x02\x12\x10\n\x0bhealingwish\x10\xe9\x02\x12\n\n\x05\x62rine\x10\xea\x02\x12\x10\n\x0bnaturalgift\x10\xeb\x02\x12\n\n\x05\x66\x65int\x10\xec\x02\x12\n\n\x05pluck\x10\xed\x02\x12\r\n\x08tailwind\x10\xee\x02\x12\x10\n\x0b\x61\x63upressure\x10\xef\x02\x12\x0f\n\nmetalburst\x10\xf0\x02\x12\n\n\x05uturn\x10\xf1\x02\x12\x10\n\x0b\x63losecombat\x10\xf2\x02\x12\x0c\n\x07payback\x10\xf3\x02\x12\x0e\n\tassurance\x10\xf4\x02\x12\x0c\n\x07\x65mbargo\x10\xf5\x02\x12\n\n\x05\x66ling\x10\xf6\x02\x12\x10\n\x0bpsychoshift\x10\xf7\x02\x12\x0e\n\ttrumpcard\x10\xf8\x02\x12\x0e\n\thealblock\x10\xf9\x02\x12\r\n\x08wringout\x10\xfa\x02\x12\x0f\n\npowertrick\x10\xfb\x02\x12\x0f\n\ngastroacid\x10\xfc\x02\x12\x0f\n\nluckychant\x10\xfd\x02\x12\x0c\n\x07mefirst\x10\xfe\x02\x12\x0c\n\x07\x63opycat\x10\xff\x02\x12\x0e\n\tpowerswap\x10\x80\x03\x12\x0e\n\tguardswap\x10\x81\x03\x12\x0f\n\npunishment\x10\x82\x03\x12\x0f\n\nlastresort\x10\x83\x03\x12\x0e\n\tworryseed\x10\x84\x03\x12\x10\n\x0bsuckerpunch\x10\x85\x03\x12\x10\n\x0btoxicspikes\x10\x86\x03\x12\x0e\n\theartswap\x10\x87\x03\x12\r\n\x08\x61quaring\x10\x88\x03\x12\x0f\n\nmagnetrise\x10\x89\x03\x12\x0f\n\nflareblitz\x10\x8a\x03\x12\x0e\n\tforcepalm\x10\x8b\x03\x12\x0f\n\naurasphere\x10\x8c\x03\x12\x0f\n\nrockpolish\x10\x8d\x03\x12\x0e\n\tpoisonjab\x10\x8e\x03\x12\x0e\n\tdarkpulse\x10\x8f\x03\x12\x0f\n\nnightslash\x10\x90\x03\x12\r\n\x08\x61quatail\x10\x91\x03\x12\r\n\x08seedbomb\x10\x92\x03\x12\r\n\x08\x61irslash\x10\x93\x03\x12\r\n\x08xscissor\x10\x94\x03\x12\x0c\n\x07\x62ugbuzz\x10\x95\x03\x12\x10\n\x0b\x64ragonpulse\x10\x96\x03\x12\x0f\n\ndragonrush\x10\x97\x03\x12\r\n\x08powergem\x10\x98\x03\x12\x0f\n\ndrainpunch\x10\x99\x03\x12\x0f\n\nvacuumwave\x10\x9a\x03\x12\x0f\n\nfocusblast\x10\x9b\x03\x12\x0f\n\nenergyball\x10\x9c\x03\x12\x0e\n\tbravebird\x10\x9d\x03\x12\x0f\n\nearthpower\x10\x9e\x03\x12\x0f\n\nswitcheroo\x10\x9f\x03\x12\x0f\n\ngigaimpact\x10\xa0\x03\x12\x0e\n\tnastyplot\x10\xa1\x03\x12\x10\n\x0b\x62ulletpunch\x10\xa2\x03\x12\x0e\n\tavalanche\x10\xa3\x03\x12\r\n\x08iceshard\x10\xa4\x03\x12\x0f\n\nshadowclaw\x10\xa5\x03\x12\x10\n\x0bthunderfang\x10\xa6\x03\x12\x0c\n\x07icefang\x10\xa7\x03\x12\r\n\x08\x66irefang\x10\xa8\x03\x12\x10\n\x0bshadowsneak\x10\xa9\x03\x12\x0c\n\x07mudbomb\x10\xaa\x03\x12\x0e\n\tpsychocut\x10\xab\x03\x12\x10\n\x0bzenheadbutt\x10\xac\x03\x12\x0f\n\nmirrorshot\x10\xad\x03\x12\x10\n\x0b\x66lashcannon\x10\xae\x03\x12\x0e\n\trockclimb\x10\xaf\x03\x12\n\n\x05\x64\x65\x66og\x10\xb0\x03\x12\x0e\n\ttrickroom\x10\xb1\x03\x12\x10\n\x0b\x64racometeor\x10\xb2\x03\x12\x0e\n\tdischarge\x10\xb3\x03\x12\x0e\n\tlavaplume\x10\xb4\x03\x12\x0e\n\tleafstorm\x10\xb5\x03\x12\x0e\n\tpowerwhip\x10\xb6\x03\x12\x10\n\x0brockwrecker\x10\xb7\x03\x12\x10\n\x0b\x63rosspoison\x10\xb8\x03\x12\r\n\x08gunkshot\x10\xb9\x03\x12\r\n\x08ironhead\x10\xba\x03\x12\x0f\n\nmagnetbomb\x10\xbb\x03\x12\x0e\n\tstoneedge\x10\xbc\x03\x12\x0e\n\tcaptivate\x10\xbd\x03\x12\x10\n\x0bstealthrock\x10\xbe\x03\x12\x0e\n\tgrassknot\x10\xbf\x03\x12\x0c\n\x07\x63hatter\x10\xc0\x03\x12\r\n\x08judgment\x10\xc1\x03\x12\x0c\n\x07\x62ugbite\x10\xc2\x03\x12\x0f\n\nchargebeam\x10\xc3\x03\x12\x0f\n\nwoodhammer\x10\xc4\x03\x12\x0c\n\x07\x61quajet\x10\xc5\x03\x12\x10\n\x0b\x61ttackorder\x10\xc6\x03\x12\x10\n\x0b\x64\x65\x66\x65ndorder\x10\xc7\x03\x12\x0e\n\thealorder\x10\xc8\x03\x12\x0e\n\theadsmash\x10\xc9\x03\x12\x0e\n\tdoublehit\x10\xca\x03\x12\x0f\n\nroaroftime\x10\xcb\x03\x12\x10\n\x0bspacialrend\x10\xcc\x03\x12\x0f\n\nlunardance\x10\xcd\x03\x12\x0e\n\tcrushgrip\x10\xce\x03\x12\x0f\n\nmagmastorm\x10\xcf\x03\x12\r\n\x08\x64\x61rkvoid\x10\xd0\x03\x12\x0e\n\tseedflare\x10\xd1\x03\x12\x10\n\x0bominouswind\x10\xd2\x03\x12\x10\n\x0bshadowforce\x10\xd3\x03\x12\x0e\n\thoneclaws\x10\xd4\x03\x12\x0e\n\twideguard\x10\xd5\x03\x12\x0f\n\nguardsplit\x10\xd6\x03\x12\x0f\n\npowersplit\x10\xd7\x03\x12\x0f\n\nwonderroom\x10\xd8\x03\x12\r\n\x08psyshock\x10\xd9\x03\x12\x0e\n\tvenoshock\x10\xda\x03\x12\x0f\n\nautotomize\x10\xdb\x03\x12\x0f\n\nragepowder\x10\xdc\x03\x12\x10\n\x0btelekinesis\x10\xdd\x03\x12\x0e\n\tmagicroom\x10\xde\x03\x12\x0e\n\tsmackdown\x10\xdf\x03\x12\x0f\n\nstormthrow\x10\xe0\x03\x12\x0f\n\nflameburst\x10\xe1\x03\x12\x0f\n\nsludgewave\x10\xe2\x03\x12\x10\n\x0bquiverdance\x10\xe3\x03\x12\x0e\n\theavyslam\x10\xe4\x03\x12\x11\n\x0csynchronoise\x10\xe5\x03\x12\x10\n\x0b\x65lectroball\x10\xe6\x03\x12\t\n\x04soak\x10\xe7\x03\x12\x10\n\x0b\x66lamecharge\x10\xe8\x03\x12\t\n\x04\x63oil\x10\xe9\x03\x12\r\n\x08lowsweep\x10\xea\x03\x12\x0e\n\tacidspray\x10\xeb\x03\x12\r\n\x08\x66oulplay\x10\xec\x03\x12\x0f\n\nsimplebeam\x10\xed\x03\x12\x10\n\x0b\x65ntrainment\x10\xee\x03\x12\r\n\x08\x61\x66teryou\x10\xef\x03\x12\n\n\x05round\x10\xf0\x03\x12\x10\n\x0b\x65\x63hoedvoice\x10\xf1\x03\x12\r\n\x08\x63hipaway\x10\xf2\x03\x12\x0e\n\tclearsmog\x10\xf3\x03\x12\x10\n\x0bstoredpower\x10\xf4\x03\x12\x0f\n\nquickguard\x10\xf5\x03\x12\x0f\n\nallyswitch\x10\xf6\x03\x12\n\n\x05scald\x10\xf7\x03\x12\x0f\n\nshellsmash\x10\xf8\x03\x12\x0e\n\thealpulse\x10\xf9\x03\x12\x08\n\x03hex\x10\xfa\x03\x12\x0c\n\x07skydrop\x10\xfb\x03\x12\x0e\n\tshiftgear\x10\xfc\x03\x12\x10\n\x0b\x63irclethrow\x10\xfd\x03\x12\x0f\n\nincinerate\x10\xfe\x03\x12\n\n\x05quash\x10\xff\x03\x12\x0f\n\nacrobatics\x10\x80\x04\x12\x10\n\x0breflecttype\x10\x81\x04\x12\x0e\n\tretaliate\x10\x82\x04\x12\x10\n\x0b\x66inalgambit\x10\x83\x04\x12\x0b\n\x06\x62\x65stow\x10\x84\x04\x12\x0c\n\x07inferno\x10\x85\x04\x12\x10\n\x0bwaterpledge\x10\x86\x04\x12\x0f\n\nfirepledge\x10\x87\x04\x12\x10\n\x0bgrasspledge\x10\x88\x04\x12\x0f\n\nvoltswitch\x10\x89\x04\x12\x10\n\x0bstrugglebug\x10\x8a\x04\x12\r\n\x08\x62ulldoze\x10\x8b\x04\x12\x10\n\x0b\x66rostbreath\x10\x8c\x04\x12\x0f\n\ndragontail\x10\x8d\x04\x12\x0b\n\x06workup\x10\x8e\x04\x12\x0f\n\nelectroweb\x10\x8f\x04\x12\x0f\n\nwildcharge\x10\x90\x04\x12\r\n\x08\x64rillrun\x10\x91\x04\x12\r\n\x08\x64ualchop\x10\x92\x04\x12\x0f\n\nheartstamp\x10\x93\x04\x12\x0e\n\thornleech\x10\x94\x04\x12\x10\n\x0bsacredsword\x10\x95\x04\x12\x0f\n\nrazorshell\x10\x96\x04\x12\x0e\n\theatcrash\x10\x97\x04\x12\x10\n\x0bleaftornado\x10\x98\x04\x12\x10\n\x0bsteamroller\x10\x99\x04\x12\x10\n\x0b\x63ottonguard\x10\x9a\x04\x12\x0e\n\tnightdaze\x10\x9b\x04\x12\x0e\n\tpsystrike\x10\x9c\x04\x12\r\n\x08tailslap\x10\x9d\x04\x12\x0e\n\thurricane\x10\x9e\x04\x12\x0f\n\nheadcharge\x10\x9f\x04\x12\x0e\n\tgeargrind\x10\xa0\x04\x12\x10\n\x0bsearingshot\x10\xa1\x04\x12\x10\n\x0btechnoblast\x10\xa2\x04\x12\x0e\n\trelicsong\x10\xa3\x04\x12\x10\n\x0bsecretsword\x10\xa4\x04\x12\r\n\x08glaciate\x10\xa5\x04\x12\x0f\n\nboltstrike\x10\xa6\x04\x12\x0e\n\tblueflare\x10\xa7\x04\x12\x0f\n\nfierydance\x10\xa8\x04\x12\x10\n\x0b\x66reezeshock\x10\xa9\x04\x12\x0c\n\x07iceburn\x10\xaa\x04\x12\n\n\x05snarl\x10\xab\x04\x12\x10\n\x0biciclecrash\x10\xac\x04\x12\x0c\n\x07vcreate\x10\xad\x04\x12\x10\n\x0b\x66usionflare\x10\xae\x04\x12\x0f\n\nfusionbolt\x10\xaf\x04\x12\x10\n\x0b\x66lyingpress\x10\xb0\x04\x12\r\n\x08matblock\x10\xb1\x04\x12\n\n\x05\x62\x65lch\x10\xb2\x04\x12\x0f\n\nrototiller\x10\xb3\x04\x12\x0e\n\tstickyweb\x10\xb4\x04\x12\x10\n\x0b\x66\x65llstinger\x10\xb5\x04\x12\x11\n\x0cphantomforce\x10\xb6\x04\x12\x11\n\x0ctrickortreat\x10\xb7\x04\x12\x0e\n\tnobleroar\x10\xb8\x04\x12\x0e\n\tiondeluge\x10\xb9\x04\x12\x14\n\x0fparaboliccharge\x10\xba\x04\x12\x11\n\x0c\x66orestscurse\x10\xbb\x04\x12\x12\n\rpetalblizzard\x10\xbc\x04\x12\x0e\n\tfreezedry\x10\xbd\x04\x12\x13\n\x0e\x64isarmingvoice\x10\xbe\x04\x12\x10\n\x0bpartingshot\x10\xbf\x04\x12\x0f\n\ntopsyturvy\x10\xc0\x04\x12\x11\n\x0c\x64rainingkiss\x10\xc1\x04\x12\x11\n\x0c\x63raftyshield\x10\xc2\x04\x12\x11\n\x0c\x66lowershield\x10\xc3\x04\x12\x12\n\rgrassyterrain\x10\xc4\x04\x12\x11\n\x0cmistyterrain\x10\xc5\x04\x12\x0e\n\telectrify\x10\xc6\x04\x12\x0e\n\tplayrough\x10\xc7\x04\x12\x0e\n\tfairywind\x10\xc8\x04\x12\x0e\n\tmoonblast\x10\xc9\x04\x12\x0e\n\tboomburst\x10\xca\x04\x12\x0e\n\tfairylock\x10\xcb\x04\x12\x10\n\x0bkingsshield\x10\xcc\x04\x12\r\n\x08playnice\x10\xcd\x04\x12\x0c\n\x07\x63onfide\x10\xce\x04\x12\x11\n\x0c\x64iamondstorm\x10\xcf\x04\x12\x12\n\rsteameruption\x10\xd0\x04\x12\x13\n\x0ehyperspacehole\x10\xd1\x04\x12\x12\n\rwatershuriken\x10\xd2\x04\x12\x11\n\x0cmysticalfire\x10\xd3\x04\x12\x10\n\x0bspikyshield\x10\xd4\x04\x12\x11\n\x0c\x61romaticmist\x10\xd5\x04\x12\x11\n\x0c\x65\x65rieimpulse\x10\xd6\x04\x12\x10\n\x0bvenomdrench\x10\xd7\x04\x12\x0b\n\x06powder\x10\xd8\x04\x12\r\n\x08geomancy\x10\xd9\x04\x12\x11\n\x0cmagneticflux\x10\xda\x04\x12\x0e\n\thappyhour\x10\xdb\x04\x12\x14\n\x0f\x65lectricterrain\x10\xdc\x04\x12\x12\n\rdazzlinggleam\x10\xdd\x04\x12\x0e\n\tcelebrate\x10\xde\x04\x12\x0e\n\tholdhands\x10\xdf\x04\x12\x11\n\x0c\x62\x61\x62ydolleyes\x10\xe0\x04\x12\x0b\n\x06nuzzle\x10\xe1\x04\x12\r\n\x08holdback\x10\xe2\x04\x12\x10\n\x0binfestation\x10\xe3\x04\x12\x11\n\x0cpoweruppunch\x10\xe4\x04\x12\x11\n\x0coblivionwing\x10\xe5\x04\x12\x13\n\x0ethousandarrows\x10\xe6\x04\x12\x12\n\rthousandwaves\x10\xe7\x04\x12\x0f\n\nlandswrath\x10\xe8\x04\x12\x10\n\x0blightofruin\x10\xe9\x04\x12\x10\n\x0boriginpulse\x10\xea\x04\x12\x14\n\x0fprecipiceblades\x10\xeb\x04\x12\x11\n\x0c\x64ragonascent\x10\xec\x04\x12\x13\n\x0ehyperspacefury\x10\xed\x04\x12\x13\n\x0e\x62reakneckblitz\x10\xee\x04\x12\x14\n\x0f\x61lloutpummeling\x10\xf0\x04\x12\x18\n\x13supersonicskystrike\x10\xf2\x04\x12\x11\n\x0c\x61\x63iddownpour\x10\xf4\x04\x12\x11\n\x0ctectonicrage\x10\xf6\x04\x12\x15\n\x10\x63ontinentalcrush\x10\xf8\x04\x12\x12\n\rsavagespinout\x10\xfa\x04\x12\x19\n\x14neverendingnightmare\x10\xfc\x04\x12\x13\n\x0e\x63orkscrewcrash\x10\xfe\x04\x12\x15\n\x10infernooverdrive\x10\x80\x05\x12\x10\n\x0bhydrovortex\x10\x82\x05\x12\x0e\n\tbloomdoom\x10\x84\x05\x12\x12\n\rgigavolthavoc\x10\x86\x05\x12\x14\n\x0fshatteredpsyche\x10\x88\x05\x12\x13\n\x0esubzeroslammer\x10\x8a\x05\x12\x15\n\x10\x64\x65vastatingdrake\x10\x8c\x05\x12\x15\n\x10\x62lackholeeclipse\x10\x8e\x05\x12\x12\n\rtwinkletackle\x10\x90\x05\x12\x11\n\x0c\x63\x61tastropika\x10\x92\x05\x12\x0c\n\x07shoreup\x10\x93\x05\x12\x14\n\x0f\x66irstimpression\x10\x94\x05\x12\x12\n\rbanefulbunker\x10\x95\x05\x12\x12\n\rspiritshackle\x10\x96\x05\x12\x12\n\rdarkestlariat\x10\x97\x05\x12\x12\n\rsparklingaria\x10\x98\x05\x12\x0e\n\ticehammer\x10\x99\x05\x12\x12\n\rfloralhealing\x10\x9a\x05\x12\x13\n\x0ehighhorsepower\x10\x9b\x05\x12\x10\n\x0bstrengthsap\x10\x9c\x05\x12\x0f\n\nsolarblade\x10\x9d\x05\x12\x0c\n\x07leafage\x10\x9e\x05\x12\x0e\n\tspotlight\x10\x9f\x05\x12\x10\n\x0btoxicthread\x10\xa0\x05\x12\x0f\n\nlaserfocus\x10\xa1\x05\x12\x0b\n\x06gearup\x10\xa2\x05\x12\x0f\n\nthroatchop\x10\xa3\x05\x12\x0f\n\npollenpuff\x10\xa4\x05\x12\x0f\n\nanchorshot\x10\xa5\x05\x12\x13\n\x0epsychicterrain\x10\xa6\x05\x12\n\n\x05lunge\x10\xa7\x05\x12\r\n\x08\x66irelash\x10\xa8\x05\x12\x0e\n\tpowertrip\x10\xa9\x05\x12\x0b\n\x06\x62urnup\x10\xaa\x05\x12\x0e\n\tspeedswap\x10\xab\x05\x12\x10\n\x0bsmartstrike\x10\xac\x05\x12\x0b\n\x06purify\x10\xad\x05\x12\x14\n\x0frevelationdance\x10\xae\x05\x12\x11\n\x0c\x63oreenforcer\x10\xaf\x05\x12\r\n\x08tropkick\x10\xb0\x05\x12\r\n\x08instruct\x10\xb1\x05\x12\x0e\n\tbeakblast\x10\xb2\x05\x12\x13\n\x0e\x63langingscales\x10\xb3\x05\x12\x11\n\x0c\x64ragonhammer\x10\xb4\x05\x12\x10\n\x0b\x62rutalswing\x10\xb5\x05\x12\x0f\n\nauroraveil\x10\xb6\x05\x12\x16\n\x11sinisterarrowraid\x10\xb7\x05\x12\x17\n\x12maliciousmoonsault\x10\xb8\x05\x12\x14\n\x0foceanicoperetta\x10\xb9\x05\x12\x14\n\x0fguardianofalola\x10\xba\x05\x12\x1c\n\x17soulstealing7starstrike\x10\xbb\x05\x12\x16\n\x11stokedsparksurfer\x10\xbc\x05\x12\x17\n\x12pulverizingpancake\x10\xbd\x05\x12\x14\n\x0f\x65xtremeevoboost\x10\xbe\x05\x12\x15\n\x10genesissupernova\x10\xbf\x05\x12\x0e\n\tshelltrap\x10\xc0\x05\x12\x10\n\x0b\x66leurcannon\x10\xc1\x05\x12\x11\n\x0cpsychicfangs\x10\xc2\x05\x12\x14\n\x0fstompingtantrum\x10\xc3\x05\x12\x0f\n\nshadowbone\x10\xc4\x05\x12\x0f\n\naccelerock\x10\xc5\x05\x12\x10\n\x0bliquidation\x10\xc6\x05\x12\x13\n\x0eprismaticlaser\x10\xc7\x05\x12\x12\n\rspectralthief\x10\xc8\x05\x12\x13\n\x0esunsteelstrike\x10\xc9\x05\x12\x12\n\rmoongeistbeam\x10\xca\x05\x12\x10\n\x0btearfullook\x10\xcb\x05\x12\x0c\n\x07zingzap\x10\xcc\x05\x12\x13\n\x0enaturesmadness\x10\xcd\x05\x12\x10\n\x0bmultiattack\x10\xce\x05\x12\x1d\n\x18_10000000voltthunderbolt\x10\xcf\x05\"\xdc\x02\n\x19PREFIX_AGDFASBV1284323517\"\xbe\x02\n\x0ePokemonNatures\x12\r\n\tNoneValue\x10\x00\x12\x0b\n\x07\x61\x64\x61mant\x10\x01\x12\x0b\n\x07\x62\x61shful\x10\x02\x12\x08\n\x04\x62old\x10\x03\x12\t\n\x05\x62rave\x10\x04\x12\x08\n\x04\x63\x61lm\x10\x05\x12\x0b\n\x07\x63\x61reful\x10\x06\x12\n\n\x06\x64ocile\x10\x07\x12\n\n\x06gentle\x10\x08\x12\t\n\x05hardy\x10\t\x12\t\n\x05hasty\x10\n\x12\n\n\x06impish\x10\x0b\x12\t\n\x05jolly\x10\x0c\x12\x07\n\x03lax\x10\r\x12\n\n\x06lonely\x10\x0e\x12\x08\n\x04mild\x10\x0f\x12\n\n\x06modest\x10\x10\x12\t\n\x05naive\x10\x11\x12\x0b\n\x07naughty\x10\x12\x12\t\n\x05quiet\x10\x13\x12\n\n\x06quirky\x10\x14\x12\x08\n\x04rash\x10\x15\x12\x0b\n\x07relaxed\x10\x16\x12\t\n\x05sassy\x10\x17\x12\x0b\n\x07serious\x10\x18\x12\t\n\x05timid\x10\x19\"s\n\x0cPokemonStats\x12\r\n\x02HP\x18\x01 \x01(\x05:\x01\x30\x12\x0e\n\x03\x41tk\x18\x02 \x01(\x05:\x01\x30\x12\x0e\n\x03\x44\x65\x66\x18\x03 \x01(\x05:\x01\x30\x12\x10\n\x05SpAtk\x18\x04 \x01(\x05:\x01\x30\x12\x10\n\x05SpDef\x18\x05 \x01(\x05:\x01\x30\x12\x10\n\x05Speed\x18\x06 \x01(\x05:\x01\x30\"\x9c\x01\n\x06Search\x12\x1b\n\x08SearchID\x18\x01 \x01(\x0b\x32\t.bcl.Guid\x12\x15\n\nMaxResults\x18\x02 \x01(\x05:\x01\x30\x12\x0e\n\x03\x42ox\x18\x03 \x01(\x05:\x01\x30\x12\x10\n\x05\x46ound\x18\x04 \x01(\x05:\x01\x30\x12<\n\x07Results\x18\x05 \x03(\x0b\x32+.PSXAPI.Response1559120870.InventoryPokemon*\xf0Y\n\tPokemonID\x12\r\n\tmissingno\x10\x00\x12\x12\n\x05Unset\x10\xff\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12\r\n\tbulbasaur\x10\x01\x12\x0b\n\x07ivysaur\x10\x02\x12\x0c\n\x08venusaur\x10\x03\x12\x0e\n\ncharmander\x10\x04\x12\x0e\n\ncharmeleon\x10\x05\x12\r\n\tcharizard\x10\x06\x12\x0c\n\x08squirtle\x10\x07\x12\r\n\twartortle\x10\x08\x12\r\n\tblastoise\x10\t\x12\x0c\n\x08\x63\x61terpie\x10\n\x12\x0b\n\x07metapod\x10\x0b\x12\x0e\n\nbutterfree\x10\x0c\x12\n\n\x06weedle\x10\r\x12\n\n\x06kakuna\x10\x0e\x12\x0c\n\x08\x62\x65\x65\x64rill\x10\x0f\x12\n\n\x06pidgey\x10\x10\x12\r\n\tpidgeotto\x10\x11\x12\x0b\n\x07pidgeot\x10\x12\x12\x0b\n\x07rattata\x10\x13\x12\x0c\n\x08raticate\x10\x14\x12\x0b\n\x07spearow\x10\x15\x12\n\n\x06\x66\x65\x61row\x10\x16\x12\t\n\x05\x65kans\x10\x17\x12\t\n\x05\x61rbok\x10\x18\x12\x0b\n\x07pikachu\x10\x19\x12\n\n\x06raichu\x10\x1a\x12\r\n\tsandshrew\x10\x1b\x12\r\n\tsandslash\x10\x1c\x12\x0c\n\x08nidoranf\x10\x1d\x12\x0c\n\x08nidorina\x10\x1e\x12\r\n\tnidoqueen\x10\x1f\x12\x0c\n\x08nidoranm\x10 \x12\x0c\n\x08nidorino\x10!\x12\x0c\n\x08nidoking\x10\"\x12\x0c\n\x08\x63lefairy\x10#\x12\x0c\n\x08\x63lefable\x10$\x12\n\n\x06vulpix\x10%\x12\r\n\tninetales\x10&\x12\x0e\n\njigglypuff\x10\'\x12\x0e\n\nwigglytuff\x10(\x12\t\n\x05zubat\x10)\x12\n\n\x06golbat\x10*\x12\n\n\x06oddish\x10+\x12\t\n\x05gloom\x10,\x12\r\n\tvileplume\x10-\x12\t\n\x05paras\x10.\x12\x0c\n\x08parasect\x10/\x12\x0b\n\x07venonat\x10\x30\x12\x0c\n\x08venomoth\x10\x31\x12\x0b\n\x07\x64iglett\x10\x32\x12\x0b\n\x07\x64ugtrio\x10\x33\x12\n\n\x06meowth\x10\x34\x12\x0b\n\x07persian\x10\x35\x12\x0b\n\x07psyduck\x10\x36\x12\x0b\n\x07golduck\x10\x37\x12\n\n\x06mankey\x10\x38\x12\x0c\n\x08primeape\x10\x39\x12\r\n\tgrowlithe\x10:\x12\x0c\n\x08\x61rcanine\x10;\x12\x0b\n\x07poliwag\x10<\x12\r\n\tpoliwhirl\x10=\x12\r\n\tpoliwrath\x10>\x12\x08\n\x04\x61\x62ra\x10?\x12\x0b\n\x07kadabra\x10@\x12\x0c\n\x08\x61lakazam\x10\x41\x12\n\n\x06machop\x10\x42\x12\x0b\n\x07machoke\x10\x43\x12\x0b\n\x07machamp\x10\x44\x12\x0e\n\nbellsprout\x10\x45\x12\x0e\n\nweepinbell\x10\x46\x12\x0e\n\nvictreebel\x10G\x12\r\n\ttentacool\x10H\x12\x0e\n\ntentacruel\x10I\x12\x0b\n\x07geodude\x10J\x12\x0c\n\x08graveler\x10K\x12\t\n\x05golem\x10L\x12\n\n\x06ponyta\x10M\x12\x0c\n\x08rapidash\x10N\x12\x0c\n\x08slowpoke\x10O\x12\x0b\n\x07slowbro\x10P\x12\r\n\tmagnemite\x10Q\x12\x0c\n\x08magneton\x10R\x12\r\n\tfarfetchd\x10S\x12\t\n\x05\x64oduo\x10T\x12\n\n\x06\x64odrio\x10U\x12\x08\n\x04seel\x10V\x12\x0b\n\x07\x64\x65wgong\x10W\x12\n\n\x06grimer\x10X\x12\x07\n\x03muk\x10Y\x12\x0c\n\x08shellder\x10Z\x12\x0c\n\x08\x63loyster\x10[\x12\n\n\x06gastly\x10\\\x12\x0b\n\x07haunter\x10]\x12\n\n\x06gengar\x10^\x12\x08\n\x04onix\x10_\x12\x0b\n\x07\x64rowzee\x10`\x12\t\n\x05hypno\x10\x61\x12\n\n\x06krabby\x10\x62\x12\x0b\n\x07kingler\x10\x63\x12\x0b\n\x07voltorb\x10\x64\x12\r\n\telectrode\x10\x65\x12\r\n\texeggcute\x10\x66\x12\r\n\texeggutor\x10g\x12\n\n\x06\x63ubone\x10h\x12\x0b\n\x07marowak\x10i\x12\r\n\thitmonlee\x10j\x12\x0e\n\nhitmonchan\x10k\x12\r\n\tlickitung\x10l\x12\x0b\n\x07koffing\x10m\x12\x0b\n\x07weezing\x10n\x12\x0b\n\x07rhyhorn\x10o\x12\n\n\x06rhydon\x10p\x12\x0b\n\x07\x63hansey\x10q\x12\x0b\n\x07tangela\x10r\x12\x0e\n\nkangaskhan\x10s\x12\n\n\x06horsea\x10t\x12\n\n\x06seadra\x10u\x12\x0b\n\x07goldeen\x10v\x12\x0b\n\x07seaking\x10w\x12\n\n\x06staryu\x10x\x12\x0b\n\x07starmie\x10y\x12\n\n\x06mrmime\x10z\x12\x0b\n\x07scyther\x10{\x12\x08\n\x04jynx\x10|\x12\x0e\n\nelectabuzz\x10}\x12\n\n\x06magmar\x10~\x12\n\n\x06pinsir\x10\x7f\x12\x0b\n\x06tauros\x10\x80\x01\x12\r\n\x08magikarp\x10\x81\x01\x12\r\n\x08gyarados\x10\x82\x01\x12\x0b\n\x06lapras\x10\x83\x01\x12\n\n\x05\x64itto\x10\x84\x01\x12\n\n\x05\x65\x65vee\x10\x85\x01\x12\r\n\x08vaporeon\x10\x86\x01\x12\x0c\n\x07jolteon\x10\x87\x01\x12\x0c\n\x07\x66lareon\x10\x88\x01\x12\x0c\n\x07porygon\x10\x89\x01\x12\x0c\n\x07omanyte\x10\x8a\x01\x12\x0c\n\x07omastar\x10\x8b\x01\x12\x0b\n\x06kabuto\x10\x8c\x01\x12\r\n\x08kabutops\x10\x8d\x01\x12\x0f\n\naerodactyl\x10\x8e\x01\x12\x0c\n\x07snorlax\x10\x8f\x01\x12\r\n\x08\x61rticuno\x10\x90\x01\x12\x0b\n\x06zapdos\x10\x91\x01\x12\x0c\n\x07moltres\x10\x92\x01\x12\x0c\n\x07\x64ratini\x10\x93\x01\x12\x0e\n\tdragonair\x10\x94\x01\x12\x0e\n\tdragonite\x10\x95\x01\x12\x0b\n\x06mewtwo\x10\x96\x01\x12\x08\n\x03mew\x10\x97\x01\x12\x0e\n\tchikorita\x10\x98\x01\x12\x0c\n\x07\x62\x61yleef\x10\x99\x01\x12\r\n\x08meganium\x10\x9a\x01\x12\x0e\n\tcyndaquil\x10\x9b\x01\x12\x0c\n\x07quilava\x10\x9c\x01\x12\x0f\n\ntyphlosion\x10\x9d\x01\x12\r\n\x08totodile\x10\x9e\x01\x12\r\n\x08\x63roconaw\x10\x9f\x01\x12\x0f\n\nferaligatr\x10\xa0\x01\x12\x0c\n\x07sentret\x10\xa1\x01\x12\x0b\n\x06\x66urret\x10\xa2\x01\x12\r\n\x08hoothoot\x10\xa3\x01\x12\x0c\n\x07noctowl\x10\xa4\x01\x12\x0b\n\x06ledyba\x10\xa5\x01\x12\x0b\n\x06ledian\x10\xa6\x01\x12\r\n\x08spinarak\x10\xa7\x01\x12\x0c\n\x07\x61riados\x10\xa8\x01\x12\x0b\n\x06\x63robat\x10\xa9\x01\x12\r\n\x08\x63hinchou\x10\xaa\x01\x12\x0c\n\x07lanturn\x10\xab\x01\x12\n\n\x05pichu\x10\xac\x01\x12\x0b\n\x06\x63leffa\x10\xad\x01\x12\x0e\n\tigglybuff\x10\xae\x01\x12\x0b\n\x06togepi\x10\xaf\x01\x12\x0c\n\x07togetic\x10\xb0\x01\x12\t\n\x04natu\x10\xb1\x01\x12\t\n\x04xatu\x10\xb2\x01\x12\x0b\n\x06mareep\x10\xb3\x01\x12\x0c\n\x07\x66laaffy\x10\xb4\x01\x12\r\n\x08\x61mpharos\x10\xb5\x01\x12\x0e\n\tbellossom\x10\xb6\x01\x12\x0b\n\x06marill\x10\xb7\x01\x12\x0e\n\tazumarill\x10\xb8\x01\x12\x0e\n\tsudowoodo\x10\xb9\x01\x12\r\n\x08politoed\x10\xba\x01\x12\x0b\n\x06hoppip\x10\xbb\x01\x12\r\n\x08skiploom\x10\xbc\x01\x12\r\n\x08jumpluff\x10\xbd\x01\x12\n\n\x05\x61ipom\x10\xbe\x01\x12\x0c\n\x07sunkern\x10\xbf\x01\x12\r\n\x08sunflora\x10\xc0\x01\x12\n\n\x05yanma\x10\xc1\x01\x12\x0b\n\x06wooper\x10\xc2\x01\x12\r\n\x08quagsire\x10\xc3\x01\x12\x0b\n\x06\x65speon\x10\xc4\x01\x12\x0c\n\x07umbreon\x10\xc5\x01\x12\x0c\n\x07murkrow\x10\xc6\x01\x12\r\n\x08slowking\x10\xc7\x01\x12\x0f\n\nmisdreavus\x10\xc8\x01\x12\n\n\x05unown\x10\xc9\x01\x12\x0e\n\twobbuffet\x10\xca\x01\x12\x0e\n\tgirafarig\x10\xcb\x01\x12\x0b\n\x06pineco\x10\xcc\x01\x12\x0f\n\nforretress\x10\xcd\x01\x12\x0e\n\tdunsparce\x10\xce\x01\x12\x0b\n\x06gligar\x10\xcf\x01\x12\x0c\n\x07steelix\x10\xd0\x01\x12\r\n\x08snubbull\x10\xd1\x01\x12\r\n\x08granbull\x10\xd2\x01\x12\r\n\x08qwilfish\x10\xd3\x01\x12\x0b\n\x06scizor\x10\xd4\x01\x12\x0c\n\x07shuckle\x10\xd5\x01\x12\x0e\n\theracross\x10\xd6\x01\x12\x0c\n\x07sneasel\x10\xd7\x01\x12\x0e\n\tteddiursa\x10\xd8\x01\x12\r\n\x08ursaring\x10\xd9\x01\x12\x0b\n\x06slugma\x10\xda\x01\x12\r\n\x08magcargo\x10\xdb\x01\x12\x0b\n\x06swinub\x10\xdc\x01\x12\x0e\n\tpiloswine\x10\xdd\x01\x12\x0c\n\x07\x63orsola\x10\xde\x01\x12\r\n\x08remoraid\x10\xdf\x01\x12\x0e\n\toctillery\x10\xe0\x01\x12\r\n\x08\x64\x65libird\x10\xe1\x01\x12\x0c\n\x07mantine\x10\xe2\x01\x12\r\n\x08skarmory\x10\xe3\x01\x12\r\n\x08houndour\x10\xe4\x01\x12\r\n\x08houndoom\x10\xe5\x01\x12\x0c\n\x07kingdra\x10\xe6\x01\x12\x0b\n\x06phanpy\x10\xe7\x01\x12\x0c\n\x07\x64onphan\x10\xe8\x01\x12\r\n\x08porygon2\x10\xe9\x01\x12\r\n\x08stantler\x10\xea\x01\x12\r\n\x08smeargle\x10\xeb\x01\x12\x0c\n\x07tyrogue\x10\xec\x01\x12\x0e\n\thitmontop\x10\xed\x01\x12\r\n\x08smoochum\x10\xee\x01\x12\x0b\n\x06\x65lekid\x10\xef\x01\x12\n\n\x05magby\x10\xf0\x01\x12\x0c\n\x07miltank\x10\xf1\x01\x12\x0c\n\x07\x62lissey\x10\xf2\x01\x12\x0b\n\x06raikou\x10\xf3\x01\x12\n\n\x05\x65ntei\x10\xf4\x01\x12\x0c\n\x07suicune\x10\xf5\x01\x12\r\n\x08larvitar\x10\xf6\x01\x12\x0c\n\x07pupitar\x10\xf7\x01\x12\x0e\n\ttyranitar\x10\xf8\x01\x12\n\n\x05lugia\x10\xf9\x01\x12\t\n\x04hooh\x10\xfa\x01\x12\x0b\n\x06\x63\x65lebi\x10\xfb\x01\x12\x0c\n\x07treecko\x10\xfc\x01\x12\x0c\n\x07grovyle\x10\xfd\x01\x12\r\n\x08sceptile\x10\xfe\x01\x12\x0c\n\x07torchic\x10\xff\x01\x12\x0e\n\tcombusken\x10\x80\x02\x12\r\n\x08\x62laziken\x10\x81\x02\x12\x0b\n\x06mudkip\x10\x82\x02\x12\x0e\n\tmarshtomp\x10\x83\x02\x12\r\n\x08swampert\x10\x84\x02\x12\x0e\n\tpoochyena\x10\x85\x02\x12\x0e\n\tmightyena\x10\x86\x02\x12\x0e\n\tzigzagoon\x10\x87\x02\x12\x0c\n\x07linoone\x10\x88\x02\x12\x0c\n\x07wurmple\x10\x89\x02\x12\x0c\n\x07silcoon\x10\x8a\x02\x12\x0e\n\tbeautifly\x10\x8b\x02\x12\x0c\n\x07\x63\x61scoon\x10\x8c\x02\x12\x0b\n\x06\x64ustox\x10\x8d\x02\x12\n\n\x05lotad\x10\x8e\x02\x12\x0b\n\x06lombre\x10\x8f\x02\x12\r\n\x08ludicolo\x10\x90\x02\x12\x0b\n\x06seedot\x10\x91\x02\x12\x0c\n\x07nuzleaf\x10\x92\x02\x12\x0c\n\x07shiftry\x10\x93\x02\x12\x0c\n\x07taillow\x10\x94\x02\x12\x0c\n\x07swellow\x10\x95\x02\x12\x0c\n\x07wingull\x10\x96\x02\x12\r\n\x08pelipper\x10\x97\x02\x12\n\n\x05ralts\x10\x98\x02\x12\x0b\n\x06kirlia\x10\x99\x02\x12\x0e\n\tgardevoir\x10\x9a\x02\x12\x0c\n\x07surskit\x10\x9b\x02\x12\x0f\n\nmasquerain\x10\x9c\x02\x12\x0e\n\tshroomish\x10\x9d\x02\x12\x0c\n\x07\x62reloom\x10\x9e\x02\x12\x0c\n\x07slakoth\x10\x9f\x02\x12\r\n\x08vigoroth\x10\xa0\x02\x12\x0c\n\x07slaking\x10\xa1\x02\x12\x0c\n\x07nincada\x10\xa2\x02\x12\x0c\n\x07ninjask\x10\xa3\x02\x12\r\n\x08shedinja\x10\xa4\x02\x12\x0c\n\x07whismur\x10\xa5\x02\x12\x0c\n\x07loudred\x10\xa6\x02\x12\x0c\n\x07\x65xploud\x10\xa7\x02\x12\r\n\x08makuhita\x10\xa8\x02\x12\r\n\x08hariyama\x10\xa9\x02\x12\x0c\n\x07\x61zurill\x10\xaa\x02\x12\r\n\x08nosepass\x10\xab\x02\x12\x0b\n\x06skitty\x10\xac\x02\x12\r\n\x08\x64\x65lcatty\x10\xad\x02\x12\x0c\n\x07sableye\x10\xae\x02\x12\x0b\n\x06mawile\x10\xaf\x02\x12\t\n\x04\x61ron\x10\xb0\x02\x12\x0b\n\x06lairon\x10\xb1\x02\x12\x0b\n\x06\x61ggron\x10\xb2\x02\x12\r\n\x08meditite\x10\xb3\x02\x12\r\n\x08medicham\x10\xb4\x02\x12\x0e\n\telectrike\x10\xb5\x02\x12\x0e\n\tmanectric\x10\xb6\x02\x12\x0b\n\x06plusle\x10\xb7\x02\x12\n\n\x05minun\x10\xb8\x02\x12\x0c\n\x07volbeat\x10\xb9\x02\x12\r\n\x08illumise\x10\xba\x02\x12\x0c\n\x07roselia\x10\xbb\x02\x12\x0b\n\x06gulpin\x10\xbc\x02\x12\x0b\n\x06swalot\x10\xbd\x02\x12\r\n\x08\x63\x61rvanha\x10\xbe\x02\x12\r\n\x08sharpedo\x10\xbf\x02\x12\x0c\n\x07wailmer\x10\xc0\x02\x12\x0c\n\x07wailord\x10\xc1\x02\x12\n\n\x05numel\x10\xc2\x02\x12\r\n\x08\x63\x61merupt\x10\xc3\x02\x12\x0c\n\x07torkoal\x10\xc4\x02\x12\x0b\n\x06spoink\x10\xc5\x02\x12\x0c\n\x07grumpig\x10\xc6\x02\x12\x0b\n\x06spinda\x10\xc7\x02\x12\r\n\x08trapinch\x10\xc8\x02\x12\x0c\n\x07vibrava\x10\xc9\x02\x12\x0b\n\x06\x66lygon\x10\xca\x02\x12\x0b\n\x06\x63\x61\x63nea\x10\xcb\x02\x12\r\n\x08\x63\x61\x63turne\x10\xcc\x02\x12\x0b\n\x06swablu\x10\xcd\x02\x12\x0c\n\x07\x61ltaria\x10\xce\x02\x12\r\n\x08zangoose\x10\xcf\x02\x12\x0c\n\x07seviper\x10\xd0\x02\x12\r\n\x08lunatone\x10\xd1\x02\x12\x0c\n\x07solrock\x10\xd2\x02\x12\r\n\x08\x62\x61rboach\x10\xd3\x02\x12\r\n\x08whiscash\x10\xd4\x02\x12\r\n\x08\x63orphish\x10\xd5\x02\x12\x0e\n\tcrawdaunt\x10\xd6\x02\x12\x0b\n\x06\x62\x61ltoy\x10\xd7\x02\x12\x0c\n\x07\x63laydol\x10\xd8\x02\x12\x0b\n\x06lileep\x10\xd9\x02\x12\x0c\n\x07\x63radily\x10\xda\x02\x12\x0c\n\x07\x61norith\x10\xdb\x02\x12\x0c\n\x07\x61rmaldo\x10\xdc\x02\x12\x0b\n\x06\x66\x65\x65\x62\x61s\x10\xdd\x02\x12\x0c\n\x07milotic\x10\xde\x02\x12\r\n\x08\x63\x61stform\x10\xdf\x02\x12\x0c\n\x07kecleon\x10\xe0\x02\x12\x0c\n\x07shuppet\x10\xe1\x02\x12\x0c\n\x07\x62\x61nette\x10\xe2\x02\x12\x0c\n\x07\x64uskull\x10\xe3\x02\x12\r\n\x08\x64usclops\x10\xe4\x02\x12\x0c\n\x07tropius\x10\xe5\x02\x12\r\n\x08\x63himecho\x10\xe6\x02\x12\n\n\x05\x61\x62sol\x10\xe7\x02\x12\x0b\n\x06wynaut\x10\xe8\x02\x12\x0c\n\x07snorunt\x10\xe9\x02\x12\x0b\n\x06glalie\x10\xea\x02\x12\x0b\n\x06spheal\x10\xeb\x02\x12\x0b\n\x06sealeo\x10\xec\x02\x12\x0c\n\x07walrein\x10\xed\x02\x12\r\n\x08\x63lamperl\x10\xee\x02\x12\x0c\n\x07huntail\x10\xef\x02\x12\r\n\x08gorebyss\x10\xf0\x02\x12\x0e\n\trelicanth\x10\xf1\x02\x12\x0c\n\x07luvdisc\x10\xf2\x02\x12\n\n\x05\x62\x61gon\x10\xf3\x02\x12\x0c\n\x07shelgon\x10\xf4\x02\x12\x0e\n\tsalamence\x10\xf5\x02\x12\x0b\n\x06\x62\x65ldum\x10\xf6\x02\x12\x0b\n\x06metang\x10\xf7\x02\x12\x0e\n\tmetagross\x10\xf8\x02\x12\r\n\x08regirock\x10\xf9\x02\x12\x0b\n\x06regice\x10\xfa\x02\x12\x0e\n\tregisteel\x10\xfb\x02\x12\x0b\n\x06latias\x10\xfc\x02\x12\x0b\n\x06latios\x10\xfd\x02\x12\x0b\n\x06kyogre\x10\xfe\x02\x12\x0c\n\x07groudon\x10\xff\x02\x12\r\n\x08rayquaza\x10\x80\x03\x12\x0c\n\x07jirachi\x10\x81\x03\x12\x0b\n\x06\x64\x65oxys\x10\x82\x03\x12\x0c\n\x07turtwig\x10\x83\x03\x12\x0b\n\x06grotle\x10\x84\x03\x12\r\n\x08torterra\x10\x85\x03\x12\r\n\x08\x63himchar\x10\x86\x03\x12\r\n\x08monferno\x10\x87\x03\x12\x0e\n\tinfernape\x10\x88\x03\x12\x0b\n\x06piplup\x10\x89\x03\x12\r\n\x08prinplup\x10\x8a\x03\x12\r\n\x08\x65mpoleon\x10\x8b\x03\x12\x0b\n\x06starly\x10\x8c\x03\x12\r\n\x08staravia\x10\x8d\x03\x12\x0e\n\tstaraptor\x10\x8e\x03\x12\x0b\n\x06\x62idoof\x10\x8f\x03\x12\x0c\n\x07\x62ibarel\x10\x90\x03\x12\x0e\n\tkricketot\x10\x91\x03\x12\x0f\n\nkricketune\x10\x92\x03\x12\n\n\x05shinx\x10\x93\x03\x12\n\n\x05luxio\x10\x94\x03\x12\x0b\n\x06luxray\x10\x95\x03\x12\n\n\x05\x62udew\x10\x96\x03\x12\r\n\x08roserade\x10\x97\x03\x12\r\n\x08\x63ranidos\x10\x98\x03\x12\x0e\n\trampardos\x10\x99\x03\x12\r\n\x08shieldon\x10\x9a\x03\x12\x0e\n\tbastiodon\x10\x9b\x03\x12\n\n\x05\x62urmy\x10\x9c\x03\x12\r\n\x08wormadam\x10\x9d\x03\x12\x0b\n\x06mothim\x10\x9e\x03\x12\x0b\n\x06\x63ombee\x10\x9f\x03\x12\x0e\n\tvespiquen\x10\xa0\x03\x12\x0e\n\tpachirisu\x10\xa1\x03\x12\x0b\n\x06\x62uizel\x10\xa2\x03\x12\r\n\x08\x66loatzel\x10\xa3\x03\x12\x0c\n\x07\x63herubi\x10\xa4\x03\x12\x0c\n\x07\x63herrim\x10\xa5\x03\x12\x0c\n\x07shellos\x10\xa6\x03\x12\x0e\n\tgastrodon\x10\xa7\x03\x12\x0c\n\x07\x61mbipom\x10\xa8\x03\x12\r\n\x08\x64rifloon\x10\xa9\x03\x12\r\n\x08\x64rifblim\x10\xaa\x03\x12\x0c\n\x07\x62uneary\x10\xab\x03\x12\x0c\n\x07lopunny\x10\xac\x03\x12\x0e\n\tmismagius\x10\xad\x03\x12\x0e\n\thonchkrow\x10\xae\x03\x12\x0c\n\x07glameow\x10\xaf\x03\x12\x0c\n\x07purugly\x10\xb0\x03\x12\x0e\n\tchingling\x10\xb1\x03\x12\x0b\n\x06stunky\x10\xb2\x03\x12\r\n\x08skuntank\x10\xb3\x03\x12\x0c\n\x07\x62ronzor\x10\xb4\x03\x12\r\n\x08\x62ronzong\x10\xb5\x03\x12\x0b\n\x06\x62onsly\x10\xb6\x03\x12\x0b\n\x06mimejr\x10\xb7\x03\x12\x0c\n\x07happiny\x10\xb8\x03\x12\x0b\n\x06\x63hatot\x10\xb9\x03\x12\x0e\n\tspiritomb\x10\xba\x03\x12\n\n\x05gible\x10\xbb\x03\x12\x0b\n\x06gabite\x10\xbc\x03\x12\r\n\x08garchomp\x10\xbd\x03\x12\r\n\x08munchlax\x10\xbe\x03\x12\n\n\x05riolu\x10\xbf\x03\x12\x0c\n\x07lucario\x10\xc0\x03\x12\x0f\n\nhippopotas\x10\xc1\x03\x12\x0e\n\thippowdon\x10\xc2\x03\x12\x0c\n\x07skorupi\x10\xc3\x03\x12\x0c\n\x07\x64rapion\x10\xc4\x03\x12\r\n\x08\x63roagunk\x10\xc5\x03\x12\x0e\n\ttoxicroak\x10\xc6\x03\x12\x0e\n\tcarnivine\x10\xc7\x03\x12\x0c\n\x07\x66inneon\x10\xc8\x03\x12\r\n\x08lumineon\x10\xc9\x03\x12\x0c\n\x07mantyke\x10\xca\x03\x12\x0b\n\x06snover\x10\xcb\x03\x12\x0e\n\tabomasnow\x10\xcc\x03\x12\x0c\n\x07weavile\x10\xcd\x03\x12\x0e\n\tmagnezone\x10\xce\x03\x12\x0f\n\nlickilicky\x10\xcf\x03\x12\x0e\n\trhyperior\x10\xd0\x03\x12\x0e\n\ttangrowth\x10\xd1\x03\x12\x0f\n\nelectivire\x10\xd2\x03\x12\x0e\n\tmagmortar\x10\xd3\x03\x12\r\n\x08togekiss\x10\xd4\x03\x12\x0c\n\x07yanmega\x10\xd5\x03\x12\x0c\n\x07leafeon\x10\xd6\x03\x12\x0c\n\x07glaceon\x10\xd7\x03\x12\x0c\n\x07gliscor\x10\xd8\x03\x12\x0e\n\tmamoswine\x10\xd9\x03\x12\r\n\x08porygonz\x10\xda\x03\x12\x0c\n\x07gallade\x10\xdb\x03\x12\x0e\n\tprobopass\x10\xdc\x03\x12\r\n\x08\x64usknoir\x10\xdd\x03\x12\r\n\x08\x66roslass\x10\xde\x03\x12\n\n\x05rotom\x10\xdf\x03\x12\t\n\x04uxie\x10\xe0\x03\x12\x0c\n\x07mesprit\x10\xe1\x03\x12\n\n\x05\x61zelf\x10\xe2\x03\x12\x0b\n\x06\x64ialga\x10\xe3\x03\x12\x0b\n\x06palkia\x10\xe4\x03\x12\x0c\n\x07heatran\x10\xe5\x03\x12\x0e\n\tregigigas\x10\xe6\x03\x12\r\n\x08giratina\x10\xe7\x03\x12\x0e\n\tcresselia\x10\xe8\x03\x12\x0b\n\x06phione\x10\xe9\x03\x12\x0c\n\x07manaphy\x10\xea\x03\x12\x0c\n\x07\x64\x61rkrai\x10\xeb\x03\x12\x0c\n\x07shaymin\x10\xec\x03\x12\x0b\n\x06\x61rceus\x10\xed\x03\x12\x0c\n\x07victini\x10\xee\x03\x12\n\n\x05snivy\x10\xef\x03\x12\x0c\n\x07servine\x10\xf0\x03\x12\x0e\n\tserperior\x10\xf1\x03\x12\n\n\x05tepig\x10\xf2\x03\x12\x0c\n\x07pignite\x10\xf3\x03\x12\x0b\n\x06\x65mboar\x10\xf4\x03\x12\r\n\x08oshawott\x10\xf5\x03\x12\x0b\n\x06\x64\x65wott\x10\xf6\x03\x12\r\n\x08samurott\x10\xf7\x03\x12\x0b\n\x06patrat\x10\xf8\x03\x12\x0c\n\x07watchog\x10\xf9\x03\x12\r\n\x08lillipup\x10\xfa\x03\x12\x0c\n\x07herdier\x10\xfb\x03\x12\x0e\n\tstoutland\x10\xfc\x03\x12\r\n\x08purrloin\x10\xfd\x03\x12\x0c\n\x07liepard\x10\xfe\x03\x12\x0c\n\x07pansage\x10\xff\x03\x12\r\n\x08simisage\x10\x80\x04\x12\x0c\n\x07pansear\x10\x81\x04\x12\r\n\x08simisear\x10\x82\x04\x12\x0c\n\x07panpour\x10\x83\x04\x12\r\n\x08simipour\x10\x84\x04\x12\n\n\x05munna\x10\x85\x04\x12\r\n\x08musharna\x10\x86\x04\x12\x0b\n\x06pidove\x10\x87\x04\x12\x0e\n\ttranquill\x10\x88\x04\x12\r\n\x08unfezant\x10\x89\x04\x12\x0c\n\x07\x62litzle\x10\x8a\x04\x12\x0e\n\tzebstrika\x10\x8b\x04\x12\x0f\n\nroggenrola\x10\x8c\x04\x12\x0c\n\x07\x62oldore\x10\x8d\x04\x12\r\n\x08gigalith\x10\x8e\x04\x12\x0b\n\x06woobat\x10\x8f\x04\x12\x0c\n\x07swoobat\x10\x90\x04\x12\x0c\n\x07\x64rilbur\x10\x91\x04\x12\x0e\n\texcadrill\x10\x92\x04\x12\x0b\n\x06\x61udino\x10\x93\x04\x12\x0c\n\x07timburr\x10\x94\x04\x12\x0c\n\x07gurdurr\x10\x95\x04\x12\x0f\n\nconkeldurr\x10\x96\x04\x12\x0c\n\x07tympole\x10\x97\x04\x12\x0e\n\tpalpitoad\x10\x98\x04\x12\x0f\n\nseismitoad\x10\x99\x04\x12\n\n\x05throh\x10\x9a\x04\x12\t\n\x04sawk\x10\x9b\x04\x12\r\n\x08sewaddle\x10\x9c\x04\x12\r\n\x08swadloon\x10\x9d\x04\x12\r\n\x08leavanny\x10\x9e\x04\x12\r\n\x08venipede\x10\x9f\x04\x12\x0f\n\nwhirlipede\x10\xa0\x04\x12\x0e\n\tscolipede\x10\xa1\x04\x12\r\n\x08\x63ottonee\x10\xa2\x04\x12\x0f\n\nwhimsicott\x10\xa3\x04\x12\x0c\n\x07petilil\x10\xa4\x04\x12\x0e\n\tlilligant\x10\xa5\x04\x12\r\n\x08\x62\x61sculin\x10\xa6\x04\x12\x0c\n\x07sandile\x10\xa7\x04\x12\r\n\x08krokorok\x10\xa8\x04\x12\x0f\n\nkrookodile\x10\xa9\x04\x12\r\n\x08\x64\x61rumaka\x10\xaa\x04\x12\x0f\n\ndarmanitan\x10\xab\x04\x12\r\n\x08maractus\x10\xac\x04\x12\x0c\n\x07\x64webble\x10\xad\x04\x12\x0c\n\x07\x63rustle\x10\xae\x04\x12\x0c\n\x07scraggy\x10\xaf\x04\x12\x0c\n\x07scrafty\x10\xb0\x04\x12\r\n\x08sigilyph\x10\xb1\x04\x12\x0b\n\x06yamask\x10\xb2\x04\x12\x0f\n\ncofagrigus\x10\xb3\x04\x12\r\n\x08tirtouga\x10\xb4\x04\x12\x0f\n\ncarracosta\x10\xb5\x04\x12\x0b\n\x06\x61rchen\x10\xb6\x04\x12\r\n\x08\x61rcheops\x10\xb7\x04\x12\r\n\x08trubbish\x10\xb8\x04\x12\r\n\x08garbodor\x10\xb9\x04\x12\n\n\x05zorua\x10\xba\x04\x12\x0c\n\x07zoroark\x10\xbb\x04\x12\r\n\x08minccino\x10\xbc\x04\x12\r\n\x08\x63inccino\x10\xbd\x04\x12\x0c\n\x07gothita\x10\xbe\x04\x12\x0e\n\tgothorita\x10\xbf\x04\x12\x0f\n\ngothitelle\x10\xc0\x04\x12\x0c\n\x07solosis\x10\xc1\x04\x12\x0c\n\x07\x64uosion\x10\xc2\x04\x12\x0e\n\treuniclus\x10\xc3\x04\x12\r\n\x08\x64ucklett\x10\xc4\x04\x12\x0b\n\x06swanna\x10\xc5\x04\x12\x0e\n\tvanillite\x10\xc6\x04\x12\x0e\n\tvanillish\x10\xc7\x04\x12\x0e\n\tvanilluxe\x10\xc8\x04\x12\r\n\x08\x64\x65\x65rling\x10\xc9\x04\x12\r\n\x08sawsbuck\x10\xca\x04\x12\x0b\n\x06\x65molga\x10\xcb\x04\x12\x0f\n\nkarrablast\x10\xcc\x04\x12\x0f\n\nescavalier\x10\xcd\x04\x12\x0c\n\x07\x66oongus\x10\xce\x04\x12\x0e\n\tamoonguss\x10\xcf\x04\x12\r\n\x08\x66rillish\x10\xd0\x04\x12\x0e\n\tjellicent\x10\xd1\x04\x12\x0e\n\talomomola\x10\xd2\x04\x12\x0b\n\x06joltik\x10\xd3\x04\x12\x0f\n\ngalvantula\x10\xd4\x04\x12\x0e\n\tferroseed\x10\xd5\x04\x12\x0f\n\nferrothorn\x10\xd6\x04\x12\n\n\x05klink\x10\xd7\x04\x12\n\n\x05klang\x10\xd8\x04\x12\x0e\n\tklinklang\x10\xd9\x04\x12\x0b\n\x06tynamo\x10\xda\x04\x12\x0e\n\teelektrik\x10\xdb\x04\x12\x0f\n\neelektross\x10\xdc\x04\x12\x0b\n\x06\x65lgyem\x10\xdd\x04\x12\r\n\x08\x62\x65heeyem\x10\xde\x04\x12\x0c\n\x07litwick\x10\xdf\x04\x12\x0c\n\x07lampent\x10\xe0\x04\x12\x0f\n\nchandelure\x10\xe1\x04\x12\t\n\x04\x61xew\x10\xe2\x04\x12\x0c\n\x07\x66raxure\x10\xe3\x04\x12\x0c\n\x07haxorus\x10\xe4\x04\x12\x0c\n\x07\x63ubchoo\x10\xe5\x04\x12\x0c\n\x07\x62\x65\x61rtic\x10\xe6\x04\x12\x0e\n\tcryogonal\x10\xe7\x04\x12\x0c\n\x07shelmet\x10\xe8\x04\x12\r\n\x08\x61\x63\x63\x65lgor\x10\xe9\x04\x12\r\n\x08stunfisk\x10\xea\x04\x12\x0c\n\x07mienfoo\x10\xeb\x04\x12\r\n\x08mienshao\x10\xec\x04\x12\x0e\n\tdruddigon\x10\xed\x04\x12\x0b\n\x06golett\x10\xee\x04\x12\x0b\n\x06golurk\x10\xef\x04\x12\r\n\x08pawniard\x10\xf0\x04\x12\x0c\n\x07\x62isharp\x10\xf1\x04\x12\x0f\n\nbouffalant\x10\xf2\x04\x12\x0c\n\x07rufflet\x10\xf3\x04\x12\r\n\x08\x62raviary\x10\xf4\x04\x12\x0c\n\x07vullaby\x10\xf5\x04\x12\x0e\n\tmandibuzz\x10\xf6\x04\x12\x0c\n\x07heatmor\x10\xf7\x04\x12\x0b\n\x06\x64urant\x10\xf8\x04\x12\n\n\x05\x64\x65ino\x10\xf9\x04\x12\r\n\x08zweilous\x10\xfa\x04\x12\x0e\n\thydreigon\x10\xfb\x04\x12\r\n\x08larvesta\x10\xfc\x04\x12\x0e\n\tvolcarona\x10\xfd\x04\x12\r\n\x08\x63obalion\x10\xfe\x04\x12\x0e\n\tterrakion\x10\xff\x04\x12\r\n\x08virizion\x10\x80\x05\x12\r\n\x08tornadus\x10\x81\x05\x12\x0e\n\tthundurus\x10\x82\x05\x12\r\n\x08reshiram\x10\x83\x05\x12\x0b\n\x06zekrom\x10\x84\x05\x12\r\n\x08landorus\x10\x85\x05\x12\x0b\n\x06kyurem\x10\x86\x05\x12\x0b\n\x06keldeo\x10\x87\x05\x12\r\n\x08meloetta\x10\x88\x05\x12\r\n\x08genesect\x10\x89\x05\x12\x0c\n\x07\x63hespin\x10\x8a\x05\x12\x0e\n\tquilladin\x10\x8b\x05\x12\x0f\n\nchesnaught\x10\x8c\x05\x12\r\n\x08\x66\x65nnekin\x10\x8d\x05\x12\x0c\n\x07\x62raixen\x10\x8e\x05\x12\x0c\n\x07\x64\x65lphox\x10\x8f\x05\x12\x0c\n\x07\x66roakie\x10\x90\x05\x12\x0e\n\tfrogadier\x10\x91\x05\x12\r\n\x08greninja\x10\x92\x05\x12\r\n\x08\x62unnelby\x10\x93\x05\x12\x0e\n\tdiggersby\x10\x94\x05\x12\x0f\n\nfletchling\x10\x95\x05\x12\x10\n\x0b\x66letchinder\x10\x96\x05\x12\x0f\n\ntalonflame\x10\x97\x05\x12\x0f\n\nscatterbug\x10\x98\x05\x12\x0b\n\x06spewpa\x10\x99\x05\x12\r\n\x08vivillon\x10\x9a\x05\x12\x0b\n\x06litleo\x10\x9b\x05\x12\x0b\n\x06pyroar\x10\x9c\x05\x12\n\n\x05\x66labb\x10\x9d\x05\x12\x0c\n\x07\x66loette\x10\x9e\x05\x12\x0c\n\x07\x66lorges\x10\x9f\x05\x12\x0b\n\x06skiddo\x10\xa0\x05\x12\x0b\n\x06gogoat\x10\xa1\x05\x12\x0c\n\x07pancham\x10\xa2\x05\x12\x0c\n\x07pangoro\x10\xa3\x05\x12\x0c\n\x07\x66urfrou\x10\xa4\x05\x12\x0b\n\x06\x65spurr\x10\xa5\x05\x12\r\n\x08meowstic\x10\xa6\x05\x12\x0c\n\x07honedge\x10\xa7\x05\x12\r\n\x08\x64oublade\x10\xa8\x05\x12\x0e\n\taegislash\x10\xa9\x05\x12\r\n\x08spritzee\x10\xaa\x05\x12\x0f\n\naromatisse\x10\xab\x05\x12\x0c\n\x07swirlix\x10\xac\x05\x12\r\n\x08slurpuff\x10\xad\x05\x12\n\n\x05inkay\x10\xae\x05\x12\x0c\n\x07malamar\x10\xaf\x05\x12\x0c\n\x07\x62inacle\x10\xb0\x05\x12\x0f\n\nbarbaracle\x10\xb1\x05\x12\x0b\n\x06skrelp\x10\xb2\x05\x12\r\n\x08\x64ragalge\x10\xb3\x05\x12\x0e\n\tclauncher\x10\xb4\x05\x12\x0e\n\tclawitzer\x10\xb5\x05\x12\x0f\n\nhelioptile\x10\xb6\x05\x12\x0e\n\theliolisk\x10\xb7\x05\x12\x0b\n\x06tyrunt\x10\xb8\x05\x12\x0e\n\ttyrantrum\x10\xb9\x05\x12\x0b\n\x06\x61maura\x10\xba\x05\x12\x0c\n\x07\x61urorus\x10\xbb\x05\x12\x0c\n\x07sylveon\x10\xbc\x05\x12\r\n\x08hawlucha\x10\xbd\x05\x12\x0c\n\x07\x64\x65\x64\x65nne\x10\xbe\x05\x12\x0c\n\x07\x63\x61rbink\x10\xbf\x05\x12\n\n\x05goomy\x10\xc0\x05\x12\x0c\n\x07sliggoo\x10\xc1\x05\x12\x0b\n\x06goodra\x10\xc2\x05\x12\x0b\n\x06klefki\x10\xc3\x05\x12\r\n\x08phantump\x10\xc4\x05\x12\x0e\n\ttrevenant\x10\xc5\x05\x12\x0e\n\tpumpkaboo\x10\xc6\x05\x12\x0e\n\tgourgeist\x10\xc7\x05\x12\r\n\x08\x62\x65rgmite\x10\xc8\x05\x12\x0c\n\x07\x61valugg\x10\xc9\x05\x12\x0b\n\x06noibat\x10\xca\x05\x12\x0c\n\x07noivern\x10\xcb\x05\x12\x0c\n\x07xerneas\x10\xcc\x05\x12\x0c\n\x07yveltal\x10\xcd\x05\x12\x0c\n\x07zygarde\x10\xce\x05\x12\x0c\n\x07\x64iancie\x10\xcf\x05\x12\n\n\x05hoopa\x10\xd0\x05\x12\x0e\n\tvolcanion\x10\xd1\x05\x12\x0b\n\x06rowlet\x10\xd2\x05\x12\x0c\n\x07\x64\x61rtrix\x10\xd3\x05\x12\x0e\n\tdecidueye\x10\xd4\x05\x12\x0b\n\x06litten\x10\xd5\x05\x12\r\n\x08torracat\x10\xd6\x05\x12\x0f\n\nincineroar\x10\xd7\x05\x12\x0c\n\x07popplio\x10\xd8\x05\x12\x0c\n\x07\x62rionne\x10\xd9\x05\x12\x0e\n\tprimarina\x10\xda\x05\x12\x0c\n\x07pikipek\x10\xdb\x05\x12\r\n\x08trumbeak\x10\xdc\x05\x12\x0e\n\ttoucannon\x10\xdd\x05\x12\x0c\n\x07yungoos\x10\xde\x05\x12\r\n\x08gumshoos\x10\xdf\x05\x12\x0c\n\x07grubbin\x10\xe0\x05\x12\x0e\n\tcharjabug\x10\xe1\x05\x12\r\n\x08vikavolt\x10\xe2\x05\x12\x0f\n\ncrabrawler\x10\xe3\x05\x12\x11\n\x0c\x63rabominable\x10\xe4\x05\x12\r\n\x08oricorio\x10\xe5\x05\x12\r\n\x08\x63utiefly\x10\xe6\x05\x12\r\n\x08ribombee\x10\xe7\x05\x12\r\n\x08rockruff\x10\xe8\x05\x12\r\n\x08lycanroc\x10\xe9\x05\x12\x0f\n\nwishiwashi\x10\xea\x05\x12\r\n\x08mareanie\x10\xeb\x05\x12\x0c\n\x07toxapex\x10\xec\x05\x12\x0c\n\x07mudbray\x10\xed\x05\x12\r\n\x08mudsdale\x10\xee\x05\x12\r\n\x08\x64\x65wpider\x10\xef\x05\x12\x0e\n\taraquanid\x10\xf0\x05\x12\r\n\x08\x66omantis\x10\xf1\x05\x12\r\n\x08lurantis\x10\xf2\x05\x12\r\n\x08morelull\x10\xf3\x05\x12\x0e\n\tshiinotic\x10\xf4\x05\x12\r\n\x08salandit\x10\xf5\x05\x12\r\n\x08salazzle\x10\xf6\x05\x12\x0c\n\x07stufful\x10\xf7\x05\x12\x0b\n\x06\x62\x65wear\x10\xf8\x05\x12\x0e\n\tbounsweet\x10\xf9\x05\x12\x0c\n\x07steenee\x10\xfa\x05\x12\r\n\x08tsareena\x10\xfb\x05\x12\x0b\n\x06\x63omfey\x10\xfc\x05\x12\r\n\x08oranguru\x10\xfd\x05\x12\x0e\n\tpassimian\x10\xfe\x05\x12\x0b\n\x06wimpod\x10\xff\x05\x12\x0e\n\tgolisopod\x10\x80\x06\x12\x0e\n\tsandygast\x10\x81\x06\x12\x0e\n\tpalossand\x10\x82\x06\x12\x0e\n\tpyukumuku\x10\x83\x06\x12\r\n\x08typenull\x10\x84\x06\x12\r\n\x08silvally\x10\x85\x06\x12\x0b\n\x06minior\x10\x86\x06\x12\x0b\n\x06komala\x10\x87\x06\x12\x0f\n\nturtonator\x10\x88\x06\x12\x0f\n\ntogedemaru\x10\x89\x06\x12\x0c\n\x07mimikyu\x10\x8a\x06\x12\x0c\n\x07\x62ruxish\x10\x8b\x06\x12\x0b\n\x06\x64rampa\x10\x8c\x06\x12\r\n\x08\x64helmise\x10\x8d\x06\x12\x0c\n\x07jangmoo\x10\x8e\x06\x12\x0c\n\x07hakamoo\x10\x8f\x06\x12\x0b\n\x06kommoo\x10\x90\x06\x12\r\n\x08tapukoko\x10\x91\x06\x12\r\n\x08tapulele\x10\x92\x06\x12\r\n\x08tapubulu\x10\x93\x06\x12\r\n\x08tapufini\x10\x94\x06\x12\x0b\n\x06\x63osmog\x10\x95\x06\x12\x0c\n\x07\x63osmoem\x10\x96\x06\x12\r\n\x08solgaleo\x10\x97\x06\x12\x0b\n\x06lunala\x10\x98\x06\x12\r\n\x08nihilego\x10\x99\x06\x12\r\n\x08\x62uzzwole\x10\x9a\x06\x12\x0e\n\tpheromosa\x10\x9b\x06\x12\x0e\n\txurkitree\x10\x9c\x06\x12\x0f\n\ncelesteela\x10\x9d\x06\x12\x0c\n\x07kartana\x10\x9e\x06\x12\r\n\x08guzzlord\x10\x9f\x06\x12\r\n\x08necrozma\x10\xa0\x06\x12\r\n\x08magearna\x10\xa1\x06\x12\x0e\n\tmarshadow\x10\xa2\x06')
   ,
-  dependencies=[bcl__pb2.DESCRIPTOR,])
+  dependencies=[protobuf__net_dot_bcl__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_ABILITYSLOTTYPE = _descriptor.EnumDescriptor(
-  name='AbilitySlotType',
-  full_name='PSXAPI_Response24917846189246.AbilitySlotType',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='__None0', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Slot1', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Slot2', index=2, number=2,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Hidden', index=3, number=3,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=1997,
-  serialized_end=2061,
-)
-_sym_db.RegisterEnumDescriptor(_ABILITYSLOTTYPE)
-
-AbilitySlotType = enum_type_wrapper.EnumTypeWrapper(_ABILITYSLOTTYPE)
-_EGGSTATE = _descriptor.EnumDescriptor(
-  name='EggState',
-  full_name='PSXAPI_Response24917846189246.EggState',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='__None1', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Sounds', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Moves', index=2, number=2,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='MoreTime', index=3, number=3,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='LongTime', index=4, number=4,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=2063,
-  serialized_end=2137,
-)
-_sym_db.RegisterEnumDescriptor(_EGGSTATE)
-
-EggState = enum_type_wrapper.EnumTypeWrapper(_EGGSTATE)
-_POKEMONCONDITION = _descriptor.EnumDescriptor(
-  name='PokemonCondition',
-  full_name='PSXAPI_Response24917846189246.PokemonCondition',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='__None2', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Fainted', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Burn', index=2, number=2,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Freeze', index=3, number=3,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Paralysis', index=4, number=4,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Poison', index=5, number=5,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Sleep', index=6, number=6,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=2139,
-  serialized_end=2243,
-)
-_sym_db.RegisterEnumDescriptor(_POKEMONCONDITION)
-
-PokemonCondition = enum_type_wrapper.EnumTypeWrapper(_POKEMONCONDITION)
-_POKEMONGENDER = _descriptor.EnumDescriptor(
-  name='PokemonGender',
-  full_name='PSXAPI_Response24917846189246.PokemonGender',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='__None3', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Male', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Female', index=2, number=2,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=2245,
-  serialized_end=2295,
-)
-_sym_db.RegisterEnumDescriptor(_POKEMONGENDER)
-
-PokemonGender = enum_type_wrapper.EnumTypeWrapper(_POKEMONGENDER)
 _POKEMONID = _descriptor.EnumDescriptor(
   name='PokemonID',
-  full_name='PSXAPI_Response24917846189246.PokemonID',
+  full_name='PSXAPI.Response1559120870.PokemonID',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -3387,15 +3251,953 @@ _POKEMONID = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=2298,
-  serialized_end=13802,
+  serialized_start=14215,
+  serialized_end=25719,
 )
 _sym_db.RegisterEnumDescriptor(_POKEMONID)
 
 PokemonID = enum_type_wrapper.EnumTypeWrapper(_POKEMONID)
-_POKEMONMOVEID = _descriptor.EnumDescriptor(
+missingno = 0
+Unset = -1
+bulbasaur = 1
+ivysaur = 2
+venusaur = 3
+charmander = 4
+charmeleon = 5
+charizard = 6
+squirtle = 7
+wartortle = 8
+blastoise = 9
+caterpie = 10
+metapod = 11
+butterfree = 12
+weedle = 13
+kakuna = 14
+beedrill = 15
+pidgey = 16
+pidgeotto = 17
+pidgeot = 18
+rattata = 19
+raticate = 20
+spearow = 21
+fearow = 22
+ekans = 23
+arbok = 24
+pikachu = 25
+raichu = 26
+sandshrew = 27
+sandslash = 28
+nidoranf = 29
+nidorina = 30
+nidoqueen = 31
+nidoranm = 32
+nidorino = 33
+nidoking = 34
+clefairy = 35
+clefable = 36
+vulpix = 37
+ninetales = 38
+jigglypuff = 39
+wigglytuff = 40
+zubat = 41
+golbat = 42
+oddish = 43
+gloom = 44
+vileplume = 45
+paras = 46
+parasect = 47
+venonat = 48
+venomoth = 49
+diglett = 50
+dugtrio = 51
+meowth = 52
+persian = 53
+psyduck = 54
+golduck = 55
+mankey = 56
+primeape = 57
+growlithe = 58
+arcanine = 59
+poliwag = 60
+poliwhirl = 61
+poliwrath = 62
+abra = 63
+kadabra = 64
+alakazam = 65
+machop = 66
+machoke = 67
+machamp = 68
+bellsprout = 69
+weepinbell = 70
+victreebel = 71
+tentacool = 72
+tentacruel = 73
+geodude = 74
+graveler = 75
+golem = 76
+ponyta = 77
+rapidash = 78
+slowpoke = 79
+slowbro = 80
+magnemite = 81
+magneton = 82
+farfetchd = 83
+doduo = 84
+dodrio = 85
+seel = 86
+dewgong = 87
+grimer = 88
+muk = 89
+shellder = 90
+cloyster = 91
+gastly = 92
+haunter = 93
+gengar = 94
+onix = 95
+drowzee = 96
+hypno = 97
+krabby = 98
+kingler = 99
+voltorb = 100
+electrode = 101
+exeggcute = 102
+exeggutor = 103
+cubone = 104
+marowak = 105
+hitmonlee = 106
+hitmonchan = 107
+lickitung = 108
+koffing = 109
+weezing = 110
+rhyhorn = 111
+rhydon = 112
+chansey = 113
+tangela = 114
+kangaskhan = 115
+horsea = 116
+seadra = 117
+goldeen = 118
+seaking = 119
+staryu = 120
+starmie = 121
+mrmime = 122
+scyther = 123
+jynx = 124
+electabuzz = 125
+magmar = 126
+pinsir = 127
+tauros = 128
+magikarp = 129
+gyarados = 130
+lapras = 131
+ditto = 132
+eevee = 133
+vaporeon = 134
+jolteon = 135
+flareon = 136
+porygon = 137
+omanyte = 138
+omastar = 139
+kabuto = 140
+kabutops = 141
+aerodactyl = 142
+snorlax = 143
+articuno = 144
+zapdos = 145
+moltres = 146
+dratini = 147
+dragonair = 148
+dragonite = 149
+mewtwo = 150
+mew = 151
+chikorita = 152
+bayleef = 153
+meganium = 154
+cyndaquil = 155
+quilava = 156
+typhlosion = 157
+totodile = 158
+croconaw = 159
+feraligatr = 160
+sentret = 161
+furret = 162
+hoothoot = 163
+noctowl = 164
+ledyba = 165
+ledian = 166
+spinarak = 167
+ariados = 168
+crobat = 169
+chinchou = 170
+lanturn = 171
+pichu = 172
+cleffa = 173
+igglybuff = 174
+togepi = 175
+togetic = 176
+natu = 177
+xatu = 178
+mareep = 179
+flaaffy = 180
+ampharos = 181
+bellossom = 182
+marill = 183
+azumarill = 184
+sudowoodo = 185
+politoed = 186
+hoppip = 187
+skiploom = 188
+jumpluff = 189
+aipom = 190
+sunkern = 191
+sunflora = 192
+yanma = 193
+wooper = 194
+quagsire = 195
+espeon = 196
+umbreon = 197
+murkrow = 198
+slowking = 199
+misdreavus = 200
+unown = 201
+wobbuffet = 202
+girafarig = 203
+pineco = 204
+forretress = 205
+dunsparce = 206
+gligar = 207
+steelix = 208
+snubbull = 209
+granbull = 210
+qwilfish = 211
+scizor = 212
+shuckle = 213
+heracross = 214
+sneasel = 215
+teddiursa = 216
+ursaring = 217
+slugma = 218
+magcargo = 219
+swinub = 220
+piloswine = 221
+corsola = 222
+remoraid = 223
+octillery = 224
+delibird = 225
+mantine = 226
+skarmory = 227
+houndour = 228
+houndoom = 229
+kingdra = 230
+phanpy = 231
+donphan = 232
+porygon2 = 233
+stantler = 234
+smeargle = 235
+tyrogue = 236
+hitmontop = 237
+smoochum = 238
+elekid = 239
+magby = 240
+miltank = 241
+blissey = 242
+raikou = 243
+entei = 244
+suicune = 245
+larvitar = 246
+pupitar = 247
+tyranitar = 248
+lugia = 249
+hooh = 250
+celebi = 251
+treecko = 252
+grovyle = 253
+sceptile = 254
+torchic = 255
+combusken = 256
+blaziken = 257
+mudkip = 258
+marshtomp = 259
+swampert = 260
+poochyena = 261
+mightyena = 262
+zigzagoon = 263
+linoone = 264
+wurmple = 265
+silcoon = 266
+beautifly = 267
+cascoon = 268
+dustox = 269
+lotad = 270
+lombre = 271
+ludicolo = 272
+seedot = 273
+nuzleaf = 274
+shiftry = 275
+taillow = 276
+swellow = 277
+wingull = 278
+pelipper = 279
+ralts = 280
+kirlia = 281
+gardevoir = 282
+surskit = 283
+masquerain = 284
+shroomish = 285
+breloom = 286
+slakoth = 287
+vigoroth = 288
+slaking = 289
+nincada = 290
+ninjask = 291
+shedinja = 292
+whismur = 293
+loudred = 294
+exploud = 295
+makuhita = 296
+hariyama = 297
+azurill = 298
+nosepass = 299
+skitty = 300
+delcatty = 301
+sableye = 302
+mawile = 303
+aron = 304
+lairon = 305
+aggron = 306
+meditite = 307
+medicham = 308
+electrike = 309
+manectric = 310
+plusle = 311
+minun = 312
+volbeat = 313
+illumise = 314
+roselia = 315
+gulpin = 316
+swalot = 317
+carvanha = 318
+sharpedo = 319
+wailmer = 320
+wailord = 321
+numel = 322
+camerupt = 323
+torkoal = 324
+spoink = 325
+grumpig = 326
+spinda = 327
+trapinch = 328
+vibrava = 329
+flygon = 330
+cacnea = 331
+cacturne = 332
+swablu = 333
+altaria = 334
+zangoose = 335
+seviper = 336
+lunatone = 337
+solrock = 338
+barboach = 339
+whiscash = 340
+corphish = 341
+crawdaunt = 342
+baltoy = 343
+claydol = 344
+lileep = 345
+cradily = 346
+anorith = 347
+armaldo = 348
+feebas = 349
+milotic = 350
+castform = 351
+kecleon = 352
+shuppet = 353
+banette = 354
+duskull = 355
+dusclops = 356
+tropius = 357
+chimecho = 358
+absol = 359
+wynaut = 360
+snorunt = 361
+glalie = 362
+spheal = 363
+sealeo = 364
+walrein = 365
+clamperl = 366
+huntail = 367
+gorebyss = 368
+relicanth = 369
+luvdisc = 370
+bagon = 371
+shelgon = 372
+salamence = 373
+beldum = 374
+metang = 375
+metagross = 376
+regirock = 377
+regice = 378
+registeel = 379
+latias = 380
+latios = 381
+kyogre = 382
+groudon = 383
+rayquaza = 384
+jirachi = 385
+deoxys = 386
+turtwig = 387
+grotle = 388
+torterra = 389
+chimchar = 390
+monferno = 391
+infernape = 392
+piplup = 393
+prinplup = 394
+empoleon = 395
+starly = 396
+staravia = 397
+staraptor = 398
+bidoof = 399
+bibarel = 400
+kricketot = 401
+kricketune = 402
+shinx = 403
+luxio = 404
+luxray = 405
+budew = 406
+roserade = 407
+cranidos = 408
+rampardos = 409
+shieldon = 410
+bastiodon = 411
+burmy = 412
+wormadam = 413
+mothim = 414
+combee = 415
+vespiquen = 416
+pachirisu = 417
+buizel = 418
+floatzel = 419
+cherubi = 420
+cherrim = 421
+shellos = 422
+gastrodon = 423
+ambipom = 424
+drifloon = 425
+drifblim = 426
+buneary = 427
+lopunny = 428
+mismagius = 429
+honchkrow = 430
+glameow = 431
+purugly = 432
+chingling = 433
+stunky = 434
+skuntank = 435
+bronzor = 436
+bronzong = 437
+bonsly = 438
+mimejr = 439
+happiny = 440
+chatot = 441
+spiritomb = 442
+gible = 443
+gabite = 444
+garchomp = 445
+munchlax = 446
+riolu = 447
+lucario = 448
+hippopotas = 449
+hippowdon = 450
+skorupi = 451
+drapion = 452
+croagunk = 453
+toxicroak = 454
+carnivine = 455
+finneon = 456
+lumineon = 457
+mantyke = 458
+snover = 459
+abomasnow = 460
+weavile = 461
+magnezone = 462
+lickilicky = 463
+rhyperior = 464
+tangrowth = 465
+electivire = 466
+magmortar = 467
+togekiss = 468
+yanmega = 469
+leafeon = 470
+glaceon = 471
+gliscor = 472
+mamoswine = 473
+porygonz = 474
+gallade = 475
+probopass = 476
+dusknoir = 477
+froslass = 478
+rotom = 479
+uxie = 480
+mesprit = 481
+azelf = 482
+dialga = 483
+palkia = 484
+heatran = 485
+regigigas = 486
+giratina = 487
+cresselia = 488
+phione = 489
+manaphy = 490
+darkrai = 491
+shaymin = 492
+arceus = 493
+victini = 494
+snivy = 495
+servine = 496
+serperior = 497
+tepig = 498
+pignite = 499
+emboar = 500
+oshawott = 501
+dewott = 502
+samurott = 503
+patrat = 504
+watchog = 505
+lillipup = 506
+herdier = 507
+stoutland = 508
+purrloin = 509
+liepard = 510
+pansage = 511
+simisage = 512
+pansear = 513
+simisear = 514
+panpour = 515
+simipour = 516
+munna = 517
+musharna = 518
+pidove = 519
+tranquill = 520
+unfezant = 521
+blitzle = 522
+zebstrika = 523
+roggenrola = 524
+boldore = 525
+gigalith = 526
+woobat = 527
+swoobat = 528
+drilbur = 529
+excadrill = 530
+audino = 531
+timburr = 532
+gurdurr = 533
+conkeldurr = 534
+tympole = 535
+palpitoad = 536
+seismitoad = 537
+throh = 538
+sawk = 539
+sewaddle = 540
+swadloon = 541
+leavanny = 542
+venipede = 543
+whirlipede = 544
+scolipede = 545
+cottonee = 546
+whimsicott = 547
+petilil = 548
+lilligant = 549
+basculin = 550
+sandile = 551
+krokorok = 552
+krookodile = 553
+darumaka = 554
+darmanitan = 555
+maractus = 556
+dwebble = 557
+crustle = 558
+scraggy = 559
+scrafty = 560
+sigilyph = 561
+yamask = 562
+cofagrigus = 563
+tirtouga = 564
+carracosta = 565
+archen = 566
+archeops = 567
+trubbish = 568
+garbodor = 569
+zorua = 570
+zoroark = 571
+minccino = 572
+cinccino = 573
+gothita = 574
+gothorita = 575
+gothitelle = 576
+solosis = 577
+duosion = 578
+reuniclus = 579
+ducklett = 580
+swanna = 581
+vanillite = 582
+vanillish = 583
+vanilluxe = 584
+deerling = 585
+sawsbuck = 586
+emolga = 587
+karrablast = 588
+escavalier = 589
+foongus = 590
+amoonguss = 591
+frillish = 592
+jellicent = 593
+alomomola = 594
+joltik = 595
+galvantula = 596
+ferroseed = 597
+ferrothorn = 598
+klink = 599
+klang = 600
+klinklang = 601
+tynamo = 602
+eelektrik = 603
+eelektross = 604
+elgyem = 605
+beheeyem = 606
+litwick = 607
+lampent = 608
+chandelure = 609
+axew = 610
+fraxure = 611
+haxorus = 612
+cubchoo = 613
+beartic = 614
+cryogonal = 615
+shelmet = 616
+accelgor = 617
+stunfisk = 618
+mienfoo = 619
+mienshao = 620
+druddigon = 621
+golett = 622
+golurk = 623
+pawniard = 624
+bisharp = 625
+bouffalant = 626
+rufflet = 627
+braviary = 628
+vullaby = 629
+mandibuzz = 630
+heatmor = 631
+durant = 632
+deino = 633
+zweilous = 634
+hydreigon = 635
+larvesta = 636
+volcarona = 637
+cobalion = 638
+terrakion = 639
+virizion = 640
+tornadus = 641
+thundurus = 642
+reshiram = 643
+zekrom = 644
+landorus = 645
+kyurem = 646
+keldeo = 647
+meloetta = 648
+genesect = 649
+chespin = 650
+quilladin = 651
+chesnaught = 652
+fennekin = 653
+braixen = 654
+delphox = 655
+froakie = 656
+frogadier = 657
+greninja = 658
+bunnelby = 659
+diggersby = 660
+fletchling = 661
+fletchinder = 662
+talonflame = 663
+scatterbug = 664
+spewpa = 665
+vivillon = 666
+litleo = 667
+pyroar = 668
+flabb = 669
+floette = 670
+florges = 671
+skiddo = 672
+gogoat = 673
+pancham = 674
+pangoro = 675
+furfrou = 676
+espurr = 677
+meowstic = 678
+honedge = 679
+doublade = 680
+aegislash = 681
+spritzee = 682
+aromatisse = 683
+swirlix = 684
+slurpuff = 685
+inkay = 686
+malamar = 687
+binacle = 688
+barbaracle = 689
+skrelp = 690
+dragalge = 691
+clauncher = 692
+clawitzer = 693
+helioptile = 694
+heliolisk = 695
+tyrunt = 696
+tyrantrum = 697
+amaura = 698
+aurorus = 699
+sylveon = 700
+hawlucha = 701
+dedenne = 702
+carbink = 703
+goomy = 704
+sliggoo = 705
+goodra = 706
+klefki = 707
+phantump = 708
+trevenant = 709
+pumpkaboo = 710
+gourgeist = 711
+bergmite = 712
+avalugg = 713
+noibat = 714
+noivern = 715
+xerneas = 716
+yveltal = 717
+zygarde = 718
+diancie = 719
+hoopa = 720
+volcanion = 721
+rowlet = 722
+dartrix = 723
+decidueye = 724
+litten = 725
+torracat = 726
+incineroar = 727
+popplio = 728
+brionne = 729
+primarina = 730
+pikipek = 731
+trumbeak = 732
+toucannon = 733
+yungoos = 734
+gumshoos = 735
+grubbin = 736
+charjabug = 737
+vikavolt = 738
+crabrawler = 739
+crabominable = 740
+oricorio = 741
+cutiefly = 742
+ribombee = 743
+rockruff = 744
+lycanroc = 745
+wishiwashi = 746
+mareanie = 747
+toxapex = 748
+mudbray = 749
+mudsdale = 750
+dewpider = 751
+araquanid = 752
+fomantis = 753
+lurantis = 754
+morelull = 755
+shiinotic = 756
+salandit = 757
+salazzle = 758
+stufful = 759
+bewear = 760
+bounsweet = 761
+steenee = 762
+tsareena = 763
+comfey = 764
+oranguru = 765
+passimian = 766
+wimpod = 767
+golisopod = 768
+sandygast = 769
+palossand = 770
+pyukumuku = 771
+typenull = 772
+silvally = 773
+minior = 774
+komala = 775
+turtonator = 776
+togedemaru = 777
+mimikyu = 778
+bruxish = 779
+drampa = 780
+dhelmise = 781
+jangmoo = 782
+hakamoo = 783
+kommoo = 784
+tapukoko = 785
+tapulele = 786
+tapubulu = 787
+tapufini = 788
+cosmog = 789
+cosmoem = 790
+solgaleo = 791
+lunala = 792
+nihilego = 793
+buzzwole = 794
+pheromosa = 795
+xurkitree = 796
+celesteela = 797
+kartana = 798
+guzzlord = 799
+necrozma = 800
+magearna = 801
+marshadow = 802
+
+
+_PREFIX_AGDFASBV1211782128_ABILITYSLOTTYPE = _descriptor.EnumDescriptor(
+  name='AbilitySlotType',
+  full_name='PSXAPI.Response1559120870.PREFIX_AGDFASBV1211782128.AbilitySlotType',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='NoneValue', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Slot1', index=1, number=1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Slot2', index=2, number=2,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Hidden', index=3, number=3,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=96,
+  serialized_end=162,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1211782128_ABILITYSLOTTYPE)
+
+_PREFIX_AGDFASBV217888935_EGGSTATE = _descriptor.EnumDescriptor(
+  name='EggState',
+  full_name='PSXAPI.Response1559120870.PREFIX_AGDFASBV217888935.EggState',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='NoneValue', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Sounds', index=1, number=1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Moves', index=2, number=2,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='MoreTime', index=3, number=3,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='LongTime', index=4, number=4,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=192,
+  serialized_end=268,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV217888935_EGGSTATE)
+
+_PREFIX_AGDFASBV252416967_POKEMONCONDITION = _descriptor.EnumDescriptor(
+  name='PokemonCondition',
+  full_name='PSXAPI.Response1559120870.PREFIX_AGDFASBV252416967.PokemonCondition',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='NoneValue', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Fainted', index=1, number=1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Burn', index=2, number=2,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Freeze', index=3, number=3,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Paralysis', index=4, number=4,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Poison', index=5, number=5,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Sleep', index=6, number=6,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=1602,
+  serialized_end=1708,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV252416967_POKEMONCONDITION)
+
+_PREFIX_AGDFASBV264064132_POKEMONGENDER = _descriptor.EnumDescriptor(
+  name='PokemonGender',
+  full_name='PSXAPI.Response1559120870.PREFIX_AGDFASBV264064132.PokemonGender',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='NoneValue', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Male', index=1, number=1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Female', index=2, number=2,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=2083,
+  serialized_end=2135,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV264064132_POKEMONGENDER)
+
+_PREFIX_AGDFASBV2087144784_POKEMONMOVEID = _descriptor.EnumDescriptor(
   name='PokemonMoveID',
-  full_name='PSXAPI_Response24917846189246.PokemonMoveID',
+  full_name='PSXAPI.Response1559120870.PREFIX_AGDFASBV2087144784.PokemonMoveID',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -4264,7 +5066,7 @@ _POKEMONMOVEID = _descriptor.EnumDescriptor(
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='__return', index=216, number=216,
+      name='_return', index=216, number=216,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -6210,20 +7012,19 @@ _POKEMONMOVEID = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=13805,
-  serialized_end=25086,
+  serialized_start=2305,
+  serialized_end=13585,
 )
-_sym_db.RegisterEnumDescriptor(_POKEMONMOVEID)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV2087144784_POKEMONMOVEID)
 
-PokemonMoveID = enum_type_wrapper.EnumTypeWrapper(_POKEMONMOVEID)
-_POKEMONNATURES = _descriptor.EnumDescriptor(
+_PREFIX_AGDFASBV1284323517_POKEMONNATURES = _descriptor.EnumDescriptor(
   name='PokemonNatures',
-  full_name='PSXAPI_Response24917846189246.PokemonNatures',
+  full_name='PSXAPI.Response1559120870.PREFIX_AGDFASBV1284323517.PokemonNatures',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='__None4', index=0, number=0,
+      name='NoneValue', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -6329,1603 +7130,99 @@ _POKEMONNATURES = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=25089,
-  serialized_end=25405,
+  serialized_start=13618,
+  serialized_end=13936,
 )
-_sym_db.RegisterEnumDescriptor(_POKEMONNATURES)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1284323517_POKEMONNATURES)
 
-PokemonNatures = enum_type_wrapper.EnumTypeWrapper(_POKEMONNATURES)
-__None0 = 0
-Slot1 = 1
-Slot2 = 2
-Hidden = 3
-__None1 = 0
-Sounds = 1
-Moves = 2
-MoreTime = 3
-LongTime = 4
-__None2 = 0
-Fainted = 1
-Burn = 2
-Freeze = 3
-Paralysis = 4
-Poison = 5
-Sleep = 6
-__None3 = 0
-Male = 1
-Female = 2
-missingno = 0
-Unset = -1
-bulbasaur = 1
-ivysaur = 2
-venusaur = 3
-charmander = 4
-charmeleon = 5
-charizard = 6
-squirtle = 7
-wartortle = 8
-blastoise = 9
-caterpie = 10
-metapod = 11
-butterfree = 12
-weedle = 13
-kakuna = 14
-beedrill = 15
-pidgey = 16
-pidgeotto = 17
-pidgeot = 18
-rattata = 19
-raticate = 20
-spearow = 21
-fearow = 22
-ekans = 23
-arbok = 24
-pikachu = 25
-raichu = 26
-sandshrew = 27
-sandslash = 28
-nidoranf = 29
-nidorina = 30
-nidoqueen = 31
-nidoranm = 32
-nidorino = 33
-nidoking = 34
-clefairy = 35
-clefable = 36
-vulpix = 37
-ninetales = 38
-jigglypuff = 39
-wigglytuff = 40
-zubat = 41
-golbat = 42
-oddish = 43
-gloom = 44
-vileplume = 45
-paras = 46
-parasect = 47
-venonat = 48
-venomoth = 49
-diglett = 50
-dugtrio = 51
-meowth = 52
-persian = 53
-psyduck = 54
-golduck = 55
-mankey = 56
-primeape = 57
-growlithe = 58
-arcanine = 59
-poliwag = 60
-poliwhirl = 61
-poliwrath = 62
-abra = 63
-kadabra = 64
-alakazam = 65
-machop = 66
-machoke = 67
-machamp = 68
-bellsprout = 69
-weepinbell = 70
-victreebel = 71
-tentacool = 72
-tentacruel = 73
-geodude = 74
-graveler = 75
-golem = 76
-ponyta = 77
-rapidash = 78
-slowpoke = 79
-slowbro = 80
-magnemite = 81
-magneton = 82
-farfetchd = 83
-doduo = 84
-dodrio = 85
-seel = 86
-dewgong = 87
-grimer = 88
-muk = 89
-shellder = 90
-cloyster = 91
-gastly = 92
-haunter = 93
-gengar = 94
-onix = 95
-drowzee = 96
-hypno = 97
-krabby = 98
-kingler = 99
-voltorb = 100
-electrode = 101
-exeggcute = 102
-exeggutor = 103
-cubone = 104
-marowak = 105
-hitmonlee = 106
-hitmonchan = 107
-lickitung = 108
-koffing = 109
-weezing = 110
-rhyhorn = 111
-rhydon = 112
-chansey = 113
-tangela = 114
-kangaskhan = 115
-horsea = 116
-seadra = 117
-goldeen = 118
-seaking = 119
-staryu = 120
-starmie = 121
-mrmime = 122
-scyther = 123
-jynx = 124
-electabuzz = 125
-magmar = 126
-pinsir = 127
-tauros = 128
-magikarp = 129
-gyarados = 130
-lapras = 131
-ditto = 132
-eevee = 133
-vaporeon = 134
-jolteon = 135
-flareon = 136
-porygon = 137
-omanyte = 138
-omastar = 139
-kabuto = 140
-kabutops = 141
-aerodactyl = 142
-snorlax = 143
-articuno = 144
-zapdos = 145
-moltres = 146
-dratini = 147
-dragonair = 148
-dragonite = 149
-mewtwo = 150
-mew = 151
-chikorita = 152
-bayleef = 153
-meganium = 154
-cyndaquil = 155
-quilava = 156
-typhlosion = 157
-totodile = 158
-croconaw = 159
-feraligatr = 160
-sentret = 161
-furret = 162
-hoothoot = 163
-noctowl = 164
-ledyba = 165
-ledian = 166
-spinarak = 167
-ariados = 168
-crobat = 169
-chinchou = 170
-lanturn = 171
-pichu = 172
-cleffa = 173
-igglybuff = 174
-togepi = 175
-togetic = 176
-natu = 177
-xatu = 178
-mareep = 179
-flaaffy = 180
-ampharos = 181
-bellossom = 182
-marill = 183
-azumarill = 184
-sudowoodo = 185
-politoed = 186
-hoppip = 187
-skiploom = 188
-jumpluff = 189
-aipom = 190
-sunkern = 191
-sunflora = 192
-yanma = 193
-wooper = 194
-quagsire = 195
-espeon = 196
-umbreon = 197
-murkrow = 198
-slowking = 199
-misdreavus = 200
-unown = 201
-wobbuffet = 202
-girafarig = 203
-pineco = 204
-forretress = 205
-dunsparce = 206
-gligar = 207
-steelix = 208
-snubbull = 209
-granbull = 210
-qwilfish = 211
-scizor = 212
-shuckle = 213
-heracross = 214
-sneasel = 215
-teddiursa = 216
-ursaring = 217
-slugma = 218
-magcargo = 219
-swinub = 220
-piloswine = 221
-corsola = 222
-remoraid = 223
-octillery = 224
-delibird = 225
-mantine = 226
-skarmory = 227
-houndour = 228
-houndoom = 229
-kingdra = 230
-phanpy = 231
-donphan = 232
-porygon2 = 233
-stantler = 234
-smeargle = 235
-tyrogue = 236
-hitmontop = 237
-smoochum = 238
-elekid = 239
-magby = 240
-miltank = 241
-blissey = 242
-raikou = 243
-entei = 244
-suicune = 245
-larvitar = 246
-pupitar = 247
-tyranitar = 248
-lugia = 249
-hooh = 250
-celebi = 251
-treecko = 252
-grovyle = 253
-sceptile = 254
-torchic = 255
-combusken = 256
-blaziken = 257
-mudkip = 258
-marshtomp = 259
-swampert = 260
-poochyena = 261
-mightyena = 262
-zigzagoon = 263
-linoone = 264
-wurmple = 265
-silcoon = 266
-beautifly = 267
-cascoon = 268
-dustox = 269
-lotad = 270
-lombre = 271
-ludicolo = 272
-seedot = 273
-nuzleaf = 274
-shiftry = 275
-taillow = 276
-swellow = 277
-wingull = 278
-pelipper = 279
-ralts = 280
-kirlia = 281
-gardevoir = 282
-surskit = 283
-masquerain = 284
-shroomish = 285
-breloom = 286
-slakoth = 287
-vigoroth = 288
-slaking = 289
-nincada = 290
-ninjask = 291
-shedinja = 292
-whismur = 293
-loudred = 294
-exploud = 295
-makuhita = 296
-hariyama = 297
-azurill = 298
-nosepass = 299
-skitty = 300
-delcatty = 301
-sableye = 302
-mawile = 303
-aron = 304
-lairon = 305
-aggron = 306
-meditite = 307
-medicham = 308
-electrike = 309
-manectric = 310
-plusle = 311
-minun = 312
-volbeat = 313
-illumise = 314
-roselia = 315
-gulpin = 316
-swalot = 317
-carvanha = 318
-sharpedo = 319
-wailmer = 320
-wailord = 321
-numel = 322
-camerupt = 323
-torkoal = 324
-spoink = 325
-grumpig = 326
-spinda = 327
-trapinch = 328
-vibrava = 329
-flygon = 330
-cacnea = 331
-cacturne = 332
-swablu = 333
-altaria = 334
-zangoose = 335
-seviper = 336
-lunatone = 337
-solrock = 338
-barboach = 339
-whiscash = 340
-corphish = 341
-crawdaunt = 342
-baltoy = 343
-claydol = 344
-lileep = 345
-cradily = 346
-anorith = 347
-armaldo = 348
-feebas = 349
-milotic = 350
-castform = 351
-kecleon = 352
-shuppet = 353
-banette = 354
-duskull = 355
-dusclops = 356
-tropius = 357
-chimecho = 358
-absol = 359
-wynaut = 360
-snorunt = 361
-glalie = 362
-spheal = 363
-sealeo = 364
-walrein = 365
-clamperl = 366
-huntail = 367
-gorebyss = 368
-relicanth = 369
-luvdisc = 370
-bagon = 371
-shelgon = 372
-salamence = 373
-beldum = 374
-metang = 375
-metagross = 376
-regirock = 377
-regice = 378
-registeel = 379
-latias = 380
-latios = 381
-kyogre = 382
-groudon = 383
-rayquaza = 384
-jirachi = 385
-deoxys = 386
-turtwig = 387
-grotle = 388
-torterra = 389
-chimchar = 390
-monferno = 391
-infernape = 392
-piplup = 393
-prinplup = 394
-empoleon = 395
-starly = 396
-staravia = 397
-staraptor = 398
-bidoof = 399
-bibarel = 400
-kricketot = 401
-kricketune = 402
-shinx = 403
-luxio = 404
-luxray = 405
-budew = 406
-roserade = 407
-cranidos = 408
-rampardos = 409
-shieldon = 410
-bastiodon = 411
-burmy = 412
-wormadam = 413
-mothim = 414
-combee = 415
-vespiquen = 416
-pachirisu = 417
-buizel = 418
-floatzel = 419
-cherubi = 420
-cherrim = 421
-shellos = 422
-gastrodon = 423
-ambipom = 424
-drifloon = 425
-drifblim = 426
-buneary = 427
-lopunny = 428
-mismagius = 429
-honchkrow = 430
-glameow = 431
-purugly = 432
-chingling = 433
-stunky = 434
-skuntank = 435
-bronzor = 436
-bronzong = 437
-bonsly = 438
-mimejr = 439
-happiny = 440
-chatot = 441
-spiritomb = 442
-gible = 443
-gabite = 444
-garchomp = 445
-munchlax = 446
-riolu = 447
-lucario = 448
-hippopotas = 449
-hippowdon = 450
-skorupi = 451
-drapion = 452
-croagunk = 453
-toxicroak = 454
-carnivine = 455
-finneon = 456
-lumineon = 457
-mantyke = 458
-snover = 459
-abomasnow = 460
-weavile = 461
-magnezone = 462
-lickilicky = 463
-rhyperior = 464
-tangrowth = 465
-electivire = 466
-magmortar = 467
-togekiss = 468
-yanmega = 469
-leafeon = 470
-glaceon = 471
-gliscor = 472
-mamoswine = 473
-porygonz = 474
-gallade = 475
-probopass = 476
-dusknoir = 477
-froslass = 478
-rotom = 479
-uxie = 480
-mesprit = 481
-azelf = 482
-dialga = 483
-palkia = 484
-heatran = 485
-regigigas = 486
-giratina = 487
-cresselia = 488
-phione = 489
-manaphy = 490
-darkrai = 491
-shaymin = 492
-arceus = 493
-victini = 494
-snivy = 495
-servine = 496
-serperior = 497
-tepig = 498
-pignite = 499
-emboar = 500
-oshawott = 501
-dewott = 502
-samurott = 503
-patrat = 504
-watchog = 505
-lillipup = 506
-herdier = 507
-stoutland = 508
-purrloin = 509
-liepard = 510
-pansage = 511
-simisage = 512
-pansear = 513
-simisear = 514
-panpour = 515
-simipour = 516
-munna = 517
-musharna = 518
-pidove = 519
-tranquill = 520
-unfezant = 521
-blitzle = 522
-zebstrika = 523
-roggenrola = 524
-boldore = 525
-gigalith = 526
-woobat = 527
-swoobat = 528
-drilbur = 529
-excadrill = 530
-audino = 531
-timburr = 532
-gurdurr = 533
-conkeldurr = 534
-tympole = 535
-palpitoad = 536
-seismitoad = 537
-throh = 538
-sawk = 539
-sewaddle = 540
-swadloon = 541
-leavanny = 542
-venipede = 543
-whirlipede = 544
-scolipede = 545
-cottonee = 546
-whimsicott = 547
-petilil = 548
-lilligant = 549
-basculin = 550
-sandile = 551
-krokorok = 552
-krookodile = 553
-darumaka = 554
-darmanitan = 555
-maractus = 556
-dwebble = 557
-crustle = 558
-scraggy = 559
-scrafty = 560
-sigilyph = 561
-yamask = 562
-cofagrigus = 563
-tirtouga = 564
-carracosta = 565
-archen = 566
-archeops = 567
-trubbish = 568
-garbodor = 569
-zorua = 570
-zoroark = 571
-minccino = 572
-cinccino = 573
-gothita = 574
-gothorita = 575
-gothitelle = 576
-solosis = 577
-duosion = 578
-reuniclus = 579
-ducklett = 580
-swanna = 581
-vanillite = 582
-vanillish = 583
-vanilluxe = 584
-deerling = 585
-sawsbuck = 586
-emolga = 587
-karrablast = 588
-escavalier = 589
-foongus = 590
-amoonguss = 591
-frillish = 592
-jellicent = 593
-alomomola = 594
-joltik = 595
-galvantula = 596
-ferroseed = 597
-ferrothorn = 598
-klink = 599
-klang = 600
-klinklang = 601
-tynamo = 602
-eelektrik = 603
-eelektross = 604
-elgyem = 605
-beheeyem = 606
-litwick = 607
-lampent = 608
-chandelure = 609
-axew = 610
-fraxure = 611
-haxorus = 612
-cubchoo = 613
-beartic = 614
-cryogonal = 615
-shelmet = 616
-accelgor = 617
-stunfisk = 618
-mienfoo = 619
-mienshao = 620
-druddigon = 621
-golett = 622
-golurk = 623
-pawniard = 624
-bisharp = 625
-bouffalant = 626
-rufflet = 627
-braviary = 628
-vullaby = 629
-mandibuzz = 630
-heatmor = 631
-durant = 632
-deino = 633
-zweilous = 634
-hydreigon = 635
-larvesta = 636
-volcarona = 637
-cobalion = 638
-terrakion = 639
-virizion = 640
-tornadus = 641
-thundurus = 642
-reshiram = 643
-zekrom = 644
-landorus = 645
-kyurem = 646
-keldeo = 647
-meloetta = 648
-genesect = 649
-chespin = 650
-quilladin = 651
-chesnaught = 652
-fennekin = 653
-braixen = 654
-delphox = 655
-froakie = 656
-frogadier = 657
-greninja = 658
-bunnelby = 659
-diggersby = 660
-fletchling = 661
-fletchinder = 662
-talonflame = 663
-scatterbug = 664
-spewpa = 665
-vivillon = 666
-litleo = 667
-pyroar = 668
-flabb = 669
-floette = 670
-florges = 671
-skiddo = 672
-gogoat = 673
-pancham = 674
-pangoro = 675
-furfrou = 676
-espurr = 677
-meowstic = 678
-honedge = 679
-doublade = 680
-aegislash = 681
-spritzee = 682
-aromatisse = 683
-swirlix = 684
-slurpuff = 685
-inkay = 686
-malamar = 687
-binacle = 688
-barbaracle = 689
-skrelp = 690
-dragalge = 691
-clauncher = 692
-clawitzer = 693
-helioptile = 694
-heliolisk = 695
-tyrunt = 696
-tyrantrum = 697
-amaura = 698
-aurorus = 699
-sylveon = 700
-hawlucha = 701
-dedenne = 702
-carbink = 703
-goomy = 704
-sliggoo = 705
-goodra = 706
-klefki = 707
-phantump = 708
-trevenant = 709
-pumpkaboo = 710
-gourgeist = 711
-bergmite = 712
-avalugg = 713
-noibat = 714
-noivern = 715
-xerneas = 716
-yveltal = 717
-zygarde = 718
-diancie = 719
-hoopa = 720
-volcanion = 721
-rowlet = 722
-dartrix = 723
-decidueye = 724
-litten = 725
-torracat = 726
-incineroar = 727
-popplio = 728
-brionne = 729
-primarina = 730
-pikipek = 731
-trumbeak = 732
-toucannon = 733
-yungoos = 734
-gumshoos = 735
-grubbin = 736
-charjabug = 737
-vikavolt = 738
-crabrawler = 739
-crabominable = 740
-oricorio = 741
-cutiefly = 742
-ribombee = 743
-rockruff = 744
-lycanroc = 745
-wishiwashi = 746
-mareanie = 747
-toxapex = 748
-mudbray = 749
-mudsdale = 750
-dewpider = 751
-araquanid = 752
-fomantis = 753
-lurantis = 754
-morelull = 755
-shiinotic = 756
-salandit = 757
-salazzle = 758
-stufful = 759
-bewear = 760
-bounsweet = 761
-steenee = 762
-tsareena = 763
-comfey = 764
-oranguru = 765
-passimian = 766
-wimpod = 767
-golisopod = 768
-sandygast = 769
-palossand = 770
-pyukumuku = 771
-typenull = 772
-silvally = 773
-minior = 774
-komala = 775
-turtonator = 776
-togedemaru = 777
-mimikyu = 778
-bruxish = 779
-drampa = 780
-dhelmise = 781
-jangmoo = 782
-hakamoo = 783
-kommoo = 784
-tapukoko = 785
-tapulele = 786
-tapubulu = 787
-tapufini = 788
-cosmog = 789
-cosmoem = 790
-solgaleo = 791
-lunala = 792
-nihilego = 793
-buzzwole = 794
-pheromosa = 795
-xurkitree = 796
-celesteela = 797
-kartana = 798
-guzzlord = 799
-necrozma = 800
-magearna = 801
-marshadow = 802
-none = 0
-pound = 1
-karatechop = 2
-doubleslap = 3
-cometpunch = 4
-megapunch = 5
-payday = 6
-firepunch = 7
-icepunch = 8
-thunderpunch = 9
-scratch = 10
-vicegrip = 11
-guillotine = 12
-razorwind = 13
-swordsdance = 14
-cut = 15
-gust = 16
-wingattack = 17
-whirlwind = 18
-fly = 19
-bind = 20
-slam = 21
-vinewhip = 22
-stomp = 23
-doublekick = 24
-megakick = 25
-jumpkick = 26
-rollingkick = 27
-sandattack = 28
-headbutt = 29
-hornattack = 30
-furyattack = 31
-horndrill = 32
-tackle = 33
-bodyslam = 34
-wrap = 35
-takedown = 36
-thrash = 37
-doubleedge = 38
-tailwhip = 39
-poisonsting = 40
-twineedle = 41
-pinmissile = 42
-leer = 43
-bite = 44
-growl = 45
-roar = 46
-sing = 47
-supersonic = 48
-sonicboom = 49
-disable = 50
-acid = 51
-ember = 52
-flamethrower = 53
-mist = 54
-watergun = 55
-hydropump = 56
-surf = 57
-icebeam = 58
-blizzard = 59
-psybeam = 60
-bubblebeam = 61
-aurorabeam = 62
-hyperbeam = 63
-peck = 64
-drillpeck = 65
-submission = 66
-lowkick = 67
-counter = 68
-seismictoss = 69
-strength = 70
-absorb = 71
-megadrain = 72
-leechseed = 73
-growth = 74
-razorleaf = 75
-solarbeam = 76
-poisonpowder = 77
-stunspore = 78
-sleeppowder = 79
-petaldance = 80
-stringshot = 81
-dragonrage = 82
-firespin = 83
-thundershock = 84
-thunderbolt = 85
-thunderwave = 86
-thunder = 87
-rockthrow = 88
-earthquake = 89
-fissure = 90
-dig = 91
-toxic = 92
-confusion = 93
-psychic = 94
-hypnosis = 95
-meditate = 96
-agility = 97
-quickattack = 98
-rage = 99
-teleport = 100
-nightshade = 101
-mimic = 102
-screech = 103
-doubleteam = 104
-recover = 105
-harden = 106
-minimize = 107
-smokescreen = 108
-confuseray = 109
-withdraw = 110
-defensecurl = 111
-barrier = 112
-lightscreen = 113
-haze = 114
-reflect = 115
-focusenergy = 116
-bide = 117
-metronome = 118
-mirrormove = 119
-selfdestruct = 120
-eggbomb = 121
-lick = 122
-smog = 123
-sludge = 124
-boneclub = 125
-fireblast = 126
-waterfall = 127
-clamp = 128
-swift = 129
-skullbash = 130
-spikecannon = 131
-constrict = 132
-amnesia = 133
-kinesis = 134
-softboiled = 135
-highjumpkick = 136
-glare = 137
-dreameater = 138
-poisongas = 139
-barrage = 140
-leechlife = 141
-lovelykiss = 142
-skyattack = 143
-transform = 144
-bubble = 145
-dizzypunch = 146
-spore = 147
-flash = 148
-psywave = 149
-splash = 150
-acidarmor = 151
-crabhammer = 152
-explosion = 153
-furyswipes = 154
-bonemerang = 155
-rest = 156
-rockslide = 157
-hyperfang = 158
-sharpen = 159
-conversion = 160
-triattack = 161
-superfang = 162
-slash = 163
-substitute = 164
-struggle = 165
-sketch = 166
-triplekick = 167
-thief = 168
-spiderweb = 169
-mindreader = 170
-nightmare = 171
-flamewheel = 172
-snore = 173
-curse = 174
-flail = 175
-conversion2 = 176
-aeroblast = 177
-cottonspore = 178
-reversal = 179
-spite = 180
-powdersnow = 181
-protect = 182
-machpunch = 183
-scaryface = 184
-feintattack = 185
-sweetkiss = 186
-bellydrum = 187
-sludgebomb = 188
-mudslap = 189
-octazooka = 190
-spikes = 191
-zapcannon = 192
-foresight = 193
-destinybond = 194
-perishsong = 195
-icywind = 196
-detect = 197
-bonerush = 198
-lockon = 199
-outrage = 200
-sandstorm = 201
-gigadrain = 202
-endure = 203
-charm = 204
-rollout = 205
-falseswipe = 206
-swagger = 207
-milkdrink = 208
-spark = 209
-furycutter = 210
-steelwing = 211
-meanlook = 212
-attract = 213
-sleeptalk = 214
-healbell = 215
-__return = 216
-present = 217
-frustration = 218
-safeguard = 219
-painsplit = 220
-sacredfire = 221
-magnitude = 222
-dynamicpunch = 223
-megahorn = 224
-dragonbreath = 225
-batonpass = 226
-encore = 227
-pursuit = 228
-rapidspin = 229
-sweetscent = 230
-irontail = 231
-metalclaw = 232
-vitalthrow = 233
-morningsun = 234
-synthesis = 235
-moonlight = 236
-hiddenpower = 237
-crosschop = 238
-twister = 239
-raindance = 240
-sunnyday = 241
-crunch = 242
-mirrorcoat = 243
-psychup = 244
-extremespeed = 245
-ancientpower = 246
-shadowball = 247
-futuresight = 248
-rocksmash = 249
-whirlpool = 250
-beatup = 251
-fakeout = 252
-uproar = 253
-stockpile = 254
-spitup = 255
-swallow = 256
-heatwave = 257
-hail = 258
-torment = 259
-flatter = 260
-willowisp = 261
-memento = 262
-facade = 263
-focuspunch = 264
-smellingsalts = 265
-followme = 266
-naturepower = 267
-charge = 268
-taunt = 269
-helpinghand = 270
-trick = 271
-roleplay = 272
-wish = 273
-assist = 274
-ingrain = 275
-superpower = 276
-magiccoat = 277
-recycle = 278
-revenge = 279
-brickbreak = 280
-yawn = 281
-knockoff = 282
-endeavor = 283
-eruption = 284
-skillswap = 285
-imprison = 286
-refresh = 287
-grudge = 288
-snatch = 289
-secretpower = 290
-dive = 291
-armthrust = 292
-camouflage = 293
-tailglow = 294
-lusterpurge = 295
-mistball = 296
-featherdance = 297
-teeterdance = 298
-blazekick = 299
-mudsport = 300
-iceball = 301
-needlearm = 302
-slackoff = 303
-hypervoice = 304
-poisonfang = 305
-crushclaw = 306
-blastburn = 307
-hydrocannon = 308
-meteormash = 309
-astonish = 310
-weatherball = 311
-aromatherapy = 312
-faketears = 313
-aircutter = 314
-overheat = 315
-odorsleuth = 316
-rocktomb = 317
-silverwind = 318
-metalsound = 319
-grasswhistle = 320
-tickle = 321
-cosmicpower = 322
-waterspout = 323
-signalbeam = 324
-shadowpunch = 325
-extrasensory = 326
-skyuppercut = 327
-sandtomb = 328
-sheercold = 329
-muddywater = 330
-bulletseed = 331
-aerialace = 332
-iciclespear = 333
-irondefense = 334
-block = 335
-howl = 336
-dragonclaw = 337
-frenzyplant = 338
-bulkup = 339
-bounce = 340
-mudshot = 341
-poisontail = 342
-covet = 343
-volttackle = 344
-magicalleaf = 345
-watersport = 346
-calmmind = 347
-leafblade = 348
-dragondance = 349
-rockblast = 350
-shockwave = 351
-waterpulse = 352
-doomdesire = 353
-psychoboost = 354
-roost = 355
-gravity = 356
-miracleeye = 357
-wakeupslap = 358
-hammerarm = 359
-gyroball = 360
-healingwish = 361
-brine = 362
-naturalgift = 363
-feint = 364
-pluck = 365
-tailwind = 366
-acupressure = 367
-metalburst = 368
-uturn = 369
-closecombat = 370
-payback = 371
-assurance = 372
-embargo = 373
-fling = 374
-psychoshift = 375
-trumpcard = 376
-healblock = 377
-wringout = 378
-powertrick = 379
-gastroacid = 380
-luckychant = 381
-mefirst = 382
-copycat = 383
-powerswap = 384
-guardswap = 385
-punishment = 386
-lastresort = 387
-worryseed = 388
-suckerpunch = 389
-toxicspikes = 390
-heartswap = 391
-aquaring = 392
-magnetrise = 393
-flareblitz = 394
-forcepalm = 395
-aurasphere = 396
-rockpolish = 397
-poisonjab = 398
-darkpulse = 399
-nightslash = 400
-aquatail = 401
-seedbomb = 402
-airslash = 403
-xscissor = 404
-bugbuzz = 405
-dragonpulse = 406
-dragonrush = 407
-powergem = 408
-drainpunch = 409
-vacuumwave = 410
-focusblast = 411
-energyball = 412
-bravebird = 413
-earthpower = 414
-switcheroo = 415
-gigaimpact = 416
-nastyplot = 417
-bulletpunch = 418
-avalanche = 419
-iceshard = 420
-shadowclaw = 421
-thunderfang = 422
-icefang = 423
-firefang = 424
-shadowsneak = 425
-mudbomb = 426
-psychocut = 427
-zenheadbutt = 428
-mirrorshot = 429
-flashcannon = 430
-rockclimb = 431
-defog = 432
-trickroom = 433
-dracometeor = 434
-discharge = 435
-lavaplume = 436
-leafstorm = 437
-powerwhip = 438
-rockwrecker = 439
-crosspoison = 440
-gunkshot = 441
-ironhead = 442
-magnetbomb = 443
-stoneedge = 444
-captivate = 445
-stealthrock = 446
-grassknot = 447
-chatter = 448
-judgment = 449
-bugbite = 450
-chargebeam = 451
-woodhammer = 452
-aquajet = 453
-attackorder = 454
-defendorder = 455
-healorder = 456
-headsmash = 457
-doublehit = 458
-roaroftime = 459
-spacialrend = 460
-lunardance = 461
-crushgrip = 462
-magmastorm = 463
-darkvoid = 464
-seedflare = 465
-ominouswind = 466
-shadowforce = 467
-honeclaws = 468
-wideguard = 469
-guardsplit = 470
-powersplit = 471
-wonderroom = 472
-psyshock = 473
-venoshock = 474
-autotomize = 475
-ragepowder = 476
-telekinesis = 477
-magicroom = 478
-smackdown = 479
-stormthrow = 480
-flameburst = 481
-sludgewave = 482
-quiverdance = 483
-heavyslam = 484
-synchronoise = 485
-electroball = 486
-soak = 487
-flamecharge = 488
-coil = 489
-lowsweep = 490
-acidspray = 491
-foulplay = 492
-simplebeam = 493
-entrainment = 494
-afteryou = 495
-round = 496
-echoedvoice = 497
-chipaway = 498
-clearsmog = 499
-storedpower = 500
-quickguard = 501
-allyswitch = 502
-scald = 503
-shellsmash = 504
-healpulse = 505
-hex = 506
-skydrop = 507
-shiftgear = 508
-circlethrow = 509
-incinerate = 510
-quash = 511
-acrobatics = 512
-reflecttype = 513
-retaliate = 514
-finalgambit = 515
-bestow = 516
-inferno = 517
-waterpledge = 518
-firepledge = 519
-grasspledge = 520
-voltswitch = 521
-strugglebug = 522
-bulldoze = 523
-frostbreath = 524
-dragontail = 525
-workup = 526
-electroweb = 527
-wildcharge = 528
-drillrun = 529
-dualchop = 530
-heartstamp = 531
-hornleech = 532
-sacredsword = 533
-razorshell = 534
-heatcrash = 535
-leaftornado = 536
-steamroller = 537
-cottonguard = 538
-nightdaze = 539
-psystrike = 540
-tailslap = 541
-hurricane = 542
-headcharge = 543
-geargrind = 544
-searingshot = 545
-technoblast = 546
-relicsong = 547
-secretsword = 548
-glaciate = 549
-boltstrike = 550
-blueflare = 551
-fierydance = 552
-freezeshock = 553
-iceburn = 554
-snarl = 555
-iciclecrash = 556
-vcreate = 557
-fusionflare = 558
-fusionbolt = 559
-flyingpress = 560
-matblock = 561
-belch = 562
-rototiller = 563
-stickyweb = 564
-fellstinger = 565
-phantomforce = 566
-trickortreat = 567
-nobleroar = 568
-iondeluge = 569
-paraboliccharge = 570
-forestscurse = 571
-petalblizzard = 572
-freezedry = 573
-disarmingvoice = 574
-partingshot = 575
-topsyturvy = 576
-drainingkiss = 577
-craftyshield = 578
-flowershield = 579
-grassyterrain = 580
-mistyterrain = 581
-electrify = 582
-playrough = 583
-fairywind = 584
-moonblast = 585
-boomburst = 586
-fairylock = 587
-kingsshield = 588
-playnice = 589
-confide = 590
-diamondstorm = 591
-steameruption = 592
-hyperspacehole = 593
-watershuriken = 594
-mysticalfire = 595
-spikyshield = 596
-aromaticmist = 597
-eerieimpulse = 598
-venomdrench = 599
-powder = 600
-geomancy = 601
-magneticflux = 602
-happyhour = 603
-electricterrain = 604
-dazzlinggleam = 605
-celebrate = 606
-holdhands = 607
-babydolleyes = 608
-nuzzle = 609
-holdback = 610
-infestation = 611
-poweruppunch = 612
-oblivionwing = 613
-thousandarrows = 614
-thousandwaves = 615
-landswrath = 616
-lightofruin = 617
-originpulse = 618
-precipiceblades = 619
-dragonascent = 620
-hyperspacefury = 621
-breakneckblitz = 622
-alloutpummeling = 624
-supersonicskystrike = 626
-aciddownpour = 628
-tectonicrage = 630
-continentalcrush = 632
-savagespinout = 634
-neverendingnightmare = 636
-corkscrewcrash = 638
-infernooverdrive = 640
-hydrovortex = 642
-bloomdoom = 644
-gigavolthavoc = 646
-shatteredpsyche = 648
-subzeroslammer = 650
-devastatingdrake = 652
-blackholeeclipse = 654
-twinkletackle = 656
-catastropika = 658
-shoreup = 659
-firstimpression = 660
-banefulbunker = 661
-spiritshackle = 662
-darkestlariat = 663
-sparklingaria = 664
-icehammer = 665
-floralhealing = 666
-highhorsepower = 667
-strengthsap = 668
-solarblade = 669
-leafage = 670
-spotlight = 671
-toxicthread = 672
-laserfocus = 673
-gearup = 674
-throatchop = 675
-pollenpuff = 676
-anchorshot = 677
-psychicterrain = 678
-lunge = 679
-firelash = 680
-powertrip = 681
-burnup = 682
-speedswap = 683
-smartstrike = 684
-purify = 685
-revelationdance = 686
-coreenforcer = 687
-tropkick = 688
-instruct = 689
-beakblast = 690
-clangingscales = 691
-dragonhammer = 692
-brutalswing = 693
-auroraveil = 694
-sinisterarrowraid = 695
-maliciousmoonsault = 696
-oceanicoperetta = 697
-guardianofalola = 698
-soulstealing7starstrike = 699
-stokedsparksurfer = 700
-pulverizingpancake = 701
-extremeevoboost = 702
-genesissupernova = 703
-shelltrap = 704
-fleurcannon = 705
-psychicfangs = 706
-stompingtantrum = 707
-shadowbone = 708
-accelerock = 709
-liquidation = 710
-prismaticlaser = 711
-spectralthief = 712
-sunsteelstrike = 713
-moongeistbeam = 714
-tearfullook = 715
-zingzap = 716
-naturesmadness = 717
-multiattack = 718
-_10000000voltthunderbolt = 719
-__None4 = 0
-adamant = 1
-bashful = 2
-bold = 3
-brave = 4
-calm = 5
-careful = 6
-docile = 7
-gentle = 8
-hardy = 9
-hasty = 10
-impish = 11
-jolly = 12
-lax = 13
-lonely = 14
-mild = 15
-modest = 16
-naive = 17
-naughty = 18
-quiet = 19
-quirky = 20
-rash = 21
-relaxed = 22
-sassy = 23
-serious = 24
-timid = 25
 
+_PREFIX_AGDFASBV1211782128 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1211782128',
+  full_name='PSXAPI.Response1559120870.PREFIX_AGDFASBV1211782128',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1211782128_ABILITYSLOTTYPE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=67,
+  serialized_end=162,
+)
+
+
+_PREFIX_AGDFASBV217888935 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV217888935',
+  full_name='PSXAPI.Response1559120870.PREFIX_AGDFASBV217888935',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV217888935_EGGSTATE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=164,
+  serialized_end=268,
+)
 
 
 _INVENTORYPOKEMON = _descriptor.Descriptor(
   name='InventoryPokemon',
-  full_name='PSXAPI_Response24917846189246.InventoryPokemon',
+  full_name='PSXAPI.Response1559120870.InventoryPokemon',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Pokemon', full_name='PSXAPI_Response24917846189246.InventoryPokemon.Pokemon', index=0,
+      name='Pokemon', full_name='PSXAPI.Response1559120870.InventoryPokemon.Pokemon', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Position', full_name='PSXAPI_Response24917846189246.InventoryPokemon.Position', index=1,
+      name='Position', full_name='PSXAPI.Response1559120870.InventoryPokemon.Position', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Box', full_name='PSXAPI_Response24917846189246.InventoryPokemon.Box', index=2,
+      name='Box', full_name='PSXAPI.Response1559120870.InventoryPokemon.Box', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanEvolve', full_name='PSXAPI_Response24917846189246.InventoryPokemon.CanEvolve', index=3,
+      name='CanEvolve', full_name='PSXAPI.Response1559120870.InventoryPokemon.CanEvolve', index=3,
       number=4, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanLearnMove', full_name='PSXAPI_Response24917846189246.InventoryPokemon.CanLearnMove', index=4,
+      name='CanLearnMove', full_name='PSXAPI.Response1559120870.InventoryPokemon.CanLearnMove', index=4,
       number=5, type=14, cpp_type=8, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -7943,174 +7240,174 @@ _INVENTORYPOKEMON = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=59,
-  serialized_end=315,
+  serialized_start=271,
+  serialized_end=541,
 )
 
 
 _POKEMON = _descriptor.Descriptor(
   name='Pokemon',
-  full_name='PSXAPI_Response24917846189246.Pokemon',
+  full_name='PSXAPI.Response1559120870.Pokemon',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='PokemonID', full_name='PSXAPI_Response24917846189246.Pokemon.PokemonID', index=0,
+      name='PokemonID', full_name='PSXAPI.Response1559120870.Pokemon.PokemonID', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Level', full_name='PSXAPI_Response24917846189246.Pokemon.Level', index=1,
+      name='Level', full_name='PSXAPI.Response1559120870.Pokemon.Level', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Exp', full_name='PSXAPI_Response24917846189246.Pokemon.Exp', index=2,
+      name='Exp', full_name='PSXAPI.Response1559120870.Pokemon.Exp', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='HP', full_name='PSXAPI_Response24917846189246.Pokemon.HP', index=3,
+      name='HP', full_name='PSXAPI.Response1559120870.Pokemon.HP', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Moves', full_name='PSXAPI_Response24917846189246.Pokemon.Moves', index=4,
+      name='Moves', full_name='PSXAPI.Response1559120870.Pokemon.Moves', index=4,
       number=5, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='AbilitySlot', full_name='PSXAPI_Response24917846189246.Pokemon.AbilitySlot', index=5,
+      name='AbilitySlot', full_name='PSXAPI.Response1559120870.Pokemon.AbilitySlot', index=5,
       number=6, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Happiness', full_name='PSXAPI_Response24917846189246.Pokemon.Happiness', index=6,
+      name='Happiness', full_name='PSXAPI.Response1559120870.Pokemon.Happiness', index=6,
       number=7, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Nature', full_name='PSXAPI_Response24917846189246.Pokemon.Nature', index=7,
+      name='Nature', full_name='PSXAPI.Response1559120870.Pokemon.Nature', index=7,
       number=8, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Shiny', full_name='PSXAPI_Response24917846189246.Pokemon.Shiny', index=8,
+      name='Shiny', full_name='PSXAPI.Response1559120870.Pokemon.Shiny', index=8,
       number=9, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='IVs', full_name='PSXAPI_Response24917846189246.Pokemon.IVs', index=9,
+      name='IVs', full_name='PSXAPI.Response1559120870.Pokemon.IVs', index=9,
       number=10, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='EVs', full_name='PSXAPI_Response24917846189246.Pokemon.EVs', index=10,
+      name='EVs', full_name='PSXAPI.Response1559120870.Pokemon.EVs', index=10,
       number=11, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Gender', full_name='PSXAPI_Response24917846189246.Pokemon.Gender', index=11,
+      name='Gender', full_name='PSXAPI.Response1559120870.Pokemon.Gender', index=11,
       number=12, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='OriginalTrainer', full_name='PSXAPI_Response24917846189246.Pokemon.OriginalTrainer', index=12,
+      name='OriginalTrainer', full_name='PSXAPI.Response1559120870.Pokemon.OriginalTrainer', index=12,
       number=13, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Trainer', full_name='PSXAPI_Response24917846189246.Pokemon.Trainer', index=13,
+      name='Trainer', full_name='PSXAPI.Response1559120870.Pokemon.Trainer', index=13,
       number=14, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Nickname', full_name='PSXAPI_Response24917846189246.Pokemon.Nickname', index=14,
+      name='Nickname', full_name='PSXAPI.Response1559120870.Pokemon.Nickname', index=14,
       number=15, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Pokeball', full_name='PSXAPI_Response24917846189246.Pokemon.Pokeball', index=15,
+      name='Pokeball', full_name='PSXAPI.Response1559120870.Pokemon.Pokeball', index=15,
       number=16, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='HoldItem', full_name='PSXAPI_Response24917846189246.Pokemon.HoldItem', index=16,
+      name='HoldItem', full_name='PSXAPI.Response1559120870.Pokemon.HoldItem', index=16,
       number=17, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Personality', full_name='PSXAPI_Response24917846189246.Pokemon.Personality', index=17,
+      name='Personality', full_name='PSXAPI.Response1559120870.Pokemon.Personality', index=17,
       number=18, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Condition', full_name='PSXAPI_Response24917846189246.Pokemon.Condition', index=18,
+      name='Condition', full_name='PSXAPI.Response1559120870.Pokemon.Condition', index=18,
       number=19, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='EVsCollected', full_name='PSXAPI_Response24917846189246.Pokemon.EVsCollected', index=19,
+      name='EVsCollected', full_name='PSXAPI.Response1559120870.Pokemon.EVsCollected', index=19,
       number=20, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CaughtDateUtc', full_name='PSXAPI_Response24917846189246.Pokemon.CaughtDateUtc', index=20,
+      name='CaughtDateUtc', full_name='PSXAPI.Response1559120870.Pokemon.CaughtDateUtc', index=20,
       number=21, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CaughtLevel', full_name='PSXAPI_Response24917846189246.Pokemon.CaughtLevel', index=21,
+      name='CaughtLevel', full_name='PSXAPI.Response1559120870.Pokemon.CaughtLevel', index=21,
       number=22, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='NotTradeable', full_name='PSXAPI_Response24917846189246.Pokemon.NotTradeable', index=22,
+      name='NotTradeable', full_name='PSXAPI.Response1559120870.Pokemon.NotTradeable', index=22,
       number=23, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -8128,76 +7425,101 @@ _POKEMON = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=318,
-  serialized_end=1271,
+  serialized_start=544,
+  serialized_end=1571,
+)
+
+
+_PREFIX_AGDFASBV252416967 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV252416967',
+  full_name='PSXAPI.Response1559120870.PREFIX_AGDFASBV252416967',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV252416967_POKEMONCONDITION,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1574,
+  serialized_end=1708,
 )
 
 
 _POKEMONDATA = _descriptor.Descriptor(
   name='PokemonData',
-  full_name='PSXAPI_Response24917846189246.PokemonData',
+  full_name='PSXAPI.Response1559120870.PokemonData',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='UniqueID', full_name='PSXAPI_Response24917846189246.PokemonData.UniqueID', index=0,
+      name='UniqueID', full_name='PSXAPI.Response1559120870.PokemonData.UniqueID', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Payload', full_name='PSXAPI_Response24917846189246.PokemonData.Payload', index=1,
+      name='Payload', full_name='PSXAPI.Response1559120870.PokemonData.Payload', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Stats', full_name='PSXAPI_Response24917846189246.PokemonData.Stats', index=2,
+      name='Stats', full_name='PSXAPI.Response1559120870.PokemonData.Stats', index=2,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Trainer', full_name='PSXAPI_Response24917846189246.PokemonData.Trainer', index=3,
+      name='Trainer', full_name='PSXAPI.Response1559120870.PokemonData.Trainer', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='OriginalTrainer', full_name='PSXAPI_Response24917846189246.PokemonData.OriginalTrainer', index=4,
+      name='OriginalTrainer', full_name='PSXAPI.Response1559120870.PokemonData.OriginalTrainer', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Ability', full_name='PSXAPI_Response24917846189246.PokemonData.Ability', index=5,
+      name='Ability', full_name='PSXAPI.Response1559120870.PokemonData.Ability', index=5,
       number=6, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='ExpStart', full_name='PSXAPI_Response24917846189246.PokemonData.ExpStart', index=6,
+      name='ExpStart', full_name='PSXAPI.Response1559120870.PokemonData.ExpStart', index=6,
       number=7, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='ExpNext', full_name='PSXAPI_Response24917846189246.PokemonData.ExpNext', index=7,
+      name='ExpNext', full_name='PSXAPI.Response1559120870.PokemonData.ExpNext', index=7,
       number=8, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='EggState', full_name='PSXAPI_Response24917846189246.PokemonData.EggState', index=8,
+      name='EggState', full_name='PSXAPI.Response1559120870.PokemonData.EggState', index=8,
       number=9, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -8215,34 +7537,59 @@ _POKEMONDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1274,
-  serialized_end=1601,
+  serialized_start=1711,
+  serialized_end=2053,
+)
+
+
+_PREFIX_AGDFASBV264064132 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV264064132',
+  full_name='PSXAPI.Response1559120870.PREFIX_AGDFASBV264064132',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV264064132_POKEMONGENDER,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=2055,
+  serialized_end=2135,
 )
 
 
 _POKEMONMOVE = _descriptor.Descriptor(
   name='PokemonMove',
-  full_name='PSXAPI_Response24917846189246.PokemonMove',
+  full_name='PSXAPI.Response1559120870.PokemonMove',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Move', full_name='PSXAPI_Response24917846189246.PokemonMove.Move', index=0,
+      name='Move', full_name='PSXAPI.Response1559120870.PokemonMove.Move', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='PP', full_name='PSXAPI_Response24917846189246.PokemonMove.PP', index=1,
+      name='PP', full_name='PSXAPI.Response1559120870.PokemonMove.PP', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='MaxPP', full_name='PSXAPI_Response24917846189246.PokemonMove.MaxPP', index=2,
+      name='MaxPP', full_name='PSXAPI.Response1559120870.PokemonMove.MaxPP', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -8260,55 +7607,105 @@ _POKEMONMOVE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1603,
-  serialized_end=1715,
+  serialized_start=2138,
+  serialized_end=2272,
+)
+
+
+_PREFIX_AGDFASBV2087144784 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV2087144784',
+  full_name='PSXAPI.Response1559120870.PREFIX_AGDFASBV2087144784',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV2087144784_POKEMONMOVEID,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=2275,
+  serialized_end=13585,
+)
+
+
+_PREFIX_AGDFASBV1284323517 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1284323517',
+  full_name='PSXAPI.Response1559120870.PREFIX_AGDFASBV1284323517',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1284323517_POKEMONNATURES,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=13588,
+  serialized_end=13936,
 )
 
 
 _POKEMONSTATS = _descriptor.Descriptor(
   name='PokemonStats',
-  full_name='PSXAPI_Response24917846189246.PokemonStats',
+  full_name='PSXAPI.Response1559120870.PokemonStats',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='HP', full_name='PSXAPI_Response24917846189246.PokemonStats.HP', index=0,
+      name='HP', full_name='PSXAPI.Response1559120870.PokemonStats.HP', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Atk', full_name='PSXAPI_Response24917846189246.PokemonStats.Atk', index=1,
+      name='Atk', full_name='PSXAPI.Response1559120870.PokemonStats.Atk', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Def', full_name='PSXAPI_Response24917846189246.PokemonStats.Def', index=2,
+      name='Def', full_name='PSXAPI.Response1559120870.PokemonStats.Def', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='SpAtk', full_name='PSXAPI_Response24917846189246.PokemonStats.SpAtk', index=3,
+      name='SpAtk', full_name='PSXAPI.Response1559120870.PokemonStats.SpAtk', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='SpDef', full_name='PSXAPI_Response24917846189246.PokemonStats.SpDef', index=4,
+      name='SpDef', full_name='PSXAPI.Response1559120870.PokemonStats.SpDef', index=4,
       number=5, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Speed', full_name='PSXAPI_Response24917846189246.PokemonStats.Speed', index=5,
+      name='Speed', full_name='PSXAPI.Response1559120870.PokemonStats.Speed', index=5,
       number=6, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -8326,48 +7723,48 @@ _POKEMONSTATS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1717,
-  serialized_end=1832,
+  serialized_start=13938,
+  serialized_end=14053,
 )
 
 
 _SEARCH = _descriptor.Descriptor(
   name='Search',
-  full_name='PSXAPI_Response24917846189246.Search',
+  full_name='PSXAPI.Response1559120870.Search',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='SearchID', full_name='PSXAPI_Response24917846189246.Search.SearchID', index=0,
+      name='SearchID', full_name='PSXAPI.Response1559120870.Search.SearchID', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='MaxResults', full_name='PSXAPI_Response24917846189246.Search.MaxResults', index=1,
+      name='MaxResults', full_name='PSXAPI.Response1559120870.Search.MaxResults', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Box', full_name='PSXAPI_Response24917846189246.Search.Box', index=2,
+      name='Box', full_name='PSXAPI.Response1559120870.Search.Box', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Found', full_name='PSXAPI_Response24917846189246.Search.Found', index=3,
+      name='Found', full_name='PSXAPI.Response1559120870.Search.Found', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Results', full_name='PSXAPI_Response24917846189246.Search.Results', index=4,
+      name='Results', full_name='PSXAPI.Response1559120870.Search.Results', index=4,
       number=5, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -8385,85 +7782,133 @@ _SEARCH = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1835,
-  serialized_end=1995,
+  serialized_start=14056,
+  serialized_end=14212,
 )
 
+_PREFIX_AGDFASBV1211782128_ABILITYSLOTTYPE.containing_type = _PREFIX_AGDFASBV1211782128
+_PREFIX_AGDFASBV217888935_EGGSTATE.containing_type = _PREFIX_AGDFASBV217888935
 _INVENTORYPOKEMON.fields_by_name['Pokemon'].message_type = _POKEMONDATA
 _INVENTORYPOKEMON.fields_by_name['CanEvolve'].enum_type = _POKEMONID
-_INVENTORYPOKEMON.fields_by_name['CanLearnMove'].enum_type = _POKEMONMOVEID
+_INVENTORYPOKEMON.fields_by_name['CanLearnMove'].enum_type = _PREFIX_AGDFASBV2087144784_POKEMONMOVEID
 _POKEMON.fields_by_name['PokemonID'].enum_type = _POKEMONID
 _POKEMON.fields_by_name['Moves'].message_type = _POKEMONMOVE
-_POKEMON.fields_by_name['AbilitySlot'].enum_type = _ABILITYSLOTTYPE
-_POKEMON.fields_by_name['Nature'].enum_type = _POKEMONNATURES
+_POKEMON.fields_by_name['AbilitySlot'].enum_type = _PREFIX_AGDFASBV1211782128_ABILITYSLOTTYPE
+_POKEMON.fields_by_name['Nature'].enum_type = _PREFIX_AGDFASBV1284323517_POKEMONNATURES
 _POKEMON.fields_by_name['IVs'].message_type = _POKEMONSTATS
 _POKEMON.fields_by_name['EVs'].message_type = _POKEMONSTATS
-_POKEMON.fields_by_name['Gender'].enum_type = _POKEMONGENDER
-_POKEMON.fields_by_name['OriginalTrainer'].message_type = bcl__pb2._GUID
-_POKEMON.fields_by_name['Trainer'].message_type = bcl__pb2._GUID
-_POKEMON.fields_by_name['Condition'].enum_type = _POKEMONCONDITION
+_POKEMON.fields_by_name['Gender'].enum_type = _PREFIX_AGDFASBV264064132_POKEMONGENDER
+_POKEMON.fields_by_name['OriginalTrainer'].message_type = protobuf__net_dot_bcl__pb2._GUID
+_POKEMON.fields_by_name['Trainer'].message_type = protobuf__net_dot_bcl__pb2._GUID
+_POKEMON.fields_by_name['Condition'].enum_type = _PREFIX_AGDFASBV252416967_POKEMONCONDITION
 _POKEMON.fields_by_name['EVsCollected'].message_type = _POKEMONSTATS
-_POKEMON.fields_by_name['CaughtDateUtc'].message_type = bcl__pb2._DATETIME
-_POKEMONDATA.fields_by_name['UniqueID'].message_type = bcl__pb2._GUID
+_POKEMON.fields_by_name['CaughtDateUtc'].message_type = protobuf__net_dot_bcl__pb2._DATETIME
+_PREFIX_AGDFASBV252416967_POKEMONCONDITION.containing_type = _PREFIX_AGDFASBV252416967
+_POKEMONDATA.fields_by_name['UniqueID'].message_type = protobuf__net_dot_bcl__pb2._GUID
 _POKEMONDATA.fields_by_name['Payload'].message_type = _POKEMON
 _POKEMONDATA.fields_by_name['Stats'].message_type = _POKEMONSTATS
-_POKEMONDATA.fields_by_name['EggState'].enum_type = _EGGSTATE
-_POKEMONMOVE.fields_by_name['Move'].enum_type = _POKEMONMOVEID
-_SEARCH.fields_by_name['SearchID'].message_type = bcl__pb2._GUID
+_POKEMONDATA.fields_by_name['EggState'].enum_type = _PREFIX_AGDFASBV217888935_EGGSTATE
+_PREFIX_AGDFASBV264064132_POKEMONGENDER.containing_type = _PREFIX_AGDFASBV264064132
+_POKEMONMOVE.fields_by_name['Move'].enum_type = _PREFIX_AGDFASBV2087144784_POKEMONMOVEID
+_PREFIX_AGDFASBV2087144784_POKEMONMOVEID.containing_type = _PREFIX_AGDFASBV2087144784
+_PREFIX_AGDFASBV1284323517_POKEMONNATURES.containing_type = _PREFIX_AGDFASBV1284323517
+_SEARCH.fields_by_name['SearchID'].message_type = protobuf__net_dot_bcl__pb2._GUID
 _SEARCH.fields_by_name['Results'].message_type = _INVENTORYPOKEMON
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1211782128'] = _PREFIX_AGDFASBV1211782128
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV217888935'] = _PREFIX_AGDFASBV217888935
 DESCRIPTOR.message_types_by_name['InventoryPokemon'] = _INVENTORYPOKEMON
 DESCRIPTOR.message_types_by_name['Pokemon'] = _POKEMON
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV252416967'] = _PREFIX_AGDFASBV252416967
 DESCRIPTOR.message_types_by_name['PokemonData'] = _POKEMONDATA
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV264064132'] = _PREFIX_AGDFASBV264064132
 DESCRIPTOR.message_types_by_name['PokemonMove'] = _POKEMONMOVE
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV2087144784'] = _PREFIX_AGDFASBV2087144784
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1284323517'] = _PREFIX_AGDFASBV1284323517
 DESCRIPTOR.message_types_by_name['PokemonStats'] = _POKEMONSTATS
 DESCRIPTOR.message_types_by_name['Search'] = _SEARCH
-DESCRIPTOR.enum_types_by_name['AbilitySlotType'] = _ABILITYSLOTTYPE
-DESCRIPTOR.enum_types_by_name['EggState'] = _EGGSTATE
-DESCRIPTOR.enum_types_by_name['PokemonCondition'] = _POKEMONCONDITION
-DESCRIPTOR.enum_types_by_name['PokemonGender'] = _POKEMONGENDER
 DESCRIPTOR.enum_types_by_name['PokemonID'] = _POKEMONID
-DESCRIPTOR.enum_types_by_name['PokemonMoveID'] = _POKEMONMOVEID
-DESCRIPTOR.enum_types_by_name['PokemonNatures'] = _POKEMONNATURES
+
+PREFIX_AGDFASBV1211782128 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1211782128', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1211782128,
+  __module__ = 'Search_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1559120870.PREFIX_AGDFASBV1211782128)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1211782128)
+
+PREFIX_AGDFASBV217888935 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV217888935', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV217888935,
+  __module__ = 'Search_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1559120870.PREFIX_AGDFASBV217888935)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV217888935)
 
 InventoryPokemon = _reflection.GeneratedProtocolMessageType('InventoryPokemon', (_message.Message,), dict(
   DESCRIPTOR = _INVENTORYPOKEMON,
   __module__ = 'Search_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI_Response24917846189246.InventoryPokemon)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1559120870.InventoryPokemon)
   ))
 _sym_db.RegisterMessage(InventoryPokemon)
 
 Pokemon = _reflection.GeneratedProtocolMessageType('Pokemon', (_message.Message,), dict(
   DESCRIPTOR = _POKEMON,
   __module__ = 'Search_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI_Response24917846189246.Pokemon)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1559120870.Pokemon)
   ))
 _sym_db.RegisterMessage(Pokemon)
+
+PREFIX_AGDFASBV252416967 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV252416967', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV252416967,
+  __module__ = 'Search_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1559120870.PREFIX_AGDFASBV252416967)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV252416967)
 
 PokemonData = _reflection.GeneratedProtocolMessageType('PokemonData', (_message.Message,), dict(
   DESCRIPTOR = _POKEMONDATA,
   __module__ = 'Search_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI_Response24917846189246.PokemonData)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1559120870.PokemonData)
   ))
 _sym_db.RegisterMessage(PokemonData)
+
+PREFIX_AGDFASBV264064132 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV264064132', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV264064132,
+  __module__ = 'Search_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1559120870.PREFIX_AGDFASBV264064132)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV264064132)
 
 PokemonMove = _reflection.GeneratedProtocolMessageType('PokemonMove', (_message.Message,), dict(
   DESCRIPTOR = _POKEMONMOVE,
   __module__ = 'Search_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI_Response24917846189246.PokemonMove)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1559120870.PokemonMove)
   ))
 _sym_db.RegisterMessage(PokemonMove)
+
+PREFIX_AGDFASBV2087144784 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV2087144784', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV2087144784,
+  __module__ = 'Search_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1559120870.PREFIX_AGDFASBV2087144784)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV2087144784)
+
+PREFIX_AGDFASBV1284323517 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1284323517', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1284323517,
+  __module__ = 'Search_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1559120870.PREFIX_AGDFASBV1284323517)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1284323517)
 
 PokemonStats = _reflection.GeneratedProtocolMessageType('PokemonStats', (_message.Message,), dict(
   DESCRIPTOR = _POKEMONSTATS,
   __module__ = 'Search_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI_Response24917846189246.PokemonStats)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1559120870.PokemonStats)
   ))
 _sym_db.RegisterMessage(PokemonStats)
 
 Search = _reflection.GeneratedProtocolMessageType('Search', (_message.Message,), dict(
   DESCRIPTOR = _SEARCH,
   __module__ = 'Search_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI_Response24917846189246.Search)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1559120870.Search)
   ))
 _sym_db.RegisterMessage(Search)
 

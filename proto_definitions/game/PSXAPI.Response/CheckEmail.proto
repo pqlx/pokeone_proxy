@@ -1,11 +1,13 @@
 syntax = "proto2";
-package PSXAPI.Response13;
+package PSXAPI.Response390799242;
 
 message CheckEmail {
    required string Email = 1;
-   optional CheckEmailResult Result = 2 [default = Failed];
+   optional PREFIX_AGDFASBV1840679660.CheckEmailResult Result = 2 [default = Failed];
 }
-enum CheckEmailResult {
+message PREFIX_AGDFASBV1840679660 {
+    enum CheckEmailResult {
    Failed = 0;
    Available = 1;
-}
+} //PREFIX_AGDFASBV
+};

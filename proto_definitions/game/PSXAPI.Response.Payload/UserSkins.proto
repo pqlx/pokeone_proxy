@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Response.Payload37;
+package PSXAPI.Response.Payload1775207736;
 
 message UserSkins {
    optional int32 EquipedClothe = 1 [default = 0];

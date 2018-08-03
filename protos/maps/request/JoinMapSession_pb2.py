@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='JoinMapSession.proto',
-  package='MAPAPI.Request2',
+  package='MAPAPI.Request1556872628',
   syntax='proto2',
-  serialized_pb=_b('\n\x14JoinMapSession.proto\x12\x0fMAPAPI.Request2\"!\n\x0eJoinMapSession\x12\x0f\n\x07MapName\x18\x01 \x01(\t')
+  serialized_pb=_b('\n\x14JoinMapSession.proto\x12\x18MAPAPI.Request1556872628\"!\n\x0eJoinMapSession\x12\x0f\n\x07MapName\x18\x01 \x01(\t')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,13 +28,13 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _JOINMAPSESSION = _descriptor.Descriptor(
   name='JoinMapSession',
-  full_name='MAPAPI.Request2.JoinMapSession',
+  full_name='MAPAPI.Request1556872628.JoinMapSession',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='MapName', full_name='MAPAPI.Request2.JoinMapSession.MapName', index=0,
+      name='MapName', full_name='MAPAPI.Request1556872628.JoinMapSession.MapName', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -52,8 +52,8 @@ _JOINMAPSESSION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=41,
-  serialized_end=74,
+  serialized_start=50,
+  serialized_end=83,
 )
 
 DESCRIPTOR.message_types_by_name['JoinMapSession'] = _JOINMAPSESSION
@@ -61,7 +61,7 @@ DESCRIPTOR.message_types_by_name['JoinMapSession'] = _JOINMAPSESSION
 JoinMapSession = _reflection.GeneratedProtocolMessageType('JoinMapSession', (_message.Message,), dict(
   DESCRIPTOR = _JOINMAPSESSION,
   __module__ = 'JoinMapSession_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Request2.JoinMapSession)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Request1556872628.JoinMapSession)
   ))
 _sym_db.RegisterMessage(JoinMapSession)
 

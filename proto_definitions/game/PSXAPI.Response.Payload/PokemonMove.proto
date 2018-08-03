@@ -1,12 +1,13 @@
 syntax = "proto2";
-package PSXAPI.Response.Payload29;
+package PSXAPI.Response.Payload725007904;
 
 message PokemonMove {
-   optional PokemonMoveID Move = 1 [default = none];
+   optional PREFIX_AGDFASBV1287578599.PokemonMoveID Move = 1 [default = none];
    optional int32 PP = 2 [default = 0];
    optional int32 MaxPP = 3 [default = 0];
 }
-enum PokemonMoveID {
+message PREFIX_AGDFASBV1287578599 {
+    enum PokemonMoveID {
    none = 0;
    pound = 1;
    karatechop = 2;
@@ -223,7 +224,7 @@ enum PokemonMoveID {
    attract = 213;
    sleeptalk = 214;
    healbell = 215;
-   __return = 216;
+   _return = 216;
    present = 217;
    frustration = 218;
    safeguard = 219;
@@ -709,4 +710,5 @@ enum PokemonMoveID {
    naturesmadness = 717;
    multiattack = 718;
    _10000000voltthunderbolt = 719;
-}
+} //PREFIX_AGDFASBV
+};

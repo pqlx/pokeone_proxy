@@ -1,20 +1,19 @@
 syntax = "proto2";
-import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
-
-package PSXAPI_Response9518581;
+package PSXAPI.Response627163532;
+import "protobuf-net/bcl.proto"; // schema for protobuf-net's handling of core .NET types
 
 message Quest {
    optional string ID = 1;
    optional string Name = 2;
    optional string Description = 3;
-   optional QuestType Type = 4 [default = __None1];
+   optional PREFIX_AGDFASBV1783226604.QuestType Type = 4 [default = NoneValue];
    optional double Step = 5 [default = 0];
-   optional QuestProgressType ProgressType = 6 [default = __None0];
+   optional PREFIX_AGDFASBV1941097340.QuestProgressType ProgressType = 6 [default = NoneValue];
    optional int32 ProgressID = 7 [default = 0];
    optional int32 Progress = 8 [default = 0];
    optional int32 Required = 9 [default = 0];
-   optional .bcl.Guid Target = 10 ;
-   optional .bcl.Guid TargetCompleted = 11 ;
+   optional .bcl.Guid Target = 10;
+   optional .bcl.Guid TargetCompleted = 11;
    optional bool Completed = 12 [default = false];
    optional bool AutoComplete = 13 [default = false];
    optional QuestReward Reward = 14;
@@ -25,8 +24,9 @@ message Quest {
    optional string SourceNPC = 19;
    optional string SourceArea = 20;
 }
-enum QuestProgressType {
-   __None0 = 0;
+message PREFIX_AGDFASBV1941097340 {
+    enum QuestProgressType {
+   NoneValue = 0;
    Manual = 1;
    Level = 2;
    Item = 3;
@@ -34,7 +34,8 @@ enum QuestProgressType {
    Pokemon = 5;
    Money = 6;
    Gold = 7;
-}
+} //PREFIX_AGDFASBV
+};
 message QuestReward {
    optional uint32 Money = 1 [default = 0];
    optional uint32 Gold = 2 [default = 0];
@@ -45,11 +46,13 @@ message QuestReward {
    optional int32 Badge = 7 [default = 0];
    optional int32 Exp = 8 [default = 0];
 }
-enum QuestType {
-   __None1 = 0;
+message PREFIX_AGDFASBV1783226604 {
+    enum QuestType {
+   NoneValue = 0;
    Main = 1;
    Side = 2;
    Bounty = 3;
    Daily = 4;
    Hidden = 5;
-}
+} //PREFIX_AGDFASBV
+};

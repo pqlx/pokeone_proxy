@@ -13,16 +13,16 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
-import bcl_pb2 as bcl__pb2
+from protobuf_net import bcl_pb2 as protobuf__net_dot_bcl__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Sync.proto',
-  package='PSXAPI.Request65',
+  package='PSXAPI.Request1613877414',
   syntax='proto2',
-  serialized_pb=_b('\n\nSync.proto\x12\x10PSXAPI.Request65\x1a\tbcl.proto\"5\n\x04Sync\x12\x15\n\x02ID\x18\x01 \x01(\x0b\x32\t.bcl.Guid\x12\x16\n\x07MapLoad\x18\x02 \x01(\x08:\x05\x66\x61lse')
+  serialized_pb=_b('\n\nSync.proto\x12\x18PSXAPI.Request1613877414\x1a\x16protobuf-net/bcl.proto\"5\n\x04Sync\x12\x15\n\x02ID\x18\x01 \x01(\x0b\x32\t.bcl.Guid\x12\x16\n\x07MapLoad\x18\x02 \x01(\x08:\x05\x66\x61lse')
   ,
-  dependencies=[bcl__pb2.DESCRIPTOR,])
+  dependencies=[protobuf__net_dot_bcl__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
@@ -30,20 +30,20 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _SYNC = _descriptor.Descriptor(
   name='Sync',
-  full_name='PSXAPI.Request65.Sync',
+  full_name='PSXAPI.Request1613877414.Sync',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='ID', full_name='PSXAPI.Request65.Sync.ID', index=0,
+      name='ID', full_name='PSXAPI.Request1613877414.Sync.ID', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='MapLoad', full_name='PSXAPI.Request65.Sync.MapLoad', index=1,
+      name='MapLoad', full_name='PSXAPI.Request1613877414.Sync.MapLoad', index=1,
       number=2, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -61,17 +61,17 @@ _SYNC = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=43,
-  serialized_end=96,
+  serialized_start=64,
+  serialized_end=117,
 )
 
-_SYNC.fields_by_name['ID'].message_type = bcl__pb2._GUID
+_SYNC.fields_by_name['ID'].message_type = protobuf__net_dot_bcl__pb2._GUID
 DESCRIPTOR.message_types_by_name['Sync'] = _SYNC
 
 Sync = _reflection.GeneratedProtocolMessageType('Sync', (_message.Message,), dict(
   DESCRIPTOR = _SYNC,
   __module__ = 'Sync_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request65.Sync)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request1613877414.Sync)
   ))
 _sym_db.RegisterMessage(Sync)
 

@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -14,26 +13,28 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
-import bcl_pb2 as bcl__pb2
+from protobuf_net import bcl_pb2 as protobuf__net_dot_bcl__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Quest.proto',
-  package='PSXAPI_Response9518581',
+  package='PSXAPI.Response627163532',
   syntax='proto2',
-  serialized_pb=_b('\n\x0bQuest.proto\x12\x16PSXAPI_Response9518581\x1a\tbcl.proto\"\xc2\x04\n\x05Quest\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x0c\n\x04Name\x18\x02 \x01(\t\x12\x13\n\x0b\x44\x65scription\x18\x03 \x01(\t\x12\x38\n\x04Type\x18\x04 \x01(\x0e\x32!.PSXAPI_Response9518581.QuestType:\x07__None1\x12\x0f\n\x04Step\x18\x05 \x01(\x01:\x01\x30\x12H\n\x0cProgressType\x18\x06 \x01(\x0e\x32).PSXAPI_Response9518581.QuestProgressType:\x07__None0\x12\x15\n\nProgressID\x18\x07 \x01(\x05:\x01\x30\x12\x13\n\x08Progress\x18\x08 \x01(\x05:\x01\x30\x12\x13\n\x08Required\x18\t \x01(\x05:\x01\x30\x12\x19\n\x06Target\x18\n \x01(\x0b\x32\t.bcl.Guid\x12\"\n\x0fTargetCompleted\x18\x0b \x01(\x0b\x32\t.bcl.Guid\x12\x18\n\tCompleted\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0c\x41utoComplete\x18\r \x01(\x08:\x05\x66\x61lse\x12\x33\n\x06Reward\x18\x0e \x01(\x0b\x32#.PSXAPI_Response9518581.QuestReward\x12\x18\n\tCanCancel\x18\x0f \x01(\x08:\x05\x66\x61lse\x12\x17\n\x08\x43\x61nShare\x18\x10 \x01(\x08:\x05\x66\x61lse\x12\x12\n\nTargetArea\x18\x11 \x01(\t\x12\x1b\n\x13TargetCompletedArea\x18\x12 \x01(\t\x12\x11\n\tSourceNPC\x18\x13 \x01(\t\x12\x12\n\nSourceArea\x18\x14 \x01(\t\"\xab\x01\n\x0bQuestReward\x12\x10\n\x05Money\x18\x01 \x01(\r:\x01\x30\x12\x0f\n\x04Gold\x18\x02 \x01(\r:\x01\x30\x12\r\n\x05Items\x18\x03 \x03(\x05\x12\x12\n\x07Pokemon\x18\x04 \x01(\x05:\x01\x30\x12\x17\n\x0cPokemonLevel\x18\x05 \x01(\x05:\x01\x30\x12\x1b\n\x0cPokemonShiny\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x10\n\x05\x42\x61\x64ge\x18\x07 \x01(\x05:\x01\x30\x12\x0e\n\x03\x45xp\x18\x08 \x01(\x05:\x01\x30*n\n\x11QuestProgressType\x12\x0b\n\x07__None0\x10\x00\x12\n\n\x06Manual\x10\x01\x12\t\n\x05Level\x10\x02\x12\x08\n\x04Item\x10\x03\x12\t\n\x05\x42\x61\x64ge\x10\x04\x12\x0b\n\x07Pokemon\x10\x05\x12\t\n\x05Money\x10\x06\x12\x08\n\x04Gold\x10\x07*O\n\tQuestType\x12\x0b\n\x07__None1\x10\x00\x12\x08\n\x04Main\x10\x01\x12\x08\n\x04Side\x10\x02\x12\n\n\x06\x42ounty\x10\x03\x12\t\n\x05\x44\x61ily\x10\x04\x12\n\n\x06Hidden\x10\x05')
+  serialized_pb=_b('\n\x0bQuest.proto\x12\x18PSXAPI.Response627163532\x1a\x16protobuf-net/bcl.proto\"\x80\x05\n\x05Quest\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x0c\n\x04Name\x18\x02 \x01(\t\x12\x13\n\x0b\x44\x65scription\x18\x03 \x01(\t\x12V\n\x04Type\x18\x04 \x01(\x0e\x32=.PSXAPI.Response627163532.PREFIX_AGDFASBV1783226604.QuestType:\tNoneValue\x12\x0f\n\x04Step\x18\x05 \x01(\x01:\x01\x30\x12\x66\n\x0cProgressType\x18\x06 \x01(\x0e\x32\x45.PSXAPI.Response627163532.PREFIX_AGDFASBV1941097340.QuestProgressType:\tNoneValue\x12\x15\n\nProgressID\x18\x07 \x01(\x05:\x01\x30\x12\x13\n\x08Progress\x18\x08 \x01(\x05:\x01\x30\x12\x13\n\x08Required\x18\t \x01(\x05:\x01\x30\x12\x19\n\x06Target\x18\n \x01(\x0b\x32\t.bcl.Guid\x12\"\n\x0fTargetCompleted\x18\x0b \x01(\x0b\x32\t.bcl.Guid\x12\x18\n\tCompleted\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0c\x41utoComplete\x18\r \x01(\x08:\x05\x66\x61lse\x12\x35\n\x06Reward\x18\x0e \x01(\x0b\x32%.PSXAPI.Response627163532.QuestReward\x12\x18\n\tCanCancel\x18\x0f \x01(\x08:\x05\x66\x61lse\x12\x17\n\x08\x43\x61nShare\x18\x10 \x01(\x08:\x05\x66\x61lse\x12\x12\n\nTargetArea\x18\x11 \x01(\t\x12\x1b\n\x13TargetCompletedArea\x18\x12 \x01(\t\x12\x11\n\tSourceNPC\x18\x13 \x01(\t\x12\x12\n\nSourceArea\x18\x14 \x01(\t\"\x8d\x01\n\x19PREFIX_AGDFASBV1941097340\"p\n\x11QuestProgressType\x12\r\n\tNoneValue\x10\x00\x12\n\n\x06Manual\x10\x01\x12\t\n\x05Level\x10\x02\x12\x08\n\x04Item\x10\x03\x12\t\n\x05\x42\x61\x64ge\x10\x04\x12\x0b\n\x07Pokemon\x10\x05\x12\t\n\x05Money\x10\x06\x12\x08\n\x04Gold\x10\x07\"\xab\x01\n\x0bQuestReward\x12\x10\n\x05Money\x18\x01 \x01(\r:\x01\x30\x12\x0f\n\x04Gold\x18\x02 \x01(\r:\x01\x30\x12\r\n\x05Items\x18\x03 \x03(\x05\x12\x12\n\x07Pokemon\x18\x04 \x01(\x05:\x01\x30\x12\x17\n\x0cPokemonLevel\x18\x05 \x01(\x05:\x01\x30\x12\x1b\n\x0cPokemonShiny\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x10\n\x05\x42\x61\x64ge\x18\x07 \x01(\x05:\x01\x30\x12\x0e\n\x03\x45xp\x18\x08 \x01(\x05:\x01\x30\"n\n\x19PREFIX_AGDFASBV1783226604\"Q\n\tQuestType\x12\r\n\tNoneValue\x10\x00\x12\x08\n\x04Main\x10\x01\x12\x08\n\x04Side\x10\x02\x12\n\n\x06\x42ounty\x10\x03\x12\t\n\x05\x44\x61ily\x10\x04\x12\n\n\x06Hidden\x10\x05')
   ,
-  dependencies=[bcl__pb2.DESCRIPTOR,])
+  dependencies=[protobuf__net_dot_bcl__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_QUESTPROGRESSTYPE = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV1941097340_QUESTPROGRESSTYPE = _descriptor.EnumDescriptor(
   name='QuestProgressType',
-  full_name='PSXAPI_Response9518581.QuestProgressType',
+  full_name='PSXAPI.Response627163532.PREFIX_AGDFASBV1941097340.QuestProgressType',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='__None0', index=0, number=0,
+      name='NoneValue', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -67,20 +68,19 @@ _QUESTPROGRESSTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=805,
-  serialized_end=915,
+  serialized_start=738,
+  serialized_end=850,
 )
-_sym_db.RegisterEnumDescriptor(_QUESTPROGRESSTYPE)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1941097340_QUESTPROGRESSTYPE)
 
-QuestProgressType = enum_type_wrapper.EnumTypeWrapper(_QUESTPROGRESSTYPE)
-_QUESTTYPE = _descriptor.EnumDescriptor(
+_PREFIX_AGDFASBV1783226604_QUESTTYPE = _descriptor.EnumDescriptor(
   name='QuestType',
-  full_name='PSXAPI_Response9518581.QuestType',
+  full_name='PSXAPI.Response627163532.PREFIX_AGDFASBV1783226604.QuestType',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='__None1', index=0, number=0,
+      name='NoneValue', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -106,171 +106,154 @@ _QUESTTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=917,
-  serialized_end=996,
+  serialized_start=1055,
+  serialized_end=1136,
 )
-_sym_db.RegisterEnumDescriptor(_QUESTTYPE)
-
-QuestType = enum_type_wrapper.EnumTypeWrapper(_QUESTTYPE)
-__None0 = 0
-Manual = 1
-Level = 2
-Item = 3
-Badge = 4
-Pokemon = 5
-Money = 6
-Gold = 7
-__None1 = 0
-Main = 1
-Side = 2
-Bounty = 3
-Daily = 4
-Hidden = 5
-
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1783226604_QUESTTYPE)
 
 
 _QUEST = _descriptor.Descriptor(
   name='Quest',
-  full_name='PSXAPI_Response9518581.Quest',
+  full_name='PSXAPI.Response627163532.Quest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='ID', full_name='PSXAPI_Response9518581.Quest.ID', index=0,
+      name='ID', full_name='PSXAPI.Response627163532.Quest.ID', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Name', full_name='PSXAPI_Response9518581.Quest.Name', index=1,
+      name='Name', full_name='PSXAPI.Response627163532.Quest.Name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Description', full_name='PSXAPI_Response9518581.Quest.Description', index=2,
+      name='Description', full_name='PSXAPI.Response627163532.Quest.Description', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Type', full_name='PSXAPI_Response9518581.Quest.Type', index=3,
+      name='Type', full_name='PSXAPI.Response627163532.Quest.Type', index=3,
       number=4, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Step', full_name='PSXAPI_Response9518581.Quest.Step', index=4,
+      name='Step', full_name='PSXAPI.Response627163532.Quest.Step', index=4,
       number=5, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='ProgressType', full_name='PSXAPI_Response9518581.Quest.ProgressType', index=5,
+      name='ProgressType', full_name='PSXAPI.Response627163532.Quest.ProgressType', index=5,
       number=6, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='ProgressID', full_name='PSXAPI_Response9518581.Quest.ProgressID', index=6,
+      name='ProgressID', full_name='PSXAPI.Response627163532.Quest.ProgressID', index=6,
       number=7, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Progress', full_name='PSXAPI_Response9518581.Quest.Progress', index=7,
+      name='Progress', full_name='PSXAPI.Response627163532.Quest.Progress', index=7,
       number=8, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Required', full_name='PSXAPI_Response9518581.Quest.Required', index=8,
+      name='Required', full_name='PSXAPI.Response627163532.Quest.Required', index=8,
       number=9, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Target', full_name='PSXAPI_Response9518581.Quest.Target', index=9,
+      name='Target', full_name='PSXAPI.Response627163532.Quest.Target', index=9,
       number=10, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='TargetCompleted', full_name='PSXAPI_Response9518581.Quest.TargetCompleted', index=10,
+      name='TargetCompleted', full_name='PSXAPI.Response627163532.Quest.TargetCompleted', index=10,
       number=11, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Completed', full_name='PSXAPI_Response9518581.Quest.Completed', index=11,
+      name='Completed', full_name='PSXAPI.Response627163532.Quest.Completed', index=11,
       number=12, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='AutoComplete', full_name='PSXAPI_Response9518581.Quest.AutoComplete', index=12,
+      name='AutoComplete', full_name='PSXAPI.Response627163532.Quest.AutoComplete', index=12,
       number=13, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Reward', full_name='PSXAPI_Response9518581.Quest.Reward', index=13,
+      name='Reward', full_name='PSXAPI.Response627163532.Quest.Reward', index=13,
       number=14, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanCancel', full_name='PSXAPI_Response9518581.Quest.CanCancel', index=14,
+      name='CanCancel', full_name='PSXAPI.Response627163532.Quest.CanCancel', index=14,
       number=15, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanShare', full_name='PSXAPI_Response9518581.Quest.CanShare', index=15,
+      name='CanShare', full_name='PSXAPI.Response627163532.Quest.CanShare', index=15,
       number=16, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='TargetArea', full_name='PSXAPI_Response9518581.Quest.TargetArea', index=16,
+      name='TargetArea', full_name='PSXAPI.Response627163532.Quest.TargetArea', index=16,
       number=17, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='TargetCompletedArea', full_name='PSXAPI_Response9518581.Quest.TargetCompletedArea', index=17,
+      name='TargetCompletedArea', full_name='PSXAPI.Response627163532.Quest.TargetCompletedArea', index=17,
       number=18, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='SourceNPC', full_name='PSXAPI_Response9518581.Quest.SourceNPC', index=18,
+      name='SourceNPC', full_name='PSXAPI.Response627163532.Quest.SourceNPC', index=18,
       number=19, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='SourceArea', full_name='PSXAPI_Response9518581.Quest.SourceArea', index=19,
+      name='SourceArea', full_name='PSXAPI.Response627163532.Quest.SourceArea', index=19,
       number=20, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -288,69 +271,94 @@ _QUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=51,
-  serialized_end=629,
+  serialized_start=66,
+  serialized_end=706,
+)
+
+
+_PREFIX_AGDFASBV1941097340 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1941097340',
+  full_name='PSXAPI.Response627163532.PREFIX_AGDFASBV1941097340',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1941097340_QUESTPROGRESSTYPE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=709,
+  serialized_end=850,
 )
 
 
 _QUESTREWARD = _descriptor.Descriptor(
   name='QuestReward',
-  full_name='PSXAPI_Response9518581.QuestReward',
+  full_name='PSXAPI.Response627163532.QuestReward',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Money', full_name='PSXAPI_Response9518581.QuestReward.Money', index=0,
+      name='Money', full_name='PSXAPI.Response627163532.QuestReward.Money', index=0,
       number=1, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Gold', full_name='PSXAPI_Response9518581.QuestReward.Gold', index=1,
+      name='Gold', full_name='PSXAPI.Response627163532.QuestReward.Gold', index=1,
       number=2, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Items', full_name='PSXAPI_Response9518581.QuestReward.Items', index=2,
+      name='Items', full_name='PSXAPI.Response627163532.QuestReward.Items', index=2,
       number=3, type=5, cpp_type=1, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Pokemon', full_name='PSXAPI_Response9518581.QuestReward.Pokemon', index=3,
+      name='Pokemon', full_name='PSXAPI.Response627163532.QuestReward.Pokemon', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='PokemonLevel', full_name='PSXAPI_Response9518581.QuestReward.PokemonLevel', index=4,
+      name='PokemonLevel', full_name='PSXAPI.Response627163532.QuestReward.PokemonLevel', index=4,
       number=5, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='PokemonShiny', full_name='PSXAPI_Response9518581.QuestReward.PokemonShiny', index=5,
+      name='PokemonShiny', full_name='PSXAPI.Response627163532.QuestReward.PokemonShiny', index=5,
       number=6, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Badge', full_name='PSXAPI_Response9518581.QuestReward.Badge', index=6,
+      name='Badge', full_name='PSXAPI.Response627163532.QuestReward.Badge', index=6,
       number=7, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Exp', full_name='PSXAPI_Response9518581.QuestReward.Exp', index=7,
+      name='Exp', full_name='PSXAPI.Response627163532.QuestReward.Exp', index=7,
       number=8, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -368,33 +376,74 @@ _QUESTREWARD = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=632,
-  serialized_end=803,
+  serialized_start=853,
+  serialized_end=1024,
 )
 
-_QUEST.fields_by_name['Type'].enum_type = _QUESTTYPE
-_QUEST.fields_by_name['ProgressType'].enum_type = _QUESTPROGRESSTYPE
-_QUEST.fields_by_name['Target'].message_type = bcl__pb2._GUID
-_QUEST.fields_by_name['TargetCompleted'].message_type = bcl__pb2._GUID
+
+_PREFIX_AGDFASBV1783226604 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1783226604',
+  full_name='PSXAPI.Response627163532.PREFIX_AGDFASBV1783226604',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1783226604_QUESTTYPE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1026,
+  serialized_end=1136,
+)
+
+_QUEST.fields_by_name['Type'].enum_type = _PREFIX_AGDFASBV1783226604_QUESTTYPE
+_QUEST.fields_by_name['ProgressType'].enum_type = _PREFIX_AGDFASBV1941097340_QUESTPROGRESSTYPE
+_QUEST.fields_by_name['Target'].message_type = protobuf__net_dot_bcl__pb2._GUID
+_QUEST.fields_by_name['TargetCompleted'].message_type = protobuf__net_dot_bcl__pb2._GUID
 _QUEST.fields_by_name['Reward'].message_type = _QUESTREWARD
+_PREFIX_AGDFASBV1941097340_QUESTPROGRESSTYPE.containing_type = _PREFIX_AGDFASBV1941097340
+_PREFIX_AGDFASBV1783226604_QUESTTYPE.containing_type = _PREFIX_AGDFASBV1783226604
 DESCRIPTOR.message_types_by_name['Quest'] = _QUEST
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1941097340'] = _PREFIX_AGDFASBV1941097340
 DESCRIPTOR.message_types_by_name['QuestReward'] = _QUESTREWARD
-DESCRIPTOR.enum_types_by_name['QuestProgressType'] = _QUESTPROGRESSTYPE
-DESCRIPTOR.enum_types_by_name['QuestType'] = _QUESTTYPE
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1783226604'] = _PREFIX_AGDFASBV1783226604
 
 Quest = _reflection.GeneratedProtocolMessageType('Quest', (_message.Message,), dict(
   DESCRIPTOR = _QUEST,
   __module__ = 'Quest_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI_Response9518581.Quest)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response627163532.Quest)
   ))
 _sym_db.RegisterMessage(Quest)
+
+PREFIX_AGDFASBV1941097340 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1941097340', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1941097340,
+  __module__ = 'Quest_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response627163532.PREFIX_AGDFASBV1941097340)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1941097340)
 
 QuestReward = _reflection.GeneratedProtocolMessageType('QuestReward', (_message.Message,), dict(
   DESCRIPTOR = _QUESTREWARD,
   __module__ = 'Quest_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI_Response9518581.QuestReward)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response627163532.QuestReward)
   ))
 _sym_db.RegisterMessage(QuestReward)
+
+PREFIX_AGDFASBV1783226604 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1783226604', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1783226604,
+  __module__ = 'Quest_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response627163532.PREFIX_AGDFASBV1783226604)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1783226604)
 
 
 # @@protoc_insertion_point(module_scope)

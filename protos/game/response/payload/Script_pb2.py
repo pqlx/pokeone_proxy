@@ -13,16 +13,16 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
-import bcl_pb2 as bcl__pb2
+from protobuf_net import bcl_pb2 as protobuf__net_dot_bcl__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Script.proto',
-  package='PSXAPI.Response.Payload32',
+  package='PSXAPI.Response.Payload1157814614',
   syntax='proto2',
-  serialized_pb=_b('\n\x0cScript.proto\x12\x19PSXAPI.Response.Payload32\x1a\tbcl.proto\"0\n\x06Script\x12\x0c\n\x04Text\x18\x01 \x01(\t\x12\x18\n\x05NpcID\x18\x02 \x01(\x0b\x32\t.bcl.Guid')
+  serialized_pb=_b('\n\x0cScript.proto\x12!PSXAPI.Response.Payload1157814614\x1a\x16protobuf-net/bcl.proto\"0\n\x06Script\x12\x0c\n\x04Text\x18\x01 \x01(\t\x12\x18\n\x05NpcID\x18\x02 \x01(\x0b\x32\t.bcl.Guid')
   ,
-  dependencies=[bcl__pb2.DESCRIPTOR,])
+  dependencies=[protobuf__net_dot_bcl__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
@@ -30,20 +30,20 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _SCRIPT = _descriptor.Descriptor(
   name='Script',
-  full_name='PSXAPI.Response.Payload32.Script',
+  full_name='PSXAPI.Response.Payload1157814614.Script',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Text', full_name='PSXAPI.Response.Payload32.Script.Text', index=0,
+      name='Text', full_name='PSXAPI.Response.Payload1157814614.Script.Text', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='NpcID', full_name='PSXAPI.Response.Payload32.Script.NpcID', index=1,
+      name='NpcID', full_name='PSXAPI.Response.Payload1157814614.Script.NpcID', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -61,17 +61,17 @@ _SCRIPT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=54,
-  serialized_end=102,
+  serialized_start=75,
+  serialized_end=123,
 )
 
-_SCRIPT.fields_by_name['NpcID'].message_type = bcl__pb2._GUID
+_SCRIPT.fields_by_name['NpcID'].message_type = protobuf__net_dot_bcl__pb2._GUID
 DESCRIPTOR.message_types_by_name['Script'] = _SCRIPT
 
 Script = _reflection.GeneratedProtocolMessageType('Script', (_message.Message,), dict(
   DESCRIPTOR = _SCRIPT,
   __module__ = 'Script_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response.Payload32.Script)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response.Payload1157814614.Script)
   ))
 _sym_db.RegisterMessage(Script)
 

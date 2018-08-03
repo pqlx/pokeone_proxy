@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -18,15 +17,17 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Zones.proto',
-  package='MAPAPI.Response43',
+  package='MAPAPI.Response1363469389',
   syntax='proto2',
-  serialized_pb=_b('\n\x0bZones.proto\x12\x11MAPAPI.Response43\"F\n\x04Zone\x12/\n\x07Pokemon\x18\x01 \x03(\x0b\x32\x1e.MAPAPI.Response43.ZonePokemon\x12\r\n\x02ID\x18\x02 \x01(\x05:\x01\x30\"T\n\x08ZoneItem\x12\x11\n\x06ItemID\x18\x01 \x01(\x05:\x01\x30\x12\x35\n\nItemRarity\x18\x02 \x01(\x0e\x32\x19.MAPAPI.Response43.Rarity:\x06\x43ommon\"\xcd\x03\n\x0bZonePokemon\x12\x14\n\tPokemonID\x18\x01 \x01(\x05:\x01\x30\x12\x17\n\x0c\x41verageLevel\x18\x02 \x01(\x05:\x01\x30\x12\x18\n\rLevelVariance\x18\x03 \x01(\x05:\x01\x30\x12=\n\rEncounterTime\x18\x04 \x01(\x0e\x32!.MAPAPI.Response43.EncounterTimes:\x03\x44\x61y\x12\x31\n\x06Rarity\x18\x05 \x01(\x0e\x32\x19.MAPAPI.Response43.Rarity:\x06\x43ommon\x12*\n\x05Items\x18\x06 \x03(\x0b\x32\x1b.MAPAPI.Response43.ZoneItem\x12\x37\n\x07\x46ishing\x18\x07 \x01(\x0e\x32\x1e.MAPAPI.Response43.FishingType:\x06__None\x12\x0e\n\x06Script\x18\x08 \x01(\t\x12\x14\n\x05Party\x18\t \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x10SpecialEncounter\x18\n \x01(\x08:\x05\x66\x61lse\x12>\n\x0c\x42\x61\x63kgroundID\x18\x0b \x01(\x0e\x32!.MAPAPI.Response43.BackgroundType:\x05Grass\x12\x17\n\x08\x44isabled\x18\x0c \x01(\x08:\x05\x66\x61lse\"1\n\x05Zones\x12(\n\x07Pokemon\x18\x01 \x03(\x0b\x32\x17.MAPAPI.Response43.Zone*\x8e\x01\n\x0e\x42\x61\x63kgroundType\x12\t\n\x05Grass\x10\x00\x12\t\n\x05Water\x10\x01\x12\x08\n\x04\x43\x61ve\x10\x02\x12\n\n\x06Indoor\x10\x03\x12\x07\n\x03Gym\x10\x04\x12\x0b\n\x07IceCave\x10\x05\x12\x0f\n\x0b\x43rystalCave\x10\x06\x12\x08\n\x04Snow\x10\x07\x12\x08\n\x04\x43ity\x10\x08\x12\n\n\x06\x44\x65sert\x10\t\x12\t\n\x05Ocean\x10\n*J\n\x0e\x45ncounterTimes\x12\x07\n\x03\x44\x61y\x10\x00\x12\t\n\x05Night\x10\x01\x12\x0b\n\x07Morning\x10\x02\x12\x0b\n\x07\x45vening\x10\x03\x12\n\n\x06\x41lways\x10\x04*@\n\x0b\x46ishingType\x12\n\n\x06__None\x10\x00\x12\n\n\x06OldRod\x10\x01\x12\x0b\n\x07GoodRod\x10\x02\x12\x0c\n\x08SuperRod\x10\x03*Q\n\x06Rarity\x12\n\n\x06\x43ommon\x10\x00\x12\x0c\n\x08Uncommon\x10\x01\x12\x08\n\x04Rare\x10\x02\x12\x08\n\x04\x45pic\x10\x03\x12\x0c\n\x08Mythical\x10\x04\x12\x0b\n\x07Special\x10\x05')
+  serialized_pb=_b('\n\x0bZones.proto\x12\x19MAPAPI.Response1363469389\"\xac\x01\n\x19PREFIX_AGDFASBV2064517627\"\x8e\x01\n\x0e\x42\x61\x63kgroundType\x12\t\n\x05Grass\x10\x00\x12\t\n\x05Water\x10\x01\x12\x08\n\x04\x43\x61ve\x10\x02\x12\n\n\x06Indoor\x10\x03\x12\x07\n\x03Gym\x10\x04\x12\x0b\n\x07IceCave\x10\x05\x12\x0f\n\x0b\x43rystalCave\x10\x06\x12\x08\n\x04Snow\x10\x07\x12\x08\n\x04\x43ity\x10\x08\x12\n\n\x06\x44\x65sert\x10\t\x12\t\n\x05Ocean\x10\n\"f\n\x18PREFIX_AGDFASBV208467650\"J\n\x0e\x45ncounterTimes\x12\x07\n\x03\x44\x61y\x10\x00\x12\t\n\x05Night\x10\x01\x12\x0b\n\x07Morning\x10\x02\x12\x0b\n\x07\x45vening\x10\x03\x12\n\n\x06\x41lways\x10\x04\"`\n\x19PREFIX_AGDFASBV1054309197\"C\n\x0b\x46ishingType\x12\r\n\tNoneValue\x10\x00\x12\n\n\x06OldRod\x10\x01\x12\x0b\n\x07GoodRod\x10\x02\x12\x0c\n\x08SuperRod\x10\x03\"n\n\x19PREFIX_AGDFASBV1762563228\"Q\n\x06Rarity\x12\n\n\x06\x43ommon\x10\x00\x12\x0c\n\x08Uncommon\x10\x01\x12\x08\n\x04Rare\x10\x02\x12\x08\n\x04\x45pic\x10\x03\x12\x0c\n\x08Mythical\x10\x04\x12\x0b\n\x07Special\x10\x05\"N\n\x04Zone\x12\x37\n\x07Pokemon\x18\x01 \x03(\x0b\x32&.MAPAPI.Response1363469389.ZonePokemon\x12\r\n\x02ID\x18\x02 \x01(\x05:\x01\x30\"v\n\x08ZoneItem\x12\x11\n\x06ItemID\x18\x01 \x01(\x05:\x01\x30\x12W\n\nItemRarity\x18\x02 \x01(\x0e\x32;.MAPAPI.Response1363469389.PREFIX_AGDFASBV1762563228.Rarity:\x06\x43ommon\"\xdf\x04\n\x0bZonePokemon\x12\x14\n\tPokemonID\x18\x01 \x01(\x05:\x01\x30\x12\x17\n\x0c\x41verageLevel\x18\x02 \x01(\x05:\x01\x30\x12\x18\n\rLevelVariance\x18\x03 \x01(\x05:\x01\x30\x12^\n\rEncounterTime\x18\x04 \x01(\x0e\x32\x42.MAPAPI.Response1363469389.PREFIX_AGDFASBV208467650.EncounterTimes:\x03\x44\x61y\x12S\n\x06Rarity\x18\x05 \x01(\x0e\x32;.MAPAPI.Response1363469389.PREFIX_AGDFASBV1762563228.Rarity:\x06\x43ommon\x12\x32\n\x05Items\x18\x06 \x03(\x0b\x32#.MAPAPI.Response1363469389.ZoneItem\x12\\\n\x07\x46ishing\x18\x07 \x01(\x0e\x32@.MAPAPI.Response1363469389.PREFIX_AGDFASBV1054309197.FishingType:\tNoneValue\x12\x0e\n\x06Script\x18\x08 \x01(\t\x12\x14\n\x05Party\x18\t \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x10SpecialEncounter\x18\n \x01(\x08:\x05\x66\x61lse\x12`\n\x0c\x42\x61\x63kgroundID\x18\x0b \x01(\x0e\x32\x43.MAPAPI.Response1363469389.PREFIX_AGDFASBV2064517627.BackgroundType:\x05Grass\x12\x17\n\x08\x44isabled\x18\x0c \x01(\x08:\x05\x66\x61lse\"9\n\x05Zones\x12\x30\n\x07Pokemon\x18\x01 \x03(\x0b\x32\x1f.MAPAPI.Response1363469389.Zone')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_BACKGROUNDTYPE = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV2064517627_BACKGROUNDTYPE = _descriptor.EnumDescriptor(
   name='BackgroundType',
-  full_name='MAPAPI.Response43.BackgroundType',
+  full_name='MAPAPI.Response1363469389.PREFIX_AGDFASBV2064517627.BackgroundType',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -77,15 +78,14 @@ _BACKGROUNDTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=708,
-  serialized_end=850,
+  serialized_start=73,
+  serialized_end=215,
 )
-_sym_db.RegisterEnumDescriptor(_BACKGROUNDTYPE)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV2064517627_BACKGROUNDTYPE)
 
-BackgroundType = enum_type_wrapper.EnumTypeWrapper(_BACKGROUNDTYPE)
-_ENCOUNTERTIMES = _descriptor.EnumDescriptor(
+_PREFIX_AGDFASBV208467650_ENCOUNTERTIMES = _descriptor.EnumDescriptor(
   name='EncounterTimes',
-  full_name='MAPAPI.Response43.EncounterTimes',
+  full_name='MAPAPI.Response1363469389.PREFIX_AGDFASBV208467650.EncounterTimes',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -112,20 +112,19 @@ _ENCOUNTERTIMES = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=852,
-  serialized_end=926,
+  serialized_start=245,
+  serialized_end=319,
 )
-_sym_db.RegisterEnumDescriptor(_ENCOUNTERTIMES)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV208467650_ENCOUNTERTIMES)
 
-EncounterTimes = enum_type_wrapper.EnumTypeWrapper(_ENCOUNTERTIMES)
-_FISHINGTYPE = _descriptor.EnumDescriptor(
+_PREFIX_AGDFASBV1054309197_FISHINGTYPE = _descriptor.EnumDescriptor(
   name='FishingType',
-  full_name='MAPAPI.Response43.FishingType',
+  full_name='MAPAPI.Response1363469389.PREFIX_AGDFASBV1054309197.FishingType',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='__None', index=0, number=0,
+      name='NoneValue', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -143,15 +142,14 @@ _FISHINGTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=928,
-  serialized_end=992,
+  serialized_start=350,
+  serialized_end=417,
 )
-_sym_db.RegisterEnumDescriptor(_FISHINGTYPE)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1054309197_FISHINGTYPE)
 
-FishingType = enum_type_wrapper.EnumTypeWrapper(_FISHINGTYPE)
-_RARITY = _descriptor.EnumDescriptor(
+_PREFIX_AGDFASBV1762563228_RARITY = _descriptor.EnumDescriptor(
   name='Rarity',
-  full_name='MAPAPI.Response43.Rarity',
+  full_name='MAPAPI.Response1363469389.PREFIX_AGDFASBV1762563228.Rarity',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -182,57 +180,128 @@ _RARITY = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=994,
-  serialized_end=1075,
+  serialized_start=448,
+  serialized_end=529,
 )
-_sym_db.RegisterEnumDescriptor(_RARITY)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1762563228_RARITY)
 
-Rarity = enum_type_wrapper.EnumTypeWrapper(_RARITY)
-Grass = 0
-Water = 1
-Cave = 2
-Indoor = 3
-Gym = 4
-IceCave = 5
-CrystalCave = 6
-Snow = 7
-City = 8
-Desert = 9
-Ocean = 10
-Day = 0
-Night = 1
-Morning = 2
-Evening = 3
-Always = 4
-__None = 0
-OldRod = 1
-GoodRod = 2
-SuperRod = 3
-Common = 0
-Uncommon = 1
-Rare = 2
-Epic = 3
-Mythical = 4
-Special = 5
 
+_PREFIX_AGDFASBV2064517627 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV2064517627',
+  full_name='MAPAPI.Response1363469389.PREFIX_AGDFASBV2064517627',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV2064517627_BACKGROUNDTYPE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=43,
+  serialized_end=215,
+)
+
+
+_PREFIX_AGDFASBV208467650 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV208467650',
+  full_name='MAPAPI.Response1363469389.PREFIX_AGDFASBV208467650',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV208467650_ENCOUNTERTIMES,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=217,
+  serialized_end=319,
+)
+
+
+_PREFIX_AGDFASBV1054309197 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1054309197',
+  full_name='MAPAPI.Response1363469389.PREFIX_AGDFASBV1054309197',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1054309197_FISHINGTYPE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=321,
+  serialized_end=417,
+)
+
+
+_PREFIX_AGDFASBV1762563228 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1762563228',
+  full_name='MAPAPI.Response1363469389.PREFIX_AGDFASBV1762563228',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1762563228_RARITY,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=419,
+  serialized_end=529,
+)
 
 
 _ZONE = _descriptor.Descriptor(
   name='Zone',
-  full_name='MAPAPI.Response43.Zone',
+  full_name='MAPAPI.Response1363469389.Zone',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Pokemon', full_name='MAPAPI.Response43.Zone.Pokemon', index=0,
+      name='Pokemon', full_name='MAPAPI.Response1363469389.Zone.Pokemon', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='ID', full_name='MAPAPI.Response43.Zone.ID', index=1,
+      name='ID', full_name='MAPAPI.Response1363469389.Zone.ID', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -250,27 +319,27 @@ _ZONE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=34,
-  serialized_end=104,
+  serialized_start=531,
+  serialized_end=609,
 )
 
 
 _ZONEITEM = _descriptor.Descriptor(
   name='ZoneItem',
-  full_name='MAPAPI.Response43.ZoneItem',
+  full_name='MAPAPI.Response1363469389.ZoneItem',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='ItemID', full_name='MAPAPI.Response43.ZoneItem.ItemID', index=0,
+      name='ItemID', full_name='MAPAPI.Response1363469389.ZoneItem.ItemID', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='ItemRarity', full_name='MAPAPI.Response43.ZoneItem.ItemRarity', index=1,
+      name='ItemRarity', full_name='MAPAPI.Response1363469389.ZoneItem.ItemRarity', index=1,
       number=2, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -288,97 +357,97 @@ _ZONEITEM = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=106,
-  serialized_end=190,
+  serialized_start=611,
+  serialized_end=729,
 )
 
 
 _ZONEPOKEMON = _descriptor.Descriptor(
   name='ZonePokemon',
-  full_name='MAPAPI.Response43.ZonePokemon',
+  full_name='MAPAPI.Response1363469389.ZonePokemon',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='PokemonID', full_name='MAPAPI.Response43.ZonePokemon.PokemonID', index=0,
+      name='PokemonID', full_name='MAPAPI.Response1363469389.ZonePokemon.PokemonID', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='AverageLevel', full_name='MAPAPI.Response43.ZonePokemon.AverageLevel', index=1,
+      name='AverageLevel', full_name='MAPAPI.Response1363469389.ZonePokemon.AverageLevel', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='LevelVariance', full_name='MAPAPI.Response43.ZonePokemon.LevelVariance', index=2,
+      name='LevelVariance', full_name='MAPAPI.Response1363469389.ZonePokemon.LevelVariance', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='EncounterTime', full_name='MAPAPI.Response43.ZonePokemon.EncounterTime', index=3,
+      name='EncounterTime', full_name='MAPAPI.Response1363469389.ZonePokemon.EncounterTime', index=3,
       number=4, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Rarity', full_name='MAPAPI.Response43.ZonePokemon.Rarity', index=4,
+      name='Rarity', full_name='MAPAPI.Response1363469389.ZonePokemon.Rarity', index=4,
       number=5, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Items', full_name='MAPAPI.Response43.ZonePokemon.Items', index=5,
+      name='Items', full_name='MAPAPI.Response1363469389.ZonePokemon.Items', index=5,
       number=6, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Fishing', full_name='MAPAPI.Response43.ZonePokemon.Fishing', index=6,
+      name='Fishing', full_name='MAPAPI.Response1363469389.ZonePokemon.Fishing', index=6,
       number=7, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Script', full_name='MAPAPI.Response43.ZonePokemon.Script', index=7,
+      name='Script', full_name='MAPAPI.Response1363469389.ZonePokemon.Script', index=7,
       number=8, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Party', full_name='MAPAPI.Response43.ZonePokemon.Party', index=8,
+      name='Party', full_name='MAPAPI.Response1363469389.ZonePokemon.Party', index=8,
       number=9, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='SpecialEncounter', full_name='MAPAPI.Response43.ZonePokemon.SpecialEncounter', index=9,
+      name='SpecialEncounter', full_name='MAPAPI.Response1363469389.ZonePokemon.SpecialEncounter', index=9,
       number=10, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='BackgroundID', full_name='MAPAPI.Response43.ZonePokemon.BackgroundID', index=10,
+      name='BackgroundID', full_name='MAPAPI.Response1363469389.ZonePokemon.BackgroundID', index=10,
       number=11, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Disabled', full_name='MAPAPI.Response43.ZonePokemon.Disabled', index=11,
+      name='Disabled', full_name='MAPAPI.Response1363469389.ZonePokemon.Disabled', index=11,
       number=12, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -396,20 +465,20 @@ _ZONEPOKEMON = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=193,
-  serialized_end=654,
+  serialized_start=732,
+  serialized_end=1339,
 )
 
 
 _ZONES = _descriptor.Descriptor(
   name='Zones',
-  full_name='MAPAPI.Response43.Zones',
+  full_name='MAPAPI.Response1363469389.Zones',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Pokemon', full_name='MAPAPI.Response43.Zones.Pokemon', index=0,
+      name='Pokemon', full_name='MAPAPI.Response1363469389.Zones.Pokemon', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -427,52 +496,84 @@ _ZONES = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=656,
-  serialized_end=705,
+  serialized_start=1341,
+  serialized_end=1398,
 )
 
+_PREFIX_AGDFASBV2064517627_BACKGROUNDTYPE.containing_type = _PREFIX_AGDFASBV2064517627
+_PREFIX_AGDFASBV208467650_ENCOUNTERTIMES.containing_type = _PREFIX_AGDFASBV208467650
+_PREFIX_AGDFASBV1054309197_FISHINGTYPE.containing_type = _PREFIX_AGDFASBV1054309197
+_PREFIX_AGDFASBV1762563228_RARITY.containing_type = _PREFIX_AGDFASBV1762563228
 _ZONE.fields_by_name['Pokemon'].message_type = _ZONEPOKEMON
-_ZONEITEM.fields_by_name['ItemRarity'].enum_type = _RARITY
-_ZONEPOKEMON.fields_by_name['EncounterTime'].enum_type = _ENCOUNTERTIMES
-_ZONEPOKEMON.fields_by_name['Rarity'].enum_type = _RARITY
+_ZONEITEM.fields_by_name['ItemRarity'].enum_type = _PREFIX_AGDFASBV1762563228_RARITY
+_ZONEPOKEMON.fields_by_name['EncounterTime'].enum_type = _PREFIX_AGDFASBV208467650_ENCOUNTERTIMES
+_ZONEPOKEMON.fields_by_name['Rarity'].enum_type = _PREFIX_AGDFASBV1762563228_RARITY
 _ZONEPOKEMON.fields_by_name['Items'].message_type = _ZONEITEM
-_ZONEPOKEMON.fields_by_name['Fishing'].enum_type = _FISHINGTYPE
-_ZONEPOKEMON.fields_by_name['BackgroundID'].enum_type = _BACKGROUNDTYPE
+_ZONEPOKEMON.fields_by_name['Fishing'].enum_type = _PREFIX_AGDFASBV1054309197_FISHINGTYPE
+_ZONEPOKEMON.fields_by_name['BackgroundID'].enum_type = _PREFIX_AGDFASBV2064517627_BACKGROUNDTYPE
 _ZONES.fields_by_name['Pokemon'].message_type = _ZONE
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV2064517627'] = _PREFIX_AGDFASBV2064517627
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV208467650'] = _PREFIX_AGDFASBV208467650
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1054309197'] = _PREFIX_AGDFASBV1054309197
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1762563228'] = _PREFIX_AGDFASBV1762563228
 DESCRIPTOR.message_types_by_name['Zone'] = _ZONE
 DESCRIPTOR.message_types_by_name['ZoneItem'] = _ZONEITEM
 DESCRIPTOR.message_types_by_name['ZonePokemon'] = _ZONEPOKEMON
 DESCRIPTOR.message_types_by_name['Zones'] = _ZONES
-DESCRIPTOR.enum_types_by_name['BackgroundType'] = _BACKGROUNDTYPE
-DESCRIPTOR.enum_types_by_name['EncounterTimes'] = _ENCOUNTERTIMES
-DESCRIPTOR.enum_types_by_name['FishingType'] = _FISHINGTYPE
-DESCRIPTOR.enum_types_by_name['Rarity'] = _RARITY
+
+PREFIX_AGDFASBV2064517627 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV2064517627', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV2064517627,
+  __module__ = 'Zones_pb2'
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response1363469389.PREFIX_AGDFASBV2064517627)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV2064517627)
+
+PREFIX_AGDFASBV208467650 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV208467650', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV208467650,
+  __module__ = 'Zones_pb2'
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response1363469389.PREFIX_AGDFASBV208467650)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV208467650)
+
+PREFIX_AGDFASBV1054309197 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1054309197', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1054309197,
+  __module__ = 'Zones_pb2'
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response1363469389.PREFIX_AGDFASBV1054309197)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1054309197)
+
+PREFIX_AGDFASBV1762563228 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1762563228', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1762563228,
+  __module__ = 'Zones_pb2'
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response1363469389.PREFIX_AGDFASBV1762563228)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1762563228)
 
 Zone = _reflection.GeneratedProtocolMessageType('Zone', (_message.Message,), dict(
   DESCRIPTOR = _ZONE,
   __module__ = 'Zones_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response43.Zone)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response1363469389.Zone)
   ))
 _sym_db.RegisterMessage(Zone)
 
 ZoneItem = _reflection.GeneratedProtocolMessageType('ZoneItem', (_message.Message,), dict(
   DESCRIPTOR = _ZONEITEM,
   __module__ = 'Zones_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response43.ZoneItem)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response1363469389.ZoneItem)
   ))
 _sym_db.RegisterMessage(ZoneItem)
 
 ZonePokemon = _reflection.GeneratedProtocolMessageType('ZonePokemon', (_message.Message,), dict(
   DESCRIPTOR = _ZONEPOKEMON,
   __module__ = 'Zones_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response43.ZonePokemon)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response1363469389.ZonePokemon)
   ))
 _sym_db.RegisterMessage(ZonePokemon)
 
 Zones = _reflection.GeneratedProtocolMessageType('Zones', (_message.Message,), dict(
   DESCRIPTOR = _ZONES,
   __module__ = 'Zones_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response43.Zones)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response1363469389.Zones)
   ))
 _sym_db.RegisterMessage(Zones)
 

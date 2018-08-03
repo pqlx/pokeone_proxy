@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='DeleteMap.proto',
-  package='MAPAPI.Request0',
+  package='MAPAPI.Request1023275534',
   syntax='proto2',
-  serialized_pb=_b('\n\x0f\x44\x65leteMap.proto\x12\x0fMAPAPI.Request0\"\x1c\n\tDeleteMap\x12\x0f\n\x07MapName\x18\x01 \x01(\t')
+  serialized_pb=_b('\n\x0f\x44\x65leteMap.proto\x12\x18MAPAPI.Request1023275534\"\x1c\n\tDeleteMap\x12\x0f\n\x07MapName\x18\x01 \x01(\t')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,13 +28,13 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _DELETEMAP = _descriptor.Descriptor(
   name='DeleteMap',
-  full_name='MAPAPI.Request0.DeleteMap',
+  full_name='MAPAPI.Request1023275534.DeleteMap',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='MapName', full_name='MAPAPI.Request0.DeleteMap.MapName', index=0,
+      name='MapName', full_name='MAPAPI.Request1023275534.DeleteMap.MapName', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -52,8 +52,8 @@ _DELETEMAP = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=36,
-  serialized_end=64,
+  serialized_start=45,
+  serialized_end=73,
 )
 
 DESCRIPTOR.message_types_by_name['DeleteMap'] = _DELETEMAP
@@ -61,7 +61,7 @@ DESCRIPTOR.message_types_by_name['DeleteMap'] = _DELETEMAP
 DeleteMap = _reflection.GeneratedProtocolMessageType('DeleteMap', (_message.Message,), dict(
   DESCRIPTOR = _DELETEMAP,
   __module__ = 'DeleteMap_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Request0.DeleteMap)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Request1023275534.DeleteMap)
   ))
 _sym_db.RegisterMessage(DeleteMap)
 

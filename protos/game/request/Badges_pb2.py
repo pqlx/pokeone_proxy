@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Badges.proto',
-  package='PSXAPI.Request3',
+  package='PSXAPI.Request1423202980',
   syntax='proto2',
-  serialized_pb=_b('\n\x0c\x42\x61\x64ges.proto\x12\x0fPSXAPI.Request3\"\x08\n\x06\x42\x61\x64ges')
+  serialized_pb=_b('\n\x0c\x42\x61\x64ges.proto\x12\x18PSXAPI.Request1423202980\"\x08\n\x06\x42\x61\x64ges')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,7 +28,7 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _BADGES = _descriptor.Descriptor(
   name='Badges',
-  full_name='PSXAPI.Request3.Badges',
+  full_name='PSXAPI.Request1423202980.Badges',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
@@ -45,8 +45,8 @@ _BADGES = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=33,
-  serialized_end=41,
+  serialized_start=42,
+  serialized_end=50,
 )
 
 DESCRIPTOR.message_types_by_name['Badges'] = _BADGES
@@ -54,7 +54,7 @@ DESCRIPTOR.message_types_by_name['Badges'] = _BADGES
 Badges = _reflection.GeneratedProtocolMessageType('Badges', (_message.Message,), dict(
   DESCRIPTOR = _BADGES,
   __module__ = 'Badges_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request3.Badges)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request1423202980.Badges)
   ))
 _sym_db.RegisterMessage(Badges)
 

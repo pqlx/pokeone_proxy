@@ -1,12 +1,14 @@
 syntax = "proto2";
-package PSXAPI.Response86;
+package PSXAPI.Response759181634;
 
 message VerifyEmail {
-   optional VerifyEmailResult Result = 1 [default = Failed];
+   optional PREFIX_AGDFASBV1099110023.VerifyEmailResult Result = 1 [default = Failed];
    optional string Username = 2;
 }
-enum VerifyEmailResult {
+message PREFIX_AGDFASBV1099110023 {
+    enum VerifyEmailResult {
    Failed = 0;
    Verified = 1;
    Resent = 2;
-}
+} //PREFIX_AGDFASBV
+};

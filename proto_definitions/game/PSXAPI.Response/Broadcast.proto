@@ -1,14 +1,16 @@
 syntax = "proto2";
-package PSXAPI.Response10;
+package PSXAPI.Response1512742675;
 
 message Broadcast {
-   optional BroadcastMessageType Type = 1 [default = __None];
+   optional PREFIX_AGDFASBV844522189.BroadcastMessageType Type = 1 [default = NoneValue];
    optional string Message = 2;
 }
-enum BroadcastMessageType {
-   __None = 0;
+message PREFIX_AGDFASBV844522189 {
+    enum BroadcastMessageType {
+   NoneValue = 0;
    System = 1;
    Message = 2;
    Splash = 3;
    Notification = 4;
-}
+} //PREFIX_AGDFASBV
+};

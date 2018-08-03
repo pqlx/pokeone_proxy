@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='MapServerMap.proto',
-  package='MAPAPI.Response20',
+  package='MAPAPI.Response32851158',
   syntax='proto2',
-  serialized_pb=_b('\n\x12MapServerMap.proto\x12\x11MAPAPI.Response20\"X\n\x0cMapServerMap\x12\x0f\n\x07MapName\x18\x01 \x01(\t\x12\x0f\n\x07MapData\x18\x02 \x01(\x0c\x12\x18\n\tIsSession\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x0c\n\x04Hash\x18\x04 \x01(\t')
+  serialized_pb=_b('\n\x12MapServerMap.proto\x12\x17MAPAPI.Response32851158\"X\n\x0cMapServerMap\x12\x0f\n\x07MapName\x18\x01 \x01(\t\x12\x0f\n\x07MapData\x18\x02 \x01(\x0c\x12\x18\n\tIsSession\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x0c\n\x04Hash\x18\x04 \x01(\t')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,34 +28,34 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _MAPSERVERMAP = _descriptor.Descriptor(
   name='MapServerMap',
-  full_name='MAPAPI.Response20.MapServerMap',
+  full_name='MAPAPI.Response32851158.MapServerMap',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='MapName', full_name='MAPAPI.Response20.MapServerMap.MapName', index=0,
+      name='MapName', full_name='MAPAPI.Response32851158.MapServerMap.MapName', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='MapData', full_name='MAPAPI.Response20.MapServerMap.MapData', index=1,
+      name='MapData', full_name='MAPAPI.Response32851158.MapServerMap.MapData', index=1,
       number=2, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='IsSession', full_name='MAPAPI.Response20.MapServerMap.IsSession', index=2,
+      name='IsSession', full_name='MAPAPI.Response32851158.MapServerMap.IsSession', index=2,
       number=3, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Hash', full_name='MAPAPI.Response20.MapServerMap.Hash', index=3,
+      name='Hash', full_name='MAPAPI.Response32851158.MapServerMap.Hash', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -73,8 +73,8 @@ _MAPSERVERMAP = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=41,
-  serialized_end=129,
+  serialized_start=47,
+  serialized_end=135,
 )
 
 DESCRIPTOR.message_types_by_name['MapServerMap'] = _MAPSERVERMAP
@@ -82,7 +82,7 @@ DESCRIPTOR.message_types_by_name['MapServerMap'] = _MAPSERVERMAP
 MapServerMap = _reflection.GeneratedProtocolMessageType('MapServerMap', (_message.Message,), dict(
   DESCRIPTOR = _MAPSERVERMAP,
   __module__ = 'MapServerMap_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response20.MapServerMap)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response32851158.MapServerMap)
   ))
 _sym_db.RegisterMessage(MapServerMap)
 

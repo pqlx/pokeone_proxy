@@ -1,13 +1,15 @@
 syntax = "proto2";
-package PSXAPI.Response55;
+package PSXAPI.Response501659261;
 
 message Mount {
    optional int32 MountID = 1 [default = 0];
-   optional MountType MountType = 2 [default = __None];
+   optional PREFIX_AGDFASBV1238358761.MountType MountType = 2 [default = NoneValue];
 }
-enum MountType {
-   __None = 0;
+message PREFIX_AGDFASBV1238358761 {
+    enum MountType {
+   NoneValue = 0;
    Surfing = 1;
    Bike = 2;
    Pokemon = 3;
-}
+} //PREFIX_AGDFASBV
+};

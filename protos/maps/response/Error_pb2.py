@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -18,20 +17,22 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Error.proto',
-  package='MAPAPI.Response9',
+  package='MAPAPI.Response1221130861',
   syntax='proto2',
-  serialized_pb=_b('\n\x0b\x45rror.proto\x12\x10MAPAPI.Response9\"P\n\x05\x45rror\x12\x36\n\tErrorType\x18\x01 \x01(\x0e\x32\x1b.MAPAPI.Response9.ErrorType:\x06__None\x12\x0f\n\x07Message\x18\x02 \x01(\t*M\n\tErrorType\x12\n\n\x06__None\x10\x00\x12\x10\n\x0cInvalidLogin\x10\x01\x12\x0e\n\nInvalidMap\x10\x02\x12\x12\n\x0eInvalidSession\x10\x03')
+  serialized_pb=_b('\n\x0b\x45rror.proto\x12\x19MAPAPI.Response1221130861\"v\n\x05\x45rror\x12\\\n\tErrorType\x18\x01 \x01(\x0e\x32>.MAPAPI.Response1221130861.PREFIX_AGDFASBV1393798692.ErrorType:\tNoneValue\x12\x0f\n\x07Message\x18\x02 \x01(\t\"m\n\x19PREFIX_AGDFASBV1393798692\"P\n\tErrorType\x12\r\n\tNoneValue\x10\x00\x12\x10\n\x0cInvalidLogin\x10\x01\x12\x0e\n\nInvalidMap\x10\x02\x12\x12\n\x0eInvalidSession\x10\x03')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_ERRORTYPE = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV1393798692_ERRORTYPE = _descriptor.EnumDescriptor(
   name='ErrorType',
-  full_name='MAPAPI.Response9.ErrorType',
+  full_name='MAPAPI.Response1221130861.PREFIX_AGDFASBV1393798692.ErrorType',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='__None', index=0, number=0,
+      name='NoneValue', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -49,35 +50,28 @@ _ERRORTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=115,
-  serialized_end=192,
+  serialized_start=191,
+  serialized_end=271,
 )
-_sym_db.RegisterEnumDescriptor(_ERRORTYPE)
-
-ErrorType = enum_type_wrapper.EnumTypeWrapper(_ERRORTYPE)
-__None = 0
-InvalidLogin = 1
-InvalidMap = 2
-InvalidSession = 3
-
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1393798692_ERRORTYPE)
 
 
 _ERROR = _descriptor.Descriptor(
   name='Error',
-  full_name='MAPAPI.Response9.Error',
+  full_name='MAPAPI.Response1221130861.Error',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='ErrorType', full_name='MAPAPI.Response9.Error.ErrorType', index=0,
+      name='ErrorType', full_name='MAPAPI.Response1221130861.Error.ErrorType', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Message', full_name='MAPAPI.Response9.Error.Message', index=1,
+      name='Message', full_name='MAPAPI.Response1221130861.Error.Message', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -95,20 +89,53 @@ _ERROR = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=33,
-  serialized_end=113,
+  serialized_start=42,
+  serialized_end=160,
 )
 
-_ERROR.fields_by_name['ErrorType'].enum_type = _ERRORTYPE
+
+_PREFIX_AGDFASBV1393798692 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1393798692',
+  full_name='MAPAPI.Response1221130861.PREFIX_AGDFASBV1393798692',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1393798692_ERRORTYPE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=162,
+  serialized_end=271,
+)
+
+_ERROR.fields_by_name['ErrorType'].enum_type = _PREFIX_AGDFASBV1393798692_ERRORTYPE
+_PREFIX_AGDFASBV1393798692_ERRORTYPE.containing_type = _PREFIX_AGDFASBV1393798692
 DESCRIPTOR.message_types_by_name['Error'] = _ERROR
-DESCRIPTOR.enum_types_by_name['ErrorType'] = _ERRORTYPE
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1393798692'] = _PREFIX_AGDFASBV1393798692
 
 Error = _reflection.GeneratedProtocolMessageType('Error', (_message.Message,), dict(
   DESCRIPTOR = _ERROR,
   __module__ = 'Error_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response9.Error)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response1221130861.Error)
   ))
 _sym_db.RegisterMessage(Error)
+
+PREFIX_AGDFASBV1393798692 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1393798692', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1393798692,
+  __module__ = 'Error_pb2'
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response1221130861.PREFIX_AGDFASBV1393798692)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1393798692)
 
 
 # @@protoc_insertion_point(module_scope)

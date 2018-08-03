@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='BattleMove.proto',
-  package='PSXAPI.Request6',
+  package='PSXAPI.Request167047944',
   syntax='proto2',
-  serialized_pb=_b('\n\x10\x42\x61ttleMove.proto\x12\x0fPSXAPI.Request6\"\x85\x01\n\nBattleMove\x12\x11\n\tRequestID\x18\x01 \x02(\x05\x12\x0e\n\x06MoveID\x18\x02 \x02(\x05\x12\x13\n\x08Position\x18\x03 \x01(\x05:\x01\x30\x12\x11\n\x06Target\x18\x04 \x01(\x05:\x01\x30\x12\x16\n\x07MegaEvo\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x14\n\x05ZMove\x18\x06 \x01(\x08:\x05\x66\x61lse')
+  serialized_pb=_b('\n\x10\x42\x61ttleMove.proto\x12\x17PSXAPI.Request167047944\"\x85\x01\n\nBattleMove\x12\x11\n\tRequestID\x18\x01 \x02(\x05\x12\x0e\n\x06MoveID\x18\x02 \x02(\x05\x12\x13\n\x08Position\x18\x03 \x01(\x05:\x01\x30\x12\x11\n\x06Target\x18\x04 \x01(\x05:\x01\x30\x12\x16\n\x07MegaEvo\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x14\n\x05ZMove\x18\x06 \x01(\x08:\x05\x66\x61lse')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,48 +28,48 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _BATTLEMOVE = _descriptor.Descriptor(
   name='BattleMove',
-  full_name='PSXAPI.Request6.BattleMove',
+  full_name='PSXAPI.Request167047944.BattleMove',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='RequestID', full_name='PSXAPI.Request6.BattleMove.RequestID', index=0,
+      name='RequestID', full_name='PSXAPI.Request167047944.BattleMove.RequestID', index=0,
       number=1, type=5, cpp_type=1, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='MoveID', full_name='PSXAPI.Request6.BattleMove.MoveID', index=1,
+      name='MoveID', full_name='PSXAPI.Request167047944.BattleMove.MoveID', index=1,
       number=2, type=5, cpp_type=1, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Position', full_name='PSXAPI.Request6.BattleMove.Position', index=2,
+      name='Position', full_name='PSXAPI.Request167047944.BattleMove.Position', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Target', full_name='PSXAPI.Request6.BattleMove.Target', index=3,
+      name='Target', full_name='PSXAPI.Request167047944.BattleMove.Target', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='MegaEvo', full_name='PSXAPI.Request6.BattleMove.MegaEvo', index=4,
+      name='MegaEvo', full_name='PSXAPI.Request167047944.BattleMove.MegaEvo', index=4,
       number=5, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='ZMove', full_name='PSXAPI.Request6.BattleMove.ZMove', index=5,
+      name='ZMove', full_name='PSXAPI.Request167047944.BattleMove.ZMove', index=5,
       number=6, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -87,8 +87,8 @@ _BATTLEMOVE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=38,
-  serialized_end=171,
+  serialized_start=46,
+  serialized_end=179,
 )
 
 DESCRIPTOR.message_types_by_name['BattleMove'] = _BATTLEMOVE
@@ -96,7 +96,7 @@ DESCRIPTOR.message_types_by_name['BattleMove'] = _BATTLEMOVE
 BattleMove = _reflection.GeneratedProtocolMessageType('BattleMove', (_message.Message,), dict(
   DESCRIPTOR = _BATTLEMOVE,
   __module__ = 'BattleMove_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request6.BattleMove)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request167047944.BattleMove)
   ))
 _sym_db.RegisterMessage(BattleMove)
 

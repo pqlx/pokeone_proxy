@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -18,15 +17,17 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='LobbyAccept.proto',
-  package='PSXAPI.Request32',
+  package='PSXAPI.Request1131873467',
   syntax='proto2',
-  serialized_pb=_b('\n\x11LobbyAccept.proto\x12\x10PSXAPI.Request32\"?\n\x0bLobbyAccept\x12\x30\n\x05State\x18\x01 \x02(\x0e\x32!.PSXAPI.Request32.LobbyActorState*4\n\x0fLobbyActorState\x12\x08\n\x04Idle\x10\x00\x12\n\n\x06\x41\x63\x63\x65pt\x10\x01\x12\x0b\n\x07\x43onfirm\x10\x02')
+  serialized_pb=_b('\n\x11LobbyAccept.proto\x12\x18PSXAPI.Request1131873467\"`\n\x0bLobbyAccept\x12Q\n\x05State\x18\x01 \x02(\x0e\x32\x42.PSXAPI.Request1131873467.PREFIX_AGDFASBV505821871.LobbyActorState\"P\n\x18PREFIX_AGDFASBV505821871\"4\n\x0fLobbyActorState\x12\x08\n\x04Idle\x10\x00\x12\n\n\x06\x41\x63\x63\x65pt\x10\x01\x12\x0b\n\x07\x43onfirm\x10\x02')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_LOBBYACTORSTATE = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV505821871_LOBBYACTORSTATE = _descriptor.EnumDescriptor(
   name='LobbyActorState',
-  full_name='PSXAPI.Request32.LobbyActorState',
+  full_name='PSXAPI.Request1131873467.PREFIX_AGDFASBV505821871.LobbyActorState',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -45,27 +46,21 @@ _LOBBYACTORSTATE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=104,
-  serialized_end=156,
+  serialized_start=173,
+  serialized_end=225,
 )
-_sym_db.RegisterEnumDescriptor(_LOBBYACTORSTATE)
-
-LobbyActorState = enum_type_wrapper.EnumTypeWrapper(_LOBBYACTORSTATE)
-Idle = 0
-Accept = 1
-Confirm = 2
-
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV505821871_LOBBYACTORSTATE)
 
 
 _LOBBYACCEPT = _descriptor.Descriptor(
   name='LobbyAccept',
-  full_name='PSXAPI.Request32.LobbyAccept',
+  full_name='PSXAPI.Request1131873467.LobbyAccept',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='State', full_name='PSXAPI.Request32.LobbyAccept.State', index=0,
+      name='State', full_name='PSXAPI.Request1131873467.LobbyAccept.State', index=0,
       number=1, type=14, cpp_type=8, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -83,20 +78,53 @@ _LOBBYACCEPT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=39,
-  serialized_end=102,
+  serialized_start=47,
+  serialized_end=143,
 )
 
-_LOBBYACCEPT.fields_by_name['State'].enum_type = _LOBBYACTORSTATE
+
+_PREFIX_AGDFASBV505821871 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV505821871',
+  full_name='PSXAPI.Request1131873467.PREFIX_AGDFASBV505821871',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV505821871_LOBBYACTORSTATE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=145,
+  serialized_end=225,
+)
+
+_LOBBYACCEPT.fields_by_name['State'].enum_type = _PREFIX_AGDFASBV505821871_LOBBYACTORSTATE
+_PREFIX_AGDFASBV505821871_LOBBYACTORSTATE.containing_type = _PREFIX_AGDFASBV505821871
 DESCRIPTOR.message_types_by_name['LobbyAccept'] = _LOBBYACCEPT
-DESCRIPTOR.enum_types_by_name['LobbyActorState'] = _LOBBYACTORSTATE
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV505821871'] = _PREFIX_AGDFASBV505821871
 
 LobbyAccept = _reflection.GeneratedProtocolMessageType('LobbyAccept', (_message.Message,), dict(
   DESCRIPTOR = _LOBBYACCEPT,
   __module__ = 'LobbyAccept_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request32.LobbyAccept)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request1131873467.LobbyAccept)
   ))
 _sym_db.RegisterMessage(LobbyAccept)
+
+PREFIX_AGDFASBV505821871 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV505821871', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV505821871,
+  __module__ = 'LobbyAccept_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request1131873467.PREFIX_AGDFASBV505821871)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV505821871)
 
 
 # @@protoc_insertion_point(module_scope)

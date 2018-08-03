@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Area.proto',
-  package='PSXAPI.Request1',
+  package='PSXAPI.Request63536959',
   syntax='proto2',
-  serialized_pb=_b('\n\nArea.proto\x12\x0fPSXAPI.Request1\"%\n\x04\x41rea\x12\x0b\n\x03Map\x18\x01 \x01(\t\x12\x10\n\x08\x41reaName\x18\x02 \x01(\t')
+  serialized_pb=_b('\n\nArea.proto\x12\x16PSXAPI.Request63536959\"%\n\x04\x41rea\x12\x0b\n\x03Map\x18\x01 \x01(\t\x12\x10\n\x08\x41reaName\x18\x02 \x01(\t')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,20 +28,20 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _AREA = _descriptor.Descriptor(
   name='Area',
-  full_name='PSXAPI.Request1.Area',
+  full_name='PSXAPI.Request63536959.Area',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Map', full_name='PSXAPI.Request1.Area.Map', index=0,
+      name='Map', full_name='PSXAPI.Request63536959.Area.Map', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='AreaName', full_name='PSXAPI.Request1.Area.AreaName', index=1,
+      name='AreaName', full_name='PSXAPI.Request63536959.Area.AreaName', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -59,8 +59,8 @@ _AREA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=31,
-  serialized_end=68,
+  serialized_start=38,
+  serialized_end=75,
 )
 
 DESCRIPTOR.message_types_by_name['Area'] = _AREA
@@ -68,7 +68,7 @@ DESCRIPTOR.message_types_by_name['Area'] = _AREA
 Area = _reflection.GeneratedProtocolMessageType('Area', (_message.Message,), dict(
   DESCRIPTOR = _AREA,
   __module__ = 'Area_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request1.Area)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request63536959.Area)
   ))
 _sym_db.RegisterMessage(Area)
 

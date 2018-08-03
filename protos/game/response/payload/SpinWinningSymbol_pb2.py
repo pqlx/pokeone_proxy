@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -18,15 +17,17 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='SpinWinningSymbol.proto',
-  package='PSXAPI.Response.Payload35',
+  package='PSXAPI.Response.Payload1509505657',
   syntax='proto2',
-  serialized_pb=_b('\n\x17SpinWinningSymbol.proto\x12\x19PSXAPI.Response.Payload35\"\x95\x01\n\x11SpinWinningSymbol\x12\x36\n\x04Mode\x18\x01 \x01(\x0e\x32#.PSXAPI.Response.Payload35.SpinMode:\x03\x41ll\x12\r\n\x02ID\x18\x02 \x01(\r:\x01\x30\x12\x13\n\x08Required\x18\x03 \x01(\x05:\x01\x30\x12\x14\n\tWinPoints\x18\x04 \x01(\x05:\x01\x30\x12\x0e\n\x03Row\x18\x05 \x01(\x05:\x01\x30*_\n\x08SpinMode\x12\x14\n\x10HorizontalCenter\x10\x01\x12\x13\n\x0fHorizontalMulti\x10\x02\x12\x0c\n\x08\x44iagonal\x10\x04\x12\x11\n\rHorizintalAll\x10\x03\x12\x07\n\x03\x41ll\x10\x07')
+  serialized_pb=_b('\n\x17SpinWinningSymbol.proto\x12!PSXAPI.Response.Payload1509505657\"|\n\x19PREFIX_AGDFASBV2001258585\"_\n\x08SpinMode\x12\x14\n\x10HorizontalCenter\x10\x01\x12\x13\n\x0fHorizontalMulti\x10\x02\x12\x0c\n\x08\x44iagonal\x10\x04\x12\x11\n\rHorizintalAll\x10\x03\x12\x07\n\x03\x41ll\x10\x07\"\xb7\x01\n\x11SpinWinningSymbol\x12X\n\x04Mode\x18\x01 \x01(\x0e\x32\x45.PSXAPI.Response.Payload1509505657.PREFIX_AGDFASBV2001258585.SpinMode:\x03\x41ll\x12\r\n\x02ID\x18\x02 \x01(\r:\x01\x30\x12\x13\n\x08Required\x18\x03 \x01(\x05:\x01\x30\x12\x14\n\tWinPoints\x18\x04 \x01(\x05:\x01\x30\x12\x0e\n\x03Row\x18\x05 \x01(\x05:\x01\x30')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_SPINMODE = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV2001258585_SPINMODE = _descriptor.EnumDescriptor(
   name='SpinMode',
-  full_name='PSXAPI.Response.Payload35.SpinMode',
+  full_name='PSXAPI.Response.Payload1509505657.PREFIX_AGDFASBV2001258585.SpinMode',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -53,57 +54,74 @@ _SPINMODE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=206,
-  serialized_end=301,
+  serialized_start=91,
+  serialized_end=186,
 )
-_sym_db.RegisterEnumDescriptor(_SPINMODE)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV2001258585_SPINMODE)
 
-SpinMode = enum_type_wrapper.EnumTypeWrapper(_SPINMODE)
-HorizontalCenter = 1
-HorizontalMulti = 2
-Diagonal = 4
-HorizintalAll = 3
-All = 7
 
+_PREFIX_AGDFASBV2001258585 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV2001258585',
+  full_name='PSXAPI.Response.Payload1509505657.PREFIX_AGDFASBV2001258585',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV2001258585_SPINMODE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=62,
+  serialized_end=186,
+)
 
 
 _SPINWINNINGSYMBOL = _descriptor.Descriptor(
   name='SpinWinningSymbol',
-  full_name='PSXAPI.Response.Payload35.SpinWinningSymbol',
+  full_name='PSXAPI.Response.Payload1509505657.SpinWinningSymbol',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Mode', full_name='PSXAPI.Response.Payload35.SpinWinningSymbol.Mode', index=0,
+      name='Mode', full_name='PSXAPI.Response.Payload1509505657.SpinWinningSymbol.Mode', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=7,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='ID', full_name='PSXAPI.Response.Payload35.SpinWinningSymbol.ID', index=1,
+      name='ID', full_name='PSXAPI.Response.Payload1509505657.SpinWinningSymbol.ID', index=1,
       number=2, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Required', full_name='PSXAPI.Response.Payload35.SpinWinningSymbol.Required', index=2,
+      name='Required', full_name='PSXAPI.Response.Payload1509505657.SpinWinningSymbol.Required', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='WinPoints', full_name='PSXAPI.Response.Payload35.SpinWinningSymbol.WinPoints', index=3,
+      name='WinPoints', full_name='PSXAPI.Response.Payload1509505657.SpinWinningSymbol.WinPoints', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Row', full_name='PSXAPI.Response.Payload35.SpinWinningSymbol.Row', index=4,
+      name='Row', full_name='PSXAPI.Response.Payload1509505657.SpinWinningSymbol.Row', index=4,
       number=5, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -121,18 +139,26 @@ _SPINWINNINGSYMBOL = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=55,
-  serialized_end=204,
+  serialized_start=189,
+  serialized_end=372,
 )
 
-_SPINWINNINGSYMBOL.fields_by_name['Mode'].enum_type = _SPINMODE
+_PREFIX_AGDFASBV2001258585_SPINMODE.containing_type = _PREFIX_AGDFASBV2001258585
+_SPINWINNINGSYMBOL.fields_by_name['Mode'].enum_type = _PREFIX_AGDFASBV2001258585_SPINMODE
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV2001258585'] = _PREFIX_AGDFASBV2001258585
 DESCRIPTOR.message_types_by_name['SpinWinningSymbol'] = _SPINWINNINGSYMBOL
-DESCRIPTOR.enum_types_by_name['SpinMode'] = _SPINMODE
+
+PREFIX_AGDFASBV2001258585 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV2001258585', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV2001258585,
+  __module__ = 'SpinWinningSymbol_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response.Payload1509505657.PREFIX_AGDFASBV2001258585)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV2001258585)
 
 SpinWinningSymbol = _reflection.GeneratedProtocolMessageType('SpinWinningSymbol', (_message.Message,), dict(
   DESCRIPTOR = _SPINWINNINGSYMBOL,
   __module__ = 'SpinWinningSymbol_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response.Payload35.SpinWinningSymbol)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response.Payload1509505657.SpinWinningSymbol)
   ))
 _sym_db.RegisterMessage(SpinWinningSymbol)
 

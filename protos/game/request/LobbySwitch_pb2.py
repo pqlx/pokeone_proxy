@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='LobbySwitch.proto',
-  package='PSXAPI.Request38',
+  package='PSXAPI.Request1365527687',
   syntax='proto2',
-  serialized_pb=_b('\n\x11LobbySwitch.proto\x12\x10PSXAPI.Request38\"\r\n\x0bLobbySwitch')
+  serialized_pb=_b('\n\x11LobbySwitch.proto\x12\x18PSXAPI.Request1365527687\"\r\n\x0bLobbySwitch')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,7 +28,7 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _LOBBYSWITCH = _descriptor.Descriptor(
   name='LobbySwitch',
-  full_name='PSXAPI.Request38.LobbySwitch',
+  full_name='PSXAPI.Request1365527687.LobbySwitch',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
@@ -45,8 +45,8 @@ _LOBBYSWITCH = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=39,
-  serialized_end=52,
+  serialized_start=47,
+  serialized_end=60,
 )
 
 DESCRIPTOR.message_types_by_name['LobbySwitch'] = _LOBBYSWITCH
@@ -54,7 +54,7 @@ DESCRIPTOR.message_types_by_name['LobbySwitch'] = _LOBBYSWITCH
 LobbySwitch = _reflection.GeneratedProtocolMessageType('LobbySwitch', (_message.Message,), dict(
   DESCRIPTOR = _LOBBYSWITCH,
   __module__ = 'LobbySwitch_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request38.LobbySwitch)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request1365527687.LobbySwitch)
   ))
 _sym_db.RegisterMessage(LobbySwitch)
 

@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='QueryDestroyMapSession.proto',
-  package='MAPAPI.Request5',
+  package='MAPAPI.Request1410603557',
   syntax='proto2',
-  serialized_pb=_b('\n\x1cQueryDestroyMapSession.proto\x12\x0fMAPAPI.Request5\")\n\x16QueryDestroyMapSession\x12\x0f\n\x07MapName\x18\x01 \x01(\t')
+  serialized_pb=_b('\n\x1cQueryDestroyMapSession.proto\x12\x18MAPAPI.Request1410603557\")\n\x16QueryDestroyMapSession\x12\x0f\n\x07MapName\x18\x01 \x01(\t')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,13 +28,13 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _QUERYDESTROYMAPSESSION = _descriptor.Descriptor(
   name='QueryDestroyMapSession',
-  full_name='MAPAPI.Request5.QueryDestroyMapSession',
+  full_name='MAPAPI.Request1410603557.QueryDestroyMapSession',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='MapName', full_name='MAPAPI.Request5.QueryDestroyMapSession.MapName', index=0,
+      name='MapName', full_name='MAPAPI.Request1410603557.QueryDestroyMapSession.MapName', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -52,8 +52,8 @@ _QUERYDESTROYMAPSESSION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=49,
-  serialized_end=90,
+  serialized_start=58,
+  serialized_end=99,
 )
 
 DESCRIPTOR.message_types_by_name['QueryDestroyMapSession'] = _QUERYDESTROYMAPSESSION
@@ -61,7 +61,7 @@ DESCRIPTOR.message_types_by_name['QueryDestroyMapSession'] = _QUERYDESTROYMAPSES
 QueryDestroyMapSession = _reflection.GeneratedProtocolMessageType('QueryDestroyMapSession', (_message.Message,), dict(
   DESCRIPTOR = _QUERYDESTROYMAPSESSION,
   __module__ = 'QueryDestroyMapSession_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Request5.QueryDestroyMapSession)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Request1410603557.QueryDestroyMapSession)
   ))
 _sym_db.RegisterMessage(QueryDestroyMapSession)
 

@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -18,20 +17,22 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Lootbox.proto',
-  package='PSXAPI_Response68926927062',
+  package='PSXAPI.Response580073471',
   syntax='proto2',
-  serialized_pb=_b('\n\rLootbox.proto\x12\x1aPSXAPI_Response68926927062\"\xdb\x01\n\x07Lootbox\x12\x42\n\x06\x41\x63tion\x18\x01 \x01(\x0e\x32).PSXAPI_Response68926927062.LootboxAction:\x07__None1\x12>\n\x04Type\x18\x02 \x01(\x0e\x32\'.PSXAPI_Response68926927062.LootboxType:\x07__None2\x12\x14\n\tRemaining\x18\x03 \x01(\r:\x01\x30\x12\x36\n\x05Rolls\x18\x04 \x03(\x0b\x32\'.PSXAPI_Response68926927062.LootboxRoll\"\xac\x01\n\x0bLootboxRoll\x12>\n\x08LootType\x18\x01 \x01(\x0e\x32$.PSXAPI_Response68926927062.LootType:\x06__None\x12\x0e\n\x03Num\x18\x02 \x01(\x05:\x01\x30\x12\x18\n\tDuplicate\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x18\n\rDuplicateGold\x18\x04 \x01(\r:\x01\x30\x12\x19\n\x0e\x44uplicateMoney\x18\x05 \x01(\r:\x01\x30*\x7f\n\x08LootType\x12\n\n\x06__None\x10\x00\x12\t\n\x05Money\x10\x01\x12\x08\n\x04Gold\x10\x02\x12\x08\n\x04Item\x10\x03\x12\x0b\n\x07Pokemon\x10\x04\x12\n\n\x06\x43lothe\x10\x05\x12\x07\n\x03Hat\x10\x06\x12\t\n\x05Mount\x10\x07\x12\r\n\tSurfMount\x10\x08\x12\x0c\n\x08\x46lyMount\x10\t*4\n\rLootboxAction\x12\x0b\n\x07__None1\x10\x00\x12\n\n\x06Opened\x10\x01\x12\n\n\x06Update\x10\x02*1\n\x0bLootboxType\x12\x0b\n\x07__None2\x10\x00\x12\t\n\x05Small\x10\x01\x12\n\n\x06Normal\x10\x02')
+  serialized_pb=_b('\n\rLootbox.proto\x12\x18PSXAPI.Response580073471\"\xa0\x01\n\x19PREFIX_AGDFASBV1842323304\"\x82\x01\n\x08LootType\x12\r\n\tNoneValue\x10\x00\x12\t\n\x05Money\x10\x01\x12\x08\n\x04Gold\x10\x02\x12\x08\n\x04Item\x10\x03\x12\x0b\n\x07Pokemon\x10\x04\x12\n\n\x06\x43lothe\x10\x05\x12\x07\n\x03Hat\x10\x06\x12\t\n\x05Mount\x10\x07\x12\r\n\tSurfMount\x10\x08\x12\x0c\n\x08\x46lyMount\x10\t\"\x8d\x02\n\x07Lootbox\x12\\\n\x06\x41\x63tion\x18\x01 \x01(\x0e\x32\x41.PSXAPI.Response580073471.PREFIX_AGDFASBV1949913223.LootboxAction:\tNoneValue\x12X\n\x04Type\x18\x02 \x01(\x0e\x32?.PSXAPI.Response580073471.PREFIX_AGDFASBV1416211215.LootboxType:\tNoneValue\x12\x14\n\tRemaining\x18\x03 \x01(\r:\x01\x30\x12\x34\n\x05Rolls\x18\x04 \x03(\x0b\x32%.PSXAPI.Response580073471.LootboxRoll\"S\n\x19PREFIX_AGDFASBV1949913223\"6\n\rLootboxAction\x12\r\n\tNoneValue\x10\x00\x12\n\n\x06Opened\x10\x01\x12\n\n\x06Update\x10\x02\"\xc7\x01\n\x0bLootboxRoll\x12Y\n\x08LootType\x18\x01 \x01(\x0e\x32<.PSXAPI.Response580073471.PREFIX_AGDFASBV1842323304.LootType:\tNoneValue\x12\x0e\n\x03Num\x18\x02 \x01(\x05:\x01\x30\x12\x18\n\tDuplicate\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x18\n\rDuplicateGold\x18\x04 \x01(\r:\x01\x30\x12\x19\n\x0e\x44uplicateMoney\x18\x05 \x01(\r:\x01\x30\"P\n\x19PREFIX_AGDFASBV1416211215\"3\n\x0bLootboxType\x12\r\n\tNoneValue\x10\x00\x12\t\n\x05Small\x10\x01\x12\n\n\x06Normal\x10\x02')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_LOOTTYPE = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV1842323304_LOOTTYPE = _descriptor.EnumDescriptor(
   name='LootType',
-  full_name='PSXAPI_Response68926927062.LootType',
+  full_name='PSXAPI.Response580073471.PREFIX_AGDFASBV1842323304.LootType',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='__None', index=0, number=0,
+      name='NoneValue', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -73,20 +74,19 @@ _LOOTTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=442,
-  serialized_end=569,
+  serialized_start=74,
+  serialized_end=204,
 )
-_sym_db.RegisterEnumDescriptor(_LOOTTYPE)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1842323304_LOOTTYPE)
 
-LootType = enum_type_wrapper.EnumTypeWrapper(_LOOTTYPE)
-_LOOTBOXACTION = _descriptor.EnumDescriptor(
+_PREFIX_AGDFASBV1949913223_LOOTBOXACTION = _descriptor.EnumDescriptor(
   name='LootboxAction',
-  full_name='PSXAPI_Response68926927062.LootboxAction',
+  full_name='PSXAPI.Response580073471.PREFIX_AGDFASBV1949913223.LootboxAction',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='__None1', index=0, number=0,
+      name='NoneValue', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -100,20 +100,19 @@ _LOOTBOXACTION = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=571,
-  serialized_end=623,
+  serialized_start=507,
+  serialized_end=561,
 )
-_sym_db.RegisterEnumDescriptor(_LOOTBOXACTION)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1949913223_LOOTBOXACTION)
 
-LootboxAction = enum_type_wrapper.EnumTypeWrapper(_LOOTBOXACTION)
-_LOOTBOXTYPE = _descriptor.EnumDescriptor(
+_PREFIX_AGDFASBV1416211215_LOOTBOXTYPE = _descriptor.EnumDescriptor(
   name='LootboxType',
-  full_name='PSXAPI_Response68926927062.LootboxType',
+  full_name='PSXAPI.Response580073471.PREFIX_AGDFASBV1416211215.LootboxType',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='__None2', index=0, number=0,
+      name='NoneValue', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -127,61 +126,67 @@ _LOOTBOXTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=625,
-  serialized_end=674,
+  serialized_start=794,
+  serialized_end=845,
 )
-_sym_db.RegisterEnumDescriptor(_LOOTBOXTYPE)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1416211215_LOOTBOXTYPE)
 
-LootboxType = enum_type_wrapper.EnumTypeWrapper(_LOOTBOXTYPE)
-__None = 0
-Money = 1
-Gold = 2
-Item = 3
-Pokemon = 4
-Clothe = 5
-Hat = 6
-Mount = 7
-SurfMount = 8
-FlyMount = 9
-__None1 = 0
-Opened = 1
-Update = 2
-__None2 = 0
-Small = 1
-Normal = 2
 
+_PREFIX_AGDFASBV1842323304 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1842323304',
+  full_name='PSXAPI.Response580073471.PREFIX_AGDFASBV1842323304',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1842323304_LOOTTYPE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=44,
+  serialized_end=204,
+)
 
 
 _LOOTBOX = _descriptor.Descriptor(
   name='Lootbox',
-  full_name='PSXAPI_Response68926927062.Lootbox',
+  full_name='PSXAPI.Response580073471.Lootbox',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Action', full_name='PSXAPI_Response68926927062.Lootbox.Action', index=0,
+      name='Action', full_name='PSXAPI.Response580073471.Lootbox.Action', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Type', full_name='PSXAPI_Response68926927062.Lootbox.Type', index=1,
+      name='Type', full_name='PSXAPI.Response580073471.Lootbox.Type', index=1,
       number=2, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Remaining', full_name='PSXAPI_Response68926927062.Lootbox.Remaining', index=2,
+      name='Remaining', full_name='PSXAPI.Response580073471.Lootbox.Remaining', index=2,
       number=3, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Rolls', full_name='PSXAPI_Response68926927062.Lootbox.Rolls', index=3,
+      name='Rolls', full_name='PSXAPI.Response580073471.Lootbox.Rolls', index=3,
       number=4, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -199,48 +204,73 @@ _LOOTBOX = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=46,
-  serialized_end=265,
+  serialized_start=207,
+  serialized_end=476,
+)
+
+
+_PREFIX_AGDFASBV1949913223 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1949913223',
+  full_name='PSXAPI.Response580073471.PREFIX_AGDFASBV1949913223',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1949913223_LOOTBOXACTION,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=478,
+  serialized_end=561,
 )
 
 
 _LOOTBOXROLL = _descriptor.Descriptor(
   name='LootboxRoll',
-  full_name='PSXAPI_Response68926927062.LootboxRoll',
+  full_name='PSXAPI.Response580073471.LootboxRoll',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='LootType', full_name='PSXAPI_Response68926927062.LootboxRoll.LootType', index=0,
+      name='LootType', full_name='PSXAPI.Response580073471.LootboxRoll.LootType', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Num', full_name='PSXAPI_Response68926927062.LootboxRoll.Num', index=1,
+      name='Num', full_name='PSXAPI.Response580073471.LootboxRoll.Num', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Duplicate', full_name='PSXAPI_Response68926927062.LootboxRoll.Duplicate', index=2,
+      name='Duplicate', full_name='PSXAPI.Response580073471.LootboxRoll.Duplicate', index=2,
       number=3, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='DuplicateGold', full_name='PSXAPI_Response68926927062.LootboxRoll.DuplicateGold', index=3,
+      name='DuplicateGold', full_name='PSXAPI.Response580073471.LootboxRoll.DuplicateGold', index=3,
       number=4, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='DuplicateMoney', full_name='PSXAPI_Response68926927062.LootboxRoll.DuplicateMoney', index=4,
+      name='DuplicateMoney', full_name='PSXAPI.Response580073471.LootboxRoll.DuplicateMoney', index=4,
       number=5, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -258,33 +288,82 @@ _LOOTBOXROLL = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=268,
-  serialized_end=440,
+  serialized_start=564,
+  serialized_end=763,
 )
 
-_LOOTBOX.fields_by_name['Action'].enum_type = _LOOTBOXACTION
-_LOOTBOX.fields_by_name['Type'].enum_type = _LOOTBOXTYPE
+
+_PREFIX_AGDFASBV1416211215 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1416211215',
+  full_name='PSXAPI.Response580073471.PREFIX_AGDFASBV1416211215',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1416211215_LOOTBOXTYPE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=765,
+  serialized_end=845,
+)
+
+_PREFIX_AGDFASBV1842323304_LOOTTYPE.containing_type = _PREFIX_AGDFASBV1842323304
+_LOOTBOX.fields_by_name['Action'].enum_type = _PREFIX_AGDFASBV1949913223_LOOTBOXACTION
+_LOOTBOX.fields_by_name['Type'].enum_type = _PREFIX_AGDFASBV1416211215_LOOTBOXTYPE
 _LOOTBOX.fields_by_name['Rolls'].message_type = _LOOTBOXROLL
-_LOOTBOXROLL.fields_by_name['LootType'].enum_type = _LOOTTYPE
+_PREFIX_AGDFASBV1949913223_LOOTBOXACTION.containing_type = _PREFIX_AGDFASBV1949913223
+_LOOTBOXROLL.fields_by_name['LootType'].enum_type = _PREFIX_AGDFASBV1842323304_LOOTTYPE
+_PREFIX_AGDFASBV1416211215_LOOTBOXTYPE.containing_type = _PREFIX_AGDFASBV1416211215
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1842323304'] = _PREFIX_AGDFASBV1842323304
 DESCRIPTOR.message_types_by_name['Lootbox'] = _LOOTBOX
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1949913223'] = _PREFIX_AGDFASBV1949913223
 DESCRIPTOR.message_types_by_name['LootboxRoll'] = _LOOTBOXROLL
-DESCRIPTOR.enum_types_by_name['LootType'] = _LOOTTYPE
-DESCRIPTOR.enum_types_by_name['LootboxAction'] = _LOOTBOXACTION
-DESCRIPTOR.enum_types_by_name['LootboxType'] = _LOOTBOXTYPE
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1416211215'] = _PREFIX_AGDFASBV1416211215
+
+PREFIX_AGDFASBV1842323304 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1842323304', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1842323304,
+  __module__ = 'Lootbox_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response580073471.PREFIX_AGDFASBV1842323304)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1842323304)
 
 Lootbox = _reflection.GeneratedProtocolMessageType('Lootbox', (_message.Message,), dict(
   DESCRIPTOR = _LOOTBOX,
   __module__ = 'Lootbox_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI_Response68926927062.Lootbox)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response580073471.Lootbox)
   ))
 _sym_db.RegisterMessage(Lootbox)
+
+PREFIX_AGDFASBV1949913223 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1949913223', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1949913223,
+  __module__ = 'Lootbox_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response580073471.PREFIX_AGDFASBV1949913223)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1949913223)
 
 LootboxRoll = _reflection.GeneratedProtocolMessageType('LootboxRoll', (_message.Message,), dict(
   DESCRIPTOR = _LOOTBOXROLL,
   __module__ = 'Lootbox_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI_Response68926927062.LootboxRoll)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response580073471.LootboxRoll)
   ))
 _sym_db.RegisterMessage(LootboxRoll)
+
+PREFIX_AGDFASBV1416211215 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1416211215', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1416211215,
+  __module__ = 'Lootbox_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response580073471.PREFIX_AGDFASBV1416211215)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1416211215)
 
 
 # @@protoc_insertion_point(module_scope)

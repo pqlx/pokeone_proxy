@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Fishing.proto',
-  package='PSXAPI.Response26',
+  package='PSXAPI.Response630706050',
   syntax='proto2',
-  serialized_pb=_b('\n\rFishing.proto\x12\x11PSXAPI.Response26\"\t\n\x07\x46ishing')
+  serialized_pb=_b('\n\rFishing.proto\x12\x18PSXAPI.Response630706050\"\t\n\x07\x46ishing')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,7 +28,7 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _FISHING = _descriptor.Descriptor(
   name='Fishing',
-  full_name='PSXAPI.Response26.Fishing',
+  full_name='PSXAPI.Response630706050.Fishing',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
@@ -45,8 +45,8 @@ _FISHING = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=36,
-  serialized_end=45,
+  serialized_start=43,
+  serialized_end=52,
 )
 
 DESCRIPTOR.message_types_by_name['Fishing'] = _FISHING
@@ -54,7 +54,7 @@ DESCRIPTOR.message_types_by_name['Fishing'] = _FISHING
 Fishing = _reflection.GeneratedProtocolMessageType('Fishing', (_message.Message,), dict(
   DESCRIPTOR = _FISHING,
   __module__ = 'Fishing_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response26.Fishing)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response630706050.Fishing)
   ))
 _sym_db.RegisterMessage(Fishing)
 

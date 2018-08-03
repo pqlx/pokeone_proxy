@@ -13,16 +13,16 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
-import bcl_pb2 as bcl__pb2
+from protobuf_net import bcl_pb2 as protobuf__net_dot_bcl__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Talk.proto',
-  package='PSXAPI.Request66',
+  package='PSXAPI.Request1680692980',
   syntax='proto2',
-  serialized_pb=_b('\n\nTalk.proto\x12\x10PSXAPI.Request66\x1a\tbcl.proto\" \n\x04Talk\x12\x18\n\x05NpcID\x18\x01 \x01(\x0b\x32\t.bcl.Guid')
+  serialized_pb=_b('\n\nTalk.proto\x12\x18PSXAPI.Request1680692980\x1a\x16protobuf-net/bcl.proto\" \n\x04Talk\x12\x18\n\x05NpcID\x18\x01 \x01(\x0b\x32\t.bcl.Guid')
   ,
-  dependencies=[bcl__pb2.DESCRIPTOR,])
+  dependencies=[protobuf__net_dot_bcl__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
@@ -30,13 +30,13 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _TALK = _descriptor.Descriptor(
   name='Talk',
-  full_name='PSXAPI.Request66.Talk',
+  full_name='PSXAPI.Request1680692980.Talk',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='NpcID', full_name='PSXAPI.Request66.Talk.NpcID', index=0,
+      name='NpcID', full_name='PSXAPI.Request1680692980.Talk.NpcID', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -54,17 +54,17 @@ _TALK = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=43,
-  serialized_end=75,
+  serialized_start=64,
+  serialized_end=96,
 )
 
-_TALK.fields_by_name['NpcID'].message_type = bcl__pb2._GUID
+_TALK.fields_by_name['NpcID'].message_type = protobuf__net_dot_bcl__pb2._GUID
 DESCRIPTOR.message_types_by_name['Talk'] = _TALK
 
 Talk = _reflection.GeneratedProtocolMessageType('Talk', (_message.Message,), dict(
   DESCRIPTOR = _TALK,
   __module__ = 'Talk_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request66.Talk)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request1680692980.Talk)
   ))
 _sym_db.RegisterMessage(Talk)
 

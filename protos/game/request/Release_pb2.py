@@ -13,16 +13,16 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
-import bcl_pb2 as bcl__pb2
+from protobuf_net import bcl_pb2 as protobuf__net_dot_bcl__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Release.proto',
-  package='PSXAPI.Request53',
+  package='PSXAPI.Request1156003724',
   syntax='proto2',
-  serialized_pb=_b('\n\rRelease.proto\x12\x10PSXAPI.Request53\x1a\tbcl.proto\"%\n\x07Release\x12\x1a\n\x07Pokemon\x18\x01 \x01(\x0b\x32\t.bcl.Guid')
+  serialized_pb=_b('\n\rRelease.proto\x12\x18PSXAPI.Request1156003724\x1a\x16protobuf-net/bcl.proto\"%\n\x07Release\x12\x1a\n\x07Pokemon\x18\x01 \x01(\x0b\x32\t.bcl.Guid')
   ,
-  dependencies=[bcl__pb2.DESCRIPTOR,])
+  dependencies=[protobuf__net_dot_bcl__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
@@ -30,13 +30,13 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _RELEASE = _descriptor.Descriptor(
   name='Release',
-  full_name='PSXAPI.Request53.Release',
+  full_name='PSXAPI.Request1156003724.Release',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Pokemon', full_name='PSXAPI.Request53.Release.Pokemon', index=0,
+      name='Pokemon', full_name='PSXAPI.Request1156003724.Release.Pokemon', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -54,17 +54,17 @@ _RELEASE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=46,
-  serialized_end=83,
+  serialized_start=67,
+  serialized_end=104,
 )
 
-_RELEASE.fields_by_name['Pokemon'].message_type = bcl__pb2._GUID
+_RELEASE.fields_by_name['Pokemon'].message_type = protobuf__net_dot_bcl__pb2._GUID
 DESCRIPTOR.message_types_by_name['Release'] = _RELEASE
 
 Release = _reflection.GeneratedProtocolMessageType('Release', (_message.Message,), dict(
   DESCRIPTOR = _RELEASE,
   __module__ = 'Release_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request53.Release)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request1156003724.Release)
   ))
 _sym_db.RegisterMessage(Release)
 

@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Items.proto',
-  package='PSXAPI.Request29',
+  package='PSXAPI.Request1399189218',
   syntax='proto2',
-  serialized_pb=_b('\n\x0bItems.proto\x12\x10PSXAPI.Request29\"\x07\n\x05Items')
+  serialized_pb=_b('\n\x0bItems.proto\x12\x18PSXAPI.Request1399189218\"\x07\n\x05Items')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,7 +28,7 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _ITEMS = _descriptor.Descriptor(
   name='Items',
-  full_name='PSXAPI.Request29.Items',
+  full_name='PSXAPI.Request1399189218.Items',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
@@ -45,8 +45,8 @@ _ITEMS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=33,
-  serialized_end=40,
+  serialized_start=41,
+  serialized_end=48,
 )
 
 DESCRIPTOR.message_types_by_name['Items'] = _ITEMS
@@ -54,7 +54,7 @@ DESCRIPTOR.message_types_by_name['Items'] = _ITEMS
 Items = _reflection.GeneratedProtocolMessageType('Items', (_message.Message,), dict(
   DESCRIPTOR = _ITEMS,
   __module__ = 'Items_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request29.Items)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request1399189218.Items)
   ))
 _sym_db.RegisterMessage(Items)
 

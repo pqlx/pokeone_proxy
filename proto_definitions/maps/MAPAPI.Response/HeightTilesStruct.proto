@@ -1,5 +1,5 @@
 syntax = "proto2";
-package MAPAPI.Response13;
+package MAPAPI.Response237923865;
 
 message HeightTilesStruct {
    repeated wallTypes Block = 1;

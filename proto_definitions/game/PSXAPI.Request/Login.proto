@@ -1,13 +1,15 @@
 syntax = "proto2";
-package PSXAPI.Request39;
+package PSXAPI.Request73469391;
 
-enum ClientPlatform {
-   __None = 0;
+message PREFIX_AGDFASBV122362143 {
+    enum ClientPlatform {
+   NoneValue = 0;
    PC = 1;
-}
+} //PREFIX_AGDFASBV
+};
 message Login {
    required string Name = 1;
    optional string Password = 2;
    optional string Version = 3;
-   optional ClientPlatform Platform = 4 [default = __None];
+   optional PREFIX_AGDFASBV122362143.ClientPlatform Platform = 4 [default = NoneValue];
 }

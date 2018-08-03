@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='BattleSide.proto',
-  package='PSXAPI.Response9',
+  package='PSXAPI.Response122380946',
   syntax='proto2',
-  serialized_pb=_b('\n\x10\x42\x61ttleSide.proto\x12\x10PSXAPI.Response9\"\x1a\n\nBattleSide\x12\x0c\n\x04\x44\x61ta\x18\x01 \x01(\t')
+  serialized_pb=_b('\n\x10\x42\x61ttleSide.proto\x12\x18PSXAPI.Response122380946\"\x1a\n\nBattleSide\x12\x0c\n\x04\x44\x61ta\x18\x01 \x01(\t')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,13 +28,13 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _BATTLESIDE = _descriptor.Descriptor(
   name='BattleSide',
-  full_name='PSXAPI.Response9.BattleSide',
+  full_name='PSXAPI.Response122380946.BattleSide',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Data', full_name='PSXAPI.Response9.BattleSide.Data', index=0,
+      name='Data', full_name='PSXAPI.Response122380946.BattleSide.Data', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -52,8 +52,8 @@ _BATTLESIDE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=38,
-  serialized_end=64,
+  serialized_start=46,
+  serialized_end=72,
 )
 
 DESCRIPTOR.message_types_by_name['BattleSide'] = _BATTLESIDE
@@ -61,7 +61,7 @@ DESCRIPTOR.message_types_by_name['BattleSide'] = _BATTLESIDE
 BattleSide = _reflection.GeneratedProtocolMessageType('BattleSide', (_message.Message,), dict(
   DESCRIPTOR = _BATTLESIDE,
   __module__ = 'BattleSide_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response9.BattleSide)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response122380946.BattleSide)
   ))
 _sym_db.RegisterMessage(BattleSide)
 

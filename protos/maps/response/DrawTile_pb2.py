@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='DrawTile.proto',
-  package='MAPAPI.Response7',
+  package='MAPAPI.Response832228408',
   syntax='proto2',
-  serialized_pb=_b('\n\x0e\x44rawTile.proto\x12\x10MAPAPI.Response7\"L\n\x08\x44rawTile\x12\x0f\n\x04Tile\x18\x01 \x01(\x05:\x01\x30\x12/\n\x05Tiles\x18\x02 \x03(\x0b\x32 .MAPAPI.Response7.DrawTileStruct\"c\n\x0e\x44rawTileStruct\x12\x0c\n\x01X\x18\x01 \x01(\x05:\x01\x30\x12\x0c\n\x01Y\x18\x02 \x01(\x05:\x01\x30\x12\x0f\n\x04Type\x18\x03 \x01(\x05:\x01\x30\x12\x10\n\x05Layer\x18\x04 \x01(\x05:\x01\x30\x12\x12\n\x07NewType\x18\x05 \x01(\x05:\x01\x30')
+  serialized_pb=_b('\n\x0e\x44rawTile.proto\x12\x18MAPAPI.Response832228408\"T\n\x08\x44rawTile\x12\x0f\n\x04Tile\x18\x01 \x01(\x05:\x01\x30\x12\x37\n\x05Tiles\x18\x02 \x03(\x0b\x32(.MAPAPI.Response832228408.DrawTileStruct\"c\n\x0e\x44rawTileStruct\x12\x0c\n\x01X\x18\x01 \x01(\x05:\x01\x30\x12\x0c\n\x01Y\x18\x02 \x01(\x05:\x01\x30\x12\x0f\n\x04Type\x18\x03 \x01(\x05:\x01\x30\x12\x10\n\x05Layer\x18\x04 \x01(\x05:\x01\x30\x12\x12\n\x07NewType\x18\x05 \x01(\x05:\x01\x30')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,20 +28,20 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _DRAWTILE = _descriptor.Descriptor(
   name='DrawTile',
-  full_name='MAPAPI.Response7.DrawTile',
+  full_name='MAPAPI.Response832228408.DrawTile',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Tile', full_name='MAPAPI.Response7.DrawTile.Tile', index=0,
+      name='Tile', full_name='MAPAPI.Response832228408.DrawTile.Tile', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Tiles', full_name='MAPAPI.Response7.DrawTile.Tiles', index=1,
+      name='Tiles', full_name='MAPAPI.Response832228408.DrawTile.Tiles', index=1,
       number=2, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -59,48 +59,48 @@ _DRAWTILE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=36,
-  serialized_end=112,
+  serialized_start=44,
+  serialized_end=128,
 )
 
 
 _DRAWTILESTRUCT = _descriptor.Descriptor(
   name='DrawTileStruct',
-  full_name='MAPAPI.Response7.DrawTileStruct',
+  full_name='MAPAPI.Response832228408.DrawTileStruct',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='X', full_name='MAPAPI.Response7.DrawTileStruct.X', index=0,
+      name='X', full_name='MAPAPI.Response832228408.DrawTileStruct.X', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Y', full_name='MAPAPI.Response7.DrawTileStruct.Y', index=1,
+      name='Y', full_name='MAPAPI.Response832228408.DrawTileStruct.Y', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Type', full_name='MAPAPI.Response7.DrawTileStruct.Type', index=2,
+      name='Type', full_name='MAPAPI.Response832228408.DrawTileStruct.Type', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Layer', full_name='MAPAPI.Response7.DrawTileStruct.Layer', index=3,
+      name='Layer', full_name='MAPAPI.Response832228408.DrawTileStruct.Layer', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='NewType', full_name='MAPAPI.Response7.DrawTileStruct.NewType', index=4,
+      name='NewType', full_name='MAPAPI.Response832228408.DrawTileStruct.NewType', index=4,
       number=5, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -118,8 +118,8 @@ _DRAWTILESTRUCT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=114,
-  serialized_end=213,
+  serialized_start=130,
+  serialized_end=229,
 )
 
 _DRAWTILE.fields_by_name['Tiles'].message_type = _DRAWTILESTRUCT
@@ -129,14 +129,14 @@ DESCRIPTOR.message_types_by_name['DrawTileStruct'] = _DRAWTILESTRUCT
 DrawTile = _reflection.GeneratedProtocolMessageType('DrawTile', (_message.Message,), dict(
   DESCRIPTOR = _DRAWTILE,
   __module__ = 'DrawTile_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response7.DrawTile)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response832228408.DrawTile)
   ))
 _sym_db.RegisterMessage(DrawTile)
 
 DrawTileStruct = _reflection.GeneratedProtocolMessageType('DrawTileStruct', (_message.Message,), dict(
   DESCRIPTOR = _DRAWTILESTRUCT,
   __module__ = 'DrawTile_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response7.DrawTileStruct)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response832228408.DrawTileStruct)
   ))
 _sym_db.RegisterMessage(DrawTileStruct)
 

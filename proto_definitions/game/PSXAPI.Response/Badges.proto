@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Response5;
+package PSXAPI.Response1634356596;
 
 message Badges {
    repeated int32 All = 1;

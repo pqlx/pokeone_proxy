@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='EncounterReset.proto',
-  package='PSXAPI.Response21',
+  package='PSXAPI.Response1121971087',
   syntax='proto2',
-  serialized_pb=_b('\n\x14\x45ncounterReset.proto\x12\x11PSXAPI.Response21\"\x10\n\x0e\x45ncounterReset')
+  serialized_pb=_b('\n\x14\x45ncounterReset.proto\x12\x19PSXAPI.Response1121971087\"\x10\n\x0e\x45ncounterReset')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,7 +28,7 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _ENCOUNTERRESET = _descriptor.Descriptor(
   name='EncounterReset',
-  full_name='PSXAPI.Response21.EncounterReset',
+  full_name='PSXAPI.Response1121971087.EncounterReset',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
@@ -45,8 +45,8 @@ _ENCOUNTERRESET = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=43,
-  serialized_end=59,
+  serialized_start=51,
+  serialized_end=67,
 )
 
 DESCRIPTOR.message_types_by_name['EncounterReset'] = _ENCOUNTERRESET
@@ -54,7 +54,7 @@ DESCRIPTOR.message_types_by_name['EncounterReset'] = _ENCOUNTERRESET
 EncounterReset = _reflection.GeneratedProtocolMessageType('EncounterReset', (_message.Message,), dict(
   DESCRIPTOR = _ENCOUNTERRESET,
   __module__ = 'EncounterReset_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response21.EncounterReset)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1121971087.EncounterReset)
   ))
 _sym_db.RegisterMessage(EncounterReset)
 

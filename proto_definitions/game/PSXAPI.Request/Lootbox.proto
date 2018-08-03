@@ -1,16 +1,20 @@
 syntax = "proto2";
-package PSXAPI.Request42;
+package PSXAPI.Request1779278582;
 
 message Lootbox {
-   required LootboxAction Action = 1;
-   required LootboxType Type = 2;
+   required PREFIX_AGDFASBV921312547.LootboxAction Action = 1;
+   required PREFIX_AGDFASBV2037689197.LootboxType Type = 2;
 }
-enum LootboxAction {
-   __None = 0;
+message PREFIX_AGDFASBV921312547 {
+    enum LootboxAction {
+   NoneValue = 0;
    Open = 1;
-}
-enum LootboxType {
-   __None0 = 0;
+} //PREFIX_AGDFASBV
+};
+message PREFIX_AGDFASBV2037689197 {
+    enum LootboxType {
+   NoneValue = 0;
    Small = 1;
    Normal = 2;
-}
+} //PREFIX_AGDFASBV
+};

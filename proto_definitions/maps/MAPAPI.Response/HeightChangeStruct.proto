@@ -1,5 +1,5 @@
 syntax = "proto2";
-package MAPAPI.Response11;
+package MAPAPI.Response2044838355;
 
 message HeightChangeStruct {
    optional int32 X = 1 [default = 0];

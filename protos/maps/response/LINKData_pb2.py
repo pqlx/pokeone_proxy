@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -14,21 +13,23 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
-import bcl_pb2 as bcl__pb2
+from protobuf_net import bcl_pb2 as protobuf__net_dot_bcl__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='LINKData.proto',
-  package='MAPAPI.Response15',
+  package='MAPAPI.Response981743904',
   syntax='proto2',
-  serialized_pb=_b('\n\x0eLINKData.proto\x12\x11MAPAPI.Response15\x1a\tbcl.proto\"\xd3\x01\n\x08LINKData\x12\x0c\n\x01x\x18\x01 \x01(\x05:\x01\x30\x12\x0c\n\x01y\x18\x02 \x01(\x05:\x01\x30\x12\x0c\n\x01z\x18\x03 \x01(\x05:\x01\x30\x12\x15\n\x02ID\x18\x04 \x01(\x0b\x32\t.bcl.Guid\x12 \n\rDestinationID\x18\x05 \x01(\x0b\x32\t.bcl.Guid\x12=\n\x08LINKType\x18\x06 \x01(\x0e\x32\x1b.MAPAPI.Response15.LinkType:\x0eSendAndRecieve\x12\x15\n\nTransition\x18\x07 \x01(\x05:\x01\x30\x12\x0e\n\x06Script\x18\x08 \x01(\t*X\n\x08LinkType\x12\x12\n\x0eSendAndRecieve\x10\x00\x12\x12\n\x0eTileScriptWait\x10\x01\x12\x17\n\x13TileScriptImmediate\x10\x02\x12\x0b\n\x07\x44\x65\x66\x61ult\x10\x03')
+  serialized_pb=_b('\n\x0eLINKData.proto\x12\x18MAPAPI.Response981743904\x1a\x16protobuf-net/bcl.proto\"\xf3\x01\n\x08LINKData\x12\x0c\n\x01x\x18\x01 \x01(\x05:\x01\x30\x12\x0c\n\x01y\x18\x02 \x01(\x05:\x01\x30\x12\x0c\n\x01z\x18\x03 \x01(\x05:\x01\x30\x12\x15\n\x02ID\x18\x04 \x01(\x0b\x32\t.bcl.Guid\x12 \n\rDestinationID\x18\x05 \x01(\x0b\x32\t.bcl.Guid\x12]\n\x08LINKType\x18\x06 \x01(\x0e\x32;.MAPAPI.Response981743904.PREFIX_AGDFASBV862829687.LinkType:\x0eSendAndRecieve\x12\x15\n\nTransition\x18\x07 \x01(\x05:\x01\x30\x12\x0e\n\x06Script\x18\x08 \x01(\t\"t\n\x18PREFIX_AGDFASBV862829687\"X\n\x08LinkType\x12\x12\n\x0eSendAndRecieve\x10\x00\x12\x12\n\x0eTileScriptWait\x10\x01\x12\x17\n\x13TileScriptImmediate\x10\x02\x12\x0b\n\x07\x44\x65\x66\x61ult\x10\x03')
   ,
-  dependencies=[bcl__pb2.DESCRIPTOR,])
+  dependencies=[protobuf__net_dot_bcl__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_LINKTYPE = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV862829687_LINKTYPE = _descriptor.EnumDescriptor(
   name='LinkType',
-  full_name='MAPAPI.Response15.LinkType',
+  full_name='MAPAPI.Response981743904.PREFIX_AGDFASBV862829687.LinkType',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -51,77 +52,70 @@ _LINKTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=262,
-  serialized_end=350,
+  serialized_start=342,
+  serialized_end=430,
 )
-_sym_db.RegisterEnumDescriptor(_LINKTYPE)
-
-LinkType = enum_type_wrapper.EnumTypeWrapper(_LINKTYPE)
-SendAndRecieve = 0
-TileScriptWait = 1
-TileScriptImmediate = 2
-Default = 3
-
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV862829687_LINKTYPE)
 
 
 _LINKDATA = _descriptor.Descriptor(
   name='LINKData',
-  full_name='MAPAPI.Response15.LINKData',
+  full_name='MAPAPI.Response981743904.LINKData',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='x', full_name='MAPAPI.Response15.LINKData.x', index=0,
+      name='x', full_name='MAPAPI.Response981743904.LINKData.x', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='y', full_name='MAPAPI.Response15.LINKData.y', index=1,
+      name='y', full_name='MAPAPI.Response981743904.LINKData.y', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='z', full_name='MAPAPI.Response15.LINKData.z', index=2,
+      name='z', full_name='MAPAPI.Response981743904.LINKData.z', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='ID', full_name='MAPAPI.Response15.LINKData.ID', index=3,
+      name='ID', full_name='MAPAPI.Response981743904.LINKData.ID', index=3,
       number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='DestinationID', full_name='MAPAPI.Response15.LINKData.DestinationID', index=4,
+      name='DestinationID', full_name='MAPAPI.Response981743904.LINKData.DestinationID', index=4,
       number=5, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='LINKType', full_name='MAPAPI.Response15.LINKData.LINKType', index=5,
+      name='LINKType', full_name='MAPAPI.Response981743904.LINKData.LINKType', index=5,
       number=6, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Transition', full_name='MAPAPI.Response15.LINKData.Transition', index=6,
+      name='Transition', full_name='MAPAPI.Response981743904.LINKData.Transition', index=6,
       number=7, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Script', full_name='MAPAPI.Response15.LINKData.Script', index=7,
+      name='Script', full_name='MAPAPI.Response981743904.LINKData.Script', index=7,
       number=8, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -139,22 +133,55 @@ _LINKDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=49,
-  serialized_end=260,
+  serialized_start=69,
+  serialized_end=312,
 )
 
-_LINKDATA.fields_by_name['ID'].message_type = bcl__pb2._GUID
-_LINKDATA.fields_by_name['DestinationID'].message_type = bcl__pb2._GUID
-_LINKDATA.fields_by_name['LINKType'].enum_type = _LINKTYPE
+
+_PREFIX_AGDFASBV862829687 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV862829687',
+  full_name='MAPAPI.Response981743904.PREFIX_AGDFASBV862829687',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV862829687_LINKTYPE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=314,
+  serialized_end=430,
+)
+
+_LINKDATA.fields_by_name['ID'].message_type = protobuf__net_dot_bcl__pb2._GUID
+_LINKDATA.fields_by_name['DestinationID'].message_type = protobuf__net_dot_bcl__pb2._GUID
+_LINKDATA.fields_by_name['LINKType'].enum_type = _PREFIX_AGDFASBV862829687_LINKTYPE
+_PREFIX_AGDFASBV862829687_LINKTYPE.containing_type = _PREFIX_AGDFASBV862829687
 DESCRIPTOR.message_types_by_name['LINKData'] = _LINKDATA
-DESCRIPTOR.enum_types_by_name['LinkType'] = _LINKTYPE
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV862829687'] = _PREFIX_AGDFASBV862829687
 
 LINKData = _reflection.GeneratedProtocolMessageType('LINKData', (_message.Message,), dict(
   DESCRIPTOR = _LINKDATA,
   __module__ = 'LINKData_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response15.LINKData)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response981743904.LINKData)
   ))
 _sym_db.RegisterMessage(LINKData)
+
+PREFIX_AGDFASBV862829687 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV862829687', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV862829687,
+  __module__ = 'LINKData_pb2'
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response981743904.PREFIX_AGDFASBV862829687)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV862829687)
 
 
 # @@protoc_insertion_point(module_scope)

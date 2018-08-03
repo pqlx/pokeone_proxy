@@ -13,16 +13,16 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
-import bcl_pb2 as bcl__pb2
+from protobuf_net import bcl_pb2 as protobuf__net_dot_bcl__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='PlayerMouse.proto',
-  package='MAPAPI.Response31',
+  package='MAPAPI.Response1014514492',
   syntax='proto2',
-  serialized_pb=_b('\n\x11PlayerMouse.proto\x12\x11MAPAPI.Response31\x1a\tbcl.proto\"N\n\x0bPlayerMouse\x12\x0c\n\x01x\x18\x01 \x01(\x05:\x01\x30\x12\x0c\n\x01y\x18\x02 \x01(\x05:\x01\x30\x12\x0c\n\x01z\x18\x03 \x01(\x05:\x01\x30\x12\x15\n\x02ID\x18\x04 \x01(\x0b\x32\t.bcl.Guid')
+  serialized_pb=_b('\n\x11PlayerMouse.proto\x12\x19MAPAPI.Response1014514492\x1a\x16protobuf-net/bcl.proto\"N\n\x0bPlayerMouse\x12\x0c\n\x01x\x18\x01 \x01(\x05:\x01\x30\x12\x0c\n\x01y\x18\x02 \x01(\x05:\x01\x30\x12\x0c\n\x01z\x18\x03 \x01(\x05:\x01\x30\x12\x15\n\x02ID\x18\x04 \x01(\x0b\x32\t.bcl.Guid')
   ,
-  dependencies=[bcl__pb2.DESCRIPTOR,])
+  dependencies=[protobuf__net_dot_bcl__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
@@ -30,34 +30,34 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _PLAYERMOUSE = _descriptor.Descriptor(
   name='PlayerMouse',
-  full_name='MAPAPI.Response31.PlayerMouse',
+  full_name='MAPAPI.Response1014514492.PlayerMouse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='x', full_name='MAPAPI.Response31.PlayerMouse.x', index=0,
+      name='x', full_name='MAPAPI.Response1014514492.PlayerMouse.x', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='y', full_name='MAPAPI.Response31.PlayerMouse.y', index=1,
+      name='y', full_name='MAPAPI.Response1014514492.PlayerMouse.y', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='z', full_name='MAPAPI.Response31.PlayerMouse.z', index=2,
+      name='z', full_name='MAPAPI.Response1014514492.PlayerMouse.z', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='ID', full_name='MAPAPI.Response31.PlayerMouse.ID', index=3,
+      name='ID', full_name='MAPAPI.Response1014514492.PlayerMouse.ID', index=3,
       number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -75,17 +75,17 @@ _PLAYERMOUSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=51,
-  serialized_end=129,
+  serialized_start=72,
+  serialized_end=150,
 )
 
-_PLAYERMOUSE.fields_by_name['ID'].message_type = bcl__pb2._GUID
+_PLAYERMOUSE.fields_by_name['ID'].message_type = protobuf__net_dot_bcl__pb2._GUID
 DESCRIPTOR.message_types_by_name['PlayerMouse'] = _PLAYERMOUSE
 
 PlayerMouse = _reflection.GeneratedProtocolMessageType('PlayerMouse', (_message.Message,), dict(
   DESCRIPTOR = _PLAYERMOUSE,
   __module__ = 'PlayerMouse_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response31.PlayerMouse)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response1014514492.PlayerMouse)
   ))
 _sym_db.RegisterMessage(PlayerMouse)
 

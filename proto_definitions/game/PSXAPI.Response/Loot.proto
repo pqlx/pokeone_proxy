@@ -1,21 +1,23 @@
 syntax = "proto2";
-package PSXAPI.Response49;
-import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+package PSXAPI.Response910864062;
+import "protobuf-net/bcl.proto"; // schema for protobuf-net's handling of core .NET types
 
 message Loot {
    optional LootVote Vote = 1;
-   optional LootVoteResult Result = 2 [default = TimedOut];
+   optional PREFIX_AGDFASBV2002746575.LootVoteResult Result = 2 [default = TimedOut];
    optional string Winner = 3;
 }
 message LootVote {
-   optional .bcl.Guid VoteID = 1 ;
+   optional .bcl.Guid VoteID = 1;
    optional int32 ItemID = 2 [default = 0];
    optional uint32 Quantity = 3 [default = 0];
    optional .bcl.TimeSpan Duration = 4;
 }
-enum LootVoteResult {
+message PREFIX_AGDFASBV2002746575 {
+    enum LootVoteResult {
    TimedOut = 0;
    Won = 1;
    Lost = 2;
    Passed = 3;
-}
+} //PREFIX_AGDFASBV
+};

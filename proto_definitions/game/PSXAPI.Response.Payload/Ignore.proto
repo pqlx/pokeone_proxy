@@ -1,6 +1,6 @@
 syntax = "proto2";
-package PSXAPI.Response.Payload17;
-import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+package PSXAPI.Response.Payload140647025;
+import "protobuf-net/bcl.proto"; // schema for protobuf-net's handling of core .NET types
 
 message Ignore {
    optional string Name = 1;

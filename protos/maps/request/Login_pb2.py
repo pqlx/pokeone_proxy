@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Login.proto',
-  package='MAPAPI.Request3',
+  package='MAPAPI.Request1614287748',
   syntax='proto2',
-  serialized_pb=_b('\n\x0bLogin.proto\x12\x0fMAPAPI.Request3\"+\n\x05Login\x12\x10\n\x08Username\x18\x01 \x01(\t\x12\x10\n\x08Password\x18\x02 \x01(\t')
+  serialized_pb=_b('\n\x0bLogin.proto\x12\x18MAPAPI.Request1614287748\"+\n\x05Login\x12\x10\n\x08Username\x18\x01 \x01(\t\x12\x10\n\x08Password\x18\x02 \x01(\t')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,20 +28,20 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _LOGIN = _descriptor.Descriptor(
   name='Login',
-  full_name='MAPAPI.Request3.Login',
+  full_name='MAPAPI.Request1614287748.Login',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Username', full_name='MAPAPI.Request3.Login.Username', index=0,
+      name='Username', full_name='MAPAPI.Request1614287748.Login.Username', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Password', full_name='MAPAPI.Request3.Login.Password', index=1,
+      name='Password', full_name='MAPAPI.Request1614287748.Login.Password', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -59,8 +59,8 @@ _LOGIN = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=32,
-  serialized_end=75,
+  serialized_start=41,
+  serialized_end=84,
 )
 
 DESCRIPTOR.message_types_by_name['Login'] = _LOGIN
@@ -68,7 +68,7 @@ DESCRIPTOR.message_types_by_name['Login'] = _LOGIN
 Login = _reflection.GeneratedProtocolMessageType('Login', (_message.Message,), dict(
   DESCRIPTOR = _LOGIN,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Request3.Login)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Request1614287748.Login)
   ))
 _sym_db.RegisterMessage(Login)
 

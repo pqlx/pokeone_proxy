@@ -13,16 +13,16 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
-import bcl_pb2 as bcl__pb2
+from protobuf_net import bcl_pb2 as protobuf__net_dot_bcl__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Path.proto',
-  package='PSXAPI.Request48',
+  package='PSXAPI.Request1625773511',
   syntax='proto2',
-  serialized_pb=_b('\n\nPath.proto\x12\x10PSXAPI.Request48\x1a\tbcl.proto\"\"\n\x04Path\x12\x1a\n\x07Request\x18\x01 \x01(\x0b\x32\t.bcl.Guid')
+  serialized_pb=_b('\n\nPath.proto\x12\x18PSXAPI.Request1625773511\x1a\x16protobuf-net/bcl.proto\"\"\n\x04Path\x12\x1a\n\x07Request\x18\x01 \x01(\x0b\x32\t.bcl.Guid')
   ,
-  dependencies=[bcl__pb2.DESCRIPTOR,])
+  dependencies=[protobuf__net_dot_bcl__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
@@ -30,13 +30,13 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _PATH = _descriptor.Descriptor(
   name='Path',
-  full_name='PSXAPI.Request48.Path',
+  full_name='PSXAPI.Request1625773511.Path',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Request', full_name='PSXAPI.Request48.Path.Request', index=0,
+      name='Request', full_name='PSXAPI.Request1625773511.Path.Request', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -54,17 +54,17 @@ _PATH = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=43,
-  serialized_end=77,
+  serialized_start=64,
+  serialized_end=98,
 )
 
-_PATH.fields_by_name['Request'].message_type = bcl__pb2._GUID
+_PATH.fields_by_name['Request'].message_type = protobuf__net_dot_bcl__pb2._GUID
 DESCRIPTOR.message_types_by_name['Path'] = _PATH
 
 Path = _reflection.GeneratedProtocolMessageType('Path', (_message.Message,), dict(
   DESCRIPTOR = _PATH,
   __module__ = 'Path_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request48.Path)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request1625773511.Path)
   ))
 _sym_db.RegisterMessage(Path)
 

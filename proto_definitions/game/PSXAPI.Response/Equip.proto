@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Response22;
+package PSXAPI.Response1094186717;
 
 message Equip {
    optional int32 Clothe = 1 [default = 0];

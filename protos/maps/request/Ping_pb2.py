@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Ping.proto',
-  package='MAPAPI.Request4',
+  package='MAPAPI.Request466278500',
   syntax='proto2',
-  serialized_pb=_b('\n\nPing.proto\x12\x0fMAPAPI.Request4\"\x06\n\x04Ping')
+  serialized_pb=_b('\n\nPing.proto\x12\x17MAPAPI.Request466278500\"\x06\n\x04Ping')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,7 +28,7 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _PING = _descriptor.Descriptor(
   name='Ping',
-  full_name='MAPAPI.Request4.Ping',
+  full_name='MAPAPI.Request466278500.Ping',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
@@ -45,8 +45,8 @@ _PING = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=31,
-  serialized_end=37,
+  serialized_start=39,
+  serialized_end=45,
 )
 
 DESCRIPTOR.message_types_by_name['Ping'] = _PING
@@ -54,7 +54,7 @@ DESCRIPTOR.message_types_by_name['Ping'] = _PING
 Ping = _reflection.GeneratedProtocolMessageType('Ping', (_message.Message,), dict(
   DESCRIPTOR = _PING,
   __module__ = 'Ping_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Request4.Ping)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Request466278500.Ping)
   ))
 _sym_db.RegisterMessage(Ping)
 

@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -14,21 +13,23 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
-import bcl_pb2 as bcl__pb2
+from protobuf_net import bcl_pb2 as protobuf__net_dot_bcl__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Friends.proto',
-  package='',
+  package='PSXAPI.Response421554605',
   syntax='proto2',
-  serialized_pb=_b('\n\rFriends.proto\x1a\tbcl.proto\"\xba\x01\n\x06\x46riend\x12\x0c\n\x04Name\x18\x01 \x01(\t\x12\x15\n\x06Online\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\"\n\x0bOnlineSince\x18\x03 \x01(\x0b\x32\r.bcl.TimeSpan\x12\"\n\x0b\x46riendSince\x18\x04 \x01(\x0b\x32\r.bcl.TimeSpan\x12\x0b\n\x03Map\x18\x05 \x01(\t\x12\x13\n\x04\x41way\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x0f\n\x07Message\x18\x07 \x01(\t\x12\x10\n\x05Level\x18\x08 \x01(\r:\x01\x30\"E\n\x07\x46riends\x12\x15\n\x04List\x18\x01 \x03(\x0b\x32\x07.Friend\x12#\n\x06\x41\x63tion\x18\x02 \x01(\x0e\x32\x0e.FriendsAction:\x03\x41ll*9\n\rFriendsAction\x12\x07\n\x03\x41ll\x10\x00\x12\x07\n\x03\x41\x64\x64\x10\x01\x12\n\n\x06Remove\x10\x02\x12\n\n\x06Update\x10\x03')
+  serialized_pb=_b('\n\rFriends.proto\x12\x18PSXAPI.Response421554605\x1a\x16protobuf-net/bcl.proto\"\xba\x01\n\x06\x46riend\x12\x0c\n\x04Name\x18\x01 \x01(\t\x12\x15\n\x06Online\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\"\n\x0bOnlineSince\x18\x03 \x01(\x0b\x32\r.bcl.TimeSpan\x12\"\n\x0b\x46riendSince\x18\x04 \x01(\x0b\x32\r.bcl.TimeSpan\x12\x0b\n\x03Map\x18\x05 \x01(\t\x12\x13\n\x04\x41way\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x0f\n\x07Message\x18\x07 \x01(\t\x12\x10\n\x05Level\x18\x08 \x01(\r:\x01\x30\"\x90\x01\n\x07\x46riends\x12.\n\x04List\x18\x01 \x03(\x0b\x32 .PSXAPI.Response421554605.Friend\x12U\n\x06\x41\x63tion\x18\x02 \x01(\x0e\x32@.PSXAPI.Response421554605.PREFIX_AGDFASBV571132579.FriendsAction:\x03\x41ll\"U\n\x18PREFIX_AGDFASBV571132579\"9\n\rFriendsAction\x12\x07\n\x03\x41ll\x10\x00\x12\x07\n\x03\x41\x64\x64\x10\x01\x12\n\n\x06Remove\x10\x02\x12\n\n\x06Update\x10\x03')
   ,
-  dependencies=[bcl__pb2.DESCRIPTOR,])
+  dependencies=[protobuf__net_dot_bcl__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_FRIENDSACTION = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV571132579_FRIENDSACTION = _descriptor.EnumDescriptor(
   name='FriendsAction',
-  full_name='FriendsAction',
+  full_name='PSXAPI.Response421554605.PREFIX_AGDFASBV571132579.FriendsAction',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -51,77 +52,70 @@ _FRIENDSACTION = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=288,
-  serialized_end=345,
+  serialized_start=431,
+  serialized_end=488,
 )
-_sym_db.RegisterEnumDescriptor(_FRIENDSACTION)
-
-FriendsAction = enum_type_wrapper.EnumTypeWrapper(_FRIENDSACTION)
-All = 0
-Add = 1
-Remove = 2
-Update = 3
-
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV571132579_FRIENDSACTION)
 
 
 _FRIEND = _descriptor.Descriptor(
   name='Friend',
-  full_name='Friend',
+  full_name='PSXAPI.Response421554605.Friend',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Name', full_name='Friend.Name', index=0,
+      name='Name', full_name='PSXAPI.Response421554605.Friend.Name', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Online', full_name='Friend.Online', index=1,
+      name='Online', full_name='PSXAPI.Response421554605.Friend.Online', index=1,
       number=2, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='OnlineSince', full_name='Friend.OnlineSince', index=2,
+      name='OnlineSince', full_name='PSXAPI.Response421554605.Friend.OnlineSince', index=2,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='FriendSince', full_name='Friend.FriendSince', index=3,
+      name='FriendSince', full_name='PSXAPI.Response421554605.Friend.FriendSince', index=3,
       number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Map', full_name='Friend.Map', index=4,
+      name='Map', full_name='PSXAPI.Response421554605.Friend.Map', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Away', full_name='Friend.Away', index=5,
+      name='Away', full_name='PSXAPI.Response421554605.Friend.Away', index=5,
       number=6, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Message', full_name='Friend.Message', index=6,
+      name='Message', full_name='PSXAPI.Response421554605.Friend.Message', index=6,
       number=7, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Level', full_name='Friend.Level', index=7,
+      name='Level', full_name='PSXAPI.Response421554605.Friend.Level', index=7,
       number=8, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -139,27 +133,27 @@ _FRIEND = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=29,
-  serialized_end=215,
+  serialized_start=68,
+  serialized_end=254,
 )
 
 
 _FRIENDS = _descriptor.Descriptor(
   name='Friends',
-  full_name='Friends',
+  full_name='PSXAPI.Response421554605.Friends',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='List', full_name='Friends.List', index=0,
+      name='List', full_name='PSXAPI.Response421554605.Friends.List', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Action', full_name='Friends.Action', index=1,
+      name='Action', full_name='PSXAPI.Response421554605.Friends.Action', index=1,
       number=2, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -177,31 +171,64 @@ _FRIENDS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=217,
-  serialized_end=286,
+  serialized_start=257,
+  serialized_end=401,
 )
 
-_FRIEND.fields_by_name['OnlineSince'].message_type = bcl__pb2._TIMESPAN
-_FRIEND.fields_by_name['FriendSince'].message_type = bcl__pb2._TIMESPAN
+
+_PREFIX_AGDFASBV571132579 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV571132579',
+  full_name='PSXAPI.Response421554605.PREFIX_AGDFASBV571132579',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV571132579_FRIENDSACTION,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=403,
+  serialized_end=488,
+)
+
+_FRIEND.fields_by_name['OnlineSince'].message_type = protobuf__net_dot_bcl__pb2._TIMESPAN
+_FRIEND.fields_by_name['FriendSince'].message_type = protobuf__net_dot_bcl__pb2._TIMESPAN
 _FRIENDS.fields_by_name['List'].message_type = _FRIEND
-_FRIENDS.fields_by_name['Action'].enum_type = _FRIENDSACTION
+_FRIENDS.fields_by_name['Action'].enum_type = _PREFIX_AGDFASBV571132579_FRIENDSACTION
+_PREFIX_AGDFASBV571132579_FRIENDSACTION.containing_type = _PREFIX_AGDFASBV571132579
 DESCRIPTOR.message_types_by_name['Friend'] = _FRIEND
 DESCRIPTOR.message_types_by_name['Friends'] = _FRIENDS
-DESCRIPTOR.enum_types_by_name['FriendsAction'] = _FRIENDSACTION
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV571132579'] = _PREFIX_AGDFASBV571132579
 
 Friend = _reflection.GeneratedProtocolMessageType('Friend', (_message.Message,), dict(
   DESCRIPTOR = _FRIEND,
   __module__ = 'Friends_pb2'
-  # @@protoc_insertion_point(class_scope:Friend)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response421554605.Friend)
   ))
 _sym_db.RegisterMessage(Friend)
 
 Friends = _reflection.GeneratedProtocolMessageType('Friends', (_message.Message,), dict(
   DESCRIPTOR = _FRIENDS,
   __module__ = 'Friends_pb2'
-  # @@protoc_insertion_point(class_scope:Friends)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response421554605.Friends)
   ))
 _sym_db.RegisterMessage(Friends)
+
+PREFIX_AGDFASBV571132579 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV571132579', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV571132579,
+  __module__ = 'Friends_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response421554605.PREFIX_AGDFASBV571132579)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV571132579)
 
 
 # @@protoc_insertion_point(module_scope)

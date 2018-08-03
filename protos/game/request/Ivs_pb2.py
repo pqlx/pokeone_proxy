@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -14,21 +13,23 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
-import bcl_pb2 as bcl__pb2
+from protobuf_net import bcl_pb2 as protobuf__net_dot_bcl__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Ivs.proto',
-  package='PSXAPI.Request30',
+  package='PSXAPI.Request1980515515',
   syntax='proto2',
-  serialized_pb=_b('\n\tIvs.proto\x12\x10PSXAPI.Request30\x1a\tbcl.proto\"\xd9\x01\n\x03Ivs\x12\x1a\n\x07Pokemon\x18\x01 \x01(\x0b\x32\t.bcl.Guid\x12\x39\n\x06\x41\x63tion\x18\x02 \x01(\x0e\x32\x1b.PSXAPI.Request30.IvsAction:\x0cRequestPrice\x12\x11\n\x02Hp\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x12\n\x03\x41tk\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x12\n\x03\x44\x65\x66\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x14\n\x05Speed\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x14\n\x05SpAtk\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x14\n\x05SpDef\x18\x08 \x01(\x08:\x05\x66\x61lse*,\n\tIvsAction\x12\x10\n\x0cRequestPrice\x10\x00\x12\r\n\tRandomize\x10\x01')
+  serialized_pb=_b('\n\tIvs.proto\x12\x18PSXAPI.Request1980515515\x1a\x16protobuf-net/bcl.proto\"\xfb\x01\n\x03Ivs\x12\x1a\n\x07Pokemon\x18\x01 \x01(\x0b\x32\t.bcl.Guid\x12[\n\x06\x41\x63tion\x18\x02 \x01(\x0e\x32=.PSXAPI.Request1980515515.PREFIX_AGDFASBV1570135301.IvsAction:\x0cRequestPrice\x12\x11\n\x02Hp\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x12\n\x03\x41tk\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x12\n\x03\x44\x65\x66\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x14\n\x05Speed\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x14\n\x05SpAtk\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x14\n\x05SpDef\x18\x08 \x01(\x08:\x05\x66\x61lse\"I\n\x19PREFIX_AGDFASBV1570135301\",\n\tIvsAction\x12\x10\n\x0cRequestPrice\x10\x00\x12\r\n\tRandomize\x10\x01')
   ,
-  dependencies=[bcl__pb2.DESCRIPTOR,])
+  dependencies=[protobuf__net_dot_bcl__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_IVSACTION = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV1570135301_IVSACTION = _descriptor.EnumDescriptor(
   name='IvsAction',
-  full_name='PSXAPI.Request30.IvsAction',
+  full_name='PSXAPI.Request1980515515.PREFIX_AGDFASBV1570135301.IvsAction',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -43,75 +44,70 @@ _IVSACTION = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=262,
-  serialized_end=306,
+  serialized_start=346,
+  serialized_end=390,
 )
-_sym_db.RegisterEnumDescriptor(_IVSACTION)
-
-IvsAction = enum_type_wrapper.EnumTypeWrapper(_IVSACTION)
-RequestPrice = 0
-Randomize = 1
-
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1570135301_IVSACTION)
 
 
 _IVS = _descriptor.Descriptor(
   name='Ivs',
-  full_name='PSXAPI.Request30.Ivs',
+  full_name='PSXAPI.Request1980515515.Ivs',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Pokemon', full_name='PSXAPI.Request30.Ivs.Pokemon', index=0,
+      name='Pokemon', full_name='PSXAPI.Request1980515515.Ivs.Pokemon', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Action', full_name='PSXAPI.Request30.Ivs.Action', index=1,
+      name='Action', full_name='PSXAPI.Request1980515515.Ivs.Action', index=1,
       number=2, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Hp', full_name='PSXAPI.Request30.Ivs.Hp', index=2,
+      name='Hp', full_name='PSXAPI.Request1980515515.Ivs.Hp', index=2,
       number=3, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Atk', full_name='PSXAPI.Request30.Ivs.Atk', index=3,
+      name='Atk', full_name='PSXAPI.Request1980515515.Ivs.Atk', index=3,
       number=4, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Def', full_name='PSXAPI.Request30.Ivs.Def', index=4,
+      name='Def', full_name='PSXAPI.Request1980515515.Ivs.Def', index=4,
       number=5, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Speed', full_name='PSXAPI.Request30.Ivs.Speed', index=5,
+      name='Speed', full_name='PSXAPI.Request1980515515.Ivs.Speed', index=5,
       number=6, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='SpAtk', full_name='PSXAPI.Request30.Ivs.SpAtk', index=6,
+      name='SpAtk', full_name='PSXAPI.Request1980515515.Ivs.SpAtk', index=6,
       number=7, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='SpDef', full_name='PSXAPI.Request30.Ivs.SpDef', index=7,
+      name='SpDef', full_name='PSXAPI.Request1980515515.Ivs.SpDef', index=7,
       number=8, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -129,21 +125,54 @@ _IVS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=43,
-  serialized_end=260,
+  serialized_start=64,
+  serialized_end=315,
 )
 
-_IVS.fields_by_name['Pokemon'].message_type = bcl__pb2._GUID
-_IVS.fields_by_name['Action'].enum_type = _IVSACTION
+
+_PREFIX_AGDFASBV1570135301 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1570135301',
+  full_name='PSXAPI.Request1980515515.PREFIX_AGDFASBV1570135301',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1570135301_IVSACTION,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=317,
+  serialized_end=390,
+)
+
+_IVS.fields_by_name['Pokemon'].message_type = protobuf__net_dot_bcl__pb2._GUID
+_IVS.fields_by_name['Action'].enum_type = _PREFIX_AGDFASBV1570135301_IVSACTION
+_PREFIX_AGDFASBV1570135301_IVSACTION.containing_type = _PREFIX_AGDFASBV1570135301
 DESCRIPTOR.message_types_by_name['Ivs'] = _IVS
-DESCRIPTOR.enum_types_by_name['IvsAction'] = _IVSACTION
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1570135301'] = _PREFIX_AGDFASBV1570135301
 
 Ivs = _reflection.GeneratedProtocolMessageType('Ivs', (_message.Message,), dict(
   DESCRIPTOR = _IVS,
   __module__ = 'Ivs_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request30.Ivs)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request1980515515.Ivs)
   ))
 _sym_db.RegisterMessage(Ivs)
+
+PREFIX_AGDFASBV1570135301 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1570135301', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1570135301,
+  __module__ = 'Ivs_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request1980515515.PREFIX_AGDFASBV1570135301)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1570135301)
 
 
 # @@protoc_insertion_point(module_scope)

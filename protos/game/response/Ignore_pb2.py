@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -18,15 +17,17 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Ignore.proto',
-  package='PSXAPI.Response36',
+  package='PSXAPI.Response1815213232',
   syntax='proto2',
-  serialized_pb=_b('\n\x0cIgnore.proto\x12\x11PSXAPI.Response36\"g\n\x06Ignore\x12\'\n\x04List\x18\x01 \x03(\x0b\x32\x19.PSXAPI.Response36.Ignore\x12\x34\n\x06\x41\x63tion\x18\x02 \x01(\x0e\x32\x1f.PSXAPI.Response36.IgnoreAction:\x03\x41ll*,\n\x0cIgnoreAction\x12\x07\n\x03\x41ll\x10\x00\x12\x07\n\x03\x41\x64\x64\x10\x01\x12\n\n\x06Remove\x10\x02')
+  serialized_pb=_b('\n\x0cIgnore.proto\x12\x19PSXAPI.Response1815213232\"\x91\x01\n\x06Ignore\x12/\n\x04List\x18\x01 \x03(\x0b\x32!.PSXAPI.Response1815213232.Ignore\x12V\n\x06\x41\x63tion\x18\x02 \x01(\x0e\x32\x41.PSXAPI.Response1815213232.PREFIX_AGDFASBV1453436722.IgnoreAction:\x03\x41ll\"I\n\x19PREFIX_AGDFASBV1453436722\",\n\x0cIgnoreAction\x12\x07\n\x03\x41ll\x10\x00\x12\x07\n\x03\x41\x64\x64\x10\x01\x12\n\n\x06Remove\x10\x02')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_IGNOREACTION = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV1453436722_IGNOREACTION = _descriptor.EnumDescriptor(
   name='IgnoreAction',
-  full_name='PSXAPI.Response36.IgnoreAction',
+  full_name='PSXAPI.Response1815213232.PREFIX_AGDFASBV1453436722.IgnoreAction',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -45,34 +46,28 @@ _IGNOREACTION = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=140,
-  serialized_end=184,
+  serialized_start=220,
+  serialized_end=264,
 )
-_sym_db.RegisterEnumDescriptor(_IGNOREACTION)
-
-IgnoreAction = enum_type_wrapper.EnumTypeWrapper(_IGNOREACTION)
-All = 0
-Add = 1
-Remove = 2
-
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1453436722_IGNOREACTION)
 
 
 _IGNORE = _descriptor.Descriptor(
   name='Ignore',
-  full_name='PSXAPI.Response36.Ignore',
+  full_name='PSXAPI.Response1815213232.Ignore',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='List', full_name='PSXAPI.Response36.Ignore.List', index=0,
+      name='List', full_name='PSXAPI.Response1815213232.Ignore.List', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Action', full_name='PSXAPI.Response36.Ignore.Action', index=1,
+      name='Action', full_name='PSXAPI.Response1815213232.Ignore.Action', index=1,
       number=2, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -90,21 +85,54 @@ _IGNORE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=35,
-  serialized_end=138,
+  serialized_start=44,
+  serialized_end=189,
+)
+
+
+_PREFIX_AGDFASBV1453436722 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1453436722',
+  full_name='PSXAPI.Response1815213232.PREFIX_AGDFASBV1453436722',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1453436722_IGNOREACTION,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=191,
+  serialized_end=264,
 )
 
 _IGNORE.fields_by_name['List'].message_type = _IGNORE
-_IGNORE.fields_by_name['Action'].enum_type = _IGNOREACTION
+_IGNORE.fields_by_name['Action'].enum_type = _PREFIX_AGDFASBV1453436722_IGNOREACTION
+_PREFIX_AGDFASBV1453436722_IGNOREACTION.containing_type = _PREFIX_AGDFASBV1453436722
 DESCRIPTOR.message_types_by_name['Ignore'] = _IGNORE
-DESCRIPTOR.enum_types_by_name['IgnoreAction'] = _IGNOREACTION
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1453436722'] = _PREFIX_AGDFASBV1453436722
 
 Ignore = _reflection.GeneratedProtocolMessageType('Ignore', (_message.Message,), dict(
   DESCRIPTOR = _IGNORE,
   __module__ = 'Ignore_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response36.Ignore)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1815213232.Ignore)
   ))
 _sym_db.RegisterMessage(Ignore)
+
+PREFIX_AGDFASBV1453436722 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1453436722', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1453436722,
+  __module__ = 'Ignore_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1815213232.PREFIX_AGDFASBV1453436722)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1453436722)
 
 
 # @@protoc_insertion_point(module_scope)

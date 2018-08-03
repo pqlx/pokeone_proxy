@@ -1,5 +1,5 @@
 syntax = "proto2";
-package MAPAPI.Request0;
+package MAPAPI.Request1023275534;
 
 message DeleteMap {
    optional string MapName = 1;

@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='RequestMap.proto',
-  package='MAPAPI.Request7',
+  package='MAPAPI.Request2110831037',
   syntax='proto2',
-  serialized_pb=_b('\n\x10RequestMap.proto\x12\x0fMAPAPI.Request7\"+\n\nRequestMap\x12\x0f\n\x07MapName\x18\x01 \x01(\t\x12\x0c\n\x04Hash\x18\x02 \x01(\t')
+  serialized_pb=_b('\n\x10RequestMap.proto\x12\x18MAPAPI.Request2110831037\"+\n\nRequestMap\x12\x0f\n\x07MapName\x18\x01 \x01(\t\x12\x0c\n\x04Hash\x18\x02 \x01(\t')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,20 +28,20 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _REQUESTMAP = _descriptor.Descriptor(
   name='RequestMap',
-  full_name='MAPAPI.Request7.RequestMap',
+  full_name='MAPAPI.Request2110831037.RequestMap',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='MapName', full_name='MAPAPI.Request7.RequestMap.MapName', index=0,
+      name='MapName', full_name='MAPAPI.Request2110831037.RequestMap.MapName', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Hash', full_name='MAPAPI.Request7.RequestMap.Hash', index=1,
+      name='Hash', full_name='MAPAPI.Request2110831037.RequestMap.Hash', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -59,8 +59,8 @@ _REQUESTMAP = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=37,
-  serialized_end=80,
+  serialized_start=46,
+  serialized_end=89,
 )
 
 DESCRIPTOR.message_types_by_name['RequestMap'] = _REQUESTMAP
@@ -68,7 +68,7 @@ DESCRIPTOR.message_types_by_name['RequestMap'] = _REQUESTMAP
 RequestMap = _reflection.GeneratedProtocolMessageType('RequestMap', (_message.Message,), dict(
   DESCRIPTOR = _REQUESTMAP,
   __module__ = 'RequestMap_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Request7.RequestMap)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Request2110831037.RequestMap)
   ))
 _sym_db.RegisterMessage(RequestMap)
 

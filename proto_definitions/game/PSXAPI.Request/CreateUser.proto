@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Request16;
+package PSXAPI.Request1975336333;
 
 message CreateUser {
    required string Name = 1;

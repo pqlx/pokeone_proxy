@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='ConfirmDestroySession.proto',
-  package='MAPAPI.Response2',
+  package='MAPAPI.Response1866251088',
   syntax='proto2',
-  serialized_pb=_b('\n\x1b\x43onfirmDestroySession.proto\x12\x10MAPAPI.Response2\">\n\x15\x43onfirmDestroySession\x12\x0f\n\x07MapName\x18\x01 \x01(\t\x12\x14\n\tUserCount\x18\x02 \x01(\x05:\x01\x30')
+  serialized_pb=_b('\n\x1b\x43onfirmDestroySession.proto\x12\x19MAPAPI.Response1866251088\">\n\x15\x43onfirmDestroySession\x12\x0f\n\x07MapName\x18\x01 \x01(\t\x12\x14\n\tUserCount\x18\x02 \x01(\x05:\x01\x30')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,20 +28,20 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _CONFIRMDESTROYSESSION = _descriptor.Descriptor(
   name='ConfirmDestroySession',
-  full_name='MAPAPI.Response2.ConfirmDestroySession',
+  full_name='MAPAPI.Response1866251088.ConfirmDestroySession',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='MapName', full_name='MAPAPI.Response2.ConfirmDestroySession.MapName', index=0,
+      name='MapName', full_name='MAPAPI.Response1866251088.ConfirmDestroySession.MapName', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='UserCount', full_name='MAPAPI.Response2.ConfirmDestroySession.UserCount', index=1,
+      name='UserCount', full_name='MAPAPI.Response1866251088.ConfirmDestroySession.UserCount', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -59,8 +59,8 @@ _CONFIRMDESTROYSESSION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=49,
-  serialized_end=111,
+  serialized_start=58,
+  serialized_end=120,
 )
 
 DESCRIPTOR.message_types_by_name['ConfirmDestroySession'] = _CONFIRMDESTROYSESSION
@@ -68,7 +68,7 @@ DESCRIPTOR.message_types_by_name['ConfirmDestroySession'] = _CONFIRMDESTROYSESSI
 ConfirmDestroySession = _reflection.GeneratedProtocolMessageType('ConfirmDestroySession', (_message.Message,), dict(
   DESCRIPTOR = _CONFIRMDESTROYSESSION,
   __module__ = 'ConfirmDestroySession_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response2.ConfirmDestroySession)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response1866251088.ConfirmDestroySession)
   ))
 _sym_db.RegisterMessage(ConfirmDestroySession)
 

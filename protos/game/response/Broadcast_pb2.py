@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -18,20 +17,22 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Broadcast.proto',
-  package='PSXAPI.Response10',
+  package='PSXAPI.Response1512742675',
   syntax='proto2',
-  serialized_pb=_b('\n\x0f\x42roadcast.proto\x12\x11PSXAPI.Response10\"[\n\tBroadcast\x12=\n\x04Type\x18\x01 \x01(\x0e\x32\'.PSXAPI.Response10.BroadcastMessageType:\x06__None\x12\x0f\n\x07Message\x18\x02 \x01(\t*Y\n\x14\x42roadcastMessageType\x12\n\n\x06__None\x10\x00\x12\n\n\x06System\x10\x01\x12\x0b\n\x07Message\x10\x02\x12\n\n\x06Splash\x10\x03\x12\x10\n\x0cNotification\x10\x04')
+  serialized_pb=_b('\n\x0f\x42roadcast.proto\x12\x19PSXAPI.Response1512742675\"\x7f\n\tBroadcast\x12\x61\n\x04Type\x18\x01 \x01(\x0e\x32H.PSXAPI.Response1512742675.PREFIX_AGDFASBV844522189.BroadcastMessageType:\tNoneValue\x12\x0f\n\x07Message\x18\x02 \x01(\t\"x\n\x18PREFIX_AGDFASBV844522189\"\\\n\x14\x42roadcastMessageType\x12\r\n\tNoneValue\x10\x00\x12\n\n\x06System\x10\x01\x12\x0b\n\x07Message\x10\x02\x12\n\n\x06Splash\x10\x03\x12\x10\n\x0cNotification\x10\x04')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_BROADCASTMESSAGETYPE = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV844522189_BROADCASTMESSAGETYPE = _descriptor.EnumDescriptor(
   name='BroadcastMessageType',
-  full_name='PSXAPI.Response10.BroadcastMessageType',
+  full_name='PSXAPI.Response1512742675.PREFIX_AGDFASBV844522189.BroadcastMessageType',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='__None', index=0, number=0,
+      name='NoneValue', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -53,36 +54,28 @@ _BROADCASTMESSAGETYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=131,
-  serialized_end=220,
+  serialized_start=203,
+  serialized_end=295,
 )
-_sym_db.RegisterEnumDescriptor(_BROADCASTMESSAGETYPE)
-
-BroadcastMessageType = enum_type_wrapper.EnumTypeWrapper(_BROADCASTMESSAGETYPE)
-__None = 0
-System = 1
-Message = 2
-Splash = 3
-Notification = 4
-
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV844522189_BROADCASTMESSAGETYPE)
 
 
 _BROADCAST = _descriptor.Descriptor(
   name='Broadcast',
-  full_name='PSXAPI.Response10.Broadcast',
+  full_name='PSXAPI.Response1512742675.Broadcast',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Type', full_name='PSXAPI.Response10.Broadcast.Type', index=0,
+      name='Type', full_name='PSXAPI.Response1512742675.Broadcast.Type', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Message', full_name='PSXAPI.Response10.Broadcast.Message', index=1,
+      name='Message', full_name='PSXAPI.Response1512742675.Broadcast.Message', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -100,20 +93,53 @@ _BROADCAST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=38,
-  serialized_end=129,
+  serialized_start=46,
+  serialized_end=173,
 )
 
-_BROADCAST.fields_by_name['Type'].enum_type = _BROADCASTMESSAGETYPE
+
+_PREFIX_AGDFASBV844522189 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV844522189',
+  full_name='PSXAPI.Response1512742675.PREFIX_AGDFASBV844522189',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV844522189_BROADCASTMESSAGETYPE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=175,
+  serialized_end=295,
+)
+
+_BROADCAST.fields_by_name['Type'].enum_type = _PREFIX_AGDFASBV844522189_BROADCASTMESSAGETYPE
+_PREFIX_AGDFASBV844522189_BROADCASTMESSAGETYPE.containing_type = _PREFIX_AGDFASBV844522189
 DESCRIPTOR.message_types_by_name['Broadcast'] = _BROADCAST
-DESCRIPTOR.enum_types_by_name['BroadcastMessageType'] = _BROADCASTMESSAGETYPE
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV844522189'] = _PREFIX_AGDFASBV844522189
 
 Broadcast = _reflection.GeneratedProtocolMessageType('Broadcast', (_message.Message,), dict(
   DESCRIPTOR = _BROADCAST,
   __module__ = 'Broadcast_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response10.Broadcast)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1512742675.Broadcast)
   ))
 _sym_db.RegisterMessage(Broadcast)
+
+PREFIX_AGDFASBV844522189 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV844522189', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV844522189,
+  __module__ = 'Broadcast_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1512742675.PREFIX_AGDFASBV844522189)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV844522189)
 
 
 # @@protoc_insertion_point(module_scope)

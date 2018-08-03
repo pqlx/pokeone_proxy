@@ -13,16 +13,16 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
-import bcl_pb2 as bcl__pb2
+from protobuf_net import bcl_pb2 as protobuf__net_dot_bcl__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Search.proto',
-  package='PSXAPI.Request57',
+  package='PSXAPI.Request1846209937',
   syntax='proto2',
-  serialized_pb=_b('\n\x0cSearch.proto\x12\x10PSXAPI.Request57\x1a\tbcl.proto\"]\n\x06Search\x12\x1b\n\x08SearchID\x18\x01 \x01(\x0b\x32\t.bcl.Guid\x12\x0f\n\x07Pattern\x18\x02 \x01(\t\x12\x15\n\nMaxResults\x18\x03 \x01(\x05:\x01\x30\x12\x0e\n\x03\x42ox\x18\x04 \x01(\x05:\x01\x30')
+  serialized_pb=_b('\n\x0cSearch.proto\x12\x18PSXAPI.Request1846209937\x1a\x16protobuf-net/bcl.proto\"]\n\x06Search\x12\x1b\n\x08SearchID\x18\x01 \x01(\x0b\x32\t.bcl.Guid\x12\x0f\n\x07Pattern\x18\x02 \x01(\t\x12\x15\n\nMaxResults\x18\x03 \x01(\x05:\x01\x30\x12\x0e\n\x03\x42ox\x18\x04 \x01(\x05:\x01\x30')
   ,
-  dependencies=[bcl__pb2.DESCRIPTOR,])
+  dependencies=[protobuf__net_dot_bcl__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
@@ -30,34 +30,34 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _SEARCH = _descriptor.Descriptor(
   name='Search',
-  full_name='PSXAPI.Request57.Search',
+  full_name='PSXAPI.Request1846209937.Search',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='SearchID', full_name='PSXAPI.Request57.Search.SearchID', index=0,
+      name='SearchID', full_name='PSXAPI.Request1846209937.Search.SearchID', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Pattern', full_name='PSXAPI.Request57.Search.Pattern', index=1,
+      name='Pattern', full_name='PSXAPI.Request1846209937.Search.Pattern', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='MaxResults', full_name='PSXAPI.Request57.Search.MaxResults', index=2,
+      name='MaxResults', full_name='PSXAPI.Request1846209937.Search.MaxResults', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Box', full_name='PSXAPI.Request57.Search.Box', index=3,
+      name='Box', full_name='PSXAPI.Request1846209937.Search.Box', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -75,17 +75,17 @@ _SEARCH = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=45,
-  serialized_end=138,
+  serialized_start=66,
+  serialized_end=159,
 )
 
-_SEARCH.fields_by_name['SearchID'].message_type = bcl__pb2._GUID
+_SEARCH.fields_by_name['SearchID'].message_type = protobuf__net_dot_bcl__pb2._GUID
 DESCRIPTOR.message_types_by_name['Search'] = _SEARCH
 
 Search = _reflection.GeneratedProtocolMessageType('Search', (_message.Message,), dict(
   DESCRIPTOR = _SEARCH,
   __module__ = 'Search_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request57.Search)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request1846209937.Search)
   ))
 _sym_db.RegisterMessage(Search)
 

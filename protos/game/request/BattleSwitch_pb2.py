@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='BattleSwitch.proto',
-  package='PSXAPI.Request9',
+  package='PSXAPI.Request535768687',
   syntax='proto2',
-  serialized_pb=_b('\n\x12\x42\x61ttleSwitch.proto\x12\x0fPSXAPI.Request9\"K\n\x0c\x42\x61ttleSwitch\x12\x11\n\tRequestID\x18\x01 \x02(\x05\x12\x13\n\x0bNewPosition\x18\x02 \x02(\x05\x12\x13\n\x08Position\x18\x03 \x01(\x05:\x01\x30')
+  serialized_pb=_b('\n\x12\x42\x61ttleSwitch.proto\x12\x17PSXAPI.Request535768687\"K\n\x0c\x42\x61ttleSwitch\x12\x11\n\tRequestID\x18\x01 \x02(\x05\x12\x13\n\x0bNewPosition\x18\x02 \x02(\x05\x12\x13\n\x08Position\x18\x03 \x01(\x05:\x01\x30')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,27 +28,27 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _BATTLESWITCH = _descriptor.Descriptor(
   name='BattleSwitch',
-  full_name='PSXAPI.Request9.BattleSwitch',
+  full_name='PSXAPI.Request535768687.BattleSwitch',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='RequestID', full_name='PSXAPI.Request9.BattleSwitch.RequestID', index=0,
+      name='RequestID', full_name='PSXAPI.Request535768687.BattleSwitch.RequestID', index=0,
       number=1, type=5, cpp_type=1, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='NewPosition', full_name='PSXAPI.Request9.BattleSwitch.NewPosition', index=1,
+      name='NewPosition', full_name='PSXAPI.Request535768687.BattleSwitch.NewPosition', index=1,
       number=2, type=5, cpp_type=1, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Position', full_name='PSXAPI.Request9.BattleSwitch.Position', index=2,
+      name='Position', full_name='PSXAPI.Request535768687.BattleSwitch.Position', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -66,8 +66,8 @@ _BATTLESWITCH = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=39,
-  serialized_end=114,
+  serialized_start=47,
+  serialized_end=122,
 )
 
 DESCRIPTOR.message_types_by_name['BattleSwitch'] = _BATTLESWITCH
@@ -75,7 +75,7 @@ DESCRIPTOR.message_types_by_name['BattleSwitch'] = _BATTLESWITCH
 BattleSwitch = _reflection.GeneratedProtocolMessageType('BattleSwitch', (_message.Message,), dict(
   DESCRIPTOR = _BATTLESWITCH,
   __module__ = 'BattleSwitch_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request9.BattleSwitch)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request535768687.BattleSwitch)
   ))
 _sym_db.RegisterMessage(BattleSwitch)
 

@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -18,15 +17,17 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='MapUserActionData.proto',
-  package='PSXAPI.Response.Payload21',
+  package='PSXAPI.Response.Payload1725011302',
   syntax='proto2',
-  serialized_pb=_b('\n\x17MapUserActionData.proto\x12\x19PSXAPI.Response.Payload21\"\x90\x01\n\x11MapUserActionData\x12=\n\x06\x41\x63tion\x18\x01 \x01(\x0e\x32(.PSXAPI.Response.Payload21.MapUserAction:\x03Set\x12<\n\x08Position\x18\x02 \x01(\x0b\x32*.PSXAPI.Response.Payload21.MapUserPosition\"@\n\x0fMapUserPosition\x12\x0c\n\x01X\x18\x01 \x01(\x05:\x01\x30\x12\x0c\n\x01Y\x18\x02 \x01(\x05:\x01\x30\x12\x11\n\x06Height\x18\x03 \x01(\x05:\x01\x30*b\n\rMapUserAction\x12\x07\n\x03Set\x10\x00\x12\x06\n\x02Up\x10\x01\x12\x08\n\x04\x44own\x10\x02\x12\x08\n\x04Left\x10\x03\x12\t\n\x05Right\x10\x04\x12\t\n\x05\x45nter\x10\x05\x12\t\n\x05Leave\x10\x06\x12\x0b\n\x07\x46ishing\x10\x07')
+  serialized_pb=_b('\n\x17MapUserActionData.proto\x12!PSXAPI.Response.Payload1725011302\"\x7f\n\x19PREFIX_AGDFASBV1831660003\"b\n\rMapUserAction\x12\x07\n\x03Set\x10\x00\x12\x06\n\x02Up\x10\x01\x12\x08\n\x04\x44own\x10\x02\x12\x08\n\x04Left\x10\x03\x12\t\n\x05Right\x10\x04\x12\t\n\x05\x45nter\x10\x05\x12\t\n\x05Leave\x10\x06\x12\x0b\n\x07\x46ishing\x10\x07\"\xba\x01\n\x11MapUserActionData\x12_\n\x06\x41\x63tion\x18\x01 \x01(\x0e\x32J.PSXAPI.Response.Payload1725011302.PREFIX_AGDFASBV1831660003.MapUserAction:\x03Set\x12\x44\n\x08Position\x18\x02 \x01(\x0b\x32\x32.PSXAPI.Response.Payload1725011302.MapUserPosition\"@\n\x0fMapUserPosition\x12\x0c\n\x01X\x18\x01 \x01(\x05:\x01\x30\x12\x0c\n\x01Y\x18\x02 \x01(\x05:\x01\x30\x12\x11\n\x06Height\x18\x03 \x01(\x05:\x01\x30')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_MAPUSERACTION = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV1831660003_MAPUSERACTION = _descriptor.EnumDescriptor(
   name='MapUserAction',
-  full_name='PSXAPI.Response.Payload21.MapUserAction',
+  full_name='PSXAPI.Response.Payload1725011302.PREFIX_AGDFASBV1831660003.MapUserAction',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -65,39 +66,53 @@ _MAPUSERACTION = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=267,
-  serialized_end=365,
+  serialized_start=91,
+  serialized_end=189,
 )
-_sym_db.RegisterEnumDescriptor(_MAPUSERACTION)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1831660003_MAPUSERACTION)
 
-MapUserAction = enum_type_wrapper.EnumTypeWrapper(_MAPUSERACTION)
-Set = 0
-Up = 1
-Down = 2
-Left = 3
-Right = 4
-Enter = 5
-Leave = 6
-Fishing = 7
 
+_PREFIX_AGDFASBV1831660003 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1831660003',
+  full_name='PSXAPI.Response.Payload1725011302.PREFIX_AGDFASBV1831660003',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1831660003_MAPUSERACTION,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=62,
+  serialized_end=189,
+)
 
 
 _MAPUSERACTIONDATA = _descriptor.Descriptor(
   name='MapUserActionData',
-  full_name='PSXAPI.Response.Payload21.MapUserActionData',
+  full_name='PSXAPI.Response.Payload1725011302.MapUserActionData',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Action', full_name='PSXAPI.Response.Payload21.MapUserActionData.Action', index=0,
+      name='Action', full_name='PSXAPI.Response.Payload1725011302.MapUserActionData.Action', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Position', full_name='PSXAPI.Response.Payload21.MapUserActionData.Position', index=1,
+      name='Position', full_name='PSXAPI.Response.Payload1725011302.MapUserActionData.Position', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -115,34 +130,34 @@ _MAPUSERACTIONDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=55,
-  serialized_end=199,
+  serialized_start=192,
+  serialized_end=378,
 )
 
 
 _MAPUSERPOSITION = _descriptor.Descriptor(
   name='MapUserPosition',
-  full_name='PSXAPI.Response.Payload21.MapUserPosition',
+  full_name='PSXAPI.Response.Payload1725011302.MapUserPosition',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='X', full_name='PSXAPI.Response.Payload21.MapUserPosition.X', index=0,
+      name='X', full_name='PSXAPI.Response.Payload1725011302.MapUserPosition.X', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Y', full_name='PSXAPI.Response.Payload21.MapUserPosition.Y', index=1,
+      name='Y', full_name='PSXAPI.Response.Payload1725011302.MapUserPosition.Y', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Height', full_name='PSXAPI.Response.Payload21.MapUserPosition.Height', index=2,
+      name='Height', full_name='PSXAPI.Response.Payload1725011302.MapUserPosition.Height', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -160,27 +175,35 @@ _MAPUSERPOSITION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=201,
-  serialized_end=265,
+  serialized_start=380,
+  serialized_end=444,
 )
 
-_MAPUSERACTIONDATA.fields_by_name['Action'].enum_type = _MAPUSERACTION
+_PREFIX_AGDFASBV1831660003_MAPUSERACTION.containing_type = _PREFIX_AGDFASBV1831660003
+_MAPUSERACTIONDATA.fields_by_name['Action'].enum_type = _PREFIX_AGDFASBV1831660003_MAPUSERACTION
 _MAPUSERACTIONDATA.fields_by_name['Position'].message_type = _MAPUSERPOSITION
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1831660003'] = _PREFIX_AGDFASBV1831660003
 DESCRIPTOR.message_types_by_name['MapUserActionData'] = _MAPUSERACTIONDATA
 DESCRIPTOR.message_types_by_name['MapUserPosition'] = _MAPUSERPOSITION
-DESCRIPTOR.enum_types_by_name['MapUserAction'] = _MAPUSERACTION
+
+PREFIX_AGDFASBV1831660003 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1831660003', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1831660003,
+  __module__ = 'MapUserActionData_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response.Payload1725011302.PREFIX_AGDFASBV1831660003)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1831660003)
 
 MapUserActionData = _reflection.GeneratedProtocolMessageType('MapUserActionData', (_message.Message,), dict(
   DESCRIPTOR = _MAPUSERACTIONDATA,
   __module__ = 'MapUserActionData_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response.Payload21.MapUserActionData)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response.Payload1725011302.MapUserActionData)
   ))
 _sym_db.RegisterMessage(MapUserActionData)
 
 MapUserPosition = _reflection.GeneratedProtocolMessageType('MapUserPosition', (_message.Message,), dict(
   DESCRIPTOR = _MAPUSERPOSITION,
   __module__ = 'MapUserActionData_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response.Payload21.MapUserPosition)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response.Payload1725011302.MapUserPosition)
   ))
 _sym_db.RegisterMessage(MapUserPosition)
 

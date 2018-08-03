@@ -13,16 +13,16 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
-import bcl_pb2 as bcl__pb2
+from protobuf_net import bcl_pb2 as protobuf__net_dot_bcl__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='UseItem.proto',
-  package='PSXAPI.Request71',
+  package='PSXAPI.Request1014238239',
   syntax='proto2',
-  serialized_pb=_b('\n\rUseItem.proto\x12\x10PSXAPI.Request71\x1a\tbcl.proto\"G\n\x07UseItem\x12\x0f\n\x04Item\x18\x01 \x01(\x05:\x01\x30\x12\x1a\n\x07Pokemon\x18\x02 \x01(\x0b\x32\t.bcl.Guid\x12\x0f\n\x04Move\x18\x03 \x01(\x05:\x01\x30')
+  serialized_pb=_b('\n\rUseItem.proto\x12\x18PSXAPI.Request1014238239\x1a\x16protobuf-net/bcl.proto\"G\n\x07UseItem\x12\x0f\n\x04Item\x18\x01 \x01(\x05:\x01\x30\x12\x1a\n\x07Pokemon\x18\x02 \x01(\x0b\x32\t.bcl.Guid\x12\x0f\n\x04Move\x18\x03 \x01(\x05:\x01\x30')
   ,
-  dependencies=[bcl__pb2.DESCRIPTOR,])
+  dependencies=[protobuf__net_dot_bcl__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
@@ -30,27 +30,27 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _USEITEM = _descriptor.Descriptor(
   name='UseItem',
-  full_name='PSXAPI.Request71.UseItem',
+  full_name='PSXAPI.Request1014238239.UseItem',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Item', full_name='PSXAPI.Request71.UseItem.Item', index=0,
+      name='Item', full_name='PSXAPI.Request1014238239.UseItem.Item', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Pokemon', full_name='PSXAPI.Request71.UseItem.Pokemon', index=1,
+      name='Pokemon', full_name='PSXAPI.Request1014238239.UseItem.Pokemon', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Move', full_name='PSXAPI.Request71.UseItem.Move', index=2,
+      name='Move', full_name='PSXAPI.Request1014238239.UseItem.Move', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -68,17 +68,17 @@ _USEITEM = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=46,
-  serialized_end=117,
+  serialized_start=67,
+  serialized_end=138,
 )
 
-_USEITEM.fields_by_name['Pokemon'].message_type = bcl__pb2._GUID
+_USEITEM.fields_by_name['Pokemon'].message_type = protobuf__net_dot_bcl__pb2._GUID
 DESCRIPTOR.message_types_by_name['UseItem'] = _USEITEM
 
 UseItem = _reflection.GeneratedProtocolMessageType('UseItem', (_message.Message,), dict(
   DESCRIPTOR = _USEITEM,
   __module__ = 'UseItem_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request71.UseItem)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request1014238239.UseItem)
   ))
 _sym_db.RegisterMessage(UseItem)
 

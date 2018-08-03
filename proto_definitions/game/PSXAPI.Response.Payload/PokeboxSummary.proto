@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Response.Payload25;
+package PSXAPI.Response.Payload1958616416;
 
 message PokeboxSummary {
    optional int32 CurrentBoxes = 1 [default = 0];

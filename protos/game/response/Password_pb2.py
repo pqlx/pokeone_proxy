@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -18,15 +17,17 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Password.proto',
-  package='PSXAPI.Response61',
+  package='PSXAPI.Response422341486',
   syntax='proto2',
-  serialized_pb=_b('\n\x0ePassword.proto\x12\x11PSXAPI.Response61\"W\n\x08Password\x12\x39\n\x06Result\x18\x01 \x01(\x0e\x32!.PSXAPI.Response61.PasswordResult:\x06\x46\x61iled\x12\x10\n\x08Username\x18\x02 \x01(\t*6\n\x0ePasswordResult\x12\n\n\x06\x46\x61iled\x10\x00\x12\x0b\n\x07Updated\x10\x01\x12\x0b\n\x07Reseted\x10\x02')
+  serialized_pb=_b('\n\x0ePassword.proto\x12\x18PSXAPI.Response422341486\"x\n\x08Password\x12Z\n\x06Result\x18\x01 \x01(\x0e\x32\x42.PSXAPI.Response422341486.PREFIX_AGDFASBV1479176421.PasswordResult:\x06\x46\x61iled\x12\x10\n\x08Username\x18\x02 \x01(\t\"S\n\x19PREFIX_AGDFASBV1479176421\"6\n\x0ePasswordResult\x12\n\n\x06\x46\x61iled\x10\x00\x12\x0b\n\x07Updated\x10\x01\x12\x0b\n\x07Reseted\x10\x02')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_PASSWORDRESULT = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV1479176421_PASSWORDRESULT = _descriptor.EnumDescriptor(
   name='PasswordResult',
-  full_name='PSXAPI.Response61.PasswordResult',
+  full_name='PSXAPI.Response422341486.PREFIX_AGDFASBV1479176421.PasswordResult',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -45,34 +46,28 @@ _PASSWORDRESULT = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=126,
-  serialized_end=180,
+  serialized_start=195,
+  serialized_end=249,
 )
-_sym_db.RegisterEnumDescriptor(_PASSWORDRESULT)
-
-PasswordResult = enum_type_wrapper.EnumTypeWrapper(_PASSWORDRESULT)
-Failed = 0
-Updated = 1
-Reseted = 2
-
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1479176421_PASSWORDRESULT)
 
 
 _PASSWORD = _descriptor.Descriptor(
   name='Password',
-  full_name='PSXAPI.Response61.Password',
+  full_name='PSXAPI.Response422341486.Password',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Result', full_name='PSXAPI.Response61.Password.Result', index=0,
+      name='Result', full_name='PSXAPI.Response422341486.Password.Result', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Username', full_name='PSXAPI.Response61.Password.Username', index=1,
+      name='Username', full_name='PSXAPI.Response422341486.Password.Username', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -90,20 +85,53 @@ _PASSWORD = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=37,
-  serialized_end=124,
+  serialized_start=44,
+  serialized_end=164,
 )
 
-_PASSWORD.fields_by_name['Result'].enum_type = _PASSWORDRESULT
+
+_PREFIX_AGDFASBV1479176421 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1479176421',
+  full_name='PSXAPI.Response422341486.PREFIX_AGDFASBV1479176421',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1479176421_PASSWORDRESULT,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=166,
+  serialized_end=249,
+)
+
+_PASSWORD.fields_by_name['Result'].enum_type = _PREFIX_AGDFASBV1479176421_PASSWORDRESULT
+_PREFIX_AGDFASBV1479176421_PASSWORDRESULT.containing_type = _PREFIX_AGDFASBV1479176421
 DESCRIPTOR.message_types_by_name['Password'] = _PASSWORD
-DESCRIPTOR.enum_types_by_name['PasswordResult'] = _PASSWORDRESULT
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1479176421'] = _PREFIX_AGDFASBV1479176421
 
 Password = _reflection.GeneratedProtocolMessageType('Password', (_message.Message,), dict(
   DESCRIPTOR = _PASSWORD,
   __module__ = 'Password_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response61.Password)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response422341486.Password)
   ))
 _sym_db.RegisterMessage(Password)
+
+PREFIX_AGDFASBV1479176421 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1479176421', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1479176421,
+  __module__ = 'Password_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response422341486.PREFIX_AGDFASBV1479176421)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1479176421)
 
 
 # @@protoc_insertion_point(module_scope)

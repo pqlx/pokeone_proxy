@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Skins.proto',
-  package='PSXAPI.Request59',
+  package='PSXAPI.Request615616321',
   syntax='proto2',
-  serialized_pb=_b('\n\x0bSkins.proto\x12\x10PSXAPI.Request59\"\x07\n\x05Skins')
+  serialized_pb=_b('\n\x0bSkins.proto\x12\x17PSXAPI.Request615616321\"\x07\n\x05Skins')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,7 +28,7 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _SKINS = _descriptor.Descriptor(
   name='Skins',
-  full_name='PSXAPI.Request59.Skins',
+  full_name='PSXAPI.Request615616321.Skins',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
@@ -45,8 +45,8 @@ _SKINS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=33,
-  serialized_end=40,
+  serialized_start=40,
+  serialized_end=47,
 )
 
 DESCRIPTOR.message_types_by_name['Skins'] = _SKINS
@@ -54,7 +54,7 @@ DESCRIPTOR.message_types_by_name['Skins'] = _SKINS
 Skins = _reflection.GeneratedProtocolMessageType('Skins', (_message.Message,), dict(
   DESCRIPTOR = _SKINS,
   __module__ = 'Skins_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request59.Skins)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request615616321.Skins)
   ))
 _sym_db.RegisterMessage(Skins)
 

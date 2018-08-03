@@ -1,8 +1,8 @@
 syntax = "proto2";
-package PSXAPI.Request44;
-import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+package PSXAPI.Request479979211;
+import "protobuf-net/bcl.proto"; // schema for protobuf-net's handling of core .NET types
 
 message MilkDrink {
-   optional .bcl.Guid Source = 1 ;
-   optional .bcl.Guid Target = 2 ;
+   optional .bcl.Guid Source = 1;
+   optional .bcl.Guid Target = 2;
 }

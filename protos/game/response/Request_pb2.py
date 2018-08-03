@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -18,20 +17,22 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Request.proto',
-  package='PSXAPI.Response71',
+  package='PSXAPI.Response1116683912',
   syntax='proto2',
-  serialized_pb=_b('\n\rRequest.proto\x12\x11PSXAPI.Response71\"G\n\x07Request\x12,\n\x04Type\x18\x01 \x02(\x0e\x32\x1e.PSXAPI.Response71.RequestType\x12\x0e\n\x06Sender\x18\x02 \x02(\t*\xae\x01\n\x0bRequestType\x12\n\n\x06__None\x10\x00\x12\n\n\x06\x46riend\x10\x01\x12\t\n\x05Trade\x10\x02\x12\n\n\x06\x42\x61ttle\x10\x03\x12\t\n\x05Party\x10\x04\x12\t\n\x05Guild\x10\x05\x12\x11\n\rFriendDecline\x10\x0b\x12\x10\n\x0cTradeDecline\x10\x0c\x12\x11\n\rBattleDecline\x10\r\x12\x10\n\x0cPartyDecline\x10\x0e\x12\x10\n\x0cGuildDecline\x10\x0f')
+  serialized_pb=_b('\n\rRequest.proto\x12\x19PSXAPI.Response1116683912\"h\n\x07Request\x12M\n\x04Type\x18\x01 \x02(\x0e\x32?.PSXAPI.Response1116683912.PREFIX_AGDFASBV802831699.RequestType\x12\x0e\n\x06Sender\x18\x02 \x02(\t\"\xce\x01\n\x18PREFIX_AGDFASBV802831699\"\xb1\x01\n\x0bRequestType\x12\r\n\tNoneValue\x10\x00\x12\n\n\x06\x46riend\x10\x01\x12\t\n\x05Trade\x10\x02\x12\n\n\x06\x42\x61ttle\x10\x03\x12\t\n\x05Party\x10\x04\x12\t\n\x05Guild\x10\x05\x12\x11\n\rFriendDecline\x10\x0b\x12\x10\n\x0cTradeDecline\x10\x0c\x12\x11\n\rBattleDecline\x10\r\x12\x10\n\x0cPartyDecline\x10\x0e\x12\x10\n\x0cGuildDecline\x10\x0f')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_REQUESTTYPE = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV802831699_REQUESTTYPE = _descriptor.EnumDescriptor(
   name='RequestType',
-  full_name='PSXAPI.Response71.RequestType',
+  full_name='PSXAPI.Response1116683912.PREFIX_AGDFASBV802831699.RequestType',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='__None', index=0, number=0,
+      name='NoneValue', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -77,42 +78,28 @@ _REQUESTTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=110,
-  serialized_end=284,
+  serialized_start=180,
+  serialized_end=357,
 )
-_sym_db.RegisterEnumDescriptor(_REQUESTTYPE)
-
-RequestType = enum_type_wrapper.EnumTypeWrapper(_REQUESTTYPE)
-__None = 0
-Friend = 1
-Trade = 2
-Battle = 3
-Party = 4
-Guild = 5
-FriendDecline = 11
-TradeDecline = 12
-BattleDecline = 13
-PartyDecline = 14
-GuildDecline = 15
-
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV802831699_REQUESTTYPE)
 
 
 _REQUEST = _descriptor.Descriptor(
   name='Request',
-  full_name='PSXAPI.Response71.Request',
+  full_name='PSXAPI.Response1116683912.Request',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Type', full_name='PSXAPI.Response71.Request.Type', index=0,
+      name='Type', full_name='PSXAPI.Response1116683912.Request.Type', index=0,
       number=1, type=14, cpp_type=8, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Sender', full_name='PSXAPI.Response71.Request.Sender', index=1,
+      name='Sender', full_name='PSXAPI.Response1116683912.Request.Sender', index=1,
       number=2, type=9, cpp_type=9, label=2,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -130,20 +117,53 @@ _REQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=36,
-  serialized_end=107,
+  serialized_start=44,
+  serialized_end=148,
 )
 
-_REQUEST.fields_by_name['Type'].enum_type = _REQUESTTYPE
+
+_PREFIX_AGDFASBV802831699 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV802831699',
+  full_name='PSXAPI.Response1116683912.PREFIX_AGDFASBV802831699',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV802831699_REQUESTTYPE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=151,
+  serialized_end=357,
+)
+
+_REQUEST.fields_by_name['Type'].enum_type = _PREFIX_AGDFASBV802831699_REQUESTTYPE
+_PREFIX_AGDFASBV802831699_REQUESTTYPE.containing_type = _PREFIX_AGDFASBV802831699
 DESCRIPTOR.message_types_by_name['Request'] = _REQUEST
-DESCRIPTOR.enum_types_by_name['RequestType'] = _REQUESTTYPE
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV802831699'] = _PREFIX_AGDFASBV802831699
 
 Request = _reflection.GeneratedProtocolMessageType('Request', (_message.Message,), dict(
   DESCRIPTOR = _REQUEST,
   __module__ = 'Request_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response71.Request)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1116683912.Request)
   ))
 _sym_db.RegisterMessage(Request)
+
+PREFIX_AGDFASBV802831699 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV802831699', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV802831699,
+  __module__ = 'Request_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1116683912.PREFIX_AGDFASBV802831699)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV802831699)
 
 
 # @@protoc_insertion_point(module_scope)

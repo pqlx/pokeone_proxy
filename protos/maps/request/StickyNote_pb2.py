@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='StickyNote.proto',
-  package='MAPAPI.Request8',
+  package='MAPAPI.Request1876436762',
   syntax='proto2',
-  serialized_pb=_b('\n\x10StickyNote.proto\x12\x0fMAPAPI.Request8\"\x1a\n\nStickyNote\x12\x0c\n\x04Note\x18\x01 \x01(\t')
+  serialized_pb=_b('\n\x10StickyNote.proto\x12\x18MAPAPI.Request1876436762\"\x1a\n\nStickyNote\x12\x0c\n\x04Note\x18\x01 \x01(\t')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,13 +28,13 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _STICKYNOTE = _descriptor.Descriptor(
   name='StickyNote',
-  full_name='MAPAPI.Request8.StickyNote',
+  full_name='MAPAPI.Request1876436762.StickyNote',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Note', full_name='MAPAPI.Request8.StickyNote.Note', index=0,
+      name='Note', full_name='MAPAPI.Request1876436762.StickyNote.Note', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -52,8 +52,8 @@ _STICKYNOTE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=37,
-  serialized_end=63,
+  serialized_start=46,
+  serialized_end=72,
 )
 
 DESCRIPTOR.message_types_by_name['StickyNote'] = _STICKYNOTE
@@ -61,7 +61,7 @@ DESCRIPTOR.message_types_by_name['StickyNote'] = _STICKYNOTE
 StickyNote = _reflection.GeneratedProtocolMessageType('StickyNote', (_message.Message,), dict(
   DESCRIPTOR = _STICKYNOTE,
   __module__ = 'StickyNote_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Request8.StickyNote)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Request1876436762.StickyNote)
   ))
 _sym_db.RegisterMessage(StickyNote)
 

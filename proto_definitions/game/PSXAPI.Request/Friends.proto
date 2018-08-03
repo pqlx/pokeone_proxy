@@ -1,13 +1,15 @@
 syntax = "proto2";
-package PSXAPI.Request23;
+package PSXAPI.Request647881400;
 
 message Friends {
-   required FriendsAction Action = 1;
+   required PREFIX_AGDFASBV1778125001.FriendsAction Action = 1;
    optional string Data = 2;
 }
-enum FriendsAction {
+message PREFIX_AGDFASBV1778125001 {
+    enum FriendsAction {
    RequestAll = 0;
    Add = 1;
    Remove = 2;
    SetMessage = 3;
-}
+} //PREFIX_AGDFASBV
+};

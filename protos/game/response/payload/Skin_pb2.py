@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -18,20 +17,22 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Skin.proto',
-  package='PSXAPI.Response.Payload33',
+  package='PSXAPI.Response.Payload724743319',
   syntax='proto2',
-  serialized_pb=_b('\n\nSkin.proto\x12\x19PSXAPI.Response.Payload33\"\x91\x01\n\x04Skin\x12\x0c\n\x04Name\x18\x01 \x01(\t\x12\x13\n\x08SpriteID\x18\x02 \x01(\x05:\x01\x30\x12\x39\n\x04Type\x18\x03 \x01(\x0e\x32#.PSXAPI.Response.Payload33.SkinType:\x06__None\x12\x14\n\tGoldPrice\x18\x04 \x01(\r:\x01\x30\x12\x15\n\nMoneyPrice\x18\x05 \x01(\r:\x01\x30*I\n\x08SkinType\x12\n\n\x06__None\x10\x00\x12\n\n\x06\x43lothe\x10\x01\x12\x07\n\x03Hat\x10\x02\x12\t\n\x05Mount\x10\x03\x12\x08\n\x04Surf\x10\x04\x12\x07\n\x03\x46ly\x10\x05')
+  serialized_pb=_b('\n\nSkin.proto\x12 PSXAPI.Response.Payload724743319\"\xb5\x01\n\x04Skin\x12\x0c\n\x04Name\x18\x01 \x01(\t\x12\x13\n\x08SpriteID\x18\x02 \x01(\x05:\x01\x30\x12]\n\x04Type\x18\x03 \x01(\x0e\x32\x44.PSXAPI.Response.Payload724743319.PREFIX_AGDFASBV1320344576.SkinType:\tNoneValue\x12\x14\n\tGoldPrice\x18\x04 \x01(\r:\x01\x30\x12\x15\n\nMoneyPrice\x18\x05 \x01(\r:\x01\x30\"i\n\x19PREFIX_AGDFASBV1320344576\"L\n\x08SkinType\x12\r\n\tNoneValue\x10\x00\x12\n\n\x06\x43lothe\x10\x01\x12\x07\n\x03Hat\x10\x02\x12\t\n\x05Mount\x10\x03\x12\x08\n\x04Surf\x10\x04\x12\x07\n\x03\x46ly\x10\x05')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_SKINTYPE = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV1320344576_SKINTYPE = _descriptor.EnumDescriptor(
   name='SkinType',
-  full_name='PSXAPI.Response.Payload33.SkinType',
+  full_name='PSXAPI.Response.Payload724743319.PREFIX_AGDFASBV1320344576.SkinType',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='__None', index=0, number=0,
+      name='NoneValue', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -57,58 +58,49 @@ _SKINTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=189,
-  serialized_end=262,
+  serialized_start=261,
+  serialized_end=337,
 )
-_sym_db.RegisterEnumDescriptor(_SKINTYPE)
-
-SkinType = enum_type_wrapper.EnumTypeWrapper(_SKINTYPE)
-__None = 0
-Clothe = 1
-Hat = 2
-Mount = 3
-Surf = 4
-Fly = 5
-
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1320344576_SKINTYPE)
 
 
 _SKIN = _descriptor.Descriptor(
   name='Skin',
-  full_name='PSXAPI.Response.Payload33.Skin',
+  full_name='PSXAPI.Response.Payload724743319.Skin',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Name', full_name='PSXAPI.Response.Payload33.Skin.Name', index=0,
+      name='Name', full_name='PSXAPI.Response.Payload724743319.Skin.Name', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='SpriteID', full_name='PSXAPI.Response.Payload33.Skin.SpriteID', index=1,
+      name='SpriteID', full_name='PSXAPI.Response.Payload724743319.Skin.SpriteID', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Type', full_name='PSXAPI.Response.Payload33.Skin.Type', index=2,
+      name='Type', full_name='PSXAPI.Response.Payload724743319.Skin.Type', index=2,
       number=3, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='GoldPrice', full_name='PSXAPI.Response.Payload33.Skin.GoldPrice', index=3,
+      name='GoldPrice', full_name='PSXAPI.Response.Payload724743319.Skin.GoldPrice', index=3,
       number=4, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='MoneyPrice', full_name='PSXAPI.Response.Payload33.Skin.MoneyPrice', index=4,
+      name='MoneyPrice', full_name='PSXAPI.Response.Payload724743319.Skin.MoneyPrice', index=4,
       number=5, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -126,20 +118,53 @@ _SKIN = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=42,
-  serialized_end=187,
+  serialized_start=49,
+  serialized_end=230,
 )
 
-_SKIN.fields_by_name['Type'].enum_type = _SKINTYPE
+
+_PREFIX_AGDFASBV1320344576 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1320344576',
+  full_name='PSXAPI.Response.Payload724743319.PREFIX_AGDFASBV1320344576',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1320344576_SKINTYPE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=232,
+  serialized_end=337,
+)
+
+_SKIN.fields_by_name['Type'].enum_type = _PREFIX_AGDFASBV1320344576_SKINTYPE
+_PREFIX_AGDFASBV1320344576_SKINTYPE.containing_type = _PREFIX_AGDFASBV1320344576
 DESCRIPTOR.message_types_by_name['Skin'] = _SKIN
-DESCRIPTOR.enum_types_by_name['SkinType'] = _SKINTYPE
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1320344576'] = _PREFIX_AGDFASBV1320344576
 
 Skin = _reflection.GeneratedProtocolMessageType('Skin', (_message.Message,), dict(
   DESCRIPTOR = _SKIN,
   __module__ = 'Skin_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response.Payload33.Skin)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response.Payload724743319.Skin)
   ))
 _sym_db.RegisterMessage(Skin)
+
+PREFIX_AGDFASBV1320344576 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1320344576', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1320344576,
+  __module__ = 'Skin_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response.Payload724743319.PREFIX_AGDFASBV1320344576)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1320344576)
 
 
 # @@protoc_insertion_point(module_scope)

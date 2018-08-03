@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='LobbyLeave.proto',
-  package='PSXAPI.Request34',
+  package='PSXAPI.Request470477000',
   syntax='proto2',
-  serialized_pb=_b('\n\x10LobbyLeave.proto\x12\x10PSXAPI.Request34\"\x0c\n\nLobbyLeave')
+  serialized_pb=_b('\n\x10LobbyLeave.proto\x12\x17PSXAPI.Request470477000\"\x0c\n\nLobbyLeave')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,7 +28,7 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _LOBBYLEAVE = _descriptor.Descriptor(
   name='LobbyLeave',
-  full_name='PSXAPI.Request34.LobbyLeave',
+  full_name='PSXAPI.Request470477000.LobbyLeave',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
@@ -45,8 +45,8 @@ _LOBBYLEAVE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=38,
-  serialized_end=50,
+  serialized_start=45,
+  serialized_end=57,
 )
 
 DESCRIPTOR.message_types_by_name['LobbyLeave'] = _LOBBYLEAVE
@@ -54,7 +54,7 @@ DESCRIPTOR.message_types_by_name['LobbyLeave'] = _LOBBYLEAVE
 LobbyLeave = _reflection.GeneratedProtocolMessageType('LobbyLeave', (_message.Message,), dict(
   DESCRIPTOR = _LOBBYLEAVE,
   __module__ = 'LobbyLeave_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request34.LobbyLeave)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request470477000.LobbyLeave)
   ))
 _sym_db.RegisterMessage(LobbyLeave)
 

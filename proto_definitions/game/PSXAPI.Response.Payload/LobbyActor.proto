@@ -1,32 +1,38 @@
 syntax = "proto2";
-package PSXAPI.Response.Payload18;
+package PSXAPI.Response.Payload1595568979;
 
-enum ActorAvatarType {
-   __None0 = 0;
-   User0 = 1;
-   NPC0 = 2;
-}
-enum ActorTeam {
-   __None1 = 0;
+message PREFIX_AGDFASBV207083596 {
+    enum ActorAvatarType {
+   NoneValue = 0;
+   User = 1;
+   NPC = 2;
+} //PREFIX_AGDFASBV
+};
+message PREFIX_AGDFASBV225284886 {
+    enum ActorTeam {
+   NoneValue = 0;
    Team1 = 1;
    Team2 = 2;
-}
-enum ActorType {
-   __None2 = 0;
+} //PREFIX_AGDFASBV
+};
+message PREFIX_AGDFASBV893759777 {
+    enum ActorType {
+   NoneValue = 0;
    Leader = 1;
-   User1 = 2;
-   NPC1 = 3;
+   User = 2;
+   NPC = 3;
    Inactive = 4;
    Offline = 5;
-}
+} //PREFIX_AGDFASBV
+};
 message LobbyActor {
-   optional ActorType Type = 1 [default = __None2];
+   optional PREFIX_AGDFASBV893759777.ActorType Type = 1 [default = NoneValue];
    optional string Name = 2;
-   optional ActorTeam Team = 3 [default = __None1];
+   optional PREFIX_AGDFASBV225284886.ActorTeam Team = 3 [default = NoneValue];
    optional int32 PokemonCount = 4 [default = 0];
    optional int32 ActiveCount = 5 [default = 0];
    optional bool Accepted = 6 [default = false];
-   optional ActorAvatarType AvatarType = 7 [default = __None0];
+   optional PREFIX_AGDFASBV207083596.ActorAvatarType AvatarType = 7 [default = NoneValue];
    optional int32 NpcSpriteID = 8 [default = 0];
    optional int32 AverageLevel = 9 [default = 0];
    optional int32 HighestLevel = 10 [default = 0];

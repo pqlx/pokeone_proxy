@@ -1,5 +1,5 @@
 syntax = "proto2";
-package MAPAPI.Response8;
+package MAPAPI.Response1725559366;
 
 message DrawTileStruct {
    optional int32 X = 1 [default = 0];

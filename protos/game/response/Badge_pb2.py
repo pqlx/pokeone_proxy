@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Badge.proto',
-  package='PSXAPI.Response4',
+  package='PSXAPI.Response255858377',
   syntax='proto2',
-  serialized_pb=_b('\n\x0b\x42\x61\x64ge.proto\x12\x10PSXAPI.Response4\"-\n\x05\x42\x61\x64ge\x12\r\n\x02Id\x18\x01 \x01(\x05:\x01\x30\x12\x15\n\x06\x41\x63tive\x18\x02 \x01(\x08:\x05\x66\x61lse')
+  serialized_pb=_b('\n\x0b\x42\x61\x64ge.proto\x12\x18PSXAPI.Response255858377\"-\n\x05\x42\x61\x64ge\x12\r\n\x02Id\x18\x01 \x01(\x05:\x01\x30\x12\x15\n\x06\x41\x63tive\x18\x02 \x01(\x08:\x05\x66\x61lse')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,20 +28,20 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _BADGE = _descriptor.Descriptor(
   name='Badge',
-  full_name='PSXAPI.Response4.Badge',
+  full_name='PSXAPI.Response255858377.Badge',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Id', full_name='PSXAPI.Response4.Badge.Id', index=0,
+      name='Id', full_name='PSXAPI.Response255858377.Badge.Id', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Active', full_name='PSXAPI.Response4.Badge.Active', index=1,
+      name='Active', full_name='PSXAPI.Response255858377.Badge.Active', index=1,
       number=2, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -59,8 +59,8 @@ _BADGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=33,
-  serialized_end=78,
+  serialized_start=41,
+  serialized_end=86,
 )
 
 DESCRIPTOR.message_types_by_name['Badge'] = _BADGE
@@ -68,7 +68,7 @@ DESCRIPTOR.message_types_by_name['Badge'] = _BADGE
 Badge = _reflection.GeneratedProtocolMessageType('Badge', (_message.Message,), dict(
   DESCRIPTOR = _BADGE,
   __module__ = 'Badge_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response4.Badge)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response255858377.Badge)
   ))
 _sym_db.RegisterMessage(Badge)
 

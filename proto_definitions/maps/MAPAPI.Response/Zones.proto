@@ -1,7 +1,8 @@
 syntax = "proto2";
-package MAPAPI.Response43;
+package MAPAPI.Response1363469389;
 
-enum BackgroundType {
+message PREFIX_AGDFASBV2064517627 {
+    enum BackgroundType {
    Grass = 0;
    Water = 1;
    Cave = 2;
@@ -13,48 +14,55 @@ enum BackgroundType {
    City = 8;
    Desert = 9;
    Ocean = 10;
-}
-enum EncounterTimes {
+} //PREFIX_AGDFASBV
+};
+message PREFIX_AGDFASBV208467650 {
+    enum EncounterTimes {
    Day = 0;
    Night = 1;
    Morning = 2;
    Evening = 3;
    Always = 4;
-}
-enum FishingType {
-   __None = 0;
+} //PREFIX_AGDFASBV
+};
+message PREFIX_AGDFASBV1054309197 {
+    enum FishingType {
+   NoneValue = 0;
    OldRod = 1;
    GoodRod = 2;
    SuperRod = 3;
-}
-enum Rarity {
+} //PREFIX_AGDFASBV
+};
+message PREFIX_AGDFASBV1762563228 {
+    enum Rarity {
    Common = 0;
    Uncommon = 1;
    Rare = 2;
    Epic = 3;
    Mythical = 4;
    Special = 5;
-}
+} //PREFIX_AGDFASBV
+};
 message Zone {
    repeated ZonePokemon Pokemon = 1;
    optional int32 ID = 2 [default = 0];
 }
 message ZoneItem {
    optional int32 ItemID = 1 [default = 0];
-   optional Rarity ItemRarity = 2 [default = Common];
+   optional PREFIX_AGDFASBV1762563228.Rarity ItemRarity = 2 [default = Common];
 }
 message ZonePokemon {
    optional int32 PokemonID = 1 [default = 0];
    optional int32 AverageLevel = 2 [default = 0];
    optional int32 LevelVariance = 3 [default = 0];
-   optional EncounterTimes EncounterTime = 4 [default = Day];
-   optional Rarity Rarity = 5 [default = Common];
+   optional PREFIX_AGDFASBV208467650.EncounterTimes EncounterTime = 4 [default = Day];
+   optional PREFIX_AGDFASBV1762563228.Rarity Rarity = 5 [default = Common];
    repeated ZoneItem Items = 6;
-   optional FishingType Fishing = 7 [default = __None];
+   optional PREFIX_AGDFASBV1054309197.FishingType Fishing = 7 [default = NoneValue];
    optional string Script = 8;
    optional bool Party = 9 [default = false];
    optional bool SpecialEncounter = 10 [default = false];
-   optional BackgroundType BackgroundID = 11 [default = Grass];
+   optional PREFIX_AGDFASBV2064517627.BackgroundType BackgroundID = 11 [default = Grass];
    optional bool Disabled = 12 [default = false];
 }
 message Zones {

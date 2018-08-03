@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='HeightChangeStruct.proto',
-  package='MAPAPI.Response11',
+  package='MAPAPI.Response2044838355',
   syntax='proto2',
-  serialized_pb=_b('\n\x18HeightChangeStruct.proto\x12\x11MAPAPI.Response11\"C\n\x12HeightChangeStruct\x12\x0c\n\x01X\x18\x01 \x01(\x05:\x01\x30\x12\x0c\n\x01Y\x18\x02 \x01(\x05:\x01\x30\x12\x11\n\x06Height\x18\x03 \x01(\x05:\x01\x30')
+  serialized_pb=_b('\n\x18HeightChangeStruct.proto\x12\x19MAPAPI.Response2044838355\"C\n\x12HeightChangeStruct\x12\x0c\n\x01X\x18\x01 \x01(\x05:\x01\x30\x12\x0c\n\x01Y\x18\x02 \x01(\x05:\x01\x30\x12\x11\n\x06Height\x18\x03 \x01(\x05:\x01\x30')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,27 +28,27 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _HEIGHTCHANGESTRUCT = _descriptor.Descriptor(
   name='HeightChangeStruct',
-  full_name='MAPAPI.Response11.HeightChangeStruct',
+  full_name='MAPAPI.Response2044838355.HeightChangeStruct',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='X', full_name='MAPAPI.Response11.HeightChangeStruct.X', index=0,
+      name='X', full_name='MAPAPI.Response2044838355.HeightChangeStruct.X', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Y', full_name='MAPAPI.Response11.HeightChangeStruct.Y', index=1,
+      name='Y', full_name='MAPAPI.Response2044838355.HeightChangeStruct.Y', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Height', full_name='MAPAPI.Response11.HeightChangeStruct.Height', index=2,
+      name='Height', full_name='MAPAPI.Response2044838355.HeightChangeStruct.Height', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -66,8 +66,8 @@ _HEIGHTCHANGESTRUCT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=47,
-  serialized_end=114,
+  serialized_start=55,
+  serialized_end=122,
 )
 
 DESCRIPTOR.message_types_by_name['HeightChangeStruct'] = _HEIGHTCHANGESTRUCT
@@ -75,7 +75,7 @@ DESCRIPTOR.message_types_by_name['HeightChangeStruct'] = _HEIGHTCHANGESTRUCT
 HeightChangeStruct = _reflection.GeneratedProtocolMessageType('HeightChangeStruct', (_message.Message,), dict(
   DESCRIPTOR = _HEIGHTCHANGESTRUCT,
   __module__ = 'HeightChangeStruct_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response11.HeightChangeStruct)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response2044838355.HeightChangeStruct)
   ))
 _sym_db.RegisterMessage(HeightChangeStruct)
 

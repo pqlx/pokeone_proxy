@@ -14,1031 +14,21 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
-import bcl_pb2 as bcl__pb2
+from protobuf_net import bcl_pb2 as protobuf__net_dot_bcl__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Login.proto',
-  package='PSXAPI.Response155921581865',
+  package='PSXAPI.Response1375634093',
   syntax='proto2',
-  serialized_pb=_b('\n\x0bLogin.proto\x12\x1bPSXAPI.Response155921581865\x1a\tbcl.proto\"T\n\x06\x42\x61nned\x12\x18\n\tPermanent\x18\x01 \x01(\x08:\x05\x66\x61lse\x12 \n\tRemaining\x18\x02 \x01(\x0b\x32\r.bcl.TimeSpan\x12\x0e\n\x06Reason\x18\x03 \x01(\t\"\xd9\x02\n\x06\x42\x61ttle\x12\x0b\n\x03Log\x18\x01 \x03(\t\x12<\n\x08Request1\x18\x02 \x01(\x0b\x32*.PSXAPI.Response155921581865.BattleRequest\x12<\n\x08Request2\x18\x03 \x01(\x0b\x32*.PSXAPI.Response155921581865.BattleRequest\x12\x14\n\x05\x45nded\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x10\n\x08Mapping1\x18\x05 \x03(\t\x12\x10\n\x08Mapping2\x18\x06 \x03(\t\x12\x10\n\x05Timer\x18\x07 \x01(\x05:\x01\x30\x12\x17\n\x0c\x42\x61\x63kgroundID\x18\x08 \x01(\x05:\x01\x30\x12\x17\n\x08\x43\x61nCatch\x18\t \x01(\x08:\x05\x66\x61lse\x12\x18\n\tCanEscape\x18\n \x01(\x08:\x05\x66\x61lse\x12\x19\n\nCanUseItem\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\x13\n\x08\x42\x61ttleID\x18\x0c \x01(\x05:\x01\x30\"\x93\x02\n\x0c\x42\x61ttleActive\x12\x36\n\x05moves\x18\x01 \x03(\x0b\x32\'.PSXAPI.Response155921581865.BattleMove\x12\x1c\n\rmaybeDisabled\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x16\n\x07trapped\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0cmaybeTrapped\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x19\n\ncanMegaEvo\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x34\n\x08\x63\x61nZMove\x18\x06 \x03(\x0b\x32\".PSXAPI.Response155921581865.ZMove\x12\x0f\n\x07trainer\x18\x07 \x01(\t\x12\x16\n\x0bpersonality\x18\x08 \x01(\x05:\x01\x30\"q\n\nBattleMove\x12\r\n\x05move0\x18\x01 \x01(\t\x12\n\n\x02id\x18\x02 \x01(\t\x12\r\n\x02pp\x18\x03 \x01(\x05:\x01\x30\x12\x10\n\x05maxpp\x18\x04 \x01(\x05:\x01\x30\x12\x0e\n\x06target\x18\x05 \x01(\t\x12\x17\n\x08\x64isabled\x18\x06 \x01(\x08:\x05\x66\x61lse\"\xc1\x02\n\rBattlePokemon\x12\r\n\x05ident\x18\x01 \x01(\t\x12\x0f\n\x07\x64\x65tails\x18\x02 \x01(\t\x12\x11\n\tcondition\x18\x03 \x01(\t\x12\x15\n\x06\x61\x63tive\x18\x04 \x01(\x08:\x05\x66\x61lse\x12>\n\x05stats\x18\x05 \x01(\x0b\x32/.PSXAPI.Response155921581865.BattlePokemonStats\x12\r\n\x05moves\x18\x06 \x03(\t\x12\x13\n\x0b\x62\x61seAbility\x18\x07 \x01(\t\x12\x0c\n\x04item\x18\x08 \x01(\t\x12\x10\n\x08pokeball\x18\t \x01(\t\x12\x0f\n\x07trainer\x18\n \x01(\t\x12\x16\n\x0bpersonality\x18\x0b \x01(\x05:\x01\x30\x12\x39\n\x08moveData\x18\x0c \x03(\x0b\x32\'.PSXAPI.Response155921581865.BattleMove\"d\n\x12\x42\x61ttlePokemonStats\x12\x0e\n\x03\x61tk\x18\x01 \x01(\x05:\x01\x30\x12\x0e\n\x03\x64\x65\x66\x18\x02 \x01(\x05:\x01\x30\x12\x0e\n\x03spa\x18\x03 \x01(\x05:\x01\x30\x12\x0e\n\x03spd\x18\x04 \x01(\x05:\x01\x30\x12\x0e\n\x03spe\x18\x05 \x01(\x05:\x01\x30\"w\n\rBattleRequest\x12\x0e\n\x06Player\x18\x01 \x02(\t\x12\x11\n\tRequestID\x18\x02 \x02(\x05\x12\x43\n\x0bRequestInfo\x18\x03 \x01(\x0b\x32..PSXAPI.Response155921581865.BattleRequestData\"\xf5\x01\n\x11\x42\x61ttleRequestData\x12\x0f\n\x04rqid\x18\x01 \x01(\x05:\x01\x30\x12\x17\n\x08noCancel\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0bteamPreview\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x13\n\x04wait\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x13\n\x0b\x66orceSwitch\x18\x05 \x03(\x08\x12\x39\n\x06\x61\x63tive\x18\x06 \x03(\x0b\x32).PSXAPI.Response155921581865.BattleActive\x12\x35\n\x04side\x18\x07 \x01(\x0b\x32\'.PSXAPI.Response155921581865.BattleSide\"c\n\nBattleSide\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\n\n\x02id\x18\x02 \x01(\t\x12;\n\x07pokemon\x18\x03 \x03(\x0b\x32*.PSXAPI.Response155921581865.BattlePokemon\"m\n\x0c\x44\x61ilyLootbox\x12?\n\x04Type\x18\x01 \x01(\x0e\x32(.PSXAPI.Response155921581865.LootboxType:\x07__None7\x12\x1c\n\x05Timer\x18\x02 \x01(\x0b\x32\r.bcl.TimeSpan\"\x84\x01\n\x06\x45\x66\x66\x65\x63t\x12\x44\n\x04Type\x18\x01 \x01(\x0e\x32-.PSXAPI.Response155921581865.EffectUpdateType:\x07__None0\x12\x34\n\x07\x45\x66\x66\x65\x63ts\x18\x02 \x03(\x0b\x32#.PSXAPI.Response155921581865.Effect\"*\n\x05\x45quip\x12\x11\n\x06\x43lothe\x18\x01 \x01(\x05:\x01\x30\x12\x0e\n\x03Hat\x18\x02 \x01(\x05:\x01\x30\"\xbb\x01\n\x06\x46riend\x12\x0c\n\x04Name\x18\x01 \x01(\t\x12\x15\n\x06Online\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\"\n\x0bOnlineSince\x18\x03 \x01(\x0b\x32\r.bcl.TimeSpan\x12\"\n\x0b\x46riendSince\x18\x04 \x01(\x0b\x32\r.bcl.TimeSpan\x12\x0b\n\x03Map\x18\x05 \x01(\t\x12\x13\n\x04\x41way\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x0f\n\x07Message\x18\x07 \x01(\t\x12\x11\n\x06Level7\x18\x08 \x01(\r:\x01\x30\"~\n\x07\x46riends\x12\x31\n\x04List\x18\x01 \x03(\x0b\x32#.PSXAPI.Response155921581865.Friend\x12@\n\x06\x41\x63tion\x18\x02 \x01(\x0e\x32*.PSXAPI.Response155921581865.FriendsAction:\x04\x41ll1\"\xb8\x02\n\x05Guild\x12\x0c\n\x04Name\x18\x01 \x01(\t\x12\x0f\n\x07Message\x18\x02 \x01(\t\x12\x17\n\x04\x43hat\x18\x03 \x01(\x0b\x32\t.bcl.Guid\x12\x39\n\x07Members\x18\x04 \x03(\x0b\x32(.PSXAPI.Response155921581865.GuildMember\x12<\n\x04Rank\x18\x05 \x01(\x0e\x32&.PSXAPI.Response155921581865.GuildRank:\x06Unset3\x12\x13\n\x08\x45mblemId\x18\x06 \x01(\r:\x01\x30\x12\x1a\n\x0fMembersTotalMax\x18\x07 \x01(\x05:\x01\x30\x12\x1c\n\x11MembersCurrentMax\x18\x08 \x01(\x05:\x01\x30\x12\x16\n\x0bUpgradeGold\x18\t \x01(\r:\x01\x30\x12\x17\n\x0cUpgradeMoney\x18\n \x01(\r:\x01\x30\"\xbd\x01\n\x0bGuildMember\x12\x10\n\x08Username\x18\x01 \x01(\t\x12<\n\x04Rank\x18\x02 \x01(\x0e\x32&.PSXAPI.Response155921581865.GuildRank:\x06Unset3\x12\x15\n\x06Online\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x1c\n\x05Since\x18\x04 \x01(\x0b\x32\r.bcl.TimeSpan\x12\x16\n\x07Removed\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x11\n\x06Level0\x18\x06 \x01(\r:\x01\x30\"{\n\x06Ignore\x12\x31\n\x04List\x18\x01 \x03(\x0b\x32#.PSXAPI.Response155921581865.Ignore\x12>\n\x06\x41\x63tion\x18\x02 \x01(\x0e\x32).PSXAPI.Response155921581865.IgnoreAction:\x03\x41ll\"\xc1\x01\n\tInventory\x12\x11\n\x06Money1\x18\x01 \x01(\r:\x01\x30\x12\x44\n\rActivePokemon\x18\x02 \x03(\x0b\x32-.PSXAPI.Response155921581865.InventoryPokemon\x12\x39\n\x05Items\x18\x03 \x03(\x0b\x32*.PSXAPI.Response155921581865.InventoryItem\x12\x0e\n\x06\x42\x61\x64ges\x18\x04 \x03(\x05\x12\x10\n\x05Gold0\x18\x05 \x01(\r:\x01\x30\"\x92\x03\n\rInventoryItem\x12\x11\n\x06ItemID\x18\x01 \x01(\x05:\x01\x30\x12\x10\n\x05\x43ount\x18\x02 \x01(\r:\x01\x30\x12\x16\n\x07\x43\x61nHold\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\"\n\x13\x43\x61nUseOutsideBattle\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0e\x43\x61nUseInBattle\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x1c\n\rCanUseOnParty\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x17\n\x08\x43\x61nTrade\x18\x07 \x01(\x08:\x05\x66\x61lse\x12@\n\x06Target\x18\x08 \x01(\x0e\x32\'.PSXAPI.Response155921581865.ItemTarget:\x07__None2\x12\x41\n\x06Pocket\x18\t \x01(\x0e\x32\'.PSXAPI.Response155921581865.ItemPocket:\x08Unknown1\x12\x45\n\x08\x43\x61tegory\x18\n \x01(\x0e\x32).PSXAPI.Response155921581865.ItemCategory:\x08Unknown0\"\xfb\x01\n\x10InventoryPokemon\x12:\n\x08Pokemon4\x18\x01 \x01(\x0b\x32(.PSXAPI.Response155921581865.PokemonData\x12\x13\n\x08Position\x18\x02 \x01(\x05:\x01\x30\x12\x0e\n\x03\x42ox\x18\x03 \x01(\x05:\x01\x30\x12\x44\n\tCanEvolve\x18\x04 \x01(\x0e\x32&.PSXAPI.Response155921581865.PokemonID:\tmissingno\x12@\n\x0c\x43\x61nLearnMove\x18\x05 \x03(\x0e\x32*.PSXAPI.Response155921581865.PokemonMoveID\"w\n\x05Level\x12\x14\n\tUserLevel\x18\x01 \x01(\r:\x01\x30\x12\x13\n\x08TotalExp\x18\x02 \x01(\r:\x01\x30\x12\x13\n\x08StartExp\x18\x03 \x01(\r:\x01\x30\x12\x16\n\x0bRequiredExp\x18\x04 \x01(\r:\x01\x30\x12\x16\n\x07LevelUp\x18\x05 \x01(\x08:\x05\x66\x61lse\"\xa6\x03\n\x05Lobby\x12\x15\n\x06Leader\x18\x01 \x01(\x08:\x05\x66\x61lse\x12 \n\x11\x43\x61nChangeSettings\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x18\n\tCanInvite\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0c\x43\x61nKickUsers\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x1c\n\rCanSwitchTeam\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x1c\n\rCanLeaveLobby\x18\x06 \x01(\x08:\x05\x66\x61lse\x12$\n\x15\x43\x61nChangeMonsterCount\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0c\x41\x64justLevels\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0bItemAllowed\x18\t \x01(\x08:\x05\x66\x61lse\x12\x17\n\x08IsRanked\x18\n \x01(\x08:\x05\x66\x61lse\x12@\n\x05Timer\x18\x0b \x01(\x0e\x32\'.PSXAPI.Response155921581865.ActorTimer:\x08\x44isabled\x12\x37\n\x06\x41\x63tors\x18\x0c \x03(\x0b\x32\'.PSXAPI.Response155921581865.LobbyActor\"\x8f\x03\n\nLobbyActor\x12>\n\x04Type\x18\x01 \x01(\x0e\x32&.PSXAPI.Response155921581865.ActorType:\x08__None19\x12\x0c\n\x04Name\x18\x02 \x01(\t\x12>\n\x04Team\x18\x03 \x01(\x0e\x32&.PSXAPI.Response155921581865.ActorTeam:\x08__None18\x12\x17\n\x0cPokemonCount\x18\x04 \x01(\x05:\x01\x30\x12\x16\n\x0b\x41\x63tiveCount\x18\x05 \x01(\x05:\x01\x30\x12\x17\n\x08\x41\x63\x63\x65pted\x18\x06 \x01(\x08:\x05\x66\x61lse\x12J\n\nAvatarType\x18\x07 \x01(\x0e\x32,.PSXAPI.Response155921581865.ActorAvatarType:\x08__None17\x12\x16\n\x0bNpcSpriteID\x18\x08 \x01(\x05:\x01\x30\x12\x17\n\x0c\x41verageLevel\x18\t \x01(\x05:\x01\x30\x12\x17\n\x0cHighestLevel\x18\n \x01(\x05:\x01\x30\x12\x13\n\x04Self\x18\x0b \x01(\x08:\x05\x66\x61lse\"\x8d\r\n\x05Login\x12?\n\x06Result\x18\x01 \x01(\x0e\x32(.PSXAPI.Response155921581865.LoginResult:\x05\x45rror\x12?\n\x05\x45rror\x18\x02 \x01(\x0e\x32\'.PSXAPI.Response155921581865.LoginError:\x07__None4\x12\x10\n\x08Username\x18\x03 \x01(\t\x12\x33\n\x08Position\x18\x04 \x01(\x0b\x32!.PSXAPI.Response155921581865.Move\x12\x39\n\tInventory\x18\x05 \x01(\x0b\x32&.PSXAPI.Response155921581865.Inventory\x12\x35\n\x07Pokedex\x18\x06 \x01(\x0b\x32$.PSXAPI.Response155921581865.Pokedex\x12\x35\n\x07\x46riends\x18\x07 \x01(\x0b\x32$.PSXAPI.Response155921581865.Friends\x12\x31\n\x05Party\x18\x08 \x01(\x0b\x32\".PSXAPI.Response155921581865.Party\x12\x31\n\x05Lobby\x18\t \x01(\x0b\x32\".PSXAPI.Response155921581865.Lobby\x12\x39\n\x08MapUsers\x18\n \x03(\x0b\x32\'.PSXAPI.Response155921581865.MovePlayer\x12/\n\x04Time\x18\x0b \x01(\x0b\x32!.PSXAPI.Response155921581865.Time\x12\x15\n\rFriendMessage\x18\x0c \x01(\t\x12\x33\n\x06Ignore\x18\r \x01(\x0b\x32#.PSXAPI.Response155921581865.Ignore\x12\x31\n\x05Style\x18\x0e \x01(\x0b\x32\".PSXAPI.Response155921581865.Style\x12\x31\n\x05\x45quip\x18\x0f \x01(\x0b\x32\".PSXAPI.Response155921581865.Equip\x12\x44\n\nMemberRank\x18\x10 \x01(\x0e\x32\'.PSXAPI.Response155921581865.MemberRank:\x07__None8\x12\x44\n\nStaffRank0\x18\x11 \x01(\x0e\x32&.PSXAPI.Response155921581865.StaffRank:\x08__None16\x12\x31\n\x05Mount\x18\x12 \x01(\x0b\x32\".PSXAPI.Response155921581865.Mount\x12\x33\n\x06\x42\x61ttle\x18\x13 \x01(\x0b\x32#.PSXAPI.Response155921581865.Battle\x12\x1b\n\x0cStatsPrivate\x18\x14 \x01(\x08:\x05\x66\x61lse\x12\x31\n\x05Guild\x18\x15 \x01(\x0b\x32\".PSXAPI.Response155921581865.Guild\x12\x32\n\x06Quests\x18\x16 \x03(\x0b\x32\".PSXAPI.Response155921581865.Quest\x12\x32\n\x06Level1\x18\x17 \x01(\x0b\x32\".PSXAPI.Response155921581865.Level\x12\x34\n\x07\x42\x61nned0\x18\x18 \x01(\x0b\x32#.PSXAPI.Response155921581865.Banned\x12\x39\n\tSkinsUser\x18\x19 \x01(\x0b\x32&.PSXAPI.Response155921581865.UserSkins\x12\x37\n\tLootboxes\x18\x1a \x03(\x0b\x32$.PSXAPI.Response155921581865.Lootbox\x12?\n\x0c\x44\x61ilyLootbox\x18\x1b \x01(\x0b\x32).PSXAPI.Response155921581865.DailyLootbox\x12!\n\nDailyReset\x18\x1c \x01(\x0b\x32\r.bcl.TimeSpan\x12:\n\x0bNearbyUsers\x18\x1d \x01(\x0b\x32%.PSXAPI.Response155921581865.MapUsers\x12\x14\n\tEncounter\x18\x1e \x01(\x05:\x01\x30\x12\x1c\n\rShowAsOffline\x18\x1f \x01(\x08:\x05\x66\x61lse\x12\x34\n\x07\x45\x66\x66\x65\x63ts\x18  \x01(\x0b\x32#.PSXAPI.Response155921581865.Effect\x12\x15\n\nTotalSteps\x18! \x01(\r:\x01\x30\x12\x17\n\x0f\x44iscoveredAreas\x18# \x03(\t\"\xde\x01\n\x07Lootbox\x12\x43\n\x06\x41\x63tion\x18\x01 \x01(\x0e\x32*.PSXAPI.Response155921581865.LootboxAction:\x07__None6\x12?\n\x04Type\x18\x02 \x01(\x0e\x32(.PSXAPI.Response155921581865.LootboxType:\x07__None7\x12\x14\n\tRemaining\x18\x03 \x01(\r:\x01\x30\x12\x37\n\x05Rolls\x18\x04 \x03(\x0b\x32(.PSXAPI.Response155921581865.LootboxRoll\"\xae\x01\n\x0bLootboxRoll\x12@\n\x08LootType\x18\x01 \x01(\x0e\x32%.PSXAPI.Response155921581865.LootType:\x07__None5\x12\x0e\n\x03Num\x18\x02 \x01(\x05:\x01\x30\x12\x18\n\tDuplicate\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x18\n\rDuplicateGold\x18\x04 \x01(\r:\x01\x30\x12\x19\n\x0e\x44uplicateMoney\x18\x05 \x01(\r:\x01\x30\"\x94\x01\n\x07MapUser\x12\x10\n\x08Username\x18\x01 \x01(\t\x12?\n\x07\x41\x63tions\x18\x02 \x03(\x0b\x32..PSXAPI.Response155921581865.MapUserActionData\x12\x36\n\x04\x44\x61ta\x18\x03 \x01(\x0b\x32(.PSXAPI.Response155921581865.MapUserData\"\x95\x01\n\x11MapUserActionData\x12@\n\x06\x41\x63tion\x18\x01 \x01(\x0e\x32*.PSXAPI.Response155921581865.MapUserAction:\x04Set1\x12>\n\x08Position\x18\x02 \x01(\x0b\x32,.PSXAPI.Response155921581865.MapUserPosition\"\xc7\x04\n\x0bMapUserData\x12\x31\n\x05Style\x18\x01 \x01(\x0b\x32\".PSXAPI.Response155921581865.Style\x12H\n\tDirection\x18\x02 \x01(\x0e\x32,.PSXAPI.Response155921581865.PlayerDirection:\x07\x44\x65\x66\x61ult\x12\x31\n\x05\x45quip\x18\x03 \x01(\x0b\x32\".PSXAPI.Response155921581865.Equip\x12\x32\n\x06Mount1\x18\x04 \x01(\x0b\x32\".PSXAPI.Response155921581865.Mount\x12\x13\n\x04\x41way\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x15\n\x06\x42\x61ttle\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x44\n\nMemberRank\x18\x07 \x01(\x0e\x32\'.PSXAPI.Response155921581865.MemberRank:\x07__None8\x12\x44\n\nStaffRank1\x18\x08 \x01(\x0e\x32&.PSXAPI.Response155921581865.StaffRank:\x08__None16\x12\x11\n\tGuildName\x18\t \x01(\t\x12\x13\n\x08\x45mblemId\x18\n \x01(\r:\x01\x30\x12\x11\n\x06Level2\x18\x0b \x01(\r:\x01\x30\x12\x11\n\x06\x46ollow\x18\x0c \x01(\x05:\x01\x30\x12\x1c\n\x11\x46ollowPersonality\x18\r \x01(\x05:\x01\x30\x12\x14\n\x05Lobby\x18\x0e \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0b\x46ollowShiny\x18\x0f \x01(\x08:\x05\x66\x61lse\"@\n\x0fMapUserPosition\x12\x0c\n\x01X\x18\x01 \x01(\x05:\x01\x30\x12\x0c\n\x01Y\x18\x02 \x01(\x05:\x01\x30\x12\x11\n\x06Height\x18\x03 \x01(\x05:\x01\x30\"L\n\x08MapUsers\x12\x33\n\x05Users\x18\x01 \x03(\x0b\x32$.PSXAPI.Response155921581865.MapUser\x12\x0b\n\x03Map\x18\x02 \x01(\t\"_\n\x05Mount\x12\x12\n\x07MountID\x18\x01 \x01(\x05:\x01\x30\x12\x42\n\tMountType\x18\x02 \x01(\x0e\x32&.PSXAPI.Response155921581865.MountType:\x07__None9\"\xe0\x01\n\x04Move\x12\x0b\n\x03Map\x18\x01 \x02(\t\x12\t\n\x01X\x18\x02 \x02(\x05\x12\t\n\x01Y\x18\x03 \x02(\x05\x12<\n\x06\x41\x63tion\x18\x04 \x01(\x0e\x32\'.PSXAPI.Response155921581865.MoveAction:\x03Set\x12H\n\tDirection\x18\x05 \x01(\x0e\x32,.PSXAPI.Response155921581865.PlayerDirection:\x07\x44\x65\x66\x61ult\x12\x1a\n\x07Scripts\x18\x06 \x03(\x0b\x32\t.bcl.Guid\x12\x11\n\x06Height\x18\x07 \x01(\x05:\x01\x30\"\xd3\x05\n\nMovePlayer\x12\x0b\n\x03Map\x18\x01 \x02(\t\x12\x10\n\x08Username\x18\x02 \x02(\t\x12\t\n\x01X\x18\x03 \x02(\x05\x12\t\n\x01Y\x18\x04 \x02(\x05\x12\x43\n\x06\x41\x63tion\x18\x05 \x01(\x0e\x32-.PSXAPI.Response155921581865.MovePlayerAction:\x04Set0\x12\x31\n\x05Style\x18\x06 \x01(\x0b\x32\".PSXAPI.Response155921581865.Style\x12H\n\tDirection\x18\x07 \x01(\x0e\x32,.PSXAPI.Response155921581865.PlayerDirection:\x07\x44\x65\x66\x61ult\x12\x31\n\x05\x45quip\x18\x08 \x01(\x0b\x32\".PSXAPI.Response155921581865.Equip\x12\x32\n\x06Mount2\x18\t \x01(\x0b\x32\".PSXAPI.Response155921581865.Mount\x12\x13\n\x04\x41way\x18\n \x01(\x08:\x05\x66\x61lse\x12\x15\n\x06\x42\x61ttle\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\x44\n\nMemberRank\x18\x0c \x01(\x0e\x32\'.PSXAPI.Response155921581865.MemberRank:\x07__None8\x12\x44\n\nStaffRank2\x18\r \x01(\x0e\x32&.PSXAPI.Response155921581865.StaffRank:\x08__None16\x12\x11\n\tGuildName\x18\x0e \x01(\t\x12\x13\n\x08\x45mblemId\x18\x0f \x01(\r:\x01\x30\x12\x11\n\x06Level3\x18\x10 \x01(\r:\x01\x30\x12\x11\n\x06\x46ollow\x18\x11 \x01(\x05:\x01\x30\x12\x11\n\x06Height\x18\x12 \x01(\x05:\x01\x30\x12\x1c\n\x11\x46ollowPersonality\x18\x13 \x01(\x05:\x01\x30\x12\x14\n\x05Lobby\x18\x14 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0b\x46ollowShiny\x18\x15 \x01(\x08:\x05\x66\x61lse\"]\n\x05Party\x12\x39\n\x07Members\x18\x01 \x03(\x0b\x32(.PSXAPI.Response155921581865.PartyMember\x12\x19\n\x06\x43hatID\x18\x02 \x01(\x0b\x32\t.bcl.Guid\"\xaf\x02\n\x0bPartyMember\x12\x0c\n\x04Name\x18\x01 \x01(\t\x12\x19\n\x06UserId\x18\x02 \x01(\x0b\x32\t.bcl.Guid\x12\x15\n\x06Online\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x15\n\x06Leader\x18\x04 \x01(\x08:\x05\x66\x61lse\x12>\n\x07Pokemon\x18\x05 \x03(\x0b\x32-.PSXAPI.Response155921581865.InventoryPokemon\x12\x11\n\x06Level4\x18\x06 \x01(\r:\x01\x30\x12\x35\n\tEquipment\x18\x07 \x01(\x0b\x32\".PSXAPI.Response155921581865.Equip\x12\x31\n\x05Style\x18\x08 \x01(\x0b\x32\".PSXAPI.Response155921581865.Style\x12\x0c\n\x04\x41rea\x18\t \x01(\t\"i\n\x07Pokedex\x12:\n\x07\x45ntries\x18\x01 \x03(\x0b\x32).PSXAPI.Response155921581865.PokedexEntry\x12\x0f\n\x04Seen\x18\x02 \x01(\x05:\x01\x30\x12\x11\n\x06\x43\x61ught\x18\x03 \x01(\x05:\x01\x30\"\x9b\x01\n\x0cPokedexEntry\x12\x42\n\x07Pokemon\x18\x01 \x01(\x0e\x32&.PSXAPI.Response155921581865.PokemonID:\tmissingno\x12G\n\x05State\x18\x02 \x01(\x0e\x32..PSXAPI.Response155921581865.PokedexEntryState:\x08__None10\"\xac\x07\n\x07Pokemon\x12\x44\n\tPokemonID\x18\x01 \x01(\x0e\x32&.PSXAPI.Response155921581865.PokemonID:\tmissingno\x12\x11\n\x06Level5\x18\x02 \x01(\x05:\x01\x30\x12\x0e\n\x03\x45xp\x18\x03 \x01(\x05:\x01\x30\x12\r\n\x02HP\x18\x04 \x01(\x05:\x01\x30\x12\x37\n\x05Moves\x18\x05 \x03(\x0b\x32(.PSXAPI.Response155921581865.PokemonMove\x12K\n\x0b\x41\x62ilitySlot\x18\x06 \x01(\x0e\x32,.PSXAPI.Response155921581865.AbilitySlotType:\x08__None20\x12\x14\n\tHappiness\x18\x07 \x01(\x05:\x01\x30\x12\x45\n\x06Nature\x18\x08 \x01(\x0e\x32+.PSXAPI.Response155921581865.PokemonNatures:\x08__None13\x12\x14\n\x05Shiny\x18\t \x01(\x08:\x05\x66\x61lse\x12\x36\n\x03IVs\x18\n \x01(\x0b\x32).PSXAPI.Response155921581865.PokemonStats\x12\x36\n\x03\x45Vs\x18\x0b \x01(\x0b\x32).PSXAPI.Response155921581865.PokemonStats\x12\x44\n\x06Gender\x18\x0c \x01(\x0e\x32*.PSXAPI.Response155921581865.PokemonGender:\x08__None12\x12\"\n\x0fOriginalTrainer\x18\r \x01(\x0b\x32\t.bcl.Guid\x12\x1a\n\x07Trainer\x18\x0e \x01(\x0b\x32\t.bcl.Guid\x12\x10\n\x08Nickname\x18\x0f \x01(\t\x12\x13\n\x08Pokeball\x18\x10 \x01(\x05:\x01\x30\x12\x13\n\x08HoldItem\x18\x11 \x01(\x05:\x01\x30\x12\x16\n\x0bPersonality\x18\x12 \x01(\x05:\x01\x30\x12J\n\tCondition\x18\x13 \x01(\x0e\x32-.PSXAPI.Response155921581865.PokemonCondition:\x08__None11\x12?\n\x0c\x45VsCollected\x18\x14 \x01(\x0b\x32).PSXAPI.Response155921581865.PokemonStats\x12$\n\rCaughtDateUtc\x18\x15 \x01(\x0b\x32\r.bcl.DateTime\x12\x16\n\x0b\x43\x61ughtLevel\x18\x16 \x01(\x05:\x01\x30\x12\x1b\n\x0cNotTradeable\x18\x17 \x01(\x08:\x05\x66\x61lse\"\xc1\x02\n\x0bPokemonData\x12\x1b\n\x08UniqueID\x18\x01 \x01(\x0b\x32\t.bcl.Guid\x12\x35\n\x07Payload\x18\x02 \x01(\x0b\x32$.PSXAPI.Response155921581865.Pokemon\x12\x38\n\x05Stats\x18\x03 \x01(\x0b\x32).PSXAPI.Response155921581865.PokemonStats\x12\x0f\n\x07Trainer\x18\x04 \x01(\t\x12\x17\n\x0fOriginalTrainer\x18\x05 \x01(\t\x12\x0f\n\x07\x41\x62ility\x18\x06 \x01(\t\x12\x13\n\x08\x45xpStart\x18\x07 \x01(\x05:\x01\x30\x12\x12\n\x07\x45xpNext\x18\x08 \x01(\x05:\x01\x30\x12@\n\x08\x45ggState\x18\t \x01(\x0e\x32%.PSXAPI.Response155921581865.EggState:\x07__None1\"o\n\x0bPokemonMove\x12?\n\x05Move1\x18\x01 \x01(\x0e\x32*.PSXAPI.Response155921581865.PokemonMoveID:\x04none\x12\r\n\x02PP\x18\x02 \x01(\x05:\x01\x30\x12\x10\n\x05MaxPP\x18\x03 \x01(\x05:\x01\x30\"s\n\x0cPokemonStats\x12\r\n\x02HP\x18\x01 \x01(\x05:\x01\x30\x12\x0e\n\x03\x41tk\x18\x02 \x01(\x05:\x01\x30\x12\x0e\n\x03\x44\x65\x66\x18\x03 \x01(\x05:\x01\x30\x12\x10\n\x05SpAtk\x18\x04 \x01(\x05:\x01\x30\x12\x10\n\x05SpDef\x18\x05 \x01(\x05:\x01\x30\x12\x10\n\x05Speed\x18\x06 \x01(\x05:\x01\x30\"\xd3\x04\n\x05Quest\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x0c\n\x04Name\x18\x02 \x01(\t\x12\x13\n\x0b\x44\x65scription\x18\x03 \x01(\t\x12>\n\x04Type\x18\x04 \x01(\x0e\x32&.PSXAPI.Response155921581865.QuestType:\x08__None15\x12\x0f\n\x04Step\x18\x05 \x01(\x01:\x01\x30\x12N\n\x0cProgressType\x18\x06 \x01(\x0e\x32..PSXAPI.Response155921581865.QuestProgressType:\x08__None14\x12\x15\n\nProgressID\x18\x07 \x01(\x05:\x01\x30\x12\x13\n\x08Progress\x18\x08 \x01(\x05:\x01\x30\x12\x13\n\x08Required\x18\t \x01(\x05:\x01\x30\x12\x19\n\x06Target\x18\n \x01(\x0b\x32\t.bcl.Guid\x12\"\n\x0fTargetCompleted\x18\x0b \x01(\x0b\x32\t.bcl.Guid\x12\x18\n\tCompleted\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0c\x41utoComplete\x18\r \x01(\x08:\x05\x66\x61lse\x12\x38\n\x06Reward\x18\x0e \x01(\x0b\x32(.PSXAPI.Response155921581865.QuestReward\x12\x18\n\tCanCancel\x18\x0f \x01(\x08:\x05\x66\x61lse\x12\x17\n\x08\x43\x61nShare\x18\x10 \x01(\x08:\x05\x66\x61lse\x12\x12\n\nTargetArea\x18\x11 \x01(\t\x12\x1b\n\x13TargetCompletedArea\x18\x12 \x01(\t\x12\x11\n\tSourceNPC\x18\x13 \x01(\t\x12\x12\n\nSourceArea\x18\x14 \x01(\t\"\xad\x01\n\x0bQuestReward\x12\x11\n\x06Money3\x18\x01 \x01(\r:\x01\x30\x12\x0f\n\x04Gold\x18\x02 \x01(\r:\x01\x30\x12\r\n\x05Items\x18\x03 \x03(\x05\x12\x13\n\x08Pokemon3\x18\x04 \x01(\x05:\x01\x30\x12\x17\n\x0cPokemonLevel\x18\x05 \x01(\x05:\x01\x30\x12\x1b\n\x0cPokemonShiny\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x10\n\x05\x42\x61\x64ge\x18\x07 \x01(\x05:\x01\x30\x12\x0e\n\x03\x45xp\x18\x08 \x01(\x05:\x01\x30\"\x8c\x01\n\x05Style\x12:\n\x06Gender\x18\x01 \x01(\x0e\x32#.PSXAPI.Response155921581865.Gender:\x05Male1\x12\x0f\n\x04Skin\x18\x02 \x01(\x05:\x01\x30\x12\x0f\n\x04\x45yes\x18\x03 \x01(\x05:\x01\x30\x12\x0f\n\x04Hair\x18\x04 \x01(\x05:\x01\x30\x12\x14\n\tHairColor\x18\x05 \x01(\x05:\x01\x30\"\xb5\x02\n\x04Time\x12$\n\rServerTimeUtc\x18\x01 \x01(\x0b\x32\r.bcl.DateTime\x12\x1f\n\x08GameTime\x18\x02 \x01(\x0b\x32\r.bcl.TimeSpan\x12\x45\n\x0bGameDayTime\x18\x03 \x01(\x0e\x32(.PSXAPI.Response155921581865.GameDayTime:\x06Unset1\x12\x43\n\nGameSeason\x18\x04 \x01(\x0e\x32\'.PSXAPI.Response155921581865.GameSeason:\x06Unset2\x12\x15\n\nTimeFactor\x18\x05 \x01(\x01:\x01\x30\x12\x43\n\x07Weather\x18\x06 \x01(\x0e\x32).PSXAPI.Response155921581865.WeatherState:\x07Normal1\"\xe4\x01\n\tUserSkins\x12\x18\n\rEquipedClothe\x18\x01 \x01(\x05:\x01\x30\x12\x15\n\nEquipedHat\x18\x02 \x01(\x05:\x01\x30\x12\x17\n\x0c\x45quipedMount\x18\x03 \x01(\x05:\x01\x30\x12\x1b\n\x10\x45quipedSurfMount\x18\x04 \x01(\x05:\x01\x30\x12\x1a\n\x0f\x45quipedFlyMount\x18\x05 \x01(\x05:\x01\x30\x12\x0f\n\x07\x43lothes\x18\x06 \x03(\x05\x12\x0c\n\x04Hats\x18\x07 \x03(\x05\x12\x0e\n\x06Mounts\x18\x08 \x03(\x05\x12\x12\n\nSurfMounts\x18\t \x03(\x05\x12\x11\n\tFlyMounts\x18\n \x03(\x05\"&\n\x05ZMove\x12\r\n\x05move1\x18\x01 \x01(\t\x12\x0e\n\x06target\x18\x02 \x01(\t*4\n\x0f\x41\x63torAvatarType\x12\x0c\n\x08__None17\x10\x00\x12\t\n\x05User0\x10\x01\x12\x08\n\x04NPC0\x10\x02*/\n\tActorTeam\x12\x0c\n\x08__None18\x10\x00\x12\t\n\x05Team1\x10\x01\x12\t\n\x05Team2\x10\x02*8\n\nActorTimer\x12\x0c\n\x08\x44isabled\x10\x00\x12\x0f\n\x0bNotRequired\x10\x01\x12\x0b\n\x07\x45nabled\x10\x02*U\n\tActorType\x12\x0c\n\x08__None19\x10\x00\x12\n\n\x06Leader\x10\x01\x12\t\n\x05User1\x10\x02\x12\x08\n\x04NPC1\x10\x03\x12\x0c\n\x08Inactive\x10\x04\x12\x0b\n\x07Offline\x10\x05*B\n\x0f\x41\x62ilitySlotType\x12\x0c\n\x08__None20\x10\x00\x12\t\n\x05Slot1\x10\x01\x12\t\n\x05Slot2\x10\x02\x12\x0b\n\x07Hidden0\x10\x03*G\n\x10\x45\x66\x66\x65\x63tUpdateType\x12\x0b\n\x07__None0\x10\x00\x12\x08\n\x04\x41ll0\x10\x01\x12\x0f\n\x0b\x41\x64\x64OrUpdate\x10\x02\x12\x0b\n\x07Remove0\x10\x03*J\n\x08\x45ggState\x12\x0b\n\x07__None1\x10\x00\x12\n\n\x06Sounds\x10\x01\x12\t\n\x05Moves\x10\x02\x12\x0c\n\x08MoreTime\x10\x03\x12\x0c\n\x08LongTime\x10\x04*<\n\rFriendsAction\x12\x08\n\x04\x41ll1\x10\x00\x12\x07\n\x03\x41\x64\x64\x10\x01\x12\x0b\n\x07Remove1\x10\x02\x12\x0b\n\x07Update0\x10\x03*G\n\x0bGameDayTime\x12\n\n\x06Unset1\x10\x00\x12\x0b\n\x07Morning\x10\x01\x12\x07\n\x03\x44\x61y\x10\x02\x12\x0b\n\x07\x45vening\x10\x03\x12\t\n\x05Night\x10\x04*H\n\nGameSeason\x12\n\n\x06Unset2\x10\x00\x12\n\n\x06Spring\x10\x01\x12\n\n\x06Summer\x10\x02\x12\n\n\x06\x41utumn\x10\x03\x12\n\n\x06Winter\x10\x04* \n\x06Gender\x12\t\n\x05Male1\x10\x00\x12\x0b\n\x07\x46\x65male1\x10\x01*I\n\tGuildRank\x12\n\n\x06Unset3\x10\x00\x12\x0b\n\x07\x43reator\x10\x01\x12\t\n\x05\x41\x64min\x10\x02\x12\x0e\n\nModerator1\x10\x03\x12\x08\n\x04User\x10\x04*.\n\x0cIgnoreAction\x12\x07\n\x03\x41ll\x10\x00\x12\x08\n\x04\x41\x64\x64\x31\x10\x01\x12\x0b\n\x07Remove2\x10\x02*w\n\x0cItemCategory\x12\x0c\n\x08Unknown0\x10\x00\x12\x0b\n\x07General\x10\x01\x12\x0c\n\x08Pokeball\x10\x02\x12\r\n\tMedicine0\x10\x03\x12\x0c\n\x08Machine0\x10\x04\x12\n\n\x06\x42\x65rry0\x10\x05\x12\x0b\n\x07\x42\x61ttle0\x10\x06\x12\x08\n\x04Hold\x10\x07*f\n\nItemPocket\x12\x0c\n\x08Unknown1\x10\x00\x12\t\n\x05Items\x10\x01\x12\r\n\tMedicine1\x10\x02\x12\n\n\x06\x42\x65rry1\x10\x03\x12\x07\n\x03Key\x10\x04\x12\x0c\n\x08Machine1\x10\x05\x12\r\n\tZ_Crystal\x10\x06*2\n\nItemTarget\x12\x0b\n\x07__None2\x10\x00\x12\x0c\n\x08Pokemon5\x10\x01\x12\t\n\x05Move0\x10\x02*\x85\x01\n\nLoginError\x12\x0b\n\x07__None4\x10\x00\x12\x11\n\rWrongPassword\x10\x01\x12\x13\n\x0f\x41\x63\x63ountNotFound\x10\x02\x12\x13\n\x0f\x41lreadyLoggedIn\x10\x03\x12\x0b\n\x07\x42\x61nned1\x10\x04\x12\x0f\n\x0bNotVerified\x10\x05\x12\x0f\n\x0bUnsupported\x10\x06*%\n\x0bLoginResult\x12\t\n\x05\x45rror\x10\x00\x12\x0b\n\x07Success\x10\x01*\x85\x01\n\x08LootType\x12\x0b\n\x07__None5\x10\x00\x12\n\n\x06Money2\x10\x01\x12\t\n\x05Gold1\x10\x02\x12\t\n\x05Item0\x10\x03\x12\x0c\n\x08Pokemon0\x10\x04\x12\n\n\x06\x43lothe\x10\x05\x12\x07\n\x03Hat\x10\x06\x12\n\n\x06Mount0\x10\x07\x12\r\n\tSurfMount\x10\x08\x12\x0c\n\x08\x46lyMount\x10\t*5\n\rLootboxAction\x12\x0b\n\x07__None6\x10\x00\x12\n\n\x06Opened\x10\x01\x12\x0b\n\x07Update1\x10\x02*2\n\x0bLootboxType\x12\x0b\n\x07__None7\x10\x00\x12\t\n\x05Small\x10\x01\x12\x0b\n\x07Normal0\x10\x02*j\n\rMapUserAction\x12\x08\n\x04Set1\x10\x00\x12\x07\n\x03Up0\x10\x01\x12\t\n\x05\x44own0\x10\x02\x12\t\n\x05Left0\x10\x03\x12\n\n\x06Right0\x10\x04\x12\n\n\x06\x45nter1\x10\x05\x12\n\n\x06Leave1\x10\x06\x12\x0c\n\x08\x46ishing1\x10\x07*%\n\nMemberRank\x12\x0b\n\x07__None8\x10\x00\x12\n\n\x06Member\x10\x01*=\n\tMountType\x12\x0b\n\x07__None9\x10\x00\x12\x0b\n\x07Surfing\x10\x01\x12\x08\n\x04\x42ike\x10\x02\x12\x0c\n\x08Pokemon1\x10\x03*@\n\nMoveAction\x12\x07\n\x03Set\x10\x00\x12\x07\n\x03Up1\x10\x01\x12\t\n\x05\x44own1\x10\x02\x12\t\n\x05Left1\x10\x03\x12\n\n\x06Right1\x10\x04*m\n\x10MovePlayerAction\x12\x08\n\x04Set0\x10\x00\x12\x07\n\x03Up2\x10\x01\x12\t\n\x05\x44own2\x10\x02\x12\t\n\x05Left2\x10\x03\x12\n\n\x06Right2\x10\x04\x12\n\n\x06\x45nter0\x10\x05\x12\n\n\x06Leave0\x10\x06\x12\x0c\n\x08\x46ishing0\x10\x07*I\n\x0fPlayerDirection\x12\x0b\n\x07\x44\x65\x66\x61ult\x10\x00\x12\x07\n\x03Up3\x10\x01\x12\t\n\x05\x44own3\x10\x02\x12\t\n\x05Left3\x10\x03\x12\n\n\x06Right3\x10\x04*7\n\x11PokedexEntryState\x12\x0c\n\x08__None10\x10\x00\x12\x08\n\x04Seen\x10\x01\x12\n\n\x06\x43\x61ught\x10\x02*i\n\x10PokemonCondition\x12\x0c\n\x08__None11\x10\x00\x12\x0b\n\x07\x46\x61inted\x10\x01\x12\x08\n\x04\x42urn\x10\x02\x12\n\n\x06\x46reeze\x10\x03\x12\r\n\tParalysis\x10\x04\x12\n\n\x06Poison\x10\x05\x12\t\n\x05Sleep\x10\x06*5\n\rPokemonGender\x12\x0c\n\x08__None12\x10\x00\x12\t\n\x05Male0\x10\x01\x12\x0b\n\x07\x46\x65male0\x10\x02*\xf1Y\n\tPokemonID\x12\r\n\tmissingno\x10\x00\x12\x13\n\x06Unset0\x10\xff\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12\r\n\tbulbasaur\x10\x01\x12\x0b\n\x07ivysaur\x10\x02\x12\x0c\n\x08venusaur\x10\x03\x12\x0e\n\ncharmander\x10\x04\x12\x0e\n\ncharmeleon\x10\x05\x12\r\n\tcharizard\x10\x06\x12\x0c\n\x08squirtle\x10\x07\x12\r\n\twartortle\x10\x08\x12\r\n\tblastoise\x10\t\x12\x0c\n\x08\x63\x61terpie\x10\n\x12\x0b\n\x07metapod\x10\x0b\x12\x0e\n\nbutterfree\x10\x0c\x12\n\n\x06weedle\x10\r\x12\n\n\x06kakuna\x10\x0e\x12\x0c\n\x08\x62\x65\x65\x64rill\x10\x0f\x12\n\n\x06pidgey\x10\x10\x12\r\n\tpidgeotto\x10\x11\x12\x0b\n\x07pidgeot\x10\x12\x12\x0b\n\x07rattata\x10\x13\x12\x0c\n\x08raticate\x10\x14\x12\x0b\n\x07spearow\x10\x15\x12\n\n\x06\x66\x65\x61row\x10\x16\x12\t\n\x05\x65kans\x10\x17\x12\t\n\x05\x61rbok\x10\x18\x12\x0b\n\x07pikachu\x10\x19\x12\n\n\x06raichu\x10\x1a\x12\r\n\tsandshrew\x10\x1b\x12\r\n\tsandslash\x10\x1c\x12\x0c\n\x08nidoranf\x10\x1d\x12\x0c\n\x08nidorina\x10\x1e\x12\r\n\tnidoqueen\x10\x1f\x12\x0c\n\x08nidoranm\x10 \x12\x0c\n\x08nidorino\x10!\x12\x0c\n\x08nidoking\x10\"\x12\x0c\n\x08\x63lefairy\x10#\x12\x0c\n\x08\x63lefable\x10$\x12\n\n\x06vulpix\x10%\x12\r\n\tninetales\x10&\x12\x0e\n\njigglypuff\x10\'\x12\x0e\n\nwigglytuff\x10(\x12\t\n\x05zubat\x10)\x12\n\n\x06golbat\x10*\x12\n\n\x06oddish\x10+\x12\t\n\x05gloom\x10,\x12\r\n\tvileplume\x10-\x12\t\n\x05paras\x10.\x12\x0c\n\x08parasect\x10/\x12\x0b\n\x07venonat\x10\x30\x12\x0c\n\x08venomoth\x10\x31\x12\x0b\n\x07\x64iglett\x10\x32\x12\x0b\n\x07\x64ugtrio\x10\x33\x12\n\n\x06meowth\x10\x34\x12\x0b\n\x07persian\x10\x35\x12\x0b\n\x07psyduck\x10\x36\x12\x0b\n\x07golduck\x10\x37\x12\n\n\x06mankey\x10\x38\x12\x0c\n\x08primeape\x10\x39\x12\r\n\tgrowlithe\x10:\x12\x0c\n\x08\x61rcanine\x10;\x12\x0b\n\x07poliwag\x10<\x12\r\n\tpoliwhirl\x10=\x12\r\n\tpoliwrath\x10>\x12\x08\n\x04\x61\x62ra\x10?\x12\x0b\n\x07kadabra\x10@\x12\x0c\n\x08\x61lakazam\x10\x41\x12\n\n\x06machop\x10\x42\x12\x0b\n\x07machoke\x10\x43\x12\x0b\n\x07machamp\x10\x44\x12\x0e\n\nbellsprout\x10\x45\x12\x0e\n\nweepinbell\x10\x46\x12\x0e\n\nvictreebel\x10G\x12\r\n\ttentacool\x10H\x12\x0e\n\ntentacruel\x10I\x12\x0b\n\x07geodude\x10J\x12\x0c\n\x08graveler\x10K\x12\t\n\x05golem\x10L\x12\n\n\x06ponyta\x10M\x12\x0c\n\x08rapidash\x10N\x12\x0c\n\x08slowpoke\x10O\x12\x0b\n\x07slowbro\x10P\x12\r\n\tmagnemite\x10Q\x12\x0c\n\x08magneton\x10R\x12\r\n\tfarfetchd\x10S\x12\t\n\x05\x64oduo\x10T\x12\n\n\x06\x64odrio\x10U\x12\x08\n\x04seel\x10V\x12\x0b\n\x07\x64\x65wgong\x10W\x12\n\n\x06grimer\x10X\x12\x07\n\x03muk\x10Y\x12\x0c\n\x08shellder\x10Z\x12\x0c\n\x08\x63loyster\x10[\x12\n\n\x06gastly\x10\\\x12\x0b\n\x07haunter\x10]\x12\n\n\x06gengar\x10^\x12\x08\n\x04onix\x10_\x12\x0b\n\x07\x64rowzee\x10`\x12\t\n\x05hypno\x10\x61\x12\n\n\x06krabby\x10\x62\x12\x0b\n\x07kingler\x10\x63\x12\x0b\n\x07voltorb\x10\x64\x12\r\n\telectrode\x10\x65\x12\r\n\texeggcute\x10\x66\x12\r\n\texeggutor\x10g\x12\n\n\x06\x63ubone\x10h\x12\x0b\n\x07marowak\x10i\x12\r\n\thitmonlee\x10j\x12\x0e\n\nhitmonchan\x10k\x12\r\n\tlickitung\x10l\x12\x0b\n\x07koffing\x10m\x12\x0b\n\x07weezing\x10n\x12\x0b\n\x07rhyhorn\x10o\x12\n\n\x06rhydon\x10p\x12\x0b\n\x07\x63hansey\x10q\x12\x0b\n\x07tangela\x10r\x12\x0e\n\nkangaskhan\x10s\x12\n\n\x06horsea\x10t\x12\n\n\x06seadra\x10u\x12\x0b\n\x07goldeen\x10v\x12\x0b\n\x07seaking\x10w\x12\n\n\x06staryu\x10x\x12\x0b\n\x07starmie\x10y\x12\n\n\x06mrmime\x10z\x12\x0b\n\x07scyther\x10{\x12\x08\n\x04jynx\x10|\x12\x0e\n\nelectabuzz\x10}\x12\n\n\x06magmar\x10~\x12\n\n\x06pinsir\x10\x7f\x12\x0b\n\x06tauros\x10\x80\x01\x12\r\n\x08magikarp\x10\x81\x01\x12\r\n\x08gyarados\x10\x82\x01\x12\x0b\n\x06lapras\x10\x83\x01\x12\n\n\x05\x64itto\x10\x84\x01\x12\n\n\x05\x65\x65vee\x10\x85\x01\x12\r\n\x08vaporeon\x10\x86\x01\x12\x0c\n\x07jolteon\x10\x87\x01\x12\x0c\n\x07\x66lareon\x10\x88\x01\x12\x0c\n\x07porygon\x10\x89\x01\x12\x0c\n\x07omanyte\x10\x8a\x01\x12\x0c\n\x07omastar\x10\x8b\x01\x12\x0b\n\x06kabuto\x10\x8c\x01\x12\r\n\x08kabutops\x10\x8d\x01\x12\x0f\n\naerodactyl\x10\x8e\x01\x12\x0c\n\x07snorlax\x10\x8f\x01\x12\r\n\x08\x61rticuno\x10\x90\x01\x12\x0b\n\x06zapdos\x10\x91\x01\x12\x0c\n\x07moltres\x10\x92\x01\x12\x0c\n\x07\x64ratini\x10\x93\x01\x12\x0e\n\tdragonair\x10\x94\x01\x12\x0e\n\tdragonite\x10\x95\x01\x12\x0b\n\x06mewtwo\x10\x96\x01\x12\x08\n\x03mew\x10\x97\x01\x12\x0e\n\tchikorita\x10\x98\x01\x12\x0c\n\x07\x62\x61yleef\x10\x99\x01\x12\r\n\x08meganium\x10\x9a\x01\x12\x0e\n\tcyndaquil\x10\x9b\x01\x12\x0c\n\x07quilava\x10\x9c\x01\x12\x0f\n\ntyphlosion\x10\x9d\x01\x12\r\n\x08totodile\x10\x9e\x01\x12\r\n\x08\x63roconaw\x10\x9f\x01\x12\x0f\n\nferaligatr\x10\xa0\x01\x12\x0c\n\x07sentret\x10\xa1\x01\x12\x0b\n\x06\x66urret\x10\xa2\x01\x12\r\n\x08hoothoot\x10\xa3\x01\x12\x0c\n\x07noctowl\x10\xa4\x01\x12\x0b\n\x06ledyba\x10\xa5\x01\x12\x0b\n\x06ledian\x10\xa6\x01\x12\r\n\x08spinarak\x10\xa7\x01\x12\x0c\n\x07\x61riados\x10\xa8\x01\x12\x0b\n\x06\x63robat\x10\xa9\x01\x12\r\n\x08\x63hinchou\x10\xaa\x01\x12\x0c\n\x07lanturn\x10\xab\x01\x12\n\n\x05pichu\x10\xac\x01\x12\x0b\n\x06\x63leffa\x10\xad\x01\x12\x0e\n\tigglybuff\x10\xae\x01\x12\x0b\n\x06togepi\x10\xaf\x01\x12\x0c\n\x07togetic\x10\xb0\x01\x12\t\n\x04natu\x10\xb1\x01\x12\t\n\x04xatu\x10\xb2\x01\x12\x0b\n\x06mareep\x10\xb3\x01\x12\x0c\n\x07\x66laaffy\x10\xb4\x01\x12\r\n\x08\x61mpharos\x10\xb5\x01\x12\x0e\n\tbellossom\x10\xb6\x01\x12\x0b\n\x06marill\x10\xb7\x01\x12\x0e\n\tazumarill\x10\xb8\x01\x12\x0e\n\tsudowoodo\x10\xb9\x01\x12\r\n\x08politoed\x10\xba\x01\x12\x0b\n\x06hoppip\x10\xbb\x01\x12\r\n\x08skiploom\x10\xbc\x01\x12\r\n\x08jumpluff\x10\xbd\x01\x12\n\n\x05\x61ipom\x10\xbe\x01\x12\x0c\n\x07sunkern\x10\xbf\x01\x12\r\n\x08sunflora\x10\xc0\x01\x12\n\n\x05yanma\x10\xc1\x01\x12\x0b\n\x06wooper\x10\xc2\x01\x12\r\n\x08quagsire\x10\xc3\x01\x12\x0b\n\x06\x65speon\x10\xc4\x01\x12\x0c\n\x07umbreon\x10\xc5\x01\x12\x0c\n\x07murkrow\x10\xc6\x01\x12\r\n\x08slowking\x10\xc7\x01\x12\x0f\n\nmisdreavus\x10\xc8\x01\x12\n\n\x05unown\x10\xc9\x01\x12\x0e\n\twobbuffet\x10\xca\x01\x12\x0e\n\tgirafarig\x10\xcb\x01\x12\x0b\n\x06pineco\x10\xcc\x01\x12\x0f\n\nforretress\x10\xcd\x01\x12\x0e\n\tdunsparce\x10\xce\x01\x12\x0b\n\x06gligar\x10\xcf\x01\x12\x0c\n\x07steelix\x10\xd0\x01\x12\r\n\x08snubbull\x10\xd1\x01\x12\r\n\x08granbull\x10\xd2\x01\x12\r\n\x08qwilfish\x10\xd3\x01\x12\x0b\n\x06scizor\x10\xd4\x01\x12\x0c\n\x07shuckle\x10\xd5\x01\x12\x0e\n\theracross\x10\xd6\x01\x12\x0c\n\x07sneasel\x10\xd7\x01\x12\x0e\n\tteddiursa\x10\xd8\x01\x12\r\n\x08ursaring\x10\xd9\x01\x12\x0b\n\x06slugma\x10\xda\x01\x12\r\n\x08magcargo\x10\xdb\x01\x12\x0b\n\x06swinub\x10\xdc\x01\x12\x0e\n\tpiloswine\x10\xdd\x01\x12\x0c\n\x07\x63orsola\x10\xde\x01\x12\r\n\x08remoraid\x10\xdf\x01\x12\x0e\n\toctillery\x10\xe0\x01\x12\r\n\x08\x64\x65libird\x10\xe1\x01\x12\x0c\n\x07mantine\x10\xe2\x01\x12\r\n\x08skarmory\x10\xe3\x01\x12\r\n\x08houndour\x10\xe4\x01\x12\r\n\x08houndoom\x10\xe5\x01\x12\x0c\n\x07kingdra\x10\xe6\x01\x12\x0b\n\x06phanpy\x10\xe7\x01\x12\x0c\n\x07\x64onphan\x10\xe8\x01\x12\r\n\x08porygon2\x10\xe9\x01\x12\r\n\x08stantler\x10\xea\x01\x12\r\n\x08smeargle\x10\xeb\x01\x12\x0c\n\x07tyrogue\x10\xec\x01\x12\x0e\n\thitmontop\x10\xed\x01\x12\r\n\x08smoochum\x10\xee\x01\x12\x0b\n\x06\x65lekid\x10\xef\x01\x12\n\n\x05magby\x10\xf0\x01\x12\x0c\n\x07miltank\x10\xf1\x01\x12\x0c\n\x07\x62lissey\x10\xf2\x01\x12\x0b\n\x06raikou\x10\xf3\x01\x12\n\n\x05\x65ntei\x10\xf4\x01\x12\x0c\n\x07suicune\x10\xf5\x01\x12\r\n\x08larvitar\x10\xf6\x01\x12\x0c\n\x07pupitar\x10\xf7\x01\x12\x0e\n\ttyranitar\x10\xf8\x01\x12\n\n\x05lugia\x10\xf9\x01\x12\t\n\x04hooh\x10\xfa\x01\x12\x0b\n\x06\x63\x65lebi\x10\xfb\x01\x12\x0c\n\x07treecko\x10\xfc\x01\x12\x0c\n\x07grovyle\x10\xfd\x01\x12\r\n\x08sceptile\x10\xfe\x01\x12\x0c\n\x07torchic\x10\xff\x01\x12\x0e\n\tcombusken\x10\x80\x02\x12\r\n\x08\x62laziken\x10\x81\x02\x12\x0b\n\x06mudkip\x10\x82\x02\x12\x0e\n\tmarshtomp\x10\x83\x02\x12\r\n\x08swampert\x10\x84\x02\x12\x0e\n\tpoochyena\x10\x85\x02\x12\x0e\n\tmightyena\x10\x86\x02\x12\x0e\n\tzigzagoon\x10\x87\x02\x12\x0c\n\x07linoone\x10\x88\x02\x12\x0c\n\x07wurmple\x10\x89\x02\x12\x0c\n\x07silcoon\x10\x8a\x02\x12\x0e\n\tbeautifly\x10\x8b\x02\x12\x0c\n\x07\x63\x61scoon\x10\x8c\x02\x12\x0b\n\x06\x64ustox\x10\x8d\x02\x12\n\n\x05lotad\x10\x8e\x02\x12\x0b\n\x06lombre\x10\x8f\x02\x12\r\n\x08ludicolo\x10\x90\x02\x12\x0b\n\x06seedot\x10\x91\x02\x12\x0c\n\x07nuzleaf\x10\x92\x02\x12\x0c\n\x07shiftry\x10\x93\x02\x12\x0c\n\x07taillow\x10\x94\x02\x12\x0c\n\x07swellow\x10\x95\x02\x12\x0c\n\x07wingull\x10\x96\x02\x12\r\n\x08pelipper\x10\x97\x02\x12\n\n\x05ralts\x10\x98\x02\x12\x0b\n\x06kirlia\x10\x99\x02\x12\x0e\n\tgardevoir\x10\x9a\x02\x12\x0c\n\x07surskit\x10\x9b\x02\x12\x0f\n\nmasquerain\x10\x9c\x02\x12\x0e\n\tshroomish\x10\x9d\x02\x12\x0c\n\x07\x62reloom\x10\x9e\x02\x12\x0c\n\x07slakoth\x10\x9f\x02\x12\r\n\x08vigoroth\x10\xa0\x02\x12\x0c\n\x07slaking\x10\xa1\x02\x12\x0c\n\x07nincada\x10\xa2\x02\x12\x0c\n\x07ninjask\x10\xa3\x02\x12\r\n\x08shedinja\x10\xa4\x02\x12\x0c\n\x07whismur\x10\xa5\x02\x12\x0c\n\x07loudred\x10\xa6\x02\x12\x0c\n\x07\x65xploud\x10\xa7\x02\x12\r\n\x08makuhita\x10\xa8\x02\x12\r\n\x08hariyama\x10\xa9\x02\x12\x0c\n\x07\x61zurill\x10\xaa\x02\x12\r\n\x08nosepass\x10\xab\x02\x12\x0b\n\x06skitty\x10\xac\x02\x12\r\n\x08\x64\x65lcatty\x10\xad\x02\x12\x0c\n\x07sableye\x10\xae\x02\x12\x0b\n\x06mawile\x10\xaf\x02\x12\t\n\x04\x61ron\x10\xb0\x02\x12\x0b\n\x06lairon\x10\xb1\x02\x12\x0b\n\x06\x61ggron\x10\xb2\x02\x12\r\n\x08meditite\x10\xb3\x02\x12\r\n\x08medicham\x10\xb4\x02\x12\x0e\n\telectrike\x10\xb5\x02\x12\x0e\n\tmanectric\x10\xb6\x02\x12\x0b\n\x06plusle\x10\xb7\x02\x12\n\n\x05minun\x10\xb8\x02\x12\x0c\n\x07volbeat\x10\xb9\x02\x12\r\n\x08illumise\x10\xba\x02\x12\x0c\n\x07roselia\x10\xbb\x02\x12\x0b\n\x06gulpin\x10\xbc\x02\x12\x0b\n\x06swalot\x10\xbd\x02\x12\r\n\x08\x63\x61rvanha\x10\xbe\x02\x12\r\n\x08sharpedo\x10\xbf\x02\x12\x0c\n\x07wailmer\x10\xc0\x02\x12\x0c\n\x07wailord\x10\xc1\x02\x12\n\n\x05numel\x10\xc2\x02\x12\r\n\x08\x63\x61merupt\x10\xc3\x02\x12\x0c\n\x07torkoal\x10\xc4\x02\x12\x0b\n\x06spoink\x10\xc5\x02\x12\x0c\n\x07grumpig\x10\xc6\x02\x12\x0b\n\x06spinda\x10\xc7\x02\x12\r\n\x08trapinch\x10\xc8\x02\x12\x0c\n\x07vibrava\x10\xc9\x02\x12\x0b\n\x06\x66lygon\x10\xca\x02\x12\x0b\n\x06\x63\x61\x63nea\x10\xcb\x02\x12\r\n\x08\x63\x61\x63turne\x10\xcc\x02\x12\x0b\n\x06swablu\x10\xcd\x02\x12\x0c\n\x07\x61ltaria\x10\xce\x02\x12\r\n\x08zangoose\x10\xcf\x02\x12\x0c\n\x07seviper\x10\xd0\x02\x12\r\n\x08lunatone\x10\xd1\x02\x12\x0c\n\x07solrock\x10\xd2\x02\x12\r\n\x08\x62\x61rboach\x10\xd3\x02\x12\r\n\x08whiscash\x10\xd4\x02\x12\r\n\x08\x63orphish\x10\xd5\x02\x12\x0e\n\tcrawdaunt\x10\xd6\x02\x12\x0b\n\x06\x62\x61ltoy\x10\xd7\x02\x12\x0c\n\x07\x63laydol\x10\xd8\x02\x12\x0b\n\x06lileep\x10\xd9\x02\x12\x0c\n\x07\x63radily\x10\xda\x02\x12\x0c\n\x07\x61norith\x10\xdb\x02\x12\x0c\n\x07\x61rmaldo\x10\xdc\x02\x12\x0b\n\x06\x66\x65\x65\x62\x61s\x10\xdd\x02\x12\x0c\n\x07milotic\x10\xde\x02\x12\r\n\x08\x63\x61stform\x10\xdf\x02\x12\x0c\n\x07kecleon\x10\xe0\x02\x12\x0c\n\x07shuppet\x10\xe1\x02\x12\x0c\n\x07\x62\x61nette\x10\xe2\x02\x12\x0c\n\x07\x64uskull\x10\xe3\x02\x12\r\n\x08\x64usclops\x10\xe4\x02\x12\x0c\n\x07tropius\x10\xe5\x02\x12\r\n\x08\x63himecho\x10\xe6\x02\x12\n\n\x05\x61\x62sol\x10\xe7\x02\x12\x0b\n\x06wynaut\x10\xe8\x02\x12\x0c\n\x07snorunt\x10\xe9\x02\x12\x0b\n\x06glalie\x10\xea\x02\x12\x0b\n\x06spheal\x10\xeb\x02\x12\x0b\n\x06sealeo\x10\xec\x02\x12\x0c\n\x07walrein\x10\xed\x02\x12\r\n\x08\x63lamperl\x10\xee\x02\x12\x0c\n\x07huntail\x10\xef\x02\x12\r\n\x08gorebyss\x10\xf0\x02\x12\x0e\n\trelicanth\x10\xf1\x02\x12\x0c\n\x07luvdisc\x10\xf2\x02\x12\n\n\x05\x62\x61gon\x10\xf3\x02\x12\x0c\n\x07shelgon\x10\xf4\x02\x12\x0e\n\tsalamence\x10\xf5\x02\x12\x0b\n\x06\x62\x65ldum\x10\xf6\x02\x12\x0b\n\x06metang\x10\xf7\x02\x12\x0e\n\tmetagross\x10\xf8\x02\x12\r\n\x08regirock\x10\xf9\x02\x12\x0b\n\x06regice\x10\xfa\x02\x12\x0e\n\tregisteel\x10\xfb\x02\x12\x0b\n\x06latias\x10\xfc\x02\x12\x0b\n\x06latios\x10\xfd\x02\x12\x0b\n\x06kyogre\x10\xfe\x02\x12\x0c\n\x07groudon\x10\xff\x02\x12\r\n\x08rayquaza\x10\x80\x03\x12\x0c\n\x07jirachi\x10\x81\x03\x12\x0b\n\x06\x64\x65oxys\x10\x82\x03\x12\x0c\n\x07turtwig\x10\x83\x03\x12\x0b\n\x06grotle\x10\x84\x03\x12\r\n\x08torterra\x10\x85\x03\x12\r\n\x08\x63himchar\x10\x86\x03\x12\r\n\x08monferno\x10\x87\x03\x12\x0e\n\tinfernape\x10\x88\x03\x12\x0b\n\x06piplup\x10\x89\x03\x12\r\n\x08prinplup\x10\x8a\x03\x12\r\n\x08\x65mpoleon\x10\x8b\x03\x12\x0b\n\x06starly\x10\x8c\x03\x12\r\n\x08staravia\x10\x8d\x03\x12\x0e\n\tstaraptor\x10\x8e\x03\x12\x0b\n\x06\x62idoof\x10\x8f\x03\x12\x0c\n\x07\x62ibarel\x10\x90\x03\x12\x0e\n\tkricketot\x10\x91\x03\x12\x0f\n\nkricketune\x10\x92\x03\x12\n\n\x05shinx\x10\x93\x03\x12\n\n\x05luxio\x10\x94\x03\x12\x0b\n\x06luxray\x10\x95\x03\x12\n\n\x05\x62udew\x10\x96\x03\x12\r\n\x08roserade\x10\x97\x03\x12\r\n\x08\x63ranidos\x10\x98\x03\x12\x0e\n\trampardos\x10\x99\x03\x12\r\n\x08shieldon\x10\x9a\x03\x12\x0e\n\tbastiodon\x10\x9b\x03\x12\n\n\x05\x62urmy\x10\x9c\x03\x12\r\n\x08wormadam\x10\x9d\x03\x12\x0b\n\x06mothim\x10\x9e\x03\x12\x0b\n\x06\x63ombee\x10\x9f\x03\x12\x0e\n\tvespiquen\x10\xa0\x03\x12\x0e\n\tpachirisu\x10\xa1\x03\x12\x0b\n\x06\x62uizel\x10\xa2\x03\x12\r\n\x08\x66loatzel\x10\xa3\x03\x12\x0c\n\x07\x63herubi\x10\xa4\x03\x12\x0c\n\x07\x63herrim\x10\xa5\x03\x12\x0c\n\x07shellos\x10\xa6\x03\x12\x0e\n\tgastrodon\x10\xa7\x03\x12\x0c\n\x07\x61mbipom\x10\xa8\x03\x12\r\n\x08\x64rifloon\x10\xa9\x03\x12\r\n\x08\x64rifblim\x10\xaa\x03\x12\x0c\n\x07\x62uneary\x10\xab\x03\x12\x0c\n\x07lopunny\x10\xac\x03\x12\x0e\n\tmismagius\x10\xad\x03\x12\x0e\n\thonchkrow\x10\xae\x03\x12\x0c\n\x07glameow\x10\xaf\x03\x12\x0c\n\x07purugly\x10\xb0\x03\x12\x0e\n\tchingling\x10\xb1\x03\x12\x0b\n\x06stunky\x10\xb2\x03\x12\r\n\x08skuntank\x10\xb3\x03\x12\x0c\n\x07\x62ronzor\x10\xb4\x03\x12\r\n\x08\x62ronzong\x10\xb5\x03\x12\x0b\n\x06\x62onsly\x10\xb6\x03\x12\x0b\n\x06mimejr\x10\xb7\x03\x12\x0c\n\x07happiny\x10\xb8\x03\x12\x0b\n\x06\x63hatot\x10\xb9\x03\x12\x0e\n\tspiritomb\x10\xba\x03\x12\n\n\x05gible\x10\xbb\x03\x12\x0b\n\x06gabite\x10\xbc\x03\x12\r\n\x08garchomp\x10\xbd\x03\x12\r\n\x08munchlax\x10\xbe\x03\x12\n\n\x05riolu\x10\xbf\x03\x12\x0c\n\x07lucario\x10\xc0\x03\x12\x0f\n\nhippopotas\x10\xc1\x03\x12\x0e\n\thippowdon\x10\xc2\x03\x12\x0c\n\x07skorupi\x10\xc3\x03\x12\x0c\n\x07\x64rapion\x10\xc4\x03\x12\r\n\x08\x63roagunk\x10\xc5\x03\x12\x0e\n\ttoxicroak\x10\xc6\x03\x12\x0e\n\tcarnivine\x10\xc7\x03\x12\x0c\n\x07\x66inneon\x10\xc8\x03\x12\r\n\x08lumineon\x10\xc9\x03\x12\x0c\n\x07mantyke\x10\xca\x03\x12\x0b\n\x06snover\x10\xcb\x03\x12\x0e\n\tabomasnow\x10\xcc\x03\x12\x0c\n\x07weavile\x10\xcd\x03\x12\x0e\n\tmagnezone\x10\xce\x03\x12\x0f\n\nlickilicky\x10\xcf\x03\x12\x0e\n\trhyperior\x10\xd0\x03\x12\x0e\n\ttangrowth\x10\xd1\x03\x12\x0f\n\nelectivire\x10\xd2\x03\x12\x0e\n\tmagmortar\x10\xd3\x03\x12\r\n\x08togekiss\x10\xd4\x03\x12\x0c\n\x07yanmega\x10\xd5\x03\x12\x0c\n\x07leafeon\x10\xd6\x03\x12\x0c\n\x07glaceon\x10\xd7\x03\x12\x0c\n\x07gliscor\x10\xd8\x03\x12\x0e\n\tmamoswine\x10\xd9\x03\x12\r\n\x08porygonz\x10\xda\x03\x12\x0c\n\x07gallade\x10\xdb\x03\x12\x0e\n\tprobopass\x10\xdc\x03\x12\r\n\x08\x64usknoir\x10\xdd\x03\x12\r\n\x08\x66roslass\x10\xde\x03\x12\n\n\x05rotom\x10\xdf\x03\x12\t\n\x04uxie\x10\xe0\x03\x12\x0c\n\x07mesprit\x10\xe1\x03\x12\n\n\x05\x61zelf\x10\xe2\x03\x12\x0b\n\x06\x64ialga\x10\xe3\x03\x12\x0b\n\x06palkia\x10\xe4\x03\x12\x0c\n\x07heatran\x10\xe5\x03\x12\x0e\n\tregigigas\x10\xe6\x03\x12\r\n\x08giratina\x10\xe7\x03\x12\x0e\n\tcresselia\x10\xe8\x03\x12\x0b\n\x06phione\x10\xe9\x03\x12\x0c\n\x07manaphy\x10\xea\x03\x12\x0c\n\x07\x64\x61rkrai\x10\xeb\x03\x12\x0c\n\x07shaymin\x10\xec\x03\x12\x0b\n\x06\x61rceus\x10\xed\x03\x12\x0c\n\x07victini\x10\xee\x03\x12\n\n\x05snivy\x10\xef\x03\x12\x0c\n\x07servine\x10\xf0\x03\x12\x0e\n\tserperior\x10\xf1\x03\x12\n\n\x05tepig\x10\xf2\x03\x12\x0c\n\x07pignite\x10\xf3\x03\x12\x0b\n\x06\x65mboar\x10\xf4\x03\x12\r\n\x08oshawott\x10\xf5\x03\x12\x0b\n\x06\x64\x65wott\x10\xf6\x03\x12\r\n\x08samurott\x10\xf7\x03\x12\x0b\n\x06patrat\x10\xf8\x03\x12\x0c\n\x07watchog\x10\xf9\x03\x12\r\n\x08lillipup\x10\xfa\x03\x12\x0c\n\x07herdier\x10\xfb\x03\x12\x0e\n\tstoutland\x10\xfc\x03\x12\r\n\x08purrloin\x10\xfd\x03\x12\x0c\n\x07liepard\x10\xfe\x03\x12\x0c\n\x07pansage\x10\xff\x03\x12\r\n\x08simisage\x10\x80\x04\x12\x0c\n\x07pansear\x10\x81\x04\x12\r\n\x08simisear\x10\x82\x04\x12\x0c\n\x07panpour\x10\x83\x04\x12\r\n\x08simipour\x10\x84\x04\x12\n\n\x05munna\x10\x85\x04\x12\r\n\x08musharna\x10\x86\x04\x12\x0b\n\x06pidove\x10\x87\x04\x12\x0e\n\ttranquill\x10\x88\x04\x12\r\n\x08unfezant\x10\x89\x04\x12\x0c\n\x07\x62litzle\x10\x8a\x04\x12\x0e\n\tzebstrika\x10\x8b\x04\x12\x0f\n\nroggenrola\x10\x8c\x04\x12\x0c\n\x07\x62oldore\x10\x8d\x04\x12\r\n\x08gigalith\x10\x8e\x04\x12\x0b\n\x06woobat\x10\x8f\x04\x12\x0c\n\x07swoobat\x10\x90\x04\x12\x0c\n\x07\x64rilbur\x10\x91\x04\x12\x0e\n\texcadrill\x10\x92\x04\x12\x0b\n\x06\x61udino\x10\x93\x04\x12\x0c\n\x07timburr\x10\x94\x04\x12\x0c\n\x07gurdurr\x10\x95\x04\x12\x0f\n\nconkeldurr\x10\x96\x04\x12\x0c\n\x07tympole\x10\x97\x04\x12\x0e\n\tpalpitoad\x10\x98\x04\x12\x0f\n\nseismitoad\x10\x99\x04\x12\n\n\x05throh\x10\x9a\x04\x12\t\n\x04sawk\x10\x9b\x04\x12\r\n\x08sewaddle\x10\x9c\x04\x12\r\n\x08swadloon\x10\x9d\x04\x12\r\n\x08leavanny\x10\x9e\x04\x12\r\n\x08venipede\x10\x9f\x04\x12\x0f\n\nwhirlipede\x10\xa0\x04\x12\x0e\n\tscolipede\x10\xa1\x04\x12\r\n\x08\x63ottonee\x10\xa2\x04\x12\x0f\n\nwhimsicott\x10\xa3\x04\x12\x0c\n\x07petilil\x10\xa4\x04\x12\x0e\n\tlilligant\x10\xa5\x04\x12\r\n\x08\x62\x61sculin\x10\xa6\x04\x12\x0c\n\x07sandile\x10\xa7\x04\x12\r\n\x08krokorok\x10\xa8\x04\x12\x0f\n\nkrookodile\x10\xa9\x04\x12\r\n\x08\x64\x61rumaka\x10\xaa\x04\x12\x0f\n\ndarmanitan\x10\xab\x04\x12\r\n\x08maractus\x10\xac\x04\x12\x0c\n\x07\x64webble\x10\xad\x04\x12\x0c\n\x07\x63rustle\x10\xae\x04\x12\x0c\n\x07scraggy\x10\xaf\x04\x12\x0c\n\x07scrafty\x10\xb0\x04\x12\r\n\x08sigilyph\x10\xb1\x04\x12\x0b\n\x06yamask\x10\xb2\x04\x12\x0f\n\ncofagrigus\x10\xb3\x04\x12\r\n\x08tirtouga\x10\xb4\x04\x12\x0f\n\ncarracosta\x10\xb5\x04\x12\x0b\n\x06\x61rchen\x10\xb6\x04\x12\r\n\x08\x61rcheops\x10\xb7\x04\x12\r\n\x08trubbish\x10\xb8\x04\x12\r\n\x08garbodor\x10\xb9\x04\x12\n\n\x05zorua\x10\xba\x04\x12\x0c\n\x07zoroark\x10\xbb\x04\x12\r\n\x08minccino\x10\xbc\x04\x12\r\n\x08\x63inccino\x10\xbd\x04\x12\x0c\n\x07gothita\x10\xbe\x04\x12\x0e\n\tgothorita\x10\xbf\x04\x12\x0f\n\ngothitelle\x10\xc0\x04\x12\x0c\n\x07solosis\x10\xc1\x04\x12\x0c\n\x07\x64uosion\x10\xc2\x04\x12\x0e\n\treuniclus\x10\xc3\x04\x12\r\n\x08\x64ucklett\x10\xc4\x04\x12\x0b\n\x06swanna\x10\xc5\x04\x12\x0e\n\tvanillite\x10\xc6\x04\x12\x0e\n\tvanillish\x10\xc7\x04\x12\x0e\n\tvanilluxe\x10\xc8\x04\x12\r\n\x08\x64\x65\x65rling\x10\xc9\x04\x12\r\n\x08sawsbuck\x10\xca\x04\x12\x0b\n\x06\x65molga\x10\xcb\x04\x12\x0f\n\nkarrablast\x10\xcc\x04\x12\x0f\n\nescavalier\x10\xcd\x04\x12\x0c\n\x07\x66oongus\x10\xce\x04\x12\x0e\n\tamoonguss\x10\xcf\x04\x12\r\n\x08\x66rillish\x10\xd0\x04\x12\x0e\n\tjellicent\x10\xd1\x04\x12\x0e\n\talomomola\x10\xd2\x04\x12\x0b\n\x06joltik\x10\xd3\x04\x12\x0f\n\ngalvantula\x10\xd4\x04\x12\x0e\n\tferroseed\x10\xd5\x04\x12\x0f\n\nferrothorn\x10\xd6\x04\x12\n\n\x05klink\x10\xd7\x04\x12\n\n\x05klang\x10\xd8\x04\x12\x0e\n\tklinklang\x10\xd9\x04\x12\x0b\n\x06tynamo\x10\xda\x04\x12\x0e\n\teelektrik\x10\xdb\x04\x12\x0f\n\neelektross\x10\xdc\x04\x12\x0b\n\x06\x65lgyem\x10\xdd\x04\x12\r\n\x08\x62\x65heeyem\x10\xde\x04\x12\x0c\n\x07litwick\x10\xdf\x04\x12\x0c\n\x07lampent\x10\xe0\x04\x12\x0f\n\nchandelure\x10\xe1\x04\x12\t\n\x04\x61xew\x10\xe2\x04\x12\x0c\n\x07\x66raxure\x10\xe3\x04\x12\x0c\n\x07haxorus\x10\xe4\x04\x12\x0c\n\x07\x63ubchoo\x10\xe5\x04\x12\x0c\n\x07\x62\x65\x61rtic\x10\xe6\x04\x12\x0e\n\tcryogonal\x10\xe7\x04\x12\x0c\n\x07shelmet\x10\xe8\x04\x12\r\n\x08\x61\x63\x63\x65lgor\x10\xe9\x04\x12\r\n\x08stunfisk\x10\xea\x04\x12\x0c\n\x07mienfoo\x10\xeb\x04\x12\r\n\x08mienshao\x10\xec\x04\x12\x0e\n\tdruddigon\x10\xed\x04\x12\x0b\n\x06golett\x10\xee\x04\x12\x0b\n\x06golurk\x10\xef\x04\x12\r\n\x08pawniard\x10\xf0\x04\x12\x0c\n\x07\x62isharp\x10\xf1\x04\x12\x0f\n\nbouffalant\x10\xf2\x04\x12\x0c\n\x07rufflet\x10\xf3\x04\x12\r\n\x08\x62raviary\x10\xf4\x04\x12\x0c\n\x07vullaby\x10\xf5\x04\x12\x0e\n\tmandibuzz\x10\xf6\x04\x12\x0c\n\x07heatmor\x10\xf7\x04\x12\x0b\n\x06\x64urant\x10\xf8\x04\x12\n\n\x05\x64\x65ino\x10\xf9\x04\x12\r\n\x08zweilous\x10\xfa\x04\x12\x0e\n\thydreigon\x10\xfb\x04\x12\r\n\x08larvesta\x10\xfc\x04\x12\x0e\n\tvolcarona\x10\xfd\x04\x12\r\n\x08\x63obalion\x10\xfe\x04\x12\x0e\n\tterrakion\x10\xff\x04\x12\r\n\x08virizion\x10\x80\x05\x12\r\n\x08tornadus\x10\x81\x05\x12\x0e\n\tthundurus\x10\x82\x05\x12\r\n\x08reshiram\x10\x83\x05\x12\x0b\n\x06zekrom\x10\x84\x05\x12\r\n\x08landorus\x10\x85\x05\x12\x0b\n\x06kyurem\x10\x86\x05\x12\x0b\n\x06keldeo\x10\x87\x05\x12\r\n\x08meloetta\x10\x88\x05\x12\r\n\x08genesect\x10\x89\x05\x12\x0c\n\x07\x63hespin\x10\x8a\x05\x12\x0e\n\tquilladin\x10\x8b\x05\x12\x0f\n\nchesnaught\x10\x8c\x05\x12\r\n\x08\x66\x65nnekin\x10\x8d\x05\x12\x0c\n\x07\x62raixen\x10\x8e\x05\x12\x0c\n\x07\x64\x65lphox\x10\x8f\x05\x12\x0c\n\x07\x66roakie\x10\x90\x05\x12\x0e\n\tfrogadier\x10\x91\x05\x12\r\n\x08greninja\x10\x92\x05\x12\r\n\x08\x62unnelby\x10\x93\x05\x12\x0e\n\tdiggersby\x10\x94\x05\x12\x0f\n\nfletchling\x10\x95\x05\x12\x10\n\x0b\x66letchinder\x10\x96\x05\x12\x0f\n\ntalonflame\x10\x97\x05\x12\x0f\n\nscatterbug\x10\x98\x05\x12\x0b\n\x06spewpa\x10\x99\x05\x12\r\n\x08vivillon\x10\x9a\x05\x12\x0b\n\x06litleo\x10\x9b\x05\x12\x0b\n\x06pyroar\x10\x9c\x05\x12\n\n\x05\x66labb\x10\x9d\x05\x12\x0c\n\x07\x66loette\x10\x9e\x05\x12\x0c\n\x07\x66lorges\x10\x9f\x05\x12\x0b\n\x06skiddo\x10\xa0\x05\x12\x0b\n\x06gogoat\x10\xa1\x05\x12\x0c\n\x07pancham\x10\xa2\x05\x12\x0c\n\x07pangoro\x10\xa3\x05\x12\x0c\n\x07\x66urfrou\x10\xa4\x05\x12\x0b\n\x06\x65spurr\x10\xa5\x05\x12\r\n\x08meowstic\x10\xa6\x05\x12\x0c\n\x07honedge\x10\xa7\x05\x12\r\n\x08\x64oublade\x10\xa8\x05\x12\x0e\n\taegislash\x10\xa9\x05\x12\r\n\x08spritzee\x10\xaa\x05\x12\x0f\n\naromatisse\x10\xab\x05\x12\x0c\n\x07swirlix\x10\xac\x05\x12\r\n\x08slurpuff\x10\xad\x05\x12\n\n\x05inkay\x10\xae\x05\x12\x0c\n\x07malamar\x10\xaf\x05\x12\x0c\n\x07\x62inacle\x10\xb0\x05\x12\x0f\n\nbarbaracle\x10\xb1\x05\x12\x0b\n\x06skrelp\x10\xb2\x05\x12\r\n\x08\x64ragalge\x10\xb3\x05\x12\x0e\n\tclauncher\x10\xb4\x05\x12\x0e\n\tclawitzer\x10\xb5\x05\x12\x0f\n\nhelioptile\x10\xb6\x05\x12\x0e\n\theliolisk\x10\xb7\x05\x12\x0b\n\x06tyrunt\x10\xb8\x05\x12\x0e\n\ttyrantrum\x10\xb9\x05\x12\x0b\n\x06\x61maura\x10\xba\x05\x12\x0c\n\x07\x61urorus\x10\xbb\x05\x12\x0c\n\x07sylveon\x10\xbc\x05\x12\r\n\x08hawlucha\x10\xbd\x05\x12\x0c\n\x07\x64\x65\x64\x65nne\x10\xbe\x05\x12\x0c\n\x07\x63\x61rbink\x10\xbf\x05\x12\n\n\x05goomy\x10\xc0\x05\x12\x0c\n\x07sliggoo\x10\xc1\x05\x12\x0b\n\x06goodra\x10\xc2\x05\x12\x0b\n\x06klefki\x10\xc3\x05\x12\r\n\x08phantump\x10\xc4\x05\x12\x0e\n\ttrevenant\x10\xc5\x05\x12\x0e\n\tpumpkaboo\x10\xc6\x05\x12\x0e\n\tgourgeist\x10\xc7\x05\x12\r\n\x08\x62\x65rgmite\x10\xc8\x05\x12\x0c\n\x07\x61valugg\x10\xc9\x05\x12\x0b\n\x06noibat\x10\xca\x05\x12\x0c\n\x07noivern\x10\xcb\x05\x12\x0c\n\x07xerneas\x10\xcc\x05\x12\x0c\n\x07yveltal\x10\xcd\x05\x12\x0c\n\x07zygarde\x10\xce\x05\x12\x0c\n\x07\x64iancie\x10\xcf\x05\x12\n\n\x05hoopa\x10\xd0\x05\x12\x0e\n\tvolcanion\x10\xd1\x05\x12\x0b\n\x06rowlet\x10\xd2\x05\x12\x0c\n\x07\x64\x61rtrix\x10\xd3\x05\x12\x0e\n\tdecidueye\x10\xd4\x05\x12\x0b\n\x06litten\x10\xd5\x05\x12\r\n\x08torracat\x10\xd6\x05\x12\x0f\n\nincineroar\x10\xd7\x05\x12\x0c\n\x07popplio\x10\xd8\x05\x12\x0c\n\x07\x62rionne\x10\xd9\x05\x12\x0e\n\tprimarina\x10\xda\x05\x12\x0c\n\x07pikipek\x10\xdb\x05\x12\r\n\x08trumbeak\x10\xdc\x05\x12\x0e\n\ttoucannon\x10\xdd\x05\x12\x0c\n\x07yungoos\x10\xde\x05\x12\r\n\x08gumshoos\x10\xdf\x05\x12\x0c\n\x07grubbin\x10\xe0\x05\x12\x0e\n\tcharjabug\x10\xe1\x05\x12\r\n\x08vikavolt\x10\xe2\x05\x12\x0f\n\ncrabrawler\x10\xe3\x05\x12\x11\n\x0c\x63rabominable\x10\xe4\x05\x12\r\n\x08oricorio\x10\xe5\x05\x12\r\n\x08\x63utiefly\x10\xe6\x05\x12\r\n\x08ribombee\x10\xe7\x05\x12\r\n\x08rockruff\x10\xe8\x05\x12\r\n\x08lycanroc\x10\xe9\x05\x12\x0f\n\nwishiwashi\x10\xea\x05\x12\r\n\x08mareanie\x10\xeb\x05\x12\x0c\n\x07toxapex\x10\xec\x05\x12\x0c\n\x07mudbray\x10\xed\x05\x12\r\n\x08mudsdale\x10\xee\x05\x12\r\n\x08\x64\x65wpider\x10\xef\x05\x12\x0e\n\taraquanid\x10\xf0\x05\x12\r\n\x08\x66omantis\x10\xf1\x05\x12\r\n\x08lurantis\x10\xf2\x05\x12\r\n\x08morelull\x10\xf3\x05\x12\x0e\n\tshiinotic\x10\xf4\x05\x12\r\n\x08salandit\x10\xf5\x05\x12\r\n\x08salazzle\x10\xf6\x05\x12\x0c\n\x07stufful\x10\xf7\x05\x12\x0b\n\x06\x62\x65wear\x10\xf8\x05\x12\x0e\n\tbounsweet\x10\xf9\x05\x12\x0c\n\x07steenee\x10\xfa\x05\x12\r\n\x08tsareena\x10\xfb\x05\x12\x0b\n\x06\x63omfey\x10\xfc\x05\x12\r\n\x08oranguru\x10\xfd\x05\x12\x0e\n\tpassimian\x10\xfe\x05\x12\x0b\n\x06wimpod\x10\xff\x05\x12\x0e\n\tgolisopod\x10\x80\x06\x12\x0e\n\tsandygast\x10\x81\x06\x12\x0e\n\tpalossand\x10\x82\x06\x12\x0e\n\tpyukumuku\x10\x83\x06\x12\r\n\x08typenull\x10\x84\x06\x12\r\n\x08silvally\x10\x85\x06\x12\x0b\n\x06minior\x10\x86\x06\x12\x0b\n\x06komala\x10\x87\x06\x12\x0f\n\nturtonator\x10\x88\x06\x12\x0f\n\ntogedemaru\x10\x89\x06\x12\x0c\n\x07mimikyu\x10\x8a\x06\x12\x0c\n\x07\x62ruxish\x10\x8b\x06\x12\x0b\n\x06\x64rampa\x10\x8c\x06\x12\r\n\x08\x64helmise\x10\x8d\x06\x12\x0c\n\x07jangmoo\x10\x8e\x06\x12\x0c\n\x07hakamoo\x10\x8f\x06\x12\x0b\n\x06kommoo\x10\x90\x06\x12\r\n\x08tapukoko\x10\x91\x06\x12\r\n\x08tapulele\x10\x92\x06\x12\r\n\x08tapubulu\x10\x93\x06\x12\r\n\x08tapufini\x10\x94\x06\x12\x0b\n\x06\x63osmog\x10\x95\x06\x12\x0c\n\x07\x63osmoem\x10\x96\x06\x12\r\n\x08solgaleo\x10\x97\x06\x12\x0b\n\x06lunala\x10\x98\x06\x12\r\n\x08nihilego\x10\x99\x06\x12\r\n\x08\x62uzzwole\x10\x9a\x06\x12\x0e\n\tpheromosa\x10\x9b\x06\x12\x0e\n\txurkitree\x10\x9c\x06\x12\x0f\n\ncelesteela\x10\x9d\x06\x12\x0c\n\x07kartana\x10\x9e\x06\x12\r\n\x08guzzlord\x10\x9f\x06\x12\r\n\x08necrozma\x10\xa0\x06\x12\r\n\x08magearna\x10\xa1\x06\x12\x0e\n\tmarshadow\x10\xa2\x06*\x91X\n\rPokemonMoveID\x12\x08\n\x04none\x10\x00\x12\t\n\x05pound\x10\x01\x12\x0e\n\nkaratechop\x10\x02\x12\x0e\n\ndoubleslap\x10\x03\x12\x0e\n\ncometpunch\x10\x04\x12\r\n\tmegapunch\x10\x05\x12\n\n\x06payday\x10\x06\x12\r\n\tfirepunch\x10\x07\x12\x0c\n\x08icepunch\x10\x08\x12\x10\n\x0cthunderpunch\x10\t\x12\x0b\n\x07scratch\x10\n\x12\x0c\n\x08vicegrip\x10\x0b\x12\x0e\n\nguillotine\x10\x0c\x12\r\n\trazorwind\x10\r\x12\x0f\n\x0bswordsdance\x10\x0e\x12\x07\n\x03\x63ut\x10\x0f\x12\x08\n\x04gust\x10\x10\x12\x0e\n\nwingattack\x10\x11\x12\r\n\twhirlwind\x10\x12\x12\x07\n\x03\x66ly\x10\x13\x12\x08\n\x04\x62ind\x10\x14\x12\x08\n\x04slam\x10\x15\x12\x0c\n\x08vinewhip\x10\x16\x12\t\n\x05stomp\x10\x17\x12\x0e\n\ndoublekick\x10\x18\x12\x0c\n\x08megakick\x10\x19\x12\x0c\n\x08jumpkick\x10\x1a\x12\x0f\n\x0brollingkick\x10\x1b\x12\x0e\n\nsandattack\x10\x1c\x12\x0c\n\x08headbutt\x10\x1d\x12\x0e\n\nhornattack\x10\x1e\x12\x0e\n\nfuryattack\x10\x1f\x12\r\n\thorndrill\x10 \x12\n\n\x06tackle\x10!\x12\x0c\n\x08\x62odyslam\x10\"\x12\x08\n\x04wrap\x10#\x12\x0c\n\x08takedown\x10$\x12\n\n\x06thrash\x10%\x12\x0e\n\ndoubleedge\x10&\x12\x0c\n\x08tailwhip\x10\'\x12\x0f\n\x0bpoisonsting\x10(\x12\r\n\ttwineedle\x10)\x12\x0e\n\npinmissile\x10*\x12\x08\n\x04leer\x10+\x12\x08\n\x04\x62ite\x10,\x12\t\n\x05growl\x10-\x12\x08\n\x04roar\x10.\x12\x08\n\x04sing\x10/\x12\x0e\n\nsupersonic\x10\x30\x12\r\n\tsonicboom\x10\x31\x12\x0b\n\x07\x64isable\x10\x32\x12\x08\n\x04\x61\x63id\x10\x33\x12\t\n\x05\x65mber\x10\x34\x12\x10\n\x0c\x66lamethrower\x10\x35\x12\x08\n\x04mist\x10\x36\x12\x0c\n\x08watergun\x10\x37\x12\r\n\thydropump\x10\x38\x12\x08\n\x04surf\x10\x39\x12\x0b\n\x07icebeam\x10:\x12\x0c\n\x08\x62lizzard\x10;\x12\x0b\n\x07psybeam\x10<\x12\x0e\n\nbubblebeam\x10=\x12\x0e\n\naurorabeam\x10>\x12\r\n\thyperbeam\x10?\x12\x08\n\x04peck\x10@\x12\r\n\tdrillpeck\x10\x41\x12\x0e\n\nsubmission\x10\x42\x12\x0b\n\x07lowkick\x10\x43\x12\x0b\n\x07\x63ounter\x10\x44\x12\x0f\n\x0bseismictoss\x10\x45\x12\x0c\n\x08strength\x10\x46\x12\n\n\x06\x61\x62sorb\x10G\x12\r\n\tmegadrain\x10H\x12\r\n\tleechseed\x10I\x12\n\n\x06growth\x10J\x12\r\n\trazorleaf\x10K\x12\r\n\tsolarbeam\x10L\x12\x10\n\x0cpoisonpowder\x10M\x12\r\n\tstunspore\x10N\x12\x0f\n\x0bsleeppowder\x10O\x12\x0e\n\npetaldance\x10P\x12\x0e\n\nstringshot\x10Q\x12\x0e\n\ndragonrage\x10R\x12\x0c\n\x08\x66irespin\x10S\x12\x10\n\x0cthundershock\x10T\x12\x0f\n\x0bthunderbolt\x10U\x12\x0f\n\x0bthunderwave\x10V\x12\x0b\n\x07thunder\x10W\x12\r\n\trockthrow\x10X\x12\x0e\n\nearthquake\x10Y\x12\x0b\n\x07\x66issure\x10Z\x12\x07\n\x03\x64ig\x10[\x12\t\n\x05toxic\x10\\\x12\r\n\tconfusion\x10]\x12\x0b\n\x07psychic\x10^\x12\x0c\n\x08hypnosis\x10_\x12\x0c\n\x08meditate\x10`\x12\x0b\n\x07\x61gility\x10\x61\x12\x0f\n\x0bquickattack\x10\x62\x12\x08\n\x04rage\x10\x63\x12\x0c\n\x08teleport\x10\x64\x12\x0e\n\nnightshade\x10\x65\x12\t\n\x05mimic\x10\x66\x12\x0b\n\x07screech\x10g\x12\x0e\n\ndoubleteam\x10h\x12\x0b\n\x07recover\x10i\x12\n\n\x06harden\x10j\x12\x0c\n\x08minimize\x10k\x12\x0f\n\x0bsmokescreen\x10l\x12\x0e\n\nconfuseray\x10m\x12\x0c\n\x08withdraw\x10n\x12\x0f\n\x0b\x64\x65\x66\x65nsecurl\x10o\x12\x0b\n\x07\x62\x61rrier\x10p\x12\x0f\n\x0blightscreen\x10q\x12\x08\n\x04haze\x10r\x12\x0b\n\x07reflect\x10s\x12\x0f\n\x0b\x66ocusenergy\x10t\x12\x08\n\x04\x62ide\x10u\x12\r\n\tmetronome\x10v\x12\x0e\n\nmirrormove\x10w\x12\x10\n\x0cselfdestruct\x10x\x12\x0b\n\x07\x65ggbomb\x10y\x12\x08\n\x04lick\x10z\x12\x08\n\x04smog\x10{\x12\n\n\x06sludge\x10|\x12\x0c\n\x08\x62oneclub\x10}\x12\r\n\tfireblast\x10~\x12\r\n\twaterfall\x10\x7f\x12\n\n\x05\x63lamp\x10\x80\x01\x12\n\n\x05swift\x10\x81\x01\x12\x0e\n\tskullbash\x10\x82\x01\x12\x10\n\x0bspikecannon\x10\x83\x01\x12\x0e\n\tconstrict\x10\x84\x01\x12\x0c\n\x07\x61mnesia\x10\x85\x01\x12\x0c\n\x07kinesis\x10\x86\x01\x12\x0f\n\nsoftboiled\x10\x87\x01\x12\x11\n\x0chighjumpkick\x10\x88\x01\x12\n\n\x05glare\x10\x89\x01\x12\x0f\n\ndreameater\x10\x8a\x01\x12\x0e\n\tpoisongas\x10\x8b\x01\x12\x0c\n\x07\x62\x61rrage\x10\x8c\x01\x12\x0e\n\tleechlife\x10\x8d\x01\x12\x0f\n\nlovelykiss\x10\x8e\x01\x12\x0e\n\tskyattack\x10\x8f\x01\x12\x0e\n\ttransform\x10\x90\x01\x12\x0b\n\x06\x62ubble\x10\x91\x01\x12\x0f\n\ndizzypunch\x10\x92\x01\x12\n\n\x05spore\x10\x93\x01\x12\n\n\x05\x66lash\x10\x94\x01\x12\x0c\n\x07psywave\x10\x95\x01\x12\x0b\n\x06splash\x10\x96\x01\x12\x0e\n\tacidarmor\x10\x97\x01\x12\x0f\n\ncrabhammer\x10\x98\x01\x12\x0e\n\texplosion\x10\x99\x01\x12\x0f\n\nfuryswipes\x10\x9a\x01\x12\x0f\n\nbonemerang\x10\x9b\x01\x12\t\n\x04rest\x10\x9c\x01\x12\x0e\n\trockslide\x10\x9d\x01\x12\x0e\n\thyperfang\x10\x9e\x01\x12\x0c\n\x07sharpen\x10\x9f\x01\x12\x0f\n\nconversion\x10\xa0\x01\x12\x0e\n\ttriattack\x10\xa1\x01\x12\x0e\n\tsuperfang\x10\xa2\x01\x12\n\n\x05slash\x10\xa3\x01\x12\x0f\n\nsubstitute\x10\xa4\x01\x12\r\n\x08struggle\x10\xa5\x01\x12\x0b\n\x06sketch\x10\xa6\x01\x12\x0f\n\ntriplekick\x10\xa7\x01\x12\n\n\x05thief\x10\xa8\x01\x12\x0e\n\tspiderweb\x10\xa9\x01\x12\x0f\n\nmindreader\x10\xaa\x01\x12\x0e\n\tnightmare\x10\xab\x01\x12\x0f\n\nflamewheel\x10\xac\x01\x12\n\n\x05snore\x10\xad\x01\x12\n\n\x05\x63urse\x10\xae\x01\x12\n\n\x05\x66lail\x10\xaf\x01\x12\x10\n\x0b\x63onversion2\x10\xb0\x01\x12\x0e\n\taeroblast\x10\xb1\x01\x12\x10\n\x0b\x63ottonspore\x10\xb2\x01\x12\r\n\x08reversal\x10\xb3\x01\x12\n\n\x05spite\x10\xb4\x01\x12\x0f\n\npowdersnow\x10\xb5\x01\x12\x0c\n\x07protect\x10\xb6\x01\x12\x0e\n\tmachpunch\x10\xb7\x01\x12\x0e\n\tscaryface\x10\xb8\x01\x12\x10\n\x0b\x66\x65intattack\x10\xb9\x01\x12\x0e\n\tsweetkiss\x10\xba\x01\x12\x0e\n\tbellydrum\x10\xbb\x01\x12\x0f\n\nsludgebomb\x10\xbc\x01\x12\x0c\n\x07mudslap\x10\xbd\x01\x12\x0e\n\toctazooka\x10\xbe\x01\x12\x0b\n\x06spikes\x10\xbf\x01\x12\x0e\n\tzapcannon\x10\xc0\x01\x12\x0e\n\tforesight\x10\xc1\x01\x12\x10\n\x0b\x64\x65stinybond\x10\xc2\x01\x12\x0f\n\nperishsong\x10\xc3\x01\x12\x0c\n\x07icywind\x10\xc4\x01\x12\x0b\n\x06\x64\x65tect\x10\xc5\x01\x12\r\n\x08\x62onerush\x10\xc6\x01\x12\x0b\n\x06lockon\x10\xc7\x01\x12\x0c\n\x07outrage\x10\xc8\x01\x12\x0e\n\tsandstorm\x10\xc9\x01\x12\x0e\n\tgigadrain\x10\xca\x01\x12\x0b\n\x06\x65ndure\x10\xcb\x01\x12\n\n\x05\x63harm\x10\xcc\x01\x12\x0c\n\x07rollout\x10\xcd\x01\x12\x0f\n\nfalseswipe\x10\xce\x01\x12\x0c\n\x07swagger\x10\xcf\x01\x12\x0e\n\tmilkdrink\x10\xd0\x01\x12\n\n\x05spark\x10\xd1\x01\x12\x0f\n\nfurycutter\x10\xd2\x01\x12\x0e\n\tsteelwing\x10\xd3\x01\x12\r\n\x08meanlook\x10\xd4\x01\x12\x0c\n\x07\x61ttract\x10\xd5\x01\x12\x0e\n\tsleeptalk\x10\xd6\x01\x12\r\n\x08healbell\x10\xd7\x01\x12\r\n\x08__return\x10\xd8\x01\x12\x0c\n\x07present\x10\xd9\x01\x12\x10\n\x0b\x66rustration\x10\xda\x01\x12\x0e\n\tsafeguard\x10\xdb\x01\x12\x0e\n\tpainsplit\x10\xdc\x01\x12\x0f\n\nsacredfire\x10\xdd\x01\x12\x0e\n\tmagnitude\x10\xde\x01\x12\x11\n\x0c\x64ynamicpunch\x10\xdf\x01\x12\r\n\x08megahorn\x10\xe0\x01\x12\x11\n\x0c\x64ragonbreath\x10\xe1\x01\x12\x0e\n\tbatonpass\x10\xe2\x01\x12\x0b\n\x06\x65ncore\x10\xe3\x01\x12\x0c\n\x07pursuit\x10\xe4\x01\x12\x0e\n\trapidspin\x10\xe5\x01\x12\x0f\n\nsweetscent\x10\xe6\x01\x12\r\n\x08irontail\x10\xe7\x01\x12\x0e\n\tmetalclaw\x10\xe8\x01\x12\x0f\n\nvitalthrow\x10\xe9\x01\x12\x0f\n\nmorningsun\x10\xea\x01\x12\x0e\n\tsynthesis\x10\xeb\x01\x12\x0e\n\tmoonlight\x10\xec\x01\x12\x10\n\x0bhiddenpower\x10\xed\x01\x12\x0e\n\tcrosschop\x10\xee\x01\x12\x0c\n\x07twister\x10\xef\x01\x12\x0e\n\traindance\x10\xf0\x01\x12\r\n\x08sunnyday\x10\xf1\x01\x12\x0b\n\x06\x63runch\x10\xf2\x01\x12\x0f\n\nmirrorcoat\x10\xf3\x01\x12\x0c\n\x07psychup\x10\xf4\x01\x12\x11\n\x0c\x65xtremespeed\x10\xf5\x01\x12\x11\n\x0c\x61ncientpower\x10\xf6\x01\x12\x0f\n\nshadowball\x10\xf7\x01\x12\x10\n\x0b\x66uturesight\x10\xf8\x01\x12\x0e\n\trocksmash\x10\xf9\x01\x12\x0e\n\twhirlpool\x10\xfa\x01\x12\x0b\n\x06\x62\x65\x61tup\x10\xfb\x01\x12\x0c\n\x07\x66\x61keout\x10\xfc\x01\x12\x0b\n\x06uproar\x10\xfd\x01\x12\x0e\n\tstockpile\x10\xfe\x01\x12\x0b\n\x06spitup\x10\xff\x01\x12\x0c\n\x07swallow\x10\x80\x02\x12\r\n\x08heatwave\x10\x81\x02\x12\t\n\x04hail\x10\x82\x02\x12\x0c\n\x07torment\x10\x83\x02\x12\x0c\n\x07\x66latter\x10\x84\x02\x12\x0e\n\twillowisp\x10\x85\x02\x12\x0c\n\x07memento\x10\x86\x02\x12\x0b\n\x06\x66\x61\x63\x61\x64\x65\x10\x87\x02\x12\x0f\n\nfocuspunch\x10\x88\x02\x12\x12\n\rsmellingsalts\x10\x89\x02\x12\r\n\x08\x66ollowme\x10\x8a\x02\x12\x10\n\x0bnaturepower\x10\x8b\x02\x12\x0b\n\x06\x63harge\x10\x8c\x02\x12\n\n\x05taunt\x10\x8d\x02\x12\x10\n\x0bhelpinghand\x10\x8e\x02\x12\n\n\x05trick\x10\x8f\x02\x12\r\n\x08roleplay\x10\x90\x02\x12\t\n\x04wish\x10\x91\x02\x12\x0b\n\x06\x61ssist\x10\x92\x02\x12\x0c\n\x07ingrain\x10\x93\x02\x12\x0f\n\nsuperpower\x10\x94\x02\x12\x0e\n\tmagiccoat\x10\x95\x02\x12\x0c\n\x07recycle\x10\x96\x02\x12\x0c\n\x07revenge\x10\x97\x02\x12\x0f\n\nbrickbreak\x10\x98\x02\x12\t\n\x04yawn\x10\x99\x02\x12\r\n\x08knockoff\x10\x9a\x02\x12\r\n\x08\x65ndeavor\x10\x9b\x02\x12\r\n\x08\x65ruption\x10\x9c\x02\x12\x0e\n\tskillswap\x10\x9d\x02\x12\r\n\x08imprison\x10\x9e\x02\x12\x0c\n\x07refresh\x10\x9f\x02\x12\x0b\n\x06grudge\x10\xa0\x02\x12\x0b\n\x06snatch\x10\xa1\x02\x12\x10\n\x0bsecretpower\x10\xa2\x02\x12\t\n\x04\x64ive\x10\xa3\x02\x12\x0e\n\tarmthrust\x10\xa4\x02\x12\x0f\n\ncamouflage\x10\xa5\x02\x12\r\n\x08tailglow\x10\xa6\x02\x12\x10\n\x0blusterpurge\x10\xa7\x02\x12\r\n\x08mistball\x10\xa8\x02\x12\x11\n\x0c\x66\x65\x61therdance\x10\xa9\x02\x12\x10\n\x0bteeterdance\x10\xaa\x02\x12\x0e\n\tblazekick\x10\xab\x02\x12\r\n\x08mudsport\x10\xac\x02\x12\x0c\n\x07iceball\x10\xad\x02\x12\x0e\n\tneedlearm\x10\xae\x02\x12\r\n\x08slackoff\x10\xaf\x02\x12\x0f\n\nhypervoice\x10\xb0\x02\x12\x0f\n\npoisonfang\x10\xb1\x02\x12\x0e\n\tcrushclaw\x10\xb2\x02\x12\x0e\n\tblastburn\x10\xb3\x02\x12\x10\n\x0bhydrocannon\x10\xb4\x02\x12\x0f\n\nmeteormash\x10\xb5\x02\x12\r\n\x08\x61stonish\x10\xb6\x02\x12\x10\n\x0bweatherball\x10\xb7\x02\x12\x11\n\x0c\x61romatherapy\x10\xb8\x02\x12\x0e\n\tfaketears\x10\xb9\x02\x12\x0e\n\taircutter\x10\xba\x02\x12\r\n\x08overheat\x10\xbb\x02\x12\x0f\n\nodorsleuth\x10\xbc\x02\x12\r\n\x08rocktomb\x10\xbd\x02\x12\x0f\n\nsilverwind\x10\xbe\x02\x12\x0f\n\nmetalsound\x10\xbf\x02\x12\x11\n\x0cgrasswhistle\x10\xc0\x02\x12\x0b\n\x06tickle\x10\xc1\x02\x12\x10\n\x0b\x63osmicpower\x10\xc2\x02\x12\x0f\n\nwaterspout\x10\xc3\x02\x12\x0f\n\nsignalbeam\x10\xc4\x02\x12\x10\n\x0bshadowpunch\x10\xc5\x02\x12\x11\n\x0c\x65xtrasensory\x10\xc6\x02\x12\x10\n\x0bskyuppercut\x10\xc7\x02\x12\r\n\x08sandtomb\x10\xc8\x02\x12\x0e\n\tsheercold\x10\xc9\x02\x12\x0f\n\nmuddywater\x10\xca\x02\x12\x0f\n\nbulletseed\x10\xcb\x02\x12\x0e\n\taerialace\x10\xcc\x02\x12\x10\n\x0biciclespear\x10\xcd\x02\x12\x10\n\x0birondefense\x10\xce\x02\x12\n\n\x05\x62lock\x10\xcf\x02\x12\t\n\x04howl\x10\xd0\x02\x12\x0f\n\ndragonclaw\x10\xd1\x02\x12\x10\n\x0b\x66renzyplant\x10\xd2\x02\x12\x0b\n\x06\x62ulkup\x10\xd3\x02\x12\x0b\n\x06\x62ounce\x10\xd4\x02\x12\x0c\n\x07mudshot\x10\xd5\x02\x12\x0f\n\npoisontail\x10\xd6\x02\x12\n\n\x05\x63ovet\x10\xd7\x02\x12\x0f\n\nvolttackle\x10\xd8\x02\x12\x10\n\x0bmagicalleaf\x10\xd9\x02\x12\x0f\n\nwatersport\x10\xda\x02\x12\r\n\x08\x63\x61lmmind\x10\xdb\x02\x12\x0e\n\tleafblade\x10\xdc\x02\x12\x10\n\x0b\x64ragondance\x10\xdd\x02\x12\x0e\n\trockblast\x10\xde\x02\x12\x0e\n\tshockwave\x10\xdf\x02\x12\x0f\n\nwaterpulse\x10\xe0\x02\x12\x0f\n\ndoomdesire\x10\xe1\x02\x12\x10\n\x0bpsychoboost\x10\xe2\x02\x12\n\n\x05roost\x10\xe3\x02\x12\x0c\n\x07gravity\x10\xe4\x02\x12\x0f\n\nmiracleeye\x10\xe5\x02\x12\x0f\n\nwakeupslap\x10\xe6\x02\x12\x0e\n\thammerarm\x10\xe7\x02\x12\r\n\x08gyroball\x10\xe8\x02\x12\x10\n\x0bhealingwish\x10\xe9\x02\x12\n\n\x05\x62rine\x10\xea\x02\x12\x10\n\x0bnaturalgift\x10\xeb\x02\x12\n\n\x05\x66\x65int\x10\xec\x02\x12\n\n\x05pluck\x10\xed\x02\x12\r\n\x08tailwind\x10\xee\x02\x12\x10\n\x0b\x61\x63upressure\x10\xef\x02\x12\x0f\n\nmetalburst\x10\xf0\x02\x12\n\n\x05uturn\x10\xf1\x02\x12\x10\n\x0b\x63losecombat\x10\xf2\x02\x12\x0c\n\x07payback\x10\xf3\x02\x12\x0e\n\tassurance\x10\xf4\x02\x12\x0c\n\x07\x65mbargo\x10\xf5\x02\x12\n\n\x05\x66ling\x10\xf6\x02\x12\x10\n\x0bpsychoshift\x10\xf7\x02\x12\x0e\n\ttrumpcard\x10\xf8\x02\x12\x0e\n\thealblock\x10\xf9\x02\x12\r\n\x08wringout\x10\xfa\x02\x12\x0f\n\npowertrick\x10\xfb\x02\x12\x0f\n\ngastroacid\x10\xfc\x02\x12\x0f\n\nluckychant\x10\xfd\x02\x12\x0c\n\x07mefirst\x10\xfe\x02\x12\x0c\n\x07\x63opycat\x10\xff\x02\x12\x0e\n\tpowerswap\x10\x80\x03\x12\x0e\n\tguardswap\x10\x81\x03\x12\x0f\n\npunishment\x10\x82\x03\x12\x0f\n\nlastresort\x10\x83\x03\x12\x0e\n\tworryseed\x10\x84\x03\x12\x10\n\x0bsuckerpunch\x10\x85\x03\x12\x10\n\x0btoxicspikes\x10\x86\x03\x12\x0e\n\theartswap\x10\x87\x03\x12\r\n\x08\x61quaring\x10\x88\x03\x12\x0f\n\nmagnetrise\x10\x89\x03\x12\x0f\n\nflareblitz\x10\x8a\x03\x12\x0e\n\tforcepalm\x10\x8b\x03\x12\x0f\n\naurasphere\x10\x8c\x03\x12\x0f\n\nrockpolish\x10\x8d\x03\x12\x0e\n\tpoisonjab\x10\x8e\x03\x12\x0e\n\tdarkpulse\x10\x8f\x03\x12\x0f\n\nnightslash\x10\x90\x03\x12\r\n\x08\x61quatail\x10\x91\x03\x12\r\n\x08seedbomb\x10\x92\x03\x12\r\n\x08\x61irslash\x10\x93\x03\x12\r\n\x08xscissor\x10\x94\x03\x12\x0c\n\x07\x62ugbuzz\x10\x95\x03\x12\x10\n\x0b\x64ragonpulse\x10\x96\x03\x12\x0f\n\ndragonrush\x10\x97\x03\x12\r\n\x08powergem\x10\x98\x03\x12\x0f\n\ndrainpunch\x10\x99\x03\x12\x0f\n\nvacuumwave\x10\x9a\x03\x12\x0f\n\nfocusblast\x10\x9b\x03\x12\x0f\n\nenergyball\x10\x9c\x03\x12\x0e\n\tbravebird\x10\x9d\x03\x12\x0f\n\nearthpower\x10\x9e\x03\x12\x0f\n\nswitcheroo\x10\x9f\x03\x12\x0f\n\ngigaimpact\x10\xa0\x03\x12\x0e\n\tnastyplot\x10\xa1\x03\x12\x10\n\x0b\x62ulletpunch\x10\xa2\x03\x12\x0e\n\tavalanche\x10\xa3\x03\x12\r\n\x08iceshard\x10\xa4\x03\x12\x0f\n\nshadowclaw\x10\xa5\x03\x12\x10\n\x0bthunderfang\x10\xa6\x03\x12\x0c\n\x07icefang\x10\xa7\x03\x12\r\n\x08\x66irefang\x10\xa8\x03\x12\x10\n\x0bshadowsneak\x10\xa9\x03\x12\x0c\n\x07mudbomb\x10\xaa\x03\x12\x0e\n\tpsychocut\x10\xab\x03\x12\x10\n\x0bzenheadbutt\x10\xac\x03\x12\x0f\n\nmirrorshot\x10\xad\x03\x12\x10\n\x0b\x66lashcannon\x10\xae\x03\x12\x0e\n\trockclimb\x10\xaf\x03\x12\n\n\x05\x64\x65\x66og\x10\xb0\x03\x12\x0e\n\ttrickroom\x10\xb1\x03\x12\x10\n\x0b\x64racometeor\x10\xb2\x03\x12\x0e\n\tdischarge\x10\xb3\x03\x12\x0e\n\tlavaplume\x10\xb4\x03\x12\x0e\n\tleafstorm\x10\xb5\x03\x12\x0e\n\tpowerwhip\x10\xb6\x03\x12\x10\n\x0brockwrecker\x10\xb7\x03\x12\x10\n\x0b\x63rosspoison\x10\xb8\x03\x12\r\n\x08gunkshot\x10\xb9\x03\x12\r\n\x08ironhead\x10\xba\x03\x12\x0f\n\nmagnetbomb\x10\xbb\x03\x12\x0e\n\tstoneedge\x10\xbc\x03\x12\x0e\n\tcaptivate\x10\xbd\x03\x12\x10\n\x0bstealthrock\x10\xbe\x03\x12\x0e\n\tgrassknot\x10\xbf\x03\x12\x0c\n\x07\x63hatter\x10\xc0\x03\x12\r\n\x08judgment\x10\xc1\x03\x12\x0c\n\x07\x62ugbite\x10\xc2\x03\x12\x0f\n\nchargebeam\x10\xc3\x03\x12\x0f\n\nwoodhammer\x10\xc4\x03\x12\x0c\n\x07\x61quajet\x10\xc5\x03\x12\x10\n\x0b\x61ttackorder\x10\xc6\x03\x12\x10\n\x0b\x64\x65\x66\x65ndorder\x10\xc7\x03\x12\x0e\n\thealorder\x10\xc8\x03\x12\x0e\n\theadsmash\x10\xc9\x03\x12\x0e\n\tdoublehit\x10\xca\x03\x12\x0f\n\nroaroftime\x10\xcb\x03\x12\x10\n\x0bspacialrend\x10\xcc\x03\x12\x0f\n\nlunardance\x10\xcd\x03\x12\x0e\n\tcrushgrip\x10\xce\x03\x12\x0f\n\nmagmastorm\x10\xcf\x03\x12\r\n\x08\x64\x61rkvoid\x10\xd0\x03\x12\x0e\n\tseedflare\x10\xd1\x03\x12\x10\n\x0bominouswind\x10\xd2\x03\x12\x10\n\x0bshadowforce\x10\xd3\x03\x12\x0e\n\thoneclaws\x10\xd4\x03\x12\x0e\n\twideguard\x10\xd5\x03\x12\x0f\n\nguardsplit\x10\xd6\x03\x12\x0f\n\npowersplit\x10\xd7\x03\x12\x0f\n\nwonderroom\x10\xd8\x03\x12\r\n\x08psyshock\x10\xd9\x03\x12\x0e\n\tvenoshock\x10\xda\x03\x12\x0f\n\nautotomize\x10\xdb\x03\x12\x0f\n\nragepowder\x10\xdc\x03\x12\x10\n\x0btelekinesis\x10\xdd\x03\x12\x0e\n\tmagicroom\x10\xde\x03\x12\x0e\n\tsmackdown\x10\xdf\x03\x12\x0f\n\nstormthrow\x10\xe0\x03\x12\x0f\n\nflameburst\x10\xe1\x03\x12\x0f\n\nsludgewave\x10\xe2\x03\x12\x10\n\x0bquiverdance\x10\xe3\x03\x12\x0e\n\theavyslam\x10\xe4\x03\x12\x11\n\x0csynchronoise\x10\xe5\x03\x12\x10\n\x0b\x65lectroball\x10\xe6\x03\x12\t\n\x04soak\x10\xe7\x03\x12\x10\n\x0b\x66lamecharge\x10\xe8\x03\x12\t\n\x04\x63oil\x10\xe9\x03\x12\r\n\x08lowsweep\x10\xea\x03\x12\x0e\n\tacidspray\x10\xeb\x03\x12\r\n\x08\x66oulplay\x10\xec\x03\x12\x0f\n\nsimplebeam\x10\xed\x03\x12\x10\n\x0b\x65ntrainment\x10\xee\x03\x12\r\n\x08\x61\x66teryou\x10\xef\x03\x12\n\n\x05round\x10\xf0\x03\x12\x10\n\x0b\x65\x63hoedvoice\x10\xf1\x03\x12\r\n\x08\x63hipaway\x10\xf2\x03\x12\x0e\n\tclearsmog\x10\xf3\x03\x12\x10\n\x0bstoredpower\x10\xf4\x03\x12\x0f\n\nquickguard\x10\xf5\x03\x12\x0f\n\nallyswitch\x10\xf6\x03\x12\n\n\x05scald\x10\xf7\x03\x12\x0f\n\nshellsmash\x10\xf8\x03\x12\x0e\n\thealpulse\x10\xf9\x03\x12\x08\n\x03hex\x10\xfa\x03\x12\x0c\n\x07skydrop\x10\xfb\x03\x12\x0e\n\tshiftgear\x10\xfc\x03\x12\x10\n\x0b\x63irclethrow\x10\xfd\x03\x12\x0f\n\nincinerate\x10\xfe\x03\x12\n\n\x05quash\x10\xff\x03\x12\x0f\n\nacrobatics\x10\x80\x04\x12\x10\n\x0breflecttype\x10\x81\x04\x12\x0e\n\tretaliate\x10\x82\x04\x12\x10\n\x0b\x66inalgambit\x10\x83\x04\x12\x0b\n\x06\x62\x65stow\x10\x84\x04\x12\x0c\n\x07inferno\x10\x85\x04\x12\x10\n\x0bwaterpledge\x10\x86\x04\x12\x0f\n\nfirepledge\x10\x87\x04\x12\x10\n\x0bgrasspledge\x10\x88\x04\x12\x0f\n\nvoltswitch\x10\x89\x04\x12\x10\n\x0bstrugglebug\x10\x8a\x04\x12\r\n\x08\x62ulldoze\x10\x8b\x04\x12\x10\n\x0b\x66rostbreath\x10\x8c\x04\x12\x0f\n\ndragontail\x10\x8d\x04\x12\x0b\n\x06workup\x10\x8e\x04\x12\x0f\n\nelectroweb\x10\x8f\x04\x12\x0f\n\nwildcharge\x10\x90\x04\x12\r\n\x08\x64rillrun\x10\x91\x04\x12\r\n\x08\x64ualchop\x10\x92\x04\x12\x0f\n\nheartstamp\x10\x93\x04\x12\x0e\n\thornleech\x10\x94\x04\x12\x10\n\x0bsacredsword\x10\x95\x04\x12\x0f\n\nrazorshell\x10\x96\x04\x12\x0e\n\theatcrash\x10\x97\x04\x12\x10\n\x0bleaftornado\x10\x98\x04\x12\x10\n\x0bsteamroller\x10\x99\x04\x12\x10\n\x0b\x63ottonguard\x10\x9a\x04\x12\x0e\n\tnightdaze\x10\x9b\x04\x12\x0e\n\tpsystrike\x10\x9c\x04\x12\r\n\x08tailslap\x10\x9d\x04\x12\x0e\n\thurricane\x10\x9e\x04\x12\x0f\n\nheadcharge\x10\x9f\x04\x12\x0e\n\tgeargrind\x10\xa0\x04\x12\x10\n\x0bsearingshot\x10\xa1\x04\x12\x10\n\x0btechnoblast\x10\xa2\x04\x12\x0e\n\trelicsong\x10\xa3\x04\x12\x10\n\x0bsecretsword\x10\xa4\x04\x12\r\n\x08glaciate\x10\xa5\x04\x12\x0f\n\nboltstrike\x10\xa6\x04\x12\x0e\n\tblueflare\x10\xa7\x04\x12\x0f\n\nfierydance\x10\xa8\x04\x12\x10\n\x0b\x66reezeshock\x10\xa9\x04\x12\x0c\n\x07iceburn\x10\xaa\x04\x12\n\n\x05snarl\x10\xab\x04\x12\x10\n\x0biciclecrash\x10\xac\x04\x12\x0c\n\x07vcreate\x10\xad\x04\x12\x10\n\x0b\x66usionflare\x10\xae\x04\x12\x0f\n\nfusionbolt\x10\xaf\x04\x12\x10\n\x0b\x66lyingpress\x10\xb0\x04\x12\r\n\x08matblock\x10\xb1\x04\x12\n\n\x05\x62\x65lch\x10\xb2\x04\x12\x0f\n\nrototiller\x10\xb3\x04\x12\x0e\n\tstickyweb\x10\xb4\x04\x12\x10\n\x0b\x66\x65llstinger\x10\xb5\x04\x12\x11\n\x0cphantomforce\x10\xb6\x04\x12\x11\n\x0ctrickortreat\x10\xb7\x04\x12\x0e\n\tnobleroar\x10\xb8\x04\x12\x0e\n\tiondeluge\x10\xb9\x04\x12\x14\n\x0fparaboliccharge\x10\xba\x04\x12\x11\n\x0c\x66orestscurse\x10\xbb\x04\x12\x12\n\rpetalblizzard\x10\xbc\x04\x12\x0e\n\tfreezedry\x10\xbd\x04\x12\x13\n\x0e\x64isarmingvoice\x10\xbe\x04\x12\x10\n\x0bpartingshot\x10\xbf\x04\x12\x0f\n\ntopsyturvy\x10\xc0\x04\x12\x11\n\x0c\x64rainingkiss\x10\xc1\x04\x12\x11\n\x0c\x63raftyshield\x10\xc2\x04\x12\x11\n\x0c\x66lowershield\x10\xc3\x04\x12\x12\n\rgrassyterrain\x10\xc4\x04\x12\x11\n\x0cmistyterrain\x10\xc5\x04\x12\x0e\n\telectrify\x10\xc6\x04\x12\x0e\n\tplayrough\x10\xc7\x04\x12\x0e\n\tfairywind\x10\xc8\x04\x12\x0e\n\tmoonblast\x10\xc9\x04\x12\x0e\n\tboomburst\x10\xca\x04\x12\x0e\n\tfairylock\x10\xcb\x04\x12\x10\n\x0bkingsshield\x10\xcc\x04\x12\r\n\x08playnice\x10\xcd\x04\x12\x0c\n\x07\x63onfide\x10\xce\x04\x12\x11\n\x0c\x64iamondstorm\x10\xcf\x04\x12\x12\n\rsteameruption\x10\xd0\x04\x12\x13\n\x0ehyperspacehole\x10\xd1\x04\x12\x12\n\rwatershuriken\x10\xd2\x04\x12\x11\n\x0cmysticalfire\x10\xd3\x04\x12\x10\n\x0bspikyshield\x10\xd4\x04\x12\x11\n\x0c\x61romaticmist\x10\xd5\x04\x12\x11\n\x0c\x65\x65rieimpulse\x10\xd6\x04\x12\x10\n\x0bvenomdrench\x10\xd7\x04\x12\x0b\n\x06powder\x10\xd8\x04\x12\r\n\x08geomancy\x10\xd9\x04\x12\x11\n\x0cmagneticflux\x10\xda\x04\x12\x0e\n\thappyhour\x10\xdb\x04\x12\x14\n\x0f\x65lectricterrain\x10\xdc\x04\x12\x12\n\rdazzlinggleam\x10\xdd\x04\x12\x0e\n\tcelebrate\x10\xde\x04\x12\x0e\n\tholdhands\x10\xdf\x04\x12\x11\n\x0c\x62\x61\x62ydolleyes\x10\xe0\x04\x12\x0b\n\x06nuzzle\x10\xe1\x04\x12\r\n\x08holdback\x10\xe2\x04\x12\x10\n\x0binfestation\x10\xe3\x04\x12\x11\n\x0cpoweruppunch\x10\xe4\x04\x12\x11\n\x0coblivionwing\x10\xe5\x04\x12\x13\n\x0ethousandarrows\x10\xe6\x04\x12\x12\n\rthousandwaves\x10\xe7\x04\x12\x0f\n\nlandswrath\x10\xe8\x04\x12\x10\n\x0blightofruin\x10\xe9\x04\x12\x10\n\x0boriginpulse\x10\xea\x04\x12\x14\n\x0fprecipiceblades\x10\xeb\x04\x12\x11\n\x0c\x64ragonascent\x10\xec\x04\x12\x13\n\x0ehyperspacefury\x10\xed\x04\x12\x13\n\x0e\x62reakneckblitz\x10\xee\x04\x12\x14\n\x0f\x61lloutpummeling\x10\xf0\x04\x12\x18\n\x13supersonicskystrike\x10\xf2\x04\x12\x11\n\x0c\x61\x63iddownpour\x10\xf4\x04\x12\x11\n\x0ctectonicrage\x10\xf6\x04\x12\x15\n\x10\x63ontinentalcrush\x10\xf8\x04\x12\x12\n\rsavagespinout\x10\xfa\x04\x12\x19\n\x14neverendingnightmare\x10\xfc\x04\x12\x13\n\x0e\x63orkscrewcrash\x10\xfe\x04\x12\x15\n\x10infernooverdrive\x10\x80\x05\x12\x10\n\x0bhydrovortex\x10\x82\x05\x12\x0e\n\tbloomdoom\x10\x84\x05\x12\x12\n\rgigavolthavoc\x10\x86\x05\x12\x14\n\x0fshatteredpsyche\x10\x88\x05\x12\x13\n\x0esubzeroslammer\x10\x8a\x05\x12\x15\n\x10\x64\x65vastatingdrake\x10\x8c\x05\x12\x15\n\x10\x62lackholeeclipse\x10\x8e\x05\x12\x12\n\rtwinkletackle\x10\x90\x05\x12\x11\n\x0c\x63\x61tastropika\x10\x92\x05\x12\x0c\n\x07shoreup\x10\x93\x05\x12\x14\n\x0f\x66irstimpression\x10\x94\x05\x12\x12\n\rbanefulbunker\x10\x95\x05\x12\x12\n\rspiritshackle\x10\x96\x05\x12\x12\n\rdarkestlariat\x10\x97\x05\x12\x12\n\rsparklingaria\x10\x98\x05\x12\x0e\n\ticehammer\x10\x99\x05\x12\x12\n\rfloralhealing\x10\x9a\x05\x12\x13\n\x0ehighhorsepower\x10\x9b\x05\x12\x10\n\x0bstrengthsap\x10\x9c\x05\x12\x0f\n\nsolarblade\x10\x9d\x05\x12\x0c\n\x07leafage\x10\x9e\x05\x12\x0e\n\tspotlight\x10\x9f\x05\x12\x10\n\x0btoxicthread\x10\xa0\x05\x12\x0f\n\nlaserfocus\x10\xa1\x05\x12\x0b\n\x06gearup\x10\xa2\x05\x12\x0f\n\nthroatchop\x10\xa3\x05\x12\x0f\n\npollenpuff\x10\xa4\x05\x12\x0f\n\nanchorshot\x10\xa5\x05\x12\x13\n\x0epsychicterrain\x10\xa6\x05\x12\n\n\x05lunge\x10\xa7\x05\x12\r\n\x08\x66irelash\x10\xa8\x05\x12\x0e\n\tpowertrip\x10\xa9\x05\x12\x0b\n\x06\x62urnup\x10\xaa\x05\x12\x0e\n\tspeedswap\x10\xab\x05\x12\x10\n\x0bsmartstrike\x10\xac\x05\x12\x0b\n\x06purify\x10\xad\x05\x12\x14\n\x0frevelationdance\x10\xae\x05\x12\x11\n\x0c\x63oreenforcer\x10\xaf\x05\x12\r\n\x08tropkick\x10\xb0\x05\x12\r\n\x08instruct\x10\xb1\x05\x12\x0e\n\tbeakblast\x10\xb2\x05\x12\x13\n\x0e\x63langingscales\x10\xb3\x05\x12\x11\n\x0c\x64ragonhammer\x10\xb4\x05\x12\x10\n\x0b\x62rutalswing\x10\xb5\x05\x12\x0f\n\nauroraveil\x10\xb6\x05\x12\x16\n\x11sinisterarrowraid\x10\xb7\x05\x12\x17\n\x12maliciousmoonsault\x10\xb8\x05\x12\x14\n\x0foceanicoperetta\x10\xb9\x05\x12\x14\n\x0fguardianofalola\x10\xba\x05\x12\x1c\n\x17soulstealing7starstrike\x10\xbb\x05\x12\x16\n\x11stokedsparksurfer\x10\xbc\x05\x12\x17\n\x12pulverizingpancake\x10\xbd\x05\x12\x14\n\x0f\x65xtremeevoboost\x10\xbe\x05\x12\x15\n\x10genesissupernova\x10\xbf\x05\x12\x0e\n\tshelltrap\x10\xc0\x05\x12\x10\n\x0b\x66leurcannon\x10\xc1\x05\x12\x11\n\x0cpsychicfangs\x10\xc2\x05\x12\x14\n\x0fstompingtantrum\x10\xc3\x05\x12\x0f\n\nshadowbone\x10\xc4\x05\x12\x0f\n\naccelerock\x10\xc5\x05\x12\x10\n\x0bliquidation\x10\xc6\x05\x12\x13\n\x0eprismaticlaser\x10\xc7\x05\x12\x12\n\rspectralthief\x10\xc8\x05\x12\x13\n\x0esunsteelstrike\x10\xc9\x05\x12\x12\n\rmoongeistbeam\x10\xca\x05\x12\x10\n\x0btearfullook\x10\xcb\x05\x12\x0c\n\x07zingzap\x10\xcc\x05\x12\x13\n\x0enaturesmadness\x10\xcd\x05\x12\x10\n\x0bmultiattack\x10\xce\x05\x12\x1d\n\x18_10000000voltthunderbolt\x10\xcf\x05*\xbd\x02\n\x0ePokemonNatures\x12\x0c\n\x08__None13\x10\x00\x12\x0b\n\x07\x61\x64\x61mant\x10\x01\x12\x0b\n\x07\x62\x61shful\x10\x02\x12\x08\n\x04\x62old\x10\x03\x12\t\n\x05\x62rave\x10\x04\x12\x08\n\x04\x63\x61lm\x10\x05\x12\x0b\n\x07\x63\x61reful\x10\x06\x12\n\n\x06\x64ocile\x10\x07\x12\n\n\x06gentle\x10\x08\x12\t\n\x05hardy\x10\t\x12\t\n\x05hasty\x10\n\x12\n\n\x06impish\x10\x0b\x12\t\n\x05jolly\x10\x0c\x12\x07\n\x03lax\x10\r\x12\n\n\x06lonely\x10\x0e\x12\x08\n\x04mild\x10\x0f\x12\n\n\x06modest\x10\x10\x12\t\n\x05naive\x10\x11\x12\x0b\n\x07naughty\x10\x12\x12\t\n\x05quiet\x10\x13\x12\n\n\x06quirky\x10\x14\x12\x08\n\x04rash\x10\x15\x12\x0b\n\x07relaxed\x10\x16\x12\t\n\x05sassy\x10\x17\x12\x0b\n\x07serious\x10\x18\x12\t\n\x05timid\x10\x19*t\n\x11QuestProgressType\x12\x0c\n\x08__None14\x10\x00\x12\n\n\x06Manual\x10\x01\x12\n\n\x06Level6\x10\x02\x12\t\n\x05Item1\x10\x03\x12\t\n\x05\x42\x61\x64ge\x10\x04\x12\x0c\n\x08Pokemon2\x10\x05\x12\n\n\x06Money0\x10\x06\x12\t\n\x05Gold2\x10\x07*P\n\tQuestType\x12\x0c\n\x08__None15\x10\x00\x12\x08\n\x04Main\x10\x01\x12\x08\n\x04Side\x10\x02\x12\n\n\x06\x42ounty\x10\x03\x12\t\n\x05\x44\x61ily\x10\x04\x12\n\n\x06Hidden\x10\x05*K\n\tStaffRank\x12\x0c\n\x08__None16\x10\x00\x12\r\n\tDeveloper\x10\x01\x12\x11\n\rGameModerator\x10\x02\x12\x0e\n\nModerator0\x10\x03*/\n\x0cWeatherState\x12\x0b\n\x07Normal1\x10\x00\x12\x08\n\x04Rain\x10\x01\x12\x08\n\x04Snow\x10\x02')
+  serialized_pb=_b('\n\x0bLogin.proto\x12\x19PSXAPI.Response1375634093\x1a\x16protobuf-net/bcl.proto\"_\n\x19PREFIX_AGDFASBV2118046871\"B\n\x0f\x41\x62ilitySlotType\x12\r\n\tNoneValue\x10\x00\x12\t\n\x05Slot1\x10\x01\x12\t\n\x05Slot2\x10\x02\x12\n\n\x06Hidden\x10\x03\"P\n\x19PREFIX_AGDFASBV1901072364\"3\n\x0f\x41\x63torAvatarType\x12\r\n\tNoneValue\x10\x00\x12\x08\n\x04User\x10\x01\x12\x07\n\x03NPC\x10\x02\"M\n\x19PREFIX_AGDFASBV1230468151\"0\n\tActorTeam\x12\r\n\tNoneValue\x10\x00\x12\t\n\x05Team1\x10\x01\x12\t\n\x05Team2\x10\x02\"T\n\x18PREFIX_AGDFASBV749316793\"8\n\nActorTimer\x12\x0c\n\x08\x44isabled\x10\x00\x12\x0f\n\x0bNotRequired\x10\x01\x12\x0b\n\x07\x45nabled\x10\x02\"p\n\x18PREFIX_AGDFASBV590365810\"T\n\tActorType\x12\r\n\tNoneValue\x10\x00\x12\n\n\x06Leader\x10\x01\x12\x08\n\x04User\x10\x02\x12\x07\n\x03NPC\x10\x03\x12\x0c\n\x08Inactive\x10\x04\x12\x0b\n\x07Offline\x10\x05\"T\n\x06\x42\x61nned\x12\x18\n\tPermanent\x18\x01 \x01(\x08:\x05\x66\x61lse\x12 \n\tRemaining\x18\x02 \x01(\x0b\x32\r.bcl.TimeSpan\x12\x0e\n\x06Reason\x18\x03 \x01(\t\"\xd5\x02\n\x06\x42\x61ttle\x12\x0b\n\x03Log\x18\x01 \x03(\t\x12:\n\x08Request1\x18\x02 \x01(\x0b\x32(.PSXAPI.Response1375634093.BattleRequest\x12:\n\x08Request2\x18\x03 \x01(\x0b\x32(.PSXAPI.Response1375634093.BattleRequest\x12\x14\n\x05\x45nded\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x10\n\x08Mapping1\x18\x05 \x03(\t\x12\x10\n\x08Mapping2\x18\x06 \x03(\t\x12\x10\n\x05Timer\x18\x07 \x01(\x05:\x01\x30\x12\x17\n\x0c\x42\x61\x63kgroundID\x18\x08 \x01(\x05:\x01\x30\x12\x17\n\x08\x43\x61nCatch\x18\t \x01(\x08:\x05\x66\x61lse\x12\x18\n\tCanEscape\x18\n \x01(\x08:\x05\x66\x61lse\x12\x19\n\nCanUseItem\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\x13\n\x08\x42\x61ttleID\x18\x0c \x01(\x05:\x01\x30\"\x8f\x02\n\x0c\x42\x61ttleActive\x12\x34\n\x05moves\x18\x01 \x03(\x0b\x32%.PSXAPI.Response1375634093.BattleMove\x12\x1c\n\rmaybeDisabled\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x16\n\x07trapped\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0cmaybeTrapped\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x19\n\ncanMegaEvo\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x32\n\x08\x63\x61nZMove\x18\x06 \x03(\x0b\x32 .PSXAPI.Response1375634093.ZMove\x12\x0f\n\x07trainer\x18\x07 \x01(\t\x12\x16\n\x0bpersonality\x18\x08 \x01(\x05:\x01\x30\"p\n\nBattleMove\x12\x0c\n\x04move\x18\x01 \x01(\t\x12\n\n\x02id\x18\x02 \x01(\t\x12\r\n\x02pp\x18\x03 \x01(\x05:\x01\x30\x12\x10\n\x05maxpp\x18\x04 \x01(\x05:\x01\x30\x12\x0e\n\x06target\x18\x05 \x01(\t\x12\x17\n\x08\x64isabled\x18\x06 \x01(\x08:\x05\x66\x61lse\"\xbd\x02\n\rBattlePokemon\x12\r\n\x05ident\x18\x01 \x01(\t\x12\x0f\n\x07\x64\x65tails\x18\x02 \x01(\t\x12\x11\n\tcondition\x18\x03 \x01(\t\x12\x15\n\x06\x61\x63tive\x18\x04 \x01(\x08:\x05\x66\x61lse\x12<\n\x05stats\x18\x05 \x01(\x0b\x32-.PSXAPI.Response1375634093.BattlePokemonStats\x12\r\n\x05moves\x18\x06 \x03(\t\x12\x13\n\x0b\x62\x61seAbility\x18\x07 \x01(\t\x12\x0c\n\x04item\x18\x08 \x01(\t\x12\x10\n\x08pokeball\x18\t \x01(\t\x12\x0f\n\x07trainer\x18\n \x01(\t\x12\x16\n\x0bpersonality\x18\x0b \x01(\x05:\x01\x30\x12\x37\n\x08moveData\x18\x0c \x03(\x0b\x32%.PSXAPI.Response1375634093.BattleMove\"d\n\x12\x42\x61ttlePokemonStats\x12\x0e\n\x03\x61tk\x18\x01 \x01(\x05:\x01\x30\x12\x0e\n\x03\x64\x65\x66\x18\x02 \x01(\x05:\x01\x30\x12\x0e\n\x03spa\x18\x03 \x01(\x05:\x01\x30\x12\x0e\n\x03spd\x18\x04 \x01(\x05:\x01\x30\x12\x0e\n\x03spe\x18\x05 \x01(\x05:\x01\x30\"u\n\rBattleRequest\x12\x0e\n\x06Player\x18\x01 \x02(\t\x12\x11\n\tRequestID\x18\x02 \x02(\x05\x12\x41\n\x0bRequestInfo\x18\x03 \x01(\x0b\x32,.PSXAPI.Response1375634093.BattleRequestData\"\xf1\x01\n\x11\x42\x61ttleRequestData\x12\x0f\n\x04rqid\x18\x01 \x01(\x05:\x01\x30\x12\x17\n\x08noCancel\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0bteamPreview\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x13\n\x04wait\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x13\n\x0b\x66orceSwitch\x18\x05 \x03(\x08\x12\x37\n\x06\x61\x63tive\x18\x06 \x03(\x0b\x32\'.PSXAPI.Response1375634093.BattleActive\x12\x33\n\x04side\x18\x07 \x01(\x0b\x32%.PSXAPI.Response1375634093.BattleSide\"a\n\nBattleSide\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\n\n\x02id\x18\x02 \x01(\t\x12\x39\n\x07pokemon\x18\x03 \x03(\x0b\x32(.PSXAPI.Response1375634093.BattlePokemon\"\x87\x01\n\x0c\x44\x61ilyLootbox\x12Y\n\x04Type\x18\x01 \x01(\x0e\x32@.PSXAPI.Response1375634093.PREFIX_AGDFASBV1562556180.LootboxType:\tNoneValue\x12\x1c\n\x05Timer\x18\x02 \x01(\x0b\x32\r.bcl.TimeSpan\"\x9a\x01\n\x06\x45\x66\x66\x65\x63t\x12\\\n\x04Type\x18\x01 \x01(\x0e\x32\x43.PSXAPI.Response1375634093.PREFIX_AGDFASBV48946253.EffectUpdateType:\tNoneValue\x12\x32\n\x07\x45\x66\x66\x65\x63ts\x18\x02 \x03(\x0b\x32!.PSXAPI.Response1375634093.Effect\"b\n\x17PREFIX_AGDFASBV48946253\"G\n\x10\x45\x66\x66\x65\x63tUpdateType\x12\r\n\tNoneValue\x10\x00\x12\x07\n\x03\x41ll\x10\x01\x12\x0f\n\x0b\x41\x64\x64OrUpdate\x10\x02\x12\n\n\x06Remove\x10\x03\"h\n\x18PREFIX_AGDFASBV363156631\"L\n\x08\x45ggState\x12\r\n\tNoneValue\x10\x00\x12\n\n\x06Sounds\x10\x01\x12\t\n\x05Moves\x10\x02\x12\x0c\n\x08MoreTime\x10\x03\x12\x0c\n\x08LongTime\x10\x04\"*\n\x05\x45quip\x12\x11\n\x06\x43lothe\x18\x01 \x01(\x05:\x01\x30\x12\x0e\n\x03Hat\x18\x02 \x01(\x05:\x01\x30\"\xba\x01\n\x06\x46riend\x12\x0c\n\x04Name\x18\x01 \x01(\t\x12\x15\n\x06Online\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\"\n\x0bOnlineSince\x18\x03 \x01(\x0b\x32\r.bcl.TimeSpan\x12\"\n\x0b\x46riendSince\x18\x04 \x01(\x0b\x32\r.bcl.TimeSpan\x12\x0b\n\x03Map\x18\x05 \x01(\t\x12\x13\n\x04\x41way\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x0f\n\x07Message\x18\x07 \x01(\t\x12\x10\n\x05Level\x18\x08 \x01(\r:\x01\x30\"\x92\x01\n\x07\x46riends\x12/\n\x04List\x18\x01 \x03(\x0b\x32!.PSXAPI.Response1375634093.Friend\x12V\n\x06\x41\x63tion\x18\x02 \x01(\x0e\x32\x41.PSXAPI.Response1375634093.PREFIX_AGDFASBV579684050.FriendsAction:\x03\x41ll\"U\n\x18PREFIX_AGDFASBV579684050\"9\n\rFriendsAction\x12\x07\n\x03\x41ll\x10\x00\x12\x07\n\x03\x41\x64\x64\x10\x01\x12\n\n\x06Remove\x10\x02\x12\n\n\x06Update\x10\x03\"b\n\x18PREFIX_AGDFASBV321822151\"F\n\x0bGameDayTime\x12\t\n\x05Unset\x10\x00\x12\x0b\n\x07Morning\x10\x01\x12\x07\n\x03\x44\x61y\x10\x02\x12\x0b\n\x07\x45vening\x10\x03\x12\t\n\x05Night\x10\x04\"c\n\x18PREFIX_AGDFASBV669285494\"G\n\nGameSeason\x12\t\n\x05Unset\x10\x00\x12\n\n\x06Spring\x10\x01\x12\n\n\x06Summer\x10\x02\x12\n\n\x06\x41utumn\x10\x03\x12\n\n\x06Winter\x10\x04\":\n\x18PREFIX_AGDFASBV961203100\"\x1e\n\x06Gender\x12\x08\n\x04Male\x10\x00\x12\n\n\x06\x46\x65male\x10\x01\"\xcc\x02\n\x05Guild\x12\x0c\n\x04Name\x18\x01 \x01(\t\x12\x0f\n\x07Message\x18\x02 \x01(\t\x12\x17\n\x04\x43hat\x18\x03 \x01(\x0b\x32\t.bcl.Guid\x12\x37\n\x07Members\x18\x04 \x03(\x0b\x32&.PSXAPI.Response1375634093.GuildMember\x12R\n\x04Rank\x18\x05 \x01(\x0e\x32=.PSXAPI.Response1375634093.PREFIX_AGDFASBV635007241.GuildRank:\x05Unset\x12\x13\n\x08\x45mblemId\x18\x06 \x01(\r:\x01\x30\x12\x1a\n\x0fMembersTotalMax\x18\x07 \x01(\x05:\x01\x30\x12\x1c\n\x11MembersCurrentMax\x18\x08 \x01(\x05:\x01\x30\x12\x16\n\x0bUpgradeGold\x18\t \x01(\r:\x01\x30\x12\x17\n\x0cUpgradeMoney\x18\n \x01(\r:\x01\x30\"\xd2\x01\n\x0bGuildMember\x12\x10\n\x08Username\x18\x01 \x01(\t\x12R\n\x04Rank\x18\x02 \x01(\x0e\x32=.PSXAPI.Response1375634093.PREFIX_AGDFASBV635007241.GuildRank:\x05Unset\x12\x15\n\x06Online\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x1c\n\x05Since\x18\x04 \x01(\x0b\x32\r.bcl.TimeSpan\x12\x16\n\x07Removed\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x10\n\x05Level\x18\x06 \x01(\r:\x01\x30\"c\n\x18PREFIX_AGDFASBV635007241\"G\n\tGuildRank\x12\t\n\x05Unset\x10\x00\x12\x0b\n\x07\x43reator\x10\x01\x12\t\n\x05\x41\x64min\x10\x02\x12\r\n\tModerator\x10\x03\x12\x08\n\x04User\x10\x04\"\x91\x01\n\x06Ignore\x12/\n\x04List\x18\x01 \x03(\x0b\x32!.PSXAPI.Response1375634093.Ignore\x12V\n\x06\x41\x63tion\x18\x02 \x01(\x0e\x32\x41.PSXAPI.Response1375634093.PREFIX_AGDFASBV1542622162.IgnoreAction:\x03\x41ll\"I\n\x19PREFIX_AGDFASBV1542622162\",\n\x0cIgnoreAction\x12\x07\n\x03\x41ll\x10\x00\x12\x07\n\x03\x41\x64\x64\x10\x01\x12\n\n\x06Remove\x10\x02\"\xbb\x01\n\tInventory\x12\x10\n\x05Money\x18\x01 \x01(\r:\x01\x30\x12\x42\n\rActivePokemon\x18\x02 \x03(\x0b\x32+.PSXAPI.Response1375634093.InventoryPokemon\x12\x37\n\x05Items\x18\x03 \x03(\x0b\x32(.PSXAPI.Response1375634093.InventoryItem\x12\x0e\n\x06\x42\x61\x64ges\x18\x04 \x03(\x05\x12\x0f\n\x04Gold\x18\x05 \x01(\r:\x01\x30\"\xd8\x03\n\rInventoryItem\x12\x11\n\x06ItemID\x18\x01 \x01(\x05:\x01\x30\x12\x10\n\x05\x43ount\x18\x02 \x01(\r:\x01\x30\x12\x16\n\x07\x43\x61nHold\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\"\n\x13\x43\x61nUseOutsideBattle\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0e\x43\x61nUseInBattle\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x1c\n\rCanUseOnParty\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x17\n\x08\x43\x61nTrade\x18\x07 \x01(\x08:\x05\x66\x61lse\x12Y\n\x06Target\x18\x08 \x01(\x0e\x32>.PSXAPI.Response1375634093.PREFIX_AGDFASBV983491147.ItemTarget:\tNoneValue\x12X\n\x06Pocket\x18\t \x01(\x0e\x32?.PSXAPI.Response1375634093.PREFIX_AGDFASBV1562170800.ItemPocket:\x07Unknown\x12[\n\x08\x43\x61tegory\x18\n \x01(\x0e\x32@.PSXAPI.Response1375634093.PREFIX_AGDFASBV972857083.ItemCategory:\x07Unknown\"\x8d\x02\n\x10InventoryPokemon\x12\x37\n\x07Pokemon\x18\x01 \x01(\x0b\x32&.PSXAPI.Response1375634093.PokemonData\x12\x13\n\x08Position\x18\x02 \x01(\x05:\x01\x30\x12\x0e\n\x03\x42ox\x18\x03 \x01(\x05:\x01\x30\x12\x42\n\tCanEvolve\x18\x04 \x01(\x0e\x32$.PSXAPI.Response1375634093.PokemonID:\tmissingno\x12W\n\x0c\x43\x61nLearnMove\x18\x05 \x03(\x0e\x32\x41.PSXAPI.Response1375634093.PREFIX_AGDFASBV167626233.PokemonMoveID\"\x8e\x01\n\x18PREFIX_AGDFASBV972857083\"r\n\x0cItemCategory\x12\x0b\n\x07Unknown\x10\x00\x12\x0b\n\x07General\x10\x01\x12\x0c\n\x08Pokeball\x10\x02\x12\x0c\n\x08Medicine\x10\x03\x12\x0b\n\x07Machine\x10\x04\x12\t\n\x05\x42\x65rry\x10\x05\x12\n\n\x06\x42\x61ttle\x10\x06\x12\x08\n\x04Hold\x10\x07\"\x7f\n\x19PREFIX_AGDFASBV1562170800\"b\n\nItemPocket\x12\x0b\n\x07Unknown\x10\x00\x12\t\n\x05Items\x10\x01\x12\x0c\n\x08Medicine\x10\x02\x12\t\n\x05\x42\x65rry\x10\x03\x12\x07\n\x03Key\x10\x04\x12\x0b\n\x07Machine\x10\x05\x12\r\n\tZ_Crystal\x10\x06\"N\n\x18PREFIX_AGDFASBV983491147\"2\n\nItemTarget\x12\r\n\tNoneValue\x10\x00\x12\x0b\n\x07Pokemon\x10\x01\x12\x08\n\x04Move\x10\x02\"w\n\x05Level\x12\x14\n\tUserLevel\x18\x01 \x01(\r:\x01\x30\x12\x13\n\x08TotalExp\x18\x02 \x01(\r:\x01\x30\x12\x13\n\x08StartExp\x18\x03 \x01(\r:\x01\x30\x12\x16\n\x0bRequiredExp\x18\x04 \x01(\r:\x01\x30\x12\x16\n\x07LevelUp\x18\x05 \x01(\x08:\x05\x66\x61lse\"\xbb\x03\n\x05Lobby\x12\x15\n\x06Leader\x18\x01 \x01(\x08:\x05\x66\x61lse\x12 \n\x11\x43\x61nChangeSettings\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x18\n\tCanInvite\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0c\x43\x61nKickUsers\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x1c\n\rCanSwitchTeam\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x1c\n\rCanLeaveLobby\x18\x06 \x01(\x08:\x05\x66\x61lse\x12$\n\x15\x43\x61nChangeMonsterCount\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0c\x41\x64justLevels\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0bItemAllowed\x18\t \x01(\x08:\x05\x66\x61lse\x12\x17\n\x08IsRanked\x18\n \x01(\x08:\x05\x66\x61lse\x12W\n\x05Timer\x18\x0b \x01(\x0e\x32>.PSXAPI.Response1375634093.PREFIX_AGDFASBV749316793.ActorTimer:\x08\x44isabled\x12\x35\n\x06\x41\x63tors\x18\x0c \x03(\x0b\x32%.PSXAPI.Response1375634093.LobbyActor\"\xd9\x03\n\nLobbyActor\x12V\n\x04Type\x18\x01 \x01(\x0e\x32=.PSXAPI.Response1375634093.PREFIX_AGDFASBV590365810.ActorType:\tNoneValue\x12\x0c\n\x04Name\x18\x02 \x01(\t\x12W\n\x04Team\x18\x03 \x01(\x0e\x32>.PSXAPI.Response1375634093.PREFIX_AGDFASBV1230468151.ActorTeam:\tNoneValue\x12\x17\n\x0cPokemonCount\x18\x04 \x01(\x05:\x01\x30\x12\x16\n\x0b\x41\x63tiveCount\x18\x05 \x01(\x05:\x01\x30\x12\x17\n\x08\x41\x63\x63\x65pted\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x63\n\nAvatarType\x18\x07 \x01(\x0e\x32\x44.PSXAPI.Response1375634093.PREFIX_AGDFASBV1901072364.ActorAvatarType:\tNoneValue\x12\x16\n\x0bNpcSpriteID\x18\x08 \x01(\x05:\x01\x30\x12\x17\n\x0c\x41verageLevel\x18\t \x01(\x05:\x01\x30\x12\x17\n\x0cHighestLevel\x18\n \x01(\x05:\x01\x30\x12\x13\n\x04Self\x18\x0b \x01(\x08:\x05\x66\x61lse\"\xc1\r\n\x05Login\x12W\n\x06Result\x18\x01 \x01(\x0e\x32@.PSXAPI.Response1375634093.PREFIX_AGDFASBV1597269680.LoginResult:\x05\x45rror\x12X\n\x05\x45rror\x18\x02 \x01(\x0e\x32>.PSXAPI.Response1375634093.PREFIX_AGDFASBV529948962.LoginError:\tNoneValue\x12\x10\n\x08Username\x18\x03 \x01(\t\x12\x31\n\x08Position\x18\x04 \x01(\x0b\x32\x1f.PSXAPI.Response1375634093.Move\x12\x37\n\tInventory\x18\x05 \x01(\x0b\x32$.PSXAPI.Response1375634093.Inventory\x12\x33\n\x07Pokedex\x18\x06 \x01(\x0b\x32\".PSXAPI.Response1375634093.Pokedex\x12\x33\n\x07\x46riends\x18\x07 \x01(\x0b\x32\".PSXAPI.Response1375634093.Friends\x12/\n\x05Party\x18\x08 \x01(\x0b\x32 .PSXAPI.Response1375634093.Party\x12/\n\x05Lobby\x18\t \x01(\x0b\x32 .PSXAPI.Response1375634093.Lobby\x12\x37\n\x08MapUsers\x18\n \x03(\x0b\x32%.PSXAPI.Response1375634093.MovePlayer\x12-\n\x04Time\x18\x0b \x01(\x0b\x32\x1f.PSXAPI.Response1375634093.Time\x12\x15\n\rFriendMessage\x18\x0c \x01(\t\x12\x31\n\x06Ignore\x18\r \x01(\x0b\x32!.PSXAPI.Response1375634093.Ignore\x12/\n\x05Style\x18\x0e \x01(\x0b\x32 .PSXAPI.Response1375634093.Style\x12/\n\x05\x45quip\x18\x0f \x01(\x0b\x32 .PSXAPI.Response1375634093.Equip\x12^\n\nMemberRank\x18\x10 \x01(\x0e\x32?.PSXAPI.Response1375634093.PREFIX_AGDFASBV1761834943.MemberRank:\tNoneValue\x12[\n\tStaffRank\x18\x11 \x01(\x0e\x32=.PSXAPI.Response1375634093.PREFIX_AGDFASBV979434225.StaffRank:\tNoneValue\x12/\n\x05Mount\x18\x12 \x01(\x0b\x32 .PSXAPI.Response1375634093.Mount\x12\x31\n\x06\x42\x61ttle\x18\x13 \x01(\x0b\x32!.PSXAPI.Response1375634093.Battle\x12\x1b\n\x0cStatsPrivate\x18\x14 \x01(\x08:\x05\x66\x61lse\x12/\n\x05Guild\x18\x15 \x01(\x0b\x32 .PSXAPI.Response1375634093.Guild\x12\x30\n\x06Quests\x18\x16 \x03(\x0b\x32 .PSXAPI.Response1375634093.Quest\x12/\n\x05Level\x18\x17 \x01(\x0b\x32 .PSXAPI.Response1375634093.Level\x12\x31\n\x06\x42\x61nned\x18\x18 \x01(\x0b\x32!.PSXAPI.Response1375634093.Banned\x12\x37\n\tSkinsUser\x18\x19 \x01(\x0b\x32$.PSXAPI.Response1375634093.UserSkins\x12\x35\n\tLootboxes\x18\x1a \x03(\x0b\x32\".PSXAPI.Response1375634093.Lootbox\x12=\n\x0c\x44\x61ilyLootbox\x18\x1b \x01(\x0b\x32\'.PSXAPI.Response1375634093.DailyLootbox\x12!\n\nDailyReset\x18\x1c \x01(\x0b\x32\r.bcl.TimeSpan\x12\x38\n\x0bNearbyUsers\x18\x1d \x01(\x0b\x32#.PSXAPI.Response1375634093.MapUsers\x12\x14\n\tEncounter\x18\x1e \x01(\x05:\x01\x30\x12\x1c\n\rShowAsOffline\x18\x1f \x01(\x08:\x05\x66\x61lse\x12\x32\n\x07\x45\x66\x66\x65\x63ts\x18  \x01(\x0b\x32!.PSXAPI.Response1375634093.Effect\x12\x15\n\nTotalSteps\x18! \x01(\r:\x01\x30\x12\x17\n\x0f\x44iscoveredAreas\x18# \x03(\t\"\xa3\x01\n\x18PREFIX_AGDFASBV529948962\"\x86\x01\n\nLoginError\x12\r\n\tNoneValue\x10\x00\x12\x11\n\rWrongPassword\x10\x01\x12\x13\n\x0f\x41\x63\x63ountNotFound\x10\x02\x12\x13\n\x0f\x41lreadyLoggedIn\x10\x03\x12\n\n\x06\x42\x61nned\x10\x04\x12\x0f\n\x0bNotVerified\x10\x05\x12\x0f\n\x0bUnsupported\x10\x06\"B\n\x19PREFIX_AGDFASBV1597269680\"%\n\x0bLoginResult\x12\t\n\x05\x45rror\x10\x00\x12\x0b\n\x07Success\x10\x01\"\xa0\x01\n\x19PREFIX_AGDFASBV1274100486\"\x82\x01\n\x08LootType\x12\r\n\tNoneValue\x10\x00\x12\t\n\x05Money\x10\x01\x12\x08\n\x04Gold\x10\x02\x12\x08\n\x04Item\x10\x03\x12\x0b\n\x07Pokemon\x10\x04\x12\n\n\x06\x43lothe\x10\x05\x12\x07\n\x03Hat\x10\x06\x12\t\n\x05Mount\x10\x07\x12\r\n\tSurfMount\x10\x08\x12\x0c\n\x08\x46lyMount\x10\t\"\x90\x02\n\x07Lootbox\x12]\n\x06\x41\x63tion\x18\x01 \x01(\x0e\x32\x42.PSXAPI.Response1375634093.PREFIX_AGDFASBV1683146902.LootboxAction:\tNoneValue\x12Y\n\x04Type\x18\x02 \x01(\x0e\x32@.PSXAPI.Response1375634093.PREFIX_AGDFASBV1562556180.LootboxType:\tNoneValue\x12\x14\n\tRemaining\x18\x03 \x01(\r:\x01\x30\x12\x35\n\x05Rolls\x18\x04 \x03(\x0b\x32&.PSXAPI.Response1375634093.LootboxRoll\"S\n\x19PREFIX_AGDFASBV1683146902\"6\n\rLootboxAction\x12\r\n\tNoneValue\x10\x00\x12\n\n\x06Opened\x10\x01\x12\n\n\x06Update\x10\x02\"\xc8\x01\n\x0bLootboxRoll\x12Z\n\x08LootType\x18\x01 \x01(\x0e\x32=.PSXAPI.Response1375634093.PREFIX_AGDFASBV1274100486.LootType:\tNoneValue\x12\x0e\n\x03Num\x18\x02 \x01(\x05:\x01\x30\x12\x18\n\tDuplicate\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x18\n\rDuplicateGold\x18\x04 \x01(\r:\x01\x30\x12\x19\n\x0e\x44uplicateMoney\x18\x05 \x01(\r:\x01\x30\"P\n\x19PREFIX_AGDFASBV1562556180\"3\n\x0bLootboxType\x12\r\n\tNoneValue\x10\x00\x12\t\n\x05Small\x10\x01\x12\n\n\x06Normal\x10\x02\"\x90\x01\n\x07MapUser\x12\x10\n\x08Username\x18\x01 \x01(\t\x12=\n\x07\x41\x63tions\x18\x02 \x03(\x0b\x32,.PSXAPI.Response1375634093.MapUserActionData\x12\x34\n\x04\x44\x61ta\x18\x03 \x01(\x0b\x32&.PSXAPI.Response1375634093.MapUserData\"\x7f\n\x19PREFIX_AGDFASBV1720398281\"b\n\rMapUserAction\x12\x07\n\x03Set\x10\x00\x12\x06\n\x02Up\x10\x01\x12\x08\n\x04\x44own\x10\x02\x12\x08\n\x04Left\x10\x03\x12\t\n\x05Right\x10\x04\x12\t\n\x05\x45nter\x10\x05\x12\t\n\x05Leave\x10\x06\x12\x0b\n\x07\x46ishing\x10\x07\"\xaa\x01\n\x11MapUserActionData\x12W\n\x06\x41\x63tion\x18\x01 \x01(\x0e\x32\x42.PSXAPI.Response1375634093.PREFIX_AGDFASBV1720398281.MapUserAction:\x03Set\x12<\n\x08Position\x18\x02 \x01(\x0b\x32*.PSXAPI.Response1375634093.MapUserPosition\"\x88\x05\n\x0bMapUserData\x12/\n\x05Style\x18\x01 \x01(\x0b\x32 .PSXAPI.Response1375634093.Style\x12`\n\tDirection\x18\x02 \x01(\x0e\x32\x44.PSXAPI.Response1375634093.PREFIX_AGDFASBV1672859746.PlayerDirection:\x07\x44\x65\x66\x61ult\x12/\n\x05\x45quip\x18\x03 \x01(\x0b\x32 .PSXAPI.Response1375634093.Equip\x12/\n\x05Mount\x18\x04 \x01(\x0b\x32 .PSXAPI.Response1375634093.Mount\x12\x13\n\x04\x41way\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x15\n\x06\x42\x61ttle\x18\x06 \x01(\x08:\x05\x66\x61lse\x12^\n\nMemberRank\x18\x07 \x01(\x0e\x32?.PSXAPI.Response1375634093.PREFIX_AGDFASBV1761834943.MemberRank:\tNoneValue\x12[\n\tStaffRank\x18\x08 \x01(\x0e\x32=.PSXAPI.Response1375634093.PREFIX_AGDFASBV979434225.StaffRank:\tNoneValue\x12\x11\n\tGuildName\x18\t \x01(\t\x12\x13\n\x08\x45mblemId\x18\n \x01(\r:\x01\x30\x12\x10\n\x05Level\x18\x0b \x01(\r:\x01\x30\x12\x11\n\x06\x46ollow\x18\x0c \x01(\x05:\x01\x30\x12\x1c\n\x11\x46ollowPersonality\x18\r \x01(\x05:\x01\x30\x12\x14\n\x05Lobby\x18\x0e \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0b\x46ollowShiny\x18\x0f \x01(\x08:\x05\x66\x61lse\"@\n\x0fMapUserPosition\x12\x0c\n\x01X\x18\x01 \x01(\x05:\x01\x30\x12\x0c\n\x01Y\x18\x02 \x01(\x05:\x01\x30\x12\x11\n\x06Height\x18\x03 \x01(\x05:\x01\x30\"J\n\x08MapUsers\x12\x31\n\x05Users\x18\x01 \x03(\x0b\x32\".PSXAPI.Response1375634093.MapUser\x12\x0b\n\x03Map\x18\x02 \x01(\t\"D\n\x19PREFIX_AGDFASBV1761834943\"\'\n\nMemberRank\x12\r\n\tNoneValue\x10\x00\x12\n\n\x06Member\x10\x01\"y\n\x05Mount\x12\x12\n\x07MountID\x18\x01 \x01(\x05:\x01\x30\x12\\\n\tMountType\x18\x02 \x01(\x0e\x32>.PSXAPI.Response1375634093.PREFIX_AGDFASBV1702787644.MountType:\tNoneValue\"[\n\x19PREFIX_AGDFASBV1702787644\">\n\tMountType\x12\r\n\tNoneValue\x10\x00\x12\x0b\n\x07Surfing\x10\x01\x12\x08\n\x04\x42ike\x10\x02\x12\x0b\n\x07Pokemon\x10\x03\"\x90\x02\n\x04Move\x12\x0b\n\x03Map\x18\x01 \x02(\t\x12\t\n\x01X\x18\x02 \x02(\x05\x12\t\n\x01Y\x18\x03 \x02(\x05\x12T\n\x06\x41\x63tion\x18\x04 \x01(\x0e\x32?.PSXAPI.Response1375634093.PREFIX_AGDFASBV2033304364.MoveAction:\x03Set\x12`\n\tDirection\x18\x05 \x01(\x0e\x32\x44.PSXAPI.Response1375634093.PREFIX_AGDFASBV1672859746.PlayerDirection:\x07\x44\x65\x66\x61ult\x12\x1a\n\x07Scripts\x18\x06 \x03(\x0b\x32\t.bcl.Guid\x12\x11\n\x06Height\x18\x07 \x01(\x05:\x01\x30\"Y\n\x19PREFIX_AGDFASBV2033304364\"<\n\nMoveAction\x12\x07\n\x03Set\x10\x00\x12\x06\n\x02Up\x10\x01\x12\x08\n\x04\x44own\x10\x02\x12\x08\n\x04Left\x10\x03\x12\t\n\x05Right\x10\x04\"\xaa\x06\n\nMovePlayer\x12\x0b\n\x03Map\x18\x01 \x02(\t\x12\x10\n\x08Username\x18\x02 \x02(\t\x12\t\n\x01X\x18\x03 \x02(\x05\x12\t\n\x01Y\x18\x04 \x02(\x05\x12Y\n\x06\x41\x63tion\x18\x05 \x01(\x0e\x32\x44.PSXAPI.Response1375634093.PREFIX_AGDFASBV101843234.MovePlayerAction:\x03Set\x12/\n\x05Style\x18\x06 \x01(\x0b\x32 .PSXAPI.Response1375634093.Style\x12`\n\tDirection\x18\x07 \x01(\x0e\x32\x44.PSXAPI.Response1375634093.PREFIX_AGDFASBV1672859746.PlayerDirection:\x07\x44\x65\x66\x61ult\x12/\n\x05\x45quip\x18\x08 \x01(\x0b\x32 .PSXAPI.Response1375634093.Equip\x12/\n\x05Mount\x18\t \x01(\x0b\x32 .PSXAPI.Response1375634093.Mount\x12\x13\n\x04\x41way\x18\n \x01(\x08:\x05\x66\x61lse\x12\x15\n\x06\x42\x61ttle\x18\x0b \x01(\x08:\x05\x66\x61lse\x12^\n\nMemberRank\x18\x0c \x01(\x0e\x32?.PSXAPI.Response1375634093.PREFIX_AGDFASBV1761834943.MemberRank:\tNoneValue\x12[\n\tStaffRank\x18\r \x01(\x0e\x32=.PSXAPI.Response1375634093.PREFIX_AGDFASBV979434225.StaffRank:\tNoneValue\x12\x11\n\tGuildName\x18\x0e \x01(\t\x12\x13\n\x08\x45mblemId\x18\x0f \x01(\r:\x01\x30\x12\x10\n\x05Level\x18\x10 \x01(\r:\x01\x30\x12\x11\n\x06\x46ollow\x18\x11 \x01(\x05:\x01\x30\x12\x11\n\x06Height\x18\x12 \x01(\x05:\x01\x30\x12\x1c\n\x11\x46ollowPersonality\x18\x13 \x01(\x05:\x01\x30\x12\x14\n\x05Lobby\x18\x14 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0b\x46ollowShiny\x18\x15 \x01(\x08:\x05\x66\x61lse\"\x81\x01\n\x18PREFIX_AGDFASBV101843234\"e\n\x10MovePlayerAction\x12\x07\n\x03Set\x10\x00\x12\x06\n\x02Up\x10\x01\x12\x08\n\x04\x44own\x10\x02\x12\x08\n\x04Left\x10\x03\x12\t\n\x05Right\x10\x04\x12\t\n\x05\x45nter\x10\x05\x12\t\n\x05Leave\x10\x06\x12\x0b\n\x07\x46ishing\x10\x07\"[\n\x05Party\x12\x37\n\x07Members\x18\x01 \x03(\x0b\x32&.PSXAPI.Response1375634093.PartyMember\x12\x19\n\x06\x43hatID\x18\x02 \x01(\x0b\x32\t.bcl.Guid\"\xa8\x02\n\x0bPartyMember\x12\x0c\n\x04Name\x18\x01 \x01(\t\x12\x19\n\x06UserId\x18\x02 \x01(\x0b\x32\t.bcl.Guid\x12\x15\n\x06Online\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x15\n\x06Leader\x18\x04 \x01(\x08:\x05\x66\x61lse\x12<\n\x07Pokemon\x18\x05 \x03(\x0b\x32+.PSXAPI.Response1375634093.InventoryPokemon\x12\x10\n\x05Level\x18\x06 \x01(\r:\x01\x30\x12\x33\n\tEquipment\x18\x07 \x01(\x0b\x32 .PSXAPI.Response1375634093.Equip\x12/\n\x05Style\x18\x08 \x01(\x0b\x32 .PSXAPI.Response1375634093.Style\x12\x0c\n\x04\x41rea\x18\t \x01(\t\"b\n\x19PREFIX_AGDFASBV1672859746\"E\n\x0fPlayerDirection\x12\x0b\n\x07\x44\x65\x66\x61ult\x10\x00\x12\x06\n\x02Up\x10\x01\x12\x08\n\x04\x44own\x10\x02\x12\x08\n\x04Left\x10\x03\x12\t\n\x05Right\x10\x04\"g\n\x07Pokedex\x12\x38\n\x07\x45ntries\x18\x01 \x03(\x0b\x32\'.PSXAPI.Response1375634093.PokedexEntry\x12\x0f\n\x04Seen\x18\x02 \x01(\x05:\x01\x30\x12\x11\n\x06\x43\x61ught\x18\x03 \x01(\x05:\x01\x30\"\xb2\x01\n\x0cPokedexEntry\x12@\n\x07Pokemon\x18\x01 \x01(\x0e\x32$.PSXAPI.Response1375634093.PokemonID:\tmissingno\x12`\n\x05State\x18\x02 \x01(\x0e\x32\x46.PSXAPI.Response1375634093.PREFIX_AGDFASBV1749316721.PokedexEntryState:\tNoneValue\"U\n\x19PREFIX_AGDFASBV1749316721\"8\n\x11PokedexEntryState\x12\r\n\tNoneValue\x10\x00\x12\x08\n\x04Seen\x10\x01\x12\n\n\x06\x43\x61ught\x10\x02\"\x84\x08\n\x07Pokemon\x12\x42\n\tPokemonID\x18\x01 \x01(\x0e\x32$.PSXAPI.Response1375634093.PokemonID:\tmissingno\x12\x10\n\x05Level\x18\x02 \x01(\x05:\x01\x30\x12\x0e\n\x03\x45xp\x18\x03 \x01(\x05:\x01\x30\x12\r\n\x02HP\x18\x04 \x01(\x05:\x01\x30\x12\x35\n\x05Moves\x18\x05 \x03(\x0b\x32&.PSXAPI.Response1375634093.PokemonMove\x12\x64\n\x0b\x41\x62ilitySlot\x18\x06 \x01(\x0e\x32\x44.PSXAPI.Response1375634093.PREFIX_AGDFASBV2118046871.AbilitySlotType:\tNoneValue\x12\x14\n\tHappiness\x18\x07 \x01(\x05:\x01\x30\x12^\n\x06Nature\x18\x08 \x01(\x0e\x32\x43.PSXAPI.Response1375634093.PREFIX_AGDFASBV1870327986.PokemonNatures:\tNoneValue\x12\x14\n\x05Shiny\x18\t \x01(\x08:\x05\x66\x61lse\x12\x34\n\x03IVs\x18\n \x01(\x0b\x32\'.PSXAPI.Response1375634093.PokemonStats\x12\x34\n\x03\x45Vs\x18\x0b \x01(\x0b\x32\'.PSXAPI.Response1375634093.PokemonStats\x12\\\n\x06Gender\x18\x0c \x01(\x0e\x32\x41.PSXAPI.Response1375634093.PREFIX_AGDFASBV876393797.PokemonGender:\tNoneValue\x12\"\n\x0fOriginalTrainer\x18\r \x01(\x0b\x32\t.bcl.Guid\x12\x1a\n\x07Trainer\x18\x0e \x01(\x0b\x32\t.bcl.Guid\x12\x10\n\x08Nickname\x18\x0f \x01(\t\x12\x13\n\x08Pokeball\x18\x10 \x01(\x05:\x01\x30\x12\x13\n\x08HoldItem\x18\x11 \x01(\x05:\x01\x30\x12\x16\n\x0bPersonality\x18\x12 \x01(\x05:\x01\x30\x12\x63\n\tCondition\x18\x13 \x01(\x0e\x32\x45.PSXAPI.Response1375634093.PREFIX_AGDFASBV1466068983.PokemonCondition:\tNoneValue\x12=\n\x0c\x45VsCollected\x18\x14 \x01(\x0b\x32\'.PSXAPI.Response1375634093.PokemonStats\x12$\n\rCaughtDateUtc\x18\x15 \x01(\x0b\x32\r.bcl.DateTime\x12\x16\n\x0b\x43\x61ughtLevel\x18\x16 \x01(\x05:\x01\x30\x12\x1b\n\x0cNotTradeable\x18\x17 \x01(\x08:\x05\x66\x61lse\"\x87\x01\n\x19PREFIX_AGDFASBV1466068983\"j\n\x10PokemonCondition\x12\r\n\tNoneValue\x10\x00\x12\x0b\n\x07\x46\x61inted\x10\x01\x12\x08\n\x04\x42urn\x10\x02\x12\n\n\x06\x46reeze\x10\x03\x12\r\n\tParalysis\x10\x04\x12\n\n\x06Poison\x10\x05\x12\t\n\x05Sleep\x10\x06\"\xd6\x02\n\x0bPokemonData\x12\x1b\n\x08UniqueID\x18\x01 \x01(\x0b\x32\t.bcl.Guid\x12\x33\n\x07Payload\x18\x02 \x01(\x0b\x32\".PSXAPI.Response1375634093.Pokemon\x12\x36\n\x05Stats\x18\x03 \x01(\x0b\x32\'.PSXAPI.Response1375634093.PokemonStats\x12\x0f\n\x07Trainer\x18\x04 \x01(\t\x12\x17\n\x0fOriginalTrainer\x18\x05 \x01(\t\x12\x0f\n\x07\x41\x62ility\x18\x06 \x01(\t\x12\x13\n\x08\x45xpStart\x18\x07 \x01(\x05:\x01\x30\x12\x12\n\x07\x45xpNext\x18\x08 \x01(\x05:\x01\x30\x12Y\n\x08\x45ggState\x18\t \x01(\x0e\x32<.PSXAPI.Response1375634093.PREFIX_AGDFASBV363156631.EggState:\tNoneValue\"P\n\x18PREFIX_AGDFASBV876393797\"4\n\rPokemonGender\x12\r\n\tNoneValue\x10\x00\x12\x08\n\x04Male\x10\x01\x12\n\n\x06\x46\x65male\x10\x02\"\x85\x01\n\x0bPokemonMove\x12U\n\x04Move\x18\x01 \x01(\x0e\x32\x41.PSXAPI.Response1375634093.PREFIX_AGDFASBV167626233.PokemonMoveID:\x04none\x12\r\n\x02PP\x18\x02 \x01(\x05:\x01\x30\x12\x10\n\x05MaxPP\x18\x03 \x01(\x05:\x01\x30\"\xadX\n\x18PREFIX_AGDFASBV167626233\"\x90X\n\rPokemonMoveID\x12\x08\n\x04none\x10\x00\x12\t\n\x05pound\x10\x01\x12\x0e\n\nkaratechop\x10\x02\x12\x0e\n\ndoubleslap\x10\x03\x12\x0e\n\ncometpunch\x10\x04\x12\r\n\tmegapunch\x10\x05\x12\n\n\x06payday\x10\x06\x12\r\n\tfirepunch\x10\x07\x12\x0c\n\x08icepunch\x10\x08\x12\x10\n\x0cthunderpunch\x10\t\x12\x0b\n\x07scratch\x10\n\x12\x0c\n\x08vicegrip\x10\x0b\x12\x0e\n\nguillotine\x10\x0c\x12\r\n\trazorwind\x10\r\x12\x0f\n\x0bswordsdance\x10\x0e\x12\x07\n\x03\x63ut\x10\x0f\x12\x08\n\x04gust\x10\x10\x12\x0e\n\nwingattack\x10\x11\x12\r\n\twhirlwind\x10\x12\x12\x07\n\x03\x66ly\x10\x13\x12\x08\n\x04\x62ind\x10\x14\x12\x08\n\x04slam\x10\x15\x12\x0c\n\x08vinewhip\x10\x16\x12\t\n\x05stomp\x10\x17\x12\x0e\n\ndoublekick\x10\x18\x12\x0c\n\x08megakick\x10\x19\x12\x0c\n\x08jumpkick\x10\x1a\x12\x0f\n\x0brollingkick\x10\x1b\x12\x0e\n\nsandattack\x10\x1c\x12\x0c\n\x08headbutt\x10\x1d\x12\x0e\n\nhornattack\x10\x1e\x12\x0e\n\nfuryattack\x10\x1f\x12\r\n\thorndrill\x10 \x12\n\n\x06tackle\x10!\x12\x0c\n\x08\x62odyslam\x10\"\x12\x08\n\x04wrap\x10#\x12\x0c\n\x08takedown\x10$\x12\n\n\x06thrash\x10%\x12\x0e\n\ndoubleedge\x10&\x12\x0c\n\x08tailwhip\x10\'\x12\x0f\n\x0bpoisonsting\x10(\x12\r\n\ttwineedle\x10)\x12\x0e\n\npinmissile\x10*\x12\x08\n\x04leer\x10+\x12\x08\n\x04\x62ite\x10,\x12\t\n\x05growl\x10-\x12\x08\n\x04roar\x10.\x12\x08\n\x04sing\x10/\x12\x0e\n\nsupersonic\x10\x30\x12\r\n\tsonicboom\x10\x31\x12\x0b\n\x07\x64isable\x10\x32\x12\x08\n\x04\x61\x63id\x10\x33\x12\t\n\x05\x65mber\x10\x34\x12\x10\n\x0c\x66lamethrower\x10\x35\x12\x08\n\x04mist\x10\x36\x12\x0c\n\x08watergun\x10\x37\x12\r\n\thydropump\x10\x38\x12\x08\n\x04surf\x10\x39\x12\x0b\n\x07icebeam\x10:\x12\x0c\n\x08\x62lizzard\x10;\x12\x0b\n\x07psybeam\x10<\x12\x0e\n\nbubblebeam\x10=\x12\x0e\n\naurorabeam\x10>\x12\r\n\thyperbeam\x10?\x12\x08\n\x04peck\x10@\x12\r\n\tdrillpeck\x10\x41\x12\x0e\n\nsubmission\x10\x42\x12\x0b\n\x07lowkick\x10\x43\x12\x0b\n\x07\x63ounter\x10\x44\x12\x0f\n\x0bseismictoss\x10\x45\x12\x0c\n\x08strength\x10\x46\x12\n\n\x06\x61\x62sorb\x10G\x12\r\n\tmegadrain\x10H\x12\r\n\tleechseed\x10I\x12\n\n\x06growth\x10J\x12\r\n\trazorleaf\x10K\x12\r\n\tsolarbeam\x10L\x12\x10\n\x0cpoisonpowder\x10M\x12\r\n\tstunspore\x10N\x12\x0f\n\x0bsleeppowder\x10O\x12\x0e\n\npetaldance\x10P\x12\x0e\n\nstringshot\x10Q\x12\x0e\n\ndragonrage\x10R\x12\x0c\n\x08\x66irespin\x10S\x12\x10\n\x0cthundershock\x10T\x12\x0f\n\x0bthunderbolt\x10U\x12\x0f\n\x0bthunderwave\x10V\x12\x0b\n\x07thunder\x10W\x12\r\n\trockthrow\x10X\x12\x0e\n\nearthquake\x10Y\x12\x0b\n\x07\x66issure\x10Z\x12\x07\n\x03\x64ig\x10[\x12\t\n\x05toxic\x10\\\x12\r\n\tconfusion\x10]\x12\x0b\n\x07psychic\x10^\x12\x0c\n\x08hypnosis\x10_\x12\x0c\n\x08meditate\x10`\x12\x0b\n\x07\x61gility\x10\x61\x12\x0f\n\x0bquickattack\x10\x62\x12\x08\n\x04rage\x10\x63\x12\x0c\n\x08teleport\x10\x64\x12\x0e\n\nnightshade\x10\x65\x12\t\n\x05mimic\x10\x66\x12\x0b\n\x07screech\x10g\x12\x0e\n\ndoubleteam\x10h\x12\x0b\n\x07recover\x10i\x12\n\n\x06harden\x10j\x12\x0c\n\x08minimize\x10k\x12\x0f\n\x0bsmokescreen\x10l\x12\x0e\n\nconfuseray\x10m\x12\x0c\n\x08withdraw\x10n\x12\x0f\n\x0b\x64\x65\x66\x65nsecurl\x10o\x12\x0b\n\x07\x62\x61rrier\x10p\x12\x0f\n\x0blightscreen\x10q\x12\x08\n\x04haze\x10r\x12\x0b\n\x07reflect\x10s\x12\x0f\n\x0b\x66ocusenergy\x10t\x12\x08\n\x04\x62ide\x10u\x12\r\n\tmetronome\x10v\x12\x0e\n\nmirrormove\x10w\x12\x10\n\x0cselfdestruct\x10x\x12\x0b\n\x07\x65ggbomb\x10y\x12\x08\n\x04lick\x10z\x12\x08\n\x04smog\x10{\x12\n\n\x06sludge\x10|\x12\x0c\n\x08\x62oneclub\x10}\x12\r\n\tfireblast\x10~\x12\r\n\twaterfall\x10\x7f\x12\n\n\x05\x63lamp\x10\x80\x01\x12\n\n\x05swift\x10\x81\x01\x12\x0e\n\tskullbash\x10\x82\x01\x12\x10\n\x0bspikecannon\x10\x83\x01\x12\x0e\n\tconstrict\x10\x84\x01\x12\x0c\n\x07\x61mnesia\x10\x85\x01\x12\x0c\n\x07kinesis\x10\x86\x01\x12\x0f\n\nsoftboiled\x10\x87\x01\x12\x11\n\x0chighjumpkick\x10\x88\x01\x12\n\n\x05glare\x10\x89\x01\x12\x0f\n\ndreameater\x10\x8a\x01\x12\x0e\n\tpoisongas\x10\x8b\x01\x12\x0c\n\x07\x62\x61rrage\x10\x8c\x01\x12\x0e\n\tleechlife\x10\x8d\x01\x12\x0f\n\nlovelykiss\x10\x8e\x01\x12\x0e\n\tskyattack\x10\x8f\x01\x12\x0e\n\ttransform\x10\x90\x01\x12\x0b\n\x06\x62ubble\x10\x91\x01\x12\x0f\n\ndizzypunch\x10\x92\x01\x12\n\n\x05spore\x10\x93\x01\x12\n\n\x05\x66lash\x10\x94\x01\x12\x0c\n\x07psywave\x10\x95\x01\x12\x0b\n\x06splash\x10\x96\x01\x12\x0e\n\tacidarmor\x10\x97\x01\x12\x0f\n\ncrabhammer\x10\x98\x01\x12\x0e\n\texplosion\x10\x99\x01\x12\x0f\n\nfuryswipes\x10\x9a\x01\x12\x0f\n\nbonemerang\x10\x9b\x01\x12\t\n\x04rest\x10\x9c\x01\x12\x0e\n\trockslide\x10\x9d\x01\x12\x0e\n\thyperfang\x10\x9e\x01\x12\x0c\n\x07sharpen\x10\x9f\x01\x12\x0f\n\nconversion\x10\xa0\x01\x12\x0e\n\ttriattack\x10\xa1\x01\x12\x0e\n\tsuperfang\x10\xa2\x01\x12\n\n\x05slash\x10\xa3\x01\x12\x0f\n\nsubstitute\x10\xa4\x01\x12\r\n\x08struggle\x10\xa5\x01\x12\x0b\n\x06sketch\x10\xa6\x01\x12\x0f\n\ntriplekick\x10\xa7\x01\x12\n\n\x05thief\x10\xa8\x01\x12\x0e\n\tspiderweb\x10\xa9\x01\x12\x0f\n\nmindreader\x10\xaa\x01\x12\x0e\n\tnightmare\x10\xab\x01\x12\x0f\n\nflamewheel\x10\xac\x01\x12\n\n\x05snore\x10\xad\x01\x12\n\n\x05\x63urse\x10\xae\x01\x12\n\n\x05\x66lail\x10\xaf\x01\x12\x10\n\x0b\x63onversion2\x10\xb0\x01\x12\x0e\n\taeroblast\x10\xb1\x01\x12\x10\n\x0b\x63ottonspore\x10\xb2\x01\x12\r\n\x08reversal\x10\xb3\x01\x12\n\n\x05spite\x10\xb4\x01\x12\x0f\n\npowdersnow\x10\xb5\x01\x12\x0c\n\x07protect\x10\xb6\x01\x12\x0e\n\tmachpunch\x10\xb7\x01\x12\x0e\n\tscaryface\x10\xb8\x01\x12\x10\n\x0b\x66\x65intattack\x10\xb9\x01\x12\x0e\n\tsweetkiss\x10\xba\x01\x12\x0e\n\tbellydrum\x10\xbb\x01\x12\x0f\n\nsludgebomb\x10\xbc\x01\x12\x0c\n\x07mudslap\x10\xbd\x01\x12\x0e\n\toctazooka\x10\xbe\x01\x12\x0b\n\x06spikes\x10\xbf\x01\x12\x0e\n\tzapcannon\x10\xc0\x01\x12\x0e\n\tforesight\x10\xc1\x01\x12\x10\n\x0b\x64\x65stinybond\x10\xc2\x01\x12\x0f\n\nperishsong\x10\xc3\x01\x12\x0c\n\x07icywind\x10\xc4\x01\x12\x0b\n\x06\x64\x65tect\x10\xc5\x01\x12\r\n\x08\x62onerush\x10\xc6\x01\x12\x0b\n\x06lockon\x10\xc7\x01\x12\x0c\n\x07outrage\x10\xc8\x01\x12\x0e\n\tsandstorm\x10\xc9\x01\x12\x0e\n\tgigadrain\x10\xca\x01\x12\x0b\n\x06\x65ndure\x10\xcb\x01\x12\n\n\x05\x63harm\x10\xcc\x01\x12\x0c\n\x07rollout\x10\xcd\x01\x12\x0f\n\nfalseswipe\x10\xce\x01\x12\x0c\n\x07swagger\x10\xcf\x01\x12\x0e\n\tmilkdrink\x10\xd0\x01\x12\n\n\x05spark\x10\xd1\x01\x12\x0f\n\nfurycutter\x10\xd2\x01\x12\x0e\n\tsteelwing\x10\xd3\x01\x12\r\n\x08meanlook\x10\xd4\x01\x12\x0c\n\x07\x61ttract\x10\xd5\x01\x12\x0e\n\tsleeptalk\x10\xd6\x01\x12\r\n\x08healbell\x10\xd7\x01\x12\x0c\n\x07_return\x10\xd8\x01\x12\x0c\n\x07present\x10\xd9\x01\x12\x10\n\x0b\x66rustration\x10\xda\x01\x12\x0e\n\tsafeguard\x10\xdb\x01\x12\x0e\n\tpainsplit\x10\xdc\x01\x12\x0f\n\nsacredfire\x10\xdd\x01\x12\x0e\n\tmagnitude\x10\xde\x01\x12\x11\n\x0c\x64ynamicpunch\x10\xdf\x01\x12\r\n\x08megahorn\x10\xe0\x01\x12\x11\n\x0c\x64ragonbreath\x10\xe1\x01\x12\x0e\n\tbatonpass\x10\xe2\x01\x12\x0b\n\x06\x65ncore\x10\xe3\x01\x12\x0c\n\x07pursuit\x10\xe4\x01\x12\x0e\n\trapidspin\x10\xe5\x01\x12\x0f\n\nsweetscent\x10\xe6\x01\x12\r\n\x08irontail\x10\xe7\x01\x12\x0e\n\tmetalclaw\x10\xe8\x01\x12\x0f\n\nvitalthrow\x10\xe9\x01\x12\x0f\n\nmorningsun\x10\xea\x01\x12\x0e\n\tsynthesis\x10\xeb\x01\x12\x0e\n\tmoonlight\x10\xec\x01\x12\x10\n\x0bhiddenpower\x10\xed\x01\x12\x0e\n\tcrosschop\x10\xee\x01\x12\x0c\n\x07twister\x10\xef\x01\x12\x0e\n\traindance\x10\xf0\x01\x12\r\n\x08sunnyday\x10\xf1\x01\x12\x0b\n\x06\x63runch\x10\xf2\x01\x12\x0f\n\nmirrorcoat\x10\xf3\x01\x12\x0c\n\x07psychup\x10\xf4\x01\x12\x11\n\x0c\x65xtremespeed\x10\xf5\x01\x12\x11\n\x0c\x61ncientpower\x10\xf6\x01\x12\x0f\n\nshadowball\x10\xf7\x01\x12\x10\n\x0b\x66uturesight\x10\xf8\x01\x12\x0e\n\trocksmash\x10\xf9\x01\x12\x0e\n\twhirlpool\x10\xfa\x01\x12\x0b\n\x06\x62\x65\x61tup\x10\xfb\x01\x12\x0c\n\x07\x66\x61keout\x10\xfc\x01\x12\x0b\n\x06uproar\x10\xfd\x01\x12\x0e\n\tstockpile\x10\xfe\x01\x12\x0b\n\x06spitup\x10\xff\x01\x12\x0c\n\x07swallow\x10\x80\x02\x12\r\n\x08heatwave\x10\x81\x02\x12\t\n\x04hail\x10\x82\x02\x12\x0c\n\x07torment\x10\x83\x02\x12\x0c\n\x07\x66latter\x10\x84\x02\x12\x0e\n\twillowisp\x10\x85\x02\x12\x0c\n\x07memento\x10\x86\x02\x12\x0b\n\x06\x66\x61\x63\x61\x64\x65\x10\x87\x02\x12\x0f\n\nfocuspunch\x10\x88\x02\x12\x12\n\rsmellingsalts\x10\x89\x02\x12\r\n\x08\x66ollowme\x10\x8a\x02\x12\x10\n\x0bnaturepower\x10\x8b\x02\x12\x0b\n\x06\x63harge\x10\x8c\x02\x12\n\n\x05taunt\x10\x8d\x02\x12\x10\n\x0bhelpinghand\x10\x8e\x02\x12\n\n\x05trick\x10\x8f\x02\x12\r\n\x08roleplay\x10\x90\x02\x12\t\n\x04wish\x10\x91\x02\x12\x0b\n\x06\x61ssist\x10\x92\x02\x12\x0c\n\x07ingrain\x10\x93\x02\x12\x0f\n\nsuperpower\x10\x94\x02\x12\x0e\n\tmagiccoat\x10\x95\x02\x12\x0c\n\x07recycle\x10\x96\x02\x12\x0c\n\x07revenge\x10\x97\x02\x12\x0f\n\nbrickbreak\x10\x98\x02\x12\t\n\x04yawn\x10\x99\x02\x12\r\n\x08knockoff\x10\x9a\x02\x12\r\n\x08\x65ndeavor\x10\x9b\x02\x12\r\n\x08\x65ruption\x10\x9c\x02\x12\x0e\n\tskillswap\x10\x9d\x02\x12\r\n\x08imprison\x10\x9e\x02\x12\x0c\n\x07refresh\x10\x9f\x02\x12\x0b\n\x06grudge\x10\xa0\x02\x12\x0b\n\x06snatch\x10\xa1\x02\x12\x10\n\x0bsecretpower\x10\xa2\x02\x12\t\n\x04\x64ive\x10\xa3\x02\x12\x0e\n\tarmthrust\x10\xa4\x02\x12\x0f\n\ncamouflage\x10\xa5\x02\x12\r\n\x08tailglow\x10\xa6\x02\x12\x10\n\x0blusterpurge\x10\xa7\x02\x12\r\n\x08mistball\x10\xa8\x02\x12\x11\n\x0c\x66\x65\x61therdance\x10\xa9\x02\x12\x10\n\x0bteeterdance\x10\xaa\x02\x12\x0e\n\tblazekick\x10\xab\x02\x12\r\n\x08mudsport\x10\xac\x02\x12\x0c\n\x07iceball\x10\xad\x02\x12\x0e\n\tneedlearm\x10\xae\x02\x12\r\n\x08slackoff\x10\xaf\x02\x12\x0f\n\nhypervoice\x10\xb0\x02\x12\x0f\n\npoisonfang\x10\xb1\x02\x12\x0e\n\tcrushclaw\x10\xb2\x02\x12\x0e\n\tblastburn\x10\xb3\x02\x12\x10\n\x0bhydrocannon\x10\xb4\x02\x12\x0f\n\nmeteormash\x10\xb5\x02\x12\r\n\x08\x61stonish\x10\xb6\x02\x12\x10\n\x0bweatherball\x10\xb7\x02\x12\x11\n\x0c\x61romatherapy\x10\xb8\x02\x12\x0e\n\tfaketears\x10\xb9\x02\x12\x0e\n\taircutter\x10\xba\x02\x12\r\n\x08overheat\x10\xbb\x02\x12\x0f\n\nodorsleuth\x10\xbc\x02\x12\r\n\x08rocktomb\x10\xbd\x02\x12\x0f\n\nsilverwind\x10\xbe\x02\x12\x0f\n\nmetalsound\x10\xbf\x02\x12\x11\n\x0cgrasswhistle\x10\xc0\x02\x12\x0b\n\x06tickle\x10\xc1\x02\x12\x10\n\x0b\x63osmicpower\x10\xc2\x02\x12\x0f\n\nwaterspout\x10\xc3\x02\x12\x0f\n\nsignalbeam\x10\xc4\x02\x12\x10\n\x0bshadowpunch\x10\xc5\x02\x12\x11\n\x0c\x65xtrasensory\x10\xc6\x02\x12\x10\n\x0bskyuppercut\x10\xc7\x02\x12\r\n\x08sandtomb\x10\xc8\x02\x12\x0e\n\tsheercold\x10\xc9\x02\x12\x0f\n\nmuddywater\x10\xca\x02\x12\x0f\n\nbulletseed\x10\xcb\x02\x12\x0e\n\taerialace\x10\xcc\x02\x12\x10\n\x0biciclespear\x10\xcd\x02\x12\x10\n\x0birondefense\x10\xce\x02\x12\n\n\x05\x62lock\x10\xcf\x02\x12\t\n\x04howl\x10\xd0\x02\x12\x0f\n\ndragonclaw\x10\xd1\x02\x12\x10\n\x0b\x66renzyplant\x10\xd2\x02\x12\x0b\n\x06\x62ulkup\x10\xd3\x02\x12\x0b\n\x06\x62ounce\x10\xd4\x02\x12\x0c\n\x07mudshot\x10\xd5\x02\x12\x0f\n\npoisontail\x10\xd6\x02\x12\n\n\x05\x63ovet\x10\xd7\x02\x12\x0f\n\nvolttackle\x10\xd8\x02\x12\x10\n\x0bmagicalleaf\x10\xd9\x02\x12\x0f\n\nwatersport\x10\xda\x02\x12\r\n\x08\x63\x61lmmind\x10\xdb\x02\x12\x0e\n\tleafblade\x10\xdc\x02\x12\x10\n\x0b\x64ragondance\x10\xdd\x02\x12\x0e\n\trockblast\x10\xde\x02\x12\x0e\n\tshockwave\x10\xdf\x02\x12\x0f\n\nwaterpulse\x10\xe0\x02\x12\x0f\n\ndoomdesire\x10\xe1\x02\x12\x10\n\x0bpsychoboost\x10\xe2\x02\x12\n\n\x05roost\x10\xe3\x02\x12\x0c\n\x07gravity\x10\xe4\x02\x12\x0f\n\nmiracleeye\x10\xe5\x02\x12\x0f\n\nwakeupslap\x10\xe6\x02\x12\x0e\n\thammerarm\x10\xe7\x02\x12\r\n\x08gyroball\x10\xe8\x02\x12\x10\n\x0bhealingwish\x10\xe9\x02\x12\n\n\x05\x62rine\x10\xea\x02\x12\x10\n\x0bnaturalgift\x10\xeb\x02\x12\n\n\x05\x66\x65int\x10\xec\x02\x12\n\n\x05pluck\x10\xed\x02\x12\r\n\x08tailwind\x10\xee\x02\x12\x10\n\x0b\x61\x63upressure\x10\xef\x02\x12\x0f\n\nmetalburst\x10\xf0\x02\x12\n\n\x05uturn\x10\xf1\x02\x12\x10\n\x0b\x63losecombat\x10\xf2\x02\x12\x0c\n\x07payback\x10\xf3\x02\x12\x0e\n\tassurance\x10\xf4\x02\x12\x0c\n\x07\x65mbargo\x10\xf5\x02\x12\n\n\x05\x66ling\x10\xf6\x02\x12\x10\n\x0bpsychoshift\x10\xf7\x02\x12\x0e\n\ttrumpcard\x10\xf8\x02\x12\x0e\n\thealblock\x10\xf9\x02\x12\r\n\x08wringout\x10\xfa\x02\x12\x0f\n\npowertrick\x10\xfb\x02\x12\x0f\n\ngastroacid\x10\xfc\x02\x12\x0f\n\nluckychant\x10\xfd\x02\x12\x0c\n\x07mefirst\x10\xfe\x02\x12\x0c\n\x07\x63opycat\x10\xff\x02\x12\x0e\n\tpowerswap\x10\x80\x03\x12\x0e\n\tguardswap\x10\x81\x03\x12\x0f\n\npunishment\x10\x82\x03\x12\x0f\n\nlastresort\x10\x83\x03\x12\x0e\n\tworryseed\x10\x84\x03\x12\x10\n\x0bsuckerpunch\x10\x85\x03\x12\x10\n\x0btoxicspikes\x10\x86\x03\x12\x0e\n\theartswap\x10\x87\x03\x12\r\n\x08\x61quaring\x10\x88\x03\x12\x0f\n\nmagnetrise\x10\x89\x03\x12\x0f\n\nflareblitz\x10\x8a\x03\x12\x0e\n\tforcepalm\x10\x8b\x03\x12\x0f\n\naurasphere\x10\x8c\x03\x12\x0f\n\nrockpolish\x10\x8d\x03\x12\x0e\n\tpoisonjab\x10\x8e\x03\x12\x0e\n\tdarkpulse\x10\x8f\x03\x12\x0f\n\nnightslash\x10\x90\x03\x12\r\n\x08\x61quatail\x10\x91\x03\x12\r\n\x08seedbomb\x10\x92\x03\x12\r\n\x08\x61irslash\x10\x93\x03\x12\r\n\x08xscissor\x10\x94\x03\x12\x0c\n\x07\x62ugbuzz\x10\x95\x03\x12\x10\n\x0b\x64ragonpulse\x10\x96\x03\x12\x0f\n\ndragonrush\x10\x97\x03\x12\r\n\x08powergem\x10\x98\x03\x12\x0f\n\ndrainpunch\x10\x99\x03\x12\x0f\n\nvacuumwave\x10\x9a\x03\x12\x0f\n\nfocusblast\x10\x9b\x03\x12\x0f\n\nenergyball\x10\x9c\x03\x12\x0e\n\tbravebird\x10\x9d\x03\x12\x0f\n\nearthpower\x10\x9e\x03\x12\x0f\n\nswitcheroo\x10\x9f\x03\x12\x0f\n\ngigaimpact\x10\xa0\x03\x12\x0e\n\tnastyplot\x10\xa1\x03\x12\x10\n\x0b\x62ulletpunch\x10\xa2\x03\x12\x0e\n\tavalanche\x10\xa3\x03\x12\r\n\x08iceshard\x10\xa4\x03\x12\x0f\n\nshadowclaw\x10\xa5\x03\x12\x10\n\x0bthunderfang\x10\xa6\x03\x12\x0c\n\x07icefang\x10\xa7\x03\x12\r\n\x08\x66irefang\x10\xa8\x03\x12\x10\n\x0bshadowsneak\x10\xa9\x03\x12\x0c\n\x07mudbomb\x10\xaa\x03\x12\x0e\n\tpsychocut\x10\xab\x03\x12\x10\n\x0bzenheadbutt\x10\xac\x03\x12\x0f\n\nmirrorshot\x10\xad\x03\x12\x10\n\x0b\x66lashcannon\x10\xae\x03\x12\x0e\n\trockclimb\x10\xaf\x03\x12\n\n\x05\x64\x65\x66og\x10\xb0\x03\x12\x0e\n\ttrickroom\x10\xb1\x03\x12\x10\n\x0b\x64racometeor\x10\xb2\x03\x12\x0e\n\tdischarge\x10\xb3\x03\x12\x0e\n\tlavaplume\x10\xb4\x03\x12\x0e\n\tleafstorm\x10\xb5\x03\x12\x0e\n\tpowerwhip\x10\xb6\x03\x12\x10\n\x0brockwrecker\x10\xb7\x03\x12\x10\n\x0b\x63rosspoison\x10\xb8\x03\x12\r\n\x08gunkshot\x10\xb9\x03\x12\r\n\x08ironhead\x10\xba\x03\x12\x0f\n\nmagnetbomb\x10\xbb\x03\x12\x0e\n\tstoneedge\x10\xbc\x03\x12\x0e\n\tcaptivate\x10\xbd\x03\x12\x10\n\x0bstealthrock\x10\xbe\x03\x12\x0e\n\tgrassknot\x10\xbf\x03\x12\x0c\n\x07\x63hatter\x10\xc0\x03\x12\r\n\x08judgment\x10\xc1\x03\x12\x0c\n\x07\x62ugbite\x10\xc2\x03\x12\x0f\n\nchargebeam\x10\xc3\x03\x12\x0f\n\nwoodhammer\x10\xc4\x03\x12\x0c\n\x07\x61quajet\x10\xc5\x03\x12\x10\n\x0b\x61ttackorder\x10\xc6\x03\x12\x10\n\x0b\x64\x65\x66\x65ndorder\x10\xc7\x03\x12\x0e\n\thealorder\x10\xc8\x03\x12\x0e\n\theadsmash\x10\xc9\x03\x12\x0e\n\tdoublehit\x10\xca\x03\x12\x0f\n\nroaroftime\x10\xcb\x03\x12\x10\n\x0bspacialrend\x10\xcc\x03\x12\x0f\n\nlunardance\x10\xcd\x03\x12\x0e\n\tcrushgrip\x10\xce\x03\x12\x0f\n\nmagmastorm\x10\xcf\x03\x12\r\n\x08\x64\x61rkvoid\x10\xd0\x03\x12\x0e\n\tseedflare\x10\xd1\x03\x12\x10\n\x0bominouswind\x10\xd2\x03\x12\x10\n\x0bshadowforce\x10\xd3\x03\x12\x0e\n\thoneclaws\x10\xd4\x03\x12\x0e\n\twideguard\x10\xd5\x03\x12\x0f\n\nguardsplit\x10\xd6\x03\x12\x0f\n\npowersplit\x10\xd7\x03\x12\x0f\n\nwonderroom\x10\xd8\x03\x12\r\n\x08psyshock\x10\xd9\x03\x12\x0e\n\tvenoshock\x10\xda\x03\x12\x0f\n\nautotomize\x10\xdb\x03\x12\x0f\n\nragepowder\x10\xdc\x03\x12\x10\n\x0btelekinesis\x10\xdd\x03\x12\x0e\n\tmagicroom\x10\xde\x03\x12\x0e\n\tsmackdown\x10\xdf\x03\x12\x0f\n\nstormthrow\x10\xe0\x03\x12\x0f\n\nflameburst\x10\xe1\x03\x12\x0f\n\nsludgewave\x10\xe2\x03\x12\x10\n\x0bquiverdance\x10\xe3\x03\x12\x0e\n\theavyslam\x10\xe4\x03\x12\x11\n\x0csynchronoise\x10\xe5\x03\x12\x10\n\x0b\x65lectroball\x10\xe6\x03\x12\t\n\x04soak\x10\xe7\x03\x12\x10\n\x0b\x66lamecharge\x10\xe8\x03\x12\t\n\x04\x63oil\x10\xe9\x03\x12\r\n\x08lowsweep\x10\xea\x03\x12\x0e\n\tacidspray\x10\xeb\x03\x12\r\n\x08\x66oulplay\x10\xec\x03\x12\x0f\n\nsimplebeam\x10\xed\x03\x12\x10\n\x0b\x65ntrainment\x10\xee\x03\x12\r\n\x08\x61\x66teryou\x10\xef\x03\x12\n\n\x05round\x10\xf0\x03\x12\x10\n\x0b\x65\x63hoedvoice\x10\xf1\x03\x12\r\n\x08\x63hipaway\x10\xf2\x03\x12\x0e\n\tclearsmog\x10\xf3\x03\x12\x10\n\x0bstoredpower\x10\xf4\x03\x12\x0f\n\nquickguard\x10\xf5\x03\x12\x0f\n\nallyswitch\x10\xf6\x03\x12\n\n\x05scald\x10\xf7\x03\x12\x0f\n\nshellsmash\x10\xf8\x03\x12\x0e\n\thealpulse\x10\xf9\x03\x12\x08\n\x03hex\x10\xfa\x03\x12\x0c\n\x07skydrop\x10\xfb\x03\x12\x0e\n\tshiftgear\x10\xfc\x03\x12\x10\n\x0b\x63irclethrow\x10\xfd\x03\x12\x0f\n\nincinerate\x10\xfe\x03\x12\n\n\x05quash\x10\xff\x03\x12\x0f\n\nacrobatics\x10\x80\x04\x12\x10\n\x0breflecttype\x10\x81\x04\x12\x0e\n\tretaliate\x10\x82\x04\x12\x10\n\x0b\x66inalgambit\x10\x83\x04\x12\x0b\n\x06\x62\x65stow\x10\x84\x04\x12\x0c\n\x07inferno\x10\x85\x04\x12\x10\n\x0bwaterpledge\x10\x86\x04\x12\x0f\n\nfirepledge\x10\x87\x04\x12\x10\n\x0bgrasspledge\x10\x88\x04\x12\x0f\n\nvoltswitch\x10\x89\x04\x12\x10\n\x0bstrugglebug\x10\x8a\x04\x12\r\n\x08\x62ulldoze\x10\x8b\x04\x12\x10\n\x0b\x66rostbreath\x10\x8c\x04\x12\x0f\n\ndragontail\x10\x8d\x04\x12\x0b\n\x06workup\x10\x8e\x04\x12\x0f\n\nelectroweb\x10\x8f\x04\x12\x0f\n\nwildcharge\x10\x90\x04\x12\r\n\x08\x64rillrun\x10\x91\x04\x12\r\n\x08\x64ualchop\x10\x92\x04\x12\x0f\n\nheartstamp\x10\x93\x04\x12\x0e\n\thornleech\x10\x94\x04\x12\x10\n\x0bsacredsword\x10\x95\x04\x12\x0f\n\nrazorshell\x10\x96\x04\x12\x0e\n\theatcrash\x10\x97\x04\x12\x10\n\x0bleaftornado\x10\x98\x04\x12\x10\n\x0bsteamroller\x10\x99\x04\x12\x10\n\x0b\x63ottonguard\x10\x9a\x04\x12\x0e\n\tnightdaze\x10\x9b\x04\x12\x0e\n\tpsystrike\x10\x9c\x04\x12\r\n\x08tailslap\x10\x9d\x04\x12\x0e\n\thurricane\x10\x9e\x04\x12\x0f\n\nheadcharge\x10\x9f\x04\x12\x0e\n\tgeargrind\x10\xa0\x04\x12\x10\n\x0bsearingshot\x10\xa1\x04\x12\x10\n\x0btechnoblast\x10\xa2\x04\x12\x0e\n\trelicsong\x10\xa3\x04\x12\x10\n\x0bsecretsword\x10\xa4\x04\x12\r\n\x08glaciate\x10\xa5\x04\x12\x0f\n\nboltstrike\x10\xa6\x04\x12\x0e\n\tblueflare\x10\xa7\x04\x12\x0f\n\nfierydance\x10\xa8\x04\x12\x10\n\x0b\x66reezeshock\x10\xa9\x04\x12\x0c\n\x07iceburn\x10\xaa\x04\x12\n\n\x05snarl\x10\xab\x04\x12\x10\n\x0biciclecrash\x10\xac\x04\x12\x0c\n\x07vcreate\x10\xad\x04\x12\x10\n\x0b\x66usionflare\x10\xae\x04\x12\x0f\n\nfusionbolt\x10\xaf\x04\x12\x10\n\x0b\x66lyingpress\x10\xb0\x04\x12\r\n\x08matblock\x10\xb1\x04\x12\n\n\x05\x62\x65lch\x10\xb2\x04\x12\x0f\n\nrototiller\x10\xb3\x04\x12\x0e\n\tstickyweb\x10\xb4\x04\x12\x10\n\x0b\x66\x65llstinger\x10\xb5\x04\x12\x11\n\x0cphantomforce\x10\xb6\x04\x12\x11\n\x0ctrickortreat\x10\xb7\x04\x12\x0e\n\tnobleroar\x10\xb8\x04\x12\x0e\n\tiondeluge\x10\xb9\x04\x12\x14\n\x0fparaboliccharge\x10\xba\x04\x12\x11\n\x0c\x66orestscurse\x10\xbb\x04\x12\x12\n\rpetalblizzard\x10\xbc\x04\x12\x0e\n\tfreezedry\x10\xbd\x04\x12\x13\n\x0e\x64isarmingvoice\x10\xbe\x04\x12\x10\n\x0bpartingshot\x10\xbf\x04\x12\x0f\n\ntopsyturvy\x10\xc0\x04\x12\x11\n\x0c\x64rainingkiss\x10\xc1\x04\x12\x11\n\x0c\x63raftyshield\x10\xc2\x04\x12\x11\n\x0c\x66lowershield\x10\xc3\x04\x12\x12\n\rgrassyterrain\x10\xc4\x04\x12\x11\n\x0cmistyterrain\x10\xc5\x04\x12\x0e\n\telectrify\x10\xc6\x04\x12\x0e\n\tplayrough\x10\xc7\x04\x12\x0e\n\tfairywind\x10\xc8\x04\x12\x0e\n\tmoonblast\x10\xc9\x04\x12\x0e\n\tboomburst\x10\xca\x04\x12\x0e\n\tfairylock\x10\xcb\x04\x12\x10\n\x0bkingsshield\x10\xcc\x04\x12\r\n\x08playnice\x10\xcd\x04\x12\x0c\n\x07\x63onfide\x10\xce\x04\x12\x11\n\x0c\x64iamondstorm\x10\xcf\x04\x12\x12\n\rsteameruption\x10\xd0\x04\x12\x13\n\x0ehyperspacehole\x10\xd1\x04\x12\x12\n\rwatershuriken\x10\xd2\x04\x12\x11\n\x0cmysticalfire\x10\xd3\x04\x12\x10\n\x0bspikyshield\x10\xd4\x04\x12\x11\n\x0c\x61romaticmist\x10\xd5\x04\x12\x11\n\x0c\x65\x65rieimpulse\x10\xd6\x04\x12\x10\n\x0bvenomdrench\x10\xd7\x04\x12\x0b\n\x06powder\x10\xd8\x04\x12\r\n\x08geomancy\x10\xd9\x04\x12\x11\n\x0cmagneticflux\x10\xda\x04\x12\x0e\n\thappyhour\x10\xdb\x04\x12\x14\n\x0f\x65lectricterrain\x10\xdc\x04\x12\x12\n\rdazzlinggleam\x10\xdd\x04\x12\x0e\n\tcelebrate\x10\xde\x04\x12\x0e\n\tholdhands\x10\xdf\x04\x12\x11\n\x0c\x62\x61\x62ydolleyes\x10\xe0\x04\x12\x0b\n\x06nuzzle\x10\xe1\x04\x12\r\n\x08holdback\x10\xe2\x04\x12\x10\n\x0binfestation\x10\xe3\x04\x12\x11\n\x0cpoweruppunch\x10\xe4\x04\x12\x11\n\x0coblivionwing\x10\xe5\x04\x12\x13\n\x0ethousandarrows\x10\xe6\x04\x12\x12\n\rthousandwaves\x10\xe7\x04\x12\x0f\n\nlandswrath\x10\xe8\x04\x12\x10\n\x0blightofruin\x10\xe9\x04\x12\x10\n\x0boriginpulse\x10\xea\x04\x12\x14\n\x0fprecipiceblades\x10\xeb\x04\x12\x11\n\x0c\x64ragonascent\x10\xec\x04\x12\x13\n\x0ehyperspacefury\x10\xed\x04\x12\x13\n\x0e\x62reakneckblitz\x10\xee\x04\x12\x14\n\x0f\x61lloutpummeling\x10\xf0\x04\x12\x18\n\x13supersonicskystrike\x10\xf2\x04\x12\x11\n\x0c\x61\x63iddownpour\x10\xf4\x04\x12\x11\n\x0ctectonicrage\x10\xf6\x04\x12\x15\n\x10\x63ontinentalcrush\x10\xf8\x04\x12\x12\n\rsavagespinout\x10\xfa\x04\x12\x19\n\x14neverendingnightmare\x10\xfc\x04\x12\x13\n\x0e\x63orkscrewcrash\x10\xfe\x04\x12\x15\n\x10infernooverdrive\x10\x80\x05\x12\x10\n\x0bhydrovortex\x10\x82\x05\x12\x0e\n\tbloomdoom\x10\x84\x05\x12\x12\n\rgigavolthavoc\x10\x86\x05\x12\x14\n\x0fshatteredpsyche\x10\x88\x05\x12\x13\n\x0esubzeroslammer\x10\x8a\x05\x12\x15\n\x10\x64\x65vastatingdrake\x10\x8c\x05\x12\x15\n\x10\x62lackholeeclipse\x10\x8e\x05\x12\x12\n\rtwinkletackle\x10\x90\x05\x12\x11\n\x0c\x63\x61tastropika\x10\x92\x05\x12\x0c\n\x07shoreup\x10\x93\x05\x12\x14\n\x0f\x66irstimpression\x10\x94\x05\x12\x12\n\rbanefulbunker\x10\x95\x05\x12\x12\n\rspiritshackle\x10\x96\x05\x12\x12\n\rdarkestlariat\x10\x97\x05\x12\x12\n\rsparklingaria\x10\x98\x05\x12\x0e\n\ticehammer\x10\x99\x05\x12\x12\n\rfloralhealing\x10\x9a\x05\x12\x13\n\x0ehighhorsepower\x10\x9b\x05\x12\x10\n\x0bstrengthsap\x10\x9c\x05\x12\x0f\n\nsolarblade\x10\x9d\x05\x12\x0c\n\x07leafage\x10\x9e\x05\x12\x0e\n\tspotlight\x10\x9f\x05\x12\x10\n\x0btoxicthread\x10\xa0\x05\x12\x0f\n\nlaserfocus\x10\xa1\x05\x12\x0b\n\x06gearup\x10\xa2\x05\x12\x0f\n\nthroatchop\x10\xa3\x05\x12\x0f\n\npollenpuff\x10\xa4\x05\x12\x0f\n\nanchorshot\x10\xa5\x05\x12\x13\n\x0epsychicterrain\x10\xa6\x05\x12\n\n\x05lunge\x10\xa7\x05\x12\r\n\x08\x66irelash\x10\xa8\x05\x12\x0e\n\tpowertrip\x10\xa9\x05\x12\x0b\n\x06\x62urnup\x10\xaa\x05\x12\x0e\n\tspeedswap\x10\xab\x05\x12\x10\n\x0bsmartstrike\x10\xac\x05\x12\x0b\n\x06purify\x10\xad\x05\x12\x14\n\x0frevelationdance\x10\xae\x05\x12\x11\n\x0c\x63oreenforcer\x10\xaf\x05\x12\r\n\x08tropkick\x10\xb0\x05\x12\r\n\x08instruct\x10\xb1\x05\x12\x0e\n\tbeakblast\x10\xb2\x05\x12\x13\n\x0e\x63langingscales\x10\xb3\x05\x12\x11\n\x0c\x64ragonhammer\x10\xb4\x05\x12\x10\n\x0b\x62rutalswing\x10\xb5\x05\x12\x0f\n\nauroraveil\x10\xb6\x05\x12\x16\n\x11sinisterarrowraid\x10\xb7\x05\x12\x17\n\x12maliciousmoonsault\x10\xb8\x05\x12\x14\n\x0foceanicoperetta\x10\xb9\x05\x12\x14\n\x0fguardianofalola\x10\xba\x05\x12\x1c\n\x17soulstealing7starstrike\x10\xbb\x05\x12\x16\n\x11stokedsparksurfer\x10\xbc\x05\x12\x17\n\x12pulverizingpancake\x10\xbd\x05\x12\x14\n\x0f\x65xtremeevoboost\x10\xbe\x05\x12\x15\n\x10genesissupernova\x10\xbf\x05\x12\x0e\n\tshelltrap\x10\xc0\x05\x12\x10\n\x0b\x66leurcannon\x10\xc1\x05\x12\x11\n\x0cpsychicfangs\x10\xc2\x05\x12\x14\n\x0fstompingtantrum\x10\xc3\x05\x12\x0f\n\nshadowbone\x10\xc4\x05\x12\x0f\n\naccelerock\x10\xc5\x05\x12\x10\n\x0bliquidation\x10\xc6\x05\x12\x13\n\x0eprismaticlaser\x10\xc7\x05\x12\x12\n\rspectralthief\x10\xc8\x05\x12\x13\n\x0esunsteelstrike\x10\xc9\x05\x12\x12\n\rmoongeistbeam\x10\xca\x05\x12\x10\n\x0btearfullook\x10\xcb\x05\x12\x0c\n\x07zingzap\x10\xcc\x05\x12\x13\n\x0enaturesmadness\x10\xcd\x05\x12\x10\n\x0bmultiattack\x10\xce\x05\x12\x1d\n\x18_10000000voltthunderbolt\x10\xcf\x05\"\xdc\x02\n\x19PREFIX_AGDFASBV1870327986\"\xbe\x02\n\x0ePokemonNatures\x12\r\n\tNoneValue\x10\x00\x12\x0b\n\x07\x61\x64\x61mant\x10\x01\x12\x0b\n\x07\x62\x61shful\x10\x02\x12\x08\n\x04\x62old\x10\x03\x12\t\n\x05\x62rave\x10\x04\x12\x08\n\x04\x63\x61lm\x10\x05\x12\x0b\n\x07\x63\x61reful\x10\x06\x12\n\n\x06\x64ocile\x10\x07\x12\n\n\x06gentle\x10\x08\x12\t\n\x05hardy\x10\t\x12\t\n\x05hasty\x10\n\x12\n\n\x06impish\x10\x0b\x12\t\n\x05jolly\x10\x0c\x12\x07\n\x03lax\x10\r\x12\n\n\x06lonely\x10\x0e\x12\x08\n\x04mild\x10\x0f\x12\n\n\x06modest\x10\x10\x12\t\n\x05naive\x10\x11\x12\x0b\n\x07naughty\x10\x12\x12\t\n\x05quiet\x10\x13\x12\n\n\x06quirky\x10\x14\x12\x08\n\x04rash\x10\x15\x12\x0b\n\x07relaxed\x10\x16\x12\t\n\x05sassy\x10\x17\x12\x0b\n\x07serious\x10\x18\x12\t\n\x05timid\x10\x19\"s\n\x0cPokemonStats\x12\r\n\x02HP\x18\x01 \x01(\x05:\x01\x30\x12\x0e\n\x03\x41tk\x18\x02 \x01(\x05:\x01\x30\x12\x0e\n\x03\x44\x65\x66\x18\x03 \x01(\x05:\x01\x30\x12\x10\n\x05SpAtk\x18\x04 \x01(\x05:\x01\x30\x12\x10\n\x05SpDef\x18\x05 \x01(\x05:\x01\x30\x12\x10\n\x05Speed\x18\x06 \x01(\x05:\x01\x30\"\x81\x05\n\x05Quest\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x0c\n\x04Name\x18\x02 \x01(\t\x12\x13\n\x0b\x44\x65scription\x18\x03 \x01(\t\x12U\n\x04Type\x18\x04 \x01(\x0e\x32<.PSXAPI.Response1375634093.PREFIX_AGDFASBV15016665.QuestType:\tNoneValue\x12\x0f\n\x04Step\x18\x05 \x01(\x01:\x01\x30\x12g\n\x0cProgressType\x18\x06 \x01(\x0e\x32\x46.PSXAPI.Response1375634093.PREFIX_AGDFASBV1813562425.QuestProgressType:\tNoneValue\x12\x15\n\nProgressID\x18\x07 \x01(\x05:\x01\x30\x12\x13\n\x08Progress\x18\x08 \x01(\x05:\x01\x30\x12\x13\n\x08Required\x18\t \x01(\x05:\x01\x30\x12\x19\n\x06Target\x18\n \x01(\x0b\x32\t.bcl.Guid\x12\"\n\x0fTargetCompleted\x18\x0b \x01(\x0b\x32\t.bcl.Guid\x12\x18\n\tCompleted\x18\x0c \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0c\x41utoComplete\x18\r \x01(\x08:\x05\x66\x61lse\x12\x36\n\x06Reward\x18\x0e \x01(\x0b\x32&.PSXAPI.Response1375634093.QuestReward\x12\x18\n\tCanCancel\x18\x0f \x01(\x08:\x05\x66\x61lse\x12\x17\n\x08\x43\x61nShare\x18\x10 \x01(\x08:\x05\x66\x61lse\x12\x12\n\nTargetArea\x18\x11 \x01(\t\x12\x1b\n\x13TargetCompletedArea\x18\x12 \x01(\t\x12\x11\n\tSourceNPC\x18\x13 \x01(\t\x12\x12\n\nSourceArea\x18\x14 \x01(\t\"\x8d\x01\n\x19PREFIX_AGDFASBV1813562425\"p\n\x11QuestProgressType\x12\r\n\tNoneValue\x10\x00\x12\n\n\x06Manual\x10\x01\x12\t\n\x05Level\x10\x02\x12\x08\n\x04Item\x10\x03\x12\t\n\x05\x42\x61\x64ge\x10\x04\x12\x0b\n\x07Pokemon\x10\x05\x12\t\n\x05Money\x10\x06\x12\x08\n\x04Gold\x10\x07\"\xab\x01\n\x0bQuestReward\x12\x10\n\x05Money\x18\x01 \x01(\r:\x01\x30\x12\x0f\n\x04Gold\x18\x02 \x01(\r:\x01\x30\x12\r\n\x05Items\x18\x03 \x03(\x05\x12\x12\n\x07Pokemon\x18\x04 \x01(\x05:\x01\x30\x12\x17\n\x0cPokemonLevel\x18\x05 \x01(\x05:\x01\x30\x12\x1b\n\x0cPokemonShiny\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x10\n\x05\x42\x61\x64ge\x18\x07 \x01(\x05:\x01\x30\x12\x0e\n\x03\x45xp\x18\x08 \x01(\x05:\x01\x30\"l\n\x17PREFIX_AGDFASBV15016665\"Q\n\tQuestType\x12\r\n\tNoneValue\x10\x00\x12\x08\n\x04Main\x10\x01\x12\x08\n\x04Side\x10\x02\x12\n\n\x06\x42ounty\x10\x03\x12\t\n\x05\x44\x61ily\x10\x04\x12\n\n\x06Hidden\x10\x05\"g\n\x18PREFIX_AGDFASBV979434225\"K\n\tStaffRank\x12\r\n\tNoneValue\x10\x00\x12\r\n\tDeveloper\x10\x01\x12\x11\n\rGameModerator\x10\x02\x12\r\n\tModerator\x10\x03\"\xa2\x01\n\x05Style\x12P\n\x06Gender\x18\x01 \x01(\x0e\x32:.PSXAPI.Response1375634093.PREFIX_AGDFASBV961203100.Gender:\x04Male\x12\x0f\n\x04Skin\x18\x02 \x01(\x05:\x01\x30\x12\x0f\n\x04\x45yes\x18\x03 \x01(\x05:\x01\x30\x12\x0f\n\x04Hair\x18\x04 \x01(\x05:\x01\x30\x12\x14\n\tHairColor\x18\x05 \x01(\x05:\x01\x30\"\xf8\x02\n\x04Time\x12$\n\rServerTimeUtc\x18\x01 \x01(\x0b\x32\r.bcl.DateTime\x12\x1f\n\x08GameTime\x18\x02 \x01(\x0b\x32\r.bcl.TimeSpan\x12[\n\x0bGameDayTime\x18\x03 \x01(\x0e\x32?.PSXAPI.Response1375634093.PREFIX_AGDFASBV321822151.GameDayTime:\x05Unset\x12Y\n\nGameSeason\x18\x04 \x01(\x0e\x32>.PSXAPI.Response1375634093.PREFIX_AGDFASBV669285494.GameSeason:\x05Unset\x12\x15\n\nTimeFactor\x18\x05 \x01(\x01:\x01\x30\x12Z\n\x07Weather\x18\x06 \x01(\x0e\x32\x41.PSXAPI.Response1375634093.PREFIX_AGDFASBV1318554870.WeatherState:\x06Normal\"\xe4\x01\n\tUserSkins\x12\x18\n\rEquipedClothe\x18\x01 \x01(\x05:\x01\x30\x12\x15\n\nEquipedHat\x18\x02 \x01(\x05:\x01\x30\x12\x17\n\x0c\x45quipedMount\x18\x03 \x01(\x05:\x01\x30\x12\x1b\n\x10\x45quipedSurfMount\x18\x04 \x01(\x05:\x01\x30\x12\x1a\n\x0f\x45quipedFlyMount\x18\x05 \x01(\x05:\x01\x30\x12\x0f\n\x07\x43lothes\x18\x06 \x03(\x05\x12\x0c\n\x04Hats\x18\x07 \x03(\x05\x12\x0e\n\x06Mounts\x18\x08 \x03(\x05\x12\x12\n\nSurfMounts\x18\t \x03(\x05\x12\x11\n\tFlyMounts\x18\n \x03(\x05\"K\n\x19PREFIX_AGDFASBV1318554870\".\n\x0cWeatherState\x12\n\n\x06Normal\x10\x00\x12\x08\n\x04Rain\x10\x01\x12\x08\n\x04Snow\x10\x02\"%\n\x05ZMove\x12\x0c\n\x04move\x18\x01 \x01(\t\x12\x0e\n\x06target\x18\x02 \x01(\t*\xf0Y\n\tPokemonID\x12\r\n\tmissingno\x10\x00\x12\x12\n\x05Unset\x10\xff\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12\r\n\tbulbasaur\x10\x01\x12\x0b\n\x07ivysaur\x10\x02\x12\x0c\n\x08venusaur\x10\x03\x12\x0e\n\ncharmander\x10\x04\x12\x0e\n\ncharmeleon\x10\x05\x12\r\n\tcharizard\x10\x06\x12\x0c\n\x08squirtle\x10\x07\x12\r\n\twartortle\x10\x08\x12\r\n\tblastoise\x10\t\x12\x0c\n\x08\x63\x61terpie\x10\n\x12\x0b\n\x07metapod\x10\x0b\x12\x0e\n\nbutterfree\x10\x0c\x12\n\n\x06weedle\x10\r\x12\n\n\x06kakuna\x10\x0e\x12\x0c\n\x08\x62\x65\x65\x64rill\x10\x0f\x12\n\n\x06pidgey\x10\x10\x12\r\n\tpidgeotto\x10\x11\x12\x0b\n\x07pidgeot\x10\x12\x12\x0b\n\x07rattata\x10\x13\x12\x0c\n\x08raticate\x10\x14\x12\x0b\n\x07spearow\x10\x15\x12\n\n\x06\x66\x65\x61row\x10\x16\x12\t\n\x05\x65kans\x10\x17\x12\t\n\x05\x61rbok\x10\x18\x12\x0b\n\x07pikachu\x10\x19\x12\n\n\x06raichu\x10\x1a\x12\r\n\tsandshrew\x10\x1b\x12\r\n\tsandslash\x10\x1c\x12\x0c\n\x08nidoranf\x10\x1d\x12\x0c\n\x08nidorina\x10\x1e\x12\r\n\tnidoqueen\x10\x1f\x12\x0c\n\x08nidoranm\x10 \x12\x0c\n\x08nidorino\x10!\x12\x0c\n\x08nidoking\x10\"\x12\x0c\n\x08\x63lefairy\x10#\x12\x0c\n\x08\x63lefable\x10$\x12\n\n\x06vulpix\x10%\x12\r\n\tninetales\x10&\x12\x0e\n\njigglypuff\x10\'\x12\x0e\n\nwigglytuff\x10(\x12\t\n\x05zubat\x10)\x12\n\n\x06golbat\x10*\x12\n\n\x06oddish\x10+\x12\t\n\x05gloom\x10,\x12\r\n\tvileplume\x10-\x12\t\n\x05paras\x10.\x12\x0c\n\x08parasect\x10/\x12\x0b\n\x07venonat\x10\x30\x12\x0c\n\x08venomoth\x10\x31\x12\x0b\n\x07\x64iglett\x10\x32\x12\x0b\n\x07\x64ugtrio\x10\x33\x12\n\n\x06meowth\x10\x34\x12\x0b\n\x07persian\x10\x35\x12\x0b\n\x07psyduck\x10\x36\x12\x0b\n\x07golduck\x10\x37\x12\n\n\x06mankey\x10\x38\x12\x0c\n\x08primeape\x10\x39\x12\r\n\tgrowlithe\x10:\x12\x0c\n\x08\x61rcanine\x10;\x12\x0b\n\x07poliwag\x10<\x12\r\n\tpoliwhirl\x10=\x12\r\n\tpoliwrath\x10>\x12\x08\n\x04\x61\x62ra\x10?\x12\x0b\n\x07kadabra\x10@\x12\x0c\n\x08\x61lakazam\x10\x41\x12\n\n\x06machop\x10\x42\x12\x0b\n\x07machoke\x10\x43\x12\x0b\n\x07machamp\x10\x44\x12\x0e\n\nbellsprout\x10\x45\x12\x0e\n\nweepinbell\x10\x46\x12\x0e\n\nvictreebel\x10G\x12\r\n\ttentacool\x10H\x12\x0e\n\ntentacruel\x10I\x12\x0b\n\x07geodude\x10J\x12\x0c\n\x08graveler\x10K\x12\t\n\x05golem\x10L\x12\n\n\x06ponyta\x10M\x12\x0c\n\x08rapidash\x10N\x12\x0c\n\x08slowpoke\x10O\x12\x0b\n\x07slowbro\x10P\x12\r\n\tmagnemite\x10Q\x12\x0c\n\x08magneton\x10R\x12\r\n\tfarfetchd\x10S\x12\t\n\x05\x64oduo\x10T\x12\n\n\x06\x64odrio\x10U\x12\x08\n\x04seel\x10V\x12\x0b\n\x07\x64\x65wgong\x10W\x12\n\n\x06grimer\x10X\x12\x07\n\x03muk\x10Y\x12\x0c\n\x08shellder\x10Z\x12\x0c\n\x08\x63loyster\x10[\x12\n\n\x06gastly\x10\\\x12\x0b\n\x07haunter\x10]\x12\n\n\x06gengar\x10^\x12\x08\n\x04onix\x10_\x12\x0b\n\x07\x64rowzee\x10`\x12\t\n\x05hypno\x10\x61\x12\n\n\x06krabby\x10\x62\x12\x0b\n\x07kingler\x10\x63\x12\x0b\n\x07voltorb\x10\x64\x12\r\n\telectrode\x10\x65\x12\r\n\texeggcute\x10\x66\x12\r\n\texeggutor\x10g\x12\n\n\x06\x63ubone\x10h\x12\x0b\n\x07marowak\x10i\x12\r\n\thitmonlee\x10j\x12\x0e\n\nhitmonchan\x10k\x12\r\n\tlickitung\x10l\x12\x0b\n\x07koffing\x10m\x12\x0b\n\x07weezing\x10n\x12\x0b\n\x07rhyhorn\x10o\x12\n\n\x06rhydon\x10p\x12\x0b\n\x07\x63hansey\x10q\x12\x0b\n\x07tangela\x10r\x12\x0e\n\nkangaskhan\x10s\x12\n\n\x06horsea\x10t\x12\n\n\x06seadra\x10u\x12\x0b\n\x07goldeen\x10v\x12\x0b\n\x07seaking\x10w\x12\n\n\x06staryu\x10x\x12\x0b\n\x07starmie\x10y\x12\n\n\x06mrmime\x10z\x12\x0b\n\x07scyther\x10{\x12\x08\n\x04jynx\x10|\x12\x0e\n\nelectabuzz\x10}\x12\n\n\x06magmar\x10~\x12\n\n\x06pinsir\x10\x7f\x12\x0b\n\x06tauros\x10\x80\x01\x12\r\n\x08magikarp\x10\x81\x01\x12\r\n\x08gyarados\x10\x82\x01\x12\x0b\n\x06lapras\x10\x83\x01\x12\n\n\x05\x64itto\x10\x84\x01\x12\n\n\x05\x65\x65vee\x10\x85\x01\x12\r\n\x08vaporeon\x10\x86\x01\x12\x0c\n\x07jolteon\x10\x87\x01\x12\x0c\n\x07\x66lareon\x10\x88\x01\x12\x0c\n\x07porygon\x10\x89\x01\x12\x0c\n\x07omanyte\x10\x8a\x01\x12\x0c\n\x07omastar\x10\x8b\x01\x12\x0b\n\x06kabuto\x10\x8c\x01\x12\r\n\x08kabutops\x10\x8d\x01\x12\x0f\n\naerodactyl\x10\x8e\x01\x12\x0c\n\x07snorlax\x10\x8f\x01\x12\r\n\x08\x61rticuno\x10\x90\x01\x12\x0b\n\x06zapdos\x10\x91\x01\x12\x0c\n\x07moltres\x10\x92\x01\x12\x0c\n\x07\x64ratini\x10\x93\x01\x12\x0e\n\tdragonair\x10\x94\x01\x12\x0e\n\tdragonite\x10\x95\x01\x12\x0b\n\x06mewtwo\x10\x96\x01\x12\x08\n\x03mew\x10\x97\x01\x12\x0e\n\tchikorita\x10\x98\x01\x12\x0c\n\x07\x62\x61yleef\x10\x99\x01\x12\r\n\x08meganium\x10\x9a\x01\x12\x0e\n\tcyndaquil\x10\x9b\x01\x12\x0c\n\x07quilava\x10\x9c\x01\x12\x0f\n\ntyphlosion\x10\x9d\x01\x12\r\n\x08totodile\x10\x9e\x01\x12\r\n\x08\x63roconaw\x10\x9f\x01\x12\x0f\n\nferaligatr\x10\xa0\x01\x12\x0c\n\x07sentret\x10\xa1\x01\x12\x0b\n\x06\x66urret\x10\xa2\x01\x12\r\n\x08hoothoot\x10\xa3\x01\x12\x0c\n\x07noctowl\x10\xa4\x01\x12\x0b\n\x06ledyba\x10\xa5\x01\x12\x0b\n\x06ledian\x10\xa6\x01\x12\r\n\x08spinarak\x10\xa7\x01\x12\x0c\n\x07\x61riados\x10\xa8\x01\x12\x0b\n\x06\x63robat\x10\xa9\x01\x12\r\n\x08\x63hinchou\x10\xaa\x01\x12\x0c\n\x07lanturn\x10\xab\x01\x12\n\n\x05pichu\x10\xac\x01\x12\x0b\n\x06\x63leffa\x10\xad\x01\x12\x0e\n\tigglybuff\x10\xae\x01\x12\x0b\n\x06togepi\x10\xaf\x01\x12\x0c\n\x07togetic\x10\xb0\x01\x12\t\n\x04natu\x10\xb1\x01\x12\t\n\x04xatu\x10\xb2\x01\x12\x0b\n\x06mareep\x10\xb3\x01\x12\x0c\n\x07\x66laaffy\x10\xb4\x01\x12\r\n\x08\x61mpharos\x10\xb5\x01\x12\x0e\n\tbellossom\x10\xb6\x01\x12\x0b\n\x06marill\x10\xb7\x01\x12\x0e\n\tazumarill\x10\xb8\x01\x12\x0e\n\tsudowoodo\x10\xb9\x01\x12\r\n\x08politoed\x10\xba\x01\x12\x0b\n\x06hoppip\x10\xbb\x01\x12\r\n\x08skiploom\x10\xbc\x01\x12\r\n\x08jumpluff\x10\xbd\x01\x12\n\n\x05\x61ipom\x10\xbe\x01\x12\x0c\n\x07sunkern\x10\xbf\x01\x12\r\n\x08sunflora\x10\xc0\x01\x12\n\n\x05yanma\x10\xc1\x01\x12\x0b\n\x06wooper\x10\xc2\x01\x12\r\n\x08quagsire\x10\xc3\x01\x12\x0b\n\x06\x65speon\x10\xc4\x01\x12\x0c\n\x07umbreon\x10\xc5\x01\x12\x0c\n\x07murkrow\x10\xc6\x01\x12\r\n\x08slowking\x10\xc7\x01\x12\x0f\n\nmisdreavus\x10\xc8\x01\x12\n\n\x05unown\x10\xc9\x01\x12\x0e\n\twobbuffet\x10\xca\x01\x12\x0e\n\tgirafarig\x10\xcb\x01\x12\x0b\n\x06pineco\x10\xcc\x01\x12\x0f\n\nforretress\x10\xcd\x01\x12\x0e\n\tdunsparce\x10\xce\x01\x12\x0b\n\x06gligar\x10\xcf\x01\x12\x0c\n\x07steelix\x10\xd0\x01\x12\r\n\x08snubbull\x10\xd1\x01\x12\r\n\x08granbull\x10\xd2\x01\x12\r\n\x08qwilfish\x10\xd3\x01\x12\x0b\n\x06scizor\x10\xd4\x01\x12\x0c\n\x07shuckle\x10\xd5\x01\x12\x0e\n\theracross\x10\xd6\x01\x12\x0c\n\x07sneasel\x10\xd7\x01\x12\x0e\n\tteddiursa\x10\xd8\x01\x12\r\n\x08ursaring\x10\xd9\x01\x12\x0b\n\x06slugma\x10\xda\x01\x12\r\n\x08magcargo\x10\xdb\x01\x12\x0b\n\x06swinub\x10\xdc\x01\x12\x0e\n\tpiloswine\x10\xdd\x01\x12\x0c\n\x07\x63orsola\x10\xde\x01\x12\r\n\x08remoraid\x10\xdf\x01\x12\x0e\n\toctillery\x10\xe0\x01\x12\r\n\x08\x64\x65libird\x10\xe1\x01\x12\x0c\n\x07mantine\x10\xe2\x01\x12\r\n\x08skarmory\x10\xe3\x01\x12\r\n\x08houndour\x10\xe4\x01\x12\r\n\x08houndoom\x10\xe5\x01\x12\x0c\n\x07kingdra\x10\xe6\x01\x12\x0b\n\x06phanpy\x10\xe7\x01\x12\x0c\n\x07\x64onphan\x10\xe8\x01\x12\r\n\x08porygon2\x10\xe9\x01\x12\r\n\x08stantler\x10\xea\x01\x12\r\n\x08smeargle\x10\xeb\x01\x12\x0c\n\x07tyrogue\x10\xec\x01\x12\x0e\n\thitmontop\x10\xed\x01\x12\r\n\x08smoochum\x10\xee\x01\x12\x0b\n\x06\x65lekid\x10\xef\x01\x12\n\n\x05magby\x10\xf0\x01\x12\x0c\n\x07miltank\x10\xf1\x01\x12\x0c\n\x07\x62lissey\x10\xf2\x01\x12\x0b\n\x06raikou\x10\xf3\x01\x12\n\n\x05\x65ntei\x10\xf4\x01\x12\x0c\n\x07suicune\x10\xf5\x01\x12\r\n\x08larvitar\x10\xf6\x01\x12\x0c\n\x07pupitar\x10\xf7\x01\x12\x0e\n\ttyranitar\x10\xf8\x01\x12\n\n\x05lugia\x10\xf9\x01\x12\t\n\x04hooh\x10\xfa\x01\x12\x0b\n\x06\x63\x65lebi\x10\xfb\x01\x12\x0c\n\x07treecko\x10\xfc\x01\x12\x0c\n\x07grovyle\x10\xfd\x01\x12\r\n\x08sceptile\x10\xfe\x01\x12\x0c\n\x07torchic\x10\xff\x01\x12\x0e\n\tcombusken\x10\x80\x02\x12\r\n\x08\x62laziken\x10\x81\x02\x12\x0b\n\x06mudkip\x10\x82\x02\x12\x0e\n\tmarshtomp\x10\x83\x02\x12\r\n\x08swampert\x10\x84\x02\x12\x0e\n\tpoochyena\x10\x85\x02\x12\x0e\n\tmightyena\x10\x86\x02\x12\x0e\n\tzigzagoon\x10\x87\x02\x12\x0c\n\x07linoone\x10\x88\x02\x12\x0c\n\x07wurmple\x10\x89\x02\x12\x0c\n\x07silcoon\x10\x8a\x02\x12\x0e\n\tbeautifly\x10\x8b\x02\x12\x0c\n\x07\x63\x61scoon\x10\x8c\x02\x12\x0b\n\x06\x64ustox\x10\x8d\x02\x12\n\n\x05lotad\x10\x8e\x02\x12\x0b\n\x06lombre\x10\x8f\x02\x12\r\n\x08ludicolo\x10\x90\x02\x12\x0b\n\x06seedot\x10\x91\x02\x12\x0c\n\x07nuzleaf\x10\x92\x02\x12\x0c\n\x07shiftry\x10\x93\x02\x12\x0c\n\x07taillow\x10\x94\x02\x12\x0c\n\x07swellow\x10\x95\x02\x12\x0c\n\x07wingull\x10\x96\x02\x12\r\n\x08pelipper\x10\x97\x02\x12\n\n\x05ralts\x10\x98\x02\x12\x0b\n\x06kirlia\x10\x99\x02\x12\x0e\n\tgardevoir\x10\x9a\x02\x12\x0c\n\x07surskit\x10\x9b\x02\x12\x0f\n\nmasquerain\x10\x9c\x02\x12\x0e\n\tshroomish\x10\x9d\x02\x12\x0c\n\x07\x62reloom\x10\x9e\x02\x12\x0c\n\x07slakoth\x10\x9f\x02\x12\r\n\x08vigoroth\x10\xa0\x02\x12\x0c\n\x07slaking\x10\xa1\x02\x12\x0c\n\x07nincada\x10\xa2\x02\x12\x0c\n\x07ninjask\x10\xa3\x02\x12\r\n\x08shedinja\x10\xa4\x02\x12\x0c\n\x07whismur\x10\xa5\x02\x12\x0c\n\x07loudred\x10\xa6\x02\x12\x0c\n\x07\x65xploud\x10\xa7\x02\x12\r\n\x08makuhita\x10\xa8\x02\x12\r\n\x08hariyama\x10\xa9\x02\x12\x0c\n\x07\x61zurill\x10\xaa\x02\x12\r\n\x08nosepass\x10\xab\x02\x12\x0b\n\x06skitty\x10\xac\x02\x12\r\n\x08\x64\x65lcatty\x10\xad\x02\x12\x0c\n\x07sableye\x10\xae\x02\x12\x0b\n\x06mawile\x10\xaf\x02\x12\t\n\x04\x61ron\x10\xb0\x02\x12\x0b\n\x06lairon\x10\xb1\x02\x12\x0b\n\x06\x61ggron\x10\xb2\x02\x12\r\n\x08meditite\x10\xb3\x02\x12\r\n\x08medicham\x10\xb4\x02\x12\x0e\n\telectrike\x10\xb5\x02\x12\x0e\n\tmanectric\x10\xb6\x02\x12\x0b\n\x06plusle\x10\xb7\x02\x12\n\n\x05minun\x10\xb8\x02\x12\x0c\n\x07volbeat\x10\xb9\x02\x12\r\n\x08illumise\x10\xba\x02\x12\x0c\n\x07roselia\x10\xbb\x02\x12\x0b\n\x06gulpin\x10\xbc\x02\x12\x0b\n\x06swalot\x10\xbd\x02\x12\r\n\x08\x63\x61rvanha\x10\xbe\x02\x12\r\n\x08sharpedo\x10\xbf\x02\x12\x0c\n\x07wailmer\x10\xc0\x02\x12\x0c\n\x07wailord\x10\xc1\x02\x12\n\n\x05numel\x10\xc2\x02\x12\r\n\x08\x63\x61merupt\x10\xc3\x02\x12\x0c\n\x07torkoal\x10\xc4\x02\x12\x0b\n\x06spoink\x10\xc5\x02\x12\x0c\n\x07grumpig\x10\xc6\x02\x12\x0b\n\x06spinda\x10\xc7\x02\x12\r\n\x08trapinch\x10\xc8\x02\x12\x0c\n\x07vibrava\x10\xc9\x02\x12\x0b\n\x06\x66lygon\x10\xca\x02\x12\x0b\n\x06\x63\x61\x63nea\x10\xcb\x02\x12\r\n\x08\x63\x61\x63turne\x10\xcc\x02\x12\x0b\n\x06swablu\x10\xcd\x02\x12\x0c\n\x07\x61ltaria\x10\xce\x02\x12\r\n\x08zangoose\x10\xcf\x02\x12\x0c\n\x07seviper\x10\xd0\x02\x12\r\n\x08lunatone\x10\xd1\x02\x12\x0c\n\x07solrock\x10\xd2\x02\x12\r\n\x08\x62\x61rboach\x10\xd3\x02\x12\r\n\x08whiscash\x10\xd4\x02\x12\r\n\x08\x63orphish\x10\xd5\x02\x12\x0e\n\tcrawdaunt\x10\xd6\x02\x12\x0b\n\x06\x62\x61ltoy\x10\xd7\x02\x12\x0c\n\x07\x63laydol\x10\xd8\x02\x12\x0b\n\x06lileep\x10\xd9\x02\x12\x0c\n\x07\x63radily\x10\xda\x02\x12\x0c\n\x07\x61norith\x10\xdb\x02\x12\x0c\n\x07\x61rmaldo\x10\xdc\x02\x12\x0b\n\x06\x66\x65\x65\x62\x61s\x10\xdd\x02\x12\x0c\n\x07milotic\x10\xde\x02\x12\r\n\x08\x63\x61stform\x10\xdf\x02\x12\x0c\n\x07kecleon\x10\xe0\x02\x12\x0c\n\x07shuppet\x10\xe1\x02\x12\x0c\n\x07\x62\x61nette\x10\xe2\x02\x12\x0c\n\x07\x64uskull\x10\xe3\x02\x12\r\n\x08\x64usclops\x10\xe4\x02\x12\x0c\n\x07tropius\x10\xe5\x02\x12\r\n\x08\x63himecho\x10\xe6\x02\x12\n\n\x05\x61\x62sol\x10\xe7\x02\x12\x0b\n\x06wynaut\x10\xe8\x02\x12\x0c\n\x07snorunt\x10\xe9\x02\x12\x0b\n\x06glalie\x10\xea\x02\x12\x0b\n\x06spheal\x10\xeb\x02\x12\x0b\n\x06sealeo\x10\xec\x02\x12\x0c\n\x07walrein\x10\xed\x02\x12\r\n\x08\x63lamperl\x10\xee\x02\x12\x0c\n\x07huntail\x10\xef\x02\x12\r\n\x08gorebyss\x10\xf0\x02\x12\x0e\n\trelicanth\x10\xf1\x02\x12\x0c\n\x07luvdisc\x10\xf2\x02\x12\n\n\x05\x62\x61gon\x10\xf3\x02\x12\x0c\n\x07shelgon\x10\xf4\x02\x12\x0e\n\tsalamence\x10\xf5\x02\x12\x0b\n\x06\x62\x65ldum\x10\xf6\x02\x12\x0b\n\x06metang\x10\xf7\x02\x12\x0e\n\tmetagross\x10\xf8\x02\x12\r\n\x08regirock\x10\xf9\x02\x12\x0b\n\x06regice\x10\xfa\x02\x12\x0e\n\tregisteel\x10\xfb\x02\x12\x0b\n\x06latias\x10\xfc\x02\x12\x0b\n\x06latios\x10\xfd\x02\x12\x0b\n\x06kyogre\x10\xfe\x02\x12\x0c\n\x07groudon\x10\xff\x02\x12\r\n\x08rayquaza\x10\x80\x03\x12\x0c\n\x07jirachi\x10\x81\x03\x12\x0b\n\x06\x64\x65oxys\x10\x82\x03\x12\x0c\n\x07turtwig\x10\x83\x03\x12\x0b\n\x06grotle\x10\x84\x03\x12\r\n\x08torterra\x10\x85\x03\x12\r\n\x08\x63himchar\x10\x86\x03\x12\r\n\x08monferno\x10\x87\x03\x12\x0e\n\tinfernape\x10\x88\x03\x12\x0b\n\x06piplup\x10\x89\x03\x12\r\n\x08prinplup\x10\x8a\x03\x12\r\n\x08\x65mpoleon\x10\x8b\x03\x12\x0b\n\x06starly\x10\x8c\x03\x12\r\n\x08staravia\x10\x8d\x03\x12\x0e\n\tstaraptor\x10\x8e\x03\x12\x0b\n\x06\x62idoof\x10\x8f\x03\x12\x0c\n\x07\x62ibarel\x10\x90\x03\x12\x0e\n\tkricketot\x10\x91\x03\x12\x0f\n\nkricketune\x10\x92\x03\x12\n\n\x05shinx\x10\x93\x03\x12\n\n\x05luxio\x10\x94\x03\x12\x0b\n\x06luxray\x10\x95\x03\x12\n\n\x05\x62udew\x10\x96\x03\x12\r\n\x08roserade\x10\x97\x03\x12\r\n\x08\x63ranidos\x10\x98\x03\x12\x0e\n\trampardos\x10\x99\x03\x12\r\n\x08shieldon\x10\x9a\x03\x12\x0e\n\tbastiodon\x10\x9b\x03\x12\n\n\x05\x62urmy\x10\x9c\x03\x12\r\n\x08wormadam\x10\x9d\x03\x12\x0b\n\x06mothim\x10\x9e\x03\x12\x0b\n\x06\x63ombee\x10\x9f\x03\x12\x0e\n\tvespiquen\x10\xa0\x03\x12\x0e\n\tpachirisu\x10\xa1\x03\x12\x0b\n\x06\x62uizel\x10\xa2\x03\x12\r\n\x08\x66loatzel\x10\xa3\x03\x12\x0c\n\x07\x63herubi\x10\xa4\x03\x12\x0c\n\x07\x63herrim\x10\xa5\x03\x12\x0c\n\x07shellos\x10\xa6\x03\x12\x0e\n\tgastrodon\x10\xa7\x03\x12\x0c\n\x07\x61mbipom\x10\xa8\x03\x12\r\n\x08\x64rifloon\x10\xa9\x03\x12\r\n\x08\x64rifblim\x10\xaa\x03\x12\x0c\n\x07\x62uneary\x10\xab\x03\x12\x0c\n\x07lopunny\x10\xac\x03\x12\x0e\n\tmismagius\x10\xad\x03\x12\x0e\n\thonchkrow\x10\xae\x03\x12\x0c\n\x07glameow\x10\xaf\x03\x12\x0c\n\x07purugly\x10\xb0\x03\x12\x0e\n\tchingling\x10\xb1\x03\x12\x0b\n\x06stunky\x10\xb2\x03\x12\r\n\x08skuntank\x10\xb3\x03\x12\x0c\n\x07\x62ronzor\x10\xb4\x03\x12\r\n\x08\x62ronzong\x10\xb5\x03\x12\x0b\n\x06\x62onsly\x10\xb6\x03\x12\x0b\n\x06mimejr\x10\xb7\x03\x12\x0c\n\x07happiny\x10\xb8\x03\x12\x0b\n\x06\x63hatot\x10\xb9\x03\x12\x0e\n\tspiritomb\x10\xba\x03\x12\n\n\x05gible\x10\xbb\x03\x12\x0b\n\x06gabite\x10\xbc\x03\x12\r\n\x08garchomp\x10\xbd\x03\x12\r\n\x08munchlax\x10\xbe\x03\x12\n\n\x05riolu\x10\xbf\x03\x12\x0c\n\x07lucario\x10\xc0\x03\x12\x0f\n\nhippopotas\x10\xc1\x03\x12\x0e\n\thippowdon\x10\xc2\x03\x12\x0c\n\x07skorupi\x10\xc3\x03\x12\x0c\n\x07\x64rapion\x10\xc4\x03\x12\r\n\x08\x63roagunk\x10\xc5\x03\x12\x0e\n\ttoxicroak\x10\xc6\x03\x12\x0e\n\tcarnivine\x10\xc7\x03\x12\x0c\n\x07\x66inneon\x10\xc8\x03\x12\r\n\x08lumineon\x10\xc9\x03\x12\x0c\n\x07mantyke\x10\xca\x03\x12\x0b\n\x06snover\x10\xcb\x03\x12\x0e\n\tabomasnow\x10\xcc\x03\x12\x0c\n\x07weavile\x10\xcd\x03\x12\x0e\n\tmagnezone\x10\xce\x03\x12\x0f\n\nlickilicky\x10\xcf\x03\x12\x0e\n\trhyperior\x10\xd0\x03\x12\x0e\n\ttangrowth\x10\xd1\x03\x12\x0f\n\nelectivire\x10\xd2\x03\x12\x0e\n\tmagmortar\x10\xd3\x03\x12\r\n\x08togekiss\x10\xd4\x03\x12\x0c\n\x07yanmega\x10\xd5\x03\x12\x0c\n\x07leafeon\x10\xd6\x03\x12\x0c\n\x07glaceon\x10\xd7\x03\x12\x0c\n\x07gliscor\x10\xd8\x03\x12\x0e\n\tmamoswine\x10\xd9\x03\x12\r\n\x08porygonz\x10\xda\x03\x12\x0c\n\x07gallade\x10\xdb\x03\x12\x0e\n\tprobopass\x10\xdc\x03\x12\r\n\x08\x64usknoir\x10\xdd\x03\x12\r\n\x08\x66roslass\x10\xde\x03\x12\n\n\x05rotom\x10\xdf\x03\x12\t\n\x04uxie\x10\xe0\x03\x12\x0c\n\x07mesprit\x10\xe1\x03\x12\n\n\x05\x61zelf\x10\xe2\x03\x12\x0b\n\x06\x64ialga\x10\xe3\x03\x12\x0b\n\x06palkia\x10\xe4\x03\x12\x0c\n\x07heatran\x10\xe5\x03\x12\x0e\n\tregigigas\x10\xe6\x03\x12\r\n\x08giratina\x10\xe7\x03\x12\x0e\n\tcresselia\x10\xe8\x03\x12\x0b\n\x06phione\x10\xe9\x03\x12\x0c\n\x07manaphy\x10\xea\x03\x12\x0c\n\x07\x64\x61rkrai\x10\xeb\x03\x12\x0c\n\x07shaymin\x10\xec\x03\x12\x0b\n\x06\x61rceus\x10\xed\x03\x12\x0c\n\x07victini\x10\xee\x03\x12\n\n\x05snivy\x10\xef\x03\x12\x0c\n\x07servine\x10\xf0\x03\x12\x0e\n\tserperior\x10\xf1\x03\x12\n\n\x05tepig\x10\xf2\x03\x12\x0c\n\x07pignite\x10\xf3\x03\x12\x0b\n\x06\x65mboar\x10\xf4\x03\x12\r\n\x08oshawott\x10\xf5\x03\x12\x0b\n\x06\x64\x65wott\x10\xf6\x03\x12\r\n\x08samurott\x10\xf7\x03\x12\x0b\n\x06patrat\x10\xf8\x03\x12\x0c\n\x07watchog\x10\xf9\x03\x12\r\n\x08lillipup\x10\xfa\x03\x12\x0c\n\x07herdier\x10\xfb\x03\x12\x0e\n\tstoutland\x10\xfc\x03\x12\r\n\x08purrloin\x10\xfd\x03\x12\x0c\n\x07liepard\x10\xfe\x03\x12\x0c\n\x07pansage\x10\xff\x03\x12\r\n\x08simisage\x10\x80\x04\x12\x0c\n\x07pansear\x10\x81\x04\x12\r\n\x08simisear\x10\x82\x04\x12\x0c\n\x07panpour\x10\x83\x04\x12\r\n\x08simipour\x10\x84\x04\x12\n\n\x05munna\x10\x85\x04\x12\r\n\x08musharna\x10\x86\x04\x12\x0b\n\x06pidove\x10\x87\x04\x12\x0e\n\ttranquill\x10\x88\x04\x12\r\n\x08unfezant\x10\x89\x04\x12\x0c\n\x07\x62litzle\x10\x8a\x04\x12\x0e\n\tzebstrika\x10\x8b\x04\x12\x0f\n\nroggenrola\x10\x8c\x04\x12\x0c\n\x07\x62oldore\x10\x8d\x04\x12\r\n\x08gigalith\x10\x8e\x04\x12\x0b\n\x06woobat\x10\x8f\x04\x12\x0c\n\x07swoobat\x10\x90\x04\x12\x0c\n\x07\x64rilbur\x10\x91\x04\x12\x0e\n\texcadrill\x10\x92\x04\x12\x0b\n\x06\x61udino\x10\x93\x04\x12\x0c\n\x07timburr\x10\x94\x04\x12\x0c\n\x07gurdurr\x10\x95\x04\x12\x0f\n\nconkeldurr\x10\x96\x04\x12\x0c\n\x07tympole\x10\x97\x04\x12\x0e\n\tpalpitoad\x10\x98\x04\x12\x0f\n\nseismitoad\x10\x99\x04\x12\n\n\x05throh\x10\x9a\x04\x12\t\n\x04sawk\x10\x9b\x04\x12\r\n\x08sewaddle\x10\x9c\x04\x12\r\n\x08swadloon\x10\x9d\x04\x12\r\n\x08leavanny\x10\x9e\x04\x12\r\n\x08venipede\x10\x9f\x04\x12\x0f\n\nwhirlipede\x10\xa0\x04\x12\x0e\n\tscolipede\x10\xa1\x04\x12\r\n\x08\x63ottonee\x10\xa2\x04\x12\x0f\n\nwhimsicott\x10\xa3\x04\x12\x0c\n\x07petilil\x10\xa4\x04\x12\x0e\n\tlilligant\x10\xa5\x04\x12\r\n\x08\x62\x61sculin\x10\xa6\x04\x12\x0c\n\x07sandile\x10\xa7\x04\x12\r\n\x08krokorok\x10\xa8\x04\x12\x0f\n\nkrookodile\x10\xa9\x04\x12\r\n\x08\x64\x61rumaka\x10\xaa\x04\x12\x0f\n\ndarmanitan\x10\xab\x04\x12\r\n\x08maractus\x10\xac\x04\x12\x0c\n\x07\x64webble\x10\xad\x04\x12\x0c\n\x07\x63rustle\x10\xae\x04\x12\x0c\n\x07scraggy\x10\xaf\x04\x12\x0c\n\x07scrafty\x10\xb0\x04\x12\r\n\x08sigilyph\x10\xb1\x04\x12\x0b\n\x06yamask\x10\xb2\x04\x12\x0f\n\ncofagrigus\x10\xb3\x04\x12\r\n\x08tirtouga\x10\xb4\x04\x12\x0f\n\ncarracosta\x10\xb5\x04\x12\x0b\n\x06\x61rchen\x10\xb6\x04\x12\r\n\x08\x61rcheops\x10\xb7\x04\x12\r\n\x08trubbish\x10\xb8\x04\x12\r\n\x08garbodor\x10\xb9\x04\x12\n\n\x05zorua\x10\xba\x04\x12\x0c\n\x07zoroark\x10\xbb\x04\x12\r\n\x08minccino\x10\xbc\x04\x12\r\n\x08\x63inccino\x10\xbd\x04\x12\x0c\n\x07gothita\x10\xbe\x04\x12\x0e\n\tgothorita\x10\xbf\x04\x12\x0f\n\ngothitelle\x10\xc0\x04\x12\x0c\n\x07solosis\x10\xc1\x04\x12\x0c\n\x07\x64uosion\x10\xc2\x04\x12\x0e\n\treuniclus\x10\xc3\x04\x12\r\n\x08\x64ucklett\x10\xc4\x04\x12\x0b\n\x06swanna\x10\xc5\x04\x12\x0e\n\tvanillite\x10\xc6\x04\x12\x0e\n\tvanillish\x10\xc7\x04\x12\x0e\n\tvanilluxe\x10\xc8\x04\x12\r\n\x08\x64\x65\x65rling\x10\xc9\x04\x12\r\n\x08sawsbuck\x10\xca\x04\x12\x0b\n\x06\x65molga\x10\xcb\x04\x12\x0f\n\nkarrablast\x10\xcc\x04\x12\x0f\n\nescavalier\x10\xcd\x04\x12\x0c\n\x07\x66oongus\x10\xce\x04\x12\x0e\n\tamoonguss\x10\xcf\x04\x12\r\n\x08\x66rillish\x10\xd0\x04\x12\x0e\n\tjellicent\x10\xd1\x04\x12\x0e\n\talomomola\x10\xd2\x04\x12\x0b\n\x06joltik\x10\xd3\x04\x12\x0f\n\ngalvantula\x10\xd4\x04\x12\x0e\n\tferroseed\x10\xd5\x04\x12\x0f\n\nferrothorn\x10\xd6\x04\x12\n\n\x05klink\x10\xd7\x04\x12\n\n\x05klang\x10\xd8\x04\x12\x0e\n\tklinklang\x10\xd9\x04\x12\x0b\n\x06tynamo\x10\xda\x04\x12\x0e\n\teelektrik\x10\xdb\x04\x12\x0f\n\neelektross\x10\xdc\x04\x12\x0b\n\x06\x65lgyem\x10\xdd\x04\x12\r\n\x08\x62\x65heeyem\x10\xde\x04\x12\x0c\n\x07litwick\x10\xdf\x04\x12\x0c\n\x07lampent\x10\xe0\x04\x12\x0f\n\nchandelure\x10\xe1\x04\x12\t\n\x04\x61xew\x10\xe2\x04\x12\x0c\n\x07\x66raxure\x10\xe3\x04\x12\x0c\n\x07haxorus\x10\xe4\x04\x12\x0c\n\x07\x63ubchoo\x10\xe5\x04\x12\x0c\n\x07\x62\x65\x61rtic\x10\xe6\x04\x12\x0e\n\tcryogonal\x10\xe7\x04\x12\x0c\n\x07shelmet\x10\xe8\x04\x12\r\n\x08\x61\x63\x63\x65lgor\x10\xe9\x04\x12\r\n\x08stunfisk\x10\xea\x04\x12\x0c\n\x07mienfoo\x10\xeb\x04\x12\r\n\x08mienshao\x10\xec\x04\x12\x0e\n\tdruddigon\x10\xed\x04\x12\x0b\n\x06golett\x10\xee\x04\x12\x0b\n\x06golurk\x10\xef\x04\x12\r\n\x08pawniard\x10\xf0\x04\x12\x0c\n\x07\x62isharp\x10\xf1\x04\x12\x0f\n\nbouffalant\x10\xf2\x04\x12\x0c\n\x07rufflet\x10\xf3\x04\x12\r\n\x08\x62raviary\x10\xf4\x04\x12\x0c\n\x07vullaby\x10\xf5\x04\x12\x0e\n\tmandibuzz\x10\xf6\x04\x12\x0c\n\x07heatmor\x10\xf7\x04\x12\x0b\n\x06\x64urant\x10\xf8\x04\x12\n\n\x05\x64\x65ino\x10\xf9\x04\x12\r\n\x08zweilous\x10\xfa\x04\x12\x0e\n\thydreigon\x10\xfb\x04\x12\r\n\x08larvesta\x10\xfc\x04\x12\x0e\n\tvolcarona\x10\xfd\x04\x12\r\n\x08\x63obalion\x10\xfe\x04\x12\x0e\n\tterrakion\x10\xff\x04\x12\r\n\x08virizion\x10\x80\x05\x12\r\n\x08tornadus\x10\x81\x05\x12\x0e\n\tthundurus\x10\x82\x05\x12\r\n\x08reshiram\x10\x83\x05\x12\x0b\n\x06zekrom\x10\x84\x05\x12\r\n\x08landorus\x10\x85\x05\x12\x0b\n\x06kyurem\x10\x86\x05\x12\x0b\n\x06keldeo\x10\x87\x05\x12\r\n\x08meloetta\x10\x88\x05\x12\r\n\x08genesect\x10\x89\x05\x12\x0c\n\x07\x63hespin\x10\x8a\x05\x12\x0e\n\tquilladin\x10\x8b\x05\x12\x0f\n\nchesnaught\x10\x8c\x05\x12\r\n\x08\x66\x65nnekin\x10\x8d\x05\x12\x0c\n\x07\x62raixen\x10\x8e\x05\x12\x0c\n\x07\x64\x65lphox\x10\x8f\x05\x12\x0c\n\x07\x66roakie\x10\x90\x05\x12\x0e\n\tfrogadier\x10\x91\x05\x12\r\n\x08greninja\x10\x92\x05\x12\r\n\x08\x62unnelby\x10\x93\x05\x12\x0e\n\tdiggersby\x10\x94\x05\x12\x0f\n\nfletchling\x10\x95\x05\x12\x10\n\x0b\x66letchinder\x10\x96\x05\x12\x0f\n\ntalonflame\x10\x97\x05\x12\x0f\n\nscatterbug\x10\x98\x05\x12\x0b\n\x06spewpa\x10\x99\x05\x12\r\n\x08vivillon\x10\x9a\x05\x12\x0b\n\x06litleo\x10\x9b\x05\x12\x0b\n\x06pyroar\x10\x9c\x05\x12\n\n\x05\x66labb\x10\x9d\x05\x12\x0c\n\x07\x66loette\x10\x9e\x05\x12\x0c\n\x07\x66lorges\x10\x9f\x05\x12\x0b\n\x06skiddo\x10\xa0\x05\x12\x0b\n\x06gogoat\x10\xa1\x05\x12\x0c\n\x07pancham\x10\xa2\x05\x12\x0c\n\x07pangoro\x10\xa3\x05\x12\x0c\n\x07\x66urfrou\x10\xa4\x05\x12\x0b\n\x06\x65spurr\x10\xa5\x05\x12\r\n\x08meowstic\x10\xa6\x05\x12\x0c\n\x07honedge\x10\xa7\x05\x12\r\n\x08\x64oublade\x10\xa8\x05\x12\x0e\n\taegislash\x10\xa9\x05\x12\r\n\x08spritzee\x10\xaa\x05\x12\x0f\n\naromatisse\x10\xab\x05\x12\x0c\n\x07swirlix\x10\xac\x05\x12\r\n\x08slurpuff\x10\xad\x05\x12\n\n\x05inkay\x10\xae\x05\x12\x0c\n\x07malamar\x10\xaf\x05\x12\x0c\n\x07\x62inacle\x10\xb0\x05\x12\x0f\n\nbarbaracle\x10\xb1\x05\x12\x0b\n\x06skrelp\x10\xb2\x05\x12\r\n\x08\x64ragalge\x10\xb3\x05\x12\x0e\n\tclauncher\x10\xb4\x05\x12\x0e\n\tclawitzer\x10\xb5\x05\x12\x0f\n\nhelioptile\x10\xb6\x05\x12\x0e\n\theliolisk\x10\xb7\x05\x12\x0b\n\x06tyrunt\x10\xb8\x05\x12\x0e\n\ttyrantrum\x10\xb9\x05\x12\x0b\n\x06\x61maura\x10\xba\x05\x12\x0c\n\x07\x61urorus\x10\xbb\x05\x12\x0c\n\x07sylveon\x10\xbc\x05\x12\r\n\x08hawlucha\x10\xbd\x05\x12\x0c\n\x07\x64\x65\x64\x65nne\x10\xbe\x05\x12\x0c\n\x07\x63\x61rbink\x10\xbf\x05\x12\n\n\x05goomy\x10\xc0\x05\x12\x0c\n\x07sliggoo\x10\xc1\x05\x12\x0b\n\x06goodra\x10\xc2\x05\x12\x0b\n\x06klefki\x10\xc3\x05\x12\r\n\x08phantump\x10\xc4\x05\x12\x0e\n\ttrevenant\x10\xc5\x05\x12\x0e\n\tpumpkaboo\x10\xc6\x05\x12\x0e\n\tgourgeist\x10\xc7\x05\x12\r\n\x08\x62\x65rgmite\x10\xc8\x05\x12\x0c\n\x07\x61valugg\x10\xc9\x05\x12\x0b\n\x06noibat\x10\xca\x05\x12\x0c\n\x07noivern\x10\xcb\x05\x12\x0c\n\x07xerneas\x10\xcc\x05\x12\x0c\n\x07yveltal\x10\xcd\x05\x12\x0c\n\x07zygarde\x10\xce\x05\x12\x0c\n\x07\x64iancie\x10\xcf\x05\x12\n\n\x05hoopa\x10\xd0\x05\x12\x0e\n\tvolcanion\x10\xd1\x05\x12\x0b\n\x06rowlet\x10\xd2\x05\x12\x0c\n\x07\x64\x61rtrix\x10\xd3\x05\x12\x0e\n\tdecidueye\x10\xd4\x05\x12\x0b\n\x06litten\x10\xd5\x05\x12\r\n\x08torracat\x10\xd6\x05\x12\x0f\n\nincineroar\x10\xd7\x05\x12\x0c\n\x07popplio\x10\xd8\x05\x12\x0c\n\x07\x62rionne\x10\xd9\x05\x12\x0e\n\tprimarina\x10\xda\x05\x12\x0c\n\x07pikipek\x10\xdb\x05\x12\r\n\x08trumbeak\x10\xdc\x05\x12\x0e\n\ttoucannon\x10\xdd\x05\x12\x0c\n\x07yungoos\x10\xde\x05\x12\r\n\x08gumshoos\x10\xdf\x05\x12\x0c\n\x07grubbin\x10\xe0\x05\x12\x0e\n\tcharjabug\x10\xe1\x05\x12\r\n\x08vikavolt\x10\xe2\x05\x12\x0f\n\ncrabrawler\x10\xe3\x05\x12\x11\n\x0c\x63rabominable\x10\xe4\x05\x12\r\n\x08oricorio\x10\xe5\x05\x12\r\n\x08\x63utiefly\x10\xe6\x05\x12\r\n\x08ribombee\x10\xe7\x05\x12\r\n\x08rockruff\x10\xe8\x05\x12\r\n\x08lycanroc\x10\xe9\x05\x12\x0f\n\nwishiwashi\x10\xea\x05\x12\r\n\x08mareanie\x10\xeb\x05\x12\x0c\n\x07toxapex\x10\xec\x05\x12\x0c\n\x07mudbray\x10\xed\x05\x12\r\n\x08mudsdale\x10\xee\x05\x12\r\n\x08\x64\x65wpider\x10\xef\x05\x12\x0e\n\taraquanid\x10\xf0\x05\x12\r\n\x08\x66omantis\x10\xf1\x05\x12\r\n\x08lurantis\x10\xf2\x05\x12\r\n\x08morelull\x10\xf3\x05\x12\x0e\n\tshiinotic\x10\xf4\x05\x12\r\n\x08salandit\x10\xf5\x05\x12\r\n\x08salazzle\x10\xf6\x05\x12\x0c\n\x07stufful\x10\xf7\x05\x12\x0b\n\x06\x62\x65wear\x10\xf8\x05\x12\x0e\n\tbounsweet\x10\xf9\x05\x12\x0c\n\x07steenee\x10\xfa\x05\x12\r\n\x08tsareena\x10\xfb\x05\x12\x0b\n\x06\x63omfey\x10\xfc\x05\x12\r\n\x08oranguru\x10\xfd\x05\x12\x0e\n\tpassimian\x10\xfe\x05\x12\x0b\n\x06wimpod\x10\xff\x05\x12\x0e\n\tgolisopod\x10\x80\x06\x12\x0e\n\tsandygast\x10\x81\x06\x12\x0e\n\tpalossand\x10\x82\x06\x12\x0e\n\tpyukumuku\x10\x83\x06\x12\r\n\x08typenull\x10\x84\x06\x12\r\n\x08silvally\x10\x85\x06\x12\x0b\n\x06minior\x10\x86\x06\x12\x0b\n\x06komala\x10\x87\x06\x12\x0f\n\nturtonator\x10\x88\x06\x12\x0f\n\ntogedemaru\x10\x89\x06\x12\x0c\n\x07mimikyu\x10\x8a\x06\x12\x0c\n\x07\x62ruxish\x10\x8b\x06\x12\x0b\n\x06\x64rampa\x10\x8c\x06\x12\r\n\x08\x64helmise\x10\x8d\x06\x12\x0c\n\x07jangmoo\x10\x8e\x06\x12\x0c\n\x07hakamoo\x10\x8f\x06\x12\x0b\n\x06kommoo\x10\x90\x06\x12\r\n\x08tapukoko\x10\x91\x06\x12\r\n\x08tapulele\x10\x92\x06\x12\r\n\x08tapubulu\x10\x93\x06\x12\r\n\x08tapufini\x10\x94\x06\x12\x0b\n\x06\x63osmog\x10\x95\x06\x12\x0c\n\x07\x63osmoem\x10\x96\x06\x12\r\n\x08solgaleo\x10\x97\x06\x12\x0b\n\x06lunala\x10\x98\x06\x12\r\n\x08nihilego\x10\x99\x06\x12\r\n\x08\x62uzzwole\x10\x9a\x06\x12\x0e\n\tpheromosa\x10\x9b\x06\x12\x0e\n\txurkitree\x10\x9c\x06\x12\x0f\n\ncelesteela\x10\x9d\x06\x12\x0c\n\x07kartana\x10\x9e\x06\x12\r\n\x08guzzlord\x10\x9f\x06\x12\r\n\x08necrozma\x10\xa0\x06\x12\r\n\x08magearna\x10\xa1\x06\x12\x0e\n\tmarshadow\x10\xa2\x06')
   ,
-  dependencies=[bcl__pb2.DESCRIPTOR,])
+  dependencies=[protobuf__net_dot_bcl__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_ACTORAVATARTYPE = _descriptor.EnumDescriptor(
-  name='ActorAvatarType',
-  full_name='PSXAPI.Response155921581865.ActorAvatarType',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='__None17', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='User0', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='NPC0', index=2, number=2,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=12649,
-  serialized_end=12701,
-)
-_sym_db.RegisterEnumDescriptor(_ACTORAVATARTYPE)
-
-ActorAvatarType = enum_type_wrapper.EnumTypeWrapper(_ACTORAVATARTYPE)
-_ACTORTEAM = _descriptor.EnumDescriptor(
-  name='ActorTeam',
-  full_name='PSXAPI.Response155921581865.ActorTeam',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='__None18', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Team1', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Team2', index=2, number=2,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=12703,
-  serialized_end=12750,
-)
-_sym_db.RegisterEnumDescriptor(_ACTORTEAM)
-
-ActorTeam = enum_type_wrapper.EnumTypeWrapper(_ACTORTEAM)
-_ACTORTIMER = _descriptor.EnumDescriptor(
-  name='ActorTimer',
-  full_name='PSXAPI.Response155921581865.ActorTimer',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='Disabled', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='NotRequired', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Enabled', index=2, number=2,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=12752,
-  serialized_end=12808,
-)
-_sym_db.RegisterEnumDescriptor(_ACTORTIMER)
-
-ActorTimer = enum_type_wrapper.EnumTypeWrapper(_ACTORTIMER)
-_ACTORTYPE = _descriptor.EnumDescriptor(
-  name='ActorType',
-  full_name='PSXAPI.Response155921581865.ActorType',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='__None19', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Leader', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='User1', index=2, number=2,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='NPC1', index=3, number=3,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Inactive', index=4, number=4,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Offline', index=5, number=5,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=12810,
-  serialized_end=12895,
-)
-_sym_db.RegisterEnumDescriptor(_ACTORTYPE)
-
-ActorType = enum_type_wrapper.EnumTypeWrapper(_ACTORTYPE)
-_ABILITYSLOTTYPE = _descriptor.EnumDescriptor(
-  name='AbilitySlotType',
-  full_name='PSXAPI.Response155921581865.AbilitySlotType',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='__None20', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Slot1', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Slot2', index=2, number=2,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Hidden0', index=3, number=3,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=12897,
-  serialized_end=12963,
-)
-_sym_db.RegisterEnumDescriptor(_ABILITYSLOTTYPE)
-
-AbilitySlotType = enum_type_wrapper.EnumTypeWrapper(_ABILITYSLOTTYPE)
-_EFFECTUPDATETYPE = _descriptor.EnumDescriptor(
-  name='EffectUpdateType',
-  full_name='PSXAPI.Response155921581865.EffectUpdateType',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='__None0', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='All0', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='AddOrUpdate', index=2, number=2,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Remove0', index=3, number=3,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=12965,
-  serialized_end=13036,
-)
-_sym_db.RegisterEnumDescriptor(_EFFECTUPDATETYPE)
-
-EffectUpdateType = enum_type_wrapper.EnumTypeWrapper(_EFFECTUPDATETYPE)
-_EGGSTATE = _descriptor.EnumDescriptor(
-  name='EggState',
-  full_name='PSXAPI.Response155921581865.EggState',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='__None1', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Sounds', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Moves', index=2, number=2,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='MoreTime', index=3, number=3,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='LongTime', index=4, number=4,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=13038,
-  serialized_end=13112,
-)
-_sym_db.RegisterEnumDescriptor(_EGGSTATE)
-
-EggState = enum_type_wrapper.EnumTypeWrapper(_EGGSTATE)
-_FRIENDSACTION = _descriptor.EnumDescriptor(
-  name='FriendsAction',
-  full_name='PSXAPI.Response155921581865.FriendsAction',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='All1', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Add', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Remove1', index=2, number=2,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Update0', index=3, number=3,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=13114,
-  serialized_end=13174,
-)
-_sym_db.RegisterEnumDescriptor(_FRIENDSACTION)
-
-FriendsAction = enum_type_wrapper.EnumTypeWrapper(_FRIENDSACTION)
-_GAMEDAYTIME = _descriptor.EnumDescriptor(
-  name='GameDayTime',
-  full_name='PSXAPI.Response155921581865.GameDayTime',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='Unset1', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Morning', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Day', index=2, number=2,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Evening', index=3, number=3,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Night', index=4, number=4,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=13176,
-  serialized_end=13247,
-)
-_sym_db.RegisterEnumDescriptor(_GAMEDAYTIME)
-
-GameDayTime = enum_type_wrapper.EnumTypeWrapper(_GAMEDAYTIME)
-_GAMESEASON = _descriptor.EnumDescriptor(
-  name='GameSeason',
-  full_name='PSXAPI.Response155921581865.GameSeason',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='Unset2', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Spring', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Summer', index=2, number=2,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Autumn', index=3, number=3,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Winter', index=4, number=4,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=13249,
-  serialized_end=13321,
-)
-_sym_db.RegisterEnumDescriptor(_GAMESEASON)
-
-GameSeason = enum_type_wrapper.EnumTypeWrapper(_GAMESEASON)
-_GENDER = _descriptor.EnumDescriptor(
-  name='Gender',
-  full_name='PSXAPI.Response155921581865.Gender',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='Male1', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Female1', index=1, number=1,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=13323,
-  serialized_end=13355,
-)
-_sym_db.RegisterEnumDescriptor(_GENDER)
-
-Gender = enum_type_wrapper.EnumTypeWrapper(_GENDER)
-_GUILDRANK = _descriptor.EnumDescriptor(
-  name='GuildRank',
-  full_name='PSXAPI.Response155921581865.GuildRank',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='Unset3', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Creator', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Admin', index=2, number=2,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Moderator1', index=3, number=3,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='User', index=4, number=4,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=13357,
-  serialized_end=13430,
-)
-_sym_db.RegisterEnumDescriptor(_GUILDRANK)
-
-GuildRank = enum_type_wrapper.EnumTypeWrapper(_GUILDRANK)
-_IGNOREACTION = _descriptor.EnumDescriptor(
-  name='IgnoreAction',
-  full_name='PSXAPI.Response155921581865.IgnoreAction',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='All', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Add1', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Remove2', index=2, number=2,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=13432,
-  serialized_end=13478,
-)
-_sym_db.RegisterEnumDescriptor(_IGNOREACTION)
-
-IgnoreAction = enum_type_wrapper.EnumTypeWrapper(_IGNOREACTION)
-_ITEMCATEGORY = _descriptor.EnumDescriptor(
-  name='ItemCategory',
-  full_name='PSXAPI.Response155921581865.ItemCategory',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='Unknown0', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='General', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Pokeball', index=2, number=2,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Medicine0', index=3, number=3,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Machine0', index=4, number=4,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Berry0', index=5, number=5,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Battle0', index=6, number=6,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Hold', index=7, number=7,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=13480,
-  serialized_end=13599,
-)
-_sym_db.RegisterEnumDescriptor(_ITEMCATEGORY)
-
-ItemCategory = enum_type_wrapper.EnumTypeWrapper(_ITEMCATEGORY)
-_ITEMPOCKET = _descriptor.EnumDescriptor(
-  name='ItemPocket',
-  full_name='PSXAPI.Response155921581865.ItemPocket',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='Unknown1', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Items', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Medicine1', index=2, number=2,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Berry1', index=3, number=3,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Key', index=4, number=4,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Machine1', index=5, number=5,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Z_Crystal', index=6, number=6,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=13601,
-  serialized_end=13703,
-)
-_sym_db.RegisterEnumDescriptor(_ITEMPOCKET)
-
-ItemPocket = enum_type_wrapper.EnumTypeWrapper(_ITEMPOCKET)
-_ITEMTARGET = _descriptor.EnumDescriptor(
-  name='ItemTarget',
-  full_name='PSXAPI.Response155921581865.ItemTarget',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='__None2', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Pokemon5', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Move0', index=2, number=2,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=13705,
-  serialized_end=13755,
-)
-_sym_db.RegisterEnumDescriptor(_ITEMTARGET)
-
-ItemTarget = enum_type_wrapper.EnumTypeWrapper(_ITEMTARGET)
-_LOGINERROR = _descriptor.EnumDescriptor(
-  name='LoginError',
-  full_name='PSXAPI.Response155921581865.LoginError',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='__None4', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='WrongPassword', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='AccountNotFound', index=2, number=2,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='AlreadyLoggedIn', index=3, number=3,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Banned1', index=4, number=4,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='NotVerified', index=5, number=5,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Unsupported', index=6, number=6,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=13758,
-  serialized_end=13891,
-)
-_sym_db.RegisterEnumDescriptor(_LOGINERROR)
-
-LoginError = enum_type_wrapper.EnumTypeWrapper(_LOGINERROR)
-_LOGINRESULT = _descriptor.EnumDescriptor(
-  name='LoginResult',
-  full_name='PSXAPI.Response155921581865.LoginResult',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='Error', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Success', index=1, number=1,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=13893,
-  serialized_end=13930,
-)
-_sym_db.RegisterEnumDescriptor(_LOGINRESULT)
-
-LoginResult = enum_type_wrapper.EnumTypeWrapper(_LOGINRESULT)
-_LOOTTYPE = _descriptor.EnumDescriptor(
-  name='LootType',
-  full_name='PSXAPI.Response155921581865.LootType',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='__None5', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Money2', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Gold1', index=2, number=2,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Item0', index=3, number=3,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Pokemon0', index=4, number=4,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Clothe', index=5, number=5,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Hat', index=6, number=6,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Mount0', index=7, number=7,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='SurfMount', index=8, number=8,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='FlyMount', index=9, number=9,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=13933,
-  serialized_end=14066,
-)
-_sym_db.RegisterEnumDescriptor(_LOOTTYPE)
-
-LootType = enum_type_wrapper.EnumTypeWrapper(_LOOTTYPE)
-_LOOTBOXACTION = _descriptor.EnumDescriptor(
-  name='LootboxAction',
-  full_name='PSXAPI.Response155921581865.LootboxAction',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='__None6', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Opened', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Update1', index=2, number=2,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=14068,
-  serialized_end=14121,
-)
-_sym_db.RegisterEnumDescriptor(_LOOTBOXACTION)
-
-LootboxAction = enum_type_wrapper.EnumTypeWrapper(_LOOTBOXACTION)
-_LOOTBOXTYPE = _descriptor.EnumDescriptor(
-  name='LootboxType',
-  full_name='PSXAPI.Response155921581865.LootboxType',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='__None7', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Small', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Normal0', index=2, number=2,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=14123,
-  serialized_end=14173,
-)
-_sym_db.RegisterEnumDescriptor(_LOOTBOXTYPE)
-
-LootboxType = enum_type_wrapper.EnumTypeWrapper(_LOOTBOXTYPE)
-_MAPUSERACTION = _descriptor.EnumDescriptor(
-  name='MapUserAction',
-  full_name='PSXAPI.Response155921581865.MapUserAction',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='Set1', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Up0', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Down0', index=2, number=2,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Left0', index=3, number=3,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Right0', index=4, number=4,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Enter1', index=5, number=5,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Leave1', index=6, number=6,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Fishing1', index=7, number=7,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=14175,
-  serialized_end=14281,
-)
-_sym_db.RegisterEnumDescriptor(_MAPUSERACTION)
-
-MapUserAction = enum_type_wrapper.EnumTypeWrapper(_MAPUSERACTION)
-_MEMBERRANK = _descriptor.EnumDescriptor(
-  name='MemberRank',
-  full_name='PSXAPI.Response155921581865.MemberRank',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='__None8', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Member', index=1, number=1,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=14283,
-  serialized_end=14320,
-)
-_sym_db.RegisterEnumDescriptor(_MEMBERRANK)
-
-MemberRank = enum_type_wrapper.EnumTypeWrapper(_MEMBERRANK)
-_MOUNTTYPE = _descriptor.EnumDescriptor(
-  name='MountType',
-  full_name='PSXAPI.Response155921581865.MountType',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='__None9', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Surfing', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Bike', index=2, number=2,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Pokemon1', index=3, number=3,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=14322,
-  serialized_end=14383,
-)
-_sym_db.RegisterEnumDescriptor(_MOUNTTYPE)
-
-MountType = enum_type_wrapper.EnumTypeWrapper(_MOUNTTYPE)
-_MOVEACTION = _descriptor.EnumDescriptor(
-  name='MoveAction',
-  full_name='PSXAPI.Response155921581865.MoveAction',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='Set', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Up1', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Down1', index=2, number=2,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Left1', index=3, number=3,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Right1', index=4, number=4,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=14385,
-  serialized_end=14449,
-)
-_sym_db.RegisterEnumDescriptor(_MOVEACTION)
-
-MoveAction = enum_type_wrapper.EnumTypeWrapper(_MOVEACTION)
-_MOVEPLAYERACTION = _descriptor.EnumDescriptor(
-  name='MovePlayerAction',
-  full_name='PSXAPI.Response155921581865.MovePlayerAction',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='Set0', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Up2', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Down2', index=2, number=2,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Left2', index=3, number=3,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Right2', index=4, number=4,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Enter0', index=5, number=5,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Leave0', index=6, number=6,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Fishing0', index=7, number=7,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=14451,
-  serialized_end=14560,
-)
-_sym_db.RegisterEnumDescriptor(_MOVEPLAYERACTION)
-
-MovePlayerAction = enum_type_wrapper.EnumTypeWrapper(_MOVEPLAYERACTION)
-_PLAYERDIRECTION = _descriptor.EnumDescriptor(
-  name='PlayerDirection',
-  full_name='PSXAPI.Response155921581865.PlayerDirection',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='Default', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Up3', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Down3', index=2, number=2,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Left3', index=3, number=3,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Right3', index=4, number=4,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=14562,
-  serialized_end=14635,
-)
-_sym_db.RegisterEnumDescriptor(_PLAYERDIRECTION)
-
-PlayerDirection = enum_type_wrapper.EnumTypeWrapper(_PLAYERDIRECTION)
-_POKEDEXENTRYSTATE = _descriptor.EnumDescriptor(
-  name='PokedexEntryState',
-  full_name='PSXAPI.Response155921581865.PokedexEntryState',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='__None10', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Seen', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Caught', index=2, number=2,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=14637,
-  serialized_end=14692,
-)
-_sym_db.RegisterEnumDescriptor(_POKEDEXENTRYSTATE)
-
-PokedexEntryState = enum_type_wrapper.EnumTypeWrapper(_POKEDEXENTRYSTATE)
-_POKEMONCONDITION = _descriptor.EnumDescriptor(
-  name='PokemonCondition',
-  full_name='PSXAPI.Response155921581865.PokemonCondition',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='__None11', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Fainted', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Burn', index=2, number=2,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Freeze', index=3, number=3,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Paralysis', index=4, number=4,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Poison', index=5, number=5,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Sleep', index=6, number=6,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=14694,
-  serialized_end=14799,
-)
-_sym_db.RegisterEnumDescriptor(_POKEMONCONDITION)
-
-PokemonCondition = enum_type_wrapper.EnumTypeWrapper(_POKEMONCONDITION)
-_POKEMONGENDER = _descriptor.EnumDescriptor(
-  name='PokemonGender',
-  full_name='PSXAPI.Response155921581865.PokemonGender',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='__None12', index=0, number=0,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Male0', index=1, number=1,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='Female0', index=2, number=2,
-      options=None,
-      type=None),
-  ],
-  containing_type=None,
-  options=None,
-  serialized_start=14801,
-  serialized_end=14854,
-)
-_sym_db.RegisterEnumDescriptor(_POKEMONGENDER)
-
-PokemonGender = enum_type_wrapper.EnumTypeWrapper(_POKEMONGENDER)
 _POKEMONID = _descriptor.EnumDescriptor(
   name='PokemonID',
-  full_name='PSXAPI.Response155921581865.PokemonID',
+  full_name='PSXAPI.Response1375634093.PokemonID',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -1047,7 +37,7 @@ _POKEMONID = _descriptor.EnumDescriptor(
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='Unset0', index=1, number=-1,
+      name='Unset', index=1, number=-1,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -4261,15 +3251,1801 @@ _POKEMONID = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=14857,
-  serialized_end=26362,
+  serialized_start=28722,
+  serialized_end=40226,
 )
 _sym_db.RegisterEnumDescriptor(_POKEMONID)
 
 PokemonID = enum_type_wrapper.EnumTypeWrapper(_POKEMONID)
-_POKEMONMOVEID = _descriptor.EnumDescriptor(
+missingno = 0
+Unset = -1
+bulbasaur = 1
+ivysaur = 2
+venusaur = 3
+charmander = 4
+charmeleon = 5
+charizard = 6
+squirtle = 7
+wartortle = 8
+blastoise = 9
+caterpie = 10
+metapod = 11
+butterfree = 12
+weedle = 13
+kakuna = 14
+beedrill = 15
+pidgey = 16
+pidgeotto = 17
+pidgeot = 18
+rattata = 19
+raticate = 20
+spearow = 21
+fearow = 22
+ekans = 23
+arbok = 24
+pikachu = 25
+raichu = 26
+sandshrew = 27
+sandslash = 28
+nidoranf = 29
+nidorina = 30
+nidoqueen = 31
+nidoranm = 32
+nidorino = 33
+nidoking = 34
+clefairy = 35
+clefable = 36
+vulpix = 37
+ninetales = 38
+jigglypuff = 39
+wigglytuff = 40
+zubat = 41
+golbat = 42
+oddish = 43
+gloom = 44
+vileplume = 45
+paras = 46
+parasect = 47
+venonat = 48
+venomoth = 49
+diglett = 50
+dugtrio = 51
+meowth = 52
+persian = 53
+psyduck = 54
+golduck = 55
+mankey = 56
+primeape = 57
+growlithe = 58
+arcanine = 59
+poliwag = 60
+poliwhirl = 61
+poliwrath = 62
+abra = 63
+kadabra = 64
+alakazam = 65
+machop = 66
+machoke = 67
+machamp = 68
+bellsprout = 69
+weepinbell = 70
+victreebel = 71
+tentacool = 72
+tentacruel = 73
+geodude = 74
+graveler = 75
+golem = 76
+ponyta = 77
+rapidash = 78
+slowpoke = 79
+slowbro = 80
+magnemite = 81
+magneton = 82
+farfetchd = 83
+doduo = 84
+dodrio = 85
+seel = 86
+dewgong = 87
+grimer = 88
+muk = 89
+shellder = 90
+cloyster = 91
+gastly = 92
+haunter = 93
+gengar = 94
+onix = 95
+drowzee = 96
+hypno = 97
+krabby = 98
+kingler = 99
+voltorb = 100
+electrode = 101
+exeggcute = 102
+exeggutor = 103
+cubone = 104
+marowak = 105
+hitmonlee = 106
+hitmonchan = 107
+lickitung = 108
+koffing = 109
+weezing = 110
+rhyhorn = 111
+rhydon = 112
+chansey = 113
+tangela = 114
+kangaskhan = 115
+horsea = 116
+seadra = 117
+goldeen = 118
+seaking = 119
+staryu = 120
+starmie = 121
+mrmime = 122
+scyther = 123
+jynx = 124
+electabuzz = 125
+magmar = 126
+pinsir = 127
+tauros = 128
+magikarp = 129
+gyarados = 130
+lapras = 131
+ditto = 132
+eevee = 133
+vaporeon = 134
+jolteon = 135
+flareon = 136
+porygon = 137
+omanyte = 138
+omastar = 139
+kabuto = 140
+kabutops = 141
+aerodactyl = 142
+snorlax = 143
+articuno = 144
+zapdos = 145
+moltres = 146
+dratini = 147
+dragonair = 148
+dragonite = 149
+mewtwo = 150
+mew = 151
+chikorita = 152
+bayleef = 153
+meganium = 154
+cyndaquil = 155
+quilava = 156
+typhlosion = 157
+totodile = 158
+croconaw = 159
+feraligatr = 160
+sentret = 161
+furret = 162
+hoothoot = 163
+noctowl = 164
+ledyba = 165
+ledian = 166
+spinarak = 167
+ariados = 168
+crobat = 169
+chinchou = 170
+lanturn = 171
+pichu = 172
+cleffa = 173
+igglybuff = 174
+togepi = 175
+togetic = 176
+natu = 177
+xatu = 178
+mareep = 179
+flaaffy = 180
+ampharos = 181
+bellossom = 182
+marill = 183
+azumarill = 184
+sudowoodo = 185
+politoed = 186
+hoppip = 187
+skiploom = 188
+jumpluff = 189
+aipom = 190
+sunkern = 191
+sunflora = 192
+yanma = 193
+wooper = 194
+quagsire = 195
+espeon = 196
+umbreon = 197
+murkrow = 198
+slowking = 199
+misdreavus = 200
+unown = 201
+wobbuffet = 202
+girafarig = 203
+pineco = 204
+forretress = 205
+dunsparce = 206
+gligar = 207
+steelix = 208
+snubbull = 209
+granbull = 210
+qwilfish = 211
+scizor = 212
+shuckle = 213
+heracross = 214
+sneasel = 215
+teddiursa = 216
+ursaring = 217
+slugma = 218
+magcargo = 219
+swinub = 220
+piloswine = 221
+corsola = 222
+remoraid = 223
+octillery = 224
+delibird = 225
+mantine = 226
+skarmory = 227
+houndour = 228
+houndoom = 229
+kingdra = 230
+phanpy = 231
+donphan = 232
+porygon2 = 233
+stantler = 234
+smeargle = 235
+tyrogue = 236
+hitmontop = 237
+smoochum = 238
+elekid = 239
+magby = 240
+miltank = 241
+blissey = 242
+raikou = 243
+entei = 244
+suicune = 245
+larvitar = 246
+pupitar = 247
+tyranitar = 248
+lugia = 249
+hooh = 250
+celebi = 251
+treecko = 252
+grovyle = 253
+sceptile = 254
+torchic = 255
+combusken = 256
+blaziken = 257
+mudkip = 258
+marshtomp = 259
+swampert = 260
+poochyena = 261
+mightyena = 262
+zigzagoon = 263
+linoone = 264
+wurmple = 265
+silcoon = 266
+beautifly = 267
+cascoon = 268
+dustox = 269
+lotad = 270
+lombre = 271
+ludicolo = 272
+seedot = 273
+nuzleaf = 274
+shiftry = 275
+taillow = 276
+swellow = 277
+wingull = 278
+pelipper = 279
+ralts = 280
+kirlia = 281
+gardevoir = 282
+surskit = 283
+masquerain = 284
+shroomish = 285
+breloom = 286
+slakoth = 287
+vigoroth = 288
+slaking = 289
+nincada = 290
+ninjask = 291
+shedinja = 292
+whismur = 293
+loudred = 294
+exploud = 295
+makuhita = 296
+hariyama = 297
+azurill = 298
+nosepass = 299
+skitty = 300
+delcatty = 301
+sableye = 302
+mawile = 303
+aron = 304
+lairon = 305
+aggron = 306
+meditite = 307
+medicham = 308
+electrike = 309
+manectric = 310
+plusle = 311
+minun = 312
+volbeat = 313
+illumise = 314
+roselia = 315
+gulpin = 316
+swalot = 317
+carvanha = 318
+sharpedo = 319
+wailmer = 320
+wailord = 321
+numel = 322
+camerupt = 323
+torkoal = 324
+spoink = 325
+grumpig = 326
+spinda = 327
+trapinch = 328
+vibrava = 329
+flygon = 330
+cacnea = 331
+cacturne = 332
+swablu = 333
+altaria = 334
+zangoose = 335
+seviper = 336
+lunatone = 337
+solrock = 338
+barboach = 339
+whiscash = 340
+corphish = 341
+crawdaunt = 342
+baltoy = 343
+claydol = 344
+lileep = 345
+cradily = 346
+anorith = 347
+armaldo = 348
+feebas = 349
+milotic = 350
+castform = 351
+kecleon = 352
+shuppet = 353
+banette = 354
+duskull = 355
+dusclops = 356
+tropius = 357
+chimecho = 358
+absol = 359
+wynaut = 360
+snorunt = 361
+glalie = 362
+spheal = 363
+sealeo = 364
+walrein = 365
+clamperl = 366
+huntail = 367
+gorebyss = 368
+relicanth = 369
+luvdisc = 370
+bagon = 371
+shelgon = 372
+salamence = 373
+beldum = 374
+metang = 375
+metagross = 376
+regirock = 377
+regice = 378
+registeel = 379
+latias = 380
+latios = 381
+kyogre = 382
+groudon = 383
+rayquaza = 384
+jirachi = 385
+deoxys = 386
+turtwig = 387
+grotle = 388
+torterra = 389
+chimchar = 390
+monferno = 391
+infernape = 392
+piplup = 393
+prinplup = 394
+empoleon = 395
+starly = 396
+staravia = 397
+staraptor = 398
+bidoof = 399
+bibarel = 400
+kricketot = 401
+kricketune = 402
+shinx = 403
+luxio = 404
+luxray = 405
+budew = 406
+roserade = 407
+cranidos = 408
+rampardos = 409
+shieldon = 410
+bastiodon = 411
+burmy = 412
+wormadam = 413
+mothim = 414
+combee = 415
+vespiquen = 416
+pachirisu = 417
+buizel = 418
+floatzel = 419
+cherubi = 420
+cherrim = 421
+shellos = 422
+gastrodon = 423
+ambipom = 424
+drifloon = 425
+drifblim = 426
+buneary = 427
+lopunny = 428
+mismagius = 429
+honchkrow = 430
+glameow = 431
+purugly = 432
+chingling = 433
+stunky = 434
+skuntank = 435
+bronzor = 436
+bronzong = 437
+bonsly = 438
+mimejr = 439
+happiny = 440
+chatot = 441
+spiritomb = 442
+gible = 443
+gabite = 444
+garchomp = 445
+munchlax = 446
+riolu = 447
+lucario = 448
+hippopotas = 449
+hippowdon = 450
+skorupi = 451
+drapion = 452
+croagunk = 453
+toxicroak = 454
+carnivine = 455
+finneon = 456
+lumineon = 457
+mantyke = 458
+snover = 459
+abomasnow = 460
+weavile = 461
+magnezone = 462
+lickilicky = 463
+rhyperior = 464
+tangrowth = 465
+electivire = 466
+magmortar = 467
+togekiss = 468
+yanmega = 469
+leafeon = 470
+glaceon = 471
+gliscor = 472
+mamoswine = 473
+porygonz = 474
+gallade = 475
+probopass = 476
+dusknoir = 477
+froslass = 478
+rotom = 479
+uxie = 480
+mesprit = 481
+azelf = 482
+dialga = 483
+palkia = 484
+heatran = 485
+regigigas = 486
+giratina = 487
+cresselia = 488
+phione = 489
+manaphy = 490
+darkrai = 491
+shaymin = 492
+arceus = 493
+victini = 494
+snivy = 495
+servine = 496
+serperior = 497
+tepig = 498
+pignite = 499
+emboar = 500
+oshawott = 501
+dewott = 502
+samurott = 503
+patrat = 504
+watchog = 505
+lillipup = 506
+herdier = 507
+stoutland = 508
+purrloin = 509
+liepard = 510
+pansage = 511
+simisage = 512
+pansear = 513
+simisear = 514
+panpour = 515
+simipour = 516
+munna = 517
+musharna = 518
+pidove = 519
+tranquill = 520
+unfezant = 521
+blitzle = 522
+zebstrika = 523
+roggenrola = 524
+boldore = 525
+gigalith = 526
+woobat = 527
+swoobat = 528
+drilbur = 529
+excadrill = 530
+audino = 531
+timburr = 532
+gurdurr = 533
+conkeldurr = 534
+tympole = 535
+palpitoad = 536
+seismitoad = 537
+throh = 538
+sawk = 539
+sewaddle = 540
+swadloon = 541
+leavanny = 542
+venipede = 543
+whirlipede = 544
+scolipede = 545
+cottonee = 546
+whimsicott = 547
+petilil = 548
+lilligant = 549
+basculin = 550
+sandile = 551
+krokorok = 552
+krookodile = 553
+darumaka = 554
+darmanitan = 555
+maractus = 556
+dwebble = 557
+crustle = 558
+scraggy = 559
+scrafty = 560
+sigilyph = 561
+yamask = 562
+cofagrigus = 563
+tirtouga = 564
+carracosta = 565
+archen = 566
+archeops = 567
+trubbish = 568
+garbodor = 569
+zorua = 570
+zoroark = 571
+minccino = 572
+cinccino = 573
+gothita = 574
+gothorita = 575
+gothitelle = 576
+solosis = 577
+duosion = 578
+reuniclus = 579
+ducklett = 580
+swanna = 581
+vanillite = 582
+vanillish = 583
+vanilluxe = 584
+deerling = 585
+sawsbuck = 586
+emolga = 587
+karrablast = 588
+escavalier = 589
+foongus = 590
+amoonguss = 591
+frillish = 592
+jellicent = 593
+alomomola = 594
+joltik = 595
+galvantula = 596
+ferroseed = 597
+ferrothorn = 598
+klink = 599
+klang = 600
+klinklang = 601
+tynamo = 602
+eelektrik = 603
+eelektross = 604
+elgyem = 605
+beheeyem = 606
+litwick = 607
+lampent = 608
+chandelure = 609
+axew = 610
+fraxure = 611
+haxorus = 612
+cubchoo = 613
+beartic = 614
+cryogonal = 615
+shelmet = 616
+accelgor = 617
+stunfisk = 618
+mienfoo = 619
+mienshao = 620
+druddigon = 621
+golett = 622
+golurk = 623
+pawniard = 624
+bisharp = 625
+bouffalant = 626
+rufflet = 627
+braviary = 628
+vullaby = 629
+mandibuzz = 630
+heatmor = 631
+durant = 632
+deino = 633
+zweilous = 634
+hydreigon = 635
+larvesta = 636
+volcarona = 637
+cobalion = 638
+terrakion = 639
+virizion = 640
+tornadus = 641
+thundurus = 642
+reshiram = 643
+zekrom = 644
+landorus = 645
+kyurem = 646
+keldeo = 647
+meloetta = 648
+genesect = 649
+chespin = 650
+quilladin = 651
+chesnaught = 652
+fennekin = 653
+braixen = 654
+delphox = 655
+froakie = 656
+frogadier = 657
+greninja = 658
+bunnelby = 659
+diggersby = 660
+fletchling = 661
+fletchinder = 662
+talonflame = 663
+scatterbug = 664
+spewpa = 665
+vivillon = 666
+litleo = 667
+pyroar = 668
+flabb = 669
+floette = 670
+florges = 671
+skiddo = 672
+gogoat = 673
+pancham = 674
+pangoro = 675
+furfrou = 676
+espurr = 677
+meowstic = 678
+honedge = 679
+doublade = 680
+aegislash = 681
+spritzee = 682
+aromatisse = 683
+swirlix = 684
+slurpuff = 685
+inkay = 686
+malamar = 687
+binacle = 688
+barbaracle = 689
+skrelp = 690
+dragalge = 691
+clauncher = 692
+clawitzer = 693
+helioptile = 694
+heliolisk = 695
+tyrunt = 696
+tyrantrum = 697
+amaura = 698
+aurorus = 699
+sylveon = 700
+hawlucha = 701
+dedenne = 702
+carbink = 703
+goomy = 704
+sliggoo = 705
+goodra = 706
+klefki = 707
+phantump = 708
+trevenant = 709
+pumpkaboo = 710
+gourgeist = 711
+bergmite = 712
+avalugg = 713
+noibat = 714
+noivern = 715
+xerneas = 716
+yveltal = 717
+zygarde = 718
+diancie = 719
+hoopa = 720
+volcanion = 721
+rowlet = 722
+dartrix = 723
+decidueye = 724
+litten = 725
+torracat = 726
+incineroar = 727
+popplio = 728
+brionne = 729
+primarina = 730
+pikipek = 731
+trumbeak = 732
+toucannon = 733
+yungoos = 734
+gumshoos = 735
+grubbin = 736
+charjabug = 737
+vikavolt = 738
+crabrawler = 739
+crabominable = 740
+oricorio = 741
+cutiefly = 742
+ribombee = 743
+rockruff = 744
+lycanroc = 745
+wishiwashi = 746
+mareanie = 747
+toxapex = 748
+mudbray = 749
+mudsdale = 750
+dewpider = 751
+araquanid = 752
+fomantis = 753
+lurantis = 754
+morelull = 755
+shiinotic = 756
+salandit = 757
+salazzle = 758
+stufful = 759
+bewear = 760
+bounsweet = 761
+steenee = 762
+tsareena = 763
+comfey = 764
+oranguru = 765
+passimian = 766
+wimpod = 767
+golisopod = 768
+sandygast = 769
+palossand = 770
+pyukumuku = 771
+typenull = 772
+silvally = 773
+minior = 774
+komala = 775
+turtonator = 776
+togedemaru = 777
+mimikyu = 778
+bruxish = 779
+drampa = 780
+dhelmise = 781
+jangmoo = 782
+hakamoo = 783
+kommoo = 784
+tapukoko = 785
+tapulele = 786
+tapubulu = 787
+tapufini = 788
+cosmog = 789
+cosmoem = 790
+solgaleo = 791
+lunala = 792
+nihilego = 793
+buzzwole = 794
+pheromosa = 795
+xurkitree = 796
+celesteela = 797
+kartana = 798
+guzzlord = 799
+necrozma = 800
+magearna = 801
+marshadow = 802
+
+
+_PREFIX_AGDFASBV2118046871_ABILITYSLOTTYPE = _descriptor.EnumDescriptor(
+  name='AbilitySlotType',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV2118046871.AbilitySlotType',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='NoneValue', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Slot1', index=1, number=1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Slot2', index=2, number=2,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Hidden', index=3, number=3,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=95,
+  serialized_end=161,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV2118046871_ABILITYSLOTTYPE)
+
+_PREFIX_AGDFASBV1901072364_ACTORAVATARTYPE = _descriptor.EnumDescriptor(
+  name='ActorAvatarType',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1901072364.ActorAvatarType',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='NoneValue', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='User', index=1, number=1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='NPC', index=2, number=2,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=192,
+  serialized_end=243,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1901072364_ACTORAVATARTYPE)
+
+_PREFIX_AGDFASBV1230468151_ACTORTEAM = _descriptor.EnumDescriptor(
+  name='ActorTeam',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1230468151.ActorTeam',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='NoneValue', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Team1', index=1, number=1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Team2', index=2, number=2,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=274,
+  serialized_end=322,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1230468151_ACTORTEAM)
+
+_PREFIX_AGDFASBV749316793_ACTORTIMER = _descriptor.EnumDescriptor(
+  name='ActorTimer',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV749316793.ActorTimer',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='Disabled', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='NotRequired', index=1, number=1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Enabled', index=2, number=2,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=352,
+  serialized_end=408,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV749316793_ACTORTIMER)
+
+_PREFIX_AGDFASBV590365810_ACTORTYPE = _descriptor.EnumDescriptor(
+  name='ActorType',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV590365810.ActorType',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='NoneValue', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Leader', index=1, number=1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='User', index=2, number=2,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='NPC', index=3, number=3,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Inactive', index=4, number=4,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Offline', index=5, number=5,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=438,
+  serialized_end=522,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV590365810_ACTORTYPE)
+
+_PREFIX_AGDFASBV48946253_EFFECTUPDATETYPE = _descriptor.EnumDescriptor(
+  name='EffectUpdateType',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV48946253.EffectUpdateType',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='NoneValue', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='All', index=1, number=1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='AddOrUpdate', index=2, number=2,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Remove', index=3, number=3,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=2548,
+  serialized_end=2619,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV48946253_EFFECTUPDATETYPE)
+
+_PREFIX_AGDFASBV363156631_EGGSTATE = _descriptor.EnumDescriptor(
+  name='EggState',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV363156631.EggState',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='NoneValue', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Sounds', index=1, number=1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Moves', index=2, number=2,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='MoreTime', index=3, number=3,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='LongTime', index=4, number=4,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=2649,
+  serialized_end=2725,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV363156631_EGGSTATE)
+
+_PREFIX_AGDFASBV579684050_FRIENDSACTION = _descriptor.EnumDescriptor(
+  name='FriendsAction',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV579684050.FriendsAction',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='All', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Add', index=1, number=1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Remove', index=2, number=2,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Update', index=3, number=3,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=3137,
+  serialized_end=3194,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV579684050_FRIENDSACTION)
+
+_PREFIX_AGDFASBV321822151_GAMEDAYTIME = _descriptor.EnumDescriptor(
+  name='GameDayTime',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV321822151.GameDayTime',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='Unset', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Morning', index=1, number=1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Day', index=2, number=2,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Evening', index=3, number=3,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Night', index=4, number=4,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=3224,
+  serialized_end=3294,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV321822151_GAMEDAYTIME)
+
+_PREFIX_AGDFASBV669285494_GAMESEASON = _descriptor.EnumDescriptor(
+  name='GameSeason',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV669285494.GameSeason',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='Unset', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Spring', index=1, number=1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Summer', index=2, number=2,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Autumn', index=3, number=3,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Winter', index=4, number=4,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=3324,
+  serialized_end=3395,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV669285494_GAMESEASON)
+
+_PREFIX_AGDFASBV961203100_GENDER = _descriptor.EnumDescriptor(
+  name='Gender',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV961203100.Gender',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='Male', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Female', index=1, number=1,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=3425,
+  serialized_end=3455,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV961203100_GENDER)
+
+_PREFIX_AGDFASBV635007241_GUILDRANK = _descriptor.EnumDescriptor(
+  name='GuildRank',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV635007241.GuildRank',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='Unset', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Creator', index=1, number=1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Admin', index=2, number=2,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Moderator', index=3, number=3,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='User', index=4, number=4,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=4033,
+  serialized_end=4104,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV635007241_GUILDRANK)
+
+_PREFIX_AGDFASBV1542622162_IGNOREACTION = _descriptor.EnumDescriptor(
+  name='IgnoreAction',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1542622162.IgnoreAction',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='All', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Add', index=1, number=1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Remove', index=2, number=2,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=4283,
+  serialized_end=4327,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1542622162_IGNOREACTION)
+
+_PREFIX_AGDFASBV972857083_ITEMCATEGORY = _descriptor.EnumDescriptor(
+  name='ItemCategory',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV972857083.ItemCategory',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='Unknown', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='General', index=1, number=1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Pokeball', index=2, number=2,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Medicine', index=3, number=3,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Machine', index=4, number=4,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Berry', index=5, number=5,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Battle', index=6, number=6,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Hold', index=7, number=7,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=5295,
+  serialized_end=5409,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV972857083_ITEMCATEGORY)
+
+_PREFIX_AGDFASBV1562170800_ITEMPOCKET = _descriptor.EnumDescriptor(
+  name='ItemPocket',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1562170800.ItemPocket',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='Unknown', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Items', index=1, number=1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Medicine', index=2, number=2,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Berry', index=3, number=3,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Key', index=4, number=4,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Machine', index=5, number=5,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Z_Crystal', index=6, number=6,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=5440,
+  serialized_end=5538,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1562170800_ITEMPOCKET)
+
+_PREFIX_AGDFASBV983491147_ITEMTARGET = _descriptor.EnumDescriptor(
+  name='ItemTarget',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV983491147.ItemTarget',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='NoneValue', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Pokemon', index=1, number=1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Move', index=2, number=2,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=5568,
+  serialized_end=5618,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV983491147_ITEMTARGET)
+
+_PREFIX_AGDFASBV529948962_LOGINERROR = _descriptor.EnumDescriptor(
+  name='LoginError',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV529948962.LoginError',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='NoneValue', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='WrongPassword', index=1, number=1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='AccountNotFound', index=2, number=2,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='AlreadyLoggedIn', index=3, number=3,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Banned', index=4, number=4,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='NotVerified', index=5, number=5,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Unsupported', index=6, number=6,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=8425,
+  serialized_end=8559,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV529948962_LOGINERROR)
+
+_PREFIX_AGDFASBV1597269680_LOGINRESULT = _descriptor.EnumDescriptor(
+  name='LoginResult',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1597269680.LoginResult',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='Error', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Success', index=1, number=1,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=8590,
+  serialized_end=8627,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1597269680_LOGINRESULT)
+
+_PREFIX_AGDFASBV1274100486_LOOTTYPE = _descriptor.EnumDescriptor(
+  name='LootType',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1274100486.LootType',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='NoneValue', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Money', index=1, number=1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Gold', index=2, number=2,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Item', index=3, number=3,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Pokemon', index=4, number=4,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Clothe', index=5, number=5,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Hat', index=6, number=6,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Mount', index=7, number=7,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='SurfMount', index=8, number=8,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='FlyMount', index=9, number=9,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=8660,
+  serialized_end=8790,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1274100486_LOOTTYPE)
+
+_PREFIX_AGDFASBV1683146902_LOOTBOXACTION = _descriptor.EnumDescriptor(
+  name='LootboxAction',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1683146902.LootboxAction',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='NoneValue', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Opened', index=1, number=1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Update', index=2, number=2,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=9096,
+  serialized_end=9150,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1683146902_LOOTBOXACTION)
+
+_PREFIX_AGDFASBV1562556180_LOOTBOXTYPE = _descriptor.EnumDescriptor(
+  name='LootboxType',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1562556180.LootboxType',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='NoneValue', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Small', index=1, number=1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Normal', index=2, number=2,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=9384,
+  serialized_end=9435,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1562556180_LOOTBOXTYPE)
+
+_PREFIX_AGDFASBV1720398281_MAPUSERACTION = _descriptor.EnumDescriptor(
+  name='MapUserAction',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1720398281.MapUserAction',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='Set', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Up', index=1, number=1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Down', index=2, number=2,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Left', index=3, number=3,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Right', index=4, number=4,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Enter', index=5, number=5,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Leave', index=6, number=6,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Fishing', index=7, number=7,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=9613,
+  serialized_end=9711,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1720398281_MAPUSERACTION)
+
+_PREFIX_AGDFASBV1761834943_MEMBERRANK = _descriptor.EnumDescriptor(
+  name='MemberRank',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1761834943.MemberRank',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='NoneValue', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Member', index=1, number=1,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=10708,
+  serialized_end=10747,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1761834943_MEMBERRANK)
+
+_PREFIX_AGDFASBV1702787644_MOUNTTYPE = _descriptor.EnumDescriptor(
+  name='MountType',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1702787644.MountType',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='NoneValue', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Surfing', index=1, number=1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Bike', index=2, number=2,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Pokemon', index=3, number=3,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=10901,
+  serialized_end=10963,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1702787644_MOUNTTYPE)
+
+_PREFIX_AGDFASBV2033304364_MOVEACTION = _descriptor.EnumDescriptor(
+  name='MoveAction',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV2033304364.MoveAction',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='Set', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Up', index=1, number=1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Down', index=2, number=2,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Left', index=3, number=3,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Right', index=4, number=4,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=11269,
+  serialized_end=11329,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV2033304364_MOVEACTION)
+
+_PREFIX_AGDFASBV101843234_MOVEPLAYERACTION = _descriptor.EnumDescriptor(
+  name='MovePlayerAction',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV101843234.MovePlayerAction',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='Set', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Up', index=1, number=1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Down', index=2, number=2,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Left', index=3, number=3,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Right', index=4, number=4,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Enter', index=5, number=5,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Leave', index=6, number=6,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Fishing', index=7, number=7,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=12173,
+  serialized_end=12274,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV101843234_MOVEPLAYERACTION)
+
+_PREFIX_AGDFASBV1672859746_PLAYERDIRECTION = _descriptor.EnumDescriptor(
+  name='PlayerDirection',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1672859746.PlayerDirection',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='Default', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Up', index=1, number=1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Down', index=2, number=2,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Left', index=3, number=3,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Right', index=4, number=4,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=12697,
+  serialized_end=12766,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1672859746_PLAYERDIRECTION)
+
+_PREFIX_AGDFASBV1749316721_POKEDEXENTRYSTATE = _descriptor.EnumDescriptor(
+  name='PokedexEntryState',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1749316721.PokedexEntryState',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='NoneValue', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Seen', index=1, number=1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Caught', index=2, number=2,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=13083,
+  serialized_end=13139,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1749316721_POKEDEXENTRYSTATE)
+
+_PREFIX_AGDFASBV1466068983_POKEMONCONDITION = _descriptor.EnumDescriptor(
+  name='PokemonCondition',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1466068983.PokemonCondition',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='NoneValue', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Fainted', index=1, number=1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Burn', index=2, number=2,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Freeze', index=3, number=3,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Paralysis', index=4, number=4,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Poison', index=5, number=5,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Sleep', index=6, number=6,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=14202,
+  serialized_end=14308,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1466068983_POKEMONCONDITION)
+
+_PREFIX_AGDFASBV876393797_POKEMONGENDER = _descriptor.EnumDescriptor(
+  name='PokemonGender',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV876393797.PokemonGender',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='NoneValue', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Male', index=1, number=1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Female', index=2, number=2,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=14683,
+  serialized_end=14735,
+)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV876393797_POKEMONGENDER)
+
+_PREFIX_AGDFASBV167626233_POKEMONMOVEID = _descriptor.EnumDescriptor(
   name='PokemonMoveID',
-  full_name='PSXAPI.Response155921581865.PokemonMoveID',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV167626233.PokemonMoveID',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -5138,7 +5914,7 @@ _POKEMONMOVEID = _descriptor.EnumDescriptor(
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='__return', index=216, number=216,
+      name='_return', index=216, number=216,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -7084,20 +7860,19 @@ _POKEMONMOVEID = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=26365,
-  serialized_end=37646,
+  serialized_start=14903,
+  serialized_end=26183,
 )
-_sym_db.RegisterEnumDescriptor(_POKEMONMOVEID)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV167626233_POKEMONMOVEID)
 
-PokemonMoveID = enum_type_wrapper.EnumTypeWrapper(_POKEMONMOVEID)
-_POKEMONNATURES = _descriptor.EnumDescriptor(
+_PREFIX_AGDFASBV1870327986_POKEMONNATURES = _descriptor.EnumDescriptor(
   name='PokemonNatures',
-  full_name='PSXAPI.Response155921581865.PokemonNatures',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1870327986.PokemonNatures',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='__None13', index=0, number=0,
+      name='NoneValue', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -7203,20 +7978,19 @@ _POKEMONNATURES = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=37649,
-  serialized_end=37966,
+  serialized_start=26216,
+  serialized_end=26534,
 )
-_sym_db.RegisterEnumDescriptor(_POKEMONNATURES)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1870327986_POKEMONNATURES)
 
-PokemonNatures = enum_type_wrapper.EnumTypeWrapper(_POKEMONNATURES)
-_QUESTPROGRESSTYPE = _descriptor.EnumDescriptor(
+_PREFIX_AGDFASBV1813562425_QUESTPROGRESSTYPE = _descriptor.EnumDescriptor(
   name='QuestProgressType',
-  full_name='PSXAPI.Response155921581865.QuestProgressType',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1813562425.QuestProgressType',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='__None14', index=0, number=0,
+      name='NoneValue', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -7224,11 +7998,11 @@ _QUESTPROGRESSTYPE = _descriptor.EnumDescriptor(
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='Level6', index=2, number=2,
+      name='Level', index=2, number=2,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='Item1', index=3, number=3,
+      name='Item', index=3, number=3,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -7236,34 +8010,33 @@ _QUESTPROGRESSTYPE = _descriptor.EnumDescriptor(
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='Pokemon2', index=5, number=5,
+      name='Pokemon', index=5, number=5,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='Money0', index=6, number=6,
+      name='Money', index=6, number=6,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='Gold2', index=7, number=7,
+      name='Gold', index=7, number=7,
       options=None,
       type=None),
   ],
   containing_type=None,
   options=None,
-  serialized_start=37968,
-  serialized_end=38084,
+  serialized_start=27327,
+  serialized_end=27439,
 )
-_sym_db.RegisterEnumDescriptor(_QUESTPROGRESSTYPE)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1813562425_QUESTPROGRESSTYPE)
 
-QuestProgressType = enum_type_wrapper.EnumTypeWrapper(_QUESTPROGRESSTYPE)
-_QUESTTYPE = _descriptor.EnumDescriptor(
+_PREFIX_AGDFASBV15016665_QUESTTYPE = _descriptor.EnumDescriptor(
   name='QuestType',
-  full_name='PSXAPI.Response155921581865.QuestType',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV15016665.QuestType',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='__None15', index=0, number=0,
+      name='NoneValue', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -7289,20 +8062,19 @@ _QUESTTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=38086,
-  serialized_end=38166,
+  serialized_start=27642,
+  serialized_end=27723,
 )
-_sym_db.RegisterEnumDescriptor(_QUESTTYPE)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV15016665_QUESTTYPE)
 
-QuestType = enum_type_wrapper.EnumTypeWrapper(_QUESTTYPE)
-_STAFFRANK = _descriptor.EnumDescriptor(
+_PREFIX_AGDFASBV979434225_STAFFRANK = _descriptor.EnumDescriptor(
   name='StaffRank',
-  full_name='PSXAPI.Response155921581865.StaffRank',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV979434225.StaffRank',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='__None16', index=0, number=0,
+      name='NoneValue', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -7314,26 +8086,25 @@ _STAFFRANK = _descriptor.EnumDescriptor(
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='Moderator0', index=3, number=3,
+      name='Moderator', index=3, number=3,
       options=None,
       type=None),
   ],
   containing_type=None,
   options=None,
-  serialized_start=38168,
-  serialized_end=38243,
+  serialized_start=27753,
+  serialized_end=27828,
 )
-_sym_db.RegisterEnumDescriptor(_STAFFRANK)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV979434225_STAFFRANK)
 
-StaffRank = enum_type_wrapper.EnumTypeWrapper(_STAFFRANK)
-_WEATHERSTATE = _descriptor.EnumDescriptor(
+_PREFIX_AGDFASBV1318554870_WEATHERSTATE = _descriptor.EnumDescriptor(
   name='WeatherState',
-  full_name='PSXAPI.Response155921581865.WeatherState',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1318554870.WeatherState',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='Normal1', index=0, number=0,
+      name='Normal', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -7347,1731 +8118,160 @@ _WEATHERSTATE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=38245,
-  serialized_end=38292,
+  serialized_start=28634,
+  serialized_end=28680,
 )
-_sym_db.RegisterEnumDescriptor(_WEATHERSTATE)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1318554870_WEATHERSTATE)
 
-WeatherState = enum_type_wrapper.EnumTypeWrapper(_WEATHERSTATE)
-__None17 = 0
-User0 = 1
-NPC0 = 2
-__None18 = 0
-Team1 = 1
-Team2 = 2
-Disabled = 0
-NotRequired = 1
-Enabled = 2
-__None19 = 0
-Leader = 1
-User1 = 2
-NPC1 = 3
-Inactive = 4
-Offline = 5
-__None20 = 0
-Slot1 = 1
-Slot2 = 2
-Hidden0 = 3
-__None0 = 0
-All0 = 1
-AddOrUpdate = 2
-Remove0 = 3
-__None1 = 0
-Sounds = 1
-Moves = 2
-MoreTime = 3
-LongTime = 4
-All1 = 0
-Add = 1
-Remove1 = 2
-Update0 = 3
-Unset1 = 0
-Morning = 1
-Day = 2
-Evening = 3
-Night = 4
-Unset2 = 0
-Spring = 1
-Summer = 2
-Autumn = 3
-Winter = 4
-Male1 = 0
-Female1 = 1
-Unset3 = 0
-Creator = 1
-Admin = 2
-Moderator1 = 3
-User = 4
-All = 0
-Add1 = 1
-Remove2 = 2
-Unknown0 = 0
-General = 1
-Pokeball = 2
-Medicine0 = 3
-Machine0 = 4
-Berry0 = 5
-Battle0 = 6
-Hold = 7
-Unknown1 = 0
-Items = 1
-Medicine1 = 2
-Berry1 = 3
-Key = 4
-Machine1 = 5
-Z_Crystal = 6
-__None2 = 0
-Pokemon5 = 1
-Move0 = 2
-__None4 = 0
-WrongPassword = 1
-AccountNotFound = 2
-AlreadyLoggedIn = 3
-Banned1 = 4
-NotVerified = 5
-Unsupported = 6
-Error = 0
-Success = 1
-__None5 = 0
-Money2 = 1
-Gold1 = 2
-Item0 = 3
-Pokemon0 = 4
-Clothe = 5
-Hat = 6
-Mount0 = 7
-SurfMount = 8
-FlyMount = 9
-__None6 = 0
-Opened = 1
-Update1 = 2
-__None7 = 0
-Small = 1
-Normal0 = 2
-Set1 = 0
-Up0 = 1
-Down0 = 2
-Left0 = 3
-Right0 = 4
-Enter1 = 5
-Leave1 = 6
-Fishing1 = 7
-__None8 = 0
-Member = 1
-__None9 = 0
-Surfing = 1
-Bike = 2
-Pokemon1 = 3
-Set = 0
-Up1 = 1
-Down1 = 2
-Left1 = 3
-Right1 = 4
-Set0 = 0
-Up2 = 1
-Down2 = 2
-Left2 = 3
-Right2 = 4
-Enter0 = 5
-Leave0 = 6
-Fishing0 = 7
-Default = 0
-Up3 = 1
-Down3 = 2
-Left3 = 3
-Right3 = 4
-__None10 = 0
-Seen = 1
-Caught = 2
-__None11 = 0
-Fainted = 1
-Burn = 2
-Freeze = 3
-Paralysis = 4
-Poison = 5
-Sleep = 6
-__None12 = 0
-Male0 = 1
-Female0 = 2
-missingno = 0
-Unset0 = -1
-bulbasaur = 1
-ivysaur = 2
-venusaur = 3
-charmander = 4
-charmeleon = 5
-charizard = 6
-squirtle = 7
-wartortle = 8
-blastoise = 9
-caterpie = 10
-metapod = 11
-butterfree = 12
-weedle = 13
-kakuna = 14
-beedrill = 15
-pidgey = 16
-pidgeotto = 17
-pidgeot = 18
-rattata = 19
-raticate = 20
-spearow = 21
-fearow = 22
-ekans = 23
-arbok = 24
-pikachu = 25
-raichu = 26
-sandshrew = 27
-sandslash = 28
-nidoranf = 29
-nidorina = 30
-nidoqueen = 31
-nidoranm = 32
-nidorino = 33
-nidoking = 34
-clefairy = 35
-clefable = 36
-vulpix = 37
-ninetales = 38
-jigglypuff = 39
-wigglytuff = 40
-zubat = 41
-golbat = 42
-oddish = 43
-gloom = 44
-vileplume = 45
-paras = 46
-parasect = 47
-venonat = 48
-venomoth = 49
-diglett = 50
-dugtrio = 51
-meowth = 52
-persian = 53
-psyduck = 54
-golduck = 55
-mankey = 56
-primeape = 57
-growlithe = 58
-arcanine = 59
-poliwag = 60
-poliwhirl = 61
-poliwrath = 62
-abra = 63
-kadabra = 64
-alakazam = 65
-machop = 66
-machoke = 67
-machamp = 68
-bellsprout = 69
-weepinbell = 70
-victreebel = 71
-tentacool = 72
-tentacruel = 73
-geodude = 74
-graveler = 75
-golem = 76
-ponyta = 77
-rapidash = 78
-slowpoke = 79
-slowbro = 80
-magnemite = 81
-magneton = 82
-farfetchd = 83
-doduo = 84
-dodrio = 85
-seel = 86
-dewgong = 87
-grimer = 88
-muk = 89
-shellder = 90
-cloyster = 91
-gastly = 92
-haunter = 93
-gengar = 94
-onix = 95
-drowzee = 96
-hypno = 97
-krabby = 98
-kingler = 99
-voltorb = 100
-electrode = 101
-exeggcute = 102
-exeggutor = 103
-cubone = 104
-marowak = 105
-hitmonlee = 106
-hitmonchan = 107
-lickitung = 108
-koffing = 109
-weezing = 110
-rhyhorn = 111
-rhydon = 112
-chansey = 113
-tangela = 114
-kangaskhan = 115
-horsea = 116
-seadra = 117
-goldeen = 118
-seaking = 119
-staryu = 120
-starmie = 121
-mrmime = 122
-scyther = 123
-jynx = 124
-electabuzz = 125
-magmar = 126
-pinsir = 127
-tauros = 128
-magikarp = 129
-gyarados = 130
-lapras = 131
-ditto = 132
-eevee = 133
-vaporeon = 134
-jolteon = 135
-flareon = 136
-porygon = 137
-omanyte = 138
-omastar = 139
-kabuto = 140
-kabutops = 141
-aerodactyl = 142
-snorlax = 143
-articuno = 144
-zapdos = 145
-moltres = 146
-dratini = 147
-dragonair = 148
-dragonite = 149
-mewtwo = 150
-mew = 151
-chikorita = 152
-bayleef = 153
-meganium = 154
-cyndaquil = 155
-quilava = 156
-typhlosion = 157
-totodile = 158
-croconaw = 159
-feraligatr = 160
-sentret = 161
-furret = 162
-hoothoot = 163
-noctowl = 164
-ledyba = 165
-ledian = 166
-spinarak = 167
-ariados = 168
-crobat = 169
-chinchou = 170
-lanturn = 171
-pichu = 172
-cleffa = 173
-igglybuff = 174
-togepi = 175
-togetic = 176
-natu = 177
-xatu = 178
-mareep = 179
-flaaffy = 180
-ampharos = 181
-bellossom = 182
-marill = 183
-azumarill = 184
-sudowoodo = 185
-politoed = 186
-hoppip = 187
-skiploom = 188
-jumpluff = 189
-aipom = 190
-sunkern = 191
-sunflora = 192
-yanma = 193
-wooper = 194
-quagsire = 195
-espeon = 196
-umbreon = 197
-murkrow = 198
-slowking = 199
-misdreavus = 200
-unown = 201
-wobbuffet = 202
-girafarig = 203
-pineco = 204
-forretress = 205
-dunsparce = 206
-gligar = 207
-steelix = 208
-snubbull = 209
-granbull = 210
-qwilfish = 211
-scizor = 212
-shuckle = 213
-heracross = 214
-sneasel = 215
-teddiursa = 216
-ursaring = 217
-slugma = 218
-magcargo = 219
-swinub = 220
-piloswine = 221
-corsola = 222
-remoraid = 223
-octillery = 224
-delibird = 225
-mantine = 226
-skarmory = 227
-houndour = 228
-houndoom = 229
-kingdra = 230
-phanpy = 231
-donphan = 232
-porygon2 = 233
-stantler = 234
-smeargle = 235
-tyrogue = 236
-hitmontop = 237
-smoochum = 238
-elekid = 239
-magby = 240
-miltank = 241
-blissey = 242
-raikou = 243
-entei = 244
-suicune = 245
-larvitar = 246
-pupitar = 247
-tyranitar = 248
-lugia = 249
-hooh = 250
-celebi = 251
-treecko = 252
-grovyle = 253
-sceptile = 254
-torchic = 255
-combusken = 256
-blaziken = 257
-mudkip = 258
-marshtomp = 259
-swampert = 260
-poochyena = 261
-mightyena = 262
-zigzagoon = 263
-linoone = 264
-wurmple = 265
-silcoon = 266
-beautifly = 267
-cascoon = 268
-dustox = 269
-lotad = 270
-lombre = 271
-ludicolo = 272
-seedot = 273
-nuzleaf = 274
-shiftry = 275
-taillow = 276
-swellow = 277
-wingull = 278
-pelipper = 279
-ralts = 280
-kirlia = 281
-gardevoir = 282
-surskit = 283
-masquerain = 284
-shroomish = 285
-breloom = 286
-slakoth = 287
-vigoroth = 288
-slaking = 289
-nincada = 290
-ninjask = 291
-shedinja = 292
-whismur = 293
-loudred = 294
-exploud = 295
-makuhita = 296
-hariyama = 297
-azurill = 298
-nosepass = 299
-skitty = 300
-delcatty = 301
-sableye = 302
-mawile = 303
-aron = 304
-lairon = 305
-aggron = 306
-meditite = 307
-medicham = 308
-electrike = 309
-manectric = 310
-plusle = 311
-minun = 312
-volbeat = 313
-illumise = 314
-roselia = 315
-gulpin = 316
-swalot = 317
-carvanha = 318
-sharpedo = 319
-wailmer = 320
-wailord = 321
-numel = 322
-camerupt = 323
-torkoal = 324
-spoink = 325
-grumpig = 326
-spinda = 327
-trapinch = 328
-vibrava = 329
-flygon = 330
-cacnea = 331
-cacturne = 332
-swablu = 333
-altaria = 334
-zangoose = 335
-seviper = 336
-lunatone = 337
-solrock = 338
-barboach = 339
-whiscash = 340
-corphish = 341
-crawdaunt = 342
-baltoy = 343
-claydol = 344
-lileep = 345
-cradily = 346
-anorith = 347
-armaldo = 348
-feebas = 349
-milotic = 350
-castform = 351
-kecleon = 352
-shuppet = 353
-banette = 354
-duskull = 355
-dusclops = 356
-tropius = 357
-chimecho = 358
-absol = 359
-wynaut = 360
-snorunt = 361
-glalie = 362
-spheal = 363
-sealeo = 364
-walrein = 365
-clamperl = 366
-huntail = 367
-gorebyss = 368
-relicanth = 369
-luvdisc = 370
-bagon = 371
-shelgon = 372
-salamence = 373
-beldum = 374
-metang = 375
-metagross = 376
-regirock = 377
-regice = 378
-registeel = 379
-latias = 380
-latios = 381
-kyogre = 382
-groudon = 383
-rayquaza = 384
-jirachi = 385
-deoxys = 386
-turtwig = 387
-grotle = 388
-torterra = 389
-chimchar = 390
-monferno = 391
-infernape = 392
-piplup = 393
-prinplup = 394
-empoleon = 395
-starly = 396
-staravia = 397
-staraptor = 398
-bidoof = 399
-bibarel = 400
-kricketot = 401
-kricketune = 402
-shinx = 403
-luxio = 404
-luxray = 405
-budew = 406
-roserade = 407
-cranidos = 408
-rampardos = 409
-shieldon = 410
-bastiodon = 411
-burmy = 412
-wormadam = 413
-mothim = 414
-combee = 415
-vespiquen = 416
-pachirisu = 417
-buizel = 418
-floatzel = 419
-cherubi = 420
-cherrim = 421
-shellos = 422
-gastrodon = 423
-ambipom = 424
-drifloon = 425
-drifblim = 426
-buneary = 427
-lopunny = 428
-mismagius = 429
-honchkrow = 430
-glameow = 431
-purugly = 432
-chingling = 433
-stunky = 434
-skuntank = 435
-bronzor = 436
-bronzong = 437
-bonsly = 438
-mimejr = 439
-happiny = 440
-chatot = 441
-spiritomb = 442
-gible = 443
-gabite = 444
-garchomp = 445
-munchlax = 446
-riolu = 447
-lucario = 448
-hippopotas = 449
-hippowdon = 450
-skorupi = 451
-drapion = 452
-croagunk = 453
-toxicroak = 454
-carnivine = 455
-finneon = 456
-lumineon = 457
-mantyke = 458
-snover = 459
-abomasnow = 460
-weavile = 461
-magnezone = 462
-lickilicky = 463
-rhyperior = 464
-tangrowth = 465
-electivire = 466
-magmortar = 467
-togekiss = 468
-yanmega = 469
-leafeon = 470
-glaceon = 471
-gliscor = 472
-mamoswine = 473
-porygonz = 474
-gallade = 475
-probopass = 476
-dusknoir = 477
-froslass = 478
-rotom = 479
-uxie = 480
-mesprit = 481
-azelf = 482
-dialga = 483
-palkia = 484
-heatran = 485
-regigigas = 486
-giratina = 487
-cresselia = 488
-phione = 489
-manaphy = 490
-darkrai = 491
-shaymin = 492
-arceus = 493
-victini = 494
-snivy = 495
-servine = 496
-serperior = 497
-tepig = 498
-pignite = 499
-emboar = 500
-oshawott = 501
-dewott = 502
-samurott = 503
-patrat = 504
-watchog = 505
-lillipup = 506
-herdier = 507
-stoutland = 508
-purrloin = 509
-liepard = 510
-pansage = 511
-simisage = 512
-pansear = 513
-simisear = 514
-panpour = 515
-simipour = 516
-munna = 517
-musharna = 518
-pidove = 519
-tranquill = 520
-unfezant = 521
-blitzle = 522
-zebstrika = 523
-roggenrola = 524
-boldore = 525
-gigalith = 526
-woobat = 527
-swoobat = 528
-drilbur = 529
-excadrill = 530
-audino = 531
-timburr = 532
-gurdurr = 533
-conkeldurr = 534
-tympole = 535
-palpitoad = 536
-seismitoad = 537
-throh = 538
-sawk = 539
-sewaddle = 540
-swadloon = 541
-leavanny = 542
-venipede = 543
-whirlipede = 544
-scolipede = 545
-cottonee = 546
-whimsicott = 547
-petilil = 548
-lilligant = 549
-basculin = 550
-sandile = 551
-krokorok = 552
-krookodile = 553
-darumaka = 554
-darmanitan = 555
-maractus = 556
-dwebble = 557
-crustle = 558
-scraggy = 559
-scrafty = 560
-sigilyph = 561
-yamask = 562
-cofagrigus = 563
-tirtouga = 564
-carracosta = 565
-archen = 566
-archeops = 567
-trubbish = 568
-garbodor = 569
-zorua = 570
-zoroark = 571
-minccino = 572
-cinccino = 573
-gothita = 574
-gothorita = 575
-gothitelle = 576
-solosis = 577
-duosion = 578
-reuniclus = 579
-ducklett = 580
-swanna = 581
-vanillite = 582
-vanillish = 583
-vanilluxe = 584
-deerling = 585
-sawsbuck = 586
-emolga = 587
-karrablast = 588
-escavalier = 589
-foongus = 590
-amoonguss = 591
-frillish = 592
-jellicent = 593
-alomomola = 594
-joltik = 595
-galvantula = 596
-ferroseed = 597
-ferrothorn = 598
-klink = 599
-klang = 600
-klinklang = 601
-tynamo = 602
-eelektrik = 603
-eelektross = 604
-elgyem = 605
-beheeyem = 606
-litwick = 607
-lampent = 608
-chandelure = 609
-axew = 610
-fraxure = 611
-haxorus = 612
-cubchoo = 613
-beartic = 614
-cryogonal = 615
-shelmet = 616
-accelgor = 617
-stunfisk = 618
-mienfoo = 619
-mienshao = 620
-druddigon = 621
-golett = 622
-golurk = 623
-pawniard = 624
-bisharp = 625
-bouffalant = 626
-rufflet = 627
-braviary = 628
-vullaby = 629
-mandibuzz = 630
-heatmor = 631
-durant = 632
-deino = 633
-zweilous = 634
-hydreigon = 635
-larvesta = 636
-volcarona = 637
-cobalion = 638
-terrakion = 639
-virizion = 640
-tornadus = 641
-thundurus = 642
-reshiram = 643
-zekrom = 644
-landorus = 645
-kyurem = 646
-keldeo = 647
-meloetta = 648
-genesect = 649
-chespin = 650
-quilladin = 651
-chesnaught = 652
-fennekin = 653
-braixen = 654
-delphox = 655
-froakie = 656
-frogadier = 657
-greninja = 658
-bunnelby = 659
-diggersby = 660
-fletchling = 661
-fletchinder = 662
-talonflame = 663
-scatterbug = 664
-spewpa = 665
-vivillon = 666
-litleo = 667
-pyroar = 668
-flabb = 669
-floette = 670
-florges = 671
-skiddo = 672
-gogoat = 673
-pancham = 674
-pangoro = 675
-furfrou = 676
-espurr = 677
-meowstic = 678
-honedge = 679
-doublade = 680
-aegislash = 681
-spritzee = 682
-aromatisse = 683
-swirlix = 684
-slurpuff = 685
-inkay = 686
-malamar = 687
-binacle = 688
-barbaracle = 689
-skrelp = 690
-dragalge = 691
-clauncher = 692
-clawitzer = 693
-helioptile = 694
-heliolisk = 695
-tyrunt = 696
-tyrantrum = 697
-amaura = 698
-aurorus = 699
-sylveon = 700
-hawlucha = 701
-dedenne = 702
-carbink = 703
-goomy = 704
-sliggoo = 705
-goodra = 706
-klefki = 707
-phantump = 708
-trevenant = 709
-pumpkaboo = 710
-gourgeist = 711
-bergmite = 712
-avalugg = 713
-noibat = 714
-noivern = 715
-xerneas = 716
-yveltal = 717
-zygarde = 718
-diancie = 719
-hoopa = 720
-volcanion = 721
-rowlet = 722
-dartrix = 723
-decidueye = 724
-litten = 725
-torracat = 726
-incineroar = 727
-popplio = 728
-brionne = 729
-primarina = 730
-pikipek = 731
-trumbeak = 732
-toucannon = 733
-yungoos = 734
-gumshoos = 735
-grubbin = 736
-charjabug = 737
-vikavolt = 738
-crabrawler = 739
-crabominable = 740
-oricorio = 741
-cutiefly = 742
-ribombee = 743
-rockruff = 744
-lycanroc = 745
-wishiwashi = 746
-mareanie = 747
-toxapex = 748
-mudbray = 749
-mudsdale = 750
-dewpider = 751
-araquanid = 752
-fomantis = 753
-lurantis = 754
-morelull = 755
-shiinotic = 756
-salandit = 757
-salazzle = 758
-stufful = 759
-bewear = 760
-bounsweet = 761
-steenee = 762
-tsareena = 763
-comfey = 764
-oranguru = 765
-passimian = 766
-wimpod = 767
-golisopod = 768
-sandygast = 769
-palossand = 770
-pyukumuku = 771
-typenull = 772
-silvally = 773
-minior = 774
-komala = 775
-turtonator = 776
-togedemaru = 777
-mimikyu = 778
-bruxish = 779
-drampa = 780
-dhelmise = 781
-jangmoo = 782
-hakamoo = 783
-kommoo = 784
-tapukoko = 785
-tapulele = 786
-tapubulu = 787
-tapufini = 788
-cosmog = 789
-cosmoem = 790
-solgaleo = 791
-lunala = 792
-nihilego = 793
-buzzwole = 794
-pheromosa = 795
-xurkitree = 796
-celesteela = 797
-kartana = 798
-guzzlord = 799
-necrozma = 800
-magearna = 801
-marshadow = 802
-none = 0
-pound = 1
-karatechop = 2
-doubleslap = 3
-cometpunch = 4
-megapunch = 5
-payday = 6
-firepunch = 7
-icepunch = 8
-thunderpunch = 9
-scratch = 10
-vicegrip = 11
-guillotine = 12
-razorwind = 13
-swordsdance = 14
-cut = 15
-gust = 16
-wingattack = 17
-whirlwind = 18
-fly = 19
-bind = 20
-slam = 21
-vinewhip = 22
-stomp = 23
-doublekick = 24
-megakick = 25
-jumpkick = 26
-rollingkick = 27
-sandattack = 28
-headbutt = 29
-hornattack = 30
-furyattack = 31
-horndrill = 32
-tackle = 33
-bodyslam = 34
-wrap = 35
-takedown = 36
-thrash = 37
-doubleedge = 38
-tailwhip = 39
-poisonsting = 40
-twineedle = 41
-pinmissile = 42
-leer = 43
-bite = 44
-growl = 45
-roar = 46
-sing = 47
-supersonic = 48
-sonicboom = 49
-disable = 50
-acid = 51
-ember = 52
-flamethrower = 53
-mist = 54
-watergun = 55
-hydropump = 56
-surf = 57
-icebeam = 58
-blizzard = 59
-psybeam = 60
-bubblebeam = 61
-aurorabeam = 62
-hyperbeam = 63
-peck = 64
-drillpeck = 65
-submission = 66
-lowkick = 67
-counter = 68
-seismictoss = 69
-strength = 70
-absorb = 71
-megadrain = 72
-leechseed = 73
-growth = 74
-razorleaf = 75
-solarbeam = 76
-poisonpowder = 77
-stunspore = 78
-sleeppowder = 79
-petaldance = 80
-stringshot = 81
-dragonrage = 82
-firespin = 83
-thundershock = 84
-thunderbolt = 85
-thunderwave = 86
-thunder = 87
-rockthrow = 88
-earthquake = 89
-fissure = 90
-dig = 91
-toxic = 92
-confusion = 93
-psychic = 94
-hypnosis = 95
-meditate = 96
-agility = 97
-quickattack = 98
-rage = 99
-teleport = 100
-nightshade = 101
-mimic = 102
-screech = 103
-doubleteam = 104
-recover = 105
-harden = 106
-minimize = 107
-smokescreen = 108
-confuseray = 109
-withdraw = 110
-defensecurl = 111
-barrier = 112
-lightscreen = 113
-haze = 114
-reflect = 115
-focusenergy = 116
-bide = 117
-metronome = 118
-mirrormove = 119
-selfdestruct = 120
-eggbomb = 121
-lick = 122
-smog = 123
-sludge = 124
-boneclub = 125
-fireblast = 126
-waterfall = 127
-clamp = 128
-swift = 129
-skullbash = 130
-spikecannon = 131
-constrict = 132
-amnesia = 133
-kinesis = 134
-softboiled = 135
-highjumpkick = 136
-glare = 137
-dreameater = 138
-poisongas = 139
-barrage = 140
-leechlife = 141
-lovelykiss = 142
-skyattack = 143
-transform = 144
-bubble = 145
-dizzypunch = 146
-spore = 147
-flash = 148
-psywave = 149
-splash = 150
-acidarmor = 151
-crabhammer = 152
-explosion = 153
-furyswipes = 154
-bonemerang = 155
-rest = 156
-rockslide = 157
-hyperfang = 158
-sharpen = 159
-conversion = 160
-triattack = 161
-superfang = 162
-slash = 163
-substitute = 164
-struggle = 165
-sketch = 166
-triplekick = 167
-thief = 168
-spiderweb = 169
-mindreader = 170
-nightmare = 171
-flamewheel = 172
-snore = 173
-curse = 174
-flail = 175
-conversion2 = 176
-aeroblast = 177
-cottonspore = 178
-reversal = 179
-spite = 180
-powdersnow = 181
-protect = 182
-machpunch = 183
-scaryface = 184
-feintattack = 185
-sweetkiss = 186
-bellydrum = 187
-sludgebomb = 188
-mudslap = 189
-octazooka = 190
-spikes = 191
-zapcannon = 192
-foresight = 193
-destinybond = 194
-perishsong = 195
-icywind = 196
-detect = 197
-bonerush = 198
-lockon = 199
-outrage = 200
-sandstorm = 201
-gigadrain = 202
-endure = 203
-charm = 204
-rollout = 205
-falseswipe = 206
-swagger = 207
-milkdrink = 208
-spark = 209
-furycutter = 210
-steelwing = 211
-meanlook = 212
-attract = 213
-sleeptalk = 214
-healbell = 215
-__return = 216
-present = 217
-frustration = 218
-safeguard = 219
-painsplit = 220
-sacredfire = 221
-magnitude = 222
-dynamicpunch = 223
-megahorn = 224
-dragonbreath = 225
-batonpass = 226
-encore = 227
-pursuit = 228
-rapidspin = 229
-sweetscent = 230
-irontail = 231
-metalclaw = 232
-vitalthrow = 233
-morningsun = 234
-synthesis = 235
-moonlight = 236
-hiddenpower = 237
-crosschop = 238
-twister = 239
-raindance = 240
-sunnyday = 241
-crunch = 242
-mirrorcoat = 243
-psychup = 244
-extremespeed = 245
-ancientpower = 246
-shadowball = 247
-futuresight = 248
-rocksmash = 249
-whirlpool = 250
-beatup = 251
-fakeout = 252
-uproar = 253
-stockpile = 254
-spitup = 255
-swallow = 256
-heatwave = 257
-hail = 258
-torment = 259
-flatter = 260
-willowisp = 261
-memento = 262
-facade = 263
-focuspunch = 264
-smellingsalts = 265
-followme = 266
-naturepower = 267
-charge = 268
-taunt = 269
-helpinghand = 270
-trick = 271
-roleplay = 272
-wish = 273
-assist = 274
-ingrain = 275
-superpower = 276
-magiccoat = 277
-recycle = 278
-revenge = 279
-brickbreak = 280
-yawn = 281
-knockoff = 282
-endeavor = 283
-eruption = 284
-skillswap = 285
-imprison = 286
-refresh = 287
-grudge = 288
-snatch = 289
-secretpower = 290
-dive = 291
-armthrust = 292
-camouflage = 293
-tailglow = 294
-lusterpurge = 295
-mistball = 296
-featherdance = 297
-teeterdance = 298
-blazekick = 299
-mudsport = 300
-iceball = 301
-needlearm = 302
-slackoff = 303
-hypervoice = 304
-poisonfang = 305
-crushclaw = 306
-blastburn = 307
-hydrocannon = 308
-meteormash = 309
-astonish = 310
-weatherball = 311
-aromatherapy = 312
-faketears = 313
-aircutter = 314
-overheat = 315
-odorsleuth = 316
-rocktomb = 317
-silverwind = 318
-metalsound = 319
-grasswhistle = 320
-tickle = 321
-cosmicpower = 322
-waterspout = 323
-signalbeam = 324
-shadowpunch = 325
-extrasensory = 326
-skyuppercut = 327
-sandtomb = 328
-sheercold = 329
-muddywater = 330
-bulletseed = 331
-aerialace = 332
-iciclespear = 333
-irondefense = 334
-block = 335
-howl = 336
-dragonclaw = 337
-frenzyplant = 338
-bulkup = 339
-bounce = 340
-mudshot = 341
-poisontail = 342
-covet = 343
-volttackle = 344
-magicalleaf = 345
-watersport = 346
-calmmind = 347
-leafblade = 348
-dragondance = 349
-rockblast = 350
-shockwave = 351
-waterpulse = 352
-doomdesire = 353
-psychoboost = 354
-roost = 355
-gravity = 356
-miracleeye = 357
-wakeupslap = 358
-hammerarm = 359
-gyroball = 360
-healingwish = 361
-brine = 362
-naturalgift = 363
-feint = 364
-pluck = 365
-tailwind = 366
-acupressure = 367
-metalburst = 368
-uturn = 369
-closecombat = 370
-payback = 371
-assurance = 372
-embargo = 373
-fling = 374
-psychoshift = 375
-trumpcard = 376
-healblock = 377
-wringout = 378
-powertrick = 379
-gastroacid = 380
-luckychant = 381
-mefirst = 382
-copycat = 383
-powerswap = 384
-guardswap = 385
-punishment = 386
-lastresort = 387
-worryseed = 388
-suckerpunch = 389
-toxicspikes = 390
-heartswap = 391
-aquaring = 392
-magnetrise = 393
-flareblitz = 394
-forcepalm = 395
-aurasphere = 396
-rockpolish = 397
-poisonjab = 398
-darkpulse = 399
-nightslash = 400
-aquatail = 401
-seedbomb = 402
-airslash = 403
-xscissor = 404
-bugbuzz = 405
-dragonpulse = 406
-dragonrush = 407
-powergem = 408
-drainpunch = 409
-vacuumwave = 410
-focusblast = 411
-energyball = 412
-bravebird = 413
-earthpower = 414
-switcheroo = 415
-gigaimpact = 416
-nastyplot = 417
-bulletpunch = 418
-avalanche = 419
-iceshard = 420
-shadowclaw = 421
-thunderfang = 422
-icefang = 423
-firefang = 424
-shadowsneak = 425
-mudbomb = 426
-psychocut = 427
-zenheadbutt = 428
-mirrorshot = 429
-flashcannon = 430
-rockclimb = 431
-defog = 432
-trickroom = 433
-dracometeor = 434
-discharge = 435
-lavaplume = 436
-leafstorm = 437
-powerwhip = 438
-rockwrecker = 439
-crosspoison = 440
-gunkshot = 441
-ironhead = 442
-magnetbomb = 443
-stoneedge = 444
-captivate = 445
-stealthrock = 446
-grassknot = 447
-chatter = 448
-judgment = 449
-bugbite = 450
-chargebeam = 451
-woodhammer = 452
-aquajet = 453
-attackorder = 454
-defendorder = 455
-healorder = 456
-headsmash = 457
-doublehit = 458
-roaroftime = 459
-spacialrend = 460
-lunardance = 461
-crushgrip = 462
-magmastorm = 463
-darkvoid = 464
-seedflare = 465
-ominouswind = 466
-shadowforce = 467
-honeclaws = 468
-wideguard = 469
-guardsplit = 470
-powersplit = 471
-wonderroom = 472
-psyshock = 473
-venoshock = 474
-autotomize = 475
-ragepowder = 476
-telekinesis = 477
-magicroom = 478
-smackdown = 479
-stormthrow = 480
-flameburst = 481
-sludgewave = 482
-quiverdance = 483
-heavyslam = 484
-synchronoise = 485
-electroball = 486
-soak = 487
-flamecharge = 488
-coil = 489
-lowsweep = 490
-acidspray = 491
-foulplay = 492
-simplebeam = 493
-entrainment = 494
-afteryou = 495
-round = 496
-echoedvoice = 497
-chipaway = 498
-clearsmog = 499
-storedpower = 500
-quickguard = 501
-allyswitch = 502
-scald = 503
-shellsmash = 504
-healpulse = 505
-hex = 506
-skydrop = 507
-shiftgear = 508
-circlethrow = 509
-incinerate = 510
-quash = 511
-acrobatics = 512
-reflecttype = 513
-retaliate = 514
-finalgambit = 515
-bestow = 516
-inferno = 517
-waterpledge = 518
-firepledge = 519
-grasspledge = 520
-voltswitch = 521
-strugglebug = 522
-bulldoze = 523
-frostbreath = 524
-dragontail = 525
-workup = 526
-electroweb = 527
-wildcharge = 528
-drillrun = 529
-dualchop = 530
-heartstamp = 531
-hornleech = 532
-sacredsword = 533
-razorshell = 534
-heatcrash = 535
-leaftornado = 536
-steamroller = 537
-cottonguard = 538
-nightdaze = 539
-psystrike = 540
-tailslap = 541
-hurricane = 542
-headcharge = 543
-geargrind = 544
-searingshot = 545
-technoblast = 546
-relicsong = 547
-secretsword = 548
-glaciate = 549
-boltstrike = 550
-blueflare = 551
-fierydance = 552
-freezeshock = 553
-iceburn = 554
-snarl = 555
-iciclecrash = 556
-vcreate = 557
-fusionflare = 558
-fusionbolt = 559
-flyingpress = 560
-matblock = 561
-belch = 562
-rototiller = 563
-stickyweb = 564
-fellstinger = 565
-phantomforce = 566
-trickortreat = 567
-nobleroar = 568
-iondeluge = 569
-paraboliccharge = 570
-forestscurse = 571
-petalblizzard = 572
-freezedry = 573
-disarmingvoice = 574
-partingshot = 575
-topsyturvy = 576
-drainingkiss = 577
-craftyshield = 578
-flowershield = 579
-grassyterrain = 580
-mistyterrain = 581
-electrify = 582
-playrough = 583
-fairywind = 584
-moonblast = 585
-boomburst = 586
-fairylock = 587
-kingsshield = 588
-playnice = 589
-confide = 590
-diamondstorm = 591
-steameruption = 592
-hyperspacehole = 593
-watershuriken = 594
-mysticalfire = 595
-spikyshield = 596
-aromaticmist = 597
-eerieimpulse = 598
-venomdrench = 599
-powder = 600
-geomancy = 601
-magneticflux = 602
-happyhour = 603
-electricterrain = 604
-dazzlinggleam = 605
-celebrate = 606
-holdhands = 607
-babydolleyes = 608
-nuzzle = 609
-holdback = 610
-infestation = 611
-poweruppunch = 612
-oblivionwing = 613
-thousandarrows = 614
-thousandwaves = 615
-landswrath = 616
-lightofruin = 617
-originpulse = 618
-precipiceblades = 619
-dragonascent = 620
-hyperspacefury = 621
-breakneckblitz = 622
-alloutpummeling = 624
-supersonicskystrike = 626
-aciddownpour = 628
-tectonicrage = 630
-continentalcrush = 632
-savagespinout = 634
-neverendingnightmare = 636
-corkscrewcrash = 638
-infernooverdrive = 640
-hydrovortex = 642
-bloomdoom = 644
-gigavolthavoc = 646
-shatteredpsyche = 648
-subzeroslammer = 650
-devastatingdrake = 652
-blackholeeclipse = 654
-twinkletackle = 656
-catastropika = 658
-shoreup = 659
-firstimpression = 660
-banefulbunker = 661
-spiritshackle = 662
-darkestlariat = 663
-sparklingaria = 664
-icehammer = 665
-floralhealing = 666
-highhorsepower = 667
-strengthsap = 668
-solarblade = 669
-leafage = 670
-spotlight = 671
-toxicthread = 672
-laserfocus = 673
-gearup = 674
-throatchop = 675
-pollenpuff = 676
-anchorshot = 677
-psychicterrain = 678
-lunge = 679
-firelash = 680
-powertrip = 681
-burnup = 682
-speedswap = 683
-smartstrike = 684
-purify = 685
-revelationdance = 686
-coreenforcer = 687
-tropkick = 688
-instruct = 689
-beakblast = 690
-clangingscales = 691
-dragonhammer = 692
-brutalswing = 693
-auroraveil = 694
-sinisterarrowraid = 695
-maliciousmoonsault = 696
-oceanicoperetta = 697
-guardianofalola = 698
-soulstealing7starstrike = 699
-stokedsparksurfer = 700
-pulverizingpancake = 701
-extremeevoboost = 702
-genesissupernova = 703
-shelltrap = 704
-fleurcannon = 705
-psychicfangs = 706
-stompingtantrum = 707
-shadowbone = 708
-accelerock = 709
-liquidation = 710
-prismaticlaser = 711
-spectralthief = 712
-sunsteelstrike = 713
-moongeistbeam = 714
-tearfullook = 715
-zingzap = 716
-naturesmadness = 717
-multiattack = 718
-_10000000voltthunderbolt = 719
-__None13 = 0
-adamant = 1
-bashful = 2
-bold = 3
-brave = 4
-calm = 5
-careful = 6
-docile = 7
-gentle = 8
-hardy = 9
-hasty = 10
-impish = 11
-jolly = 12
-lax = 13
-lonely = 14
-mild = 15
-modest = 16
-naive = 17
-naughty = 18
-quiet = 19
-quirky = 20
-rash = 21
-relaxed = 22
-sassy = 23
-serious = 24
-timid = 25
-__None14 = 0
-Manual = 1
-Level6 = 2
-Item1 = 3
-Badge = 4
-Pokemon2 = 5
-Money0 = 6
-Gold2 = 7
-__None15 = 0
-Main = 1
-Side = 2
-Bounty = 3
-Daily = 4
-Hidden = 5
-__None16 = 0
-Developer = 1
-GameModerator = 2
-Moderator0 = 3
-Normal1 = 0
-Rain = 1
-Snow = 2
 
+_PREFIX_AGDFASBV2118046871 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV2118046871',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV2118046871',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV2118046871_ABILITYSLOTTYPE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=66,
+  serialized_end=161,
+)
+
+
+_PREFIX_AGDFASBV1901072364 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1901072364',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1901072364',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1901072364_ACTORAVATARTYPE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=163,
+  serialized_end=243,
+)
+
+
+_PREFIX_AGDFASBV1230468151 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1230468151',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1230468151',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1230468151_ACTORTEAM,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=245,
+  serialized_end=322,
+)
+
+
+_PREFIX_AGDFASBV749316793 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV749316793',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV749316793',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV749316793_ACTORTIMER,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=324,
+  serialized_end=408,
+)
+
+
+_PREFIX_AGDFASBV590365810 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV590365810',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV590365810',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV590365810_ACTORTYPE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=410,
+  serialized_end=522,
+)
 
 
 _BANNED = _descriptor.Descriptor(
   name='Banned',
-  full_name='PSXAPI.Response155921581865.Banned',
+  full_name='PSXAPI.Response1375634093.Banned',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Permanent', full_name='PSXAPI.Response155921581865.Banned.Permanent', index=0,
+      name='Permanent', full_name='PSXAPI.Response1375634093.Banned.Permanent', index=0,
       number=1, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Remaining', full_name='PSXAPI.Response155921581865.Banned.Remaining', index=1,
+      name='Remaining', full_name='PSXAPI.Response1375634093.Banned.Remaining', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Reason', full_name='PSXAPI.Response155921581865.Banned.Reason', index=2,
+      name='Reason', full_name='PSXAPI.Response1375634093.Banned.Reason', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -9089,97 +8289,97 @@ _BANNED = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=55,
-  serialized_end=139,
+  serialized_start=524,
+  serialized_end=608,
 )
 
 
 _BATTLE = _descriptor.Descriptor(
   name='Battle',
-  full_name='PSXAPI.Response155921581865.Battle',
+  full_name='PSXAPI.Response1375634093.Battle',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Log', full_name='PSXAPI.Response155921581865.Battle.Log', index=0,
+      name='Log', full_name='PSXAPI.Response1375634093.Battle.Log', index=0,
       number=1, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Request1', full_name='PSXAPI.Response155921581865.Battle.Request1', index=1,
+      name='Request1', full_name='PSXAPI.Response1375634093.Battle.Request1', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Request2', full_name='PSXAPI.Response155921581865.Battle.Request2', index=2,
+      name='Request2', full_name='PSXAPI.Response1375634093.Battle.Request2', index=2,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Ended', full_name='PSXAPI.Response155921581865.Battle.Ended', index=3,
+      name='Ended', full_name='PSXAPI.Response1375634093.Battle.Ended', index=3,
       number=4, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Mapping1', full_name='PSXAPI.Response155921581865.Battle.Mapping1', index=4,
+      name='Mapping1', full_name='PSXAPI.Response1375634093.Battle.Mapping1', index=4,
       number=5, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Mapping2', full_name='PSXAPI.Response155921581865.Battle.Mapping2', index=5,
+      name='Mapping2', full_name='PSXAPI.Response1375634093.Battle.Mapping2', index=5,
       number=6, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Timer', full_name='PSXAPI.Response155921581865.Battle.Timer', index=6,
+      name='Timer', full_name='PSXAPI.Response1375634093.Battle.Timer', index=6,
       number=7, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='BackgroundID', full_name='PSXAPI.Response155921581865.Battle.BackgroundID', index=7,
+      name='BackgroundID', full_name='PSXAPI.Response1375634093.Battle.BackgroundID', index=7,
       number=8, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanCatch', full_name='PSXAPI.Response155921581865.Battle.CanCatch', index=8,
+      name='CanCatch', full_name='PSXAPI.Response1375634093.Battle.CanCatch', index=8,
       number=9, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanEscape', full_name='PSXAPI.Response155921581865.Battle.CanEscape', index=9,
+      name='CanEscape', full_name='PSXAPI.Response1375634093.Battle.CanEscape', index=9,
       number=10, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanUseItem', full_name='PSXAPI.Response155921581865.Battle.CanUseItem', index=10,
+      name='CanUseItem', full_name='PSXAPI.Response1375634093.Battle.CanUseItem', index=10,
       number=11, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='BattleID', full_name='PSXAPI.Response155921581865.Battle.BattleID', index=11,
+      name='BattleID', full_name='PSXAPI.Response1375634093.Battle.BattleID', index=11,
       number=12, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -9197,69 +8397,69 @@ _BATTLE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=142,
-  serialized_end=487,
+  serialized_start=611,
+  serialized_end=952,
 )
 
 
 _BATTLEACTIVE = _descriptor.Descriptor(
   name='BattleActive',
-  full_name='PSXAPI.Response155921581865.BattleActive',
+  full_name='PSXAPI.Response1375634093.BattleActive',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='moves', full_name='PSXAPI.Response155921581865.BattleActive.moves', index=0,
+      name='moves', full_name='PSXAPI.Response1375634093.BattleActive.moves', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='maybeDisabled', full_name='PSXAPI.Response155921581865.BattleActive.maybeDisabled', index=1,
+      name='maybeDisabled', full_name='PSXAPI.Response1375634093.BattleActive.maybeDisabled', index=1,
       number=2, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='trapped', full_name='PSXAPI.Response155921581865.BattleActive.trapped', index=2,
+      name='trapped', full_name='PSXAPI.Response1375634093.BattleActive.trapped', index=2,
       number=3, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='maybeTrapped', full_name='PSXAPI.Response155921581865.BattleActive.maybeTrapped', index=3,
+      name='maybeTrapped', full_name='PSXAPI.Response1375634093.BattleActive.maybeTrapped', index=3,
       number=4, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='canMegaEvo', full_name='PSXAPI.Response155921581865.BattleActive.canMegaEvo', index=4,
+      name='canMegaEvo', full_name='PSXAPI.Response1375634093.BattleActive.canMegaEvo', index=4,
       number=5, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='canZMove', full_name='PSXAPI.Response155921581865.BattleActive.canZMove', index=5,
+      name='canZMove', full_name='PSXAPI.Response1375634093.BattleActive.canZMove', index=5,
       number=6, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='trainer', full_name='PSXAPI.Response155921581865.BattleActive.trainer', index=6,
+      name='trainer', full_name='PSXAPI.Response1375634093.BattleActive.trainer', index=6,
       number=7, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='personality', full_name='PSXAPI.Response155921581865.BattleActive.personality', index=7,
+      name='personality', full_name='PSXAPI.Response1375634093.BattleActive.personality', index=7,
       number=8, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -9277,55 +8477,55 @@ _BATTLEACTIVE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=490,
-  serialized_end=765,
+  serialized_start=955,
+  serialized_end=1226,
 )
 
 
 _BATTLEMOVE = _descriptor.Descriptor(
   name='BattleMove',
-  full_name='PSXAPI.Response155921581865.BattleMove',
+  full_name='PSXAPI.Response1375634093.BattleMove',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='move0', full_name='PSXAPI.Response155921581865.BattleMove.move0', index=0,
+      name='move', full_name='PSXAPI.Response1375634093.BattleMove.move', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='id', full_name='PSXAPI.Response155921581865.BattleMove.id', index=1,
+      name='id', full_name='PSXAPI.Response1375634093.BattleMove.id', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='pp', full_name='PSXAPI.Response155921581865.BattleMove.pp', index=2,
+      name='pp', full_name='PSXAPI.Response1375634093.BattleMove.pp', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='maxpp', full_name='PSXAPI.Response155921581865.BattleMove.maxpp', index=3,
+      name='maxpp', full_name='PSXAPI.Response1375634093.BattleMove.maxpp', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='target', full_name='PSXAPI.Response155921581865.BattleMove.target', index=4,
+      name='target', full_name='PSXAPI.Response1375634093.BattleMove.target', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='disabled', full_name='PSXAPI.Response155921581865.BattleMove.disabled', index=5,
+      name='disabled', full_name='PSXAPI.Response1375634093.BattleMove.disabled', index=5,
       number=6, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -9343,97 +8543,97 @@ _BATTLEMOVE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=767,
-  serialized_end=880,
+  serialized_start=1228,
+  serialized_end=1340,
 )
 
 
 _BATTLEPOKEMON = _descriptor.Descriptor(
   name='BattlePokemon',
-  full_name='PSXAPI.Response155921581865.BattlePokemon',
+  full_name='PSXAPI.Response1375634093.BattlePokemon',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='ident', full_name='PSXAPI.Response155921581865.BattlePokemon.ident', index=0,
+      name='ident', full_name='PSXAPI.Response1375634093.BattlePokemon.ident', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='details', full_name='PSXAPI.Response155921581865.BattlePokemon.details', index=1,
+      name='details', full_name='PSXAPI.Response1375634093.BattlePokemon.details', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='condition', full_name='PSXAPI.Response155921581865.BattlePokemon.condition', index=2,
+      name='condition', full_name='PSXAPI.Response1375634093.BattlePokemon.condition', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='active', full_name='PSXAPI.Response155921581865.BattlePokemon.active', index=3,
+      name='active', full_name='PSXAPI.Response1375634093.BattlePokemon.active', index=3,
       number=4, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='stats', full_name='PSXAPI.Response155921581865.BattlePokemon.stats', index=4,
+      name='stats', full_name='PSXAPI.Response1375634093.BattlePokemon.stats', index=4,
       number=5, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='moves', full_name='PSXAPI.Response155921581865.BattlePokemon.moves', index=5,
+      name='moves', full_name='PSXAPI.Response1375634093.BattlePokemon.moves', index=5,
       number=6, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='baseAbility', full_name='PSXAPI.Response155921581865.BattlePokemon.baseAbility', index=6,
+      name='baseAbility', full_name='PSXAPI.Response1375634093.BattlePokemon.baseAbility', index=6,
       number=7, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='item', full_name='PSXAPI.Response155921581865.BattlePokemon.item', index=7,
+      name='item', full_name='PSXAPI.Response1375634093.BattlePokemon.item', index=7,
       number=8, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='pokeball', full_name='PSXAPI.Response155921581865.BattlePokemon.pokeball', index=8,
+      name='pokeball', full_name='PSXAPI.Response1375634093.BattlePokemon.pokeball', index=8,
       number=9, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='trainer', full_name='PSXAPI.Response155921581865.BattlePokemon.trainer', index=9,
+      name='trainer', full_name='PSXAPI.Response1375634093.BattlePokemon.trainer', index=9,
       number=10, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='personality', full_name='PSXAPI.Response155921581865.BattlePokemon.personality', index=10,
+      name='personality', full_name='PSXAPI.Response1375634093.BattlePokemon.personality', index=10,
       number=11, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='moveData', full_name='PSXAPI.Response155921581865.BattlePokemon.moveData', index=11,
+      name='moveData', full_name='PSXAPI.Response1375634093.BattlePokemon.moveData', index=11,
       number=12, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -9451,48 +8651,48 @@ _BATTLEPOKEMON = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=883,
-  serialized_end=1204,
+  serialized_start=1343,
+  serialized_end=1660,
 )
 
 
 _BATTLEPOKEMONSTATS = _descriptor.Descriptor(
   name='BattlePokemonStats',
-  full_name='PSXAPI.Response155921581865.BattlePokemonStats',
+  full_name='PSXAPI.Response1375634093.BattlePokemonStats',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='atk', full_name='PSXAPI.Response155921581865.BattlePokemonStats.atk', index=0,
+      name='atk', full_name='PSXAPI.Response1375634093.BattlePokemonStats.atk', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='def', full_name='PSXAPI.Response155921581865.BattlePokemonStats.def', index=1,
+      name='def', full_name='PSXAPI.Response1375634093.BattlePokemonStats.def', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='spa', full_name='PSXAPI.Response155921581865.BattlePokemonStats.spa', index=2,
+      name='spa', full_name='PSXAPI.Response1375634093.BattlePokemonStats.spa', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='spd', full_name='PSXAPI.Response155921581865.BattlePokemonStats.spd', index=3,
+      name='spd', full_name='PSXAPI.Response1375634093.BattlePokemonStats.spd', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='spe', full_name='PSXAPI.Response155921581865.BattlePokemonStats.spe', index=4,
+      name='spe', full_name='PSXAPI.Response1375634093.BattlePokemonStats.spe', index=4,
       number=5, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -9510,34 +8710,34 @@ _BATTLEPOKEMONSTATS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1206,
-  serialized_end=1306,
+  serialized_start=1662,
+  serialized_end=1762,
 )
 
 
 _BATTLEREQUEST = _descriptor.Descriptor(
   name='BattleRequest',
-  full_name='PSXAPI.Response155921581865.BattleRequest',
+  full_name='PSXAPI.Response1375634093.BattleRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Player', full_name='PSXAPI.Response155921581865.BattleRequest.Player', index=0,
+      name='Player', full_name='PSXAPI.Response1375634093.BattleRequest.Player', index=0,
       number=1, type=9, cpp_type=9, label=2,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='RequestID', full_name='PSXAPI.Response155921581865.BattleRequest.RequestID', index=1,
+      name='RequestID', full_name='PSXAPI.Response1375634093.BattleRequest.RequestID', index=1,
       number=2, type=5, cpp_type=1, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='RequestInfo', full_name='PSXAPI.Response155921581865.BattleRequest.RequestInfo', index=2,
+      name='RequestInfo', full_name='PSXAPI.Response1375634093.BattleRequest.RequestInfo', index=2,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -9555,62 +8755,62 @@ _BATTLEREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1308,
-  serialized_end=1427,
+  serialized_start=1764,
+  serialized_end=1881,
 )
 
 
 _BATTLEREQUESTDATA = _descriptor.Descriptor(
   name='BattleRequestData',
-  full_name='PSXAPI.Response155921581865.BattleRequestData',
+  full_name='PSXAPI.Response1375634093.BattleRequestData',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='rqid', full_name='PSXAPI.Response155921581865.BattleRequestData.rqid', index=0,
+      name='rqid', full_name='PSXAPI.Response1375634093.BattleRequestData.rqid', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='noCancel', full_name='PSXAPI.Response155921581865.BattleRequestData.noCancel', index=1,
+      name='noCancel', full_name='PSXAPI.Response1375634093.BattleRequestData.noCancel', index=1,
       number=2, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='teamPreview', full_name='PSXAPI.Response155921581865.BattleRequestData.teamPreview', index=2,
+      name='teamPreview', full_name='PSXAPI.Response1375634093.BattleRequestData.teamPreview', index=2,
       number=3, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='wait', full_name='PSXAPI.Response155921581865.BattleRequestData.wait', index=3,
+      name='wait', full_name='PSXAPI.Response1375634093.BattleRequestData.wait', index=3,
       number=4, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='forceSwitch', full_name='PSXAPI.Response155921581865.BattleRequestData.forceSwitch', index=4,
+      name='forceSwitch', full_name='PSXAPI.Response1375634093.BattleRequestData.forceSwitch', index=4,
       number=5, type=8, cpp_type=7, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='active', full_name='PSXAPI.Response155921581865.BattleRequestData.active', index=5,
+      name='active', full_name='PSXAPI.Response1375634093.BattleRequestData.active', index=5,
       number=6, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='side', full_name='PSXAPI.Response155921581865.BattleRequestData.side', index=6,
+      name='side', full_name='PSXAPI.Response1375634093.BattleRequestData.side', index=6,
       number=7, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -9628,34 +8828,34 @@ _BATTLEREQUESTDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1430,
-  serialized_end=1675,
+  serialized_start=1884,
+  serialized_end=2125,
 )
 
 
 _BATTLESIDE = _descriptor.Descriptor(
   name='BattleSide',
-  full_name='PSXAPI.Response155921581865.BattleSide',
+  full_name='PSXAPI.Response1375634093.BattleSide',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='name', full_name='PSXAPI.Response155921581865.BattleSide.name', index=0,
+      name='name', full_name='PSXAPI.Response1375634093.BattleSide.name', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='id', full_name='PSXAPI.Response155921581865.BattleSide.id', index=1,
+      name='id', full_name='PSXAPI.Response1375634093.BattleSide.id', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='pokemon', full_name='PSXAPI.Response155921581865.BattleSide.pokemon', index=2,
+      name='pokemon', full_name='PSXAPI.Response1375634093.BattleSide.pokemon', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -9673,27 +8873,27 @@ _BATTLESIDE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1677,
-  serialized_end=1776,
+  serialized_start=2127,
+  serialized_end=2224,
 )
 
 
 _DAILYLOOTBOX = _descriptor.Descriptor(
   name='DailyLootbox',
-  full_name='PSXAPI.Response155921581865.DailyLootbox',
+  full_name='PSXAPI.Response1375634093.DailyLootbox',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Type', full_name='PSXAPI.Response155921581865.DailyLootbox.Type', index=0,
+      name='Type', full_name='PSXAPI.Response1375634093.DailyLootbox.Type', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Timer', full_name='PSXAPI.Response155921581865.DailyLootbox.Timer', index=1,
+      name='Timer', full_name='PSXAPI.Response1375634093.DailyLootbox.Timer', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -9711,27 +8911,27 @@ _DAILYLOOTBOX = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1778,
-  serialized_end=1887,
+  serialized_start=2227,
+  serialized_end=2362,
 )
 
 
 _EFFECT = _descriptor.Descriptor(
   name='Effect',
-  full_name='PSXAPI.Response155921581865.Effect',
+  full_name='PSXAPI.Response1375634093.Effect',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Type', full_name='PSXAPI.Response155921581865.Effect.Type', index=0,
+      name='Type', full_name='PSXAPI.Response1375634093.Effect.Type', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Effects', full_name='PSXAPI.Response155921581865.Effect.Effects', index=1,
+      name='Effects', full_name='PSXAPI.Response1375634093.Effect.Effects', index=1,
       number=2, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -9749,27 +8949,77 @@ _EFFECT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1890,
-  serialized_end=2022,
+  serialized_start=2365,
+  serialized_end=2519,
+)
+
+
+_PREFIX_AGDFASBV48946253 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV48946253',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV48946253',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV48946253_EFFECTUPDATETYPE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=2521,
+  serialized_end=2619,
+)
+
+
+_PREFIX_AGDFASBV363156631 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV363156631',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV363156631',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV363156631_EGGSTATE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=2621,
+  serialized_end=2725,
 )
 
 
 _EQUIP = _descriptor.Descriptor(
   name='Equip',
-  full_name='PSXAPI.Response155921581865.Equip',
+  full_name='PSXAPI.Response1375634093.Equip',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Clothe', full_name='PSXAPI.Response155921581865.Equip.Clothe', index=0,
+      name='Clothe', full_name='PSXAPI.Response1375634093.Equip.Clothe', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Hat', full_name='PSXAPI.Response155921581865.Equip.Hat', index=1,
+      name='Hat', full_name='PSXAPI.Response1375634093.Equip.Hat', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -9787,69 +9037,69 @@ _EQUIP = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2024,
-  serialized_end=2066,
+  serialized_start=2727,
+  serialized_end=2769,
 )
 
 
 _FRIEND = _descriptor.Descriptor(
   name='Friend',
-  full_name='PSXAPI.Response155921581865.Friend',
+  full_name='PSXAPI.Response1375634093.Friend',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Name', full_name='PSXAPI.Response155921581865.Friend.Name', index=0,
+      name='Name', full_name='PSXAPI.Response1375634093.Friend.Name', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Online', full_name='PSXAPI.Response155921581865.Friend.Online', index=1,
+      name='Online', full_name='PSXAPI.Response1375634093.Friend.Online', index=1,
       number=2, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='OnlineSince', full_name='PSXAPI.Response155921581865.Friend.OnlineSince', index=2,
+      name='OnlineSince', full_name='PSXAPI.Response1375634093.Friend.OnlineSince', index=2,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='FriendSince', full_name='PSXAPI.Response155921581865.Friend.FriendSince', index=3,
+      name='FriendSince', full_name='PSXAPI.Response1375634093.Friend.FriendSince', index=3,
       number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Map', full_name='PSXAPI.Response155921581865.Friend.Map', index=4,
+      name='Map', full_name='PSXAPI.Response1375634093.Friend.Map', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Away', full_name='PSXAPI.Response155921581865.Friend.Away', index=5,
+      name='Away', full_name='PSXAPI.Response1375634093.Friend.Away', index=5,
       number=6, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Message', full_name='PSXAPI.Response155921581865.Friend.Message', index=6,
+      name='Message', full_name='PSXAPI.Response1375634093.Friend.Message', index=6,
       number=7, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Level7', full_name='PSXAPI.Response155921581865.Friend.Level7', index=7,
+      name='Level', full_name='PSXAPI.Response1375634093.Friend.Level', index=7,
       number=8, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -9867,27 +9117,27 @@ _FRIEND = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2069,
-  serialized_end=2256,
+  serialized_start=2772,
+  serialized_end=2958,
 )
 
 
 _FRIENDS = _descriptor.Descriptor(
   name='Friends',
-  full_name='PSXAPI.Response155921581865.Friends',
+  full_name='PSXAPI.Response1375634093.Friends',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='List', full_name='PSXAPI.Response155921581865.Friends.List', index=0,
+      name='List', full_name='PSXAPI.Response1375634093.Friends.List', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Action', full_name='PSXAPI.Response155921581865.Friends.Action', index=1,
+      name='Action', full_name='PSXAPI.Response1375634093.Friends.Action', index=1,
       number=2, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -9905,83 +9155,183 @@ _FRIENDS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2258,
-  serialized_end=2384,
+  serialized_start=2961,
+  serialized_end=3107,
+)
+
+
+_PREFIX_AGDFASBV579684050 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV579684050',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV579684050',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV579684050_FRIENDSACTION,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=3109,
+  serialized_end=3194,
+)
+
+
+_PREFIX_AGDFASBV321822151 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV321822151',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV321822151',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV321822151_GAMEDAYTIME,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=3196,
+  serialized_end=3294,
+)
+
+
+_PREFIX_AGDFASBV669285494 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV669285494',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV669285494',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV669285494_GAMESEASON,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=3296,
+  serialized_end=3395,
+)
+
+
+_PREFIX_AGDFASBV961203100 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV961203100',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV961203100',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV961203100_GENDER,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=3397,
+  serialized_end=3455,
 )
 
 
 _GUILD = _descriptor.Descriptor(
   name='Guild',
-  full_name='PSXAPI.Response155921581865.Guild',
+  full_name='PSXAPI.Response1375634093.Guild',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Name', full_name='PSXAPI.Response155921581865.Guild.Name', index=0,
+      name='Name', full_name='PSXAPI.Response1375634093.Guild.Name', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Message', full_name='PSXAPI.Response155921581865.Guild.Message', index=1,
+      name='Message', full_name='PSXAPI.Response1375634093.Guild.Message', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Chat', full_name='PSXAPI.Response155921581865.Guild.Chat', index=2,
+      name='Chat', full_name='PSXAPI.Response1375634093.Guild.Chat', index=2,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Members', full_name='PSXAPI.Response155921581865.Guild.Members', index=3,
+      name='Members', full_name='PSXAPI.Response1375634093.Guild.Members', index=3,
       number=4, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Rank', full_name='PSXAPI.Response155921581865.Guild.Rank', index=4,
+      name='Rank', full_name='PSXAPI.Response1375634093.Guild.Rank', index=4,
       number=5, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='EmblemId', full_name='PSXAPI.Response155921581865.Guild.EmblemId', index=5,
+      name='EmblemId', full_name='PSXAPI.Response1375634093.Guild.EmblemId', index=5,
       number=6, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='MembersTotalMax', full_name='PSXAPI.Response155921581865.Guild.MembersTotalMax', index=6,
+      name='MembersTotalMax', full_name='PSXAPI.Response1375634093.Guild.MembersTotalMax', index=6,
       number=7, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='MembersCurrentMax', full_name='PSXAPI.Response155921581865.Guild.MembersCurrentMax', index=7,
+      name='MembersCurrentMax', full_name='PSXAPI.Response1375634093.Guild.MembersCurrentMax', index=7,
       number=8, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='UpgradeGold', full_name='PSXAPI.Response155921581865.Guild.UpgradeGold', index=8,
+      name='UpgradeGold', full_name='PSXAPI.Response1375634093.Guild.UpgradeGold', index=8,
       number=9, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='UpgradeMoney', full_name='PSXAPI.Response155921581865.Guild.UpgradeMoney', index=9,
+      name='UpgradeMoney', full_name='PSXAPI.Response1375634093.Guild.UpgradeMoney', index=9,
       number=10, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -9999,55 +9349,55 @@ _GUILD = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2387,
-  serialized_end=2699,
+  serialized_start=3458,
+  serialized_end=3790,
 )
 
 
 _GUILDMEMBER = _descriptor.Descriptor(
   name='GuildMember',
-  full_name='PSXAPI.Response155921581865.GuildMember',
+  full_name='PSXAPI.Response1375634093.GuildMember',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Username', full_name='PSXAPI.Response155921581865.GuildMember.Username', index=0,
+      name='Username', full_name='PSXAPI.Response1375634093.GuildMember.Username', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Rank', full_name='PSXAPI.Response155921581865.GuildMember.Rank', index=1,
+      name='Rank', full_name='PSXAPI.Response1375634093.GuildMember.Rank', index=1,
       number=2, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Online', full_name='PSXAPI.Response155921581865.GuildMember.Online', index=2,
+      name='Online', full_name='PSXAPI.Response1375634093.GuildMember.Online', index=2,
       number=3, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Since', full_name='PSXAPI.Response155921581865.GuildMember.Since', index=3,
+      name='Since', full_name='PSXAPI.Response1375634093.GuildMember.Since', index=3,
       number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Removed', full_name='PSXAPI.Response155921581865.GuildMember.Removed', index=4,
+      name='Removed', full_name='PSXAPI.Response1375634093.GuildMember.Removed', index=4,
       number=5, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Level0', full_name='PSXAPI.Response155921581865.GuildMember.Level0', index=5,
+      name='Level', full_name='PSXAPI.Response1375634093.GuildMember.Level', index=5,
       number=6, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -10065,27 +9415,52 @@ _GUILDMEMBER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2702,
-  serialized_end=2891,
+  serialized_start=3793,
+  serialized_end=4003,
+)
+
+
+_PREFIX_AGDFASBV635007241 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV635007241',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV635007241',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV635007241_GUILDRANK,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=4005,
+  serialized_end=4104,
 )
 
 
 _IGNORE = _descriptor.Descriptor(
   name='Ignore',
-  full_name='PSXAPI.Response155921581865.Ignore',
+  full_name='PSXAPI.Response1375634093.Ignore',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='List', full_name='PSXAPI.Response155921581865.Ignore.List', index=0,
+      name='List', full_name='PSXAPI.Response1375634093.Ignore.List', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Action', full_name='PSXAPI.Response155921581865.Ignore.Action', index=1,
+      name='Action', full_name='PSXAPI.Response1375634093.Ignore.Action', index=1,
       number=2, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -10103,48 +9478,73 @@ _IGNORE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2893,
-  serialized_end=3016,
+  serialized_start=4107,
+  serialized_end=4252,
+)
+
+
+_PREFIX_AGDFASBV1542622162 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1542622162',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1542622162',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1542622162_IGNOREACTION,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=4254,
+  serialized_end=4327,
 )
 
 
 _INVENTORY = _descriptor.Descriptor(
   name='Inventory',
-  full_name='PSXAPI.Response155921581865.Inventory',
+  full_name='PSXAPI.Response1375634093.Inventory',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Money1', full_name='PSXAPI.Response155921581865.Inventory.Money1', index=0,
+      name='Money', full_name='PSXAPI.Response1375634093.Inventory.Money', index=0,
       number=1, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='ActivePokemon', full_name='PSXAPI.Response155921581865.Inventory.ActivePokemon', index=1,
+      name='ActivePokemon', full_name='PSXAPI.Response1375634093.Inventory.ActivePokemon', index=1,
       number=2, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Items', full_name='PSXAPI.Response155921581865.Inventory.Items', index=2,
+      name='Items', full_name='PSXAPI.Response1375634093.Inventory.Items', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Badges', full_name='PSXAPI.Response155921581865.Inventory.Badges', index=3,
+      name='Badges', full_name='PSXAPI.Response1375634093.Inventory.Badges', index=3,
       number=4, type=5, cpp_type=1, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Gold0', full_name='PSXAPI.Response155921581865.Inventory.Gold0', index=4,
+      name='Gold', full_name='PSXAPI.Response1375634093.Inventory.Gold', index=4,
       number=5, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -10162,83 +9562,83 @@ _INVENTORY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3019,
-  serialized_end=3212,
+  serialized_start=4330,
+  serialized_end=4517,
 )
 
 
 _INVENTORYITEM = _descriptor.Descriptor(
   name='InventoryItem',
-  full_name='PSXAPI.Response155921581865.InventoryItem',
+  full_name='PSXAPI.Response1375634093.InventoryItem',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='ItemID', full_name='PSXAPI.Response155921581865.InventoryItem.ItemID', index=0,
+      name='ItemID', full_name='PSXAPI.Response1375634093.InventoryItem.ItemID', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Count', full_name='PSXAPI.Response155921581865.InventoryItem.Count', index=1,
+      name='Count', full_name='PSXAPI.Response1375634093.InventoryItem.Count', index=1,
       number=2, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanHold', full_name='PSXAPI.Response155921581865.InventoryItem.CanHold', index=2,
+      name='CanHold', full_name='PSXAPI.Response1375634093.InventoryItem.CanHold', index=2,
       number=3, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanUseOutsideBattle', full_name='PSXAPI.Response155921581865.InventoryItem.CanUseOutsideBattle', index=3,
+      name='CanUseOutsideBattle', full_name='PSXAPI.Response1375634093.InventoryItem.CanUseOutsideBattle', index=3,
       number=4, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanUseInBattle', full_name='PSXAPI.Response155921581865.InventoryItem.CanUseInBattle', index=4,
+      name='CanUseInBattle', full_name='PSXAPI.Response1375634093.InventoryItem.CanUseInBattle', index=4,
       number=5, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanUseOnParty', full_name='PSXAPI.Response155921581865.InventoryItem.CanUseOnParty', index=5,
+      name='CanUseOnParty', full_name='PSXAPI.Response1375634093.InventoryItem.CanUseOnParty', index=5,
       number=6, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanTrade', full_name='PSXAPI.Response155921581865.InventoryItem.CanTrade', index=6,
+      name='CanTrade', full_name='PSXAPI.Response1375634093.InventoryItem.CanTrade', index=6,
       number=7, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Target', full_name='PSXAPI.Response155921581865.InventoryItem.Target', index=7,
+      name='Target', full_name='PSXAPI.Response1375634093.InventoryItem.Target', index=7,
       number=8, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Pocket', full_name='PSXAPI.Response155921581865.InventoryItem.Pocket', index=8,
+      name='Pocket', full_name='PSXAPI.Response1375634093.InventoryItem.Pocket', index=8,
       number=9, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Category', full_name='PSXAPI.Response155921581865.InventoryItem.Category', index=9,
+      name='Category', full_name='PSXAPI.Response1375634093.InventoryItem.Category', index=9,
       number=10, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -10256,48 +9656,48 @@ _INVENTORYITEM = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3215,
-  serialized_end=3617,
+  serialized_start=4520,
+  serialized_end=4992,
 )
 
 
 _INVENTORYPOKEMON = _descriptor.Descriptor(
   name='InventoryPokemon',
-  full_name='PSXAPI.Response155921581865.InventoryPokemon',
+  full_name='PSXAPI.Response1375634093.InventoryPokemon',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Pokemon4', full_name='PSXAPI.Response155921581865.InventoryPokemon.Pokemon4', index=0,
+      name='Pokemon', full_name='PSXAPI.Response1375634093.InventoryPokemon.Pokemon', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Position', full_name='PSXAPI.Response155921581865.InventoryPokemon.Position', index=1,
+      name='Position', full_name='PSXAPI.Response1375634093.InventoryPokemon.Position', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Box', full_name='PSXAPI.Response155921581865.InventoryPokemon.Box', index=2,
+      name='Box', full_name='PSXAPI.Response1375634093.InventoryPokemon.Box', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanEvolve', full_name='PSXAPI.Response155921581865.InventoryPokemon.CanEvolve', index=3,
+      name='CanEvolve', full_name='PSXAPI.Response1375634093.InventoryPokemon.CanEvolve', index=3,
       number=4, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanLearnMove', full_name='PSXAPI.Response155921581865.InventoryPokemon.CanLearnMove', index=4,
+      name='CanLearnMove', full_name='PSXAPI.Response1375634093.InventoryPokemon.CanLearnMove', index=4,
       number=5, type=14, cpp_type=8, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -10315,48 +9715,123 @@ _INVENTORYPOKEMON = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3620,
-  serialized_end=3871,
+  serialized_start=4995,
+  serialized_end=5264,
+)
+
+
+_PREFIX_AGDFASBV972857083 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV972857083',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV972857083',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV972857083_ITEMCATEGORY,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=5267,
+  serialized_end=5409,
+)
+
+
+_PREFIX_AGDFASBV1562170800 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1562170800',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1562170800',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1562170800_ITEMPOCKET,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=5411,
+  serialized_end=5538,
+)
+
+
+_PREFIX_AGDFASBV983491147 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV983491147',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV983491147',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV983491147_ITEMTARGET,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=5540,
+  serialized_end=5618,
 )
 
 
 _LEVEL = _descriptor.Descriptor(
   name='Level',
-  full_name='PSXAPI.Response155921581865.Level',
+  full_name='PSXAPI.Response1375634093.Level',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='UserLevel', full_name='PSXAPI.Response155921581865.Level.UserLevel', index=0,
+      name='UserLevel', full_name='PSXAPI.Response1375634093.Level.UserLevel', index=0,
       number=1, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='TotalExp', full_name='PSXAPI.Response155921581865.Level.TotalExp', index=1,
+      name='TotalExp', full_name='PSXAPI.Response1375634093.Level.TotalExp', index=1,
       number=2, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='StartExp', full_name='PSXAPI.Response155921581865.Level.StartExp', index=2,
+      name='StartExp', full_name='PSXAPI.Response1375634093.Level.StartExp', index=2,
       number=3, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='RequiredExp', full_name='PSXAPI.Response155921581865.Level.RequiredExp', index=3,
+      name='RequiredExp', full_name='PSXAPI.Response1375634093.Level.RequiredExp', index=3,
       number=4, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='LevelUp', full_name='PSXAPI.Response155921581865.Level.LevelUp', index=4,
+      name='LevelUp', full_name='PSXAPI.Response1375634093.Level.LevelUp', index=4,
       number=5, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -10374,97 +9849,97 @@ _LEVEL = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3873,
-  serialized_end=3992,
+  serialized_start=5620,
+  serialized_end=5739,
 )
 
 
 _LOBBY = _descriptor.Descriptor(
   name='Lobby',
-  full_name='PSXAPI.Response155921581865.Lobby',
+  full_name='PSXAPI.Response1375634093.Lobby',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Leader', full_name='PSXAPI.Response155921581865.Lobby.Leader', index=0,
+      name='Leader', full_name='PSXAPI.Response1375634093.Lobby.Leader', index=0,
       number=1, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanChangeSettings', full_name='PSXAPI.Response155921581865.Lobby.CanChangeSettings', index=1,
+      name='CanChangeSettings', full_name='PSXAPI.Response1375634093.Lobby.CanChangeSettings', index=1,
       number=2, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanInvite', full_name='PSXAPI.Response155921581865.Lobby.CanInvite', index=2,
+      name='CanInvite', full_name='PSXAPI.Response1375634093.Lobby.CanInvite', index=2,
       number=3, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanKickUsers', full_name='PSXAPI.Response155921581865.Lobby.CanKickUsers', index=3,
+      name='CanKickUsers', full_name='PSXAPI.Response1375634093.Lobby.CanKickUsers', index=3,
       number=4, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanSwitchTeam', full_name='PSXAPI.Response155921581865.Lobby.CanSwitchTeam', index=4,
+      name='CanSwitchTeam', full_name='PSXAPI.Response1375634093.Lobby.CanSwitchTeam', index=4,
       number=5, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanLeaveLobby', full_name='PSXAPI.Response155921581865.Lobby.CanLeaveLobby', index=5,
+      name='CanLeaveLobby', full_name='PSXAPI.Response1375634093.Lobby.CanLeaveLobby', index=5,
       number=6, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanChangeMonsterCount', full_name='PSXAPI.Response155921581865.Lobby.CanChangeMonsterCount', index=6,
+      name='CanChangeMonsterCount', full_name='PSXAPI.Response1375634093.Lobby.CanChangeMonsterCount', index=6,
       number=7, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='AdjustLevels', full_name='PSXAPI.Response155921581865.Lobby.AdjustLevels', index=7,
+      name='AdjustLevels', full_name='PSXAPI.Response1375634093.Lobby.AdjustLevels', index=7,
       number=8, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='ItemAllowed', full_name='PSXAPI.Response155921581865.Lobby.ItemAllowed', index=8,
+      name='ItemAllowed', full_name='PSXAPI.Response1375634093.Lobby.ItemAllowed', index=8,
       number=9, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='IsRanked', full_name='PSXAPI.Response155921581865.Lobby.IsRanked', index=9,
+      name='IsRanked', full_name='PSXAPI.Response1375634093.Lobby.IsRanked', index=9,
       number=10, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Timer', full_name='PSXAPI.Response155921581865.Lobby.Timer', index=10,
+      name='Timer', full_name='PSXAPI.Response1375634093.Lobby.Timer', index=10,
       number=11, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Actors', full_name='PSXAPI.Response155921581865.Lobby.Actors', index=11,
+      name='Actors', full_name='PSXAPI.Response1375634093.Lobby.Actors', index=11,
       number=12, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -10482,90 +9957,90 @@ _LOBBY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3995,
-  serialized_end=4417,
+  serialized_start=5742,
+  serialized_end=6185,
 )
 
 
 _LOBBYACTOR = _descriptor.Descriptor(
   name='LobbyActor',
-  full_name='PSXAPI.Response155921581865.LobbyActor',
+  full_name='PSXAPI.Response1375634093.LobbyActor',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Type', full_name='PSXAPI.Response155921581865.LobbyActor.Type', index=0,
+      name='Type', full_name='PSXAPI.Response1375634093.LobbyActor.Type', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Name', full_name='PSXAPI.Response155921581865.LobbyActor.Name', index=1,
+      name='Name', full_name='PSXAPI.Response1375634093.LobbyActor.Name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Team', full_name='PSXAPI.Response155921581865.LobbyActor.Team', index=2,
+      name='Team', full_name='PSXAPI.Response1375634093.LobbyActor.Team', index=2,
       number=3, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='PokemonCount', full_name='PSXAPI.Response155921581865.LobbyActor.PokemonCount', index=3,
+      name='PokemonCount', full_name='PSXAPI.Response1375634093.LobbyActor.PokemonCount', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='ActiveCount', full_name='PSXAPI.Response155921581865.LobbyActor.ActiveCount', index=4,
+      name='ActiveCount', full_name='PSXAPI.Response1375634093.LobbyActor.ActiveCount', index=4,
       number=5, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Accepted', full_name='PSXAPI.Response155921581865.LobbyActor.Accepted', index=5,
+      name='Accepted', full_name='PSXAPI.Response1375634093.LobbyActor.Accepted', index=5,
       number=6, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='AvatarType', full_name='PSXAPI.Response155921581865.LobbyActor.AvatarType', index=6,
+      name='AvatarType', full_name='PSXAPI.Response1375634093.LobbyActor.AvatarType', index=6,
       number=7, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='NpcSpriteID', full_name='PSXAPI.Response155921581865.LobbyActor.NpcSpriteID', index=7,
+      name='NpcSpriteID', full_name='PSXAPI.Response1375634093.LobbyActor.NpcSpriteID', index=7,
       number=8, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='AverageLevel', full_name='PSXAPI.Response155921581865.LobbyActor.AverageLevel', index=8,
+      name='AverageLevel', full_name='PSXAPI.Response1375634093.LobbyActor.AverageLevel', index=8,
       number=9, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='HighestLevel', full_name='PSXAPI.Response155921581865.LobbyActor.HighestLevel', index=9,
+      name='HighestLevel', full_name='PSXAPI.Response1375634093.LobbyActor.HighestLevel', index=9,
       number=10, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Self', full_name='PSXAPI.Response155921581865.LobbyActor.Self', index=10,
+      name='Self', full_name='PSXAPI.Response1375634093.LobbyActor.Self', index=10,
       number=11, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -10583,251 +10058,251 @@ _LOBBYACTOR = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4420,
-  serialized_end=4819,
+  serialized_start=6188,
+  serialized_end=6661,
 )
 
 
 _LOGIN = _descriptor.Descriptor(
   name='Login',
-  full_name='PSXAPI.Response155921581865.Login',
+  full_name='PSXAPI.Response1375634093.Login',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Result', full_name='PSXAPI.Response155921581865.Login.Result', index=0,
+      name='Result', full_name='PSXAPI.Response1375634093.Login.Result', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Error', full_name='PSXAPI.Response155921581865.Login.Error', index=1,
+      name='Error', full_name='PSXAPI.Response1375634093.Login.Error', index=1,
       number=2, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Username', full_name='PSXAPI.Response155921581865.Login.Username', index=2,
+      name='Username', full_name='PSXAPI.Response1375634093.Login.Username', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Position', full_name='PSXAPI.Response155921581865.Login.Position', index=3,
+      name='Position', full_name='PSXAPI.Response1375634093.Login.Position', index=3,
       number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Inventory', full_name='PSXAPI.Response155921581865.Login.Inventory', index=4,
+      name='Inventory', full_name='PSXAPI.Response1375634093.Login.Inventory', index=4,
       number=5, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Pokedex', full_name='PSXAPI.Response155921581865.Login.Pokedex', index=5,
+      name='Pokedex', full_name='PSXAPI.Response1375634093.Login.Pokedex', index=5,
       number=6, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Friends', full_name='PSXAPI.Response155921581865.Login.Friends', index=6,
+      name='Friends', full_name='PSXAPI.Response1375634093.Login.Friends', index=6,
       number=7, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Party', full_name='PSXAPI.Response155921581865.Login.Party', index=7,
+      name='Party', full_name='PSXAPI.Response1375634093.Login.Party', index=7,
       number=8, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Lobby', full_name='PSXAPI.Response155921581865.Login.Lobby', index=8,
+      name='Lobby', full_name='PSXAPI.Response1375634093.Login.Lobby', index=8,
       number=9, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='MapUsers', full_name='PSXAPI.Response155921581865.Login.MapUsers', index=9,
+      name='MapUsers', full_name='PSXAPI.Response1375634093.Login.MapUsers', index=9,
       number=10, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Time', full_name='PSXAPI.Response155921581865.Login.Time', index=10,
+      name='Time', full_name='PSXAPI.Response1375634093.Login.Time', index=10,
       number=11, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='FriendMessage', full_name='PSXAPI.Response155921581865.Login.FriendMessage', index=11,
+      name='FriendMessage', full_name='PSXAPI.Response1375634093.Login.FriendMessage', index=11,
       number=12, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Ignore', full_name='PSXAPI.Response155921581865.Login.Ignore', index=12,
+      name='Ignore', full_name='PSXAPI.Response1375634093.Login.Ignore', index=12,
       number=13, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Style', full_name='PSXAPI.Response155921581865.Login.Style', index=13,
+      name='Style', full_name='PSXAPI.Response1375634093.Login.Style', index=13,
       number=14, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Equip', full_name='PSXAPI.Response155921581865.Login.Equip', index=14,
+      name='Equip', full_name='PSXAPI.Response1375634093.Login.Equip', index=14,
       number=15, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='MemberRank', full_name='PSXAPI.Response155921581865.Login.MemberRank', index=15,
+      name='MemberRank', full_name='PSXAPI.Response1375634093.Login.MemberRank', index=15,
       number=16, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='StaffRank0', full_name='PSXAPI.Response155921581865.Login.StaffRank0', index=16,
+      name='StaffRank', full_name='PSXAPI.Response1375634093.Login.StaffRank', index=16,
       number=17, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Mount', full_name='PSXAPI.Response155921581865.Login.Mount', index=17,
+      name='Mount', full_name='PSXAPI.Response1375634093.Login.Mount', index=17,
       number=18, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Battle', full_name='PSXAPI.Response155921581865.Login.Battle', index=18,
+      name='Battle', full_name='PSXAPI.Response1375634093.Login.Battle', index=18,
       number=19, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='StatsPrivate', full_name='PSXAPI.Response155921581865.Login.StatsPrivate', index=19,
+      name='StatsPrivate', full_name='PSXAPI.Response1375634093.Login.StatsPrivate', index=19,
       number=20, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Guild', full_name='PSXAPI.Response155921581865.Login.Guild', index=20,
+      name='Guild', full_name='PSXAPI.Response1375634093.Login.Guild', index=20,
       number=21, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Quests', full_name='PSXAPI.Response155921581865.Login.Quests', index=21,
+      name='Quests', full_name='PSXAPI.Response1375634093.Login.Quests', index=21,
       number=22, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Level1', full_name='PSXAPI.Response155921581865.Login.Level1', index=22,
+      name='Level', full_name='PSXAPI.Response1375634093.Login.Level', index=22,
       number=23, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Banned0', full_name='PSXAPI.Response155921581865.Login.Banned0', index=23,
+      name='Banned', full_name='PSXAPI.Response1375634093.Login.Banned', index=23,
       number=24, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='SkinsUser', full_name='PSXAPI.Response155921581865.Login.SkinsUser', index=24,
+      name='SkinsUser', full_name='PSXAPI.Response1375634093.Login.SkinsUser', index=24,
       number=25, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Lootboxes', full_name='PSXAPI.Response155921581865.Login.Lootboxes', index=25,
+      name='Lootboxes', full_name='PSXAPI.Response1375634093.Login.Lootboxes', index=25,
       number=26, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='DailyLootbox', full_name='PSXAPI.Response155921581865.Login.DailyLootbox', index=26,
+      name='DailyLootbox', full_name='PSXAPI.Response1375634093.Login.DailyLootbox', index=26,
       number=27, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='DailyReset', full_name='PSXAPI.Response155921581865.Login.DailyReset', index=27,
+      name='DailyReset', full_name='PSXAPI.Response1375634093.Login.DailyReset', index=27,
       number=28, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='NearbyUsers', full_name='PSXAPI.Response155921581865.Login.NearbyUsers', index=28,
+      name='NearbyUsers', full_name='PSXAPI.Response1375634093.Login.NearbyUsers', index=28,
       number=29, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Encounter', full_name='PSXAPI.Response155921581865.Login.Encounter', index=29,
+      name='Encounter', full_name='PSXAPI.Response1375634093.Login.Encounter', index=29,
       number=30, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='ShowAsOffline', full_name='PSXAPI.Response155921581865.Login.ShowAsOffline', index=30,
+      name='ShowAsOffline', full_name='PSXAPI.Response1375634093.Login.ShowAsOffline', index=30,
       number=31, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Effects', full_name='PSXAPI.Response155921581865.Login.Effects', index=31,
+      name='Effects', full_name='PSXAPI.Response1375634093.Login.Effects', index=31,
       number=32, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='TotalSteps', full_name='PSXAPI.Response155921581865.Login.TotalSteps', index=32,
+      name='TotalSteps', full_name='PSXAPI.Response1375634093.Login.TotalSteps', index=32,
       number=33, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='DiscoveredAreas', full_name='PSXAPI.Response155921581865.Login.DiscoveredAreas', index=33,
+      name='DiscoveredAreas', full_name='PSXAPI.Response1375634093.Login.DiscoveredAreas', index=33,
       number=35, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -10845,41 +10320,116 @@ _LOGIN = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4822,
-  serialized_end=6499,
+  serialized_start=6664,
+  serialized_end=8393,
+)
+
+
+_PREFIX_AGDFASBV529948962 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV529948962',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV529948962',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV529948962_LOGINERROR,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=8396,
+  serialized_end=8559,
+)
+
+
+_PREFIX_AGDFASBV1597269680 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1597269680',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1597269680',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1597269680_LOGINRESULT,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=8561,
+  serialized_end=8627,
+)
+
+
+_PREFIX_AGDFASBV1274100486 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1274100486',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1274100486',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1274100486_LOOTTYPE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=8630,
+  serialized_end=8790,
 )
 
 
 _LOOTBOX = _descriptor.Descriptor(
   name='Lootbox',
-  full_name='PSXAPI.Response155921581865.Lootbox',
+  full_name='PSXAPI.Response1375634093.Lootbox',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Action', full_name='PSXAPI.Response155921581865.Lootbox.Action', index=0,
+      name='Action', full_name='PSXAPI.Response1375634093.Lootbox.Action', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Type', full_name='PSXAPI.Response155921581865.Lootbox.Type', index=1,
+      name='Type', full_name='PSXAPI.Response1375634093.Lootbox.Type', index=1,
       number=2, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Remaining', full_name='PSXAPI.Response155921581865.Lootbox.Remaining', index=2,
+      name='Remaining', full_name='PSXAPI.Response1375634093.Lootbox.Remaining', index=2,
       number=3, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Rolls', full_name='PSXAPI.Response155921581865.Lootbox.Rolls', index=3,
+      name='Rolls', full_name='PSXAPI.Response1375634093.Lootbox.Rolls', index=3,
       number=4, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -10897,48 +10447,73 @@ _LOOTBOX = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6502,
-  serialized_end=6724,
+  serialized_start=8793,
+  serialized_end=9065,
+)
+
+
+_PREFIX_AGDFASBV1683146902 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1683146902',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1683146902',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1683146902_LOOTBOXACTION,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=9067,
+  serialized_end=9150,
 )
 
 
 _LOOTBOXROLL = _descriptor.Descriptor(
   name='LootboxRoll',
-  full_name='PSXAPI.Response155921581865.LootboxRoll',
+  full_name='PSXAPI.Response1375634093.LootboxRoll',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='LootType', full_name='PSXAPI.Response155921581865.LootboxRoll.LootType', index=0,
+      name='LootType', full_name='PSXAPI.Response1375634093.LootboxRoll.LootType', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Num', full_name='PSXAPI.Response155921581865.LootboxRoll.Num', index=1,
+      name='Num', full_name='PSXAPI.Response1375634093.LootboxRoll.Num', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Duplicate', full_name='PSXAPI.Response155921581865.LootboxRoll.Duplicate', index=2,
+      name='Duplicate', full_name='PSXAPI.Response1375634093.LootboxRoll.Duplicate', index=2,
       number=3, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='DuplicateGold', full_name='PSXAPI.Response155921581865.LootboxRoll.DuplicateGold', index=3,
+      name='DuplicateGold', full_name='PSXAPI.Response1375634093.LootboxRoll.DuplicateGold', index=3,
       number=4, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='DuplicateMoney', full_name='PSXAPI.Response155921581865.LootboxRoll.DuplicateMoney', index=4,
+      name='DuplicateMoney', full_name='PSXAPI.Response1375634093.LootboxRoll.DuplicateMoney', index=4,
       number=5, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -10956,34 +10531,59 @@ _LOOTBOXROLL = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6727,
-  serialized_end=6901,
+  serialized_start=9153,
+  serialized_end=9353,
+)
+
+
+_PREFIX_AGDFASBV1562556180 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1562556180',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1562556180',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1562556180_LOOTBOXTYPE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=9355,
+  serialized_end=9435,
 )
 
 
 _MAPUSER = _descriptor.Descriptor(
   name='MapUser',
-  full_name='PSXAPI.Response155921581865.MapUser',
+  full_name='PSXAPI.Response1375634093.MapUser',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Username', full_name='PSXAPI.Response155921581865.MapUser.Username', index=0,
+      name='Username', full_name='PSXAPI.Response1375634093.MapUser.Username', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Actions', full_name='PSXAPI.Response155921581865.MapUser.Actions', index=1,
+      name='Actions', full_name='PSXAPI.Response1375634093.MapUser.Actions', index=1,
       number=2, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Data', full_name='PSXAPI.Response155921581865.MapUser.Data', index=2,
+      name='Data', full_name='PSXAPI.Response1375634093.MapUser.Data', index=2,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -11001,27 +10601,52 @@ _MAPUSER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6904,
-  serialized_end=7052,
+  serialized_start=9438,
+  serialized_end=9582,
+)
+
+
+_PREFIX_AGDFASBV1720398281 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1720398281',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1720398281',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1720398281_MAPUSERACTION,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=9584,
+  serialized_end=9711,
 )
 
 
 _MAPUSERACTIONDATA = _descriptor.Descriptor(
   name='MapUserActionData',
-  full_name='PSXAPI.Response155921581865.MapUserActionData',
+  full_name='PSXAPI.Response1375634093.MapUserActionData',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Action', full_name='PSXAPI.Response155921581865.MapUserActionData.Action', index=0,
+      name='Action', full_name='PSXAPI.Response1375634093.MapUserActionData.Action', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Position', full_name='PSXAPI.Response155921581865.MapUserActionData.Position', index=1,
+      name='Position', full_name='PSXAPI.Response1375634093.MapUserActionData.Position', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -11039,118 +10664,118 @@ _MAPUSERACTIONDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7055,
-  serialized_end=7204,
+  serialized_start=9714,
+  serialized_end=9884,
 )
 
 
 _MAPUSERDATA = _descriptor.Descriptor(
   name='MapUserData',
-  full_name='PSXAPI.Response155921581865.MapUserData',
+  full_name='PSXAPI.Response1375634093.MapUserData',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Style', full_name='PSXAPI.Response155921581865.MapUserData.Style', index=0,
+      name='Style', full_name='PSXAPI.Response1375634093.MapUserData.Style', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Direction', full_name='PSXAPI.Response155921581865.MapUserData.Direction', index=1,
+      name='Direction', full_name='PSXAPI.Response1375634093.MapUserData.Direction', index=1,
       number=2, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Equip', full_name='PSXAPI.Response155921581865.MapUserData.Equip', index=2,
+      name='Equip', full_name='PSXAPI.Response1375634093.MapUserData.Equip', index=2,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Mount1', full_name='PSXAPI.Response155921581865.MapUserData.Mount1', index=3,
+      name='Mount', full_name='PSXAPI.Response1375634093.MapUserData.Mount', index=3,
       number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Away', full_name='PSXAPI.Response155921581865.MapUserData.Away', index=4,
+      name='Away', full_name='PSXAPI.Response1375634093.MapUserData.Away', index=4,
       number=5, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Battle', full_name='PSXAPI.Response155921581865.MapUserData.Battle', index=5,
+      name='Battle', full_name='PSXAPI.Response1375634093.MapUserData.Battle', index=5,
       number=6, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='MemberRank', full_name='PSXAPI.Response155921581865.MapUserData.MemberRank', index=6,
+      name='MemberRank', full_name='PSXAPI.Response1375634093.MapUserData.MemberRank', index=6,
       number=7, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='StaffRank1', full_name='PSXAPI.Response155921581865.MapUserData.StaffRank1', index=7,
+      name='StaffRank', full_name='PSXAPI.Response1375634093.MapUserData.StaffRank', index=7,
       number=8, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='GuildName', full_name='PSXAPI.Response155921581865.MapUserData.GuildName', index=8,
+      name='GuildName', full_name='PSXAPI.Response1375634093.MapUserData.GuildName', index=8,
       number=9, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='EmblemId', full_name='PSXAPI.Response155921581865.MapUserData.EmblemId', index=9,
+      name='EmblemId', full_name='PSXAPI.Response1375634093.MapUserData.EmblemId', index=9,
       number=10, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Level2', full_name='PSXAPI.Response155921581865.MapUserData.Level2', index=10,
+      name='Level', full_name='PSXAPI.Response1375634093.MapUserData.Level', index=10,
       number=11, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Follow', full_name='PSXAPI.Response155921581865.MapUserData.Follow', index=11,
+      name='Follow', full_name='PSXAPI.Response1375634093.MapUserData.Follow', index=11,
       number=12, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='FollowPersonality', full_name='PSXAPI.Response155921581865.MapUserData.FollowPersonality', index=12,
+      name='FollowPersonality', full_name='PSXAPI.Response1375634093.MapUserData.FollowPersonality', index=12,
       number=13, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Lobby', full_name='PSXAPI.Response155921581865.MapUserData.Lobby', index=13,
+      name='Lobby', full_name='PSXAPI.Response1375634093.MapUserData.Lobby', index=13,
       number=14, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='FollowShiny', full_name='PSXAPI.Response155921581865.MapUserData.FollowShiny', index=14,
+      name='FollowShiny', full_name='PSXAPI.Response1375634093.MapUserData.FollowShiny', index=14,
       number=15, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -11168,34 +10793,34 @@ _MAPUSERDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7207,
-  serialized_end=7790,
+  serialized_start=9887,
+  serialized_end=10535,
 )
 
 
 _MAPUSERPOSITION = _descriptor.Descriptor(
   name='MapUserPosition',
-  full_name='PSXAPI.Response155921581865.MapUserPosition',
+  full_name='PSXAPI.Response1375634093.MapUserPosition',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='X', full_name='PSXAPI.Response155921581865.MapUserPosition.X', index=0,
+      name='X', full_name='PSXAPI.Response1375634093.MapUserPosition.X', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Y', full_name='PSXAPI.Response155921581865.MapUserPosition.Y', index=1,
+      name='Y', full_name='PSXAPI.Response1375634093.MapUserPosition.Y', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Height', full_name='PSXAPI.Response155921581865.MapUserPosition.Height', index=2,
+      name='Height', full_name='PSXAPI.Response1375634093.MapUserPosition.Height', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -11213,27 +10838,27 @@ _MAPUSERPOSITION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7792,
-  serialized_end=7856,
+  serialized_start=10537,
+  serialized_end=10601,
 )
 
 
 _MAPUSERS = _descriptor.Descriptor(
   name='MapUsers',
-  full_name='PSXAPI.Response155921581865.MapUsers',
+  full_name='PSXAPI.Response1375634093.MapUsers',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Users', full_name='PSXAPI.Response155921581865.MapUsers.Users', index=0,
+      name='Users', full_name='PSXAPI.Response1375634093.MapUsers.Users', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Map', full_name='PSXAPI.Response155921581865.MapUsers.Map', index=1,
+      name='Map', full_name='PSXAPI.Response1375634093.MapUsers.Map', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -11251,27 +10876,52 @@ _MAPUSERS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7858,
-  serialized_end=7934,
+  serialized_start=10603,
+  serialized_end=10677,
+)
+
+
+_PREFIX_AGDFASBV1761834943 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1761834943',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1761834943',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1761834943_MEMBERRANK,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=10679,
+  serialized_end=10747,
 )
 
 
 _MOUNT = _descriptor.Descriptor(
   name='Mount',
-  full_name='PSXAPI.Response155921581865.Mount',
+  full_name='PSXAPI.Response1375634093.Mount',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='MountID', full_name='PSXAPI.Response155921581865.Mount.MountID', index=0,
+      name='MountID', full_name='PSXAPI.Response1375634093.Mount.MountID', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='MountType', full_name='PSXAPI.Response155921581865.Mount.MountType', index=1,
+      name='MountType', full_name='PSXAPI.Response1375634093.Mount.MountType', index=1,
       number=2, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -11289,62 +10939,87 @@ _MOUNT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7936,
-  serialized_end=8031,
+  serialized_start=10749,
+  serialized_end=10870,
+)
+
+
+_PREFIX_AGDFASBV1702787644 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1702787644',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1702787644',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1702787644_MOUNTTYPE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=10872,
+  serialized_end=10963,
 )
 
 
 _MOVE = _descriptor.Descriptor(
   name='Move',
-  full_name='PSXAPI.Response155921581865.Move',
+  full_name='PSXAPI.Response1375634093.Move',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Map', full_name='PSXAPI.Response155921581865.Move.Map', index=0,
+      name='Map', full_name='PSXAPI.Response1375634093.Move.Map', index=0,
       number=1, type=9, cpp_type=9, label=2,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='X', full_name='PSXAPI.Response155921581865.Move.X', index=1,
+      name='X', full_name='PSXAPI.Response1375634093.Move.X', index=1,
       number=2, type=5, cpp_type=1, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Y', full_name='PSXAPI.Response155921581865.Move.Y', index=2,
+      name='Y', full_name='PSXAPI.Response1375634093.Move.Y', index=2,
       number=3, type=5, cpp_type=1, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Action', full_name='PSXAPI.Response155921581865.Move.Action', index=3,
+      name='Action', full_name='PSXAPI.Response1375634093.Move.Action', index=3,
       number=4, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Direction', full_name='PSXAPI.Response155921581865.Move.Direction', index=4,
+      name='Direction', full_name='PSXAPI.Response1375634093.Move.Direction', index=4,
       number=5, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Scripts', full_name='PSXAPI.Response155921581865.Move.Scripts', index=5,
+      name='Scripts', full_name='PSXAPI.Response1375634093.Move.Scripts', index=5,
       number=6, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Height', full_name='PSXAPI.Response155921581865.Move.Height', index=6,
+      name='Height', full_name='PSXAPI.Response1375634093.Move.Height', index=6,
       number=7, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -11362,160 +11037,185 @@ _MOVE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=8034,
-  serialized_end=8258,
+  serialized_start=10966,
+  serialized_end=11238,
+)
+
+
+_PREFIX_AGDFASBV2033304364 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV2033304364',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV2033304364',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV2033304364_MOVEACTION,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=11240,
+  serialized_end=11329,
 )
 
 
 _MOVEPLAYER = _descriptor.Descriptor(
   name='MovePlayer',
-  full_name='PSXAPI.Response155921581865.MovePlayer',
+  full_name='PSXAPI.Response1375634093.MovePlayer',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Map', full_name='PSXAPI.Response155921581865.MovePlayer.Map', index=0,
+      name='Map', full_name='PSXAPI.Response1375634093.MovePlayer.Map', index=0,
       number=1, type=9, cpp_type=9, label=2,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Username', full_name='PSXAPI.Response155921581865.MovePlayer.Username', index=1,
+      name='Username', full_name='PSXAPI.Response1375634093.MovePlayer.Username', index=1,
       number=2, type=9, cpp_type=9, label=2,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='X', full_name='PSXAPI.Response155921581865.MovePlayer.X', index=2,
+      name='X', full_name='PSXAPI.Response1375634093.MovePlayer.X', index=2,
       number=3, type=5, cpp_type=1, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Y', full_name='PSXAPI.Response155921581865.MovePlayer.Y', index=3,
+      name='Y', full_name='PSXAPI.Response1375634093.MovePlayer.Y', index=3,
       number=4, type=5, cpp_type=1, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Action', full_name='PSXAPI.Response155921581865.MovePlayer.Action', index=4,
+      name='Action', full_name='PSXAPI.Response1375634093.MovePlayer.Action', index=4,
       number=5, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Style', full_name='PSXAPI.Response155921581865.MovePlayer.Style', index=5,
+      name='Style', full_name='PSXAPI.Response1375634093.MovePlayer.Style', index=5,
       number=6, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Direction', full_name='PSXAPI.Response155921581865.MovePlayer.Direction', index=6,
+      name='Direction', full_name='PSXAPI.Response1375634093.MovePlayer.Direction', index=6,
       number=7, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Equip', full_name='PSXAPI.Response155921581865.MovePlayer.Equip', index=7,
+      name='Equip', full_name='PSXAPI.Response1375634093.MovePlayer.Equip', index=7,
       number=8, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Mount2', full_name='PSXAPI.Response155921581865.MovePlayer.Mount2', index=8,
+      name='Mount', full_name='PSXAPI.Response1375634093.MovePlayer.Mount', index=8,
       number=9, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Away', full_name='PSXAPI.Response155921581865.MovePlayer.Away', index=9,
+      name='Away', full_name='PSXAPI.Response1375634093.MovePlayer.Away', index=9,
       number=10, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Battle', full_name='PSXAPI.Response155921581865.MovePlayer.Battle', index=10,
+      name='Battle', full_name='PSXAPI.Response1375634093.MovePlayer.Battle', index=10,
       number=11, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='MemberRank', full_name='PSXAPI.Response155921581865.MovePlayer.MemberRank', index=11,
+      name='MemberRank', full_name='PSXAPI.Response1375634093.MovePlayer.MemberRank', index=11,
       number=12, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='StaffRank2', full_name='PSXAPI.Response155921581865.MovePlayer.StaffRank2', index=12,
+      name='StaffRank', full_name='PSXAPI.Response1375634093.MovePlayer.StaffRank', index=12,
       number=13, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='GuildName', full_name='PSXAPI.Response155921581865.MovePlayer.GuildName', index=13,
+      name='GuildName', full_name='PSXAPI.Response1375634093.MovePlayer.GuildName', index=13,
       number=14, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='EmblemId', full_name='PSXAPI.Response155921581865.MovePlayer.EmblemId', index=14,
+      name='EmblemId', full_name='PSXAPI.Response1375634093.MovePlayer.EmblemId', index=14,
       number=15, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Level3', full_name='PSXAPI.Response155921581865.MovePlayer.Level3', index=15,
+      name='Level', full_name='PSXAPI.Response1375634093.MovePlayer.Level', index=15,
       number=16, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Follow', full_name='PSXAPI.Response155921581865.MovePlayer.Follow', index=16,
+      name='Follow', full_name='PSXAPI.Response1375634093.MovePlayer.Follow', index=16,
       number=17, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Height', full_name='PSXAPI.Response155921581865.MovePlayer.Height', index=17,
+      name='Height', full_name='PSXAPI.Response1375634093.MovePlayer.Height', index=17,
       number=18, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='FollowPersonality', full_name='PSXAPI.Response155921581865.MovePlayer.FollowPersonality', index=18,
+      name='FollowPersonality', full_name='PSXAPI.Response1375634093.MovePlayer.FollowPersonality', index=18,
       number=19, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Lobby', full_name='PSXAPI.Response155921581865.MovePlayer.Lobby', index=19,
+      name='Lobby', full_name='PSXAPI.Response1375634093.MovePlayer.Lobby', index=19,
       number=20, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='FollowShiny', full_name='PSXAPI.Response155921581865.MovePlayer.FollowShiny', index=20,
+      name='FollowShiny', full_name='PSXAPI.Response1375634093.MovePlayer.FollowShiny', index=20,
       number=21, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -11533,27 +11233,52 @@ _MOVEPLAYER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=8261,
-  serialized_end=8984,
+  serialized_start=11332,
+  serialized_end=12142,
+)
+
+
+_PREFIX_AGDFASBV101843234 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV101843234',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV101843234',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV101843234_MOVEPLAYERACTION,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=12145,
+  serialized_end=12274,
 )
 
 
 _PARTY = _descriptor.Descriptor(
   name='Party',
-  full_name='PSXAPI.Response155921581865.Party',
+  full_name='PSXAPI.Response1375634093.Party',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Members', full_name='PSXAPI.Response155921581865.Party.Members', index=0,
+      name='Members', full_name='PSXAPI.Response1375634093.Party.Members', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='ChatID', full_name='PSXAPI.Response155921581865.Party.ChatID', index=1,
+      name='ChatID', full_name='PSXAPI.Response1375634093.Party.ChatID', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -11571,76 +11296,76 @@ _PARTY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=8986,
-  serialized_end=9079,
+  serialized_start=12276,
+  serialized_end=12367,
 )
 
 
 _PARTYMEMBER = _descriptor.Descriptor(
   name='PartyMember',
-  full_name='PSXAPI.Response155921581865.PartyMember',
+  full_name='PSXAPI.Response1375634093.PartyMember',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Name', full_name='PSXAPI.Response155921581865.PartyMember.Name', index=0,
+      name='Name', full_name='PSXAPI.Response1375634093.PartyMember.Name', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='UserId', full_name='PSXAPI.Response155921581865.PartyMember.UserId', index=1,
+      name='UserId', full_name='PSXAPI.Response1375634093.PartyMember.UserId', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Online', full_name='PSXAPI.Response155921581865.PartyMember.Online', index=2,
+      name='Online', full_name='PSXAPI.Response1375634093.PartyMember.Online', index=2,
       number=3, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Leader', full_name='PSXAPI.Response155921581865.PartyMember.Leader', index=3,
+      name='Leader', full_name='PSXAPI.Response1375634093.PartyMember.Leader', index=3,
       number=4, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Pokemon', full_name='PSXAPI.Response155921581865.PartyMember.Pokemon', index=4,
+      name='Pokemon', full_name='PSXAPI.Response1375634093.PartyMember.Pokemon', index=4,
       number=5, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Level4', full_name='PSXAPI.Response155921581865.PartyMember.Level4', index=5,
+      name='Level', full_name='PSXAPI.Response1375634093.PartyMember.Level', index=5,
       number=6, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Equipment', full_name='PSXAPI.Response155921581865.PartyMember.Equipment', index=6,
+      name='Equipment', full_name='PSXAPI.Response1375634093.PartyMember.Equipment', index=6,
       number=7, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Style', full_name='PSXAPI.Response155921581865.PartyMember.Style', index=7,
+      name='Style', full_name='PSXAPI.Response1375634093.PartyMember.Style', index=7,
       number=8, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Area', full_name='PSXAPI.Response155921581865.PartyMember.Area', index=8,
+      name='Area', full_name='PSXAPI.Response1375634093.PartyMember.Area', index=8,
       number=9, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -11658,34 +11383,59 @@ _PARTYMEMBER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=9082,
-  serialized_end=9385,
+  serialized_start=12370,
+  serialized_end=12666,
+)
+
+
+_PREFIX_AGDFASBV1672859746 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1672859746',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1672859746',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1672859746_PLAYERDIRECTION,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=12668,
+  serialized_end=12766,
 )
 
 
 _POKEDEX = _descriptor.Descriptor(
   name='Pokedex',
-  full_name='PSXAPI.Response155921581865.Pokedex',
+  full_name='PSXAPI.Response1375634093.Pokedex',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Entries', full_name='PSXAPI.Response155921581865.Pokedex.Entries', index=0,
+      name='Entries', full_name='PSXAPI.Response1375634093.Pokedex.Entries', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Seen', full_name='PSXAPI.Response155921581865.Pokedex.Seen', index=1,
+      name='Seen', full_name='PSXAPI.Response1375634093.Pokedex.Seen', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Caught', full_name='PSXAPI.Response155921581865.Pokedex.Caught', index=2,
+      name='Caught', full_name='PSXAPI.Response1375634093.Pokedex.Caught', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -11703,27 +11453,27 @@ _POKEDEX = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=9387,
-  serialized_end=9492,
+  serialized_start=12768,
+  serialized_end=12871,
 )
 
 
 _POKEDEXENTRY = _descriptor.Descriptor(
   name='PokedexEntry',
-  full_name='PSXAPI.Response155921581865.PokedexEntry',
+  full_name='PSXAPI.Response1375634093.PokedexEntry',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Pokemon', full_name='PSXAPI.Response155921581865.PokedexEntry.Pokemon', index=0,
+      name='Pokemon', full_name='PSXAPI.Response1375634093.PokedexEntry.Pokemon', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='State', full_name='PSXAPI.Response155921581865.PokedexEntry.State', index=1,
+      name='State', full_name='PSXAPI.Response1375634093.PokedexEntry.State', index=1,
       number=2, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -11741,174 +11491,199 @@ _POKEDEXENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=9495,
-  serialized_end=9650,
+  serialized_start=12874,
+  serialized_end=13052,
+)
+
+
+_PREFIX_AGDFASBV1749316721 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1749316721',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1749316721',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1749316721_POKEDEXENTRYSTATE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=13054,
+  serialized_end=13139,
 )
 
 
 _POKEMON = _descriptor.Descriptor(
   name='Pokemon',
-  full_name='PSXAPI.Response155921581865.Pokemon',
+  full_name='PSXAPI.Response1375634093.Pokemon',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='PokemonID', full_name='PSXAPI.Response155921581865.Pokemon.PokemonID', index=0,
+      name='PokemonID', full_name='PSXAPI.Response1375634093.Pokemon.PokemonID', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Level5', full_name='PSXAPI.Response155921581865.Pokemon.Level5', index=1,
+      name='Level', full_name='PSXAPI.Response1375634093.Pokemon.Level', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Exp', full_name='PSXAPI.Response155921581865.Pokemon.Exp', index=2,
+      name='Exp', full_name='PSXAPI.Response1375634093.Pokemon.Exp', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='HP', full_name='PSXAPI.Response155921581865.Pokemon.HP', index=3,
+      name='HP', full_name='PSXAPI.Response1375634093.Pokemon.HP', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Moves', full_name='PSXAPI.Response155921581865.Pokemon.Moves', index=4,
+      name='Moves', full_name='PSXAPI.Response1375634093.Pokemon.Moves', index=4,
       number=5, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='AbilitySlot', full_name='PSXAPI.Response155921581865.Pokemon.AbilitySlot', index=5,
+      name='AbilitySlot', full_name='PSXAPI.Response1375634093.Pokemon.AbilitySlot', index=5,
       number=6, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Happiness', full_name='PSXAPI.Response155921581865.Pokemon.Happiness', index=6,
+      name='Happiness', full_name='PSXAPI.Response1375634093.Pokemon.Happiness', index=6,
       number=7, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Nature', full_name='PSXAPI.Response155921581865.Pokemon.Nature', index=7,
+      name='Nature', full_name='PSXAPI.Response1375634093.Pokemon.Nature', index=7,
       number=8, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Shiny', full_name='PSXAPI.Response155921581865.Pokemon.Shiny', index=8,
+      name='Shiny', full_name='PSXAPI.Response1375634093.Pokemon.Shiny', index=8,
       number=9, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='IVs', full_name='PSXAPI.Response155921581865.Pokemon.IVs', index=9,
+      name='IVs', full_name='PSXAPI.Response1375634093.Pokemon.IVs', index=9,
       number=10, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='EVs', full_name='PSXAPI.Response155921581865.Pokemon.EVs', index=10,
+      name='EVs', full_name='PSXAPI.Response1375634093.Pokemon.EVs', index=10,
       number=11, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Gender', full_name='PSXAPI.Response155921581865.Pokemon.Gender', index=11,
+      name='Gender', full_name='PSXAPI.Response1375634093.Pokemon.Gender', index=11,
       number=12, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='OriginalTrainer', full_name='PSXAPI.Response155921581865.Pokemon.OriginalTrainer', index=12,
+      name='OriginalTrainer', full_name='PSXAPI.Response1375634093.Pokemon.OriginalTrainer', index=12,
       number=13, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Trainer', full_name='PSXAPI.Response155921581865.Pokemon.Trainer', index=13,
+      name='Trainer', full_name='PSXAPI.Response1375634093.Pokemon.Trainer', index=13,
       number=14, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Nickname', full_name='PSXAPI.Response155921581865.Pokemon.Nickname', index=14,
+      name='Nickname', full_name='PSXAPI.Response1375634093.Pokemon.Nickname', index=14,
       number=15, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Pokeball', full_name='PSXAPI.Response155921581865.Pokemon.Pokeball', index=15,
+      name='Pokeball', full_name='PSXAPI.Response1375634093.Pokemon.Pokeball', index=15,
       number=16, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='HoldItem', full_name='PSXAPI.Response155921581865.Pokemon.HoldItem', index=16,
+      name='HoldItem', full_name='PSXAPI.Response1375634093.Pokemon.HoldItem', index=16,
       number=17, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Personality', full_name='PSXAPI.Response155921581865.Pokemon.Personality', index=17,
+      name='Personality', full_name='PSXAPI.Response1375634093.Pokemon.Personality', index=17,
       number=18, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Condition', full_name='PSXAPI.Response155921581865.Pokemon.Condition', index=18,
+      name='Condition', full_name='PSXAPI.Response1375634093.Pokemon.Condition', index=18,
       number=19, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='EVsCollected', full_name='PSXAPI.Response155921581865.Pokemon.EVsCollected', index=19,
+      name='EVsCollected', full_name='PSXAPI.Response1375634093.Pokemon.EVsCollected', index=19,
       number=20, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CaughtDateUtc', full_name='PSXAPI.Response155921581865.Pokemon.CaughtDateUtc', index=20,
+      name='CaughtDateUtc', full_name='PSXAPI.Response1375634093.Pokemon.CaughtDateUtc', index=20,
       number=21, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CaughtLevel', full_name='PSXAPI.Response155921581865.Pokemon.CaughtLevel', index=21,
+      name='CaughtLevel', full_name='PSXAPI.Response1375634093.Pokemon.CaughtLevel', index=21,
       number=22, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='NotTradeable', full_name='PSXAPI.Response155921581865.Pokemon.NotTradeable', index=22,
+      name='NotTradeable', full_name='PSXAPI.Response1375634093.Pokemon.NotTradeable', index=22,
       number=23, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -11926,76 +11701,101 @@ _POKEMON = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=9653,
-  serialized_end=10593,
+  serialized_start=13142,
+  serialized_end=14170,
+)
+
+
+_PREFIX_AGDFASBV1466068983 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1466068983',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1466068983',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1466068983_POKEMONCONDITION,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=14173,
+  serialized_end=14308,
 )
 
 
 _POKEMONDATA = _descriptor.Descriptor(
   name='PokemonData',
-  full_name='PSXAPI.Response155921581865.PokemonData',
+  full_name='PSXAPI.Response1375634093.PokemonData',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='UniqueID', full_name='PSXAPI.Response155921581865.PokemonData.UniqueID', index=0,
+      name='UniqueID', full_name='PSXAPI.Response1375634093.PokemonData.UniqueID', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Payload', full_name='PSXAPI.Response155921581865.PokemonData.Payload', index=1,
+      name='Payload', full_name='PSXAPI.Response1375634093.PokemonData.Payload', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Stats', full_name='PSXAPI.Response155921581865.PokemonData.Stats', index=2,
+      name='Stats', full_name='PSXAPI.Response1375634093.PokemonData.Stats', index=2,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Trainer', full_name='PSXAPI.Response155921581865.PokemonData.Trainer', index=3,
+      name='Trainer', full_name='PSXAPI.Response1375634093.PokemonData.Trainer', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='OriginalTrainer', full_name='PSXAPI.Response155921581865.PokemonData.OriginalTrainer', index=4,
+      name='OriginalTrainer', full_name='PSXAPI.Response1375634093.PokemonData.OriginalTrainer', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Ability', full_name='PSXAPI.Response155921581865.PokemonData.Ability', index=5,
+      name='Ability', full_name='PSXAPI.Response1375634093.PokemonData.Ability', index=5,
       number=6, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='ExpStart', full_name='PSXAPI.Response155921581865.PokemonData.ExpStart', index=6,
+      name='ExpStart', full_name='PSXAPI.Response1375634093.PokemonData.ExpStart', index=6,
       number=7, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='ExpNext', full_name='PSXAPI.Response155921581865.PokemonData.ExpNext', index=7,
+      name='ExpNext', full_name='PSXAPI.Response1375634093.PokemonData.ExpNext', index=7,
       number=8, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='EggState', full_name='PSXAPI.Response155921581865.PokemonData.EggState', index=8,
+      name='EggState', full_name='PSXAPI.Response1375634093.PokemonData.EggState', index=8,
       number=9, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -12013,34 +11813,59 @@ _POKEMONDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=10596,
-  serialized_end=10917,
+  serialized_start=14311,
+  serialized_end=14653,
+)
+
+
+_PREFIX_AGDFASBV876393797 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV876393797',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV876393797',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV876393797_POKEMONGENDER,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=14655,
+  serialized_end=14735,
 )
 
 
 _POKEMONMOVE = _descriptor.Descriptor(
   name='PokemonMove',
-  full_name='PSXAPI.Response155921581865.PokemonMove',
+  full_name='PSXAPI.Response1375634093.PokemonMove',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Move1', full_name='PSXAPI.Response155921581865.PokemonMove.Move1', index=0,
+      name='Move', full_name='PSXAPI.Response1375634093.PokemonMove.Move', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='PP', full_name='PSXAPI.Response155921581865.PokemonMove.PP', index=1,
+      name='PP', full_name='PSXAPI.Response1375634093.PokemonMove.PP', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='MaxPP', full_name='PSXAPI.Response155921581865.PokemonMove.MaxPP', index=2,
+      name='MaxPP', full_name='PSXAPI.Response1375634093.PokemonMove.MaxPP', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -12058,55 +11883,105 @@ _POKEMONMOVE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=10919,
-  serialized_end=11030,
+  serialized_start=14738,
+  serialized_end=14871,
+)
+
+
+_PREFIX_AGDFASBV167626233 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV167626233',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV167626233',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV167626233_POKEMONMOVEID,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=14874,
+  serialized_end=26183,
+)
+
+
+_PREFIX_AGDFASBV1870327986 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1870327986',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1870327986',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1870327986_POKEMONNATURES,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=26186,
+  serialized_end=26534,
 )
 
 
 _POKEMONSTATS = _descriptor.Descriptor(
   name='PokemonStats',
-  full_name='PSXAPI.Response155921581865.PokemonStats',
+  full_name='PSXAPI.Response1375634093.PokemonStats',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='HP', full_name='PSXAPI.Response155921581865.PokemonStats.HP', index=0,
+      name='HP', full_name='PSXAPI.Response1375634093.PokemonStats.HP', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Atk', full_name='PSXAPI.Response155921581865.PokemonStats.Atk', index=1,
+      name='Atk', full_name='PSXAPI.Response1375634093.PokemonStats.Atk', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Def', full_name='PSXAPI.Response155921581865.PokemonStats.Def', index=2,
+      name='Def', full_name='PSXAPI.Response1375634093.PokemonStats.Def', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='SpAtk', full_name='PSXAPI.Response155921581865.PokemonStats.SpAtk', index=3,
+      name='SpAtk', full_name='PSXAPI.Response1375634093.PokemonStats.SpAtk', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='SpDef', full_name='PSXAPI.Response155921581865.PokemonStats.SpDef', index=4,
+      name='SpDef', full_name='PSXAPI.Response1375634093.PokemonStats.SpDef', index=4,
       number=5, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Speed', full_name='PSXAPI.Response155921581865.PokemonStats.Speed', index=5,
+      name='Speed', full_name='PSXAPI.Response1375634093.PokemonStats.Speed', index=5,
       number=6, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -12124,153 +11999,153 @@ _POKEMONSTATS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=11032,
-  serialized_end=11147,
+  serialized_start=26536,
+  serialized_end=26651,
 )
 
 
 _QUEST = _descriptor.Descriptor(
   name='Quest',
-  full_name='PSXAPI.Response155921581865.Quest',
+  full_name='PSXAPI.Response1375634093.Quest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='ID', full_name='PSXAPI.Response155921581865.Quest.ID', index=0,
+      name='ID', full_name='PSXAPI.Response1375634093.Quest.ID', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Name', full_name='PSXAPI.Response155921581865.Quest.Name', index=1,
+      name='Name', full_name='PSXAPI.Response1375634093.Quest.Name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Description', full_name='PSXAPI.Response155921581865.Quest.Description', index=2,
+      name='Description', full_name='PSXAPI.Response1375634093.Quest.Description', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Type', full_name='PSXAPI.Response155921581865.Quest.Type', index=3,
+      name='Type', full_name='PSXAPI.Response1375634093.Quest.Type', index=3,
       number=4, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Step', full_name='PSXAPI.Response155921581865.Quest.Step', index=4,
+      name='Step', full_name='PSXAPI.Response1375634093.Quest.Step', index=4,
       number=5, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='ProgressType', full_name='PSXAPI.Response155921581865.Quest.ProgressType', index=5,
+      name='ProgressType', full_name='PSXAPI.Response1375634093.Quest.ProgressType', index=5,
       number=6, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='ProgressID', full_name='PSXAPI.Response155921581865.Quest.ProgressID', index=6,
+      name='ProgressID', full_name='PSXAPI.Response1375634093.Quest.ProgressID', index=6,
       number=7, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Progress', full_name='PSXAPI.Response155921581865.Quest.Progress', index=7,
+      name='Progress', full_name='PSXAPI.Response1375634093.Quest.Progress', index=7,
       number=8, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Required', full_name='PSXAPI.Response155921581865.Quest.Required', index=8,
+      name='Required', full_name='PSXAPI.Response1375634093.Quest.Required', index=8,
       number=9, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Target', full_name='PSXAPI.Response155921581865.Quest.Target', index=9,
+      name='Target', full_name='PSXAPI.Response1375634093.Quest.Target', index=9,
       number=10, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='TargetCompleted', full_name='PSXAPI.Response155921581865.Quest.TargetCompleted', index=10,
+      name='TargetCompleted', full_name='PSXAPI.Response1375634093.Quest.TargetCompleted', index=10,
       number=11, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Completed', full_name='PSXAPI.Response155921581865.Quest.Completed', index=11,
+      name='Completed', full_name='PSXAPI.Response1375634093.Quest.Completed', index=11,
       number=12, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='AutoComplete', full_name='PSXAPI.Response155921581865.Quest.AutoComplete', index=12,
+      name='AutoComplete', full_name='PSXAPI.Response1375634093.Quest.AutoComplete', index=12,
       number=13, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Reward', full_name='PSXAPI.Response155921581865.Quest.Reward', index=13,
+      name='Reward', full_name='PSXAPI.Response1375634093.Quest.Reward', index=13,
       number=14, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanCancel', full_name='PSXAPI.Response155921581865.Quest.CanCancel', index=14,
+      name='CanCancel', full_name='PSXAPI.Response1375634093.Quest.CanCancel', index=14,
       number=15, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanShare', full_name='PSXAPI.Response155921581865.Quest.CanShare', index=15,
+      name='CanShare', full_name='PSXAPI.Response1375634093.Quest.CanShare', index=15,
       number=16, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='TargetArea', full_name='PSXAPI.Response155921581865.Quest.TargetArea', index=16,
+      name='TargetArea', full_name='PSXAPI.Response1375634093.Quest.TargetArea', index=16,
       number=17, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='TargetCompletedArea', full_name='PSXAPI.Response155921581865.Quest.TargetCompletedArea', index=17,
+      name='TargetCompletedArea', full_name='PSXAPI.Response1375634093.Quest.TargetCompletedArea', index=17,
       number=18, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='SourceNPC', full_name='PSXAPI.Response155921581865.Quest.SourceNPC', index=18,
+      name='SourceNPC', full_name='PSXAPI.Response1375634093.Quest.SourceNPC', index=18,
       number=19, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='SourceArea', full_name='PSXAPI.Response155921581865.Quest.SourceArea', index=19,
+      name='SourceArea', full_name='PSXAPI.Response1375634093.Quest.SourceArea', index=19,
       number=20, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -12288,69 +12163,94 @@ _QUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=11150,
-  serialized_end=11745,
+  serialized_start=26654,
+  serialized_end=27295,
+)
+
+
+_PREFIX_AGDFASBV1813562425 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1813562425',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1813562425',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1813562425_QUESTPROGRESSTYPE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=27298,
+  serialized_end=27439,
 )
 
 
 _QUESTREWARD = _descriptor.Descriptor(
   name='QuestReward',
-  full_name='PSXAPI.Response155921581865.QuestReward',
+  full_name='PSXAPI.Response1375634093.QuestReward',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Money3', full_name='PSXAPI.Response155921581865.QuestReward.Money3', index=0,
+      name='Money', full_name='PSXAPI.Response1375634093.QuestReward.Money', index=0,
       number=1, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Gold', full_name='PSXAPI.Response155921581865.QuestReward.Gold', index=1,
+      name='Gold', full_name='PSXAPI.Response1375634093.QuestReward.Gold', index=1,
       number=2, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Items', full_name='PSXAPI.Response155921581865.QuestReward.Items', index=2,
+      name='Items', full_name='PSXAPI.Response1375634093.QuestReward.Items', index=2,
       number=3, type=5, cpp_type=1, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Pokemon3', full_name='PSXAPI.Response155921581865.QuestReward.Pokemon3', index=3,
+      name='Pokemon', full_name='PSXAPI.Response1375634093.QuestReward.Pokemon', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='PokemonLevel', full_name='PSXAPI.Response155921581865.QuestReward.PokemonLevel', index=4,
+      name='PokemonLevel', full_name='PSXAPI.Response1375634093.QuestReward.PokemonLevel', index=4,
       number=5, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='PokemonShiny', full_name='PSXAPI.Response155921581865.QuestReward.PokemonShiny', index=5,
+      name='PokemonShiny', full_name='PSXAPI.Response1375634093.QuestReward.PokemonShiny', index=5,
       number=6, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Badge', full_name='PSXAPI.Response155921581865.QuestReward.Badge', index=6,
+      name='Badge', full_name='PSXAPI.Response1375634093.QuestReward.Badge', index=6,
       number=7, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Exp', full_name='PSXAPI.Response155921581865.QuestReward.Exp', index=7,
+      name='Exp', full_name='PSXAPI.Response1375634093.QuestReward.Exp', index=7,
       number=8, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -12368,48 +12268,98 @@ _QUESTREWARD = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=11748,
-  serialized_end=11921,
+  serialized_start=27442,
+  serialized_end=27613,
+)
+
+
+_PREFIX_AGDFASBV15016665 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV15016665',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV15016665',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV15016665_QUESTTYPE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=27615,
+  serialized_end=27723,
+)
+
+
+_PREFIX_AGDFASBV979434225 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV979434225',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV979434225',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV979434225_STAFFRANK,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=27725,
+  serialized_end=27828,
 )
 
 
 _STYLE = _descriptor.Descriptor(
   name='Style',
-  full_name='PSXAPI.Response155921581865.Style',
+  full_name='PSXAPI.Response1375634093.Style',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Gender', full_name='PSXAPI.Response155921581865.Style.Gender', index=0,
+      name='Gender', full_name='PSXAPI.Response1375634093.Style.Gender', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Skin', full_name='PSXAPI.Response155921581865.Style.Skin', index=1,
+      name='Skin', full_name='PSXAPI.Response1375634093.Style.Skin', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Eyes', full_name='PSXAPI.Response155921581865.Style.Eyes', index=2,
+      name='Eyes', full_name='PSXAPI.Response1375634093.Style.Eyes', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Hair', full_name='PSXAPI.Response155921581865.Style.Hair', index=3,
+      name='Hair', full_name='PSXAPI.Response1375634093.Style.Hair', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='HairColor', full_name='PSXAPI.Response155921581865.Style.HairColor', index=4,
+      name='HairColor', full_name='PSXAPI.Response1375634093.Style.HairColor', index=4,
       number=5, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -12427,55 +12377,55 @@ _STYLE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=11924,
-  serialized_end=12064,
+  serialized_start=27831,
+  serialized_end=27993,
 )
 
 
 _TIME = _descriptor.Descriptor(
   name='Time',
-  full_name='PSXAPI.Response155921581865.Time',
+  full_name='PSXAPI.Response1375634093.Time',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='ServerTimeUtc', full_name='PSXAPI.Response155921581865.Time.ServerTimeUtc', index=0,
+      name='ServerTimeUtc', full_name='PSXAPI.Response1375634093.Time.ServerTimeUtc', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='GameTime', full_name='PSXAPI.Response155921581865.Time.GameTime', index=1,
+      name='GameTime', full_name='PSXAPI.Response1375634093.Time.GameTime', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='GameDayTime', full_name='PSXAPI.Response155921581865.Time.GameDayTime', index=2,
+      name='GameDayTime', full_name='PSXAPI.Response1375634093.Time.GameDayTime', index=2,
       number=3, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='GameSeason', full_name='PSXAPI.Response155921581865.Time.GameSeason', index=3,
+      name='GameSeason', full_name='PSXAPI.Response1375634093.Time.GameSeason', index=3,
       number=4, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='TimeFactor', full_name='PSXAPI.Response155921581865.Time.TimeFactor', index=4,
+      name='TimeFactor', full_name='PSXAPI.Response1375634093.Time.TimeFactor', index=4,
       number=5, type=1, cpp_type=5, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Weather', full_name='PSXAPI.Response155921581865.Time.Weather', index=5,
+      name='Weather', full_name='PSXAPI.Response1375634093.Time.Weather', index=5,
       number=6, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -12493,83 +12443,83 @@ _TIME = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=12067,
-  serialized_end=12376,
+  serialized_start=27996,
+  serialized_end=28372,
 )
 
 
 _USERSKINS = _descriptor.Descriptor(
   name='UserSkins',
-  full_name='PSXAPI.Response155921581865.UserSkins',
+  full_name='PSXAPI.Response1375634093.UserSkins',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='EquipedClothe', full_name='PSXAPI.Response155921581865.UserSkins.EquipedClothe', index=0,
+      name='EquipedClothe', full_name='PSXAPI.Response1375634093.UserSkins.EquipedClothe', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='EquipedHat', full_name='PSXAPI.Response155921581865.UserSkins.EquipedHat', index=1,
+      name='EquipedHat', full_name='PSXAPI.Response1375634093.UserSkins.EquipedHat', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='EquipedMount', full_name='PSXAPI.Response155921581865.UserSkins.EquipedMount', index=2,
+      name='EquipedMount', full_name='PSXAPI.Response1375634093.UserSkins.EquipedMount', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='EquipedSurfMount', full_name='PSXAPI.Response155921581865.UserSkins.EquipedSurfMount', index=3,
+      name='EquipedSurfMount', full_name='PSXAPI.Response1375634093.UserSkins.EquipedSurfMount', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='EquipedFlyMount', full_name='PSXAPI.Response155921581865.UserSkins.EquipedFlyMount', index=4,
+      name='EquipedFlyMount', full_name='PSXAPI.Response1375634093.UserSkins.EquipedFlyMount', index=4,
       number=5, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Clothes', full_name='PSXAPI.Response155921581865.UserSkins.Clothes', index=5,
+      name='Clothes', full_name='PSXAPI.Response1375634093.UserSkins.Clothes', index=5,
       number=6, type=5, cpp_type=1, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Hats', full_name='PSXAPI.Response155921581865.UserSkins.Hats', index=6,
+      name='Hats', full_name='PSXAPI.Response1375634093.UserSkins.Hats', index=6,
       number=7, type=5, cpp_type=1, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Mounts', full_name='PSXAPI.Response155921581865.UserSkins.Mounts', index=7,
+      name='Mounts', full_name='PSXAPI.Response1375634093.UserSkins.Mounts', index=7,
       number=8, type=5, cpp_type=1, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='SurfMounts', full_name='PSXAPI.Response155921581865.UserSkins.SurfMounts', index=8,
+      name='SurfMounts', full_name='PSXAPI.Response1375634093.UserSkins.SurfMounts', index=8,
       number=9, type=5, cpp_type=1, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='FlyMounts', full_name='PSXAPI.Response155921581865.UserSkins.FlyMounts', index=9,
+      name='FlyMounts', full_name='PSXAPI.Response1375634093.UserSkins.FlyMounts', index=9,
       number=10, type=5, cpp_type=1, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -12587,27 +12537,52 @@ _USERSKINS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=12379,
-  serialized_end=12607,
+  serialized_start=28375,
+  serialized_end=28603,
+)
+
+
+_PREFIX_AGDFASBV1318554870 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1318554870',
+  full_name='PSXAPI.Response1375634093.PREFIX_AGDFASBV1318554870',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1318554870_WEATHERSTATE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=28605,
+  serialized_end=28680,
 )
 
 
 _ZMOVE = _descriptor.Descriptor(
   name='ZMove',
-  full_name='PSXAPI.Response155921581865.ZMove',
+  full_name='PSXAPI.Response1375634093.ZMove',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='move1', full_name='PSXAPI.Response155921581865.ZMove.move1', index=0,
+      name='move', full_name='PSXAPI.Response1375634093.ZMove.move', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='target', full_name='PSXAPI.Response155921581865.ZMove.target', index=1,
+      name='target', full_name='PSXAPI.Response1375634093.ZMove.target', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -12625,11 +12600,16 @@ _ZMOVE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=12609,
-  serialized_end=12647,
+  serialized_start=28682,
+  serialized_end=28719,
 )
 
-_BANNED.fields_by_name['Remaining'].message_type = bcl__pb2._TIMESPAN
+_PREFIX_AGDFASBV2118046871_ABILITYSLOTTYPE.containing_type = _PREFIX_AGDFASBV2118046871
+_PREFIX_AGDFASBV1901072364_ACTORAVATARTYPE.containing_type = _PREFIX_AGDFASBV1901072364
+_PREFIX_AGDFASBV1230468151_ACTORTEAM.containing_type = _PREFIX_AGDFASBV1230468151
+_PREFIX_AGDFASBV749316793_ACTORTIMER.containing_type = _PREFIX_AGDFASBV749316793
+_PREFIX_AGDFASBV590365810_ACTORTYPE.containing_type = _PREFIX_AGDFASBV590365810
+_BANNED.fields_by_name['Remaining'].message_type = protobuf__net_dot_bcl__pb2._TIMESPAN
 _BATTLE.fields_by_name['Request1'].message_type = _BATTLEREQUEST
 _BATTLE.fields_by_name['Request2'].message_type = _BATTLEREQUEST
 _BATTLEACTIVE.fields_by_name['moves'].message_type = _BATTLEMOVE
@@ -12640,36 +12620,47 @@ _BATTLEREQUEST.fields_by_name['RequestInfo'].message_type = _BATTLEREQUESTDATA
 _BATTLEREQUESTDATA.fields_by_name['active'].message_type = _BATTLEACTIVE
 _BATTLEREQUESTDATA.fields_by_name['side'].message_type = _BATTLESIDE
 _BATTLESIDE.fields_by_name['pokemon'].message_type = _BATTLEPOKEMON
-_DAILYLOOTBOX.fields_by_name['Type'].enum_type = _LOOTBOXTYPE
-_DAILYLOOTBOX.fields_by_name['Timer'].message_type = bcl__pb2._TIMESPAN
-_EFFECT.fields_by_name['Type'].enum_type = _EFFECTUPDATETYPE
+_DAILYLOOTBOX.fields_by_name['Type'].enum_type = _PREFIX_AGDFASBV1562556180_LOOTBOXTYPE
+_DAILYLOOTBOX.fields_by_name['Timer'].message_type = protobuf__net_dot_bcl__pb2._TIMESPAN
+_EFFECT.fields_by_name['Type'].enum_type = _PREFIX_AGDFASBV48946253_EFFECTUPDATETYPE
 _EFFECT.fields_by_name['Effects'].message_type = _EFFECT
-_FRIEND.fields_by_name['OnlineSince'].message_type = bcl__pb2._TIMESPAN
-_FRIEND.fields_by_name['FriendSince'].message_type = bcl__pb2._TIMESPAN
+_PREFIX_AGDFASBV48946253_EFFECTUPDATETYPE.containing_type = _PREFIX_AGDFASBV48946253
+_PREFIX_AGDFASBV363156631_EGGSTATE.containing_type = _PREFIX_AGDFASBV363156631
+_FRIEND.fields_by_name['OnlineSince'].message_type = protobuf__net_dot_bcl__pb2._TIMESPAN
+_FRIEND.fields_by_name['FriendSince'].message_type = protobuf__net_dot_bcl__pb2._TIMESPAN
 _FRIENDS.fields_by_name['List'].message_type = _FRIEND
-_FRIENDS.fields_by_name['Action'].enum_type = _FRIENDSACTION
-_GUILD.fields_by_name['Chat'].message_type = bcl__pb2._GUID
+_FRIENDS.fields_by_name['Action'].enum_type = _PREFIX_AGDFASBV579684050_FRIENDSACTION
+_PREFIX_AGDFASBV579684050_FRIENDSACTION.containing_type = _PREFIX_AGDFASBV579684050
+_PREFIX_AGDFASBV321822151_GAMEDAYTIME.containing_type = _PREFIX_AGDFASBV321822151
+_PREFIX_AGDFASBV669285494_GAMESEASON.containing_type = _PREFIX_AGDFASBV669285494
+_PREFIX_AGDFASBV961203100_GENDER.containing_type = _PREFIX_AGDFASBV961203100
+_GUILD.fields_by_name['Chat'].message_type = protobuf__net_dot_bcl__pb2._GUID
 _GUILD.fields_by_name['Members'].message_type = _GUILDMEMBER
-_GUILD.fields_by_name['Rank'].enum_type = _GUILDRANK
-_GUILDMEMBER.fields_by_name['Rank'].enum_type = _GUILDRANK
-_GUILDMEMBER.fields_by_name['Since'].message_type = bcl__pb2._TIMESPAN
+_GUILD.fields_by_name['Rank'].enum_type = _PREFIX_AGDFASBV635007241_GUILDRANK
+_GUILDMEMBER.fields_by_name['Rank'].enum_type = _PREFIX_AGDFASBV635007241_GUILDRANK
+_GUILDMEMBER.fields_by_name['Since'].message_type = protobuf__net_dot_bcl__pb2._TIMESPAN
+_PREFIX_AGDFASBV635007241_GUILDRANK.containing_type = _PREFIX_AGDFASBV635007241
 _IGNORE.fields_by_name['List'].message_type = _IGNORE
-_IGNORE.fields_by_name['Action'].enum_type = _IGNOREACTION
+_IGNORE.fields_by_name['Action'].enum_type = _PREFIX_AGDFASBV1542622162_IGNOREACTION
+_PREFIX_AGDFASBV1542622162_IGNOREACTION.containing_type = _PREFIX_AGDFASBV1542622162
 _INVENTORY.fields_by_name['ActivePokemon'].message_type = _INVENTORYPOKEMON
 _INVENTORY.fields_by_name['Items'].message_type = _INVENTORYITEM
-_INVENTORYITEM.fields_by_name['Target'].enum_type = _ITEMTARGET
-_INVENTORYITEM.fields_by_name['Pocket'].enum_type = _ITEMPOCKET
-_INVENTORYITEM.fields_by_name['Category'].enum_type = _ITEMCATEGORY
-_INVENTORYPOKEMON.fields_by_name['Pokemon4'].message_type = _POKEMONDATA
+_INVENTORYITEM.fields_by_name['Target'].enum_type = _PREFIX_AGDFASBV983491147_ITEMTARGET
+_INVENTORYITEM.fields_by_name['Pocket'].enum_type = _PREFIX_AGDFASBV1562170800_ITEMPOCKET
+_INVENTORYITEM.fields_by_name['Category'].enum_type = _PREFIX_AGDFASBV972857083_ITEMCATEGORY
+_INVENTORYPOKEMON.fields_by_name['Pokemon'].message_type = _POKEMONDATA
 _INVENTORYPOKEMON.fields_by_name['CanEvolve'].enum_type = _POKEMONID
-_INVENTORYPOKEMON.fields_by_name['CanLearnMove'].enum_type = _POKEMONMOVEID
-_LOBBY.fields_by_name['Timer'].enum_type = _ACTORTIMER
+_INVENTORYPOKEMON.fields_by_name['CanLearnMove'].enum_type = _PREFIX_AGDFASBV167626233_POKEMONMOVEID
+_PREFIX_AGDFASBV972857083_ITEMCATEGORY.containing_type = _PREFIX_AGDFASBV972857083
+_PREFIX_AGDFASBV1562170800_ITEMPOCKET.containing_type = _PREFIX_AGDFASBV1562170800
+_PREFIX_AGDFASBV983491147_ITEMTARGET.containing_type = _PREFIX_AGDFASBV983491147
+_LOBBY.fields_by_name['Timer'].enum_type = _PREFIX_AGDFASBV749316793_ACTORTIMER
 _LOBBY.fields_by_name['Actors'].message_type = _LOBBYACTOR
-_LOBBYACTOR.fields_by_name['Type'].enum_type = _ACTORTYPE
-_LOBBYACTOR.fields_by_name['Team'].enum_type = _ACTORTEAM
-_LOBBYACTOR.fields_by_name['AvatarType'].enum_type = _ACTORAVATARTYPE
-_LOGIN.fields_by_name['Result'].enum_type = _LOGINRESULT
-_LOGIN.fields_by_name['Error'].enum_type = _LOGINERROR
+_LOBBYACTOR.fields_by_name['Type'].enum_type = _PREFIX_AGDFASBV590365810_ACTORTYPE
+_LOBBYACTOR.fields_by_name['Team'].enum_type = _PREFIX_AGDFASBV1230468151_ACTORTEAM
+_LOBBYACTOR.fields_by_name['AvatarType'].enum_type = _PREFIX_AGDFASBV1901072364_ACTORAVATARTYPE
+_LOGIN.fields_by_name['Result'].enum_type = _PREFIX_AGDFASBV1597269680_LOGINRESULT
+_LOGIN.fields_by_name['Error'].enum_type = _PREFIX_AGDFASBV529948962_LOGINERROR
 _LOGIN.fields_by_name['Position'].message_type = _MOVE
 _LOGIN.fields_by_name['Inventory'].message_type = _INVENTORY
 _LOGIN.fields_by_name['Pokedex'].message_type = _POKEDEX
@@ -12681,83 +12672,108 @@ _LOGIN.fields_by_name['Time'].message_type = _TIME
 _LOGIN.fields_by_name['Ignore'].message_type = _IGNORE
 _LOGIN.fields_by_name['Style'].message_type = _STYLE
 _LOGIN.fields_by_name['Equip'].message_type = _EQUIP
-_LOGIN.fields_by_name['MemberRank'].enum_type = _MEMBERRANK
-_LOGIN.fields_by_name['StaffRank0'].enum_type = _STAFFRANK
+_LOGIN.fields_by_name['MemberRank'].enum_type = _PREFIX_AGDFASBV1761834943_MEMBERRANK
+_LOGIN.fields_by_name['StaffRank'].enum_type = _PREFIX_AGDFASBV979434225_STAFFRANK
 _LOGIN.fields_by_name['Mount'].message_type = _MOUNT
 _LOGIN.fields_by_name['Battle'].message_type = _BATTLE
 _LOGIN.fields_by_name['Guild'].message_type = _GUILD
 _LOGIN.fields_by_name['Quests'].message_type = _QUEST
-_LOGIN.fields_by_name['Level1'].message_type = _LEVEL
-_LOGIN.fields_by_name['Banned0'].message_type = _BANNED
+_LOGIN.fields_by_name['Level'].message_type = _LEVEL
+_LOGIN.fields_by_name['Banned'].message_type = _BANNED
 _LOGIN.fields_by_name['SkinsUser'].message_type = _USERSKINS
 _LOGIN.fields_by_name['Lootboxes'].message_type = _LOOTBOX
 _LOGIN.fields_by_name['DailyLootbox'].message_type = _DAILYLOOTBOX
-_LOGIN.fields_by_name['DailyReset'].message_type = bcl__pb2._TIMESPAN
+_LOGIN.fields_by_name['DailyReset'].message_type = protobuf__net_dot_bcl__pb2._TIMESPAN
 _LOGIN.fields_by_name['NearbyUsers'].message_type = _MAPUSERS
 _LOGIN.fields_by_name['Effects'].message_type = _EFFECT
-_LOOTBOX.fields_by_name['Action'].enum_type = _LOOTBOXACTION
-_LOOTBOX.fields_by_name['Type'].enum_type = _LOOTBOXTYPE
+_PREFIX_AGDFASBV529948962_LOGINERROR.containing_type = _PREFIX_AGDFASBV529948962
+_PREFIX_AGDFASBV1597269680_LOGINRESULT.containing_type = _PREFIX_AGDFASBV1597269680
+_PREFIX_AGDFASBV1274100486_LOOTTYPE.containing_type = _PREFIX_AGDFASBV1274100486
+_LOOTBOX.fields_by_name['Action'].enum_type = _PREFIX_AGDFASBV1683146902_LOOTBOXACTION
+_LOOTBOX.fields_by_name['Type'].enum_type = _PREFIX_AGDFASBV1562556180_LOOTBOXTYPE
 _LOOTBOX.fields_by_name['Rolls'].message_type = _LOOTBOXROLL
-_LOOTBOXROLL.fields_by_name['LootType'].enum_type = _LOOTTYPE
+_PREFIX_AGDFASBV1683146902_LOOTBOXACTION.containing_type = _PREFIX_AGDFASBV1683146902
+_LOOTBOXROLL.fields_by_name['LootType'].enum_type = _PREFIX_AGDFASBV1274100486_LOOTTYPE
+_PREFIX_AGDFASBV1562556180_LOOTBOXTYPE.containing_type = _PREFIX_AGDFASBV1562556180
 _MAPUSER.fields_by_name['Actions'].message_type = _MAPUSERACTIONDATA
 _MAPUSER.fields_by_name['Data'].message_type = _MAPUSERDATA
-_MAPUSERACTIONDATA.fields_by_name['Action'].enum_type = _MAPUSERACTION
+_PREFIX_AGDFASBV1720398281_MAPUSERACTION.containing_type = _PREFIX_AGDFASBV1720398281
+_MAPUSERACTIONDATA.fields_by_name['Action'].enum_type = _PREFIX_AGDFASBV1720398281_MAPUSERACTION
 _MAPUSERACTIONDATA.fields_by_name['Position'].message_type = _MAPUSERPOSITION
 _MAPUSERDATA.fields_by_name['Style'].message_type = _STYLE
-_MAPUSERDATA.fields_by_name['Direction'].enum_type = _PLAYERDIRECTION
+_MAPUSERDATA.fields_by_name['Direction'].enum_type = _PREFIX_AGDFASBV1672859746_PLAYERDIRECTION
 _MAPUSERDATA.fields_by_name['Equip'].message_type = _EQUIP
-_MAPUSERDATA.fields_by_name['Mount1'].message_type = _MOUNT
-_MAPUSERDATA.fields_by_name['MemberRank'].enum_type = _MEMBERRANK
-_MAPUSERDATA.fields_by_name['StaffRank1'].enum_type = _STAFFRANK
+_MAPUSERDATA.fields_by_name['Mount'].message_type = _MOUNT
+_MAPUSERDATA.fields_by_name['MemberRank'].enum_type = _PREFIX_AGDFASBV1761834943_MEMBERRANK
+_MAPUSERDATA.fields_by_name['StaffRank'].enum_type = _PREFIX_AGDFASBV979434225_STAFFRANK
 _MAPUSERS.fields_by_name['Users'].message_type = _MAPUSER
-_MOUNT.fields_by_name['MountType'].enum_type = _MOUNTTYPE
-_MOVE.fields_by_name['Action'].enum_type = _MOVEACTION
-_MOVE.fields_by_name['Direction'].enum_type = _PLAYERDIRECTION
-_MOVE.fields_by_name['Scripts'].message_type = bcl__pb2._GUID
-_MOVEPLAYER.fields_by_name['Action'].enum_type = _MOVEPLAYERACTION
+_PREFIX_AGDFASBV1761834943_MEMBERRANK.containing_type = _PREFIX_AGDFASBV1761834943
+_MOUNT.fields_by_name['MountType'].enum_type = _PREFIX_AGDFASBV1702787644_MOUNTTYPE
+_PREFIX_AGDFASBV1702787644_MOUNTTYPE.containing_type = _PREFIX_AGDFASBV1702787644
+_MOVE.fields_by_name['Action'].enum_type = _PREFIX_AGDFASBV2033304364_MOVEACTION
+_MOVE.fields_by_name['Direction'].enum_type = _PREFIX_AGDFASBV1672859746_PLAYERDIRECTION
+_MOVE.fields_by_name['Scripts'].message_type = protobuf__net_dot_bcl__pb2._GUID
+_PREFIX_AGDFASBV2033304364_MOVEACTION.containing_type = _PREFIX_AGDFASBV2033304364
+_MOVEPLAYER.fields_by_name['Action'].enum_type = _PREFIX_AGDFASBV101843234_MOVEPLAYERACTION
 _MOVEPLAYER.fields_by_name['Style'].message_type = _STYLE
-_MOVEPLAYER.fields_by_name['Direction'].enum_type = _PLAYERDIRECTION
+_MOVEPLAYER.fields_by_name['Direction'].enum_type = _PREFIX_AGDFASBV1672859746_PLAYERDIRECTION
 _MOVEPLAYER.fields_by_name['Equip'].message_type = _EQUIP
-_MOVEPLAYER.fields_by_name['Mount2'].message_type = _MOUNT
-_MOVEPLAYER.fields_by_name['MemberRank'].enum_type = _MEMBERRANK
-_MOVEPLAYER.fields_by_name['StaffRank2'].enum_type = _STAFFRANK
+_MOVEPLAYER.fields_by_name['Mount'].message_type = _MOUNT
+_MOVEPLAYER.fields_by_name['MemberRank'].enum_type = _PREFIX_AGDFASBV1761834943_MEMBERRANK
+_MOVEPLAYER.fields_by_name['StaffRank'].enum_type = _PREFIX_AGDFASBV979434225_STAFFRANK
+_PREFIX_AGDFASBV101843234_MOVEPLAYERACTION.containing_type = _PREFIX_AGDFASBV101843234
 _PARTY.fields_by_name['Members'].message_type = _PARTYMEMBER
-_PARTY.fields_by_name['ChatID'].message_type = bcl__pb2._GUID
-_PARTYMEMBER.fields_by_name['UserId'].message_type = bcl__pb2._GUID
+_PARTY.fields_by_name['ChatID'].message_type = protobuf__net_dot_bcl__pb2._GUID
+_PARTYMEMBER.fields_by_name['UserId'].message_type = protobuf__net_dot_bcl__pb2._GUID
 _PARTYMEMBER.fields_by_name['Pokemon'].message_type = _INVENTORYPOKEMON
 _PARTYMEMBER.fields_by_name['Equipment'].message_type = _EQUIP
 _PARTYMEMBER.fields_by_name['Style'].message_type = _STYLE
+_PREFIX_AGDFASBV1672859746_PLAYERDIRECTION.containing_type = _PREFIX_AGDFASBV1672859746
 _POKEDEX.fields_by_name['Entries'].message_type = _POKEDEXENTRY
 _POKEDEXENTRY.fields_by_name['Pokemon'].enum_type = _POKEMONID
-_POKEDEXENTRY.fields_by_name['State'].enum_type = _POKEDEXENTRYSTATE
+_POKEDEXENTRY.fields_by_name['State'].enum_type = _PREFIX_AGDFASBV1749316721_POKEDEXENTRYSTATE
+_PREFIX_AGDFASBV1749316721_POKEDEXENTRYSTATE.containing_type = _PREFIX_AGDFASBV1749316721
 _POKEMON.fields_by_name['PokemonID'].enum_type = _POKEMONID
 _POKEMON.fields_by_name['Moves'].message_type = _POKEMONMOVE
-_POKEMON.fields_by_name['AbilitySlot'].enum_type = _ABILITYSLOTTYPE
-_POKEMON.fields_by_name['Nature'].enum_type = _POKEMONNATURES
+_POKEMON.fields_by_name['AbilitySlot'].enum_type = _PREFIX_AGDFASBV2118046871_ABILITYSLOTTYPE
+_POKEMON.fields_by_name['Nature'].enum_type = _PREFIX_AGDFASBV1870327986_POKEMONNATURES
 _POKEMON.fields_by_name['IVs'].message_type = _POKEMONSTATS
 _POKEMON.fields_by_name['EVs'].message_type = _POKEMONSTATS
-_POKEMON.fields_by_name['Gender'].enum_type = _POKEMONGENDER
-_POKEMON.fields_by_name['OriginalTrainer'].message_type = bcl__pb2._GUID
-_POKEMON.fields_by_name['Trainer'].message_type = bcl__pb2._GUID
-_POKEMON.fields_by_name['Condition'].enum_type = _POKEMONCONDITION
+_POKEMON.fields_by_name['Gender'].enum_type = _PREFIX_AGDFASBV876393797_POKEMONGENDER
+_POKEMON.fields_by_name['OriginalTrainer'].message_type = protobuf__net_dot_bcl__pb2._GUID
+_POKEMON.fields_by_name['Trainer'].message_type = protobuf__net_dot_bcl__pb2._GUID
+_POKEMON.fields_by_name['Condition'].enum_type = _PREFIX_AGDFASBV1466068983_POKEMONCONDITION
 _POKEMON.fields_by_name['EVsCollected'].message_type = _POKEMONSTATS
-_POKEMON.fields_by_name['CaughtDateUtc'].message_type = bcl__pb2._DATETIME
-_POKEMONDATA.fields_by_name['UniqueID'].message_type = bcl__pb2._GUID
+_POKEMON.fields_by_name['CaughtDateUtc'].message_type = protobuf__net_dot_bcl__pb2._DATETIME
+_PREFIX_AGDFASBV1466068983_POKEMONCONDITION.containing_type = _PREFIX_AGDFASBV1466068983
+_POKEMONDATA.fields_by_name['UniqueID'].message_type = protobuf__net_dot_bcl__pb2._GUID
 _POKEMONDATA.fields_by_name['Payload'].message_type = _POKEMON
 _POKEMONDATA.fields_by_name['Stats'].message_type = _POKEMONSTATS
-_POKEMONDATA.fields_by_name['EggState'].enum_type = _EGGSTATE
-_POKEMONMOVE.fields_by_name['Move1'].enum_type = _POKEMONMOVEID
-_QUEST.fields_by_name['Type'].enum_type = _QUESTTYPE
-_QUEST.fields_by_name['ProgressType'].enum_type = _QUESTPROGRESSTYPE
-_QUEST.fields_by_name['Target'].message_type = bcl__pb2._GUID
-_QUEST.fields_by_name['TargetCompleted'].message_type = bcl__pb2._GUID
+_POKEMONDATA.fields_by_name['EggState'].enum_type = _PREFIX_AGDFASBV363156631_EGGSTATE
+_PREFIX_AGDFASBV876393797_POKEMONGENDER.containing_type = _PREFIX_AGDFASBV876393797
+_POKEMONMOVE.fields_by_name['Move'].enum_type = _PREFIX_AGDFASBV167626233_POKEMONMOVEID
+_PREFIX_AGDFASBV167626233_POKEMONMOVEID.containing_type = _PREFIX_AGDFASBV167626233
+_PREFIX_AGDFASBV1870327986_POKEMONNATURES.containing_type = _PREFIX_AGDFASBV1870327986
+_QUEST.fields_by_name['Type'].enum_type = _PREFIX_AGDFASBV15016665_QUESTTYPE
+_QUEST.fields_by_name['ProgressType'].enum_type = _PREFIX_AGDFASBV1813562425_QUESTPROGRESSTYPE
+_QUEST.fields_by_name['Target'].message_type = protobuf__net_dot_bcl__pb2._GUID
+_QUEST.fields_by_name['TargetCompleted'].message_type = protobuf__net_dot_bcl__pb2._GUID
 _QUEST.fields_by_name['Reward'].message_type = _QUESTREWARD
-_STYLE.fields_by_name['Gender'].enum_type = _GENDER
-_TIME.fields_by_name['ServerTimeUtc'].message_type = bcl__pb2._DATETIME
-_TIME.fields_by_name['GameTime'].message_type = bcl__pb2._TIMESPAN
-_TIME.fields_by_name['GameDayTime'].enum_type = _GAMEDAYTIME
-_TIME.fields_by_name['GameSeason'].enum_type = _GAMESEASON
-_TIME.fields_by_name['Weather'].enum_type = _WEATHERSTATE
+_PREFIX_AGDFASBV1813562425_QUESTPROGRESSTYPE.containing_type = _PREFIX_AGDFASBV1813562425
+_PREFIX_AGDFASBV15016665_QUESTTYPE.containing_type = _PREFIX_AGDFASBV15016665
+_PREFIX_AGDFASBV979434225_STAFFRANK.containing_type = _PREFIX_AGDFASBV979434225
+_STYLE.fields_by_name['Gender'].enum_type = _PREFIX_AGDFASBV961203100_GENDER
+_TIME.fields_by_name['ServerTimeUtc'].message_type = protobuf__net_dot_bcl__pb2._DATETIME
+_TIME.fields_by_name['GameTime'].message_type = protobuf__net_dot_bcl__pb2._TIMESPAN
+_TIME.fields_by_name['GameDayTime'].enum_type = _PREFIX_AGDFASBV321822151_GAMEDAYTIME
+_TIME.fields_by_name['GameSeason'].enum_type = _PREFIX_AGDFASBV669285494_GAMESEASON
+_TIME.fields_by_name['Weather'].enum_type = _PREFIX_AGDFASBV1318554870_WEATHERSTATE
+_PREFIX_AGDFASBV1318554870_WEATHERSTATE.containing_type = _PREFIX_AGDFASBV1318554870
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV2118046871'] = _PREFIX_AGDFASBV2118046871
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1901072364'] = _PREFIX_AGDFASBV1901072364
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1230468151'] = _PREFIX_AGDFASBV1230468151
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV749316793'] = _PREFIX_AGDFASBV749316793
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV590365810'] = _PREFIX_AGDFASBV590365810
 DESCRIPTOR.message_types_by_name['Banned'] = _BANNED
 DESCRIPTOR.message_types_by_name['Battle'] = _BATTLE
 DESCRIPTOR.message_types_by_name['BattleActive'] = _BATTLEACTIVE
@@ -12769,414 +12785,661 @@ DESCRIPTOR.message_types_by_name['BattleRequestData'] = _BATTLEREQUESTDATA
 DESCRIPTOR.message_types_by_name['BattleSide'] = _BATTLESIDE
 DESCRIPTOR.message_types_by_name['DailyLootbox'] = _DAILYLOOTBOX
 DESCRIPTOR.message_types_by_name['Effect'] = _EFFECT
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV48946253'] = _PREFIX_AGDFASBV48946253
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV363156631'] = _PREFIX_AGDFASBV363156631
 DESCRIPTOR.message_types_by_name['Equip'] = _EQUIP
 DESCRIPTOR.message_types_by_name['Friend'] = _FRIEND
 DESCRIPTOR.message_types_by_name['Friends'] = _FRIENDS
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV579684050'] = _PREFIX_AGDFASBV579684050
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV321822151'] = _PREFIX_AGDFASBV321822151
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV669285494'] = _PREFIX_AGDFASBV669285494
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV961203100'] = _PREFIX_AGDFASBV961203100
 DESCRIPTOR.message_types_by_name['Guild'] = _GUILD
 DESCRIPTOR.message_types_by_name['GuildMember'] = _GUILDMEMBER
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV635007241'] = _PREFIX_AGDFASBV635007241
 DESCRIPTOR.message_types_by_name['Ignore'] = _IGNORE
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1542622162'] = _PREFIX_AGDFASBV1542622162
 DESCRIPTOR.message_types_by_name['Inventory'] = _INVENTORY
 DESCRIPTOR.message_types_by_name['InventoryItem'] = _INVENTORYITEM
 DESCRIPTOR.message_types_by_name['InventoryPokemon'] = _INVENTORYPOKEMON
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV972857083'] = _PREFIX_AGDFASBV972857083
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1562170800'] = _PREFIX_AGDFASBV1562170800
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV983491147'] = _PREFIX_AGDFASBV983491147
 DESCRIPTOR.message_types_by_name['Level'] = _LEVEL
 DESCRIPTOR.message_types_by_name['Lobby'] = _LOBBY
 DESCRIPTOR.message_types_by_name['LobbyActor'] = _LOBBYACTOR
 DESCRIPTOR.message_types_by_name['Login'] = _LOGIN
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV529948962'] = _PREFIX_AGDFASBV529948962
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1597269680'] = _PREFIX_AGDFASBV1597269680
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1274100486'] = _PREFIX_AGDFASBV1274100486
 DESCRIPTOR.message_types_by_name['Lootbox'] = _LOOTBOX
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1683146902'] = _PREFIX_AGDFASBV1683146902
 DESCRIPTOR.message_types_by_name['LootboxRoll'] = _LOOTBOXROLL
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1562556180'] = _PREFIX_AGDFASBV1562556180
 DESCRIPTOR.message_types_by_name['MapUser'] = _MAPUSER
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1720398281'] = _PREFIX_AGDFASBV1720398281
 DESCRIPTOR.message_types_by_name['MapUserActionData'] = _MAPUSERACTIONDATA
 DESCRIPTOR.message_types_by_name['MapUserData'] = _MAPUSERDATA
 DESCRIPTOR.message_types_by_name['MapUserPosition'] = _MAPUSERPOSITION
 DESCRIPTOR.message_types_by_name['MapUsers'] = _MAPUSERS
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1761834943'] = _PREFIX_AGDFASBV1761834943
 DESCRIPTOR.message_types_by_name['Mount'] = _MOUNT
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1702787644'] = _PREFIX_AGDFASBV1702787644
 DESCRIPTOR.message_types_by_name['Move'] = _MOVE
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV2033304364'] = _PREFIX_AGDFASBV2033304364
 DESCRIPTOR.message_types_by_name['MovePlayer'] = _MOVEPLAYER
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV101843234'] = _PREFIX_AGDFASBV101843234
 DESCRIPTOR.message_types_by_name['Party'] = _PARTY
 DESCRIPTOR.message_types_by_name['PartyMember'] = _PARTYMEMBER
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1672859746'] = _PREFIX_AGDFASBV1672859746
 DESCRIPTOR.message_types_by_name['Pokedex'] = _POKEDEX
 DESCRIPTOR.message_types_by_name['PokedexEntry'] = _POKEDEXENTRY
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1749316721'] = _PREFIX_AGDFASBV1749316721
 DESCRIPTOR.message_types_by_name['Pokemon'] = _POKEMON
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1466068983'] = _PREFIX_AGDFASBV1466068983
 DESCRIPTOR.message_types_by_name['PokemonData'] = _POKEMONDATA
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV876393797'] = _PREFIX_AGDFASBV876393797
 DESCRIPTOR.message_types_by_name['PokemonMove'] = _POKEMONMOVE
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV167626233'] = _PREFIX_AGDFASBV167626233
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1870327986'] = _PREFIX_AGDFASBV1870327986
 DESCRIPTOR.message_types_by_name['PokemonStats'] = _POKEMONSTATS
 DESCRIPTOR.message_types_by_name['Quest'] = _QUEST
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1813562425'] = _PREFIX_AGDFASBV1813562425
 DESCRIPTOR.message_types_by_name['QuestReward'] = _QUESTREWARD
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV15016665'] = _PREFIX_AGDFASBV15016665
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV979434225'] = _PREFIX_AGDFASBV979434225
 DESCRIPTOR.message_types_by_name['Style'] = _STYLE
 DESCRIPTOR.message_types_by_name['Time'] = _TIME
 DESCRIPTOR.message_types_by_name['UserSkins'] = _USERSKINS
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1318554870'] = _PREFIX_AGDFASBV1318554870
 DESCRIPTOR.message_types_by_name['ZMove'] = _ZMOVE
-DESCRIPTOR.enum_types_by_name['ActorAvatarType'] = _ACTORAVATARTYPE
-DESCRIPTOR.enum_types_by_name['ActorTeam'] = _ACTORTEAM
-DESCRIPTOR.enum_types_by_name['ActorTimer'] = _ACTORTIMER
-DESCRIPTOR.enum_types_by_name['ActorType'] = _ACTORTYPE
-DESCRIPTOR.enum_types_by_name['AbilitySlotType'] = _ABILITYSLOTTYPE
-DESCRIPTOR.enum_types_by_name['EffectUpdateType'] = _EFFECTUPDATETYPE
-DESCRIPTOR.enum_types_by_name['EggState'] = _EGGSTATE
-DESCRIPTOR.enum_types_by_name['FriendsAction'] = _FRIENDSACTION
-DESCRIPTOR.enum_types_by_name['GameDayTime'] = _GAMEDAYTIME
-DESCRIPTOR.enum_types_by_name['GameSeason'] = _GAMESEASON
-DESCRIPTOR.enum_types_by_name['Gender'] = _GENDER
-DESCRIPTOR.enum_types_by_name['GuildRank'] = _GUILDRANK
-DESCRIPTOR.enum_types_by_name['IgnoreAction'] = _IGNOREACTION
-DESCRIPTOR.enum_types_by_name['ItemCategory'] = _ITEMCATEGORY
-DESCRIPTOR.enum_types_by_name['ItemPocket'] = _ITEMPOCKET
-DESCRIPTOR.enum_types_by_name['ItemTarget'] = _ITEMTARGET
-DESCRIPTOR.enum_types_by_name['LoginError'] = _LOGINERROR
-DESCRIPTOR.enum_types_by_name['LoginResult'] = _LOGINRESULT
-DESCRIPTOR.enum_types_by_name['LootType'] = _LOOTTYPE
-DESCRIPTOR.enum_types_by_name['LootboxAction'] = _LOOTBOXACTION
-DESCRIPTOR.enum_types_by_name['LootboxType'] = _LOOTBOXTYPE
-DESCRIPTOR.enum_types_by_name['MapUserAction'] = _MAPUSERACTION
-DESCRIPTOR.enum_types_by_name['MemberRank'] = _MEMBERRANK
-DESCRIPTOR.enum_types_by_name['MountType'] = _MOUNTTYPE
-DESCRIPTOR.enum_types_by_name['MoveAction'] = _MOVEACTION
-DESCRIPTOR.enum_types_by_name['MovePlayerAction'] = _MOVEPLAYERACTION
-DESCRIPTOR.enum_types_by_name['PlayerDirection'] = _PLAYERDIRECTION
-DESCRIPTOR.enum_types_by_name['PokedexEntryState'] = _POKEDEXENTRYSTATE
-DESCRIPTOR.enum_types_by_name['PokemonCondition'] = _POKEMONCONDITION
-DESCRIPTOR.enum_types_by_name['PokemonGender'] = _POKEMONGENDER
 DESCRIPTOR.enum_types_by_name['PokemonID'] = _POKEMONID
-DESCRIPTOR.enum_types_by_name['PokemonMoveID'] = _POKEMONMOVEID
-DESCRIPTOR.enum_types_by_name['PokemonNatures'] = _POKEMONNATURES
-DESCRIPTOR.enum_types_by_name['QuestProgressType'] = _QUESTPROGRESSTYPE
-DESCRIPTOR.enum_types_by_name['QuestType'] = _QUESTTYPE
-DESCRIPTOR.enum_types_by_name['StaffRank'] = _STAFFRANK
-DESCRIPTOR.enum_types_by_name['WeatherState'] = _WEATHERSTATE
+
+PREFIX_AGDFASBV2118046871 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV2118046871', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV2118046871,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV2118046871)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV2118046871)
+
+PREFIX_AGDFASBV1901072364 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1901072364', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1901072364,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV1901072364)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1901072364)
+
+PREFIX_AGDFASBV1230468151 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1230468151', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1230468151,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV1230468151)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1230468151)
+
+PREFIX_AGDFASBV749316793 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV749316793', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV749316793,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV749316793)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV749316793)
+
+PREFIX_AGDFASBV590365810 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV590365810', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV590365810,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV590365810)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV590365810)
 
 Banned = _reflection.GeneratedProtocolMessageType('Banned', (_message.Message,), dict(
   DESCRIPTOR = _BANNED,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.Banned)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.Banned)
   ))
 _sym_db.RegisterMessage(Banned)
 
 Battle = _reflection.GeneratedProtocolMessageType('Battle', (_message.Message,), dict(
   DESCRIPTOR = _BATTLE,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.Battle)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.Battle)
   ))
 _sym_db.RegisterMessage(Battle)
 
 BattleActive = _reflection.GeneratedProtocolMessageType('BattleActive', (_message.Message,), dict(
   DESCRIPTOR = _BATTLEACTIVE,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.BattleActive)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.BattleActive)
   ))
 _sym_db.RegisterMessage(BattleActive)
 
 BattleMove = _reflection.GeneratedProtocolMessageType('BattleMove', (_message.Message,), dict(
   DESCRIPTOR = _BATTLEMOVE,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.BattleMove)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.BattleMove)
   ))
 _sym_db.RegisterMessage(BattleMove)
 
 BattlePokemon = _reflection.GeneratedProtocolMessageType('BattlePokemon', (_message.Message,), dict(
   DESCRIPTOR = _BATTLEPOKEMON,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.BattlePokemon)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.BattlePokemon)
   ))
 _sym_db.RegisterMessage(BattlePokemon)
 
 BattlePokemonStats = _reflection.GeneratedProtocolMessageType('BattlePokemonStats', (_message.Message,), dict(
   DESCRIPTOR = _BATTLEPOKEMONSTATS,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.BattlePokemonStats)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.BattlePokemonStats)
   ))
 _sym_db.RegisterMessage(BattlePokemonStats)
 
 BattleRequest = _reflection.GeneratedProtocolMessageType('BattleRequest', (_message.Message,), dict(
   DESCRIPTOR = _BATTLEREQUEST,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.BattleRequest)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.BattleRequest)
   ))
 _sym_db.RegisterMessage(BattleRequest)
 
 BattleRequestData = _reflection.GeneratedProtocolMessageType('BattleRequestData', (_message.Message,), dict(
   DESCRIPTOR = _BATTLEREQUESTDATA,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.BattleRequestData)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.BattleRequestData)
   ))
 _sym_db.RegisterMessage(BattleRequestData)
 
 BattleSide = _reflection.GeneratedProtocolMessageType('BattleSide', (_message.Message,), dict(
   DESCRIPTOR = _BATTLESIDE,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.BattleSide)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.BattleSide)
   ))
 _sym_db.RegisterMessage(BattleSide)
 
 DailyLootbox = _reflection.GeneratedProtocolMessageType('DailyLootbox', (_message.Message,), dict(
   DESCRIPTOR = _DAILYLOOTBOX,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.DailyLootbox)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.DailyLootbox)
   ))
 _sym_db.RegisterMessage(DailyLootbox)
 
 Effect = _reflection.GeneratedProtocolMessageType('Effect', (_message.Message,), dict(
   DESCRIPTOR = _EFFECT,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.Effect)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.Effect)
   ))
 _sym_db.RegisterMessage(Effect)
+
+PREFIX_AGDFASBV48946253 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV48946253', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV48946253,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV48946253)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV48946253)
+
+PREFIX_AGDFASBV363156631 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV363156631', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV363156631,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV363156631)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV363156631)
 
 Equip = _reflection.GeneratedProtocolMessageType('Equip', (_message.Message,), dict(
   DESCRIPTOR = _EQUIP,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.Equip)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.Equip)
   ))
 _sym_db.RegisterMessage(Equip)
 
 Friend = _reflection.GeneratedProtocolMessageType('Friend', (_message.Message,), dict(
   DESCRIPTOR = _FRIEND,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.Friend)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.Friend)
   ))
 _sym_db.RegisterMessage(Friend)
 
 Friends = _reflection.GeneratedProtocolMessageType('Friends', (_message.Message,), dict(
   DESCRIPTOR = _FRIENDS,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.Friends)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.Friends)
   ))
 _sym_db.RegisterMessage(Friends)
+
+PREFIX_AGDFASBV579684050 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV579684050', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV579684050,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV579684050)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV579684050)
+
+PREFIX_AGDFASBV321822151 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV321822151', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV321822151,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV321822151)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV321822151)
+
+PREFIX_AGDFASBV669285494 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV669285494', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV669285494,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV669285494)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV669285494)
+
+PREFIX_AGDFASBV961203100 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV961203100', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV961203100,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV961203100)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV961203100)
 
 Guild = _reflection.GeneratedProtocolMessageType('Guild', (_message.Message,), dict(
   DESCRIPTOR = _GUILD,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.Guild)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.Guild)
   ))
 _sym_db.RegisterMessage(Guild)
 
 GuildMember = _reflection.GeneratedProtocolMessageType('GuildMember', (_message.Message,), dict(
   DESCRIPTOR = _GUILDMEMBER,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.GuildMember)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.GuildMember)
   ))
 _sym_db.RegisterMessage(GuildMember)
+
+PREFIX_AGDFASBV635007241 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV635007241', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV635007241,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV635007241)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV635007241)
 
 Ignore = _reflection.GeneratedProtocolMessageType('Ignore', (_message.Message,), dict(
   DESCRIPTOR = _IGNORE,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.Ignore)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.Ignore)
   ))
 _sym_db.RegisterMessage(Ignore)
+
+PREFIX_AGDFASBV1542622162 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1542622162', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1542622162,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV1542622162)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1542622162)
 
 Inventory = _reflection.GeneratedProtocolMessageType('Inventory', (_message.Message,), dict(
   DESCRIPTOR = _INVENTORY,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.Inventory)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.Inventory)
   ))
 _sym_db.RegisterMessage(Inventory)
 
 InventoryItem = _reflection.GeneratedProtocolMessageType('InventoryItem', (_message.Message,), dict(
   DESCRIPTOR = _INVENTORYITEM,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.InventoryItem)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.InventoryItem)
   ))
 _sym_db.RegisterMessage(InventoryItem)
 
 InventoryPokemon = _reflection.GeneratedProtocolMessageType('InventoryPokemon', (_message.Message,), dict(
   DESCRIPTOR = _INVENTORYPOKEMON,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.InventoryPokemon)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.InventoryPokemon)
   ))
 _sym_db.RegisterMessage(InventoryPokemon)
+
+PREFIX_AGDFASBV972857083 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV972857083', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV972857083,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV972857083)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV972857083)
+
+PREFIX_AGDFASBV1562170800 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1562170800', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1562170800,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV1562170800)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1562170800)
+
+PREFIX_AGDFASBV983491147 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV983491147', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV983491147,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV983491147)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV983491147)
 
 Level = _reflection.GeneratedProtocolMessageType('Level', (_message.Message,), dict(
   DESCRIPTOR = _LEVEL,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.Level)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.Level)
   ))
 _sym_db.RegisterMessage(Level)
 
 Lobby = _reflection.GeneratedProtocolMessageType('Lobby', (_message.Message,), dict(
   DESCRIPTOR = _LOBBY,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.Lobby)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.Lobby)
   ))
 _sym_db.RegisterMessage(Lobby)
 
 LobbyActor = _reflection.GeneratedProtocolMessageType('LobbyActor', (_message.Message,), dict(
   DESCRIPTOR = _LOBBYACTOR,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.LobbyActor)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.LobbyActor)
   ))
 _sym_db.RegisterMessage(LobbyActor)
 
 Login = _reflection.GeneratedProtocolMessageType('Login', (_message.Message,), dict(
   DESCRIPTOR = _LOGIN,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.Login)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.Login)
   ))
 _sym_db.RegisterMessage(Login)
+
+PREFIX_AGDFASBV529948962 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV529948962', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV529948962,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV529948962)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV529948962)
+
+PREFIX_AGDFASBV1597269680 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1597269680', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1597269680,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV1597269680)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1597269680)
+
+PREFIX_AGDFASBV1274100486 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1274100486', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1274100486,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV1274100486)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1274100486)
 
 Lootbox = _reflection.GeneratedProtocolMessageType('Lootbox', (_message.Message,), dict(
   DESCRIPTOR = _LOOTBOX,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.Lootbox)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.Lootbox)
   ))
 _sym_db.RegisterMessage(Lootbox)
+
+PREFIX_AGDFASBV1683146902 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1683146902', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1683146902,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV1683146902)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1683146902)
 
 LootboxRoll = _reflection.GeneratedProtocolMessageType('LootboxRoll', (_message.Message,), dict(
   DESCRIPTOR = _LOOTBOXROLL,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.LootboxRoll)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.LootboxRoll)
   ))
 _sym_db.RegisterMessage(LootboxRoll)
+
+PREFIX_AGDFASBV1562556180 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1562556180', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1562556180,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV1562556180)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1562556180)
 
 MapUser = _reflection.GeneratedProtocolMessageType('MapUser', (_message.Message,), dict(
   DESCRIPTOR = _MAPUSER,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.MapUser)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.MapUser)
   ))
 _sym_db.RegisterMessage(MapUser)
+
+PREFIX_AGDFASBV1720398281 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1720398281', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1720398281,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV1720398281)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1720398281)
 
 MapUserActionData = _reflection.GeneratedProtocolMessageType('MapUserActionData', (_message.Message,), dict(
   DESCRIPTOR = _MAPUSERACTIONDATA,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.MapUserActionData)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.MapUserActionData)
   ))
 _sym_db.RegisterMessage(MapUserActionData)
 
 MapUserData = _reflection.GeneratedProtocolMessageType('MapUserData', (_message.Message,), dict(
   DESCRIPTOR = _MAPUSERDATA,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.MapUserData)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.MapUserData)
   ))
 _sym_db.RegisterMessage(MapUserData)
 
 MapUserPosition = _reflection.GeneratedProtocolMessageType('MapUserPosition', (_message.Message,), dict(
   DESCRIPTOR = _MAPUSERPOSITION,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.MapUserPosition)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.MapUserPosition)
   ))
 _sym_db.RegisterMessage(MapUserPosition)
 
 MapUsers = _reflection.GeneratedProtocolMessageType('MapUsers', (_message.Message,), dict(
   DESCRIPTOR = _MAPUSERS,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.MapUsers)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.MapUsers)
   ))
 _sym_db.RegisterMessage(MapUsers)
+
+PREFIX_AGDFASBV1761834943 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1761834943', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1761834943,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV1761834943)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1761834943)
 
 Mount = _reflection.GeneratedProtocolMessageType('Mount', (_message.Message,), dict(
   DESCRIPTOR = _MOUNT,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.Mount)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.Mount)
   ))
 _sym_db.RegisterMessage(Mount)
+
+PREFIX_AGDFASBV1702787644 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1702787644', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1702787644,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV1702787644)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1702787644)
 
 Move = _reflection.GeneratedProtocolMessageType('Move', (_message.Message,), dict(
   DESCRIPTOR = _MOVE,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.Move)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.Move)
   ))
 _sym_db.RegisterMessage(Move)
+
+PREFIX_AGDFASBV2033304364 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV2033304364', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV2033304364,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV2033304364)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV2033304364)
 
 MovePlayer = _reflection.GeneratedProtocolMessageType('MovePlayer', (_message.Message,), dict(
   DESCRIPTOR = _MOVEPLAYER,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.MovePlayer)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.MovePlayer)
   ))
 _sym_db.RegisterMessage(MovePlayer)
+
+PREFIX_AGDFASBV101843234 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV101843234', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV101843234,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV101843234)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV101843234)
 
 Party = _reflection.GeneratedProtocolMessageType('Party', (_message.Message,), dict(
   DESCRIPTOR = _PARTY,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.Party)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.Party)
   ))
 _sym_db.RegisterMessage(Party)
 
 PartyMember = _reflection.GeneratedProtocolMessageType('PartyMember', (_message.Message,), dict(
   DESCRIPTOR = _PARTYMEMBER,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.PartyMember)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PartyMember)
   ))
 _sym_db.RegisterMessage(PartyMember)
+
+PREFIX_AGDFASBV1672859746 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1672859746', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1672859746,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV1672859746)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1672859746)
 
 Pokedex = _reflection.GeneratedProtocolMessageType('Pokedex', (_message.Message,), dict(
   DESCRIPTOR = _POKEDEX,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.Pokedex)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.Pokedex)
   ))
 _sym_db.RegisterMessage(Pokedex)
 
 PokedexEntry = _reflection.GeneratedProtocolMessageType('PokedexEntry', (_message.Message,), dict(
   DESCRIPTOR = _POKEDEXENTRY,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.PokedexEntry)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PokedexEntry)
   ))
 _sym_db.RegisterMessage(PokedexEntry)
+
+PREFIX_AGDFASBV1749316721 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1749316721', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1749316721,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV1749316721)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1749316721)
 
 Pokemon = _reflection.GeneratedProtocolMessageType('Pokemon', (_message.Message,), dict(
   DESCRIPTOR = _POKEMON,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.Pokemon)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.Pokemon)
   ))
 _sym_db.RegisterMessage(Pokemon)
+
+PREFIX_AGDFASBV1466068983 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1466068983', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1466068983,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV1466068983)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1466068983)
 
 PokemonData = _reflection.GeneratedProtocolMessageType('PokemonData', (_message.Message,), dict(
   DESCRIPTOR = _POKEMONDATA,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.PokemonData)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PokemonData)
   ))
 _sym_db.RegisterMessage(PokemonData)
+
+PREFIX_AGDFASBV876393797 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV876393797', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV876393797,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV876393797)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV876393797)
 
 PokemonMove = _reflection.GeneratedProtocolMessageType('PokemonMove', (_message.Message,), dict(
   DESCRIPTOR = _POKEMONMOVE,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.PokemonMove)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PokemonMove)
   ))
 _sym_db.RegisterMessage(PokemonMove)
+
+PREFIX_AGDFASBV167626233 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV167626233', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV167626233,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV167626233)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV167626233)
+
+PREFIX_AGDFASBV1870327986 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1870327986', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1870327986,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV1870327986)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1870327986)
 
 PokemonStats = _reflection.GeneratedProtocolMessageType('PokemonStats', (_message.Message,), dict(
   DESCRIPTOR = _POKEMONSTATS,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.PokemonStats)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PokemonStats)
   ))
 _sym_db.RegisterMessage(PokemonStats)
 
 Quest = _reflection.GeneratedProtocolMessageType('Quest', (_message.Message,), dict(
   DESCRIPTOR = _QUEST,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.Quest)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.Quest)
   ))
 _sym_db.RegisterMessage(Quest)
+
+PREFIX_AGDFASBV1813562425 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1813562425', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1813562425,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV1813562425)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1813562425)
 
 QuestReward = _reflection.GeneratedProtocolMessageType('QuestReward', (_message.Message,), dict(
   DESCRIPTOR = _QUESTREWARD,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.QuestReward)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.QuestReward)
   ))
 _sym_db.RegisterMessage(QuestReward)
+
+PREFIX_AGDFASBV15016665 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV15016665', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV15016665,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV15016665)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV15016665)
+
+PREFIX_AGDFASBV979434225 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV979434225', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV979434225,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV979434225)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV979434225)
 
 Style = _reflection.GeneratedProtocolMessageType('Style', (_message.Message,), dict(
   DESCRIPTOR = _STYLE,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.Style)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.Style)
   ))
 _sym_db.RegisterMessage(Style)
 
 Time = _reflection.GeneratedProtocolMessageType('Time', (_message.Message,), dict(
   DESCRIPTOR = _TIME,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.Time)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.Time)
   ))
 _sym_db.RegisterMessage(Time)
 
 UserSkins = _reflection.GeneratedProtocolMessageType('UserSkins', (_message.Message,), dict(
   DESCRIPTOR = _USERSKINS,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.UserSkins)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.UserSkins)
   ))
 _sym_db.RegisterMessage(UserSkins)
+
+PREFIX_AGDFASBV1318554870 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1318554870', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1318554870,
+  __module__ = 'Login_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.PREFIX_AGDFASBV1318554870)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1318554870)
 
 ZMove = _reflection.GeneratedProtocolMessageType('ZMove', (_message.Message,), dict(
   DESCRIPTOR = _ZMOVE,
   __module__ = 'Login_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response155921581865.ZMove)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1375634093.ZMove)
   ))
 _sym_db.RegisterMessage(ZMove)
 

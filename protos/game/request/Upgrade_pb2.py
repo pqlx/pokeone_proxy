@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -18,20 +17,22 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Upgrade.proto',
-  package='PSXAPI.Request70',
+  package='PSXAPI.Request65146253',
   syntax='proto2',
-  serialized_pb=_b('\n\rUpgrade.proto\x12\x10PSXAPI.Request70\">\n\x07Upgrade\x12\x33\n\x04Type\x18\x01 \x01(\x0e\x32\x1d.PSXAPI.Request70.UpgradeType:\x06__None*1\n\x0bUpgradeType\x12\n\n\x06__None\x10\x00\x12\x0b\n\x07Pokebox\x10\x01\x12\t\n\x05Guild\x10\x02')
+  serialized_pb=_b('\n\rUpgrade.proto\x12\x16PSXAPI.Request65146253\"a\n\x07Upgrade\x12V\n\x04Type\x18\x01 \x01(\x0e\x32=.PSXAPI.Request65146253.PREFIX_AGDFASBV1100222149.UpgradeType:\tNoneValue\"Q\n\x19PREFIX_AGDFASBV1100222149\"4\n\x0bUpgradeType\x12\r\n\tNoneValue\x10\x00\x12\x0b\n\x07Pokebox\x10\x01\x12\t\n\x05Guild\x10\x02')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_UPGRADETYPE = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV1100222149_UPGRADETYPE = _descriptor.EnumDescriptor(
   name='UpgradeType',
-  full_name='PSXAPI.Request70.UpgradeType',
+  full_name='PSXAPI.Request65146253.PREFIX_AGDFASBV1100222149.UpgradeType',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='__None', index=0, number=0,
+      name='NoneValue', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -45,27 +46,21 @@ _UPGRADETYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=99,
-  serialized_end=148,
+  serialized_start=169,
+  serialized_end=221,
 )
-_sym_db.RegisterEnumDescriptor(_UPGRADETYPE)
-
-UpgradeType = enum_type_wrapper.EnumTypeWrapper(_UPGRADETYPE)
-__None = 0
-Pokebox = 1
-Guild = 2
-
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1100222149_UPGRADETYPE)
 
 
 _UPGRADE = _descriptor.Descriptor(
   name='Upgrade',
-  full_name='PSXAPI.Request70.Upgrade',
+  full_name='PSXAPI.Request65146253.Upgrade',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Type', full_name='PSXAPI.Request70.Upgrade.Type', index=0,
+      name='Type', full_name='PSXAPI.Request65146253.Upgrade.Type', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -83,20 +78,53 @@ _UPGRADE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=35,
-  serialized_end=97,
+  serialized_start=41,
+  serialized_end=138,
 )
 
-_UPGRADE.fields_by_name['Type'].enum_type = _UPGRADETYPE
+
+_PREFIX_AGDFASBV1100222149 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1100222149',
+  full_name='PSXAPI.Request65146253.PREFIX_AGDFASBV1100222149',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1100222149_UPGRADETYPE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=140,
+  serialized_end=221,
+)
+
+_UPGRADE.fields_by_name['Type'].enum_type = _PREFIX_AGDFASBV1100222149_UPGRADETYPE
+_PREFIX_AGDFASBV1100222149_UPGRADETYPE.containing_type = _PREFIX_AGDFASBV1100222149
 DESCRIPTOR.message_types_by_name['Upgrade'] = _UPGRADE
-DESCRIPTOR.enum_types_by_name['UpgradeType'] = _UPGRADETYPE
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1100222149'] = _PREFIX_AGDFASBV1100222149
 
 Upgrade = _reflection.GeneratedProtocolMessageType('Upgrade', (_message.Message,), dict(
   DESCRIPTOR = _UPGRADE,
   __module__ = 'Upgrade_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request70.Upgrade)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request65146253.Upgrade)
   ))
 _sym_db.RegisterMessage(Upgrade)
+
+PREFIX_AGDFASBV1100222149 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1100222149', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1100222149,
+  __module__ = 'Upgrade_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request65146253.PREFIX_AGDFASBV1100222149)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1100222149)
 
 
 # @@protoc_insertion_point(module_scope)

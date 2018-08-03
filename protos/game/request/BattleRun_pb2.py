@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='BattleRun.proto',
-  package='PSXAPI.Request7',
+  package='PSXAPI.Request368314452',
   syntax='proto2',
-  serialized_pb=_b('\n\x0f\x42\x61ttleRun.proto\x12\x0fPSXAPI.Request7\"\x1e\n\tBattleRun\x12\x11\n\tRequestID\x18\x01 \x02(\x05')
+  serialized_pb=_b('\n\x0f\x42\x61ttleRun.proto\x12\x17PSXAPI.Request368314452\"\x1e\n\tBattleRun\x12\x11\n\tRequestID\x18\x01 \x02(\x05')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,13 +28,13 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _BATTLERUN = _descriptor.Descriptor(
   name='BattleRun',
-  full_name='PSXAPI.Request7.BattleRun',
+  full_name='PSXAPI.Request368314452.BattleRun',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='RequestID', full_name='PSXAPI.Request7.BattleRun.RequestID', index=0,
+      name='RequestID', full_name='PSXAPI.Request368314452.BattleRun.RequestID', index=0,
       number=1, type=5, cpp_type=1, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -52,8 +52,8 @@ _BATTLERUN = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=36,
-  serialized_end=66,
+  serialized_start=44,
+  serialized_end=74,
 )
 
 DESCRIPTOR.message_types_by_name['BattleRun'] = _BATTLERUN
@@ -61,7 +61,7 @@ DESCRIPTOR.message_types_by_name['BattleRun'] = _BATTLERUN
 BattleRun = _reflection.GeneratedProtocolMessageType('BattleRun', (_message.Message,), dict(
   DESCRIPTOR = _BATTLERUN,
   __module__ = 'BattleRun_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request7.BattleRun)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request368314452.BattleRun)
   ))
 _sym_db.RegisterMessage(BattleRun)
 

@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Thunder.proto',
-  package='PSXAPI.Response80',
+  package='PSXAPI.Response89190353',
   syntax='proto2',
-  serialized_pb=_b('\n\rThunder.proto\x12\x11PSXAPI.Response80\"\t\n\x07Thunder')
+  serialized_pb=_b('\n\rThunder.proto\x12\x17PSXAPI.Response89190353\"\t\n\x07Thunder')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,7 +28,7 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _THUNDER = _descriptor.Descriptor(
   name='Thunder',
-  full_name='PSXAPI.Response80.Thunder',
+  full_name='PSXAPI.Response89190353.Thunder',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
@@ -45,8 +45,8 @@ _THUNDER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=36,
-  serialized_end=45,
+  serialized_start=42,
+  serialized_end=51,
 )
 
 DESCRIPTOR.message_types_by_name['Thunder'] = _THUNDER
@@ -54,7 +54,7 @@ DESCRIPTOR.message_types_by_name['Thunder'] = _THUNDER
 Thunder = _reflection.GeneratedProtocolMessageType('Thunder', (_message.Message,), dict(
   DESCRIPTOR = _THUNDER,
   __module__ = 'Thunder_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response80.Thunder)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response89190353.Thunder)
   ))
 _sym_db.RegisterMessage(Thunder)
 

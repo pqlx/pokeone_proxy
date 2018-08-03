@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Request1;
+package PSXAPI.Request63536959;
 
 message Area {
    optional string Map = 1;

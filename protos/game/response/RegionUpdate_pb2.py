@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='RegionUpdate.proto',
-  package='PSXAPI.Response68',
+  package='PSXAPI.Response691569430',
   syntax='proto2',
-  serialized_pb=_b('\n\x12RegionUpdate.proto\x12\x11PSXAPI.Response68\"N\n\x0cRegionUpdate\x12\x13\n\x08RegionID\x18\x01 \x01(\x05:\x01\x30\x12\x10\n\x05\x43oins\x18\x02 \x01(\r:\x01\x30\x12\x17\n\x0c\x42\x61ttlePoints\x18\x03 \x01(\r:\x01\x30')
+  serialized_pb=_b('\n\x12RegionUpdate.proto\x12\x18PSXAPI.Response691569430\"N\n\x0cRegionUpdate\x12\x13\n\x08RegionID\x18\x01 \x01(\x05:\x01\x30\x12\x10\n\x05\x43oins\x18\x02 \x01(\r:\x01\x30\x12\x17\n\x0c\x42\x61ttlePoints\x18\x03 \x01(\r:\x01\x30')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,27 +28,27 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _REGIONUPDATE = _descriptor.Descriptor(
   name='RegionUpdate',
-  full_name='PSXAPI.Response68.RegionUpdate',
+  full_name='PSXAPI.Response691569430.RegionUpdate',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='RegionID', full_name='PSXAPI.Response68.RegionUpdate.RegionID', index=0,
+      name='RegionID', full_name='PSXAPI.Response691569430.RegionUpdate.RegionID', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Coins', full_name='PSXAPI.Response68.RegionUpdate.Coins', index=1,
+      name='Coins', full_name='PSXAPI.Response691569430.RegionUpdate.Coins', index=1,
       number=2, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='BattlePoints', full_name='PSXAPI.Response68.RegionUpdate.BattlePoints', index=2,
+      name='BattlePoints', full_name='PSXAPI.Response691569430.RegionUpdate.BattlePoints', index=2,
       number=3, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -66,8 +66,8 @@ _REGIONUPDATE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=41,
-  serialized_end=119,
+  serialized_start=48,
+  serialized_end=126,
 )
 
 DESCRIPTOR.message_types_by_name['RegionUpdate'] = _REGIONUPDATE
@@ -75,7 +75,7 @@ DESCRIPTOR.message_types_by_name['RegionUpdate'] = _REGIONUPDATE
 RegionUpdate = _reflection.GeneratedProtocolMessageType('RegionUpdate', (_message.Message,), dict(
   DESCRIPTOR = _REGIONUPDATE,
   __module__ = 'RegionUpdate_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response68.RegionUpdate)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response691569430.RegionUpdate)
   ))
 _sym_db.RegisterMessage(RegionUpdate)
 

@@ -1,17 +1,20 @@
 syntax = "proto2";
-
-package PSXAPI_Response125192521;
+package PSXAPI.Response953836751;
 
 message Upgrade {
-   optional UpgradeResult Result = 1 [default = Failed];
-   optional UpgradeType Type = 2 [default = __None];
+   optional PREFIX_AGDFASBV1213679696.UpgradeResult Result = 1 [default = Failed];
+   optional PREFIX_AGDFASBV362541919.UpgradeType Type = 2 [default = NoneValue];
 }
-enum UpgradeResult {
+message PREFIX_AGDFASBV1213679696 {
+    enum UpgradeResult {
    Failed = 0;
    Success = 1;
-}
-enum UpgradeType {
-   __None = 0;
+} //PREFIX_AGDFASBV
+};
+message PREFIX_AGDFASBV362541919 {
+    enum UpgradeType {
+   NoneValue = 0;
    Pokebox = 1;
    Guild = 2;
-}
+} //PREFIX_AGDFASBV
+};

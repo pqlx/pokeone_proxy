@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='MapList.proto',
-  package='MAPAPI.Response18',
+  package='MAPAPI.Response1318159048',
   syntax='proto2',
-  serialized_pb=_b('\n\rMapList.proto\x12\x11MAPAPI.Response18\"\x1b\n\x07MapList\x12\x10\n\x08MapNames\x18\x01 \x03(\t')
+  serialized_pb=_b('\n\rMapList.proto\x12\x19MAPAPI.Response1318159048\"\x1b\n\x07MapList\x12\x10\n\x08MapNames\x18\x01 \x03(\t')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,13 +28,13 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _MAPLIST = _descriptor.Descriptor(
   name='MapList',
-  full_name='MAPAPI.Response18.MapList',
+  full_name='MAPAPI.Response1318159048.MapList',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='MapNames', full_name='MAPAPI.Response18.MapList.MapNames', index=0,
+      name='MapNames', full_name='MAPAPI.Response1318159048.MapList.MapNames', index=0,
       number=1, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -52,8 +52,8 @@ _MAPLIST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=36,
-  serialized_end=63,
+  serialized_start=44,
+  serialized_end=71,
 )
 
 DESCRIPTOR.message_types_by_name['MapList'] = _MAPLIST
@@ -61,7 +61,7 @@ DESCRIPTOR.message_types_by_name['MapList'] = _MAPLIST
 MapList = _reflection.GeneratedProtocolMessageType('MapList', (_message.Message,), dict(
   DESCRIPTOR = _MAPLIST,
   __module__ = 'MapList_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response18.MapList)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response1318159048.MapList)
   ))
 _sym_db.RegisterMessage(MapList)
 

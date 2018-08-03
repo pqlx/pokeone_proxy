@@ -13,16 +13,16 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
-import bcl_pb2 as bcl__pb2
+from protobuf_net import bcl_pb2 as protobuf__net_dot_bcl__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Reorder.proto',
-  package='PSXAPI.Request54',
+  package='PSXAPI.Request2096959739',
   syntax='proto2',
-  serialized_pb=_b('\n\rReorder.proto\x12\x10PSXAPI.Request54\x1a\tbcl.proto\":\n\x07Reorder\x12\x1a\n\x07Pokemon\x18\x01 \x01(\x0b\x32\t.bcl.Guid\x12\x13\n\x08Position\x18\x02 \x01(\x05:\x01\x30')
+  serialized_pb=_b('\n\rReorder.proto\x12\x18PSXAPI.Request2096959739\x1a\x16protobuf-net/bcl.proto\":\n\x07Reorder\x12\x1a\n\x07Pokemon\x18\x01 \x01(\x0b\x32\t.bcl.Guid\x12\x13\n\x08Position\x18\x02 \x01(\x05:\x01\x30')
   ,
-  dependencies=[bcl__pb2.DESCRIPTOR,])
+  dependencies=[protobuf__net_dot_bcl__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
@@ -30,20 +30,20 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _REORDER = _descriptor.Descriptor(
   name='Reorder',
-  full_name='PSXAPI.Request54.Reorder',
+  full_name='PSXAPI.Request2096959739.Reorder',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Pokemon', full_name='PSXAPI.Request54.Reorder.Pokemon', index=0,
+      name='Pokemon', full_name='PSXAPI.Request2096959739.Reorder.Pokemon', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Position', full_name='PSXAPI.Request54.Reorder.Position', index=1,
+      name='Position', full_name='PSXAPI.Request2096959739.Reorder.Position', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -61,17 +61,17 @@ _REORDER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=46,
-  serialized_end=104,
+  serialized_start=67,
+  serialized_end=125,
 )
 
-_REORDER.fields_by_name['Pokemon'].message_type = bcl__pb2._GUID
+_REORDER.fields_by_name['Pokemon'].message_type = protobuf__net_dot_bcl__pb2._GUID
 DESCRIPTOR.message_types_by_name['Reorder'] = _REORDER
 
 Reorder = _reflection.GeneratedProtocolMessageType('Reorder', (_message.Message,), dict(
   DESCRIPTOR = _REORDER,
   __module__ = 'Reorder_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request54.Reorder)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request2096959739.Reorder)
   ))
 _sym_db.RegisterMessage(Reorder)
 

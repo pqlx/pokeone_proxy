@@ -1,12 +1,12 @@
 syntax = "proto2";
-package MAPAPI.Response26;
-import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+package MAPAPI.Response1101234815;
+import "protobuf-net/bcl.proto"; // schema for protobuf-net's handling of core .NET types
 
 message NPCData {
    optional int32 x = 1 [default = 0];
    optional int32 y = 2 [default = 0];
    optional int32 z = 3 [default = 0];
-   optional .bcl.Guid ID = 4 ;
+   optional .bcl.Guid ID = 4;
    optional NPCSettingStruct Settings = 5;
 }
 message NPCSettingStruct {

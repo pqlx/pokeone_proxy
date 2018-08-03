@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Battle.proto',
-  package='',
+  package='PSXAPI.Response243775801',
   syntax='proto2',
-  serialized_pb=_b('\n\x0c\x42\x61ttle.proto\"\xa1\x02\n\x06\x42\x61ttle\x12\x0b\n\x03Log\x18\x01 \x03(\t\x12 \n\x08Request1\x18\x02 \x01(\x0b\x32\x0e.BattleRequest\x12 \n\x08Request2\x18\x03 \x01(\x0b\x32\x0e.BattleRequest\x12\x14\n\x05\x45nded\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x10\n\x08Mapping1\x18\x05 \x03(\t\x12\x10\n\x08Mapping2\x18\x06 \x03(\t\x12\x10\n\x05Timer\x18\x07 \x01(\x05:\x01\x30\x12\x17\n\x0c\x42\x61\x63kgroundID\x18\x08 \x01(\x05:\x01\x30\x12\x17\n\x08\x43\x61nCatch\x18\t \x01(\x08:\x05\x66\x61lse\x12\x18\n\tCanEscape\x18\n \x01(\x08:\x05\x66\x61lse\x12\x19\n\nCanUseItem\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\x13\n\x08\x42\x61ttleID\x18\x0c \x01(\x05:\x01\x30\"\xdb\x01\n\x0c\x42\x61ttleActive\x12\x1a\n\x05moves\x18\x01 \x03(\x0b\x32\x0b.BattleMove\x12\x1c\n\rmaybeDisabled\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x16\n\x07trapped\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0cmaybeTrapped\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x19\n\ncanMegaEvo\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x18\n\x08\x63\x61nZMove\x18\x06 \x03(\x0b\x32\x06.ZMove\x12\x0f\n\x07trainer\x18\x07 \x01(\t\x12\x16\n\x0bpersonality\x18\x08 \x01(\x05:\x01\x30\"p\n\nBattleMove\x12\x0c\n\x04move\x18\x01 \x01(\t\x12\n\n\x02id\x18\x02 \x01(\t\x12\r\n\x02pp\x18\x03 \x01(\x05:\x01\x30\x12\x10\n\x05maxpp\x18\x04 \x01(\x05:\x01\x30\x12\x0e\n\x06target\x18\x05 \x01(\t\x12\x17\n\x08\x64isabled\x18\x06 \x01(\x08:\x05\x66\x61lse\"\x89\x02\n\rBattlePokemon\x12\r\n\x05ident\x18\x01 \x01(\t\x12\x0f\n\x07\x64\x65tails\x18\x02 \x01(\t\x12\x11\n\tcondition\x18\x03 \x01(\t\x12\x15\n\x06\x61\x63tive\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\"\n\x05stats\x18\x05 \x01(\x0b\x32\x13.BattlePokemonStats\x12\r\n\x05moves\x18\x06 \x03(\t\x12\x13\n\x0b\x62\x61seAbility\x18\x07 \x01(\t\x12\x0c\n\x04item\x18\x08 \x01(\t\x12\x10\n\x08pokeball\x18\t \x01(\t\x12\x0f\n\x07trainer\x18\n \x01(\t\x12\x16\n\x0bpersonality\x18\x0b \x01(\x05:\x01\x30\x12\x1d\n\x08moveData\x18\x0c \x03(\x0b\x32\x0b.BattleMove\"d\n\x12\x42\x61ttlePokemonStats\x12\x0e\n\x03\x61tk\x18\x01 \x01(\x05:\x01\x30\x12\x0e\n\x03\x64\x65\x66\x18\x02 \x01(\x05:\x01\x30\x12\x0e\n\x03spa\x18\x03 \x01(\x05:\x01\x30\x12\x0e\n\x03spd\x18\x04 \x01(\x05:\x01\x30\x12\x0e\n\x03spe\x18\x05 \x01(\x05:\x01\x30\"[\n\rBattleRequest\x12\x0e\n\x06Player\x18\x01 \x02(\t\x12\x11\n\tRequestID\x18\x02 \x02(\x05\x12\'\n\x0bRequestInfo\x18\x03 \x01(\x0b\x32\x12.BattleRequestData\"\xbd\x01\n\x11\x42\x61ttleRequestData\x12\x0f\n\x04rqid\x18\x01 \x01(\x05:\x01\x30\x12\x17\n\x08noCancel\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0bteamPreview\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x13\n\x04wait\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x13\n\x0b\x66orceSwitch\x18\x05 \x03(\x08\x12\x1d\n\x06\x61\x63tive\x18\x06 \x03(\x0b\x32\r.BattleActive\x12\x19\n\x04side\x18\x07 \x01(\x0b\x32\x0b.BattleSide\"G\n\nBattleSide\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\n\n\x02id\x18\x02 \x01(\t\x12\x1f\n\x07pokemon\x18\x03 \x03(\x0b\x32\x0e.BattlePokemon\"%\n\x05ZMove\x12\x0c\n\x04move\x18\x01 \x01(\t\x12\x0e\n\x06target\x18\x02 \x01(\t')
+  serialized_pb=_b('\n\x0c\x42\x61ttle.proto\x12\x18PSXAPI.Response243775801\"\xd3\x02\n\x06\x42\x61ttle\x12\x0b\n\x03Log\x18\x01 \x03(\t\x12\x39\n\x08Request1\x18\x02 \x01(\x0b\x32\'.PSXAPI.Response243775801.BattleRequest\x12\x39\n\x08Request2\x18\x03 \x01(\x0b\x32\'.PSXAPI.Response243775801.BattleRequest\x12\x14\n\x05\x45nded\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x10\n\x08Mapping1\x18\x05 \x03(\t\x12\x10\n\x08Mapping2\x18\x06 \x03(\t\x12\x10\n\x05Timer\x18\x07 \x01(\x05:\x01\x30\x12\x17\n\x0c\x42\x61\x63kgroundID\x18\x08 \x01(\x05:\x01\x30\x12\x17\n\x08\x43\x61nCatch\x18\t \x01(\x08:\x05\x66\x61lse\x12\x18\n\tCanEscape\x18\n \x01(\x08:\x05\x66\x61lse\x12\x19\n\nCanUseItem\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\x13\n\x08\x42\x61ttleID\x18\x0c \x01(\x05:\x01\x30\"\x8d\x02\n\x0c\x42\x61ttleActive\x12\x33\n\x05moves\x18\x01 \x03(\x0b\x32$.PSXAPI.Response243775801.BattleMove\x12\x1c\n\rmaybeDisabled\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x16\n\x07trapped\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0cmaybeTrapped\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x19\n\ncanMegaEvo\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x31\n\x08\x63\x61nZMove\x18\x06 \x03(\x0b\x32\x1f.PSXAPI.Response243775801.ZMove\x12\x0f\n\x07trainer\x18\x07 \x01(\t\x12\x16\n\x0bpersonality\x18\x08 \x01(\x05:\x01\x30\"p\n\nBattleMove\x12\x0c\n\x04move\x18\x01 \x01(\t\x12\n\n\x02id\x18\x02 \x01(\t\x12\r\n\x02pp\x18\x03 \x01(\x05:\x01\x30\x12\x10\n\x05maxpp\x18\x04 \x01(\x05:\x01\x30\x12\x0e\n\x06target\x18\x05 \x01(\t\x12\x17\n\x08\x64isabled\x18\x06 \x01(\x08:\x05\x66\x61lse\"\xbb\x02\n\rBattlePokemon\x12\r\n\x05ident\x18\x01 \x01(\t\x12\x0f\n\x07\x64\x65tails\x18\x02 \x01(\t\x12\x11\n\tcondition\x18\x03 \x01(\t\x12\x15\n\x06\x61\x63tive\x18\x04 \x01(\x08:\x05\x66\x61lse\x12;\n\x05stats\x18\x05 \x01(\x0b\x32,.PSXAPI.Response243775801.BattlePokemonStats\x12\r\n\x05moves\x18\x06 \x03(\t\x12\x13\n\x0b\x62\x61seAbility\x18\x07 \x01(\t\x12\x0c\n\x04item\x18\x08 \x01(\t\x12\x10\n\x08pokeball\x18\t \x01(\t\x12\x0f\n\x07trainer\x18\n \x01(\t\x12\x16\n\x0bpersonality\x18\x0b \x01(\x05:\x01\x30\x12\x36\n\x08moveData\x18\x0c \x03(\x0b\x32$.PSXAPI.Response243775801.BattleMove\"d\n\x12\x42\x61ttlePokemonStats\x12\x0e\n\x03\x61tk\x18\x01 \x01(\x05:\x01\x30\x12\x0e\n\x03\x64\x65\x66\x18\x02 \x01(\x05:\x01\x30\x12\x0e\n\x03spa\x18\x03 \x01(\x05:\x01\x30\x12\x0e\n\x03spd\x18\x04 \x01(\x05:\x01\x30\x12\x0e\n\x03spe\x18\x05 \x01(\x05:\x01\x30\"t\n\rBattleRequest\x12\x0e\n\x06Player\x18\x01 \x02(\t\x12\x11\n\tRequestID\x18\x02 \x02(\x05\x12@\n\x0bRequestInfo\x18\x03 \x01(\x0b\x32+.PSXAPI.Response243775801.BattleRequestData\"\xef\x01\n\x11\x42\x61ttleRequestData\x12\x0f\n\x04rqid\x18\x01 \x01(\x05:\x01\x30\x12\x17\n\x08noCancel\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0bteamPreview\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\x13\n\x04wait\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x13\n\x0b\x66orceSwitch\x18\x05 \x03(\x08\x12\x36\n\x06\x61\x63tive\x18\x06 \x03(\x0b\x32&.PSXAPI.Response243775801.BattleActive\x12\x32\n\x04side\x18\x07 \x01(\x0b\x32$.PSXAPI.Response243775801.BattleSide\"`\n\nBattleSide\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\n\n\x02id\x18\x02 \x01(\t\x12\x38\n\x07pokemon\x18\x03 \x03(\x0b\x32\'.PSXAPI.Response243775801.BattlePokemon\"%\n\x05ZMove\x12\x0c\n\x04move\x18\x01 \x01(\t\x12\x0e\n\x06target\x18\x02 \x01(\t')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,90 +28,90 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _BATTLE = _descriptor.Descriptor(
   name='Battle',
-  full_name='Battle',
+  full_name='PSXAPI.Response243775801.Battle',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Log', full_name='Battle.Log', index=0,
+      name='Log', full_name='PSXAPI.Response243775801.Battle.Log', index=0,
       number=1, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Request1', full_name='Battle.Request1', index=1,
+      name='Request1', full_name='PSXAPI.Response243775801.Battle.Request1', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Request2', full_name='Battle.Request2', index=2,
+      name='Request2', full_name='PSXAPI.Response243775801.Battle.Request2', index=2,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Ended', full_name='Battle.Ended', index=3,
+      name='Ended', full_name='PSXAPI.Response243775801.Battle.Ended', index=3,
       number=4, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Mapping1', full_name='Battle.Mapping1', index=4,
+      name='Mapping1', full_name='PSXAPI.Response243775801.Battle.Mapping1', index=4,
       number=5, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Mapping2', full_name='Battle.Mapping2', index=5,
+      name='Mapping2', full_name='PSXAPI.Response243775801.Battle.Mapping2', index=5,
       number=6, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Timer', full_name='Battle.Timer', index=6,
+      name='Timer', full_name='PSXAPI.Response243775801.Battle.Timer', index=6,
       number=7, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='BackgroundID', full_name='Battle.BackgroundID', index=7,
+      name='BackgroundID', full_name='PSXAPI.Response243775801.Battle.BackgroundID', index=7,
       number=8, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanCatch', full_name='Battle.CanCatch', index=8,
+      name='CanCatch', full_name='PSXAPI.Response243775801.Battle.CanCatch', index=8,
       number=9, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanEscape', full_name='Battle.CanEscape', index=9,
+      name='CanEscape', full_name='PSXAPI.Response243775801.Battle.CanEscape', index=9,
       number=10, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanUseItem', full_name='Battle.CanUseItem', index=10,
+      name='CanUseItem', full_name='PSXAPI.Response243775801.Battle.CanUseItem', index=10,
       number=11, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='BattleID', full_name='Battle.BattleID', index=11,
+      name='BattleID', full_name='PSXAPI.Response243775801.Battle.BattleID', index=11,
       number=12, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -129,69 +129,69 @@ _BATTLE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=17,
-  serialized_end=306,
+  serialized_start=43,
+  serialized_end=382,
 )
 
 
 _BATTLEACTIVE = _descriptor.Descriptor(
   name='BattleActive',
-  full_name='BattleActive',
+  full_name='PSXAPI.Response243775801.BattleActive',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='moves', full_name='BattleActive.moves', index=0,
+      name='moves', full_name='PSXAPI.Response243775801.BattleActive.moves', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='maybeDisabled', full_name='BattleActive.maybeDisabled', index=1,
+      name='maybeDisabled', full_name='PSXAPI.Response243775801.BattleActive.maybeDisabled', index=1,
       number=2, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='trapped', full_name='BattleActive.trapped', index=2,
+      name='trapped', full_name='PSXAPI.Response243775801.BattleActive.trapped', index=2,
       number=3, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='maybeTrapped', full_name='BattleActive.maybeTrapped', index=3,
+      name='maybeTrapped', full_name='PSXAPI.Response243775801.BattleActive.maybeTrapped', index=3,
       number=4, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='canMegaEvo', full_name='BattleActive.canMegaEvo', index=4,
+      name='canMegaEvo', full_name='PSXAPI.Response243775801.BattleActive.canMegaEvo', index=4,
       number=5, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='canZMove', full_name='BattleActive.canZMove', index=5,
+      name='canZMove', full_name='PSXAPI.Response243775801.BattleActive.canZMove', index=5,
       number=6, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='trainer', full_name='BattleActive.trainer', index=6,
+      name='trainer', full_name='PSXAPI.Response243775801.BattleActive.trainer', index=6,
       number=7, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='personality', full_name='BattleActive.personality', index=7,
+      name='personality', full_name='PSXAPI.Response243775801.BattleActive.personality', index=7,
       number=8, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -209,55 +209,55 @@ _BATTLEACTIVE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=309,
-  serialized_end=528,
+  serialized_start=385,
+  serialized_end=654,
 )
 
 
 _BATTLEMOVE = _descriptor.Descriptor(
   name='BattleMove',
-  full_name='BattleMove',
+  full_name='PSXAPI.Response243775801.BattleMove',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='move', full_name='BattleMove.move', index=0,
+      name='move', full_name='PSXAPI.Response243775801.BattleMove.move', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='id', full_name='BattleMove.id', index=1,
+      name='id', full_name='PSXAPI.Response243775801.BattleMove.id', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='pp', full_name='BattleMove.pp', index=2,
+      name='pp', full_name='PSXAPI.Response243775801.BattleMove.pp', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='maxpp', full_name='BattleMove.maxpp', index=3,
+      name='maxpp', full_name='PSXAPI.Response243775801.BattleMove.maxpp', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='target', full_name='BattleMove.target', index=4,
+      name='target', full_name='PSXAPI.Response243775801.BattleMove.target', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='disabled', full_name='BattleMove.disabled', index=5,
+      name='disabled', full_name='PSXAPI.Response243775801.BattleMove.disabled', index=5,
       number=6, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -275,97 +275,97 @@ _BATTLEMOVE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=530,
-  serialized_end=642,
+  serialized_start=656,
+  serialized_end=768,
 )
 
 
 _BATTLEPOKEMON = _descriptor.Descriptor(
   name='BattlePokemon',
-  full_name='BattlePokemon',
+  full_name='PSXAPI.Response243775801.BattlePokemon',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='ident', full_name='BattlePokemon.ident', index=0,
+      name='ident', full_name='PSXAPI.Response243775801.BattlePokemon.ident', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='details', full_name='BattlePokemon.details', index=1,
+      name='details', full_name='PSXAPI.Response243775801.BattlePokemon.details', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='condition', full_name='BattlePokemon.condition', index=2,
+      name='condition', full_name='PSXAPI.Response243775801.BattlePokemon.condition', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='active', full_name='BattlePokemon.active', index=3,
+      name='active', full_name='PSXAPI.Response243775801.BattlePokemon.active', index=3,
       number=4, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='stats', full_name='BattlePokemon.stats', index=4,
+      name='stats', full_name='PSXAPI.Response243775801.BattlePokemon.stats', index=4,
       number=5, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='moves', full_name='BattlePokemon.moves', index=5,
+      name='moves', full_name='PSXAPI.Response243775801.BattlePokemon.moves', index=5,
       number=6, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='baseAbility', full_name='BattlePokemon.baseAbility', index=6,
+      name='baseAbility', full_name='PSXAPI.Response243775801.BattlePokemon.baseAbility', index=6,
       number=7, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='item', full_name='BattlePokemon.item', index=7,
+      name='item', full_name='PSXAPI.Response243775801.BattlePokemon.item', index=7,
       number=8, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='pokeball', full_name='BattlePokemon.pokeball', index=8,
+      name='pokeball', full_name='PSXAPI.Response243775801.BattlePokemon.pokeball', index=8,
       number=9, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='trainer', full_name='BattlePokemon.trainer', index=9,
+      name='trainer', full_name='PSXAPI.Response243775801.BattlePokemon.trainer', index=9,
       number=10, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='personality', full_name='BattlePokemon.personality', index=10,
+      name='personality', full_name='PSXAPI.Response243775801.BattlePokemon.personality', index=10,
       number=11, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='moveData', full_name='BattlePokemon.moveData', index=11,
+      name='moveData', full_name='PSXAPI.Response243775801.BattlePokemon.moveData', index=11,
       number=12, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -383,48 +383,48 @@ _BATTLEPOKEMON = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=645,
-  serialized_end=910,
+  serialized_start=771,
+  serialized_end=1086,
 )
 
 
 _BATTLEPOKEMONSTATS = _descriptor.Descriptor(
   name='BattlePokemonStats',
-  full_name='BattlePokemonStats',
+  full_name='PSXAPI.Response243775801.BattlePokemonStats',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='atk', full_name='BattlePokemonStats.atk', index=0,
+      name='atk', full_name='PSXAPI.Response243775801.BattlePokemonStats.atk', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='def', full_name='BattlePokemonStats.def', index=1,
+      name='def', full_name='PSXAPI.Response243775801.BattlePokemonStats.def', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='spa', full_name='BattlePokemonStats.spa', index=2,
+      name='spa', full_name='PSXAPI.Response243775801.BattlePokemonStats.spa', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='spd', full_name='BattlePokemonStats.spd', index=3,
+      name='spd', full_name='PSXAPI.Response243775801.BattlePokemonStats.spd', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='spe', full_name='BattlePokemonStats.spe', index=4,
+      name='spe', full_name='PSXAPI.Response243775801.BattlePokemonStats.spe', index=4,
       number=5, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -442,34 +442,34 @@ _BATTLEPOKEMONSTATS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=912,
-  serialized_end=1012,
+  serialized_start=1088,
+  serialized_end=1188,
 )
 
 
 _BATTLEREQUEST = _descriptor.Descriptor(
   name='BattleRequest',
-  full_name='BattleRequest',
+  full_name='PSXAPI.Response243775801.BattleRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Player', full_name='BattleRequest.Player', index=0,
+      name='Player', full_name='PSXAPI.Response243775801.BattleRequest.Player', index=0,
       number=1, type=9, cpp_type=9, label=2,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='RequestID', full_name='BattleRequest.RequestID', index=1,
+      name='RequestID', full_name='PSXAPI.Response243775801.BattleRequest.RequestID', index=1,
       number=2, type=5, cpp_type=1, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='RequestInfo', full_name='BattleRequest.RequestInfo', index=2,
+      name='RequestInfo', full_name='PSXAPI.Response243775801.BattleRequest.RequestInfo', index=2,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -487,62 +487,62 @@ _BATTLEREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1014,
-  serialized_end=1105,
+  serialized_start=1190,
+  serialized_end=1306,
 )
 
 
 _BATTLEREQUESTDATA = _descriptor.Descriptor(
   name='BattleRequestData',
-  full_name='BattleRequestData',
+  full_name='PSXAPI.Response243775801.BattleRequestData',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='rqid', full_name='BattleRequestData.rqid', index=0,
+      name='rqid', full_name='PSXAPI.Response243775801.BattleRequestData.rqid', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='noCancel', full_name='BattleRequestData.noCancel', index=1,
+      name='noCancel', full_name='PSXAPI.Response243775801.BattleRequestData.noCancel', index=1,
       number=2, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='teamPreview', full_name='BattleRequestData.teamPreview', index=2,
+      name='teamPreview', full_name='PSXAPI.Response243775801.BattleRequestData.teamPreview', index=2,
       number=3, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='wait', full_name='BattleRequestData.wait', index=3,
+      name='wait', full_name='PSXAPI.Response243775801.BattleRequestData.wait', index=3,
       number=4, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='forceSwitch', full_name='BattleRequestData.forceSwitch', index=4,
+      name='forceSwitch', full_name='PSXAPI.Response243775801.BattleRequestData.forceSwitch', index=4,
       number=5, type=8, cpp_type=7, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='active', full_name='BattleRequestData.active', index=5,
+      name='active', full_name='PSXAPI.Response243775801.BattleRequestData.active', index=5,
       number=6, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='side', full_name='BattleRequestData.side', index=6,
+      name='side', full_name='PSXAPI.Response243775801.BattleRequestData.side', index=6,
       number=7, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -560,34 +560,34 @@ _BATTLEREQUESTDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1108,
-  serialized_end=1297,
+  serialized_start=1309,
+  serialized_end=1548,
 )
 
 
 _BATTLESIDE = _descriptor.Descriptor(
   name='BattleSide',
-  full_name='BattleSide',
+  full_name='PSXAPI.Response243775801.BattleSide',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='name', full_name='BattleSide.name', index=0,
+      name='name', full_name='PSXAPI.Response243775801.BattleSide.name', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='id', full_name='BattleSide.id', index=1,
+      name='id', full_name='PSXAPI.Response243775801.BattleSide.id', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='pokemon', full_name='BattleSide.pokemon', index=2,
+      name='pokemon', full_name='PSXAPI.Response243775801.BattleSide.pokemon', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -605,27 +605,27 @@ _BATTLESIDE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1299,
-  serialized_end=1370,
+  serialized_start=1550,
+  serialized_end=1646,
 )
 
 
 _ZMOVE = _descriptor.Descriptor(
   name='ZMove',
-  full_name='ZMove',
+  full_name='PSXAPI.Response243775801.ZMove',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='move', full_name='ZMove.move', index=0,
+      name='move', full_name='PSXAPI.Response243775801.ZMove.move', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='target', full_name='ZMove.target', index=1,
+      name='target', full_name='PSXAPI.Response243775801.ZMove.target', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -643,8 +643,8 @@ _ZMOVE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1372,
-  serialized_end=1409,
+  serialized_start=1648,
+  serialized_end=1685,
 )
 
 _BATTLE.fields_by_name['Request1'].message_type = _BATTLEREQUEST
@@ -670,63 +670,63 @@ DESCRIPTOR.message_types_by_name['ZMove'] = _ZMOVE
 Battle = _reflection.GeneratedProtocolMessageType('Battle', (_message.Message,), dict(
   DESCRIPTOR = _BATTLE,
   __module__ = 'Battle_pb2'
-  # @@protoc_insertion_point(class_scope:Battle)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response243775801.Battle)
   ))
 _sym_db.RegisterMessage(Battle)
 
 BattleActive = _reflection.GeneratedProtocolMessageType('BattleActive', (_message.Message,), dict(
   DESCRIPTOR = _BATTLEACTIVE,
   __module__ = 'Battle_pb2'
-  # @@protoc_insertion_point(class_scope:BattleActive)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response243775801.BattleActive)
   ))
 _sym_db.RegisterMessage(BattleActive)
 
 BattleMove = _reflection.GeneratedProtocolMessageType('BattleMove', (_message.Message,), dict(
   DESCRIPTOR = _BATTLEMOVE,
   __module__ = 'Battle_pb2'
-  # @@protoc_insertion_point(class_scope:BattleMove)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response243775801.BattleMove)
   ))
 _sym_db.RegisterMessage(BattleMove)
 
 BattlePokemon = _reflection.GeneratedProtocolMessageType('BattlePokemon', (_message.Message,), dict(
   DESCRIPTOR = _BATTLEPOKEMON,
   __module__ = 'Battle_pb2'
-  # @@protoc_insertion_point(class_scope:BattlePokemon)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response243775801.BattlePokemon)
   ))
 _sym_db.RegisterMessage(BattlePokemon)
 
 BattlePokemonStats = _reflection.GeneratedProtocolMessageType('BattlePokemonStats', (_message.Message,), dict(
   DESCRIPTOR = _BATTLEPOKEMONSTATS,
   __module__ = 'Battle_pb2'
-  # @@protoc_insertion_point(class_scope:BattlePokemonStats)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response243775801.BattlePokemonStats)
   ))
 _sym_db.RegisterMessage(BattlePokemonStats)
 
 BattleRequest = _reflection.GeneratedProtocolMessageType('BattleRequest', (_message.Message,), dict(
   DESCRIPTOR = _BATTLEREQUEST,
   __module__ = 'Battle_pb2'
-  # @@protoc_insertion_point(class_scope:BattleRequest)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response243775801.BattleRequest)
   ))
 _sym_db.RegisterMessage(BattleRequest)
 
 BattleRequestData = _reflection.GeneratedProtocolMessageType('BattleRequestData', (_message.Message,), dict(
   DESCRIPTOR = _BATTLEREQUESTDATA,
   __module__ = 'Battle_pb2'
-  # @@protoc_insertion_point(class_scope:BattleRequestData)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response243775801.BattleRequestData)
   ))
 _sym_db.RegisterMessage(BattleRequestData)
 
 BattleSide = _reflection.GeneratedProtocolMessageType('BattleSide', (_message.Message,), dict(
   DESCRIPTOR = _BATTLESIDE,
   __module__ = 'Battle_pb2'
-  # @@protoc_insertion_point(class_scope:BattleSide)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response243775801.BattleSide)
   ))
 _sym_db.RegisterMessage(BattleSide)
 
 ZMove = _reflection.GeneratedProtocolMessageType('ZMove', (_message.Message,), dict(
   DESCRIPTOR = _ZMOVE,
   __module__ = 'Battle_pb2'
-  # @@protoc_insertion_point(class_scope:ZMove)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response243775801.ZMove)
   ))
 _sym_db.RegisterMessage(ZMove)
 

@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='BattleBroadcast.proto',
-  package='PSXAPI.Response7',
+  package='PSXAPI.Response120517496',
   syntax='proto2',
-  serialized_pb=_b('\n\x15\x42\x61ttleBroadcast.proto\x12\x10PSXAPI.Response7\"J\n\x0f\x42\x61ttleBroadcast\x12\x14\n\tRequestID\x18\x01 \x01(\x05:\x01\x30\x12\x0f\n\x07Message\x18\x02 \x01(\t\x12\x10\n\x08Username\x18\x03 \x01(\t')
+  serialized_pb=_b('\n\x15\x42\x61ttleBroadcast.proto\x12\x18PSXAPI.Response120517496\"J\n\x0f\x42\x61ttleBroadcast\x12\x14\n\tRequestID\x18\x01 \x01(\x05:\x01\x30\x12\x0f\n\x07Message\x18\x02 \x01(\t\x12\x10\n\x08Username\x18\x03 \x01(\t')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,27 +28,27 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _BATTLEBROADCAST = _descriptor.Descriptor(
   name='BattleBroadcast',
-  full_name='PSXAPI.Response7.BattleBroadcast',
+  full_name='PSXAPI.Response120517496.BattleBroadcast',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='RequestID', full_name='PSXAPI.Response7.BattleBroadcast.RequestID', index=0,
+      name='RequestID', full_name='PSXAPI.Response120517496.BattleBroadcast.RequestID', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Message', full_name='PSXAPI.Response7.BattleBroadcast.Message', index=1,
+      name='Message', full_name='PSXAPI.Response120517496.BattleBroadcast.Message', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Username', full_name='PSXAPI.Response7.BattleBroadcast.Username', index=2,
+      name='Username', full_name='PSXAPI.Response120517496.BattleBroadcast.Username', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -66,8 +66,8 @@ _BATTLEBROADCAST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=43,
-  serialized_end=117,
+  serialized_start=51,
+  serialized_end=125,
 )
 
 DESCRIPTOR.message_types_by_name['BattleBroadcast'] = _BATTLEBROADCAST
@@ -75,7 +75,7 @@ DESCRIPTOR.message_types_by_name['BattleBroadcast'] = _BATTLEBROADCAST
 BattleBroadcast = _reflection.GeneratedProtocolMessageType('BattleBroadcast', (_message.Message,), dict(
   DESCRIPTOR = _BATTLEBROADCAST,
   __module__ = 'BattleBroadcast_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response7.BattleBroadcast)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response120517496.BattleBroadcast)
   ))
 _sym_db.RegisterMessage(BattleBroadcast)
 

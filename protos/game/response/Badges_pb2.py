@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Badges.proto',
-  package='PSXAPI.Response5',
+  package='PSXAPI.Response1634356596',
   syntax='proto2',
-  serialized_pb=_b('\n\x0c\x42\x61\x64ges.proto\x12\x10PSXAPI.Response5\"\x15\n\x06\x42\x61\x64ges\x12\x0b\n\x03\x41ll\x18\x01 \x03(\x05')
+  serialized_pb=_b('\n\x0c\x42\x61\x64ges.proto\x12\x19PSXAPI.Response1634356596\"\x15\n\x06\x42\x61\x64ges\x12\x0b\n\x03\x41ll\x18\x01 \x03(\x05')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,13 +28,13 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _BADGES = _descriptor.Descriptor(
   name='Badges',
-  full_name='PSXAPI.Response5.Badges',
+  full_name='PSXAPI.Response1634356596.Badges',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='All', full_name='PSXAPI.Response5.Badges.All', index=0,
+      name='All', full_name='PSXAPI.Response1634356596.Badges.All', index=0,
       number=1, type=5, cpp_type=1, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -52,8 +52,8 @@ _BADGES = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=34,
-  serialized_end=55,
+  serialized_start=43,
+  serialized_end=64,
 )
 
 DESCRIPTOR.message_types_by_name['Badges'] = _BADGES
@@ -61,7 +61,7 @@ DESCRIPTOR.message_types_by_name['Badges'] = _BADGES
 Badges = _reflection.GeneratedProtocolMessageType('Badges', (_message.Message,), dict(
   DESCRIPTOR = _BADGES,
   __module__ = 'Badges_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response5.Badges)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1634356596.Badges)
   ))
 _sym_db.RegisterMessage(Badges)
 

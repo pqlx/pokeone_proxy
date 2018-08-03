@@ -13,16 +13,16 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
-import bcl_pb2 as bcl__pb2
+from protobuf_net import bcl_pb2 as protobuf__net_dot_bcl__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='HandleObject.proto',
-  package='MAPAPI.Response10',
+  package='MAPAPI.Response1691051066',
   syntax='proto2',
-  serialized_pb=_b('\n\x12HandleObject.proto\x12\x11MAPAPI.Response10\x1a\tbcl.proto\"Z\n\x0cHandleObject\x12\x16\n\x07\x44\x65stroy\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x32\n\x06Object\x18\x02 \x01(\x0b\x32\".MAPAPI.Response10.MapObjectStruct\"\x9a\x01\n\x0fMapObjectStruct\x12\x0c\n\x01x\x18\x01 \x01(\x05:\x01\x30\x12\x0c\n\x01y\x18\x02 \x01(\x05:\x01\x30\x12\x0c\n\x01z\x18\x03 \x01(\x05:\x01\x30\x12\x0c\n\x04Name\x18\x04 \x01(\t\x12\x15\n\x02ID\x18\x05 \x01(\x0b\x32\t.bcl.Guid\x12\r\n\x02rx\x18\x06 \x01(\x05:\x01\x30\x12\r\n\x02ry\x18\x07 \x01(\x05:\x01\x30\x12\r\n\x02rz\x18\x08 \x01(\x05:\x01\x30\x12\x0b\n\x03tag\x18\t \x01(\t')
+  serialized_pb=_b('\n\x12HandleObject.proto\x12\x19MAPAPI.Response1691051066\x1a\x16protobuf-net/bcl.proto\"b\n\x0cHandleObject\x12\x16\n\x07\x44\x65stroy\x18\x01 \x01(\x08:\x05\x66\x61lse\x12:\n\x06Object\x18\x02 \x01(\x0b\x32*.MAPAPI.Response1691051066.MapObjectStruct\"\x9a\x01\n\x0fMapObjectStruct\x12\x0c\n\x01x\x18\x01 \x01(\x05:\x01\x30\x12\x0c\n\x01y\x18\x02 \x01(\x05:\x01\x30\x12\x0c\n\x01z\x18\x03 \x01(\x05:\x01\x30\x12\x0c\n\x04Name\x18\x04 \x01(\t\x12\x15\n\x02ID\x18\x05 \x01(\x0b\x32\t.bcl.Guid\x12\r\n\x02rx\x18\x06 \x01(\x05:\x01\x30\x12\r\n\x02ry\x18\x07 \x01(\x05:\x01\x30\x12\r\n\x02rz\x18\x08 \x01(\x05:\x01\x30\x12\x0b\n\x03tag\x18\t \x01(\t')
   ,
-  dependencies=[bcl__pb2.DESCRIPTOR,])
+  dependencies=[protobuf__net_dot_bcl__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
@@ -30,20 +30,20 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _HANDLEOBJECT = _descriptor.Descriptor(
   name='HandleObject',
-  full_name='MAPAPI.Response10.HandleObject',
+  full_name='MAPAPI.Response1691051066.HandleObject',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Destroy', full_name='MAPAPI.Response10.HandleObject.Destroy', index=0,
+      name='Destroy', full_name='MAPAPI.Response1691051066.HandleObject.Destroy', index=0,
       number=1, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Object', full_name='MAPAPI.Response10.HandleObject.Object', index=1,
+      name='Object', full_name='MAPAPI.Response1691051066.HandleObject.Object', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -61,76 +61,76 @@ _HANDLEOBJECT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=52,
-  serialized_end=142,
+  serialized_start=73,
+  serialized_end=171,
 )
 
 
 _MAPOBJECTSTRUCT = _descriptor.Descriptor(
   name='MapObjectStruct',
-  full_name='MAPAPI.Response10.MapObjectStruct',
+  full_name='MAPAPI.Response1691051066.MapObjectStruct',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='x', full_name='MAPAPI.Response10.MapObjectStruct.x', index=0,
+      name='x', full_name='MAPAPI.Response1691051066.MapObjectStruct.x', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='y', full_name='MAPAPI.Response10.MapObjectStruct.y', index=1,
+      name='y', full_name='MAPAPI.Response1691051066.MapObjectStruct.y', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='z', full_name='MAPAPI.Response10.MapObjectStruct.z', index=2,
+      name='z', full_name='MAPAPI.Response1691051066.MapObjectStruct.z', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Name', full_name='MAPAPI.Response10.MapObjectStruct.Name', index=3,
+      name='Name', full_name='MAPAPI.Response1691051066.MapObjectStruct.Name', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='ID', full_name='MAPAPI.Response10.MapObjectStruct.ID', index=4,
+      name='ID', full_name='MAPAPI.Response1691051066.MapObjectStruct.ID', index=4,
       number=5, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='rx', full_name='MAPAPI.Response10.MapObjectStruct.rx', index=5,
+      name='rx', full_name='MAPAPI.Response1691051066.MapObjectStruct.rx', index=5,
       number=6, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='ry', full_name='MAPAPI.Response10.MapObjectStruct.ry', index=6,
+      name='ry', full_name='MAPAPI.Response1691051066.MapObjectStruct.ry', index=6,
       number=7, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='rz', full_name='MAPAPI.Response10.MapObjectStruct.rz', index=7,
+      name='rz', full_name='MAPAPI.Response1691051066.MapObjectStruct.rz', index=7,
       number=8, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='tag', full_name='MAPAPI.Response10.MapObjectStruct.tag', index=8,
+      name='tag', full_name='MAPAPI.Response1691051066.MapObjectStruct.tag', index=8,
       number=9, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -148,26 +148,26 @@ _MAPOBJECTSTRUCT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=145,
-  serialized_end=299,
+  serialized_start=174,
+  serialized_end=328,
 )
 
 _HANDLEOBJECT.fields_by_name['Object'].message_type = _MAPOBJECTSTRUCT
-_MAPOBJECTSTRUCT.fields_by_name['ID'].message_type = bcl__pb2._GUID
+_MAPOBJECTSTRUCT.fields_by_name['ID'].message_type = protobuf__net_dot_bcl__pb2._GUID
 DESCRIPTOR.message_types_by_name['HandleObject'] = _HANDLEOBJECT
 DESCRIPTOR.message_types_by_name['MapObjectStruct'] = _MAPOBJECTSTRUCT
 
 HandleObject = _reflection.GeneratedProtocolMessageType('HandleObject', (_message.Message,), dict(
   DESCRIPTOR = _HANDLEOBJECT,
   __module__ = 'HandleObject_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response10.HandleObject)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response1691051066.HandleObject)
   ))
 _sym_db.RegisterMessage(HandleObject)
 
 MapObjectStruct = _reflection.GeneratedProtocolMessageType('MapObjectStruct', (_message.Message,), dict(
   DESCRIPTOR = _MAPOBJECTSTRUCT,
   __module__ = 'HandleObject_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response10.MapObjectStruct)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response1691051066.MapObjectStruct)
   ))
 _sym_db.RegisterMessage(MapObjectStruct)
 

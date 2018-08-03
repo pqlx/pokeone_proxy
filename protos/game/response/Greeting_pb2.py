@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Greeting.proto',
-  package='PSXAPI.Response30',
+  package='PSXAPI.Response380943574',
   syntax='proto2',
-  serialized_pb=_b('\n\x0eGreeting.proto\x12\x11PSXAPI.Response30\"9\n\x08Greeting\x12\x15\n\rServerVersion\x18\x01 \x01(\t\x12\x16\n\x0bUsersOnline\x18\x02 \x01(\x05:\x01\x30')
+  serialized_pb=_b('\n\x0eGreeting.proto\x12\x18PSXAPI.Response380943574\"9\n\x08Greeting\x12\x15\n\rServerVersion\x18\x01 \x01(\t\x12\x16\n\x0bUsersOnline\x18\x02 \x01(\x05:\x01\x30')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,20 +28,20 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _GREETING = _descriptor.Descriptor(
   name='Greeting',
-  full_name='PSXAPI.Response30.Greeting',
+  full_name='PSXAPI.Response380943574.Greeting',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='ServerVersion', full_name='PSXAPI.Response30.Greeting.ServerVersion', index=0,
+      name='ServerVersion', full_name='PSXAPI.Response380943574.Greeting.ServerVersion', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='UsersOnline', full_name='PSXAPI.Response30.Greeting.UsersOnline', index=1,
+      name='UsersOnline', full_name='PSXAPI.Response380943574.Greeting.UsersOnline', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -59,8 +59,8 @@ _GREETING = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=37,
-  serialized_end=94,
+  serialized_start=44,
+  serialized_end=101,
 )
 
 DESCRIPTOR.message_types_by_name['Greeting'] = _GREETING
@@ -68,7 +68,7 @@ DESCRIPTOR.message_types_by_name['Greeting'] = _GREETING
 Greeting = _reflection.GeneratedProtocolMessageType('Greeting', (_message.Message,), dict(
   DESCRIPTOR = _GREETING,
   __module__ = 'Greeting_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response30.Greeting)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response380943574.Greeting)
   ))
 _sym_db.RegisterMessage(Greeting)
 

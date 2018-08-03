@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='BattleShift.proto',
-  package='PSXAPI.Request8',
+  package='PSXAPI.Request1158710099',
   syntax='proto2',
-  serialized_pb=_b('\n\x11\x42\x61ttleShift.proto\x12\x0fPSXAPI.Request8\"5\n\x0b\x42\x61ttleShift\x12\x11\n\tRequestID\x18\x01 \x02(\x05\x12\x13\n\x08Position\x18\x02 \x01(\x05:\x01\x30')
+  serialized_pb=_b('\n\x11\x42\x61ttleShift.proto\x12\x18PSXAPI.Request1158710099\"5\n\x0b\x42\x61ttleShift\x12\x11\n\tRequestID\x18\x01 \x02(\x05\x12\x13\n\x08Position\x18\x02 \x01(\x05:\x01\x30')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,20 +28,20 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _BATTLESHIFT = _descriptor.Descriptor(
   name='BattleShift',
-  full_name='PSXAPI.Request8.BattleShift',
+  full_name='PSXAPI.Request1158710099.BattleShift',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='RequestID', full_name='PSXAPI.Request8.BattleShift.RequestID', index=0,
+      name='RequestID', full_name='PSXAPI.Request1158710099.BattleShift.RequestID', index=0,
       number=1, type=5, cpp_type=1, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Position', full_name='PSXAPI.Request8.BattleShift.Position', index=1,
+      name='Position', full_name='PSXAPI.Request1158710099.BattleShift.Position', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -59,8 +59,8 @@ _BATTLESHIFT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=38,
-  serialized_end=91,
+  serialized_start=47,
+  serialized_end=100,
 )
 
 DESCRIPTOR.message_types_by_name['BattleShift'] = _BATTLESHIFT
@@ -68,7 +68,7 @@ DESCRIPTOR.message_types_by_name['BattleShift'] = _BATTLESHIFT
 BattleShift = _reflection.GeneratedProtocolMessageType('BattleShift', (_message.Message,), dict(
   DESCRIPTOR = _BATTLESHIFT,
   __module__ = 'BattleShift_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request8.BattleShift)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request1158710099.BattleShift)
   ))
 _sym_db.RegisterMessage(BattleShift)
 

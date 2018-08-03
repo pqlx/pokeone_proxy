@@ -13,16 +13,16 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
-import bcl_pb2 as bcl__pb2
+from protobuf_net import bcl_pb2 as protobuf__net_dot_bcl__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='NPCData.proto',
-  package='MAPAPI.Response26',
+  package='MAPAPI.Response1101234815',
   syntax='proto2',
-  serialized_pb=_b('\n\rNPCData.proto\x12\x11MAPAPI.Response26\x1a\tbcl.proto\"\x81\x01\n\x07NPCData\x12\x0c\n\x01x\x18\x01 \x01(\x05:\x01\x30\x12\x0c\n\x01y\x18\x02 \x01(\x05:\x01\x30\x12\x0c\n\x01z\x18\x03 \x01(\x05:\x01\x30\x12\x15\n\x02ID\x18\x04 \x01(\x0b\x32\t.bcl.Guid\x12\x35\n\x08Settings\x18\x05 \x01(\x0b\x32#.MAPAPI.Response26.NPCSettingStruct\"\xbc\x02\n\x10NPCSettingStruct\x12\x0f\n\x07NPCName\x18\x01 \x01(\t\x12\x0e\n\x06\x46\x61\x63ing\x18\x02 \x01(\t\x12\x13\n\x0bSightAction\x18\x03 \x01(\t\x12\x0e\n\x03LOS\x18\x04 \x01(\x05:\x01\x30\x12\x0c\n\x04Path\x18\x05 \x01(\t\x12\x16\n\x07\x45nabled\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x17\n\x08WalkFast\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0cLookRandomly\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x11\n\x06Sprite\x18\t \x01(\x05:\x01\x30\x12\x0c\n\x04Tags\x18\n \x01(\t\x12\x0e\n\x06Script\x18\x0b \x01(\t\x12\x12\n\nNameColour\x18\x0c \x01(\t\x12\x13\n\x0bStartScript\x18\r \x01(\t\x12\x12\n\nSpottedSFX\x18\x0e \x01(\t\x12\x18\n\tDontMerge\x18\x0f \x01(\x08:\x05\x66\x61lse')
+  serialized_pb=_b('\n\rNPCData.proto\x12\x19MAPAPI.Response1101234815\x1a\x16protobuf-net/bcl.proto\"\x89\x01\n\x07NPCData\x12\x0c\n\x01x\x18\x01 \x01(\x05:\x01\x30\x12\x0c\n\x01y\x18\x02 \x01(\x05:\x01\x30\x12\x0c\n\x01z\x18\x03 \x01(\x05:\x01\x30\x12\x15\n\x02ID\x18\x04 \x01(\x0b\x32\t.bcl.Guid\x12=\n\x08Settings\x18\x05 \x01(\x0b\x32+.MAPAPI.Response1101234815.NPCSettingStruct\"\xbc\x02\n\x10NPCSettingStruct\x12\x0f\n\x07NPCName\x18\x01 \x01(\t\x12\x0e\n\x06\x46\x61\x63ing\x18\x02 \x01(\t\x12\x13\n\x0bSightAction\x18\x03 \x01(\t\x12\x0e\n\x03LOS\x18\x04 \x01(\x05:\x01\x30\x12\x0c\n\x04Path\x18\x05 \x01(\t\x12\x16\n\x07\x45nabled\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x17\n\x08WalkFast\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0cLookRandomly\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x11\n\x06Sprite\x18\t \x01(\x05:\x01\x30\x12\x0c\n\x04Tags\x18\n \x01(\t\x12\x0e\n\x06Script\x18\x0b \x01(\t\x12\x12\n\nNameColour\x18\x0c \x01(\t\x12\x13\n\x0bStartScript\x18\r \x01(\t\x12\x12\n\nSpottedSFX\x18\x0e \x01(\t\x12\x18\n\tDontMerge\x18\x0f \x01(\x08:\x05\x66\x61lse')
   ,
-  dependencies=[bcl__pb2.DESCRIPTOR,])
+  dependencies=[protobuf__net_dot_bcl__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
@@ -30,41 +30,41 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _NPCDATA = _descriptor.Descriptor(
   name='NPCData',
-  full_name='MAPAPI.Response26.NPCData',
+  full_name='MAPAPI.Response1101234815.NPCData',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='x', full_name='MAPAPI.Response26.NPCData.x', index=0,
+      name='x', full_name='MAPAPI.Response1101234815.NPCData.x', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='y', full_name='MAPAPI.Response26.NPCData.y', index=1,
+      name='y', full_name='MAPAPI.Response1101234815.NPCData.y', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='z', full_name='MAPAPI.Response26.NPCData.z', index=2,
+      name='z', full_name='MAPAPI.Response1101234815.NPCData.z', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='ID', full_name='MAPAPI.Response26.NPCData.ID', index=3,
+      name='ID', full_name='MAPAPI.Response1101234815.NPCData.ID', index=3,
       number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Settings', full_name='MAPAPI.Response26.NPCData.Settings', index=4,
+      name='Settings', full_name='MAPAPI.Response1101234815.NPCData.Settings', index=4,
       number=5, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -82,118 +82,118 @@ _NPCDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=48,
-  serialized_end=177,
+  serialized_start=69,
+  serialized_end=206,
 )
 
 
 _NPCSETTINGSTRUCT = _descriptor.Descriptor(
   name='NPCSettingStruct',
-  full_name='MAPAPI.Response26.NPCSettingStruct',
+  full_name='MAPAPI.Response1101234815.NPCSettingStruct',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='NPCName', full_name='MAPAPI.Response26.NPCSettingStruct.NPCName', index=0,
+      name='NPCName', full_name='MAPAPI.Response1101234815.NPCSettingStruct.NPCName', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Facing', full_name='MAPAPI.Response26.NPCSettingStruct.Facing', index=1,
+      name='Facing', full_name='MAPAPI.Response1101234815.NPCSettingStruct.Facing', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='SightAction', full_name='MAPAPI.Response26.NPCSettingStruct.SightAction', index=2,
+      name='SightAction', full_name='MAPAPI.Response1101234815.NPCSettingStruct.SightAction', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='LOS', full_name='MAPAPI.Response26.NPCSettingStruct.LOS', index=3,
+      name='LOS', full_name='MAPAPI.Response1101234815.NPCSettingStruct.LOS', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Path', full_name='MAPAPI.Response26.NPCSettingStruct.Path', index=4,
+      name='Path', full_name='MAPAPI.Response1101234815.NPCSettingStruct.Path', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Enabled', full_name='MAPAPI.Response26.NPCSettingStruct.Enabled', index=5,
+      name='Enabled', full_name='MAPAPI.Response1101234815.NPCSettingStruct.Enabled', index=5,
       number=6, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='WalkFast', full_name='MAPAPI.Response26.NPCSettingStruct.WalkFast', index=6,
+      name='WalkFast', full_name='MAPAPI.Response1101234815.NPCSettingStruct.WalkFast', index=6,
       number=7, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='LookRandomly', full_name='MAPAPI.Response26.NPCSettingStruct.LookRandomly', index=7,
+      name='LookRandomly', full_name='MAPAPI.Response1101234815.NPCSettingStruct.LookRandomly', index=7,
       number=8, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Sprite', full_name='MAPAPI.Response26.NPCSettingStruct.Sprite', index=8,
+      name='Sprite', full_name='MAPAPI.Response1101234815.NPCSettingStruct.Sprite', index=8,
       number=9, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Tags', full_name='MAPAPI.Response26.NPCSettingStruct.Tags', index=9,
+      name='Tags', full_name='MAPAPI.Response1101234815.NPCSettingStruct.Tags', index=9,
       number=10, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Script', full_name='MAPAPI.Response26.NPCSettingStruct.Script', index=10,
+      name='Script', full_name='MAPAPI.Response1101234815.NPCSettingStruct.Script', index=10,
       number=11, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='NameColour', full_name='MAPAPI.Response26.NPCSettingStruct.NameColour', index=11,
+      name='NameColour', full_name='MAPAPI.Response1101234815.NPCSettingStruct.NameColour', index=11,
       number=12, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='StartScript', full_name='MAPAPI.Response26.NPCSettingStruct.StartScript', index=12,
+      name='StartScript', full_name='MAPAPI.Response1101234815.NPCSettingStruct.StartScript', index=12,
       number=13, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='SpottedSFX', full_name='MAPAPI.Response26.NPCSettingStruct.SpottedSFX', index=13,
+      name='SpottedSFX', full_name='MAPAPI.Response1101234815.NPCSettingStruct.SpottedSFX', index=13,
       number=14, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='DontMerge', full_name='MAPAPI.Response26.NPCSettingStruct.DontMerge', index=14,
+      name='DontMerge', full_name='MAPAPI.Response1101234815.NPCSettingStruct.DontMerge', index=14,
       number=15, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -211,11 +211,11 @@ _NPCSETTINGSTRUCT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=180,
-  serialized_end=496,
+  serialized_start=209,
+  serialized_end=525,
 )
 
-_NPCDATA.fields_by_name['ID'].message_type = bcl__pb2._GUID
+_NPCDATA.fields_by_name['ID'].message_type = protobuf__net_dot_bcl__pb2._GUID
 _NPCDATA.fields_by_name['Settings'].message_type = _NPCSETTINGSTRUCT
 DESCRIPTOR.message_types_by_name['NPCData'] = _NPCDATA
 DESCRIPTOR.message_types_by_name['NPCSettingStruct'] = _NPCSETTINGSTRUCT
@@ -223,14 +223,14 @@ DESCRIPTOR.message_types_by_name['NPCSettingStruct'] = _NPCSETTINGSTRUCT
 NPCData = _reflection.GeneratedProtocolMessageType('NPCData', (_message.Message,), dict(
   DESCRIPTOR = _NPCDATA,
   __module__ = 'NPCData_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response26.NPCData)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response1101234815.NPCData)
   ))
 _sym_db.RegisterMessage(NPCData)
 
 NPCSettingStruct = _reflection.GeneratedProtocolMessageType('NPCSettingStruct', (_message.Message,), dict(
   DESCRIPTOR = _NPCSETTINGSTRUCT,
   __module__ = 'NPCData_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response26.NPCSettingStruct)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response1101234815.NPCSettingStruct)
   ))
 _sym_db.RegisterMessage(NPCSettingStruct)
 

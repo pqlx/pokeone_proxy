@@ -1,6 +1,6 @@
 syntax = "proto2";
-package PSXAPI.Response.Payload2;
-import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+package PSXAPI.Response.Payload87848410;
+import "protobuf-net/bcl.proto"; // schema for protobuf-net's handling of core .NET types
 
 message Banned {
    optional bool Permanent = 1 [default = false];

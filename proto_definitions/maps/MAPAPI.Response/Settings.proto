@@ -1,11 +1,13 @@
 syntax = "proto2";
-package MAPAPI.Response34;
+package MAPAPI.Response1289765189;
 
-enum EncounterRates {
+message PREFIX_AGDFASBV2036545523 {
+    enum EncounterRates {
    Normal = 0;
    Low = 1;
    VeryLow = 2;
-}
+} //PREFIX_AGDFASBV
+};
 message Settings {
    optional string MapName = 1;
    optional string LightColour_String = 2;
@@ -20,6 +22,6 @@ message Settings {
    optional bool Cave = 11 [default = false];
    optional string Region = 12;
    optional bool WhiteFog = 13 [default = false];
-   optional EncounterRates EncounterRate = 14 [default = Normal];
+   optional PREFIX_AGDFASBV2036545523.EncounterRates EncounterRate = 14 [default = Normal];
    optional bool CantFlyTeleport = 15 [default = false];
 }

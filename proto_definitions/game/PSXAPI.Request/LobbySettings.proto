@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Request37;
+package PSXAPI.Request657134790;
 
 message LobbySettings {
    optional bool Ranked = 1 [default = false];

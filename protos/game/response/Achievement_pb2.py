@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Achievement.proto',
-  package='PSXAPI.Response0',
+  package='PSXAPI.Response746946835',
   syntax='proto2',
-  serialized_pb=_b('\n\x11\x41\x63hievement.proto\x12\x10PSXAPI.Response0\"^\n\x0b\x41\x63hievement\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x13\n\x08Progress\x18\x02 \x01(\r:\x01\x30\x12.\n\x07Payload\x18\x03 \x03(\x0b\x32\x1d.PSXAPI.Response0.Achievement')
+  serialized_pb=_b('\n\x11\x41\x63hievement.proto\x12\x18PSXAPI.Response746946835\"f\n\x0b\x41\x63hievement\x12\n\n\x02ID\x18\x01 \x01(\t\x12\x13\n\x08Progress\x18\x02 \x01(\r:\x01\x30\x12\x36\n\x07Payload\x18\x03 \x03(\x0b\x32%.PSXAPI.Response746946835.Achievement')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,27 +28,27 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _ACHIEVEMENT = _descriptor.Descriptor(
   name='Achievement',
-  full_name='PSXAPI.Response0.Achievement',
+  full_name='PSXAPI.Response746946835.Achievement',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='ID', full_name='PSXAPI.Response0.Achievement.ID', index=0,
+      name='ID', full_name='PSXAPI.Response746946835.Achievement.ID', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Progress', full_name='PSXAPI.Response0.Achievement.Progress', index=1,
+      name='Progress', full_name='PSXAPI.Response746946835.Achievement.Progress', index=1,
       number=2, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Payload', full_name='PSXAPI.Response0.Achievement.Payload', index=2,
+      name='Payload', full_name='PSXAPI.Response746946835.Achievement.Payload', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -66,8 +66,8 @@ _ACHIEVEMENT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=39,
-  serialized_end=133,
+  serialized_start=47,
+  serialized_end=149,
 )
 
 _ACHIEVEMENT.fields_by_name['Payload'].message_type = _ACHIEVEMENT
@@ -76,7 +76,7 @@ DESCRIPTOR.message_types_by_name['Achievement'] = _ACHIEVEMENT
 Achievement = _reflection.GeneratedProtocolMessageType('Achievement', (_message.Message,), dict(
   DESCRIPTOR = _ACHIEVEMENT,
   __module__ = 'Achievement_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response0.Achievement)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response746946835.Achievement)
   ))
 _sym_db.RegisterMessage(Achievement)
 

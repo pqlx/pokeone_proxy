@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='RenameMap.proto',
-  package='MAPAPI.Response32',
+  package='MAPAPI.Response1551061969',
   syntax='proto2',
-  serialized_pb=_b('\n\x0fRenameMap.proto\x12\x11MAPAPI.Response32\"3\n\tRenameMap\x12\x13\n\x0bMapNameFrom\x18\x01 \x01(\t\x12\x11\n\tMapNameTo\x18\x02 \x01(\t')
+  serialized_pb=_b('\n\x0fRenameMap.proto\x12\x19MAPAPI.Response1551061969\"3\n\tRenameMap\x12\x13\n\x0bMapNameFrom\x18\x01 \x01(\t\x12\x11\n\tMapNameTo\x18\x02 \x01(\t')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,20 +28,20 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _RENAMEMAP = _descriptor.Descriptor(
   name='RenameMap',
-  full_name='MAPAPI.Response32.RenameMap',
+  full_name='MAPAPI.Response1551061969.RenameMap',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='MapNameFrom', full_name='MAPAPI.Response32.RenameMap.MapNameFrom', index=0,
+      name='MapNameFrom', full_name='MAPAPI.Response1551061969.RenameMap.MapNameFrom', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='MapNameTo', full_name='MAPAPI.Response32.RenameMap.MapNameTo', index=1,
+      name='MapNameTo', full_name='MAPAPI.Response1551061969.RenameMap.MapNameTo', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -59,8 +59,8 @@ _RENAMEMAP = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=38,
-  serialized_end=89,
+  serialized_start=46,
+  serialized_end=97,
 )
 
 DESCRIPTOR.message_types_by_name['RenameMap'] = _RENAMEMAP
@@ -68,7 +68,7 @@ DESCRIPTOR.message_types_by_name['RenameMap'] = _RENAMEMAP
 RenameMap = _reflection.GeneratedProtocolMessageType('RenameMap', (_message.Message,), dict(
   DESCRIPTOR = _RENAMEMAP,
   __module__ = 'RenameMap_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response32.RenameMap)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response1551061969.RenameMap)
   ))
 _sym_db.RegisterMessage(RenameMap)
 

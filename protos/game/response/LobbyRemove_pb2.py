@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -18,15 +17,17 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='LobbyRemove.proto',
-  package='PSXAPI.Response46',
+  package='PSXAPI.Response561417763',
   syntax='proto2',
-  serialized_pb=_b('\n\x11LobbyRemove.proto\x12\x11PSXAPI.Response46\"W\n\x0bLobbyRemove\x12\x0c\n\x04Name\x18\x01 \x01(\t\x12:\n\x06Reason\x18\x02 \x01(\x0e\x32$.PSXAPI.Response46.LobbyRemoveReason:\x04Left*)\n\x11LobbyRemoveReason\x12\x08\n\x04Left\x10\x00\x12\n\n\x06Kicked\x10\x01')
+  serialized_pb=_b('\n\x11LobbyRemove.proto\x12\x18PSXAPI.Response561417763\"x\n\x0bLobbyRemove\x12\x0c\n\x04Name\x18\x01 \x01(\t\x12[\n\x06Reason\x18\x02 \x01(\x0e\x32\x45.PSXAPI.Response561417763.PREFIX_AGDFASBV1316608781.LobbyRemoveReason:\x04Left\"F\n\x19PREFIX_AGDFASBV1316608781\")\n\x11LobbyRemoveReason\x12\x08\n\x04Left\x10\x00\x12\n\n\x06Kicked\x10\x01')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_LOBBYREMOVEREASON = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV1316608781_LOBBYREMOVEREASON = _descriptor.EnumDescriptor(
   name='LobbyRemoveReason',
-  full_name='PSXAPI.Response46.LobbyRemoveReason',
+  full_name='PSXAPI.Response561417763.PREFIX_AGDFASBV1316608781.LobbyRemoveReason',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -41,33 +42,28 @@ _LOBBYREMOVEREASON = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=129,
-  serialized_end=170,
+  serialized_start=198,
+  serialized_end=239,
 )
-_sym_db.RegisterEnumDescriptor(_LOBBYREMOVEREASON)
-
-LobbyRemoveReason = enum_type_wrapper.EnumTypeWrapper(_LOBBYREMOVEREASON)
-Left = 0
-Kicked = 1
-
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1316608781_LOBBYREMOVEREASON)
 
 
 _LOBBYREMOVE = _descriptor.Descriptor(
   name='LobbyRemove',
-  full_name='PSXAPI.Response46.LobbyRemove',
+  full_name='PSXAPI.Response561417763.LobbyRemove',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Name', full_name='PSXAPI.Response46.LobbyRemove.Name', index=0,
+      name='Name', full_name='PSXAPI.Response561417763.LobbyRemove.Name', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Reason', full_name='PSXAPI.Response46.LobbyRemove.Reason', index=1,
+      name='Reason', full_name='PSXAPI.Response561417763.LobbyRemove.Reason', index=1,
       number=2, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -85,20 +81,53 @@ _LOBBYREMOVE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=40,
-  serialized_end=127,
+  serialized_start=47,
+  serialized_end=167,
 )
 
-_LOBBYREMOVE.fields_by_name['Reason'].enum_type = _LOBBYREMOVEREASON
+
+_PREFIX_AGDFASBV1316608781 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1316608781',
+  full_name='PSXAPI.Response561417763.PREFIX_AGDFASBV1316608781',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1316608781_LOBBYREMOVEREASON,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=169,
+  serialized_end=239,
+)
+
+_LOBBYREMOVE.fields_by_name['Reason'].enum_type = _PREFIX_AGDFASBV1316608781_LOBBYREMOVEREASON
+_PREFIX_AGDFASBV1316608781_LOBBYREMOVEREASON.containing_type = _PREFIX_AGDFASBV1316608781
 DESCRIPTOR.message_types_by_name['LobbyRemove'] = _LOBBYREMOVE
-DESCRIPTOR.enum_types_by_name['LobbyRemoveReason'] = _LOBBYREMOVEREASON
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1316608781'] = _PREFIX_AGDFASBV1316608781
 
 LobbyRemove = _reflection.GeneratedProtocolMessageType('LobbyRemove', (_message.Message,), dict(
   DESCRIPTOR = _LOBBYREMOVE,
   __module__ = 'LobbyRemove_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response46.LobbyRemove)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response561417763.LobbyRemove)
   ))
 _sym_db.RegisterMessage(LobbyRemove)
+
+PREFIX_AGDFASBV1316608781 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1316608781', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1316608781,
+  __module__ = 'LobbyRemove_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response561417763.PREFIX_AGDFASBV1316608781)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1316608781)
 
 
 # @@protoc_insertion_point(module_scope)

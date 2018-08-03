@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Response.Payload6;
+package PSXAPI.Response.Payload1359772579;
 
 message BattlePokemonStats {
    optional int32 atk = 1 [default = 0];

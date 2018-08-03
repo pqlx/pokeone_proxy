@@ -13,16 +13,16 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
-import bcl_pb2 as bcl__pb2
+from protobuf_net import bcl_pb2 as protobuf__net_dot_bcl__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='MoveNPC.proto',
-  package='MAPAPI.Response23',
+  package='MAPAPI.Response565566055',
   syntax='proto2',
-  serialized_pb=_b('\n\rMoveNPC.proto\x12\x11MAPAPI.Response23\x1a\tbcl.proto\"=\n\x07MoveNPC\x12\x32\n\x06Object\x18\x01 \x01(\x0b\x32\".MAPAPI.Response23.NPCObjectStruct\"R\n\x0fNPCObjectStruct\x12\x0c\n\x01x\x18\x01 \x01(\x05:\x01\x30\x12\x0c\n\x01y\x18\x02 \x01(\x05:\x01\x30\x12\x0c\n\x01z\x18\x03 \x01(\x05:\x01\x30\x12\x15\n\x02ID\x18\x04 \x01(\x0b\x32\t.bcl.Guid')
+  serialized_pb=_b('\n\rMoveNPC.proto\x12\x18MAPAPI.Response565566055\x1a\x16protobuf-net/bcl.proto\"D\n\x07MoveNPC\x12\x39\n\x06Object\x18\x01 \x01(\x0b\x32).MAPAPI.Response565566055.NPCObjectStruct\"R\n\x0fNPCObjectStruct\x12\x0c\n\x01x\x18\x01 \x01(\x05:\x01\x30\x12\x0c\n\x01y\x18\x02 \x01(\x05:\x01\x30\x12\x0c\n\x01z\x18\x03 \x01(\x05:\x01\x30\x12\x15\n\x02ID\x18\x04 \x01(\x0b\x32\t.bcl.Guid')
   ,
-  dependencies=[bcl__pb2.DESCRIPTOR,])
+  dependencies=[protobuf__net_dot_bcl__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
@@ -30,13 +30,13 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _MOVENPC = _descriptor.Descriptor(
   name='MoveNPC',
-  full_name='MAPAPI.Response23.MoveNPC',
+  full_name='MAPAPI.Response565566055.MoveNPC',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Object', full_name='MAPAPI.Response23.MoveNPC.Object', index=0,
+      name='Object', full_name='MAPAPI.Response565566055.MoveNPC.Object', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -54,41 +54,41 @@ _MOVENPC = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=47,
-  serialized_end=108,
+  serialized_start=67,
+  serialized_end=135,
 )
 
 
 _NPCOBJECTSTRUCT = _descriptor.Descriptor(
   name='NPCObjectStruct',
-  full_name='MAPAPI.Response23.NPCObjectStruct',
+  full_name='MAPAPI.Response565566055.NPCObjectStruct',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='x', full_name='MAPAPI.Response23.NPCObjectStruct.x', index=0,
+      name='x', full_name='MAPAPI.Response565566055.NPCObjectStruct.x', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='y', full_name='MAPAPI.Response23.NPCObjectStruct.y', index=1,
+      name='y', full_name='MAPAPI.Response565566055.NPCObjectStruct.y', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='z', full_name='MAPAPI.Response23.NPCObjectStruct.z', index=2,
+      name='z', full_name='MAPAPI.Response565566055.NPCObjectStruct.z', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='ID', full_name='MAPAPI.Response23.NPCObjectStruct.ID', index=3,
+      name='ID', full_name='MAPAPI.Response565566055.NPCObjectStruct.ID', index=3,
       number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -106,26 +106,26 @@ _NPCOBJECTSTRUCT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=110,
-  serialized_end=192,
+  serialized_start=137,
+  serialized_end=219,
 )
 
 _MOVENPC.fields_by_name['Object'].message_type = _NPCOBJECTSTRUCT
-_NPCOBJECTSTRUCT.fields_by_name['ID'].message_type = bcl__pb2._GUID
+_NPCOBJECTSTRUCT.fields_by_name['ID'].message_type = protobuf__net_dot_bcl__pb2._GUID
 DESCRIPTOR.message_types_by_name['MoveNPC'] = _MOVENPC
 DESCRIPTOR.message_types_by_name['NPCObjectStruct'] = _NPCOBJECTSTRUCT
 
 MoveNPC = _reflection.GeneratedProtocolMessageType('MoveNPC', (_message.Message,), dict(
   DESCRIPTOR = _MOVENPC,
   __module__ = 'MoveNPC_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response23.MoveNPC)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response565566055.MoveNPC)
   ))
 _sym_db.RegisterMessage(MoveNPC)
 
 NPCObjectStruct = _reflection.GeneratedProtocolMessageType('NPCObjectStruct', (_message.Message,), dict(
   DESCRIPTOR = _NPCOBJECTSTRUCT,
   __module__ = 'MoveNPC_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response23.NPCObjectStruct)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response565566055.NPCObjectStruct)
   ))
 _sym_db.RegisterMessage(NPCObjectStruct)
 

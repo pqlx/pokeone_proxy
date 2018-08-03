@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='MapUserPosition.proto',
-  package='PSXAPI.Response.Payload23',
+  package='PSXAPI.Response.Payload1190394127',
   syntax='proto2',
-  serialized_pb=_b('\n\x15MapUserPosition.proto\x12\x19PSXAPI.Response.Payload23\"@\n\x0fMapUserPosition\x12\x0c\n\x01X\x18\x01 \x01(\x05:\x01\x30\x12\x0c\n\x01Y\x18\x02 \x01(\x05:\x01\x30\x12\x11\n\x06Height\x18\x03 \x01(\x05:\x01\x30')
+  serialized_pb=_b('\n\x15MapUserPosition.proto\x12!PSXAPI.Response.Payload1190394127\"@\n\x0fMapUserPosition\x12\x0c\n\x01X\x18\x01 \x01(\x05:\x01\x30\x12\x0c\n\x01Y\x18\x02 \x01(\x05:\x01\x30\x12\x11\n\x06Height\x18\x03 \x01(\x05:\x01\x30')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,27 +28,27 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _MAPUSERPOSITION = _descriptor.Descriptor(
   name='MapUserPosition',
-  full_name='PSXAPI.Response.Payload23.MapUserPosition',
+  full_name='PSXAPI.Response.Payload1190394127.MapUserPosition',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='X', full_name='PSXAPI.Response.Payload23.MapUserPosition.X', index=0,
+      name='X', full_name='PSXAPI.Response.Payload1190394127.MapUserPosition.X', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Y', full_name='PSXAPI.Response.Payload23.MapUserPosition.Y', index=1,
+      name='Y', full_name='PSXAPI.Response.Payload1190394127.MapUserPosition.Y', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Height', full_name='PSXAPI.Response.Payload23.MapUserPosition.Height', index=2,
+      name='Height', full_name='PSXAPI.Response.Payload1190394127.MapUserPosition.Height', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -66,8 +66,8 @@ _MAPUSERPOSITION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=52,
-  serialized_end=116,
+  serialized_start=60,
+  serialized_end=124,
 )
 
 DESCRIPTOR.message_types_by_name['MapUserPosition'] = _MAPUSERPOSITION
@@ -75,7 +75,7 @@ DESCRIPTOR.message_types_by_name['MapUserPosition'] = _MAPUSERPOSITION
 MapUserPosition = _reflection.GeneratedProtocolMessageType('MapUserPosition', (_message.Message,), dict(
   DESCRIPTOR = _MAPUSERPOSITION,
   __module__ = 'MapUserPosition_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response.Payload23.MapUserPosition)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response.Payload1190394127.MapUserPosition)
   ))
 _sym_db.RegisterMessage(MapUserPosition)
 

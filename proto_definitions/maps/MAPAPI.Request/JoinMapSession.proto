@@ -1,5 +1,5 @@
 syntax = "proto2";
-package MAPAPI.Request2;
+package MAPAPI.Request1556872628;
 
 message JoinMapSession {
    optional string MapName = 1;

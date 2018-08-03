@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='MapSettings.proto',
-  package='MAPAPI.Response21',
+  package='MAPAPI.Response1220737299',
   syntax='proto2',
-  serialized_pb=_b('\n\x11MapSettings.proto\x12\x11MAPAPI.Response21\"\x1f\n\x0bMapSettings\x12\x10\n\x08settings\x18\x01 \x01(\t')
+  serialized_pb=_b('\n\x11MapSettings.proto\x12\x19MAPAPI.Response1220737299\"\x1f\n\x0bMapSettings\x12\x10\n\x08settings\x18\x01 \x01(\t')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,13 +28,13 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _MAPSETTINGS = _descriptor.Descriptor(
   name='MapSettings',
-  full_name='MAPAPI.Response21.MapSettings',
+  full_name='MAPAPI.Response1220737299.MapSettings',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='settings', full_name='MAPAPI.Response21.MapSettings.settings', index=0,
+      name='settings', full_name='MAPAPI.Response1220737299.MapSettings.settings', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -52,8 +52,8 @@ _MAPSETTINGS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=40,
-  serialized_end=71,
+  serialized_start=48,
+  serialized_end=79,
 )
 
 DESCRIPTOR.message_types_by_name['MapSettings'] = _MAPSETTINGS
@@ -61,7 +61,7 @@ DESCRIPTOR.message_types_by_name['MapSettings'] = _MAPSETTINGS
 MapSettings = _reflection.GeneratedProtocolMessageType('MapSettings', (_message.Message,), dict(
   DESCRIPTOR = _MAPSETTINGS,
   __module__ = 'MapSettings_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response21.MapSettings)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response1220737299.MapSettings)
   ))
 _sym_db.RegisterMessage(MapSettings)
 

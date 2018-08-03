@@ -13,16 +13,16 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
-import bcl_pb2 as bcl__pb2
+from protobuf_net import bcl_pb2 as protobuf__net_dot_bcl__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Evolve.proto',
-  package='PSXAPI.Request18',
+  package='PSXAPI.Request1537276027',
   syntax='proto2',
-  serialized_pb=_b('\n\x0c\x45volve.proto\x12\x10PSXAPI.Request18\x1a\tbcl.proto\";\n\x06\x45volve\x12\x1a\n\x07Pokemon\x18\x01 \x01(\x0b\x32\t.bcl.Guid\x12\x15\n\x06\x41\x63\x63\x65pt\x18\x02 \x01(\x08:\x05\x66\x61lse')
+  serialized_pb=_b('\n\x0c\x45volve.proto\x12\x18PSXAPI.Request1537276027\x1a\x16protobuf-net/bcl.proto\";\n\x06\x45volve\x12\x1a\n\x07Pokemon\x18\x01 \x01(\x0b\x32\t.bcl.Guid\x12\x15\n\x06\x41\x63\x63\x65pt\x18\x02 \x01(\x08:\x05\x66\x61lse')
   ,
-  dependencies=[bcl__pb2.DESCRIPTOR,])
+  dependencies=[protobuf__net_dot_bcl__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
@@ -30,20 +30,20 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _EVOLVE = _descriptor.Descriptor(
   name='Evolve',
-  full_name='PSXAPI.Request18.Evolve',
+  full_name='PSXAPI.Request1537276027.Evolve',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Pokemon', full_name='PSXAPI.Request18.Evolve.Pokemon', index=0,
+      name='Pokemon', full_name='PSXAPI.Request1537276027.Evolve.Pokemon', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Accept', full_name='PSXAPI.Request18.Evolve.Accept', index=1,
+      name='Accept', full_name='PSXAPI.Request1537276027.Evolve.Accept', index=1,
       number=2, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -61,17 +61,17 @@ _EVOLVE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=45,
-  serialized_end=104,
+  serialized_start=66,
+  serialized_end=125,
 )
 
-_EVOLVE.fields_by_name['Pokemon'].message_type = bcl__pb2._GUID
+_EVOLVE.fields_by_name['Pokemon'].message_type = protobuf__net_dot_bcl__pb2._GUID
 DESCRIPTOR.message_types_by_name['Evolve'] = _EVOLVE
 
 Evolve = _reflection.GeneratedProtocolMessageType('Evolve', (_message.Message,), dict(
   DESCRIPTOR = _EVOLVE,
   __module__ = 'Evolve_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request18.Evolve)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request1537276027.Evolve)
   ))
 _sym_db.RegisterMessage(Evolve)
 

@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -18,47 +17,48 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='LobbyActor.proto',
-  package='PSXAPI.Response.Payload18',
+  package='PSXAPI.Response.Payload1595568979',
   syntax='proto2',
-  serialized_pb=_b('\n\x10LobbyActor.proto\x12\x19PSXAPI.Response.Payload18\"\x86\x03\n\nLobbyActor\x12;\n\x04Type\x18\x01 \x01(\x0e\x32$.PSXAPI.Response.Payload18.ActorType:\x07__None2\x12\x0c\n\x04Name\x18\x02 \x01(\t\x12;\n\x04Team\x18\x03 \x01(\x0e\x32$.PSXAPI.Response.Payload18.ActorTeam:\x07__None1\x12\x17\n\x0cPokemonCount\x18\x04 \x01(\x05:\x01\x30\x12\x16\n\x0b\x41\x63tiveCount\x18\x05 \x01(\x05:\x01\x30\x12\x17\n\x08\x41\x63\x63\x65pted\x18\x06 \x01(\x08:\x05\x66\x61lse\x12G\n\nAvatarType\x18\x07 \x01(\x0e\x32*.PSXAPI.Response.Payload18.ActorAvatarType:\x07__None0\x12\x16\n\x0bNpcSpriteID\x18\x08 \x01(\x05:\x01\x30\x12\x17\n\x0c\x41verageLevel\x18\t \x01(\x05:\x01\x30\x12\x17\n\x0cHighestLevel\x18\n \x01(\x05:\x01\x30\x12\x13\n\x04Self\x18\x0b \x01(\x08:\x05\x66\x61lse*3\n\x0f\x41\x63torAvatarType\x12\x0b\n\x07__None0\x10\x00\x12\t\n\x05User0\x10\x01\x12\x08\n\x04NPC0\x10\x02*.\n\tActorTeam\x12\x0b\n\x07__None1\x10\x00\x12\t\n\x05Team1\x10\x01\x12\t\n\x05Team2\x10\x02*T\n\tActorType\x12\x0b\n\x07__None2\x10\x00\x12\n\n\x06Leader\x10\x01\x12\t\n\x05User1\x10\x02\x12\x08\n\x04NPC1\x10\x03\x12\x0c\n\x08Inactive\x10\x04\x12\x0b\n\x07Offline\x10\x05')
+  serialized_pb=_b('\n\x10LobbyActor.proto\x12!PSXAPI.Response.Payload1595568979\"O\n\x18PREFIX_AGDFASBV207083596\"3\n\x0f\x41\x63torAvatarType\x12\r\n\tNoneValue\x10\x00\x12\x08\n\x04User\x10\x01\x12\x07\n\x03NPC\x10\x02\"L\n\x18PREFIX_AGDFASBV225284886\"0\n\tActorTeam\x12\r\n\tNoneValue\x10\x00\x12\t\n\x05Team1\x10\x01\x12\t\n\x05Team2\x10\x02\"p\n\x18PREFIX_AGDFASBV893759777\"T\n\tActorType\x12\r\n\tNoneValue\x10\x00\x12\n\n\x06Leader\x10\x01\x12\x08\n\x04User\x10\x02\x12\x07\n\x03NPC\x10\x03\x12\x0c\n\x08Inactive\x10\x04\x12\x0b\n\x07Offline\x10\x05\"\xef\x03\n\nLobbyActor\x12^\n\x04Type\x18\x01 \x01(\x0e\x32\x45.PSXAPI.Response.Payload1595568979.PREFIX_AGDFASBV893759777.ActorType:\tNoneValue\x12\x0c\n\x04Name\x18\x02 \x01(\t\x12^\n\x04Team\x18\x03 \x01(\x0e\x32\x45.PSXAPI.Response.Payload1595568979.PREFIX_AGDFASBV225284886.ActorTeam:\tNoneValue\x12\x17\n\x0cPokemonCount\x18\x04 \x01(\x05:\x01\x30\x12\x16\n\x0b\x41\x63tiveCount\x18\x05 \x01(\x05:\x01\x30\x12\x17\n\x08\x41\x63\x63\x65pted\x18\x06 \x01(\x08:\x05\x66\x61lse\x12j\n\nAvatarType\x18\x07 \x01(\x0e\x32K.PSXAPI.Response.Payload1595568979.PREFIX_AGDFASBV207083596.ActorAvatarType:\tNoneValue\x12\x16\n\x0bNpcSpriteID\x18\x08 \x01(\x05:\x01\x30\x12\x17\n\x0c\x41verageLevel\x18\t \x01(\x05:\x01\x30\x12\x17\n\x0cHighestLevel\x18\n \x01(\x05:\x01\x30\x12\x13\n\x04Self\x18\x0b \x01(\x08:\x05\x66\x61lse')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_ACTORAVATARTYPE = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV207083596_ACTORAVATARTYPE = _descriptor.EnumDescriptor(
   name='ActorAvatarType',
-  full_name='PSXAPI.Response.Payload18.ActorAvatarType',
+  full_name='PSXAPI.Response.Payload1595568979.PREFIX_AGDFASBV207083596.ActorAvatarType',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='__None0', index=0, number=0,
+      name='NoneValue', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='User0', index=1, number=1,
+      name='User', index=1, number=1,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='NPC0', index=2, number=2,
+      name='NPC', index=2, number=2,
       options=None,
       type=None),
   ],
   containing_type=None,
   options=None,
-  serialized_start=440,
-  serialized_end=491,
+  serialized_start=83,
+  serialized_end=134,
 )
-_sym_db.RegisterEnumDescriptor(_ACTORAVATARTYPE)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV207083596_ACTORAVATARTYPE)
 
-ActorAvatarType = enum_type_wrapper.EnumTypeWrapper(_ACTORAVATARTYPE)
-_ACTORTEAM = _descriptor.EnumDescriptor(
+_PREFIX_AGDFASBV225284886_ACTORTEAM = _descriptor.EnumDescriptor(
   name='ActorTeam',
-  full_name='PSXAPI.Response.Payload18.ActorTeam',
+  full_name='PSXAPI.Response.Payload1595568979.PREFIX_AGDFASBV225284886.ActorTeam',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='__None1', index=0, number=0,
+      name='NoneValue', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -72,20 +72,19 @@ _ACTORTEAM = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=493,
-  serialized_end=539,
+  serialized_start=164,
+  serialized_end=212,
 )
-_sym_db.RegisterEnumDescriptor(_ACTORTEAM)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV225284886_ACTORTEAM)
 
-ActorTeam = enum_type_wrapper.EnumTypeWrapper(_ACTORTEAM)
-_ACTORTYPE = _descriptor.EnumDescriptor(
+_PREFIX_AGDFASBV893759777_ACTORTYPE = _descriptor.EnumDescriptor(
   name='ActorType',
-  full_name='PSXAPI.Response.Payload18.ActorType',
+  full_name='PSXAPI.Response.Payload1595568979.PREFIX_AGDFASBV893759777.ActorType',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='__None2', index=0, number=0,
+      name='NoneValue', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -93,11 +92,11 @@ _ACTORTYPE = _descriptor.EnumDescriptor(
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='User1', index=2, number=2,
+      name='User', index=2, number=2,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='NPC1', index=3, number=3,
+      name='NPC', index=3, number=3,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -111,106 +110,166 @@ _ACTORTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=541,
-  serialized_end=625,
+  serialized_start=242,
+  serialized_end=326,
 )
-_sym_db.RegisterEnumDescriptor(_ACTORTYPE)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV893759777_ACTORTYPE)
 
-ActorType = enum_type_wrapper.EnumTypeWrapper(_ACTORTYPE)
-__None0 = 0
-User0 = 1
-NPC0 = 2
-__None1 = 0
-Team1 = 1
-Team2 = 2
-__None2 = 0
-Leader = 1
-User1 = 2
-NPC1 = 3
-Inactive = 4
-Offline = 5
 
+_PREFIX_AGDFASBV207083596 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV207083596',
+  full_name='PSXAPI.Response.Payload1595568979.PREFIX_AGDFASBV207083596',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV207083596_ACTORAVATARTYPE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=55,
+  serialized_end=134,
+)
+
+
+_PREFIX_AGDFASBV225284886 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV225284886',
+  full_name='PSXAPI.Response.Payload1595568979.PREFIX_AGDFASBV225284886',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV225284886_ACTORTEAM,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=136,
+  serialized_end=212,
+)
+
+
+_PREFIX_AGDFASBV893759777 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV893759777',
+  full_name='PSXAPI.Response.Payload1595568979.PREFIX_AGDFASBV893759777',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV893759777_ACTORTYPE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=214,
+  serialized_end=326,
+)
 
 
 _LOBBYACTOR = _descriptor.Descriptor(
   name='LobbyActor',
-  full_name='PSXAPI.Response.Payload18.LobbyActor',
+  full_name='PSXAPI.Response.Payload1595568979.LobbyActor',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Type', full_name='PSXAPI.Response.Payload18.LobbyActor.Type', index=0,
+      name='Type', full_name='PSXAPI.Response.Payload1595568979.LobbyActor.Type', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Name', full_name='PSXAPI.Response.Payload18.LobbyActor.Name', index=1,
+      name='Name', full_name='PSXAPI.Response.Payload1595568979.LobbyActor.Name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Team', full_name='PSXAPI.Response.Payload18.LobbyActor.Team', index=2,
+      name='Team', full_name='PSXAPI.Response.Payload1595568979.LobbyActor.Team', index=2,
       number=3, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='PokemonCount', full_name='PSXAPI.Response.Payload18.LobbyActor.PokemonCount', index=3,
+      name='PokemonCount', full_name='PSXAPI.Response.Payload1595568979.LobbyActor.PokemonCount', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='ActiveCount', full_name='PSXAPI.Response.Payload18.LobbyActor.ActiveCount', index=4,
+      name='ActiveCount', full_name='PSXAPI.Response.Payload1595568979.LobbyActor.ActiveCount', index=4,
       number=5, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Accepted', full_name='PSXAPI.Response.Payload18.LobbyActor.Accepted', index=5,
+      name='Accepted', full_name='PSXAPI.Response.Payload1595568979.LobbyActor.Accepted', index=5,
       number=6, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='AvatarType', full_name='PSXAPI.Response.Payload18.LobbyActor.AvatarType', index=6,
+      name='AvatarType', full_name='PSXAPI.Response.Payload1595568979.LobbyActor.AvatarType', index=6,
       number=7, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='NpcSpriteID', full_name='PSXAPI.Response.Payload18.LobbyActor.NpcSpriteID', index=7,
+      name='NpcSpriteID', full_name='PSXAPI.Response.Payload1595568979.LobbyActor.NpcSpriteID', index=7,
       number=8, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='AverageLevel', full_name='PSXAPI.Response.Payload18.LobbyActor.AverageLevel', index=8,
+      name='AverageLevel', full_name='PSXAPI.Response.Payload1595568979.LobbyActor.AverageLevel', index=8,
       number=9, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='HighestLevel', full_name='PSXAPI.Response.Payload18.LobbyActor.HighestLevel', index=9,
+      name='HighestLevel', full_name='PSXAPI.Response.Payload1595568979.LobbyActor.HighestLevel', index=9,
       number=10, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Self', full_name='PSXAPI.Response.Payload18.LobbyActor.Self', index=10,
+      name='Self', full_name='PSXAPI.Response.Payload1595568979.LobbyActor.Self', index=10,
       number=11, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -228,22 +287,46 @@ _LOBBYACTOR = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=48,
-  serialized_end=438,
+  serialized_start=329,
+  serialized_end=824,
 )
 
-_LOBBYACTOR.fields_by_name['Type'].enum_type = _ACTORTYPE
-_LOBBYACTOR.fields_by_name['Team'].enum_type = _ACTORTEAM
-_LOBBYACTOR.fields_by_name['AvatarType'].enum_type = _ACTORAVATARTYPE
+_PREFIX_AGDFASBV207083596_ACTORAVATARTYPE.containing_type = _PREFIX_AGDFASBV207083596
+_PREFIX_AGDFASBV225284886_ACTORTEAM.containing_type = _PREFIX_AGDFASBV225284886
+_PREFIX_AGDFASBV893759777_ACTORTYPE.containing_type = _PREFIX_AGDFASBV893759777
+_LOBBYACTOR.fields_by_name['Type'].enum_type = _PREFIX_AGDFASBV893759777_ACTORTYPE
+_LOBBYACTOR.fields_by_name['Team'].enum_type = _PREFIX_AGDFASBV225284886_ACTORTEAM
+_LOBBYACTOR.fields_by_name['AvatarType'].enum_type = _PREFIX_AGDFASBV207083596_ACTORAVATARTYPE
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV207083596'] = _PREFIX_AGDFASBV207083596
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV225284886'] = _PREFIX_AGDFASBV225284886
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV893759777'] = _PREFIX_AGDFASBV893759777
 DESCRIPTOR.message_types_by_name['LobbyActor'] = _LOBBYACTOR
-DESCRIPTOR.enum_types_by_name['ActorAvatarType'] = _ACTORAVATARTYPE
-DESCRIPTOR.enum_types_by_name['ActorTeam'] = _ACTORTEAM
-DESCRIPTOR.enum_types_by_name['ActorType'] = _ACTORTYPE
+
+PREFIX_AGDFASBV207083596 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV207083596', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV207083596,
+  __module__ = 'LobbyActor_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response.Payload1595568979.PREFIX_AGDFASBV207083596)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV207083596)
+
+PREFIX_AGDFASBV225284886 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV225284886', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV225284886,
+  __module__ = 'LobbyActor_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response.Payload1595568979.PREFIX_AGDFASBV225284886)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV225284886)
+
+PREFIX_AGDFASBV893759777 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV893759777', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV893759777,
+  __module__ = 'LobbyActor_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response.Payload1595568979.PREFIX_AGDFASBV893759777)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV893759777)
 
 LobbyActor = _reflection.GeneratedProtocolMessageType('LobbyActor', (_message.Message,), dict(
   DESCRIPTOR = _LOBBYACTOR,
   __module__ = 'LobbyActor_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response.Payload18.LobbyActor)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response.Payload1595568979.LobbyActor)
   ))
 _sym_db.RegisterMessage(LobbyActor)
 

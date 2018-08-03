@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -18,15 +17,17 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='BattleItem.proto',
-  package='PSXAPI.Response8',
+  package='PSXAPI.Response1022154552',
   syntax='proto2',
-  serialized_pb=_b('\n\x10\x42\x61ttleItem.proto\x12\x10PSXAPI.Response8\"Y\n\nBattleItem\x12\x0f\n\x04Item\x18\x01 \x01(\x05:\x01\x30\x12:\n\x06Result\x18\x02 \x01(\x0e\x32\".PSXAPI.Response8.BattleItemResult:\x06\x46\x61iled*+\n\x10\x42\x61ttleItemResult\x12\n\n\x06\x46\x61iled\x10\x00\x12\x0b\n\x07Success\x10\x01')
+  serialized_pb=_b('\n\x10\x42\x61ttleItem.proto\x12\x19PSXAPI.Response1022154552\"|\n\nBattleItem\x12\x0f\n\x04Item\x18\x01 \x01(\x05:\x01\x30\x12]\n\x06Result\x18\x02 \x01(\x0e\x32\x45.PSXAPI.Response1022154552.PREFIX_AGDFASBV1162696165.BattleItemResult:\x06\x46\x61iled\"H\n\x19PREFIX_AGDFASBV1162696165\"+\n\x10\x42\x61ttleItemResult\x12\n\n\x06\x46\x61iled\x10\x00\x12\x0b\n\x07Success\x10\x01')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_BATTLEITEMRESULT = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV1162696165_BATTLEITEMRESULT = _descriptor.EnumDescriptor(
   name='BattleItemResult',
-  full_name='PSXAPI.Response8.BattleItemResult',
+  full_name='PSXAPI.Response1022154552.PREFIX_AGDFASBV1162696165.BattleItemResult',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -41,33 +42,28 @@ _BATTLEITEMRESULT = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=129,
-  serialized_end=172,
+  serialized_start=202,
+  serialized_end=245,
 )
-_sym_db.RegisterEnumDescriptor(_BATTLEITEMRESULT)
-
-BattleItemResult = enum_type_wrapper.EnumTypeWrapper(_BATTLEITEMRESULT)
-Failed = 0
-Success = 1
-
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1162696165_BATTLEITEMRESULT)
 
 
 _BATTLEITEM = _descriptor.Descriptor(
   name='BattleItem',
-  full_name='PSXAPI.Response8.BattleItem',
+  full_name='PSXAPI.Response1022154552.BattleItem',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Item', full_name='PSXAPI.Response8.BattleItem.Item', index=0,
+      name='Item', full_name='PSXAPI.Response1022154552.BattleItem.Item', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Result', full_name='PSXAPI.Response8.BattleItem.Result', index=1,
+      name='Result', full_name='PSXAPI.Response1022154552.BattleItem.Result', index=1,
       number=2, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -85,20 +81,53 @@ _BATTLEITEM = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=38,
-  serialized_end=127,
+  serialized_start=47,
+  serialized_end=171,
 )
 
-_BATTLEITEM.fields_by_name['Result'].enum_type = _BATTLEITEMRESULT
+
+_PREFIX_AGDFASBV1162696165 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1162696165',
+  full_name='PSXAPI.Response1022154552.PREFIX_AGDFASBV1162696165',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1162696165_BATTLEITEMRESULT,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=173,
+  serialized_end=245,
+)
+
+_BATTLEITEM.fields_by_name['Result'].enum_type = _PREFIX_AGDFASBV1162696165_BATTLEITEMRESULT
+_PREFIX_AGDFASBV1162696165_BATTLEITEMRESULT.containing_type = _PREFIX_AGDFASBV1162696165
 DESCRIPTOR.message_types_by_name['BattleItem'] = _BATTLEITEM
-DESCRIPTOR.enum_types_by_name['BattleItemResult'] = _BATTLEITEMRESULT
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1162696165'] = _PREFIX_AGDFASBV1162696165
 
 BattleItem = _reflection.GeneratedProtocolMessageType('BattleItem', (_message.Message,), dict(
   DESCRIPTOR = _BATTLEITEM,
   __module__ = 'BattleItem_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response8.BattleItem)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1022154552.BattleItem)
   ))
 _sym_db.RegisterMessage(BattleItem)
+
+PREFIX_AGDFASBV1162696165 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1162696165', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1162696165,
+  __module__ = 'BattleItem_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1022154552.PREFIX_AGDFASBV1162696165)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1162696165)
 
 
 # @@protoc_insertion_point(module_scope)

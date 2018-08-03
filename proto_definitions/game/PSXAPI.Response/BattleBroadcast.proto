@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Response7;
+package PSXAPI.Response120517496;
 
 message BattleBroadcast {
    optional int32 RequestID = 1 [default = 0];

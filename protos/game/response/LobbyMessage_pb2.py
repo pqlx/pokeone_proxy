@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='LobbyMessage.proto',
-  package='PSXAPI.Response45',
+  package='PSXAPI.Response1205959546',
   syntax='proto2',
-  serialized_pb=_b('\n\x12LobbyMessage.proto\x12\x11PSXAPI.Response45\"/\n\x0cLobbyMessage\x12\x0f\n\x07Message\x18\x01 \x01(\t\x12\x0e\n\x06Sender\x18\x02 \x01(\t')
+  serialized_pb=_b('\n\x12LobbyMessage.proto\x12\x19PSXAPI.Response1205959546\"/\n\x0cLobbyMessage\x12\x0f\n\x07Message\x18\x01 \x01(\t\x12\x0e\n\x06Sender\x18\x02 \x01(\t')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,20 +28,20 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _LOBBYMESSAGE = _descriptor.Descriptor(
   name='LobbyMessage',
-  full_name='PSXAPI.Response45.LobbyMessage',
+  full_name='PSXAPI.Response1205959546.LobbyMessage',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Message', full_name='PSXAPI.Response45.LobbyMessage.Message', index=0,
+      name='Message', full_name='PSXAPI.Response1205959546.LobbyMessage.Message', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Sender', full_name='PSXAPI.Response45.LobbyMessage.Sender', index=1,
+      name='Sender', full_name='PSXAPI.Response1205959546.LobbyMessage.Sender', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -59,8 +59,8 @@ _LOBBYMESSAGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=41,
-  serialized_end=88,
+  serialized_start=49,
+  serialized_end=96,
 )
 
 DESCRIPTOR.message_types_by_name['LobbyMessage'] = _LOBBYMESSAGE
@@ -68,7 +68,7 @@ DESCRIPTOR.message_types_by_name['LobbyMessage'] = _LOBBYMESSAGE
 LobbyMessage = _reflection.GeneratedProtocolMessageType('LobbyMessage', (_message.Message,), dict(
   DESCRIPTOR = _LOBBYMESSAGE,
   __module__ = 'LobbyMessage_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response45.LobbyMessage)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1205959546.LobbyMessage)
   ))
 _sym_db.RegisterMessage(LobbyMessage)
 

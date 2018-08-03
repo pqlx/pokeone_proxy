@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='tileInfo.proto',
-  package='MAPAPI.Response37',
+  package='MAPAPI.Response1285480207',
   syntax='proto2',
-  serialized_pb=_b('\n\x0etileInfo.proto\x12\x11MAPAPI.Response37\"}\n\x08tileInfo\x12\x0f\n\x04PosX\x18\x01 \x01(\x05:\x01\x30\x12\x0f\n\x04PosY\x18\x02 \x01(\x05:\x01\x30\x12\x0f\n\x04Type\x18\x03 \x01(\x05:\x01\x30\x12\x11\n\x06Height\x18\x04 \x01(\x05:\x01\x30\x12+\n\x05Sides\x18\x05 \x03(\x0b\x32\x1c.MAPAPI.Response37.wallTypes\"A\n\twallTypes\x12\x10\n\x05Side0\x18\x01 \x01(\x05:\x01\x30\x12\x10\n\x05Side1\x18\x02 \x01(\x05:\x01\x30\x12\x10\n\x05Side2\x18\x03 \x01(\x05:\x01\x30')
+  serialized_pb=_b('\n\x0etileInfo.proto\x12\x19MAPAPI.Response1285480207\"\x85\x01\n\x08tileInfo\x12\x0f\n\x04PosX\x18\x01 \x01(\x05:\x01\x30\x12\x0f\n\x04PosY\x18\x02 \x01(\x05:\x01\x30\x12\x0f\n\x04Type\x18\x03 \x01(\x05:\x01\x30\x12\x11\n\x06Height\x18\x04 \x01(\x05:\x01\x30\x12\x33\n\x05Sides\x18\x05 \x03(\x0b\x32$.MAPAPI.Response1285480207.wallTypes\"A\n\twallTypes\x12\x10\n\x05Side0\x18\x01 \x01(\x05:\x01\x30\x12\x10\n\x05Side1\x18\x02 \x01(\x05:\x01\x30\x12\x10\n\x05Side2\x18\x03 \x01(\x05:\x01\x30')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,41 +28,41 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _TILEINFO = _descriptor.Descriptor(
   name='tileInfo',
-  full_name='MAPAPI.Response37.tileInfo',
+  full_name='MAPAPI.Response1285480207.tileInfo',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='PosX', full_name='MAPAPI.Response37.tileInfo.PosX', index=0,
+      name='PosX', full_name='MAPAPI.Response1285480207.tileInfo.PosX', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='PosY', full_name='MAPAPI.Response37.tileInfo.PosY', index=1,
+      name='PosY', full_name='MAPAPI.Response1285480207.tileInfo.PosY', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Type', full_name='MAPAPI.Response37.tileInfo.Type', index=2,
+      name='Type', full_name='MAPAPI.Response1285480207.tileInfo.Type', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Height', full_name='MAPAPI.Response37.tileInfo.Height', index=3,
+      name='Height', full_name='MAPAPI.Response1285480207.tileInfo.Height', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Sides', full_name='MAPAPI.Response37.tileInfo.Sides', index=4,
+      name='Sides', full_name='MAPAPI.Response1285480207.tileInfo.Sides', index=4,
       number=5, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -80,34 +80,34 @@ _TILEINFO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=37,
-  serialized_end=162,
+  serialized_start=46,
+  serialized_end=179,
 )
 
 
 _WALLTYPES = _descriptor.Descriptor(
   name='wallTypes',
-  full_name='MAPAPI.Response37.wallTypes',
+  full_name='MAPAPI.Response1285480207.wallTypes',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Side0', full_name='MAPAPI.Response37.wallTypes.Side0', index=0,
+      name='Side0', full_name='MAPAPI.Response1285480207.wallTypes.Side0', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Side1', full_name='MAPAPI.Response37.wallTypes.Side1', index=1,
+      name='Side1', full_name='MAPAPI.Response1285480207.wallTypes.Side1', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Side2', full_name='MAPAPI.Response37.wallTypes.Side2', index=2,
+      name='Side2', full_name='MAPAPI.Response1285480207.wallTypes.Side2', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -125,8 +125,8 @@ _WALLTYPES = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=164,
-  serialized_end=229,
+  serialized_start=181,
+  serialized_end=246,
 )
 
 _TILEINFO.fields_by_name['Sides'].message_type = _WALLTYPES
@@ -136,14 +136,14 @@ DESCRIPTOR.message_types_by_name['wallTypes'] = _WALLTYPES
 tileInfo = _reflection.GeneratedProtocolMessageType('tileInfo', (_message.Message,), dict(
   DESCRIPTOR = _TILEINFO,
   __module__ = 'tileInfo_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response37.tileInfo)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response1285480207.tileInfo)
   ))
 _sym_db.RegisterMessage(tileInfo)
 
 wallTypes = _reflection.GeneratedProtocolMessageType('wallTypes', (_message.Message,), dict(
   DESCRIPTOR = _WALLTYPES,
   __module__ = 'tileInfo_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response37.wallTypes)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response1285480207.wallTypes)
   ))
 _sym_db.RegisterMessage(wallTypes)
 

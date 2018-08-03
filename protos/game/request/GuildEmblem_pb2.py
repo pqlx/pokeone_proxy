@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='GuildEmblem.proto',
-  package='PSXAPI.Request25',
+  package='PSXAPI.Request1753232487',
   syntax='proto2',
-  serialized_pb=_b('\n\x11GuildEmblem.proto\x12\x10PSXAPI.Request25\"\x1b\n\x0bGuildEmblem\x12\x0c\n\x04Name\x18\x01 \x01(\t')
+  serialized_pb=_b('\n\x11GuildEmblem.proto\x12\x18PSXAPI.Request1753232487\"\x1b\n\x0bGuildEmblem\x12\x0c\n\x04Name\x18\x01 \x01(\t')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,13 +28,13 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _GUILDEMBLEM = _descriptor.Descriptor(
   name='GuildEmblem',
-  full_name='PSXAPI.Request25.GuildEmblem',
+  full_name='PSXAPI.Request1753232487.GuildEmblem',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Name', full_name='PSXAPI.Request25.GuildEmblem.Name', index=0,
+      name='Name', full_name='PSXAPI.Request1753232487.GuildEmblem.Name', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -52,8 +52,8 @@ _GUILDEMBLEM = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=39,
-  serialized_end=66,
+  serialized_start=47,
+  serialized_end=74,
 )
 
 DESCRIPTOR.message_types_by_name['GuildEmblem'] = _GUILDEMBLEM
@@ -61,7 +61,7 @@ DESCRIPTOR.message_types_by_name['GuildEmblem'] = _GUILDEMBLEM
 GuildEmblem = _reflection.GeneratedProtocolMessageType('GuildEmblem', (_message.Message,), dict(
   DESCRIPTOR = _GUILDEMBLEM,
   __module__ = 'GuildEmblem_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request25.GuildEmblem)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request1753232487.GuildEmblem)
   ))
 _sym_db.RegisterMessage(GuildEmblem)
 

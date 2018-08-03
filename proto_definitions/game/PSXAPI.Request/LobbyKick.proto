@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Request33;
+package PSXAPI.Request426618449;
 
 message LobbyKick {
    required string Username = 1;

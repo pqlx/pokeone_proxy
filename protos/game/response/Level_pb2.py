@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Level.proto',
-  package='PSXAPI.Response43',
+  package='PSXAPI.Response2085496709',
   syntax='proto2',
-  serialized_pb=_b('\n\x0bLevel.proto\x12\x11PSXAPI.Response43\"w\n\x05Level\x12\x14\n\tUserLevel\x18\x01 \x01(\r:\x01\x30\x12\x13\n\x08TotalExp\x18\x02 \x01(\r:\x01\x30\x12\x13\n\x08StartExp\x18\x03 \x01(\r:\x01\x30\x12\x16\n\x0bRequiredExp\x18\x04 \x01(\r:\x01\x30\x12\x16\n\x07LevelUp\x18\x05 \x01(\x08:\x05\x66\x61lse')
+  serialized_pb=_b('\n\x0bLevel.proto\x12\x19PSXAPI.Response2085496709\"w\n\x05Level\x12\x14\n\tUserLevel\x18\x01 \x01(\r:\x01\x30\x12\x13\n\x08TotalExp\x18\x02 \x01(\r:\x01\x30\x12\x13\n\x08StartExp\x18\x03 \x01(\r:\x01\x30\x12\x16\n\x0bRequiredExp\x18\x04 \x01(\r:\x01\x30\x12\x16\n\x07LevelUp\x18\x05 \x01(\x08:\x05\x66\x61lse')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,41 +28,41 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _LEVEL = _descriptor.Descriptor(
   name='Level',
-  full_name='PSXAPI.Response43.Level',
+  full_name='PSXAPI.Response2085496709.Level',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='UserLevel', full_name='PSXAPI.Response43.Level.UserLevel', index=0,
+      name='UserLevel', full_name='PSXAPI.Response2085496709.Level.UserLevel', index=0,
       number=1, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='TotalExp', full_name='PSXAPI.Response43.Level.TotalExp', index=1,
+      name='TotalExp', full_name='PSXAPI.Response2085496709.Level.TotalExp', index=1,
       number=2, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='StartExp', full_name='PSXAPI.Response43.Level.StartExp', index=2,
+      name='StartExp', full_name='PSXAPI.Response2085496709.Level.StartExp', index=2,
       number=3, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='RequiredExp', full_name='PSXAPI.Response43.Level.RequiredExp', index=3,
+      name='RequiredExp', full_name='PSXAPI.Response2085496709.Level.RequiredExp', index=3,
       number=4, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='LevelUp', full_name='PSXAPI.Response43.Level.LevelUp', index=4,
+      name='LevelUp', full_name='PSXAPI.Response2085496709.Level.LevelUp', index=4,
       number=5, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -80,8 +80,8 @@ _LEVEL = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=34,
-  serialized_end=153,
+  serialized_start=42,
+  serialized_end=161,
 )
 
 DESCRIPTOR.message_types_by_name['Level'] = _LEVEL
@@ -89,7 +89,7 @@ DESCRIPTOR.message_types_by_name['Level'] = _LEVEL
 Level = _reflection.GeneratedProtocolMessageType('Level', (_message.Message,), dict(
   DESCRIPTOR = _LEVEL,
   __module__ = 'Level_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response43.Level)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response2085496709.Level)
   ))
 _sym_db.RegisterMessage(Level)
 

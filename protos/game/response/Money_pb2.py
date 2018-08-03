@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Money.proto',
-  package='PSXAPI.Response54',
+  package='PSXAPI.Response1261098714',
   syntax='proto2',
-  serialized_pb=_b('\n\x0bMoney.proto\x12\x11PSXAPI.Response54\")\n\x05Money\x12\x0f\n\x04Game\x18\x01 \x01(\r:\x01\x30\x12\x0f\n\x04Gold\x18\x02 \x01(\r:\x01\x30')
+  serialized_pb=_b('\n\x0bMoney.proto\x12\x19PSXAPI.Response1261098714\")\n\x05Money\x12\x0f\n\x04Game\x18\x01 \x01(\r:\x01\x30\x12\x0f\n\x04Gold\x18\x02 \x01(\r:\x01\x30')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,20 +28,20 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _MONEY = _descriptor.Descriptor(
   name='Money',
-  full_name='PSXAPI.Response54.Money',
+  full_name='PSXAPI.Response1261098714.Money',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Game', full_name='PSXAPI.Response54.Money.Game', index=0,
+      name='Game', full_name='PSXAPI.Response1261098714.Money.Game', index=0,
       number=1, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Gold', full_name='PSXAPI.Response54.Money.Gold', index=1,
+      name='Gold', full_name='PSXAPI.Response1261098714.Money.Gold', index=1,
       number=2, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -59,8 +59,8 @@ _MONEY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=34,
-  serialized_end=75,
+  serialized_start=42,
+  serialized_end=83,
 )
 
 DESCRIPTOR.message_types_by_name['Money'] = _MONEY
@@ -68,7 +68,7 @@ DESCRIPTOR.message_types_by_name['Money'] = _MONEY
 Money = _reflection.GeneratedProtocolMessageType('Money', (_message.Message,), dict(
   DESCRIPTOR = _MONEY,
   __module__ = 'Money_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response54.Money)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1261098714.Money)
   ))
 _sym_db.RegisterMessage(Money)
 

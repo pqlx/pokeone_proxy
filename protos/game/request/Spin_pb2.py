@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -18,20 +17,22 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Spin.proto',
-  package='PSXAPI.Request60',
+  package='PSXAPI.Request784181591',
   syntax='proto2',
-  serialized_pb=_b('\n\nSpin.proto\x12\x10PSXAPI.Request60\"E\n\x04Spin\x12\r\n\x02ID\x18\x01 \x01(\x05:\x01\x30\x12.\n\x03\x42\x65t\x18\x02 \x01(\x0e\x32\x19.PSXAPI.Request60.SpinBet:\x06__None*6\n\x07SpinBet\x12\n\n\x06__None\x10\x00\x12\t\n\x05\x43oin1\x10\x01\x12\t\n\x05\x43oin2\x10\x02\x12\t\n\x05\x43oin3\x10\x03')
+  serialized_pb=_b('\n\nSpin.proto\x12\x17PSXAPI.Request784181591\"i\n\x04Spin\x12\r\n\x02ID\x18\x01 \x01(\x05:\x01\x30\x12R\n\x03\x42\x65t\x18\x02 \x01(\x0e\x32:.PSXAPI.Request784181591.PREFIX_AGDFASBV2137981436.SpinBet:\tNoneValue\"V\n\x19PREFIX_AGDFASBV2137981436\"9\n\x07SpinBet\x12\r\n\tNoneValue\x10\x00\x12\t\n\x05\x43oin1\x10\x01\x12\t\n\x05\x43oin2\x10\x02\x12\t\n\x05\x43oin3\x10\x03')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_SPINBET = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV2137981436_SPINBET = _descriptor.EnumDescriptor(
   name='SpinBet',
-  full_name='PSXAPI.Request60.SpinBet',
+  full_name='PSXAPI.Request784181591.PREFIX_AGDFASBV2137981436.SpinBet',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='__None', index=0, number=0,
+      name='NoneValue', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -49,35 +50,28 @@ _SPINBET = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=103,
-  serialized_end=157,
+  serialized_start=175,
+  serialized_end=232,
 )
-_sym_db.RegisterEnumDescriptor(_SPINBET)
-
-SpinBet = enum_type_wrapper.EnumTypeWrapper(_SPINBET)
-__None = 0
-Coin1 = 1
-Coin2 = 2
-Coin3 = 3
-
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV2137981436_SPINBET)
 
 
 _SPIN = _descriptor.Descriptor(
   name='Spin',
-  full_name='PSXAPI.Request60.Spin',
+  full_name='PSXAPI.Request784181591.Spin',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='ID', full_name='PSXAPI.Request60.Spin.ID', index=0,
+      name='ID', full_name='PSXAPI.Request784181591.Spin.ID', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Bet', full_name='PSXAPI.Request60.Spin.Bet', index=1,
+      name='Bet', full_name='PSXAPI.Request784181591.Spin.Bet', index=1,
       number=2, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -95,20 +89,53 @@ _SPIN = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=32,
-  serialized_end=101,
+  serialized_start=39,
+  serialized_end=144,
 )
 
-_SPIN.fields_by_name['Bet'].enum_type = _SPINBET
+
+_PREFIX_AGDFASBV2137981436 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV2137981436',
+  full_name='PSXAPI.Request784181591.PREFIX_AGDFASBV2137981436',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV2137981436_SPINBET,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=146,
+  serialized_end=232,
+)
+
+_SPIN.fields_by_name['Bet'].enum_type = _PREFIX_AGDFASBV2137981436_SPINBET
+_PREFIX_AGDFASBV2137981436_SPINBET.containing_type = _PREFIX_AGDFASBV2137981436
 DESCRIPTOR.message_types_by_name['Spin'] = _SPIN
-DESCRIPTOR.enum_types_by_name['SpinBet'] = _SPINBET
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV2137981436'] = _PREFIX_AGDFASBV2137981436
 
 Spin = _reflection.GeneratedProtocolMessageType('Spin', (_message.Message,), dict(
   DESCRIPTOR = _SPIN,
   __module__ = 'Spin_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request60.Spin)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request784181591.Spin)
   ))
 _sym_db.RegisterMessage(Spin)
+
+PREFIX_AGDFASBV2137981436 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV2137981436', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV2137981436,
+  __module__ = 'Spin_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request784181591.PREFIX_AGDFASBV2137981436)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV2137981436)
 
 
 # @@protoc_insertion_point(module_scope)

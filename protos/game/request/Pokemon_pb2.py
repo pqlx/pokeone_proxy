@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Pokemon.proto',
-  package='PSXAPI.Request51',
+  package='PSXAPI.Request218243055',
   syntax='proto2',
-  serialized_pb=_b('\n\rPokemon.proto\x12\x10PSXAPI.Request51\"\x19\n\x07Pokemon\x12\x0e\n\x03\x42ox\x18\x01 \x01(\x05:\x01\x30')
+  serialized_pb=_b('\n\rPokemon.proto\x12\x17PSXAPI.Request218243055\"\x19\n\x07Pokemon\x12\x0e\n\x03\x42ox\x18\x01 \x01(\x05:\x01\x30')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,13 +28,13 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _POKEMON = _descriptor.Descriptor(
   name='Pokemon',
-  full_name='PSXAPI.Request51.Pokemon',
+  full_name='PSXAPI.Request218243055.Pokemon',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Box', full_name='PSXAPI.Request51.Pokemon.Box', index=0,
+      name='Box', full_name='PSXAPI.Request218243055.Pokemon.Box', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -52,8 +52,8 @@ _POKEMON = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=35,
-  serialized_end=60,
+  serialized_start=42,
+  serialized_end=67,
 )
 
 DESCRIPTOR.message_types_by_name['Pokemon'] = _POKEMON
@@ -61,7 +61,7 @@ DESCRIPTOR.message_types_by_name['Pokemon'] = _POKEMON
 Pokemon = _reflection.GeneratedProtocolMessageType('Pokemon', (_message.Message,), dict(
   DESCRIPTOR = _POKEMON,
   __module__ = 'Pokemon_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request51.Pokemon)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request218243055.Pokemon)
   ))
 _sym_db.RegisterMessage(Pokemon)
 

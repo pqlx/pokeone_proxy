@@ -3,7 +3,9 @@ import sys
 import asyncio
 import traceback
 
-class ProxyServer:
+from PyQt5.QtWidgets import QTableWidget
+
+class ProxyServer(object):
     __slots__ = ('loop', 'addr')
 
     def __init__(self, loop=None):
@@ -20,6 +22,7 @@ class ProxyServer:
 
     def start(self, host: str, port: int, localhost: str="0.0.0.0"):
         self.addr = (host, port)
+        self.localhost = localhost
         return asyncio.start_server(self.on_client, localhost, port, loop=self.loop)
         
     async def on_client(self, client_reader: asyncio.StreamReader, client_writer: asyncio.StreamWriter):
@@ -28,6 +31,8 @@ class ProxyServer:
             connection = ProxyConnection(self)
             self.loop.create_task(connection.pipe(proxy_reader, client_writer, self.handle_recv))
             self.loop.create_task(connection.pipe(client_reader, proxy_writer, self.handle_send))
+
+            print("Client connected")
         except Exception as ex:
             print(ex)
             client_writer.close()

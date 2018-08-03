@@ -13,16 +13,16 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
-import bcl_pb2 as bcl__pb2
+from protobuf_net import bcl_pb2 as protobuf__net_dot_bcl__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Ping.proto',
-  package='PSXAPI.Request49',
+  package='PSXAPI.Request1880978749',
   syntax='proto2',
-  serialized_pb=_b('\n\nPing.proto\x12\x10PSXAPI.Request49\x1a\tbcl.proto\"*\n\x04Ping\x12\"\n\x0b\x44\x61teTimeUtc\x18\x01 \x02(\x0b\x32\r.bcl.DateTime')
+  serialized_pb=_b('\n\nPing.proto\x12\x18PSXAPI.Request1880978749\x1a\x16protobuf-net/bcl.proto\"*\n\x04Ping\x12\"\n\x0b\x44\x61teTimeUtc\x18\x01 \x02(\x0b\x32\r.bcl.DateTime')
   ,
-  dependencies=[bcl__pb2.DESCRIPTOR,])
+  dependencies=[protobuf__net_dot_bcl__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
@@ -30,13 +30,13 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _PING = _descriptor.Descriptor(
   name='Ping',
-  full_name='PSXAPI.Request49.Ping',
+  full_name='PSXAPI.Request1880978749.Ping',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='DateTimeUtc', full_name='PSXAPI.Request49.Ping.DateTimeUtc', index=0,
+      name='DateTimeUtc', full_name='PSXAPI.Request1880978749.Ping.DateTimeUtc', index=0,
       number=1, type=11, cpp_type=10, label=2,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -54,17 +54,17 @@ _PING = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=43,
-  serialized_end=85,
+  serialized_start=64,
+  serialized_end=106,
 )
 
-_PING.fields_by_name['DateTimeUtc'].message_type = bcl__pb2._DATETIME
+_PING.fields_by_name['DateTimeUtc'].message_type = protobuf__net_dot_bcl__pb2._DATETIME
 DESCRIPTOR.message_types_by_name['Ping'] = _PING
 
 Ping = _reflection.GeneratedProtocolMessageType('Ping', (_message.Message,), dict(
   DESCRIPTOR = _PING,
   __module__ = 'Ping_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request49.Ping)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request1880978749.Ping)
   ))
 _sym_db.RegisterMessage(Ping)
 

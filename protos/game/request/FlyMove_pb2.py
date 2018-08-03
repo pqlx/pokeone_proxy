@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='FlyMove.proto',
-  package='PSXAPI.Request22',
+  package='PSXAPI.Request239316973',
   syntax='proto2',
-  serialized_pb=_b('\n\rFlyMove.proto\x12\x10PSXAPI.Request22\"\x80\x01\n\x07\x46lyMove\x12\x0f\n\x04PosX\x18\x01 \x01(\x02:\x01\x30\x12\x0f\n\x04PosY\x18\x02 \x01(\x02:\x01\x30\x12\x0f\n\x04PosZ\x18\x03 \x01(\x02:\x01\x30\x12\x0f\n\x04RotX\x18\x04 \x01(\x02:\x01\x30\x12\x0f\n\x04RotY\x18\x05 \x01(\x02:\x01\x30\x12\x0f\n\x04RotZ\x18\x06 \x01(\x02:\x01\x30\x12\x0f\n\x04RotW\x18\x07 \x01(\x02:\x01\x30')
+  serialized_pb=_b('\n\rFlyMove.proto\x12\x17PSXAPI.Request239316973\"\x80\x01\n\x07\x46lyMove\x12\x0f\n\x04PosX\x18\x01 \x01(\x02:\x01\x30\x12\x0f\n\x04PosY\x18\x02 \x01(\x02:\x01\x30\x12\x0f\n\x04PosZ\x18\x03 \x01(\x02:\x01\x30\x12\x0f\n\x04RotX\x18\x04 \x01(\x02:\x01\x30\x12\x0f\n\x04RotY\x18\x05 \x01(\x02:\x01\x30\x12\x0f\n\x04RotZ\x18\x06 \x01(\x02:\x01\x30\x12\x0f\n\x04RotW\x18\x07 \x01(\x02:\x01\x30')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,55 +28,55 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _FLYMOVE = _descriptor.Descriptor(
   name='FlyMove',
-  full_name='PSXAPI.Request22.FlyMove',
+  full_name='PSXAPI.Request239316973.FlyMove',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='PosX', full_name='PSXAPI.Request22.FlyMove.PosX', index=0,
+      name='PosX', full_name='PSXAPI.Request239316973.FlyMove.PosX', index=0,
       number=1, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='PosY', full_name='PSXAPI.Request22.FlyMove.PosY', index=1,
+      name='PosY', full_name='PSXAPI.Request239316973.FlyMove.PosY', index=1,
       number=2, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='PosZ', full_name='PSXAPI.Request22.FlyMove.PosZ', index=2,
+      name='PosZ', full_name='PSXAPI.Request239316973.FlyMove.PosZ', index=2,
       number=3, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='RotX', full_name='PSXAPI.Request22.FlyMove.RotX', index=3,
+      name='RotX', full_name='PSXAPI.Request239316973.FlyMove.RotX', index=3,
       number=4, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='RotY', full_name='PSXAPI.Request22.FlyMove.RotY', index=4,
+      name='RotY', full_name='PSXAPI.Request239316973.FlyMove.RotY', index=4,
       number=5, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='RotZ', full_name='PSXAPI.Request22.FlyMove.RotZ', index=5,
+      name='RotZ', full_name='PSXAPI.Request239316973.FlyMove.RotZ', index=5,
       number=6, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='RotW', full_name='PSXAPI.Request22.FlyMove.RotW', index=6,
+      name='RotW', full_name='PSXAPI.Request239316973.FlyMove.RotW', index=6,
       number=7, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
@@ -94,8 +94,8 @@ _FLYMOVE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=36,
-  serialized_end=164,
+  serialized_start=43,
+  serialized_end=171,
 )
 
 DESCRIPTOR.message_types_by_name['FlyMove'] = _FLYMOVE
@@ -103,7 +103,7 @@ DESCRIPTOR.message_types_by_name['FlyMove'] = _FLYMOVE
 FlyMove = _reflection.GeneratedProtocolMessageType('FlyMove', (_message.Message,), dict(
   DESCRIPTOR = _FLYMOVE,
   __module__ = 'FlyMove_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request22.FlyMove)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request239316973.FlyMove)
   ))
 _sym_db.RegisterMessage(FlyMove)
 

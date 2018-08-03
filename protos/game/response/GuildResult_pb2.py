@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -18,15 +17,17 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='GuildResult.proto',
-  package='PSXAPI.Reponse1234',
+  package='PSXAPI.Response1981997513',
   syntax='proto2',
-  serialized_pb=_b('\n\x11GuildResult.proto\x12\x12PSXAPI.Reponse1234\"\x99\x01\n\x0bGuildResult\x12\x11\n\tGuildName\x18\x01 \x01(\t\x12\x38\n\x06\x41\x63tion\x18\x02 \x01(\x0e\x32\x1f.PSXAPI.Reponse1234.GuildAction:\x07Request\x12=\n\x06Result\x18\x03 \x01(\x0e\x32%.PSXAPI.Reponse1234.GuildActionResult:\x06\x46\x61iled*J\n\x0bGuildAction\x12\x0b\n\x07Request\x10\x00\x12\n\n\x06\x43reate\x10\x01\x12\t\n\x05Leave\x10\x02\x12\x0b\n\x07Message\x10\x05\x12\n\n\x06\x45mblem\x10\x06*\x95\x01\n\x11GuildActionResult\x12\n\n\x06\x46\x61iled\x10\x00\x12\x0b\n\x07Success\x10\x01\x12\x0e\n\nNotInGuild\x10\x02\x12\x0b\n\x07InGuild\x10\x03\x12\x11\n\rNotEnoughGold\x10\x04\x12\x14\n\x10InvalidGuildName\x10\x05\x12\x0f\n\x0bInvalidRank\x10\x06\x12\x10\n\x0cInvalidImage\x10\x07')
+  serialized_pb=_b('\n\x11GuildResult.proto\x12\x19PSXAPI.Response1981997513\"g\n\x19PREFIX_AGDFASBV1183452822\"J\n\x0bGuildAction\x12\x0b\n\x07Request\x10\x00\x12\n\n\x06\x43reate\x10\x01\x12\t\n\x05Leave\x10\x02\x12\x0b\n\x07Message\x10\x05\x12\n\n\x06\x45mblem\x10\x06\"\xb3\x01\n\x19PREFIX_AGDFASBV1739727430\"\x95\x01\n\x11GuildActionResult\x12\n\n\x06\x46\x61iled\x10\x00\x12\x0b\n\x07Success\x10\x01\x12\x0e\n\nNotInGuild\x10\x02\x12\x0b\n\x07InGuild\x10\x03\x12\x11\n\rNotEnoughGold\x10\x04\x12\x14\n\x10InvalidGuildName\x10\x05\x12\x0f\n\x0bInvalidRank\x10\x06\x12\x10\n\x0cInvalidImage\x10\x07\"\xdb\x01\n\x0bGuildResult\x12\x11\n\tGuildName\x18\x01 \x01(\t\x12Y\n\x06\x41\x63tion\x18\x02 \x01(\x0e\x32@.PSXAPI.Response1981997513.PREFIX_AGDFASBV1183452822.GuildAction:\x07Request\x12^\n\x06Result\x18\x03 \x01(\x0e\x32\x46.PSXAPI.Response1981997513.PREFIX_AGDFASBV1739727430.GuildActionResult:\x06\x46\x61iled')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_GUILDACTION = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV1183452822_GUILDACTION = _descriptor.EnumDescriptor(
   name='GuildAction',
-  full_name='PSXAPI.Reponse1234.GuildAction',
+  full_name='PSXAPI.Response1981997513.PREFIX_AGDFASBV1183452822.GuildAction',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -53,15 +54,14 @@ _GUILDACTION = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=197,
-  serialized_end=271,
+  serialized_start=77,
+  serialized_end=151,
 )
-_sym_db.RegisterEnumDescriptor(_GUILDACTION)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1183452822_GUILDACTION)
 
-GuildAction = enum_type_wrapper.EnumTypeWrapper(_GUILDACTION)
-_GUILDACTIONRESULT = _descriptor.EnumDescriptor(
+_PREFIX_AGDFASBV1739727430_GUILDACTIONRESULT = _descriptor.EnumDescriptor(
   name='GuildActionResult',
-  full_name='PSXAPI.Reponse1234.GuildActionResult',
+  full_name='PSXAPI.Response1981997513.PREFIX_AGDFASBV1739727430.GuildActionResult',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -100,51 +100,85 @@ _GUILDACTIONRESULT = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=274,
-  serialized_end=423,
+  serialized_start=184,
+  serialized_end=333,
 )
-_sym_db.RegisterEnumDescriptor(_GUILDACTIONRESULT)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1739727430_GUILDACTIONRESULT)
 
-GuildActionResult = enum_type_wrapper.EnumTypeWrapper(_GUILDACTIONRESULT)
-Request = 0
-Create = 1
-Leave = 2
-Message = 5
-Emblem = 6
-Failed = 0
-Success = 1
-NotInGuild = 2
-InGuild = 3
-NotEnoughGold = 4
-InvalidGuildName = 5
-InvalidRank = 6
-InvalidImage = 7
 
+_PREFIX_AGDFASBV1183452822 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1183452822',
+  full_name='PSXAPI.Response1981997513.PREFIX_AGDFASBV1183452822',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1183452822_GUILDACTION,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=48,
+  serialized_end=151,
+)
+
+
+_PREFIX_AGDFASBV1739727430 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1739727430',
+  full_name='PSXAPI.Response1981997513.PREFIX_AGDFASBV1739727430',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1739727430_GUILDACTIONRESULT,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=154,
+  serialized_end=333,
+)
 
 
 _GUILDRESULT = _descriptor.Descriptor(
   name='GuildResult',
-  full_name='PSXAPI.Reponse1234.GuildResult',
+  full_name='PSXAPI.Response1981997513.GuildResult',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='GuildName', full_name='PSXAPI.Reponse1234.GuildResult.GuildName', index=0,
+      name='GuildName', full_name='PSXAPI.Response1981997513.GuildResult.GuildName', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Action', full_name='PSXAPI.Reponse1234.GuildResult.Action', index=1,
+      name='Action', full_name='PSXAPI.Response1981997513.GuildResult.Action', index=1,
       number=2, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Result', full_name='PSXAPI.Reponse1234.GuildResult.Result', index=2,
+      name='Result', full_name='PSXAPI.Response1981997513.GuildResult.Result', index=2,
       number=3, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -162,20 +196,36 @@ _GUILDRESULT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=42,
-  serialized_end=195,
+  serialized_start=336,
+  serialized_end=555,
 )
 
-_GUILDRESULT.fields_by_name['Action'].enum_type = _GUILDACTION
-_GUILDRESULT.fields_by_name['Result'].enum_type = _GUILDACTIONRESULT
+_PREFIX_AGDFASBV1183452822_GUILDACTION.containing_type = _PREFIX_AGDFASBV1183452822
+_PREFIX_AGDFASBV1739727430_GUILDACTIONRESULT.containing_type = _PREFIX_AGDFASBV1739727430
+_GUILDRESULT.fields_by_name['Action'].enum_type = _PREFIX_AGDFASBV1183452822_GUILDACTION
+_GUILDRESULT.fields_by_name['Result'].enum_type = _PREFIX_AGDFASBV1739727430_GUILDACTIONRESULT
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1183452822'] = _PREFIX_AGDFASBV1183452822
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1739727430'] = _PREFIX_AGDFASBV1739727430
 DESCRIPTOR.message_types_by_name['GuildResult'] = _GUILDRESULT
-DESCRIPTOR.enum_types_by_name['GuildAction'] = _GUILDACTION
-DESCRIPTOR.enum_types_by_name['GuildActionResult'] = _GUILDACTIONRESULT
+
+PREFIX_AGDFASBV1183452822 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1183452822', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1183452822,
+  __module__ = 'GuildResult_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1981997513.PREFIX_AGDFASBV1183452822)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1183452822)
+
+PREFIX_AGDFASBV1739727430 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1739727430', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1739727430,
+  __module__ = 'GuildResult_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1981997513.PREFIX_AGDFASBV1739727430)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1739727430)
 
 GuildResult = _reflection.GeneratedProtocolMessageType('GuildResult', (_message.Message,), dict(
   DESCRIPTOR = _GUILDRESULT,
   __module__ = 'GuildResult_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Reponse1234.GuildResult)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1981997513.GuildResult)
   ))
 _sym_db.RegisterMessage(GuildResult)
 

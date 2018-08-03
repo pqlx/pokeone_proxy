@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -18,15 +17,17 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Friends.proto',
-  package='PSXAPI.Request23',
+  package='PSXAPI.Request647881400',
   syntax='proto2',
-  serialized_pb=_b('\n\rFriends.proto\x12\x10PSXAPI.Request23\"H\n\x07\x46riends\x12/\n\x06\x41\x63tion\x18\x01 \x02(\x0e\x32\x1f.PSXAPI.Request23.FriendsAction\x12\x0c\n\x04\x44\x61ta\x18\x02 \x01(\t*D\n\rFriendsAction\x12\x0e\n\nRequestAll\x10\x00\x12\x07\n\x03\x41\x64\x64\x10\x01\x12\n\n\x06Remove\x10\x02\x12\x0e\n\nSetMessage\x10\x03')
+  serialized_pb=_b('\n\rFriends.proto\x12\x17PSXAPI.Request647881400\"i\n\x07\x46riends\x12P\n\x06\x41\x63tion\x18\x01 \x02(\x0e\x32@.PSXAPI.Request647881400.PREFIX_AGDFASBV1778125001.FriendsAction\x12\x0c\n\x04\x44\x61ta\x18\x02 \x01(\t\"a\n\x19PREFIX_AGDFASBV1778125001\"D\n\rFriendsAction\x12\x0e\n\nRequestAll\x10\x00\x12\x07\n\x03\x41\x64\x64\x10\x01\x12\n\n\x06Remove\x10\x02\x12\x0e\n\nSetMessage\x10\x03')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_FRIENDSACTION = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV1778125001_FRIENDSACTION = _descriptor.EnumDescriptor(
   name='FriendsAction',
-  full_name='PSXAPI.Request23.FriendsAction',
+  full_name='PSXAPI.Request647881400.PREFIX_AGDFASBV1778125001.FriendsAction',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -49,35 +50,28 @@ _FRIENDSACTION = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=109,
-  serialized_end=177,
+  serialized_start=178,
+  serialized_end=246,
 )
-_sym_db.RegisterEnumDescriptor(_FRIENDSACTION)
-
-FriendsAction = enum_type_wrapper.EnumTypeWrapper(_FRIENDSACTION)
-RequestAll = 0
-Add = 1
-Remove = 2
-SetMessage = 3
-
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1778125001_FRIENDSACTION)
 
 
 _FRIENDS = _descriptor.Descriptor(
   name='Friends',
-  full_name='PSXAPI.Request23.Friends',
+  full_name='PSXAPI.Request647881400.Friends',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Action', full_name='PSXAPI.Request23.Friends.Action', index=0,
+      name='Action', full_name='PSXAPI.Request647881400.Friends.Action', index=0,
       number=1, type=14, cpp_type=8, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Data', full_name='PSXAPI.Request23.Friends.Data', index=1,
+      name='Data', full_name='PSXAPI.Request647881400.Friends.Data', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -95,20 +89,53 @@ _FRIENDS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=35,
-  serialized_end=107,
+  serialized_start=42,
+  serialized_end=147,
 )
 
-_FRIENDS.fields_by_name['Action'].enum_type = _FRIENDSACTION
+
+_PREFIX_AGDFASBV1778125001 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1778125001',
+  full_name='PSXAPI.Request647881400.PREFIX_AGDFASBV1778125001',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1778125001_FRIENDSACTION,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=149,
+  serialized_end=246,
+)
+
+_FRIENDS.fields_by_name['Action'].enum_type = _PREFIX_AGDFASBV1778125001_FRIENDSACTION
+_PREFIX_AGDFASBV1778125001_FRIENDSACTION.containing_type = _PREFIX_AGDFASBV1778125001
 DESCRIPTOR.message_types_by_name['Friends'] = _FRIENDS
-DESCRIPTOR.enum_types_by_name['FriendsAction'] = _FRIENDSACTION
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1778125001'] = _PREFIX_AGDFASBV1778125001
 
 Friends = _reflection.GeneratedProtocolMessageType('Friends', (_message.Message,), dict(
   DESCRIPTOR = _FRIENDS,
   __module__ = 'Friends_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request23.Friends)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request647881400.Friends)
   ))
 _sym_db.RegisterMessage(Friends)
+
+PREFIX_AGDFASBV1778125001 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1778125001', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1778125001,
+  __module__ = 'Friends_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request647881400.PREFIX_AGDFASBV1778125001)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1778125001)
 
 
 # @@protoc_insertion_point(module_scope)

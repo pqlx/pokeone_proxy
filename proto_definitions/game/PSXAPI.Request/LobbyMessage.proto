@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Request35;
+package PSXAPI.Request1885396676;
 
 message LobbyMessage {
    required string Message = 1;

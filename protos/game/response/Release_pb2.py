@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -14,21 +13,23 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
-import bcl_pb2 as bcl__pb2
+from protobuf_net import bcl_pb2 as protobuf__net_dot_bcl__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Release.proto',
-  package='PSXAPI.Response69',
+  package='PSXAPI.Response155604481',
   syntax='proto2',
-  serialized_pb=_b('\n\rRelease.proto\x12\x11PSXAPI.Response69\x1a\tbcl.proto\"_\n\x07Release\x12\x38\n\x06Result\x18\x01 \x01(\x0e\x32 .PSXAPI.Response69.ReleaseResult:\x06\x46\x61iled\x12\x1a\n\x07Pokemon\x18\x02 \x01(\x0b\x32\t.bcl.Guid*(\n\rReleaseResult\x12\n\n\x06\x46\x61iled\x10\x00\x12\x0b\n\x07Success\x10\x01')
+  serialized_pb=_b('\n\rRelease.proto\x12\x18PSXAPI.Response155604481\x1a\x16protobuf-net/bcl.proto\"\x80\x01\n\x07Release\x12Y\n\x06Result\x18\x01 \x01(\x0e\x32\x41.PSXAPI.Response155604481.PREFIX_AGDFASBV1258138128.ReleaseResult:\x06\x46\x61iled\x12\x1a\n\x07Pokemon\x18\x02 \x01(\x0b\x32\t.bcl.Guid\"E\n\x19PREFIX_AGDFASBV1258138128\"(\n\rReleaseResult\x12\n\n\x06\x46\x61iled\x10\x00\x12\x0b\n\x07Success\x10\x01')
   ,
-  dependencies=[bcl__pb2.DESCRIPTOR,])
+  dependencies=[protobuf__net_dot_bcl__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_RELEASERESULT = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV1258138128_RELEASERESULT = _descriptor.EnumDescriptor(
   name='ReleaseResult',
-  full_name='PSXAPI.Response69.ReleaseResult',
+  full_name='PSXAPI.Response155604481.PREFIX_AGDFASBV1258138128.ReleaseResult',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -43,33 +44,28 @@ _RELEASERESULT = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=144,
-  serialized_end=184,
+  serialized_start=227,
+  serialized_end=267,
 )
-_sym_db.RegisterEnumDescriptor(_RELEASERESULT)
-
-ReleaseResult = enum_type_wrapper.EnumTypeWrapper(_RELEASERESULT)
-Failed = 0
-Success = 1
-
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1258138128_RELEASERESULT)
 
 
 _RELEASE = _descriptor.Descriptor(
   name='Release',
-  full_name='PSXAPI.Response69.Release',
+  full_name='PSXAPI.Response155604481.Release',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Result', full_name='PSXAPI.Response69.Release.Result', index=0,
+      name='Result', full_name='PSXAPI.Response155604481.Release.Result', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Pokemon', full_name='PSXAPI.Response69.Release.Pokemon', index=1,
+      name='Pokemon', full_name='PSXAPI.Response155604481.Release.Pokemon', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -87,21 +83,54 @@ _RELEASE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=47,
-  serialized_end=142,
+  serialized_start=68,
+  serialized_end=196,
 )
 
-_RELEASE.fields_by_name['Result'].enum_type = _RELEASERESULT
-_RELEASE.fields_by_name['Pokemon'].message_type = bcl__pb2._GUID
+
+_PREFIX_AGDFASBV1258138128 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1258138128',
+  full_name='PSXAPI.Response155604481.PREFIX_AGDFASBV1258138128',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1258138128_RELEASERESULT,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=198,
+  serialized_end=267,
+)
+
+_RELEASE.fields_by_name['Result'].enum_type = _PREFIX_AGDFASBV1258138128_RELEASERESULT
+_RELEASE.fields_by_name['Pokemon'].message_type = protobuf__net_dot_bcl__pb2._GUID
+_PREFIX_AGDFASBV1258138128_RELEASERESULT.containing_type = _PREFIX_AGDFASBV1258138128
 DESCRIPTOR.message_types_by_name['Release'] = _RELEASE
-DESCRIPTOR.enum_types_by_name['ReleaseResult'] = _RELEASERESULT
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1258138128'] = _PREFIX_AGDFASBV1258138128
 
 Release = _reflection.GeneratedProtocolMessageType('Release', (_message.Message,), dict(
   DESCRIPTOR = _RELEASE,
   __module__ = 'Release_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response69.Release)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response155604481.Release)
   ))
 _sym_db.RegisterMessage(Release)
+
+PREFIX_AGDFASBV1258138128 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1258138128', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1258138128,
+  __module__ = 'Release_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response155604481.PREFIX_AGDFASBV1258138128)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1258138128)
 
 
 # @@protoc_insertion_point(module_scope)

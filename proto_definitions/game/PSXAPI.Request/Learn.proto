@@ -1,13 +1,15 @@
 syntax = "proto2";
-import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+package PSXAPI.Request868705580;
+import "protobuf-net/bcl.proto"; // schema for protobuf-net's handling of core .NET types
 
 message Learn {
-   optional .bcl.Guid Pokemon = 1 ;
+   optional .bcl.Guid Pokemon = 1;
    optional bool Accept = 2 [default = false];
-   optional PokemonMoveID Move = 3 [default = none];
+   optional PREFIX_AGDFASBV1720466321.PokemonMoveID Move = 3 [default = none];
    optional int32 Position = 4 [default = 0];
 }
-enum PokemonMoveID {
+message PREFIX_AGDFASBV1720466321 {
+    enum PokemonMoveID {
    none = 0;
    pound = 1;
    karatechop = 2;
@@ -224,7 +226,7 @@ enum PokemonMoveID {
    attract = 213;
    sleeptalk = 214;
    healbell = 215;
-   __return = 216;
+   _return = 216;
    present = 217;
    frustration = 218;
    safeguard = 219;
@@ -710,4 +712,5 @@ enum PokemonMoveID {
    naturesmadness = 717;
    multiattack = 718;
    _10000000voltthunderbolt = 719;
-}
+} //PREFIX_AGDFASBV
+};

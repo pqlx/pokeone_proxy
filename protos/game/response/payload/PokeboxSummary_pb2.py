@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='PokeboxSummary.proto',
-  package='PSXAPI.Response.Payload25',
+  package='PSXAPI.Response.Payload1958616416',
   syntax='proto2',
-  serialized_pb=_b('\n\x14PokeboxSummary.proto\x12\x19PSXAPI.Response.Payload25\"\xee\x01\n\x0ePokeboxSummary\x12\x17\n\x0c\x43urrentBoxes\x18\x01 \x01(\x05:\x01\x30\x12\x13\n\x08MaxBoxes\x18\x02 \x01(\x05:\x01\x30\x12\x17\n\x0cUpgradeMoney\x18\x03 \x01(\r:\x01\x30\x12\x16\n\x0bUpgradeGold\x18\x04 \x01(\r:\x01\x30\x12K\n\tUsedBoxes\x18\x05 \x03(\x0b\x32\x38.PSXAPI.Response.Payload25.PokeboxSummary.UsedBoxesEntry\x1a\x30\n\x0eUsedBoxesEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\r\n\x05value\x18\x02 \x01(\x05:\x02\x38\x01')
+  serialized_pb=_b('\n\x14PokeboxSummary.proto\x12!PSXAPI.Response.Payload1958616416\"\xf6\x01\n\x0ePokeboxSummary\x12\x17\n\x0c\x43urrentBoxes\x18\x01 \x01(\x05:\x01\x30\x12\x13\n\x08MaxBoxes\x18\x02 \x01(\x05:\x01\x30\x12\x17\n\x0cUpgradeMoney\x18\x03 \x01(\r:\x01\x30\x12\x16\n\x0bUpgradeGold\x18\x04 \x01(\r:\x01\x30\x12S\n\tUsedBoxes\x18\x05 \x03(\x0b\x32@.PSXAPI.Response.Payload1958616416.PokeboxSummary.UsedBoxesEntry\x1a\x30\n\x0eUsedBoxesEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\r\n\x05value\x18\x02 \x01(\x05:\x02\x38\x01')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,20 +28,20 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _POKEBOXSUMMARY_USEDBOXESENTRY = _descriptor.Descriptor(
   name='UsedBoxesEntry',
-  full_name='PSXAPI.Response.Payload25.PokeboxSummary.UsedBoxesEntry',
+  full_name='PSXAPI.Response.Payload1958616416.PokeboxSummary.UsedBoxesEntry',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='key', full_name='PSXAPI.Response.Payload25.PokeboxSummary.UsedBoxesEntry.key', index=0,
+      name='key', full_name='PSXAPI.Response.Payload1958616416.PokeboxSummary.UsedBoxesEntry.key', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='value', full_name='PSXAPI.Response.Payload25.PokeboxSummary.UsedBoxesEntry.value', index=1,
+      name='value', full_name='PSXAPI.Response.Payload1958616416.PokeboxSummary.UsedBoxesEntry.value', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -59,47 +59,47 @@ _POKEBOXSUMMARY_USEDBOXESENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=242,
-  serialized_end=290,
+  serialized_start=258,
+  serialized_end=306,
 )
 
 _POKEBOXSUMMARY = _descriptor.Descriptor(
   name='PokeboxSummary',
-  full_name='PSXAPI.Response.Payload25.PokeboxSummary',
+  full_name='PSXAPI.Response.Payload1958616416.PokeboxSummary',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='CurrentBoxes', full_name='PSXAPI.Response.Payload25.PokeboxSummary.CurrentBoxes', index=0,
+      name='CurrentBoxes', full_name='PSXAPI.Response.Payload1958616416.PokeboxSummary.CurrentBoxes', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='MaxBoxes', full_name='PSXAPI.Response.Payload25.PokeboxSummary.MaxBoxes', index=1,
+      name='MaxBoxes', full_name='PSXAPI.Response.Payload1958616416.PokeboxSummary.MaxBoxes', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='UpgradeMoney', full_name='PSXAPI.Response.Payload25.PokeboxSummary.UpgradeMoney', index=2,
+      name='UpgradeMoney', full_name='PSXAPI.Response.Payload1958616416.PokeboxSummary.UpgradeMoney', index=2,
       number=3, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='UpgradeGold', full_name='PSXAPI.Response.Payload25.PokeboxSummary.UpgradeGold', index=3,
+      name='UpgradeGold', full_name='PSXAPI.Response.Payload1958616416.PokeboxSummary.UpgradeGold', index=3,
       number=4, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='UsedBoxes', full_name='PSXAPI.Response.Payload25.PokeboxSummary.UsedBoxes', index=4,
+      name='UsedBoxes', full_name='PSXAPI.Response.Payload1958616416.PokeboxSummary.UsedBoxes', index=4,
       number=5, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -117,8 +117,8 @@ _POKEBOXSUMMARY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=52,
-  serialized_end=290,
+  serialized_start=60,
+  serialized_end=306,
 )
 
 _POKEBOXSUMMARY_USEDBOXESENTRY.containing_type = _POKEBOXSUMMARY
@@ -130,12 +130,12 @@ PokeboxSummary = _reflection.GeneratedProtocolMessageType('PokeboxSummary', (_me
   UsedBoxesEntry = _reflection.GeneratedProtocolMessageType('UsedBoxesEntry', (_message.Message,), dict(
     DESCRIPTOR = _POKEBOXSUMMARY_USEDBOXESENTRY,
     __module__ = 'PokeboxSummary_pb2'
-    # @@protoc_insertion_point(class_scope:PSXAPI.Response.Payload25.PokeboxSummary.UsedBoxesEntry)
+    # @@protoc_insertion_point(class_scope:PSXAPI.Response.Payload1958616416.PokeboxSummary.UsedBoxesEntry)
     ))
   ,
   DESCRIPTOR = _POKEBOXSUMMARY,
   __module__ = 'PokeboxSummary_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response.Payload25.PokeboxSummary)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response.Payload1958616416.PokeboxSummary)
   ))
 _sym_db.RegisterMessage(PokeboxSummary)
 _sym_db.RegisterMessage(PokeboxSummary.UsedBoxesEntry)

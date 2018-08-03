@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -14,21 +13,23 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
-import bcl_pb2 as bcl__pb2
+from protobuf_net import bcl_pb2 as protobuf__net_dot_bcl__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='MapDump.proto',
-  package='MAPAPI.Response17',
+  package='MAPAPI.Response581681185',
   syntax='proto2',
-  serialized_pb=_b('\n\rMapDump.proto\x12\x11MAPAPI.Response17\x1a\tbcl.proto\"\xb5\x02\n\x04\x41rea\x12\x11\n\x06StartX\x18\x01 \x01(\x05:\x01\x30\x12\x11\n\x06StartY\x18\x02 \x01(\x05:\x01\x30\x12\x0f\n\x04\x45ndX\x18\x03 \x01(\x05:\x01\x30\x12\x0f\n\x04\x45ndY\x18\x04 \x01(\x05:\x01\x30\x12\x10\n\x08\x41reaName\x18\x05 \x01(\t\x12\x0f\n\x07Weather\x18\x06 \x01(\t\x12\x0c\n\x04Song\x18\x07 \x01(\t\x12\x1a\n\x0b\x43\x61nDiscover\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0b\x43\x61nReturnTo\x18\t \x01(\x08:\x05\x66\x61lse\x12:\n\x08\x42\x61ttleBG\x18\n \x01(\x0e\x32!.MAPAPI.Response17.BackgroundType:\x05Grass\x12@\n\rAreaEvolution\x18\x0b \x01(\x0e\x32 .MAPAPI.Response17.EvolutionArea:\x07__None0\"@\n\x11HeightTilesStruct\x12+\n\x05\x42lock\x18\x01 \x03(\x0b\x32\x1c.MAPAPI.Response17.wallTypes\"\xd3\x01\n\x08LINKData\x12\x0c\n\x01x\x18\x01 \x01(\x05:\x01\x30\x12\x0c\n\x01y\x18\x02 \x01(\x05:\x01\x30\x12\x0c\n\x01z\x18\x03 \x01(\x05:\x01\x30\x12\x15\n\x02ID\x18\x04 \x01(\x0b\x32\t.bcl.Guid\x12 \n\rDestinationID\x18\x05 \x01(\x0b\x32\t.bcl.Guid\x12=\n\x08LINKType\x18\x06 \x01(\x0e\x32\x1b.MAPAPI.Response17.LinkType:\x0eSendAndRecieve\x12\x15\n\nTransition\x18\x07 \x01(\x05:\x01\x30\x12\x0e\n\x06Script\x18\x08 \x01(\t\"S\n\x08LinkPair\x12\x18\n\x05Link1\x18\x01 \x01(\x0b\x32\t.bcl.Guid\x12\x18\n\x05Link2\x18\x02 \x01(\x0b\x32\t.bcl.Guid\x12\x13\n\x08\x44istance\x18\x03 \x01(\x05:\x01\x30\"\x99\x06\n\x07MapDump\x12\x10\n\x05width\x18\x01 \x01(\x05:\x01\x30\x12\x11\n\x06height\x18\x02 \x01(\x05:\x01\x30\x12\x36\n\tTileTypes\x18\x03 \x01(\x0b\x32#.MAPAPI.Response17.ProtoArray_Int32\x12\x38\n\x0bTileHeights\x18\x04 \x01(\x0b\x32#.MAPAPI.Response17.ProtoArray_Int32\x12\x41\n\x08WallData\x18\x05 \x01(\x0b\x32/.MAPAPI.Response17.ProtoArray_HeightTilesStruct\x12(\n\x04NPCs\x18\x06 \x03(\x0b\x32\x1a.MAPAPI.Response17.NPCData\x12\x33\n\x07Objects\x18\x07 \x03(\x0b\x32\".MAPAPI.Response17.MapObjectStruct\x12\x0c\n\x04Name\x18\t \x01(\t\x12\x37\n\nTileTypes2\x18\n \x01(\x0b\x32#.MAPAPI.Response17.ProtoArray_Int32\x12*\n\x05Links\x18\x0b \x03(\x0b\x32\x1b.MAPAPI.Response17.LINKData\x12\x36\n\tColliders\x18\x0c \x01(\x0b\x32#.MAPAPI.Response17.ProtoArray_Int32\x12\x36\n\tTileWater\x18\r \x01(\x0b\x32#.MAPAPI.Response17.ProtoArray_Int32\x12\x36\n\tTileZones\x18\x0e \x01(\x0b\x32#.MAPAPI.Response17.ProtoArray_Int32\x12&\n\x05Zones\x18\x0f \x03(\x0b\x32\x17.MAPAPI.Response17.Zone\x12-\n\x08Settings\x18\x10 \x01(\x0b\x32\x1b.MAPAPI.Response17.Settings\x12&\n\x05\x41reas\x18\x11 \x03(\x0b\x32\x17.MAPAPI.Response17.Area\x12\x0c\n\x04Note\x18\x12 \x01(\t\x12-\n\x08LinkList\x18\x13 \x03(\x0b\x32\x1b.MAPAPI.Response17.LinkPair\"\x9a\x01\n\x0fMapObjectStruct\x12\x0c\n\x01x\x18\x01 \x01(\x05:\x01\x30\x12\x0c\n\x01y\x18\x02 \x01(\x05:\x01\x30\x12\x0c\n\x01z\x18\x03 \x01(\x05:\x01\x30\x12\x0c\n\x04Name\x18\x04 \x01(\t\x12\x15\n\x02ID\x18\x05 \x01(\x0b\x32\t.bcl.Guid\x12\r\n\x02rx\x18\x06 \x01(\x05:\x01\x30\x12\r\n\x02ry\x18\x07 \x01(\x05:\x01\x30\x12\r\n\x02rz\x18\x08 \x01(\x05:\x01\x30\x12\x0b\n\x03tag\x18\t \x01(\t\"\x81\x01\n\x07NPCData\x12\x0c\n\x01x\x18\x01 \x01(\x05:\x01\x30\x12\x0c\n\x01y\x18\x02 \x01(\x05:\x01\x30\x12\x0c\n\x01z\x18\x03 \x01(\x05:\x01\x30\x12\x15\n\x02ID\x18\x04 \x01(\x0b\x32\t.bcl.Guid\x12\x35\n\x08Settings\x18\x05 \x01(\x0b\x32#.MAPAPI.Response17.NPCSettingStruct\"\xbc\x02\n\x10NPCSettingStruct\x12\x0f\n\x07NPCName\x18\x01 \x01(\t\x12\x0e\n\x06\x46\x61\x63ing\x18\x02 \x01(\t\x12\x13\n\x0bSightAction\x18\x03 \x01(\t\x12\x0e\n\x03LOS\x18\x04 \x01(\x05:\x01\x30\x12\x0c\n\x04Path\x18\x05 \x01(\t\x12\x16\n\x07\x45nabled\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x17\n\x08WalkFast\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0cLookRandomly\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x11\n\x06Sprite\x18\t \x01(\x05:\x01\x30\x12\x0c\n\x04Tags\x18\n \x01(\t\x12\x0e\n\x06Script\x18\x0b \x01(\t\x12\x12\n\nNameColour\x18\x0c \x01(\t\x12\x13\n\x0bStartScript\x18\r \x01(\t\x12\x12\n\nSpottedSFX\x18\x0e \x01(\t\x12\x18\n\tDontMerge\x18\x0f \x01(\x08:\x05\x66\x61lse\"f\n\x1cProtoArray_HeightTilesStruct\x12\x12\n\nDimensions\x18\x01 \x03(\x05\x12\x32\n\x04\x44\x61ta\x18\x02 \x03(\x0b\x32$.MAPAPI.Response17.HeightTilesStruct\"4\n\x10ProtoArray_Int32\x12\x12\n\nDimensions\x18\x01 \x03(\x05\x12\x0c\n\x04\x44\x61ta\x18\x02 \x03(\x05\"\x8f\x03\n\x08Settings\x12\x0f\n\x07MapName\x18\x01 \x01(\t\x12\x1a\n\x12LightColour_String\x18\x02 \x01(\t\x12\x0f\n\x07Weather\x18\x03 \x01(\t\x12\x0c\n\x04Song\x18\x04 \x01(\t\x12\x16\n\x07Indoors\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x13\n\x04\x44\x61rk\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x19\n\nUnderwater\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x17\n\x08\x43\x61nMount\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x1c\n\rCanEscapeRope\x18\t \x01(\x08:\x05\x66\x61lse\x12\x18\n\tInstanced\x18\n \x01(\x08:\x05\x66\x61lse\x12\x13\n\x04\x43\x61ve\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\x0e\n\x06Region\x18\x0c \x01(\t\x12\x17\n\x08WhiteFog\x18\r \x01(\x08:\x05\x66\x61lse\x12@\n\rEncounterRate\x18\x0e \x01(\x0e\x32!.MAPAPI.Response17.EncounterRates:\x06Normal\x12\x1e\n\x0f\x43\x61ntFlyTeleport\x18\x0f \x01(\x08:\x05\x66\x61lse\"F\n\x04Zone\x12/\n\x07Pokemon\x18\x01 \x03(\x0b\x32\x1e.MAPAPI.Response17.ZonePokemon\x12\r\n\x02ID\x18\x02 \x01(\x05:\x01\x30\"T\n\x08ZoneItem\x12\x11\n\x06ItemID\x18\x01 \x01(\x05:\x01\x30\x12\x35\n\nItemRarity\x18\x02 \x01(\x0e\x32\x19.MAPAPI.Response17.Rarity:\x06\x43ommon\"\xce\x03\n\x0bZonePokemon\x12\x14\n\tPokemonID\x18\x01 \x01(\x05:\x01\x30\x12\x17\n\x0c\x41verageLevel\x18\x02 \x01(\x05:\x01\x30\x12\x18\n\rLevelVariance\x18\x03 \x01(\x05:\x01\x30\x12=\n\rEncounterTime\x18\x04 \x01(\x0e\x32!.MAPAPI.Response17.EncounterTimes:\x03\x44\x61y\x12\x31\n\x06Rarity\x18\x05 \x01(\x0e\x32\x19.MAPAPI.Response17.Rarity:\x06\x43ommon\x12*\n\x05Items\x18\x06 \x03(\x0b\x32\x1b.MAPAPI.Response17.ZoneItem\x12\x38\n\x07\x46ishing\x18\x07 \x01(\x0e\x32\x1e.MAPAPI.Response17.FishingType:\x07__None1\x12\x0e\n\x06Script\x18\x08 \x01(\t\x12\x14\n\x05Party\x18\t \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x10SpecialEncounter\x18\n \x01(\x08:\x05\x66\x61lse\x12>\n\x0c\x42\x61\x63kgroundID\x18\x0b \x01(\x0e\x32!.MAPAPI.Response17.BackgroundType:\x05Grass\x12\x17\n\x08\x44isabled\x18\x0c \x01(\x08:\x05\x66\x61lse\"A\n\twallTypes\x12\x10\n\x05Side0\x18\x01 \x01(\x05:\x01\x30\x12\x10\n\x05Side1\x18\x02 \x01(\x05:\x01\x30\x12\x10\n\x05Side2\x18\x03 \x01(\x05:\x01\x30*\x8e\x01\n\x0e\x42\x61\x63kgroundType\x12\t\n\x05Grass\x10\x00\x12\t\n\x05Water\x10\x01\x12\x08\n\x04\x43\x61ve\x10\x02\x12\n\n\x06Indoor\x10\x03\x12\x07\n\x03Gym\x10\x04\x12\x0b\n\x07IceCave\x10\x05\x12\x0f\n\x0b\x43rystalCave\x10\x06\x12\x08\n\x04Snow\x10\x07\x12\x08\n\x04\x43ity\x10\x08\x12\n\n\x06\x44\x65sert\x10\t\x12\t\n\x05Ocean\x10\n*2\n\x0e\x45ncounterRates\x12\n\n\x06Normal\x10\x00\x12\x07\n\x03Low\x10\x01\x12\x0b\n\x07VeryLow\x10\x02*J\n\x0e\x45ncounterTimes\x12\x07\n\x03\x44\x61y\x10\x00\x12\t\n\x05Night\x10\x01\x12\x0b\n\x07Morning\x10\x02\x12\x0b\n\x07\x45vening\x10\x03\x12\n\n\x06\x41lways\x10\x04*v\n\rEvolutionArea\x12\x0b\n\x07__None0\x10\x00\x12\x11\n\rMagneticField\x10\x01\x12\x11\n\rMountLanakila\x10\x02\x12\x0c\n\x08MossRock\x10\x03\x12\x0b\n\x07IceRock\x10\x04\x12\r\n\tSandstorm\x10\x05\x12\x08\n\x04Hail\x10\x06*A\n\x0b\x46ishingType\x12\x0b\n\x07__None1\x10\x00\x12\n\n\x06OldRod\x10\x01\x12\x0b\n\x07GoodRod\x10\x02\x12\x0c\n\x08SuperRod\x10\x03*X\n\x08LinkType\x12\x12\n\x0eSendAndRecieve\x10\x00\x12\x12\n\x0eTileScriptWait\x10\x01\x12\x17\n\x13TileScriptImmediate\x10\x02\x12\x0b\n\x07\x44\x65\x66\x61ult\x10\x03*Q\n\x06Rarity\x12\n\n\x06\x43ommon\x10\x00\x12\x0c\n\x08Uncommon\x10\x01\x12\x08\n\x04Rare\x10\x02\x12\x08\n\x04\x45pic\x10\x03\x12\x0c\n\x08Mythical\x10\x04\x12\x0b\n\x07Special\x10\x05')
+  serialized_pb=_b('\n\rMapDump.proto\x12\x18MAPAPI.Response581681185\x1a\x16protobuf-net/bcl.proto\"\xf8\x02\n\x04\x41rea\x12\x11\n\x06StartX\x18\x01 \x01(\x05:\x01\x30\x12\x11\n\x06StartY\x18\x02 \x01(\x05:\x01\x30\x12\x0f\n\x04\x45ndX\x18\x03 \x01(\x05:\x01\x30\x12\x0f\n\x04\x45ndY\x18\x04 \x01(\x05:\x01\x30\x12\x10\n\x08\x41reaName\x18\x05 \x01(\t\x12\x0f\n\x07Weather\x18\x06 \x01(\t\x12\x0c\n\x04Song\x18\x07 \x01(\t\x12\x1a\n\x0b\x43\x61nDiscover\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x1a\n\x0b\x43\x61nReturnTo\x18\t \x01(\x08:\x05\x66\x61lse\x12Z\n\x08\x42\x61ttleBG\x18\n \x01(\x0e\x32\x41.MAPAPI.Response581681185.PREFIX_AGDFASBV538288952.BackgroundType:\x05Grass\x12\x63\n\rAreaEvolution\x18\x0b \x01(\x0e\x32\x41.MAPAPI.Response581681185.PREFIX_AGDFASBV1205436378.EvolutionArea:\tNoneValue\"\xab\x01\n\x18PREFIX_AGDFASBV538288952\"\x8e\x01\n\x0e\x42\x61\x63kgroundType\x12\t\n\x05Grass\x10\x00\x12\t\n\x05Water\x10\x01\x12\x08\n\x04\x43\x61ve\x10\x02\x12\n\n\x06Indoor\x10\x03\x12\x07\n\x03Gym\x10\x04\x12\x0b\n\x07IceCave\x10\x05\x12\x0f\n\x0b\x43rystalCave\x10\x06\x12\x08\n\x04Snow\x10\x07\x12\x08\n\x04\x43ity\x10\x08\x12\n\n\x06\x44\x65sert\x10\t\x12\t\n\x05Ocean\x10\n\"N\n\x18PREFIX_AGDFASBV514818703\"2\n\x0e\x45ncounterRates\x12\n\n\x06Normal\x10\x00\x12\x07\n\x03Low\x10\x01\x12\x0b\n\x07VeryLow\x10\x02\"f\n\x18PREFIX_AGDFASBV103485569\"J\n\x0e\x45ncounterTimes\x12\x07\n\x03\x44\x61y\x10\x00\x12\t\n\x05Night\x10\x01\x12\x0b\n\x07Morning\x10\x02\x12\x0b\n\x07\x45vening\x10\x03\x12\n\n\x06\x41lways\x10\x04\"\x95\x01\n\x19PREFIX_AGDFASBV1205436378\"x\n\rEvolutionArea\x12\r\n\tNoneValue\x10\x00\x12\x11\n\rMagneticField\x10\x01\x12\x11\n\rMountLanakila\x10\x02\x12\x0c\n\x08MossRock\x10\x03\x12\x0b\n\x07IceRock\x10\x04\x12\r\n\tSandstorm\x10\x05\x12\x08\n\x04Hail\x10\x06\"`\n\x19PREFIX_AGDFASBV1255547470\"C\n\x0b\x46ishingType\x12\r\n\tNoneValue\x10\x00\x12\n\n\x06OldRod\x10\x01\x12\x0b\n\x07GoodRod\x10\x02\x12\x0c\n\x08SuperRod\x10\x03\"G\n\x11HeightTilesStruct\x12\x32\n\x05\x42lock\x18\x01 \x03(\x0b\x32#.MAPAPI.Response581681185.wallTypes\"\xf3\x01\n\x08LINKData\x12\x0c\n\x01x\x18\x01 \x01(\x05:\x01\x30\x12\x0c\n\x01y\x18\x02 \x01(\x05:\x01\x30\x12\x0c\n\x01z\x18\x03 \x01(\x05:\x01\x30\x12\x15\n\x02ID\x18\x04 \x01(\x0b\x32\t.bcl.Guid\x12 \n\rDestinationID\x18\x05 \x01(\x0b\x32\t.bcl.Guid\x12]\n\x08LINKType\x18\x06 \x01(\x0e\x32;.MAPAPI.Response581681185.PREFIX_AGDFASBV104033503.LinkType:\x0eSendAndRecieve\x12\x15\n\nTransition\x18\x07 \x01(\x05:\x01\x30\x12\x0e\n\x06Script\x18\x08 \x01(\t\"S\n\x08LinkPair\x12\x18\n\x05Link1\x18\x01 \x01(\x0b\x32\t.bcl.Guid\x12\x18\n\x05Link2\x18\x02 \x01(\x0b\x32\t.bcl.Guid\x12\x13\n\x08\x44istance\x18\x03 \x01(\x05:\x01\x30\"t\n\x18PREFIX_AGDFASBV104033503\"X\n\x08LinkType\x12\x12\n\x0eSendAndRecieve\x10\x00\x12\x12\n\x0eTileScriptWait\x10\x01\x12\x17\n\x13TileScriptImmediate\x10\x02\x12\x0b\n\x07\x44\x65\x66\x61ult\x10\x03\"\xfb\x06\n\x07MapDump\x12\x10\n\x05width\x18\x01 \x01(\x05:\x01\x30\x12\x11\n\x06height\x18\x02 \x01(\x05:\x01\x30\x12=\n\tTileTypes\x18\x03 \x01(\x0b\x32*.MAPAPI.Response581681185.ProtoArray_Int32\x12?\n\x0bTileHeights\x18\x04 \x01(\x0b\x32*.MAPAPI.Response581681185.ProtoArray_Int32\x12H\n\x08WallData\x18\x05 \x01(\x0b\x32\x36.MAPAPI.Response581681185.ProtoArray_HeightTilesStruct\x12/\n\x04NPCs\x18\x06 \x03(\x0b\x32!.MAPAPI.Response581681185.NPCData\x12:\n\x07Objects\x18\x07 \x03(\x0b\x32).MAPAPI.Response581681185.MapObjectStruct\x12\x0c\n\x04Name\x18\t \x01(\t\x12>\n\nTileTypes2\x18\n \x01(\x0b\x32*.MAPAPI.Response581681185.ProtoArray_Int32\x12\x31\n\x05Links\x18\x0b \x03(\x0b\x32\".MAPAPI.Response581681185.LINKData\x12=\n\tColliders\x18\x0c \x01(\x0b\x32*.MAPAPI.Response581681185.ProtoArray_Int32\x12=\n\tTileWater\x18\r \x01(\x0b\x32*.MAPAPI.Response581681185.ProtoArray_Int32\x12=\n\tTileZones\x18\x0e \x01(\x0b\x32*.MAPAPI.Response581681185.ProtoArray_Int32\x12-\n\x05Zones\x18\x0f \x03(\x0b\x32\x1e.MAPAPI.Response581681185.Zone\x12\x34\n\x08Settings\x18\x10 \x01(\x0b\x32\".MAPAPI.Response581681185.Settings\x12-\n\x05\x41reas\x18\x11 \x03(\x0b\x32\x1e.MAPAPI.Response581681185.Area\x12\x0c\n\x04Note\x18\x12 \x01(\t\x12\x34\n\x08LinkList\x18\x13 \x03(\x0b\x32\".MAPAPI.Response581681185.LinkPair\"\x9a\x01\n\x0fMapObjectStruct\x12\x0c\n\x01x\x18\x01 \x01(\x05:\x01\x30\x12\x0c\n\x01y\x18\x02 \x01(\x05:\x01\x30\x12\x0c\n\x01z\x18\x03 \x01(\x05:\x01\x30\x12\x0c\n\x04Name\x18\x04 \x01(\t\x12\x15\n\x02ID\x18\x05 \x01(\x0b\x32\t.bcl.Guid\x12\r\n\x02rx\x18\x06 \x01(\x05:\x01\x30\x12\r\n\x02ry\x18\x07 \x01(\x05:\x01\x30\x12\r\n\x02rz\x18\x08 \x01(\x05:\x01\x30\x12\x0b\n\x03tag\x18\t \x01(\t\"\x88\x01\n\x07NPCData\x12\x0c\n\x01x\x18\x01 \x01(\x05:\x01\x30\x12\x0c\n\x01y\x18\x02 \x01(\x05:\x01\x30\x12\x0c\n\x01z\x18\x03 \x01(\x05:\x01\x30\x12\x15\n\x02ID\x18\x04 \x01(\x0b\x32\t.bcl.Guid\x12<\n\x08Settings\x18\x05 \x01(\x0b\x32*.MAPAPI.Response581681185.NPCSettingStruct\"\xbc\x02\n\x10NPCSettingStruct\x12\x0f\n\x07NPCName\x18\x01 \x01(\t\x12\x0e\n\x06\x46\x61\x63ing\x18\x02 \x01(\t\x12\x13\n\x0bSightAction\x18\x03 \x01(\t\x12\x0e\n\x03LOS\x18\x04 \x01(\x05:\x01\x30\x12\x0c\n\x04Path\x18\x05 \x01(\t\x12\x16\n\x07\x45nabled\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x17\n\x08WalkFast\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x1b\n\x0cLookRandomly\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x11\n\x06Sprite\x18\t \x01(\x05:\x01\x30\x12\x0c\n\x04Tags\x18\n \x01(\t\x12\x0e\n\x06Script\x18\x0b \x01(\t\x12\x12\n\nNameColour\x18\x0c \x01(\t\x12\x13\n\x0bStartScript\x18\r \x01(\t\x12\x12\n\nSpottedSFX\x18\x0e \x01(\t\x12\x18\n\tDontMerge\x18\x0f \x01(\x08:\x05\x66\x61lse\"m\n\x1cProtoArray_HeightTilesStruct\x12\x12\n\nDimensions\x18\x01 \x03(\x05\x12\x39\n\x04\x44\x61ta\x18\x02 \x03(\x0b\x32+.MAPAPI.Response581681185.HeightTilesStruct\"4\n\x10ProtoArray_Int32\x12\x12\n\nDimensions\x18\x01 \x03(\x05\x12\x0c\n\x04\x44\x61ta\x18\x02 \x03(\x05\"n\n\x19PREFIX_AGDFASBV1801989190\"Q\n\x06Rarity\x12\n\n\x06\x43ommon\x10\x00\x12\x0c\n\x08Uncommon\x10\x01\x12\x08\n\x04Rare\x10\x02\x12\x08\n\x04\x45pic\x10\x03\x12\x0c\n\x08Mythical\x10\x04\x12\x0b\n\x07Special\x10\x05\"\xaf\x03\n\x08Settings\x12\x0f\n\x07MapName\x18\x01 \x01(\t\x12\x1a\n\x12LightColour_String\x18\x02 \x01(\t\x12\x0f\n\x07Weather\x18\x03 \x01(\t\x12\x0c\n\x04Song\x18\x04 \x01(\t\x12\x16\n\x07Indoors\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x13\n\x04\x44\x61rk\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x19\n\nUnderwater\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x17\n\x08\x43\x61nMount\x18\x08 \x01(\x08:\x05\x66\x61lse\x12\x1c\n\rCanEscapeRope\x18\t \x01(\x08:\x05\x66\x61lse\x12\x18\n\tInstanced\x18\n \x01(\x08:\x05\x66\x61lse\x12\x13\n\x04\x43\x61ve\x18\x0b \x01(\x08:\x05\x66\x61lse\x12\x0e\n\x06Region\x18\x0c \x01(\t\x12\x17\n\x08WhiteFog\x18\r \x01(\x08:\x05\x66\x61lse\x12`\n\rEncounterRate\x18\x0e \x01(\x0e\x32\x41.MAPAPI.Response581681185.PREFIX_AGDFASBV514818703.EncounterRates:\x06Normal\x12\x1e\n\x0f\x43\x61ntFlyTeleport\x18\x0f \x01(\x08:\x05\x66\x61lse\"M\n\x04Zone\x12\x36\n\x07Pokemon\x18\x01 \x03(\x0b\x32%.MAPAPI.Response581681185.ZonePokemon\x12\r\n\x02ID\x18\x02 \x01(\x05:\x01\x30\"u\n\x08ZoneItem\x12\x11\n\x06ItemID\x18\x01 \x01(\x05:\x01\x30\x12V\n\nItemRarity\x18\x02 \x01(\x0e\x32:.MAPAPI.Response581681185.PREFIX_AGDFASBV1801989190.Rarity:\x06\x43ommon\"\xd9\x04\n\x0bZonePokemon\x12\x14\n\tPokemonID\x18\x01 \x01(\x05:\x01\x30\x12\x17\n\x0c\x41verageLevel\x18\x02 \x01(\x05:\x01\x30\x12\x18\n\rLevelVariance\x18\x03 \x01(\x05:\x01\x30\x12]\n\rEncounterTime\x18\x04 \x01(\x0e\x32\x41.MAPAPI.Response581681185.PREFIX_AGDFASBV103485569.EncounterTimes:\x03\x44\x61y\x12R\n\x06Rarity\x18\x05 \x01(\x0e\x32:.MAPAPI.Response581681185.PREFIX_AGDFASBV1801989190.Rarity:\x06\x43ommon\x12\x31\n\x05Items\x18\x06 \x03(\x0b\x32\".MAPAPI.Response581681185.ZoneItem\x12[\n\x07\x46ishing\x18\x07 \x01(\x0e\x32?.MAPAPI.Response581681185.PREFIX_AGDFASBV1255547470.FishingType:\tNoneValue\x12\x0e\n\x06Script\x18\x08 \x01(\t\x12\x14\n\x05Party\x18\t \x01(\x08:\x05\x66\x61lse\x12\x1f\n\x10SpecialEncounter\x18\n \x01(\x08:\x05\x66\x61lse\x12^\n\x0c\x42\x61\x63kgroundID\x18\x0b \x01(\x0e\x32\x41.MAPAPI.Response581681185.PREFIX_AGDFASBV538288952.BackgroundType:\x05Grass\x12\x17\n\x08\x44isabled\x18\x0c \x01(\x08:\x05\x66\x61lse\"A\n\twallTypes\x12\x10\n\x05Side0\x18\x01 \x01(\x05:\x01\x30\x12\x10\n\x05Side1\x18\x02 \x01(\x05:\x01\x30\x12\x10\n\x05Side2\x18\x03 \x01(\x05:\x01\x30')
   ,
-  dependencies=[bcl__pb2.DESCRIPTOR,])
+  dependencies=[protobuf__net_dot_bcl__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_BACKGROUNDTYPE = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV538288952_BACKGROUNDTYPE = _descriptor.EnumDescriptor(
   name='BackgroundType',
-  full_name='MAPAPI.Response17.BackgroundType',
+  full_name='MAPAPI.Response581681185.PREFIX_AGDFASBV538288952.BackgroundType',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -79,15 +80,14 @@ _BACKGROUNDTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=3379,
-  serialized_end=3521,
+  serialized_start=476,
+  serialized_end=618,
 )
-_sym_db.RegisterEnumDescriptor(_BACKGROUNDTYPE)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV538288952_BACKGROUNDTYPE)
 
-BackgroundType = enum_type_wrapper.EnumTypeWrapper(_BACKGROUNDTYPE)
-_ENCOUNTERRATES = _descriptor.EnumDescriptor(
+_PREFIX_AGDFASBV514818703_ENCOUNTERRATES = _descriptor.EnumDescriptor(
   name='EncounterRates',
-  full_name='MAPAPI.Response17.EncounterRates',
+  full_name='MAPAPI.Response581681185.PREFIX_AGDFASBV514818703.EncounterRates',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -106,15 +106,14 @@ _ENCOUNTERRATES = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=3523,
-  serialized_end=3573,
+  serialized_start=648,
+  serialized_end=698,
 )
-_sym_db.RegisterEnumDescriptor(_ENCOUNTERRATES)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV514818703_ENCOUNTERRATES)
 
-EncounterRates = enum_type_wrapper.EnumTypeWrapper(_ENCOUNTERRATES)
-_ENCOUNTERTIMES = _descriptor.EnumDescriptor(
+_PREFIX_AGDFASBV103485569_ENCOUNTERTIMES = _descriptor.EnumDescriptor(
   name='EncounterTimes',
-  full_name='MAPAPI.Response17.EncounterTimes',
+  full_name='MAPAPI.Response581681185.PREFIX_AGDFASBV103485569.EncounterTimes',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -141,20 +140,19 @@ _ENCOUNTERTIMES = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=3575,
-  serialized_end=3649,
+  serialized_start=728,
+  serialized_end=802,
 )
-_sym_db.RegisterEnumDescriptor(_ENCOUNTERTIMES)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV103485569_ENCOUNTERTIMES)
 
-EncounterTimes = enum_type_wrapper.EnumTypeWrapper(_ENCOUNTERTIMES)
-_EVOLUTIONAREA = _descriptor.EnumDescriptor(
+_PREFIX_AGDFASBV1205436378_EVOLUTIONAREA = _descriptor.EnumDescriptor(
   name='EvolutionArea',
-  full_name='MAPAPI.Response17.EvolutionArea',
+  full_name='MAPAPI.Response581681185.PREFIX_AGDFASBV1205436378.EvolutionArea',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='__None0', index=0, number=0,
+      name='NoneValue', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -184,20 +182,19 @@ _EVOLUTIONAREA = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=3651,
-  serialized_end=3769,
+  serialized_start=834,
+  serialized_end=954,
 )
-_sym_db.RegisterEnumDescriptor(_EVOLUTIONAREA)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1205436378_EVOLUTIONAREA)
 
-EvolutionArea = enum_type_wrapper.EnumTypeWrapper(_EVOLUTIONAREA)
-_FISHINGTYPE = _descriptor.EnumDescriptor(
+_PREFIX_AGDFASBV1255547470_FISHINGTYPE = _descriptor.EnumDescriptor(
   name='FishingType',
-  full_name='MAPAPI.Response17.FishingType',
+  full_name='MAPAPI.Response581681185.PREFIX_AGDFASBV1255547470.FishingType',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='__None1', index=0, number=0,
+      name='NoneValue', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -215,15 +212,14 @@ _FISHINGTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=3771,
-  serialized_end=3836,
+  serialized_start=985,
+  serialized_end=1052,
 )
-_sym_db.RegisterEnumDescriptor(_FISHINGTYPE)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1255547470_FISHINGTYPE)
 
-FishingType = enum_type_wrapper.EnumTypeWrapper(_FISHINGTYPE)
-_LINKTYPE = _descriptor.EnumDescriptor(
+_PREFIX_AGDFASBV104033503_LINKTYPE = _descriptor.EnumDescriptor(
   name='LinkType',
-  full_name='MAPAPI.Response17.LinkType',
+  full_name='MAPAPI.Response581681185.PREFIX_AGDFASBV104033503.LinkType',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -246,15 +242,14 @@ _LINKTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=3838,
-  serialized_end=3926,
+  serialized_start=1486,
+  serialized_end=1574,
 )
-_sym_db.RegisterEnumDescriptor(_LINKTYPE)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV104033503_LINKTYPE)
 
-LinkType = enum_type_wrapper.EnumTypeWrapper(_LINKTYPE)
-_RARITY = _descriptor.EnumDescriptor(
+_PREFIX_AGDFASBV1801989190_RARITY = _descriptor.EnumDescriptor(
   name='Rarity',
-  full_name='MAPAPI.Response17.Rarity',
+  full_name='MAPAPI.Response581681185.PREFIX_AGDFASBV1801989190.Rarity',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -285,134 +280,91 @@ _RARITY = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=3928,
-  serialized_end=4009,
+  serialized_start=3279,
+  serialized_end=3360,
 )
-_sym_db.RegisterEnumDescriptor(_RARITY)
-
-Rarity = enum_type_wrapper.EnumTypeWrapper(_RARITY)
-Grass = 0
-Water = 1
-Cave = 2
-Indoor = 3
-Gym = 4
-IceCave = 5
-CrystalCave = 6
-Snow = 7
-City = 8
-Desert = 9
-Ocean = 10
-Normal = 0
-Low = 1
-VeryLow = 2
-Day = 0
-Night = 1
-Morning = 2
-Evening = 3
-Always = 4
-__None0 = 0
-MagneticField = 1
-MountLanakila = 2
-MossRock = 3
-IceRock = 4
-Sandstorm = 5
-Hail = 6
-__None1 = 0
-OldRod = 1
-GoodRod = 2
-SuperRod = 3
-SendAndRecieve = 0
-TileScriptWait = 1
-TileScriptImmediate = 2
-Default = 3
-Common = 0
-Uncommon = 1
-Rare = 2
-Epic = 3
-Mythical = 4
-Special = 5
-
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1801989190_RARITY)
 
 
 _AREA = _descriptor.Descriptor(
   name='Area',
-  full_name='MAPAPI.Response17.Area',
+  full_name='MAPAPI.Response581681185.Area',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='StartX', full_name='MAPAPI.Response17.Area.StartX', index=0,
+      name='StartX', full_name='MAPAPI.Response581681185.Area.StartX', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='StartY', full_name='MAPAPI.Response17.Area.StartY', index=1,
+      name='StartY', full_name='MAPAPI.Response581681185.Area.StartY', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='EndX', full_name='MAPAPI.Response17.Area.EndX', index=2,
+      name='EndX', full_name='MAPAPI.Response581681185.Area.EndX', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='EndY', full_name='MAPAPI.Response17.Area.EndY', index=3,
+      name='EndY', full_name='MAPAPI.Response581681185.Area.EndY', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='AreaName', full_name='MAPAPI.Response17.Area.AreaName', index=4,
+      name='AreaName', full_name='MAPAPI.Response581681185.Area.AreaName', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Weather', full_name='MAPAPI.Response17.Area.Weather', index=5,
+      name='Weather', full_name='MAPAPI.Response581681185.Area.Weather', index=5,
       number=6, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Song', full_name='MAPAPI.Response17.Area.Song', index=6,
+      name='Song', full_name='MAPAPI.Response581681185.Area.Song', index=6,
       number=7, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanDiscover', full_name='MAPAPI.Response17.Area.CanDiscover', index=7,
+      name='CanDiscover', full_name='MAPAPI.Response581681185.Area.CanDiscover', index=7,
       number=8, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanReturnTo', full_name='MAPAPI.Response17.Area.CanReturnTo', index=8,
+      name='CanReturnTo', full_name='MAPAPI.Response581681185.Area.CanReturnTo', index=8,
       number=9, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='BattleBG', full_name='MAPAPI.Response17.Area.BattleBG', index=9,
+      name='BattleBG', full_name='MAPAPI.Response581681185.Area.BattleBG', index=9,
       number=10, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='AreaEvolution', full_name='MAPAPI.Response17.Area.AreaEvolution', index=10,
+      name='AreaEvolution', full_name='MAPAPI.Response581681185.Area.AreaEvolution', index=10,
       number=11, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -430,20 +382,145 @@ _AREA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=48,
-  serialized_end=357,
+  serialized_start=68,
+  serialized_end=444,
+)
+
+
+_PREFIX_AGDFASBV538288952 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV538288952',
+  full_name='MAPAPI.Response581681185.PREFIX_AGDFASBV538288952',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV538288952_BACKGROUNDTYPE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=447,
+  serialized_end=618,
+)
+
+
+_PREFIX_AGDFASBV514818703 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV514818703',
+  full_name='MAPAPI.Response581681185.PREFIX_AGDFASBV514818703',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV514818703_ENCOUNTERRATES,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=620,
+  serialized_end=698,
+)
+
+
+_PREFIX_AGDFASBV103485569 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV103485569',
+  full_name='MAPAPI.Response581681185.PREFIX_AGDFASBV103485569',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV103485569_ENCOUNTERTIMES,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=700,
+  serialized_end=802,
+)
+
+
+_PREFIX_AGDFASBV1205436378 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1205436378',
+  full_name='MAPAPI.Response581681185.PREFIX_AGDFASBV1205436378',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1205436378_EVOLUTIONAREA,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=805,
+  serialized_end=954,
+)
+
+
+_PREFIX_AGDFASBV1255547470 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1255547470',
+  full_name='MAPAPI.Response581681185.PREFIX_AGDFASBV1255547470',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1255547470_FISHINGTYPE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=956,
+  serialized_end=1052,
 )
 
 
 _HEIGHTTILESSTRUCT = _descriptor.Descriptor(
   name='HeightTilesStruct',
-  full_name='MAPAPI.Response17.HeightTilesStruct',
+  full_name='MAPAPI.Response581681185.HeightTilesStruct',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Block', full_name='MAPAPI.Response17.HeightTilesStruct.Block', index=0,
+      name='Block', full_name='MAPAPI.Response581681185.HeightTilesStruct.Block', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -461,69 +538,69 @@ _HEIGHTTILESSTRUCT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=359,
-  serialized_end=423,
+  serialized_start=1054,
+  serialized_end=1125,
 )
 
 
 _LINKDATA = _descriptor.Descriptor(
   name='LINKData',
-  full_name='MAPAPI.Response17.LINKData',
+  full_name='MAPAPI.Response581681185.LINKData',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='x', full_name='MAPAPI.Response17.LINKData.x', index=0,
+      name='x', full_name='MAPAPI.Response581681185.LINKData.x', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='y', full_name='MAPAPI.Response17.LINKData.y', index=1,
+      name='y', full_name='MAPAPI.Response581681185.LINKData.y', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='z', full_name='MAPAPI.Response17.LINKData.z', index=2,
+      name='z', full_name='MAPAPI.Response581681185.LINKData.z', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='ID', full_name='MAPAPI.Response17.LINKData.ID', index=3,
+      name='ID', full_name='MAPAPI.Response581681185.LINKData.ID', index=3,
       number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='DestinationID', full_name='MAPAPI.Response17.LINKData.DestinationID', index=4,
+      name='DestinationID', full_name='MAPAPI.Response581681185.LINKData.DestinationID', index=4,
       number=5, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='LINKType', full_name='MAPAPI.Response17.LINKData.LINKType', index=5,
+      name='LINKType', full_name='MAPAPI.Response581681185.LINKData.LINKType', index=5,
       number=6, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Transition', full_name='MAPAPI.Response17.LINKData.Transition', index=6,
+      name='Transition', full_name='MAPAPI.Response581681185.LINKData.Transition', index=6,
       number=7, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Script', full_name='MAPAPI.Response17.LINKData.Script', index=7,
+      name='Script', full_name='MAPAPI.Response581681185.LINKData.Script', index=7,
       number=8, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -541,34 +618,34 @@ _LINKDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=426,
-  serialized_end=637,
+  serialized_start=1128,
+  serialized_end=1371,
 )
 
 
 _LINKPAIR = _descriptor.Descriptor(
   name='LinkPair',
-  full_name='MAPAPI.Response17.LinkPair',
+  full_name='MAPAPI.Response581681185.LinkPair',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Link1', full_name='MAPAPI.Response17.LinkPair.Link1', index=0,
+      name='Link1', full_name='MAPAPI.Response581681185.LinkPair.Link1', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Link2', full_name='MAPAPI.Response17.LinkPair.Link2', index=1,
+      name='Link2', full_name='MAPAPI.Response581681185.LinkPair.Link2', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Distance', full_name='MAPAPI.Response17.LinkPair.Distance', index=2,
+      name='Distance', full_name='MAPAPI.Response581681185.LinkPair.Distance', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -586,139 +663,164 @@ _LINKPAIR = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=639,
-  serialized_end=722,
+  serialized_start=1373,
+  serialized_end=1456,
+)
+
+
+_PREFIX_AGDFASBV104033503 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV104033503',
+  full_name='MAPAPI.Response581681185.PREFIX_AGDFASBV104033503',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV104033503_LINKTYPE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1458,
+  serialized_end=1574,
 )
 
 
 _MAPDUMP = _descriptor.Descriptor(
   name='MapDump',
-  full_name='MAPAPI.Response17.MapDump',
+  full_name='MAPAPI.Response581681185.MapDump',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='width', full_name='MAPAPI.Response17.MapDump.width', index=0,
+      name='width', full_name='MAPAPI.Response581681185.MapDump.width', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='height', full_name='MAPAPI.Response17.MapDump.height', index=1,
+      name='height', full_name='MAPAPI.Response581681185.MapDump.height', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='TileTypes', full_name='MAPAPI.Response17.MapDump.TileTypes', index=2,
+      name='TileTypes', full_name='MAPAPI.Response581681185.MapDump.TileTypes', index=2,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='TileHeights', full_name='MAPAPI.Response17.MapDump.TileHeights', index=3,
+      name='TileHeights', full_name='MAPAPI.Response581681185.MapDump.TileHeights', index=3,
       number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='WallData', full_name='MAPAPI.Response17.MapDump.WallData', index=4,
+      name='WallData', full_name='MAPAPI.Response581681185.MapDump.WallData', index=4,
       number=5, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='NPCs', full_name='MAPAPI.Response17.MapDump.NPCs', index=5,
+      name='NPCs', full_name='MAPAPI.Response581681185.MapDump.NPCs', index=5,
       number=6, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Objects', full_name='MAPAPI.Response17.MapDump.Objects', index=6,
+      name='Objects', full_name='MAPAPI.Response581681185.MapDump.Objects', index=6,
       number=7, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Name', full_name='MAPAPI.Response17.MapDump.Name', index=7,
+      name='Name', full_name='MAPAPI.Response581681185.MapDump.Name', index=7,
       number=9, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='TileTypes2', full_name='MAPAPI.Response17.MapDump.TileTypes2', index=8,
+      name='TileTypes2', full_name='MAPAPI.Response581681185.MapDump.TileTypes2', index=8,
       number=10, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Links', full_name='MAPAPI.Response17.MapDump.Links', index=9,
+      name='Links', full_name='MAPAPI.Response581681185.MapDump.Links', index=9,
       number=11, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Colliders', full_name='MAPAPI.Response17.MapDump.Colliders', index=10,
+      name='Colliders', full_name='MAPAPI.Response581681185.MapDump.Colliders', index=10,
       number=12, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='TileWater', full_name='MAPAPI.Response17.MapDump.TileWater', index=11,
+      name='TileWater', full_name='MAPAPI.Response581681185.MapDump.TileWater', index=11,
       number=13, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='TileZones', full_name='MAPAPI.Response17.MapDump.TileZones', index=12,
+      name='TileZones', full_name='MAPAPI.Response581681185.MapDump.TileZones', index=12,
       number=14, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Zones', full_name='MAPAPI.Response17.MapDump.Zones', index=13,
+      name='Zones', full_name='MAPAPI.Response581681185.MapDump.Zones', index=13,
       number=15, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Settings', full_name='MAPAPI.Response17.MapDump.Settings', index=14,
+      name='Settings', full_name='MAPAPI.Response581681185.MapDump.Settings', index=14,
       number=16, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Areas', full_name='MAPAPI.Response17.MapDump.Areas', index=15,
+      name='Areas', full_name='MAPAPI.Response581681185.MapDump.Areas', index=15,
       number=17, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Note', full_name='MAPAPI.Response17.MapDump.Note', index=16,
+      name='Note', full_name='MAPAPI.Response581681185.MapDump.Note', index=16,
       number=18, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='LinkList', full_name='MAPAPI.Response17.MapDump.LinkList', index=17,
+      name='LinkList', full_name='MAPAPI.Response581681185.MapDump.LinkList', index=17,
       number=19, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -736,76 +838,76 @@ _MAPDUMP = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=725,
-  serialized_end=1518,
+  serialized_start=1577,
+  serialized_end=2468,
 )
 
 
 _MAPOBJECTSTRUCT = _descriptor.Descriptor(
   name='MapObjectStruct',
-  full_name='MAPAPI.Response17.MapObjectStruct',
+  full_name='MAPAPI.Response581681185.MapObjectStruct',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='x', full_name='MAPAPI.Response17.MapObjectStruct.x', index=0,
+      name='x', full_name='MAPAPI.Response581681185.MapObjectStruct.x', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='y', full_name='MAPAPI.Response17.MapObjectStruct.y', index=1,
+      name='y', full_name='MAPAPI.Response581681185.MapObjectStruct.y', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='z', full_name='MAPAPI.Response17.MapObjectStruct.z', index=2,
+      name='z', full_name='MAPAPI.Response581681185.MapObjectStruct.z', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Name', full_name='MAPAPI.Response17.MapObjectStruct.Name', index=3,
+      name='Name', full_name='MAPAPI.Response581681185.MapObjectStruct.Name', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='ID', full_name='MAPAPI.Response17.MapObjectStruct.ID', index=4,
+      name='ID', full_name='MAPAPI.Response581681185.MapObjectStruct.ID', index=4,
       number=5, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='rx', full_name='MAPAPI.Response17.MapObjectStruct.rx', index=5,
+      name='rx', full_name='MAPAPI.Response581681185.MapObjectStruct.rx', index=5,
       number=6, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='ry', full_name='MAPAPI.Response17.MapObjectStruct.ry', index=6,
+      name='ry', full_name='MAPAPI.Response581681185.MapObjectStruct.ry', index=6,
       number=7, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='rz', full_name='MAPAPI.Response17.MapObjectStruct.rz', index=7,
+      name='rz', full_name='MAPAPI.Response581681185.MapObjectStruct.rz', index=7,
       number=8, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='tag', full_name='MAPAPI.Response17.MapObjectStruct.tag', index=8,
+      name='tag', full_name='MAPAPI.Response581681185.MapObjectStruct.tag', index=8,
       number=9, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -823,48 +925,48 @@ _MAPOBJECTSTRUCT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1521,
-  serialized_end=1675,
+  serialized_start=2471,
+  serialized_end=2625,
 )
 
 
 _NPCDATA = _descriptor.Descriptor(
   name='NPCData',
-  full_name='MAPAPI.Response17.NPCData',
+  full_name='MAPAPI.Response581681185.NPCData',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='x', full_name='MAPAPI.Response17.NPCData.x', index=0,
+      name='x', full_name='MAPAPI.Response581681185.NPCData.x', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='y', full_name='MAPAPI.Response17.NPCData.y', index=1,
+      name='y', full_name='MAPAPI.Response581681185.NPCData.y', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='z', full_name='MAPAPI.Response17.NPCData.z', index=2,
+      name='z', full_name='MAPAPI.Response581681185.NPCData.z', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='ID', full_name='MAPAPI.Response17.NPCData.ID', index=3,
+      name='ID', full_name='MAPAPI.Response581681185.NPCData.ID', index=3,
       number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Settings', full_name='MAPAPI.Response17.NPCData.Settings', index=4,
+      name='Settings', full_name='MAPAPI.Response581681185.NPCData.Settings', index=4,
       number=5, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -882,118 +984,118 @@ _NPCDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1678,
-  serialized_end=1807,
+  serialized_start=2628,
+  serialized_end=2764,
 )
 
 
 _NPCSETTINGSTRUCT = _descriptor.Descriptor(
   name='NPCSettingStruct',
-  full_name='MAPAPI.Response17.NPCSettingStruct',
+  full_name='MAPAPI.Response581681185.NPCSettingStruct',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='NPCName', full_name='MAPAPI.Response17.NPCSettingStruct.NPCName', index=0,
+      name='NPCName', full_name='MAPAPI.Response581681185.NPCSettingStruct.NPCName', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Facing', full_name='MAPAPI.Response17.NPCSettingStruct.Facing', index=1,
+      name='Facing', full_name='MAPAPI.Response581681185.NPCSettingStruct.Facing', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='SightAction', full_name='MAPAPI.Response17.NPCSettingStruct.SightAction', index=2,
+      name='SightAction', full_name='MAPAPI.Response581681185.NPCSettingStruct.SightAction', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='LOS', full_name='MAPAPI.Response17.NPCSettingStruct.LOS', index=3,
+      name='LOS', full_name='MAPAPI.Response581681185.NPCSettingStruct.LOS', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Path', full_name='MAPAPI.Response17.NPCSettingStruct.Path', index=4,
+      name='Path', full_name='MAPAPI.Response581681185.NPCSettingStruct.Path', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Enabled', full_name='MAPAPI.Response17.NPCSettingStruct.Enabled', index=5,
+      name='Enabled', full_name='MAPAPI.Response581681185.NPCSettingStruct.Enabled', index=5,
       number=6, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='WalkFast', full_name='MAPAPI.Response17.NPCSettingStruct.WalkFast', index=6,
+      name='WalkFast', full_name='MAPAPI.Response581681185.NPCSettingStruct.WalkFast', index=6,
       number=7, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='LookRandomly', full_name='MAPAPI.Response17.NPCSettingStruct.LookRandomly', index=7,
+      name='LookRandomly', full_name='MAPAPI.Response581681185.NPCSettingStruct.LookRandomly', index=7,
       number=8, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Sprite', full_name='MAPAPI.Response17.NPCSettingStruct.Sprite', index=8,
+      name='Sprite', full_name='MAPAPI.Response581681185.NPCSettingStruct.Sprite', index=8,
       number=9, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Tags', full_name='MAPAPI.Response17.NPCSettingStruct.Tags', index=9,
+      name='Tags', full_name='MAPAPI.Response581681185.NPCSettingStruct.Tags', index=9,
       number=10, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Script', full_name='MAPAPI.Response17.NPCSettingStruct.Script', index=10,
+      name='Script', full_name='MAPAPI.Response581681185.NPCSettingStruct.Script', index=10,
       number=11, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='NameColour', full_name='MAPAPI.Response17.NPCSettingStruct.NameColour', index=11,
+      name='NameColour', full_name='MAPAPI.Response581681185.NPCSettingStruct.NameColour', index=11,
       number=12, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='StartScript', full_name='MAPAPI.Response17.NPCSettingStruct.StartScript', index=12,
+      name='StartScript', full_name='MAPAPI.Response581681185.NPCSettingStruct.StartScript', index=12,
       number=13, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='SpottedSFX', full_name='MAPAPI.Response17.NPCSettingStruct.SpottedSFX', index=13,
+      name='SpottedSFX', full_name='MAPAPI.Response581681185.NPCSettingStruct.SpottedSFX', index=13,
       number=14, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='DontMerge', full_name='MAPAPI.Response17.NPCSettingStruct.DontMerge', index=14,
+      name='DontMerge', full_name='MAPAPI.Response581681185.NPCSettingStruct.DontMerge', index=14,
       number=15, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -1011,27 +1113,27 @@ _NPCSETTINGSTRUCT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1810,
-  serialized_end=2126,
+  serialized_start=2767,
+  serialized_end=3083,
 )
 
 
 _PROTOARRAY_HEIGHTTILESSTRUCT = _descriptor.Descriptor(
   name='ProtoArray_HeightTilesStruct',
-  full_name='MAPAPI.Response17.ProtoArray_HeightTilesStruct',
+  full_name='MAPAPI.Response581681185.ProtoArray_HeightTilesStruct',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Dimensions', full_name='MAPAPI.Response17.ProtoArray_HeightTilesStruct.Dimensions', index=0,
+      name='Dimensions', full_name='MAPAPI.Response581681185.ProtoArray_HeightTilesStruct.Dimensions', index=0,
       number=1, type=5, cpp_type=1, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Data', full_name='MAPAPI.Response17.ProtoArray_HeightTilesStruct.Data', index=1,
+      name='Data', full_name='MAPAPI.Response581681185.ProtoArray_HeightTilesStruct.Data', index=1,
       number=2, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -1049,27 +1151,27 @@ _PROTOARRAY_HEIGHTTILESSTRUCT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2128,
-  serialized_end=2230,
+  serialized_start=3085,
+  serialized_end=3194,
 )
 
 
 _PROTOARRAY_INT32 = _descriptor.Descriptor(
   name='ProtoArray_Int32',
-  full_name='MAPAPI.Response17.ProtoArray_Int32',
+  full_name='MAPAPI.Response581681185.ProtoArray_Int32',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Dimensions', full_name='MAPAPI.Response17.ProtoArray_Int32.Dimensions', index=0,
+      name='Dimensions', full_name='MAPAPI.Response581681185.ProtoArray_Int32.Dimensions', index=0,
       number=1, type=5, cpp_type=1, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Data', full_name='MAPAPI.Response17.ProtoArray_Int32.Data', index=1,
+      name='Data', full_name='MAPAPI.Response581681185.ProtoArray_Int32.Data', index=1,
       number=2, type=5, cpp_type=1, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -1087,118 +1189,143 @@ _PROTOARRAY_INT32 = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2232,
-  serialized_end=2284,
+  serialized_start=3196,
+  serialized_end=3248,
+)
+
+
+_PREFIX_AGDFASBV1801989190 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1801989190',
+  full_name='MAPAPI.Response581681185.PREFIX_AGDFASBV1801989190',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1801989190_RARITY,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=3250,
+  serialized_end=3360,
 )
 
 
 _SETTINGS = _descriptor.Descriptor(
   name='Settings',
-  full_name='MAPAPI.Response17.Settings',
+  full_name='MAPAPI.Response581681185.Settings',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='MapName', full_name='MAPAPI.Response17.Settings.MapName', index=0,
+      name='MapName', full_name='MAPAPI.Response581681185.Settings.MapName', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='LightColour_String', full_name='MAPAPI.Response17.Settings.LightColour_String', index=1,
+      name='LightColour_String', full_name='MAPAPI.Response581681185.Settings.LightColour_String', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Weather', full_name='MAPAPI.Response17.Settings.Weather', index=2,
+      name='Weather', full_name='MAPAPI.Response581681185.Settings.Weather', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Song', full_name='MAPAPI.Response17.Settings.Song', index=3,
+      name='Song', full_name='MAPAPI.Response581681185.Settings.Song', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Indoors', full_name='MAPAPI.Response17.Settings.Indoors', index=4,
+      name='Indoors', full_name='MAPAPI.Response581681185.Settings.Indoors', index=4,
       number=5, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Dark', full_name='MAPAPI.Response17.Settings.Dark', index=5,
+      name='Dark', full_name='MAPAPI.Response581681185.Settings.Dark', index=5,
       number=6, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Underwater', full_name='MAPAPI.Response17.Settings.Underwater', index=6,
+      name='Underwater', full_name='MAPAPI.Response581681185.Settings.Underwater', index=6,
       number=7, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanMount', full_name='MAPAPI.Response17.Settings.CanMount', index=7,
+      name='CanMount', full_name='MAPAPI.Response581681185.Settings.CanMount', index=7,
       number=8, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanEscapeRope', full_name='MAPAPI.Response17.Settings.CanEscapeRope', index=8,
+      name='CanEscapeRope', full_name='MAPAPI.Response581681185.Settings.CanEscapeRope', index=8,
       number=9, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Instanced', full_name='MAPAPI.Response17.Settings.Instanced', index=9,
+      name='Instanced', full_name='MAPAPI.Response581681185.Settings.Instanced', index=9,
       number=10, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Cave', full_name='MAPAPI.Response17.Settings.Cave', index=10,
+      name='Cave', full_name='MAPAPI.Response581681185.Settings.Cave', index=10,
       number=11, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Region', full_name='MAPAPI.Response17.Settings.Region', index=11,
+      name='Region', full_name='MAPAPI.Response581681185.Settings.Region', index=11,
       number=12, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='WhiteFog', full_name='MAPAPI.Response17.Settings.WhiteFog', index=12,
+      name='WhiteFog', full_name='MAPAPI.Response581681185.Settings.WhiteFog', index=12,
       number=13, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='EncounterRate', full_name='MAPAPI.Response17.Settings.EncounterRate', index=13,
+      name='EncounterRate', full_name='MAPAPI.Response581681185.Settings.EncounterRate', index=13,
       number=14, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CantFlyTeleport', full_name='MAPAPI.Response17.Settings.CantFlyTeleport', index=14,
+      name='CantFlyTeleport', full_name='MAPAPI.Response581681185.Settings.CantFlyTeleport', index=14,
       number=15, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -1216,27 +1343,27 @@ _SETTINGS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2287,
-  serialized_end=2686,
+  serialized_start=3363,
+  serialized_end=3794,
 )
 
 
 _ZONE = _descriptor.Descriptor(
   name='Zone',
-  full_name='MAPAPI.Response17.Zone',
+  full_name='MAPAPI.Response581681185.Zone',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Pokemon', full_name='MAPAPI.Response17.Zone.Pokemon', index=0,
+      name='Pokemon', full_name='MAPAPI.Response581681185.Zone.Pokemon', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='ID', full_name='MAPAPI.Response17.Zone.ID', index=1,
+      name='ID', full_name='MAPAPI.Response581681185.Zone.ID', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -1254,27 +1381,27 @@ _ZONE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2688,
-  serialized_end=2758,
+  serialized_start=3796,
+  serialized_end=3873,
 )
 
 
 _ZONEITEM = _descriptor.Descriptor(
   name='ZoneItem',
-  full_name='MAPAPI.Response17.ZoneItem',
+  full_name='MAPAPI.Response581681185.ZoneItem',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='ItemID', full_name='MAPAPI.Response17.ZoneItem.ItemID', index=0,
+      name='ItemID', full_name='MAPAPI.Response581681185.ZoneItem.ItemID', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='ItemRarity', full_name='MAPAPI.Response17.ZoneItem.ItemRarity', index=1,
+      name='ItemRarity', full_name='MAPAPI.Response581681185.ZoneItem.ItemRarity', index=1,
       number=2, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -1292,97 +1419,97 @@ _ZONEITEM = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2760,
-  serialized_end=2844,
+  serialized_start=3875,
+  serialized_end=3992,
 )
 
 
 _ZONEPOKEMON = _descriptor.Descriptor(
   name='ZonePokemon',
-  full_name='MAPAPI.Response17.ZonePokemon',
+  full_name='MAPAPI.Response581681185.ZonePokemon',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='PokemonID', full_name='MAPAPI.Response17.ZonePokemon.PokemonID', index=0,
+      name='PokemonID', full_name='MAPAPI.Response581681185.ZonePokemon.PokemonID', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='AverageLevel', full_name='MAPAPI.Response17.ZonePokemon.AverageLevel', index=1,
+      name='AverageLevel', full_name='MAPAPI.Response581681185.ZonePokemon.AverageLevel', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='LevelVariance', full_name='MAPAPI.Response17.ZonePokemon.LevelVariance', index=2,
+      name='LevelVariance', full_name='MAPAPI.Response581681185.ZonePokemon.LevelVariance', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='EncounterTime', full_name='MAPAPI.Response17.ZonePokemon.EncounterTime', index=3,
+      name='EncounterTime', full_name='MAPAPI.Response581681185.ZonePokemon.EncounterTime', index=3,
       number=4, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Rarity', full_name='MAPAPI.Response17.ZonePokemon.Rarity', index=4,
+      name='Rarity', full_name='MAPAPI.Response581681185.ZonePokemon.Rarity', index=4,
       number=5, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Items', full_name='MAPAPI.Response17.ZonePokemon.Items', index=5,
+      name='Items', full_name='MAPAPI.Response581681185.ZonePokemon.Items', index=5,
       number=6, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Fishing', full_name='MAPAPI.Response17.ZonePokemon.Fishing', index=6,
+      name='Fishing', full_name='MAPAPI.Response581681185.ZonePokemon.Fishing', index=6,
       number=7, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Script', full_name='MAPAPI.Response17.ZonePokemon.Script', index=7,
+      name='Script', full_name='MAPAPI.Response581681185.ZonePokemon.Script', index=7,
       number=8, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Party', full_name='MAPAPI.Response17.ZonePokemon.Party', index=8,
+      name='Party', full_name='MAPAPI.Response581681185.ZonePokemon.Party', index=8,
       number=9, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='SpecialEncounter', full_name='MAPAPI.Response17.ZonePokemon.SpecialEncounter', index=9,
+      name='SpecialEncounter', full_name='MAPAPI.Response581681185.ZonePokemon.SpecialEncounter', index=9,
       number=10, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='BackgroundID', full_name='MAPAPI.Response17.ZonePokemon.BackgroundID', index=10,
+      name='BackgroundID', full_name='MAPAPI.Response581681185.ZonePokemon.BackgroundID', index=10,
       number=11, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Disabled', full_name='MAPAPI.Response17.ZonePokemon.Disabled', index=11,
+      name='Disabled', full_name='MAPAPI.Response581681185.ZonePokemon.Disabled', index=11,
       number=12, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -1400,34 +1527,34 @@ _ZONEPOKEMON = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2847,
-  serialized_end=3309,
+  serialized_start=3995,
+  serialized_end=4596,
 )
 
 
 _WALLTYPES = _descriptor.Descriptor(
   name='wallTypes',
-  full_name='MAPAPI.Response17.wallTypes',
+  full_name='MAPAPI.Response581681185.wallTypes',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Side0', full_name='MAPAPI.Response17.wallTypes.Side0', index=0,
+      name='Side0', full_name='MAPAPI.Response581681185.wallTypes.Side0', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Side1', full_name='MAPAPI.Response17.wallTypes.Side1', index=1,
+      name='Side1', full_name='MAPAPI.Response581681185.wallTypes.Side1', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Side2', full_name='MAPAPI.Response17.wallTypes.Side2', index=2,
+      name='Side2', full_name='MAPAPI.Response581681185.wallTypes.Side2', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -1445,18 +1572,24 @@ _WALLTYPES = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3311,
-  serialized_end=3376,
+  serialized_start=4598,
+  serialized_end=4663,
 )
 
-_AREA.fields_by_name['BattleBG'].enum_type = _BACKGROUNDTYPE
-_AREA.fields_by_name['AreaEvolution'].enum_type = _EVOLUTIONAREA
+_AREA.fields_by_name['BattleBG'].enum_type = _PREFIX_AGDFASBV538288952_BACKGROUNDTYPE
+_AREA.fields_by_name['AreaEvolution'].enum_type = _PREFIX_AGDFASBV1205436378_EVOLUTIONAREA
+_PREFIX_AGDFASBV538288952_BACKGROUNDTYPE.containing_type = _PREFIX_AGDFASBV538288952
+_PREFIX_AGDFASBV514818703_ENCOUNTERRATES.containing_type = _PREFIX_AGDFASBV514818703
+_PREFIX_AGDFASBV103485569_ENCOUNTERTIMES.containing_type = _PREFIX_AGDFASBV103485569
+_PREFIX_AGDFASBV1205436378_EVOLUTIONAREA.containing_type = _PREFIX_AGDFASBV1205436378
+_PREFIX_AGDFASBV1255547470_FISHINGTYPE.containing_type = _PREFIX_AGDFASBV1255547470
 _HEIGHTTILESSTRUCT.fields_by_name['Block'].message_type = _WALLTYPES
-_LINKDATA.fields_by_name['ID'].message_type = bcl__pb2._GUID
-_LINKDATA.fields_by_name['DestinationID'].message_type = bcl__pb2._GUID
-_LINKDATA.fields_by_name['LINKType'].enum_type = _LINKTYPE
-_LINKPAIR.fields_by_name['Link1'].message_type = bcl__pb2._GUID
-_LINKPAIR.fields_by_name['Link2'].message_type = bcl__pb2._GUID
+_LINKDATA.fields_by_name['ID'].message_type = protobuf__net_dot_bcl__pb2._GUID
+_LINKDATA.fields_by_name['DestinationID'].message_type = protobuf__net_dot_bcl__pb2._GUID
+_LINKDATA.fields_by_name['LINKType'].enum_type = _PREFIX_AGDFASBV104033503_LINKTYPE
+_LINKPAIR.fields_by_name['Link1'].message_type = protobuf__net_dot_bcl__pb2._GUID
+_LINKPAIR.fields_by_name['Link2'].message_type = protobuf__net_dot_bcl__pb2._GUID
+_PREFIX_AGDFASBV104033503_LINKTYPE.containing_type = _PREFIX_AGDFASBV104033503
 _MAPDUMP.fields_by_name['TileTypes'].message_type = _PROTOARRAY_INT32
 _MAPDUMP.fields_by_name['TileHeights'].message_type = _PROTOARRAY_INT32
 _MAPDUMP.fields_by_name['WallData'].message_type = _PROTOARRAY_HEIGHTTILESSTRUCT
@@ -1471,143 +1604,193 @@ _MAPDUMP.fields_by_name['Zones'].message_type = _ZONE
 _MAPDUMP.fields_by_name['Settings'].message_type = _SETTINGS
 _MAPDUMP.fields_by_name['Areas'].message_type = _AREA
 _MAPDUMP.fields_by_name['LinkList'].message_type = _LINKPAIR
-_MAPOBJECTSTRUCT.fields_by_name['ID'].message_type = bcl__pb2._GUID
-_NPCDATA.fields_by_name['ID'].message_type = bcl__pb2._GUID
+_MAPOBJECTSTRUCT.fields_by_name['ID'].message_type = protobuf__net_dot_bcl__pb2._GUID
+_NPCDATA.fields_by_name['ID'].message_type = protobuf__net_dot_bcl__pb2._GUID
 _NPCDATA.fields_by_name['Settings'].message_type = _NPCSETTINGSTRUCT
 _PROTOARRAY_HEIGHTTILESSTRUCT.fields_by_name['Data'].message_type = _HEIGHTTILESSTRUCT
-_SETTINGS.fields_by_name['EncounterRate'].enum_type = _ENCOUNTERRATES
+_PREFIX_AGDFASBV1801989190_RARITY.containing_type = _PREFIX_AGDFASBV1801989190
+_SETTINGS.fields_by_name['EncounterRate'].enum_type = _PREFIX_AGDFASBV514818703_ENCOUNTERRATES
 _ZONE.fields_by_name['Pokemon'].message_type = _ZONEPOKEMON
-_ZONEITEM.fields_by_name['ItemRarity'].enum_type = _RARITY
-_ZONEPOKEMON.fields_by_name['EncounterTime'].enum_type = _ENCOUNTERTIMES
-_ZONEPOKEMON.fields_by_name['Rarity'].enum_type = _RARITY
+_ZONEITEM.fields_by_name['ItemRarity'].enum_type = _PREFIX_AGDFASBV1801989190_RARITY
+_ZONEPOKEMON.fields_by_name['EncounterTime'].enum_type = _PREFIX_AGDFASBV103485569_ENCOUNTERTIMES
+_ZONEPOKEMON.fields_by_name['Rarity'].enum_type = _PREFIX_AGDFASBV1801989190_RARITY
 _ZONEPOKEMON.fields_by_name['Items'].message_type = _ZONEITEM
-_ZONEPOKEMON.fields_by_name['Fishing'].enum_type = _FISHINGTYPE
-_ZONEPOKEMON.fields_by_name['BackgroundID'].enum_type = _BACKGROUNDTYPE
+_ZONEPOKEMON.fields_by_name['Fishing'].enum_type = _PREFIX_AGDFASBV1255547470_FISHINGTYPE
+_ZONEPOKEMON.fields_by_name['BackgroundID'].enum_type = _PREFIX_AGDFASBV538288952_BACKGROUNDTYPE
 DESCRIPTOR.message_types_by_name['Area'] = _AREA
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV538288952'] = _PREFIX_AGDFASBV538288952
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV514818703'] = _PREFIX_AGDFASBV514818703
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV103485569'] = _PREFIX_AGDFASBV103485569
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1205436378'] = _PREFIX_AGDFASBV1205436378
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1255547470'] = _PREFIX_AGDFASBV1255547470
 DESCRIPTOR.message_types_by_name['HeightTilesStruct'] = _HEIGHTTILESSTRUCT
 DESCRIPTOR.message_types_by_name['LINKData'] = _LINKDATA
 DESCRIPTOR.message_types_by_name['LinkPair'] = _LINKPAIR
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV104033503'] = _PREFIX_AGDFASBV104033503
 DESCRIPTOR.message_types_by_name['MapDump'] = _MAPDUMP
 DESCRIPTOR.message_types_by_name['MapObjectStruct'] = _MAPOBJECTSTRUCT
 DESCRIPTOR.message_types_by_name['NPCData'] = _NPCDATA
 DESCRIPTOR.message_types_by_name['NPCSettingStruct'] = _NPCSETTINGSTRUCT
 DESCRIPTOR.message_types_by_name['ProtoArray_HeightTilesStruct'] = _PROTOARRAY_HEIGHTTILESSTRUCT
 DESCRIPTOR.message_types_by_name['ProtoArray_Int32'] = _PROTOARRAY_INT32
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1801989190'] = _PREFIX_AGDFASBV1801989190
 DESCRIPTOR.message_types_by_name['Settings'] = _SETTINGS
 DESCRIPTOR.message_types_by_name['Zone'] = _ZONE
 DESCRIPTOR.message_types_by_name['ZoneItem'] = _ZONEITEM
 DESCRIPTOR.message_types_by_name['ZonePokemon'] = _ZONEPOKEMON
 DESCRIPTOR.message_types_by_name['wallTypes'] = _WALLTYPES
-DESCRIPTOR.enum_types_by_name['BackgroundType'] = _BACKGROUNDTYPE
-DESCRIPTOR.enum_types_by_name['EncounterRates'] = _ENCOUNTERRATES
-DESCRIPTOR.enum_types_by_name['EncounterTimes'] = _ENCOUNTERTIMES
-DESCRIPTOR.enum_types_by_name['EvolutionArea'] = _EVOLUTIONAREA
-DESCRIPTOR.enum_types_by_name['FishingType'] = _FISHINGTYPE
-DESCRIPTOR.enum_types_by_name['LinkType'] = _LINKTYPE
-DESCRIPTOR.enum_types_by_name['Rarity'] = _RARITY
 
 Area = _reflection.GeneratedProtocolMessageType('Area', (_message.Message,), dict(
   DESCRIPTOR = _AREA,
   __module__ = 'MapDump_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response17.Area)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response581681185.Area)
   ))
 _sym_db.RegisterMessage(Area)
+
+PREFIX_AGDFASBV538288952 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV538288952', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV538288952,
+  __module__ = 'MapDump_pb2'
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response581681185.PREFIX_AGDFASBV538288952)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV538288952)
+
+PREFIX_AGDFASBV514818703 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV514818703', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV514818703,
+  __module__ = 'MapDump_pb2'
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response581681185.PREFIX_AGDFASBV514818703)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV514818703)
+
+PREFIX_AGDFASBV103485569 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV103485569', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV103485569,
+  __module__ = 'MapDump_pb2'
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response581681185.PREFIX_AGDFASBV103485569)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV103485569)
+
+PREFIX_AGDFASBV1205436378 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1205436378', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1205436378,
+  __module__ = 'MapDump_pb2'
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response581681185.PREFIX_AGDFASBV1205436378)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1205436378)
+
+PREFIX_AGDFASBV1255547470 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1255547470', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1255547470,
+  __module__ = 'MapDump_pb2'
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response581681185.PREFIX_AGDFASBV1255547470)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1255547470)
 
 HeightTilesStruct = _reflection.GeneratedProtocolMessageType('HeightTilesStruct', (_message.Message,), dict(
   DESCRIPTOR = _HEIGHTTILESSTRUCT,
   __module__ = 'MapDump_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response17.HeightTilesStruct)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response581681185.HeightTilesStruct)
   ))
 _sym_db.RegisterMessage(HeightTilesStruct)
 
 LINKData = _reflection.GeneratedProtocolMessageType('LINKData', (_message.Message,), dict(
   DESCRIPTOR = _LINKDATA,
   __module__ = 'MapDump_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response17.LINKData)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response581681185.LINKData)
   ))
 _sym_db.RegisterMessage(LINKData)
 
 LinkPair = _reflection.GeneratedProtocolMessageType('LinkPair', (_message.Message,), dict(
   DESCRIPTOR = _LINKPAIR,
   __module__ = 'MapDump_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response17.LinkPair)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response581681185.LinkPair)
   ))
 _sym_db.RegisterMessage(LinkPair)
+
+PREFIX_AGDFASBV104033503 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV104033503', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV104033503,
+  __module__ = 'MapDump_pb2'
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response581681185.PREFIX_AGDFASBV104033503)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV104033503)
 
 MapDump = _reflection.GeneratedProtocolMessageType('MapDump', (_message.Message,), dict(
   DESCRIPTOR = _MAPDUMP,
   __module__ = 'MapDump_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response17.MapDump)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response581681185.MapDump)
   ))
 _sym_db.RegisterMessage(MapDump)
 
 MapObjectStruct = _reflection.GeneratedProtocolMessageType('MapObjectStruct', (_message.Message,), dict(
   DESCRIPTOR = _MAPOBJECTSTRUCT,
   __module__ = 'MapDump_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response17.MapObjectStruct)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response581681185.MapObjectStruct)
   ))
 _sym_db.RegisterMessage(MapObjectStruct)
 
 NPCData = _reflection.GeneratedProtocolMessageType('NPCData', (_message.Message,), dict(
   DESCRIPTOR = _NPCDATA,
   __module__ = 'MapDump_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response17.NPCData)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response581681185.NPCData)
   ))
 _sym_db.RegisterMessage(NPCData)
 
 NPCSettingStruct = _reflection.GeneratedProtocolMessageType('NPCSettingStruct', (_message.Message,), dict(
   DESCRIPTOR = _NPCSETTINGSTRUCT,
   __module__ = 'MapDump_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response17.NPCSettingStruct)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response581681185.NPCSettingStruct)
   ))
 _sym_db.RegisterMessage(NPCSettingStruct)
 
 ProtoArray_HeightTilesStruct = _reflection.GeneratedProtocolMessageType('ProtoArray_HeightTilesStruct', (_message.Message,), dict(
   DESCRIPTOR = _PROTOARRAY_HEIGHTTILESSTRUCT,
   __module__ = 'MapDump_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response17.ProtoArray_HeightTilesStruct)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response581681185.ProtoArray_HeightTilesStruct)
   ))
 _sym_db.RegisterMessage(ProtoArray_HeightTilesStruct)
 
 ProtoArray_Int32 = _reflection.GeneratedProtocolMessageType('ProtoArray_Int32', (_message.Message,), dict(
   DESCRIPTOR = _PROTOARRAY_INT32,
   __module__ = 'MapDump_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response17.ProtoArray_Int32)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response581681185.ProtoArray_Int32)
   ))
 _sym_db.RegisterMessage(ProtoArray_Int32)
+
+PREFIX_AGDFASBV1801989190 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1801989190', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1801989190,
+  __module__ = 'MapDump_pb2'
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response581681185.PREFIX_AGDFASBV1801989190)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1801989190)
 
 Settings = _reflection.GeneratedProtocolMessageType('Settings', (_message.Message,), dict(
   DESCRIPTOR = _SETTINGS,
   __module__ = 'MapDump_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response17.Settings)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response581681185.Settings)
   ))
 _sym_db.RegisterMessage(Settings)
 
 Zone = _reflection.GeneratedProtocolMessageType('Zone', (_message.Message,), dict(
   DESCRIPTOR = _ZONE,
   __module__ = 'MapDump_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response17.Zone)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response581681185.Zone)
   ))
 _sym_db.RegisterMessage(Zone)
 
 ZoneItem = _reflection.GeneratedProtocolMessageType('ZoneItem', (_message.Message,), dict(
   DESCRIPTOR = _ZONEITEM,
   __module__ = 'MapDump_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response17.ZoneItem)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response581681185.ZoneItem)
   ))
 _sym_db.RegisterMessage(ZoneItem)
 
 ZonePokemon = _reflection.GeneratedProtocolMessageType('ZonePokemon', (_message.Message,), dict(
   DESCRIPTOR = _ZONEPOKEMON,
   __module__ = 'MapDump_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response17.ZonePokemon)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response581681185.ZonePokemon)
   ))
 _sym_db.RegisterMessage(ZonePokemon)
 
 wallTypes = _reflection.GeneratedProtocolMessageType('wallTypes', (_message.Message,), dict(
   DESCRIPTOR = _WALLTYPES,
   __module__ = 'MapDump_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response17.wallTypes)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response581681185.wallTypes)
   ))
 _sym_db.RegisterMessage(wallTypes)
 

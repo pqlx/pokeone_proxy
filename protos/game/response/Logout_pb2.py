@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Logout.proto',
-  package='PSXAPI.Response48',
+  package='PSXAPI.Response1220383183',
   syntax='proto2',
-  serialized_pb=_b('\n\x0cLogout.proto\x12\x11PSXAPI.Response48\"\x08\n\x06Logout')
+  serialized_pb=_b('\n\x0cLogout.proto\x12\x19PSXAPI.Response1220383183\"\x08\n\x06Logout')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,7 +28,7 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _LOGOUT = _descriptor.Descriptor(
   name='Logout',
-  full_name='PSXAPI.Response48.Logout',
+  full_name='PSXAPI.Response1220383183.Logout',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
@@ -45,8 +45,8 @@ _LOGOUT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=35,
-  serialized_end=43,
+  serialized_start=43,
+  serialized_end=51,
 )
 
 DESCRIPTOR.message_types_by_name['Logout'] = _LOGOUT
@@ -54,7 +54,7 @@ DESCRIPTOR.message_types_by_name['Logout'] = _LOGOUT
 Logout = _reflection.GeneratedProtocolMessageType('Logout', (_message.Message,), dict(
   DESCRIPTOR = _LOGOUT,
   __module__ = 'Logout_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response48.Logout)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1220383183.Logout)
   ))
 _sym_db.RegisterMessage(Logout)
 

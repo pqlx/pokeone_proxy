@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='LobbySettings.proto',
-  package='PSXAPI.Request37',
+  package='PSXAPI.Request657134790',
   syntax='proto2',
-  serialized_pb=_b('\n\x13LobbySettings.proto\x12\x10PSXAPI.Request37\"[\n\rLobbySettings\x12\x15\n\x06Ranked\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x14\n\x05Items\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0e\x41\x64justPokemons\x18\x03 \x01(\x08:\x05\x66\x61lse')
+  serialized_pb=_b('\n\x13LobbySettings.proto\x12\x17PSXAPI.Request657134790\"[\n\rLobbySettings\x12\x15\n\x06Ranked\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x14\n\x05Items\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0e\x41\x64justPokemons\x18\x03 \x01(\x08:\x05\x66\x61lse')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,27 +28,27 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _LOBBYSETTINGS = _descriptor.Descriptor(
   name='LobbySettings',
-  full_name='PSXAPI.Request37.LobbySettings',
+  full_name='PSXAPI.Request657134790.LobbySettings',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Ranked', full_name='PSXAPI.Request37.LobbySettings.Ranked', index=0,
+      name='Ranked', full_name='PSXAPI.Request657134790.LobbySettings.Ranked', index=0,
       number=1, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Items', full_name='PSXAPI.Request37.LobbySettings.Items', index=1,
+      name='Items', full_name='PSXAPI.Request657134790.LobbySettings.Items', index=1,
       number=2, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='AdjustPokemons', full_name='PSXAPI.Request37.LobbySettings.AdjustPokemons', index=2,
+      name='AdjustPokemons', full_name='PSXAPI.Request657134790.LobbySettings.AdjustPokemons', index=2,
       number=3, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -66,8 +66,8 @@ _LOBBYSETTINGS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=41,
-  serialized_end=132,
+  serialized_start=48,
+  serialized_end=139,
 )
 
 DESCRIPTOR.message_types_by_name['LobbySettings'] = _LOBBYSETTINGS
@@ -75,7 +75,7 @@ DESCRIPTOR.message_types_by_name['LobbySettings'] = _LOBBYSETTINGS
 LobbySettings = _reflection.GeneratedProtocolMessageType('LobbySettings', (_message.Message,), dict(
   DESCRIPTOR = _LOBBYSETTINGS,
   __module__ = 'LobbySettings_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request37.LobbySettings)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request657134790.LobbySettings)
   ))
 _sym_db.RegisterMessage(LobbySettings)
 

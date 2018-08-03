@@ -13,16 +13,16 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
-import bcl_pb2 as bcl__pb2
+from protobuf_net import bcl_pb2 as protobuf__net_dot_bcl__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Transfer.proto',
-  package='PSXAPI.Request69',
+  package='PSXAPI.Request589115354',
   syntax='proto2',
-  serialized_pb=_b('\n\x0eTransfer.proto\x12\x10PSXAPI.Request69\x1a\tbcl.proto\"6\n\x08Transfer\x12\x1a\n\x07Pokemon\x18\x01 \x01(\x0b\x32\t.bcl.Guid\x12\x0e\n\x03\x42ox\x18\x02 \x01(\x05:\x01\x30')
+  serialized_pb=_b('\n\x0eTransfer.proto\x12\x17PSXAPI.Request589115354\x1a\x16protobuf-net/bcl.proto\"6\n\x08Transfer\x12\x1a\n\x07Pokemon\x18\x01 \x01(\x0b\x32\t.bcl.Guid\x12\x0e\n\x03\x42ox\x18\x02 \x01(\x05:\x01\x30')
   ,
-  dependencies=[bcl__pb2.DESCRIPTOR,])
+  dependencies=[protobuf__net_dot_bcl__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
@@ -30,20 +30,20 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _TRANSFER = _descriptor.Descriptor(
   name='Transfer',
-  full_name='PSXAPI.Request69.Transfer',
+  full_name='PSXAPI.Request589115354.Transfer',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Pokemon', full_name='PSXAPI.Request69.Transfer.Pokemon', index=0,
+      name='Pokemon', full_name='PSXAPI.Request589115354.Transfer.Pokemon', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Box', full_name='PSXAPI.Request69.Transfer.Box', index=1,
+      name='Box', full_name='PSXAPI.Request589115354.Transfer.Box', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -61,17 +61,17 @@ _TRANSFER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=47,
-  serialized_end=101,
+  serialized_start=67,
+  serialized_end=121,
 )
 
-_TRANSFER.fields_by_name['Pokemon'].message_type = bcl__pb2._GUID
+_TRANSFER.fields_by_name['Pokemon'].message_type = protobuf__net_dot_bcl__pb2._GUID
 DESCRIPTOR.message_types_by_name['Transfer'] = _TRANSFER
 
 Transfer = _reflection.GeneratedProtocolMessageType('Transfer', (_message.Message,), dict(
   DESCRIPTOR = _TRANSFER,
   __module__ = 'Transfer_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request69.Transfer)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request589115354.Transfer)
   ))
 _sym_db.RegisterMessage(Transfer)
 

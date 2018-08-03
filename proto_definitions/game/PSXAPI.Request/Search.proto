@@ -1,9 +1,9 @@
 syntax = "proto2";
-package PSXAPI.Request57;
-import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+package PSXAPI.Request1846209937;
+import "protobuf-net/bcl.proto"; // schema for protobuf-net's handling of core .NET types
 
 message Search {
-   optional .bcl.Guid SearchID = 1 ;
+   optional .bcl.Guid SearchID = 1;
    optional string Pattern = 2;
    optional int32 MaxResults = 3 [default = 0];
    optional int32 Box = 4 [default = 0];

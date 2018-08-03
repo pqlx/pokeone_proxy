@@ -1,6 +1,6 @@
 syntax = "proto2";
-package PSXAPI.Request12;
-import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+package PSXAPI.Request1138133402;
+import "protobuf-net/bcl.proto"; // schema for protobuf-net's handling of core .NET types
 
 message ChatMessage {
    required string Message = 1;

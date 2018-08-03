@@ -1,6 +1,6 @@
 syntax = "proto2";
-package MAPAPI.Response17;
-import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+package MAPAPI.Response581681185;
+import "protobuf-net/bcl.proto"; // schema for protobuf-net's handling of core .NET types
 
 message Area {
    optional int32 StartX = 1 [default = 0];
@@ -12,10 +12,11 @@ message Area {
    optional string Song = 7;
    optional bool CanDiscover = 8 [default = false];
    optional bool CanReturnTo = 9 [default = false];
-   optional BackgroundType BattleBG = 10 [default = Grass];
-   optional EvolutionArea AreaEvolution = 11 [default = __None0];
+   optional PREFIX_AGDFASBV538288952.BackgroundType BattleBG = 10 [default = Grass];
+   optional PREFIX_AGDFASBV1205436378.EvolutionArea AreaEvolution = 11 [default = NoneValue];
 }
-enum BackgroundType {
+message PREFIX_AGDFASBV538288952 {
+    enum BackgroundType {
    Grass = 0;
    Water = 1;
    Cave = 2;
@@ -27,34 +28,43 @@ enum BackgroundType {
    City = 8;
    Desert = 9;
    Ocean = 10;
-}
-enum EncounterRates {
+} //PREFIX_AGDFASBV
+};
+message PREFIX_AGDFASBV514818703 {
+    enum EncounterRates {
    Normal = 0;
    Low = 1;
    VeryLow = 2;
-}
-enum EncounterTimes {
+} //PREFIX_AGDFASBV
+};
+message PREFIX_AGDFASBV103485569 {
+    enum EncounterTimes {
    Day = 0;
    Night = 1;
    Morning = 2;
    Evening = 3;
    Always = 4;
-}
-enum EvolutionArea {
-   __None0 = 0;
+} //PREFIX_AGDFASBV
+};
+message PREFIX_AGDFASBV1205436378 {
+    enum EvolutionArea {
+   NoneValue = 0;
    MagneticField = 1;
    MountLanakila = 2;
    MossRock = 3;
    IceRock = 4;
    Sandstorm = 5;
    Hail = 6;
-}
-enum FishingType {
-   __None1 = 0;
+} //PREFIX_AGDFASBV
+};
+message PREFIX_AGDFASBV1255547470 {
+    enum FishingType {
+   NoneValue = 0;
    OldRod = 1;
    GoodRod = 2;
    SuperRod = 3;
-}
+} //PREFIX_AGDFASBV
+};
 message HeightTilesStruct {
    repeated wallTypes Block = 1;
 }
@@ -62,23 +72,25 @@ message LINKData {
    optional int32 x = 1 [default = 0];
    optional int32 y = 2 [default = 0];
    optional int32 z = 3 [default = 0];
-   optional .bcl.Guid ID = 4 ;
-   optional .bcl.Guid DestinationID = 5 ;
-   optional LinkType LINKType = 6 [default = SendAndRecieve];
+   optional .bcl.Guid ID = 4;
+   optional .bcl.Guid DestinationID = 5;
+   optional PREFIX_AGDFASBV104033503.LinkType LINKType = 6 [default = SendAndRecieve];
    optional int32 Transition = 7 [default = 0];
    optional string Script = 8;
 }
 message LinkPair {
-   optional .bcl.Guid Link1 = 1 ;
-   optional .bcl.Guid Link2 = 2 ;
+   optional .bcl.Guid Link1 = 1;
+   optional .bcl.Guid Link2 = 2;
    optional int32 Distance = 3 [default = 0];
 }
-enum LinkType {
+message PREFIX_AGDFASBV104033503 {
+    enum LinkType {
    SendAndRecieve = 0;
    TileScriptWait = 1;
    TileScriptImmediate = 2;
    Default = 3;
-}
+} //PREFIX_AGDFASBV
+};
 message MapDump {
    optional int32 width = 1 [default = 0];
    optional int32 height = 2 [default = 0];
@@ -104,7 +116,7 @@ message MapObjectStruct {
    optional int32 y = 2 [default = 0];
    optional int32 z = 3 [default = 0];
    optional string Name = 4;
-   optional .bcl.Guid ID = 5 ;
+   optional .bcl.Guid ID = 5;
    optional int32 rx = 6 [default = 0];
    optional int32 ry = 7 [default = 0];
    optional int32 rz = 8 [default = 0];
@@ -114,7 +126,7 @@ message NPCData {
    optional int32 x = 1 [default = 0];
    optional int32 y = 2 [default = 0];
    optional int32 z = 3 [default = 0];
-   optional .bcl.Guid ID = 4 ;
+   optional .bcl.Guid ID = 4;
    optional NPCSettingStruct Settings = 5;
 }
 message NPCSettingStruct {
@@ -142,14 +154,16 @@ message ProtoArray_Int32 {
    repeated int32 Dimensions = 1;
    repeated int32 Data = 2;
 }
-enum Rarity {
+message PREFIX_AGDFASBV1801989190 {
+    enum Rarity {
    Common = 0;
    Uncommon = 1;
    Rare = 2;
    Epic = 3;
    Mythical = 4;
    Special = 5;
-}
+} //PREFIX_AGDFASBV
+};
 message Settings {
    optional string MapName = 1;
    optional string LightColour_String = 2;
@@ -164,7 +178,7 @@ message Settings {
    optional bool Cave = 11 [default = false];
    optional string Region = 12;
    optional bool WhiteFog = 13 [default = false];
-   optional EncounterRates EncounterRate = 14 [default = Normal];
+   optional PREFIX_AGDFASBV514818703.EncounterRates EncounterRate = 14 [default = Normal];
    optional bool CantFlyTeleport = 15 [default = false];
 }
 message Zone {
@@ -173,20 +187,20 @@ message Zone {
 }
 message ZoneItem {
    optional int32 ItemID = 1 [default = 0];
-   optional Rarity ItemRarity = 2 [default = Common];
+   optional PREFIX_AGDFASBV1801989190.Rarity ItemRarity = 2 [default = Common];
 }
 message ZonePokemon {
    optional int32 PokemonID = 1 [default = 0];
    optional int32 AverageLevel = 2 [default = 0];
    optional int32 LevelVariance = 3 [default = 0];
-   optional EncounterTimes EncounterTime = 4 [default = Day];
-   optional Rarity Rarity = 5 [default = Common];
+   optional PREFIX_AGDFASBV103485569.EncounterTimes EncounterTime = 4 [default = Day];
+   optional PREFIX_AGDFASBV1801989190.Rarity Rarity = 5 [default = Common];
    repeated ZoneItem Items = 6;
-   optional FishingType Fishing = 7 [default = __None1];
+   optional PREFIX_AGDFASBV1255547470.FishingType Fishing = 7 [default = NoneValue];
    optional string Script = 8;
    optional bool Party = 9 [default = false];
    optional bool SpecialEncounter = 10 [default = false];
-   optional BackgroundType BackgroundID = 11 [default = Grass];
+   optional PREFIX_AGDFASBV538288952.BackgroundType BackgroundID = 11 [default = Grass];
    optional bool Disabled = 12 [default = false];
 }
 message wallTypes {

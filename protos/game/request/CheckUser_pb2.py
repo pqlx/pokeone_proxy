@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='CheckUser.proto',
-  package='PSXAPI.Request15',
+  package='PSXAPI.Request676832986',
   syntax='proto2',
-  serialized_pb=_b('\n\x0f\x43heckUser.proto\x12\x10PSXAPI.Request15\"\x19\n\tCheckUser\x12\x0c\n\x04Name\x18\x01 \x02(\t')
+  serialized_pb=_b('\n\x0f\x43heckUser.proto\x12\x17PSXAPI.Request676832986\"\x19\n\tCheckUser\x12\x0c\n\x04Name\x18\x01 \x02(\t')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,13 +28,13 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _CHECKUSER = _descriptor.Descriptor(
   name='CheckUser',
-  full_name='PSXAPI.Request15.CheckUser',
+  full_name='PSXAPI.Request676832986.CheckUser',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Name', full_name='PSXAPI.Request15.CheckUser.Name', index=0,
+      name='Name', full_name='PSXAPI.Request676832986.CheckUser.Name', index=0,
       number=1, type=9, cpp_type=9, label=2,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -52,8 +52,8 @@ _CHECKUSER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=37,
-  serialized_end=62,
+  serialized_start=44,
+  serialized_end=69,
 )
 
 DESCRIPTOR.message_types_by_name['CheckUser'] = _CHECKUSER
@@ -61,7 +61,7 @@ DESCRIPTOR.message_types_by_name['CheckUser'] = _CHECKUSER
 CheckUser = _reflection.GeneratedProtocolMessageType('CheckUser', (_message.Message,), dict(
   DESCRIPTOR = _CHECKUSER,
   __module__ = 'CheckUser_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request15.CheckUser)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request676832986.CheckUser)
   ))
 _sym_db.RegisterMessage(CheckUser)
 

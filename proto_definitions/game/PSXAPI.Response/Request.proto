@@ -1,12 +1,13 @@
 syntax = "proto2";
-package PSXAPI.Response71;
+package PSXAPI.Response1116683912;
 
 message Request {
-   required RequestType Type = 1;
+   required PREFIX_AGDFASBV802831699.RequestType Type = 1;
    required string Sender = 2;
 }
-enum RequestType {
-   __None = 0;
+message PREFIX_AGDFASBV802831699 {
+    enum RequestType {
+   NoneValue = 0;
    Friend = 1;
    Trade = 2;
    Battle = 3;
@@ -17,4 +18,5 @@ enum RequestType {
    BattleDecline = 13;
    PartyDecline = 14;
    GuildDecline = 15;
-}
+} //PREFIX_AGDFASBV
+};

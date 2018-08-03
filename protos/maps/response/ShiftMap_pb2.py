@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='ShiftMap.proto',
-  package='MAPAPI.Response35',
+  package='MAPAPI.Response1150884830',
   syntax='proto2',
-  serialized_pb=_b('\n\x0eShiftMap.proto\x12\x11MAPAPI.Response35\"3\n\x08ShiftMap\x12\x11\n\x06\x41mount\x18\x01 \x01(\x05:\x01\x30\x12\x14\n\tDirection\x18\x02 \x01(\x05:\x01\x30')
+  serialized_pb=_b('\n\x0eShiftMap.proto\x12\x19MAPAPI.Response1150884830\"3\n\x08ShiftMap\x12\x11\n\x06\x41mount\x18\x01 \x01(\x05:\x01\x30\x12\x14\n\tDirection\x18\x02 \x01(\x05:\x01\x30')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,20 +28,20 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _SHIFTMAP = _descriptor.Descriptor(
   name='ShiftMap',
-  full_name='MAPAPI.Response35.ShiftMap',
+  full_name='MAPAPI.Response1150884830.ShiftMap',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Amount', full_name='MAPAPI.Response35.ShiftMap.Amount', index=0,
+      name='Amount', full_name='MAPAPI.Response1150884830.ShiftMap.Amount', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Direction', full_name='MAPAPI.Response35.ShiftMap.Direction', index=1,
+      name='Direction', full_name='MAPAPI.Response1150884830.ShiftMap.Direction', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -59,8 +59,8 @@ _SHIFTMAP = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=37,
-  serialized_end=88,
+  serialized_start=45,
+  serialized_end=96,
 )
 
 DESCRIPTOR.message_types_by_name['ShiftMap'] = _SHIFTMAP
@@ -68,7 +68,7 @@ DESCRIPTOR.message_types_by_name['ShiftMap'] = _SHIFTMAP
 ShiftMap = _reflection.GeneratedProtocolMessageType('ShiftMap', (_message.Message,), dict(
   DESCRIPTOR = _SHIFTMAP,
   __module__ = 'ShiftMap_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response35.ShiftMap)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response1150884830.ShiftMap)
   ))
 _sym_db.RegisterMessage(ShiftMap)
 

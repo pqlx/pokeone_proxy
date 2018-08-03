@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Stats.proto',
-  package='PSXAPI.Request61',
+  package='PSXAPI.Request1261712367',
   syntax='proto2',
-  serialized_pb=_b('\n\x0bStats.proto\x12\x10PSXAPI.Request61\"\x19\n\x05Stats\x12\x10\n\x08Username\x18\x01 \x01(\t')
+  serialized_pb=_b('\n\x0bStats.proto\x12\x18PSXAPI.Request1261712367\"\x19\n\x05Stats\x12\x10\n\x08Username\x18\x01 \x01(\t')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,13 +28,13 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _STATS = _descriptor.Descriptor(
   name='Stats',
-  full_name='PSXAPI.Request61.Stats',
+  full_name='PSXAPI.Request1261712367.Stats',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Username', full_name='PSXAPI.Request61.Stats.Username', index=0,
+      name='Username', full_name='PSXAPI.Request1261712367.Stats.Username', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -52,8 +52,8 @@ _STATS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=33,
-  serialized_end=58,
+  serialized_start=41,
+  serialized_end=66,
 )
 
 DESCRIPTOR.message_types_by_name['Stats'] = _STATS
@@ -61,7 +61,7 @@ DESCRIPTOR.message_types_by_name['Stats'] = _STATS
 Stats = _reflection.GeneratedProtocolMessageType('Stats', (_message.Message,), dict(
   DESCRIPTOR = _STATS,
   __module__ = 'Stats_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request61.Stats)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request1261712367.Stats)
   ))
 _sym_db.RegisterMessage(Stats)
 

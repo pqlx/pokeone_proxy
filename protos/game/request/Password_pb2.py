@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -18,20 +17,22 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Password.proto',
-  package='PSXAPI.Request47',
+  package='PSXAPI.Request754430012',
   syntax='proto2',
-  serialized_pb=_b('\n\x0ePassword.proto\x12\x10PSXAPI.Request47\"\x80\x01\n\x08Password\x12\x38\n\x06\x41\x63tion\x18\x01 \x01(\x0e\x32 .PSXAPI.Request47.PasswordAction:\x06__None\x12\x10\n\x08Username\x18\x02 \x01(\t\x12\x13\n\x0bOldPassword\x18\x03 \x01(\t\x12\x13\n\x0bNewPassword\x18\x04 \x01(\t*3\n\x0ePasswordAction\x12\n\n\x06__None\x10\x00\x12\n\n\x06Update\x10\x01\x12\t\n\x05Reset\x10\x02')
+  serialized_pb=_b('\n\x0ePassword.proto\x12\x17PSXAPI.Request754430012\"\xa4\x01\n\x08Password\x12\\\n\x06\x41\x63tion\x18\x01 \x01(\x0e\x32\x41.PSXAPI.Request754430012.PREFIX_AGDFASBV1849358424.PasswordAction:\tNoneValue\x12\x10\n\x08Username\x18\x02 \x01(\t\x12\x13\n\x0bOldPassword\x18\x03 \x01(\t\x12\x13\n\x0bNewPassword\x18\x04 \x01(\t\"S\n\x19PREFIX_AGDFASBV1849358424\"6\n\x0ePasswordAction\x12\r\n\tNoneValue\x10\x00\x12\n\n\x06Update\x10\x01\x12\t\n\x05Reset\x10\x02')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_PASSWORDACTION = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV1849358424_PASSWORDACTION = _descriptor.EnumDescriptor(
   name='PasswordAction',
-  full_name='PSXAPI.Request47.PasswordAction',
+  full_name='PSXAPI.Request754430012.PREFIX_AGDFASBV1849358424.PasswordAction',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='__None', index=0, number=0,
+      name='NoneValue', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -45,48 +46,42 @@ _PASSWORDACTION = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=167,
-  serialized_end=218,
+  serialized_start=239,
+  serialized_end=293,
 )
-_sym_db.RegisterEnumDescriptor(_PASSWORDACTION)
-
-PasswordAction = enum_type_wrapper.EnumTypeWrapper(_PASSWORDACTION)
-__None = 0
-Update = 1
-Reset = 2
-
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1849358424_PASSWORDACTION)
 
 
 _PASSWORD = _descriptor.Descriptor(
   name='Password',
-  full_name='PSXAPI.Request47.Password',
+  full_name='PSXAPI.Request754430012.Password',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Action', full_name='PSXAPI.Request47.Password.Action', index=0,
+      name='Action', full_name='PSXAPI.Request754430012.Password.Action', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Username', full_name='PSXAPI.Request47.Password.Username', index=1,
+      name='Username', full_name='PSXAPI.Request754430012.Password.Username', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='OldPassword', full_name='PSXAPI.Request47.Password.OldPassword', index=2,
+      name='OldPassword', full_name='PSXAPI.Request754430012.Password.OldPassword', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='NewPassword', full_name='PSXAPI.Request47.Password.NewPassword', index=3,
+      name='NewPassword', full_name='PSXAPI.Request754430012.Password.NewPassword', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -104,20 +99,53 @@ _PASSWORD = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=37,
-  serialized_end=165,
+  serialized_start=44,
+  serialized_end=208,
 )
 
-_PASSWORD.fields_by_name['Action'].enum_type = _PASSWORDACTION
+
+_PREFIX_AGDFASBV1849358424 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1849358424',
+  full_name='PSXAPI.Request754430012.PREFIX_AGDFASBV1849358424',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1849358424_PASSWORDACTION,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=210,
+  serialized_end=293,
+)
+
+_PASSWORD.fields_by_name['Action'].enum_type = _PREFIX_AGDFASBV1849358424_PASSWORDACTION
+_PREFIX_AGDFASBV1849358424_PASSWORDACTION.containing_type = _PREFIX_AGDFASBV1849358424
 DESCRIPTOR.message_types_by_name['Password'] = _PASSWORD
-DESCRIPTOR.enum_types_by_name['PasswordAction'] = _PASSWORDACTION
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1849358424'] = _PREFIX_AGDFASBV1849358424
 
 Password = _reflection.GeneratedProtocolMessageType('Password', (_message.Message,), dict(
   DESCRIPTOR = _PASSWORD,
   __module__ = 'Password_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request47.Password)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request754430012.Password)
   ))
 _sym_db.RegisterMessage(Password)
+
+PREFIX_AGDFASBV1849358424 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1849358424', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1849358424,
+  __module__ = 'Password_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request754430012.PREFIX_AGDFASBV1849358424)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1849358424)
 
 
 # @@protoc_insertion_point(module_scope)

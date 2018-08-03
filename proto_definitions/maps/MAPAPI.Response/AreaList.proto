@@ -1,5 +1,5 @@
 syntax = "proto2";
-package MAPAPI.Response1;
+package MAPAPI.Response1261299986;
 
 message Area {
    optional int32 StartX = 1 [default = 0];
@@ -11,13 +11,14 @@ message Area {
    optional string Song = 7;
    optional bool CanDiscover = 8 [default = false];
    optional bool CanReturnTo = 9 [default = false];
-   optional BackgroundType BattleBG = 10 [default = Grass];
-   optional EvolutionArea AreaEvolution = 11 [default = __None];
+   optional PREFIX_AGDFASBV353550649.BackgroundType BattleBG = 10 [default = Grass];
+   optional PREFIX_AGDFASBV336464743.EvolutionArea AreaEvolution = 11 [default = NoneValue];
 }
 message AreaList {
    repeated Area Areas = 1;
 }
-enum BackgroundType {
+message PREFIX_AGDFASBV353550649 {
+    enum BackgroundType {
    Grass = 0;
    Water = 1;
    Cave = 2;
@@ -29,13 +30,16 @@ enum BackgroundType {
    City = 8;
    Desert = 9;
    Ocean = 10;
-}
-enum EvolutionArea {
-   __None = 0;
+} //PREFIX_AGDFASBV
+};
+message PREFIX_AGDFASBV336464743 {
+    enum EvolutionArea {
+   NoneValue = 0;
    MagneticField = 1;
    MountLanakila = 2;
    MossRock = 3;
    IceRock = 4;
    Sandstorm = 5;
    Hail = 6;
-}
+} //PREFIX_AGDFASBV
+};

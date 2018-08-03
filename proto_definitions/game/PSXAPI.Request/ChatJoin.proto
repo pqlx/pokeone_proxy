@@ -1,11 +1,13 @@
 syntax = "proto2";
-package PSXAPI.Request11;
+package PSXAPI.Request1110292527;
 
 message ChatJoin {
    required string Channel = 1;
-   optional ChatJoinAction Action = 2 [default = Join];
+   optional PREFIX_AGDFASBV312786364.ChatJoinAction Action = 2 [default = Join];
 }
-enum ChatJoinAction {
+message PREFIX_AGDFASBV312786364 {
+    enum ChatJoinAction {
    Join = 0;
    Leave = 1;
-}
+} //PREFIX_AGDFASBV
+};

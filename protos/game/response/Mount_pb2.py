@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -18,20 +17,22 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Mount.proto',
-  package='PSXAPI.Response55',
+  package='PSXAPI.Response501659261',
   syntax='proto2',
-  serialized_pb=_b('\n\x0bMount.proto\x12\x11PSXAPI.Response55\"T\n\x05Mount\x12\x12\n\x07MountID\x18\x01 \x01(\x05:\x01\x30\x12\x37\n\tMountType\x18\x02 \x01(\x0e\x32\x1c.PSXAPI.Response55.MountType:\x06__None*;\n\tMountType\x12\n\n\x06__None\x10\x00\x12\x0b\n\x07Surfing\x10\x01\x12\x08\n\x04\x42ike\x10\x02\x12\x0b\n\x07Pokemon\x10\x03')
+  serialized_pb=_b('\n\x0bMount.proto\x12\x18PSXAPI.Response501659261\"x\n\x05Mount\x12\x12\n\x07MountID\x18\x01 \x01(\x05:\x01\x30\x12[\n\tMountType\x18\x02 \x01(\x0e\x32=.PSXAPI.Response501659261.PREFIX_AGDFASBV1238358761.MountType:\tNoneValue\"[\n\x19PREFIX_AGDFASBV1238358761\">\n\tMountType\x12\r\n\tNoneValue\x10\x00\x12\x0b\n\x07Surfing\x10\x01\x12\x08\n\x04\x42ike\x10\x02\x12\x0b\n\x07Pokemon\x10\x03')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_MOUNTTYPE = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV1238358761_MOUNTTYPE = _descriptor.EnumDescriptor(
   name='MountType',
-  full_name='PSXAPI.Response55.MountType',
+  full_name='PSXAPI.Response501659261.PREFIX_AGDFASBV1238358761.MountType',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='__None', index=0, number=0,
+      name='NoneValue', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -49,35 +50,28 @@ _MOUNTTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=120,
-  serialized_end=179,
+  serialized_start=192,
+  serialized_end=254,
 )
-_sym_db.RegisterEnumDescriptor(_MOUNTTYPE)
-
-MountType = enum_type_wrapper.EnumTypeWrapper(_MOUNTTYPE)
-__None = 0
-Surfing = 1
-Bike = 2
-Pokemon = 3
-
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1238358761_MOUNTTYPE)
 
 
 _MOUNT = _descriptor.Descriptor(
   name='Mount',
-  full_name='PSXAPI.Response55.Mount',
+  full_name='PSXAPI.Response501659261.Mount',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='MountID', full_name='PSXAPI.Response55.Mount.MountID', index=0,
+      name='MountID', full_name='PSXAPI.Response501659261.Mount.MountID', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='MountType', full_name='PSXAPI.Response55.Mount.MountType', index=1,
+      name='MountType', full_name='PSXAPI.Response501659261.Mount.MountType', index=1,
       number=2, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -95,20 +89,53 @@ _MOUNT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=34,
-  serialized_end=118,
+  serialized_start=41,
+  serialized_end=161,
 )
 
-_MOUNT.fields_by_name['MountType'].enum_type = _MOUNTTYPE
+
+_PREFIX_AGDFASBV1238358761 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1238358761',
+  full_name='PSXAPI.Response501659261.PREFIX_AGDFASBV1238358761',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1238358761_MOUNTTYPE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=163,
+  serialized_end=254,
+)
+
+_MOUNT.fields_by_name['MountType'].enum_type = _PREFIX_AGDFASBV1238358761_MOUNTTYPE
+_PREFIX_AGDFASBV1238358761_MOUNTTYPE.containing_type = _PREFIX_AGDFASBV1238358761
 DESCRIPTOR.message_types_by_name['Mount'] = _MOUNT
-DESCRIPTOR.enum_types_by_name['MountType'] = _MOUNTTYPE
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1238358761'] = _PREFIX_AGDFASBV1238358761
 
 Mount = _reflection.GeneratedProtocolMessageType('Mount', (_message.Message,), dict(
   DESCRIPTOR = _MOUNT,
   __module__ = 'Mount_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response55.Mount)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response501659261.Mount)
   ))
 _sym_db.RegisterMessage(Mount)
+
+PREFIX_AGDFASBV1238358761 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1238358761', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1238358761,
+  __module__ = 'Mount_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response501659261.PREFIX_AGDFASBV1238358761)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1238358761)
 
 
 # @@protoc_insertion_point(module_scope)

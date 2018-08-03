@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -14,21 +13,23 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
-import bcl_pb2 as bcl__pb2
+from protobuf_net import bcl_pb2 as protobuf__net_dot_bcl__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='HoldItem.proto',
-  package='PSXAPI.Response35',
+  package='PSXAPI.Response1795502138',
   syntax='proto2',
-  serialized_pb=_b('\n\x0eHoldItem.proto\x12\x11PSXAPI.Response35\x1a\tbcl.proto\"r\n\x08HoldItem\x12\x1a\n\x07Pokemon\x18\x01 \x01(\x0b\x32\t.bcl.Guid\x12\x0f\n\x04Item\x18\x02 \x01(\x05:\x01\x30\x12\x39\n\x06Result\x18\x03 \x01(\x0e\x32!.PSXAPI.Response35.HoldItemResult:\x06\x46\x61iled*o\n\x0eHoldItemResult\x12\n\n\x06\x46\x61iled\x10\x00\x12\x0b\n\x07Success\x10\x01\x12\x12\n\x0eInvalidPokemon\x10\x02\x12\x0f\n\x0bInvalidItem\x10\x03\x12\x0e\n\nNotInTrade\x10\x04\x12\x0f\n\x0bNotInBattle\x10\x05')
+  serialized_pb=_b('\n\x0eHoldItem.proto\x12\x19PSXAPI.Response1795502138\x1a\x16protobuf-net/bcl.proto\"\x94\x01\n\x08HoldItem\x12\x1a\n\x07Pokemon\x18\x01 \x01(\x0b\x32\t.bcl.Guid\x12\x0f\n\x04Item\x18\x02 \x01(\x05:\x01\x30\x12[\n\x06Result\x18\x03 \x01(\x0e\x32\x43.PSXAPI.Response1795502138.PREFIX_AGDFASBV1065230333.HoldItemResult:\x06\x46\x61iled\"\x8c\x01\n\x19PREFIX_AGDFASBV1065230333\"o\n\x0eHoldItemResult\x12\n\n\x06\x46\x61iled\x10\x00\x12\x0b\n\x07Success\x10\x01\x12\x12\n\x0eInvalidPokemon\x10\x02\x12\x0f\n\x0bInvalidItem\x10\x03\x12\x0e\n\nNotInTrade\x10\x04\x12\x0f\n\x0bNotInBattle\x10\x05')
   ,
-  dependencies=[bcl__pb2.DESCRIPTOR,])
+  dependencies=[protobuf__net_dot_bcl__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_HOLDITEMRESULT = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV1065230333_HOLDITEMRESULT = _descriptor.EnumDescriptor(
   name='HoldItemResult',
-  full_name='PSXAPI.Response35.HoldItemResult',
+  full_name='PSXAPI.Response1795502138.PREFIX_AGDFASBV1065230333.HoldItemResult',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -59,44 +60,35 @@ _HOLDITEMRESULT = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=164,
-  serialized_end=275,
+  serialized_start=250,
+  serialized_end=361,
 )
-_sym_db.RegisterEnumDescriptor(_HOLDITEMRESULT)
-
-HoldItemResult = enum_type_wrapper.EnumTypeWrapper(_HOLDITEMRESULT)
-Failed = 0
-Success = 1
-InvalidPokemon = 2
-InvalidItem = 3
-NotInTrade = 4
-NotInBattle = 5
-
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1065230333_HOLDITEMRESULT)
 
 
 _HOLDITEM = _descriptor.Descriptor(
   name='HoldItem',
-  full_name='PSXAPI.Response35.HoldItem',
+  full_name='PSXAPI.Response1795502138.HoldItem',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Pokemon', full_name='PSXAPI.Response35.HoldItem.Pokemon', index=0,
+      name='Pokemon', full_name='PSXAPI.Response1795502138.HoldItem.Pokemon', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Item', full_name='PSXAPI.Response35.HoldItem.Item', index=1,
+      name='Item', full_name='PSXAPI.Response1795502138.HoldItem.Item', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Result', full_name='PSXAPI.Response35.HoldItem.Result', index=2,
+      name='Result', full_name='PSXAPI.Response1795502138.HoldItem.Result', index=2,
       number=3, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -114,21 +106,54 @@ _HOLDITEM = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=48,
-  serialized_end=162,
+  serialized_start=70,
+  serialized_end=218,
 )
 
-_HOLDITEM.fields_by_name['Pokemon'].message_type = bcl__pb2._GUID
-_HOLDITEM.fields_by_name['Result'].enum_type = _HOLDITEMRESULT
+
+_PREFIX_AGDFASBV1065230333 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1065230333',
+  full_name='PSXAPI.Response1795502138.PREFIX_AGDFASBV1065230333',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1065230333_HOLDITEMRESULT,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=221,
+  serialized_end=361,
+)
+
+_HOLDITEM.fields_by_name['Pokemon'].message_type = protobuf__net_dot_bcl__pb2._GUID
+_HOLDITEM.fields_by_name['Result'].enum_type = _PREFIX_AGDFASBV1065230333_HOLDITEMRESULT
+_PREFIX_AGDFASBV1065230333_HOLDITEMRESULT.containing_type = _PREFIX_AGDFASBV1065230333
 DESCRIPTOR.message_types_by_name['HoldItem'] = _HOLDITEM
-DESCRIPTOR.enum_types_by_name['HoldItemResult'] = _HOLDITEMRESULT
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1065230333'] = _PREFIX_AGDFASBV1065230333
 
 HoldItem = _reflection.GeneratedProtocolMessageType('HoldItem', (_message.Message,), dict(
   DESCRIPTOR = _HOLDITEM,
   __module__ = 'HoldItem_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response35.HoldItem)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1795502138.HoldItem)
   ))
 _sym_db.RegisterMessage(HoldItem)
+
+PREFIX_AGDFASBV1065230333 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1065230333', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1065230333,
+  __module__ = 'HoldItem_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1795502138.PREFIX_AGDFASBV1065230333)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1065230333)
 
 
 # @@protoc_insertion_point(module_scope)

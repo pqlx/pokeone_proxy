@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Mount.proto',
-  package='PSXAPI.Request45',
+  package='PSXAPI.Request1786525432',
   syntax='proto2',
-  serialized_pb=_b('\n\x0bMount.proto\x12\x10PSXAPI.Request45\"\x07\n\x05Mount')
+  serialized_pb=_b('\n\x0bMount.proto\x12\x18PSXAPI.Request1786525432\"\x07\n\x05Mount')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,7 +28,7 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _MOUNT = _descriptor.Descriptor(
   name='Mount',
-  full_name='PSXAPI.Request45.Mount',
+  full_name='PSXAPI.Request1786525432.Mount',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
@@ -45,8 +45,8 @@ _MOUNT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=33,
-  serialized_end=40,
+  serialized_start=41,
+  serialized_end=48,
 )
 
 DESCRIPTOR.message_types_by_name['Mount'] = _MOUNT
@@ -54,7 +54,7 @@ DESCRIPTOR.message_types_by_name['Mount'] = _MOUNT
 Mount = _reflection.GeneratedProtocolMessageType('Mount', (_message.Message,), dict(
   DESCRIPTOR = _MOUNT,
   __module__ = 'Mount_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request45.Mount)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request1786525432.Mount)
   ))
 _sym_db.RegisterMessage(Mount)
 

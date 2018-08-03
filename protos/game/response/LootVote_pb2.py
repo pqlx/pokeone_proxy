@@ -13,16 +13,16 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
-import bcl_pb2 as bcl__pb2
+from protobuf_net import bcl_pb2 as protobuf__net_dot_bcl__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='LootVote.proto',
-  package='PSXAPI.Response51',
+  package='PSXAPI.Response1810850094',
   syntax='proto2',
-  serialized_pb=_b('\n\x0eLootVote.proto\x12\x11PSXAPI.Response51\x1a\tbcl.proto\"n\n\x08LootVote\x12\x19\n\x06VoteID\x18\x01 \x01(\x0b\x32\t.bcl.Guid\x12\x11\n\x06ItemID\x18\x02 \x01(\x05:\x01\x30\x12\x13\n\x08Quantity\x18\x03 \x01(\r:\x01\x30\x12\x1f\n\x08\x44uration\x18\x04 \x01(\x0b\x32\r.bcl.TimeSpan')
+  serialized_pb=_b('\n\x0eLootVote.proto\x12\x19PSXAPI.Response1810850094\x1a\x16protobuf-net/bcl.proto\"n\n\x08LootVote\x12\x19\n\x06VoteID\x18\x01 \x01(\x0b\x32\t.bcl.Guid\x12\x11\n\x06ItemID\x18\x02 \x01(\x05:\x01\x30\x12\x13\n\x08Quantity\x18\x03 \x01(\r:\x01\x30\x12\x1f\n\x08\x44uration\x18\x04 \x01(\x0b\x32\r.bcl.TimeSpan')
   ,
-  dependencies=[bcl__pb2.DESCRIPTOR,])
+  dependencies=[protobuf__net_dot_bcl__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
@@ -30,34 +30,34 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _LOOTVOTE = _descriptor.Descriptor(
   name='LootVote',
-  full_name='PSXAPI.Response51.LootVote',
+  full_name='PSXAPI.Response1810850094.LootVote',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='VoteID', full_name='PSXAPI.Response51.LootVote.VoteID', index=0,
+      name='VoteID', full_name='PSXAPI.Response1810850094.LootVote.VoteID', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='ItemID', full_name='PSXAPI.Response51.LootVote.ItemID', index=1,
+      name='ItemID', full_name='PSXAPI.Response1810850094.LootVote.ItemID', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Quantity', full_name='PSXAPI.Response51.LootVote.Quantity', index=2,
+      name='Quantity', full_name='PSXAPI.Response1810850094.LootVote.Quantity', index=2,
       number=3, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Duration', full_name='PSXAPI.Response51.LootVote.Duration', index=3,
+      name='Duration', full_name='PSXAPI.Response1810850094.LootVote.Duration', index=3,
       number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -75,18 +75,18 @@ _LOOTVOTE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=48,
-  serialized_end=158,
+  serialized_start=69,
+  serialized_end=179,
 )
 
-_LOOTVOTE.fields_by_name['VoteID'].message_type = bcl__pb2._GUID
-_LOOTVOTE.fields_by_name['Duration'].message_type = bcl__pb2._TIMESPAN
+_LOOTVOTE.fields_by_name['VoteID'].message_type = protobuf__net_dot_bcl__pb2._GUID
+_LOOTVOTE.fields_by_name['Duration'].message_type = protobuf__net_dot_bcl__pb2._TIMESPAN
 DESCRIPTOR.message_types_by_name['LootVote'] = _LOOTVOTE
 
 LootVote = _reflection.GeneratedProtocolMessageType('LootVote', (_message.Message,), dict(
   DESCRIPTOR = _LOOTVOTE,
   __module__ = 'LootVote_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response51.LootVote)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1810850094.LootVote)
   ))
 _sym_db.RegisterMessage(LootVote)
 

@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -14,21 +13,23 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
-import bcl_pb2 as bcl__pb2
+from protobuf_net import bcl_pb2 as protobuf__net_dot_bcl__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Loot.proto',
-  package='PSXAPI.Request41',
+  package='PSXAPI.Request935968962',
   syntax='proto2',
-  serialized_pb=_b('\n\nLoot.proto\x12\x10PSXAPI.Request41\x1a\tbcl.proto\"R\n\x04Loot\x12\x19\n\x06VoteID\x18\x01 \x01(\x0b\x32\t.bcl.Guid\x12/\n\x04Vote\x18\x02 \x01(\x0e\x32\x1a.PSXAPI.Request41.LootVote:\x05Unset*B\n\x08LootVote\x12\t\n\x05Unset\x10\x00\x12\x08\n\x04Pass\x10\x01\x12\x08\n\x04Need\x10\x02\x12\t\n\x05Greed\x10\x03\x12\x0c\n\x08TimedOut\x10\x04')
+  serialized_pb=_b('\n\nLoot.proto\x12\x17PSXAPI.Request935968962\x1a\x16protobuf-net/bcl.proto\"s\n\x04Loot\x12\x19\n\x06VoteID\x18\x01 \x01(\x0b\x32\t.bcl.Guid\x12P\n\x04Vote\x18\x02 \x01(\x0e\x32;.PSXAPI.Request935968962.PREFIX_AGDFASBV1630423972.LootVote:\x05Unset\"_\n\x19PREFIX_AGDFASBV1630423972\"B\n\x08LootVote\x12\t\n\x05Unset\x10\x00\x12\x08\n\x04Pass\x10\x01\x12\x08\n\x04Need\x10\x02\x12\t\n\x05Greed\x10\x03\x12\x0c\n\x08TimedOut\x10\x04')
   ,
-  dependencies=[bcl__pb2.DESCRIPTOR,])
+  dependencies=[protobuf__net_dot_bcl__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_LOOTVOTE = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV1630423972_LOOTVOTE = _descriptor.EnumDescriptor(
   name='LootVote',
-  full_name='PSXAPI.Request41.LootVote',
+  full_name='PSXAPI.Request935968962.PREFIX_AGDFASBV1630423972.LootVote',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -55,36 +56,28 @@ _LOOTVOTE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=127,
-  serialized_end=193,
+  serialized_start=209,
+  serialized_end=275,
 )
-_sym_db.RegisterEnumDescriptor(_LOOTVOTE)
-
-LootVote = enum_type_wrapper.EnumTypeWrapper(_LOOTVOTE)
-Unset = 0
-Pass = 1
-Need = 2
-Greed = 3
-TimedOut = 4
-
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1630423972_LOOTVOTE)
 
 
 _LOOT = _descriptor.Descriptor(
   name='Loot',
-  full_name='PSXAPI.Request41.Loot',
+  full_name='PSXAPI.Request935968962.Loot',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='VoteID', full_name='PSXAPI.Request41.Loot.VoteID', index=0,
+      name='VoteID', full_name='PSXAPI.Request935968962.Loot.VoteID', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Vote', full_name='PSXAPI.Request41.Loot.Vote', index=1,
+      name='Vote', full_name='PSXAPI.Request935968962.Loot.Vote', index=1,
       number=2, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -102,21 +95,54 @@ _LOOT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=43,
-  serialized_end=125,
+  serialized_start=63,
+  serialized_end=178,
 )
 
-_LOOT.fields_by_name['VoteID'].message_type = bcl__pb2._GUID
-_LOOT.fields_by_name['Vote'].enum_type = _LOOTVOTE
+
+_PREFIX_AGDFASBV1630423972 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1630423972',
+  full_name='PSXAPI.Request935968962.PREFIX_AGDFASBV1630423972',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1630423972_LOOTVOTE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=180,
+  serialized_end=275,
+)
+
+_LOOT.fields_by_name['VoteID'].message_type = protobuf__net_dot_bcl__pb2._GUID
+_LOOT.fields_by_name['Vote'].enum_type = _PREFIX_AGDFASBV1630423972_LOOTVOTE
+_PREFIX_AGDFASBV1630423972_LOOTVOTE.containing_type = _PREFIX_AGDFASBV1630423972
 DESCRIPTOR.message_types_by_name['Loot'] = _LOOT
-DESCRIPTOR.enum_types_by_name['LootVote'] = _LOOTVOTE
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1630423972'] = _PREFIX_AGDFASBV1630423972
 
 Loot = _reflection.GeneratedProtocolMessageType('Loot', (_message.Message,), dict(
   DESCRIPTOR = _LOOT,
   __module__ = 'Loot_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request41.Loot)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request935968962.Loot)
   ))
 _sym_db.RegisterMessage(Loot)
+
+PREFIX_AGDFASBV1630423972 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1630423972', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1630423972,
+  __module__ = 'Loot_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request935968962.PREFIX_AGDFASBV1630423972)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1630423972)
 
 
 # @@protoc_insertion_point(module_scope)

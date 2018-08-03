@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Discovered.proto',
-  package='PSXAPI.Response19',
+  package='PSXAPI.Response741141560',
   syntax='proto2',
-  serialized_pb=_b('\n\x10\x44iscovered.proto\x12\x11PSXAPI.Response19\"\x1a\n\nDiscovered\x12\x0c\n\x04\x41rea\x18\x01 \x01(\t')
+  serialized_pb=_b('\n\x10\x44iscovered.proto\x12\x18PSXAPI.Response741141560\"\x1a\n\nDiscovered\x12\x0c\n\x04\x41rea\x18\x01 \x01(\t')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,13 +28,13 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _DISCOVERED = _descriptor.Descriptor(
   name='Discovered',
-  full_name='PSXAPI.Response19.Discovered',
+  full_name='PSXAPI.Response741141560.Discovered',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Area', full_name='PSXAPI.Response19.Discovered.Area', index=0,
+      name='Area', full_name='PSXAPI.Response741141560.Discovered.Area', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -52,8 +52,8 @@ _DISCOVERED = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=39,
-  serialized_end=65,
+  serialized_start=46,
+  serialized_end=72,
 )
 
 DESCRIPTOR.message_types_by_name['Discovered'] = _DISCOVERED
@@ -61,7 +61,7 @@ DESCRIPTOR.message_types_by_name['Discovered'] = _DISCOVERED
 Discovered = _reflection.GeneratedProtocolMessageType('Discovered', (_message.Message,), dict(
   DESCRIPTOR = _DISCOVERED,
   __module__ = 'Discovered_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response19.Discovered)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response741141560.Discovered)
   ))
 _sym_db.RegisterMessage(Discovered)
 

@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -14,21 +13,23 @@ from google.protobuf import descriptor_pb2
 _sym_db = _symbol_database.Default()
 
 
-import bcl_pb2 as bcl__pb2
+from protobuf_net import bcl_pb2 as protobuf__net_dot_bcl__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Transfer.proto',
-  package='PSXAPI.Response83',
+  package='PSXAPI.Response76302229',
   syntax='proto2',
-  serialized_pb=_b('\n\x0eTransfer.proto\x12\x11PSXAPI.Response83\x1a\tbcl.proto\"q\n\x08Transfer\x12\x39\n\x06Result\x18\x01 \x01(\x0e\x32!.PSXAPI.Response83.TransferResult:\x06\x46\x61iled\x12\x1a\n\x07Pokemon\x18\x02 \x01(\x0b\x32\t.bcl.Guid\x12\x0e\n\x03\x42ox\x18\x03 \x01(\x05:\x01\x30*)\n\x0eTransferResult\x12\n\n\x06\x46\x61iled\x10\x00\x12\x0b\n\x07Success\x10\x01')
+  serialized_pb=_b('\n\x0eTransfer.proto\x12\x17PSXAPI.Response76302229\x1a\x16protobuf-net/bcl.proto\"\x91\x01\n\x08Transfer\x12Y\n\x06Result\x18\x01 \x01(\x0e\x32\x41.PSXAPI.Response76302229.PREFIX_AGDFASBV1541032225.TransferResult:\x06\x46\x61iled\x12\x1a\n\x07Pokemon\x18\x02 \x01(\x0b\x32\t.bcl.Guid\x12\x0e\n\x03\x42ox\x18\x03 \x01(\x05:\x01\x30\"F\n\x19PREFIX_AGDFASBV1541032225\")\n\x0eTransferResult\x12\n\n\x06\x46\x61iled\x10\x00\x12\x0b\n\x07Success\x10\x01')
   ,
-  dependencies=[bcl__pb2.DESCRIPTOR,])
+  dependencies=[protobuf__net_dot_bcl__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_TRANSFERRESULT = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV1541032225_TRANSFERRESULT = _descriptor.EnumDescriptor(
   name='TransferResult',
-  full_name='PSXAPI.Response83.TransferResult',
+  full_name='PSXAPI.Response76302229.PREFIX_AGDFASBV1541032225.TransferResult',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -43,40 +44,35 @@ _TRANSFERRESULT = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=163,
-  serialized_end=204,
+  serialized_start=244,
+  serialized_end=285,
 )
-_sym_db.RegisterEnumDescriptor(_TRANSFERRESULT)
-
-TransferResult = enum_type_wrapper.EnumTypeWrapper(_TRANSFERRESULT)
-Failed = 0
-Success = 1
-
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1541032225_TRANSFERRESULT)
 
 
 _TRANSFER = _descriptor.Descriptor(
   name='Transfer',
-  full_name='PSXAPI.Response83.Transfer',
+  full_name='PSXAPI.Response76302229.Transfer',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Result', full_name='PSXAPI.Response83.Transfer.Result', index=0,
+      name='Result', full_name='PSXAPI.Response76302229.Transfer.Result', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Pokemon', full_name='PSXAPI.Response83.Transfer.Pokemon', index=1,
+      name='Pokemon', full_name='PSXAPI.Response76302229.Transfer.Pokemon', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Box', full_name='PSXAPI.Response83.Transfer.Box', index=2,
+      name='Box', full_name='PSXAPI.Response76302229.Transfer.Box', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -94,21 +90,54 @@ _TRANSFER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=48,
-  serialized_end=161,
+  serialized_start=68,
+  serialized_end=213,
 )
 
-_TRANSFER.fields_by_name['Result'].enum_type = _TRANSFERRESULT
-_TRANSFER.fields_by_name['Pokemon'].message_type = bcl__pb2._GUID
+
+_PREFIX_AGDFASBV1541032225 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1541032225',
+  full_name='PSXAPI.Response76302229.PREFIX_AGDFASBV1541032225',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1541032225_TRANSFERRESULT,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=215,
+  serialized_end=285,
+)
+
+_TRANSFER.fields_by_name['Result'].enum_type = _PREFIX_AGDFASBV1541032225_TRANSFERRESULT
+_TRANSFER.fields_by_name['Pokemon'].message_type = protobuf__net_dot_bcl__pb2._GUID
+_PREFIX_AGDFASBV1541032225_TRANSFERRESULT.containing_type = _PREFIX_AGDFASBV1541032225
 DESCRIPTOR.message_types_by_name['Transfer'] = _TRANSFER
-DESCRIPTOR.enum_types_by_name['TransferResult'] = _TRANSFERRESULT
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1541032225'] = _PREFIX_AGDFASBV1541032225
 
 Transfer = _reflection.GeneratedProtocolMessageType('Transfer', (_message.Message,), dict(
   DESCRIPTOR = _TRANSFER,
   __module__ = 'Transfer_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response83.Transfer)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response76302229.Transfer)
   ))
 _sym_db.RegisterMessage(Transfer)
+
+PREFIX_AGDFASBV1541032225 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1541032225', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1541032225,
+  __module__ = 'Transfer_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response76302229.PREFIX_AGDFASBV1541032225)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1541032225)
 
 
 # @@protoc_insertion_point(module_scope)

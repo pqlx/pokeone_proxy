@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -18,20 +17,22 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Skin.proto',
-  package='PSXAPI_Response491841',
+  package='PSXAPI.Response1286491933',
   syntax='proto2',
-  serialized_pb=_b('\n\nSkin.proto\x12\x15PSXAPI_Response491841\"\x8f\x01\n\x04Skin\x12:\n\x06\x41\x63tion\x18\x01 \x01(\x0e\x32!.PSXAPI_Response491841.SkinAction:\x07__None0\x12\x36\n\x04Type\x18\x02 \x01(\x0e\x32\x1f.PSXAPI_Response491841.SkinType:\x07__None1\x12\x13\n\x08SpriteID\x18\x03 \x01(\x05:\x01\x30*\"\n\nSkinAction\x12\x0b\n\x07__None0\x10\x00\x12\x07\n\x03\x41\x64\x64\x10\x01*J\n\x08SkinType\x12\x0b\n\x07__None1\x10\x00\x12\n\n\x06\x43lothe\x10\x01\x12\x07\n\x03Hat\x10\x02\x12\t\n\x05Mount\x10\x03\x12\x08\n\x04Surf\x10\x04\x12\x07\n\x03\x46ly\x10\x05')
+  serialized_pb=_b('\n\nSkin.proto\x12\x19PSXAPI.Response1286491933\"\xcf\x01\n\x04Skin\x12Z\n\x06\x41\x63tion\x18\x01 \x01(\x0e\x32?.PSXAPI.Response1286491933.PREFIX_AGDFASBV1560967483.SkinAction:\tNoneValue\x12V\n\x04Type\x18\x02 \x01(\x0e\x32=.PSXAPI.Response1286491933.PREFIX_AGDFASBV1578555421.SkinType:\tNoneValue\x12\x13\n\x08SpriteID\x18\x03 \x01(\x05:\x01\x30\"A\n\x19PREFIX_AGDFASBV1560967483\"$\n\nSkinAction\x12\r\n\tNoneValue\x10\x00\x12\x07\n\x03\x41\x64\x64\x10\x01\"i\n\x19PREFIX_AGDFASBV1578555421\"L\n\x08SkinType\x12\r\n\tNoneValue\x10\x00\x12\n\n\x06\x43lothe\x10\x01\x12\x07\n\x03Hat\x10\x02\x12\t\n\x05Mount\x10\x03\x12\x08\n\x04Surf\x10\x04\x12\x07\n\x03\x46ly\x10\x05')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_SKINACTION = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV1560967483_SKINACTION = _descriptor.EnumDescriptor(
   name='SkinAction',
-  full_name='PSXAPI_Response491841.SkinAction',
+  full_name='PSXAPI.Response1286491933.PREFIX_AGDFASBV1560967483.SkinAction',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='__None0', index=0, number=0,
+      name='NoneValue', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -41,20 +42,19 @@ _SKINACTION = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=183,
-  serialized_end=217,
+  serialized_start=280,
+  serialized_end=316,
 )
-_sym_db.RegisterEnumDescriptor(_SKINACTION)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1560967483_SKINACTION)
 
-SkinAction = enum_type_wrapper.EnumTypeWrapper(_SKINACTION)
-_SKINTYPE = _descriptor.EnumDescriptor(
+_PREFIX_AGDFASBV1578555421_SKINTYPE = _descriptor.EnumDescriptor(
   name='SkinType',
-  full_name='PSXAPI_Response491841.SkinType',
+  full_name='PSXAPI.Response1286491933.PREFIX_AGDFASBV1578555421.SkinType',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='__None1', index=0, number=0,
+      name='NoneValue', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -80,46 +80,35 @@ _SKINTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=219,
-  serialized_end=293,
+  serialized_start=347,
+  serialized_end=423,
 )
-_sym_db.RegisterEnumDescriptor(_SKINTYPE)
-
-SkinType = enum_type_wrapper.EnumTypeWrapper(_SKINTYPE)
-__None0 = 0
-Add = 1
-__None1 = 0
-Clothe = 1
-Hat = 2
-Mount = 3
-Surf = 4
-Fly = 5
-
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1578555421_SKINTYPE)
 
 
 _SKIN = _descriptor.Descriptor(
   name='Skin',
-  full_name='PSXAPI_Response491841.Skin',
+  full_name='PSXAPI.Response1286491933.Skin',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Action', full_name='PSXAPI_Response491841.Skin.Action', index=0,
+      name='Action', full_name='PSXAPI.Response1286491933.Skin.Action', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Type', full_name='PSXAPI_Response491841.Skin.Type', index=1,
+      name='Type', full_name='PSXAPI.Response1286491933.Skin.Type', index=1,
       number=2, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='SpriteID', full_name='PSXAPI_Response491841.Skin.SpriteID', index=2,
+      name='SpriteID', full_name='PSXAPI.Response1286491933.Skin.SpriteID', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -137,22 +126,88 @@ _SKIN = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=38,
-  serialized_end=181,
+  serialized_start=42,
+  serialized_end=249,
 )
 
-_SKIN.fields_by_name['Action'].enum_type = _SKINACTION
-_SKIN.fields_by_name['Type'].enum_type = _SKINTYPE
+
+_PREFIX_AGDFASBV1560967483 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1560967483',
+  full_name='PSXAPI.Response1286491933.PREFIX_AGDFASBV1560967483',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1560967483_SKINACTION,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=251,
+  serialized_end=316,
+)
+
+
+_PREFIX_AGDFASBV1578555421 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1578555421',
+  full_name='PSXAPI.Response1286491933.PREFIX_AGDFASBV1578555421',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1578555421_SKINTYPE,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=318,
+  serialized_end=423,
+)
+
+_SKIN.fields_by_name['Action'].enum_type = _PREFIX_AGDFASBV1560967483_SKINACTION
+_SKIN.fields_by_name['Type'].enum_type = _PREFIX_AGDFASBV1578555421_SKINTYPE
+_PREFIX_AGDFASBV1560967483_SKINACTION.containing_type = _PREFIX_AGDFASBV1560967483
+_PREFIX_AGDFASBV1578555421_SKINTYPE.containing_type = _PREFIX_AGDFASBV1578555421
 DESCRIPTOR.message_types_by_name['Skin'] = _SKIN
-DESCRIPTOR.enum_types_by_name['SkinAction'] = _SKINACTION
-DESCRIPTOR.enum_types_by_name['SkinType'] = _SKINTYPE
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1560967483'] = _PREFIX_AGDFASBV1560967483
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1578555421'] = _PREFIX_AGDFASBV1578555421
 
 Skin = _reflection.GeneratedProtocolMessageType('Skin', (_message.Message,), dict(
   DESCRIPTOR = _SKIN,
   __module__ = 'Skin_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI_Response491841.Skin)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1286491933.Skin)
   ))
 _sym_db.RegisterMessage(Skin)
+
+PREFIX_AGDFASBV1560967483 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1560967483', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1560967483,
+  __module__ = 'Skin_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1286491933.PREFIX_AGDFASBV1560967483)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1560967483)
+
+PREFIX_AGDFASBV1578555421 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1578555421', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1578555421,
+  __module__ = 'Skin_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1286491933.PREFIX_AGDFASBV1578555421)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1578555421)
 
 
 # @@protoc_insertion_point(module_scope)

@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Pokedex.proto',
-  package='PSXAPI.Request50',
+  package='PSXAPI.Request961485215',
   syntax='proto2',
-  serialized_pb=_b('\n\rPokedex.proto\x12\x10PSXAPI.Request50\"\t\n\x07Pokedex')
+  serialized_pb=_b('\n\rPokedex.proto\x12\x17PSXAPI.Request961485215\"\t\n\x07Pokedex')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,7 +28,7 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _POKEDEX = _descriptor.Descriptor(
   name='Pokedex',
-  full_name='PSXAPI.Request50.Pokedex',
+  full_name='PSXAPI.Request961485215.Pokedex',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
@@ -45,8 +45,8 @@ _POKEDEX = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=35,
-  serialized_end=44,
+  serialized_start=42,
+  serialized_end=51,
 )
 
 DESCRIPTOR.message_types_by_name['Pokedex'] = _POKEDEX
@@ -54,7 +54,7 @@ DESCRIPTOR.message_types_by_name['Pokedex'] = _POKEDEX
 Pokedex = _reflection.GeneratedProtocolMessageType('Pokedex', (_message.Message,), dict(
   DESCRIPTOR = _POKEDEX,
   __module__ = 'Pokedex_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request50.Pokedex)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request961485215.Pokedex)
   ))
 _sym_db.RegisterMessage(Pokedex)
 

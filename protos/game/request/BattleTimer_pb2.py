@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='BattleTimer.proto',
-  package='PSXAPI.Request10',
+  package='PSXAPI.Request52057783',
   syntax='proto2',
-  serialized_pb=_b('\n\x11\x42\x61ttleTimer.proto\x12\x10PSXAPI.Request10\"\r\n\x0b\x42\x61ttleTimer')
+  serialized_pb=_b('\n\x11\x42\x61ttleTimer.proto\x12\x16PSXAPI.Request52057783\"\r\n\x0b\x42\x61ttleTimer')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,7 +28,7 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _BATTLETIMER = _descriptor.Descriptor(
   name='BattleTimer',
-  full_name='PSXAPI.Request10.BattleTimer',
+  full_name='PSXAPI.Request52057783.BattleTimer',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
@@ -45,8 +45,8 @@ _BATTLETIMER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=39,
-  serialized_end=52,
+  serialized_start=45,
+  serialized_end=58,
 )
 
 DESCRIPTOR.message_types_by_name['BattleTimer'] = _BATTLETIMER
@@ -54,7 +54,7 @@ DESCRIPTOR.message_types_by_name['BattleTimer'] = _BATTLETIMER
 BattleTimer = _reflection.GeneratedProtocolMessageType('BattleTimer', (_message.Message,), dict(
   DESCRIPTOR = _BATTLETIMER,
   __module__ = 'BattleTimer_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Request10.BattleTimer)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Request52057783.BattleTimer)
   ))
 _sym_db.RegisterMessage(BattleTimer)
 

@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='DebugMessage.proto',
-  package='PSXAPI.Response18',
+  package='PSXAPI.Response1767208119',
   syntax='proto2',
-  serialized_pb=_b('\n\x12\x44\x65\x62ugMessage.proto\x12\x11PSXAPI.Response18\"\x1f\n\x0c\x44\x65\x62ugMessage\x12\x0f\n\x07Message\x18\x01 \x01(\t')
+  serialized_pb=_b('\n\x12\x44\x65\x62ugMessage.proto\x12\x19PSXAPI.Response1767208119\"\x1f\n\x0c\x44\x65\x62ugMessage\x12\x0f\n\x07Message\x18\x01 \x01(\t')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,13 +28,13 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _DEBUGMESSAGE = _descriptor.Descriptor(
   name='DebugMessage',
-  full_name='PSXAPI.Response18.DebugMessage',
+  full_name='PSXAPI.Response1767208119.DebugMessage',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Message', full_name='PSXAPI.Response18.DebugMessage.Message', index=0,
+      name='Message', full_name='PSXAPI.Response1767208119.DebugMessage.Message', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -52,8 +52,8 @@ _DEBUGMESSAGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=41,
-  serialized_end=72,
+  serialized_start=49,
+  serialized_end=80,
 )
 
 DESCRIPTOR.message_types_by_name['DebugMessage'] = _DEBUGMESSAGE
@@ -61,7 +61,7 @@ DESCRIPTOR.message_types_by_name['DebugMessage'] = _DEBUGMESSAGE
 DebugMessage = _reflection.GeneratedProtocolMessageType('DebugMessage', (_message.Message,), dict(
   DESCRIPTOR = _DEBUGMESSAGE,
   __module__ = 'DebugMessage_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response18.DebugMessage)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response1767208119.DebugMessage)
   ))
 _sym_db.RegisterMessage(DebugMessage)
 

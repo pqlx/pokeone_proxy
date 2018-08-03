@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='HeightTilesStruct.proto',
-  package='MAPAPI.Response13',
+  package='MAPAPI.Response237923865',
   syntax='proto2',
-  serialized_pb=_b('\n\x17HeightTilesStruct.proto\x12\x11MAPAPI.Response13\"@\n\x11HeightTilesStruct\x12+\n\x05\x42lock\x18\x01 \x03(\x0b\x32\x1c.MAPAPI.Response13.wallTypes\"A\n\twallTypes\x12\x10\n\x05Side0\x18\x01 \x01(\x05:\x01\x30\x12\x10\n\x05Side1\x18\x02 \x01(\x05:\x01\x30\x12\x10\n\x05Side2\x18\x03 \x01(\x05:\x01\x30')
+  serialized_pb=_b('\n\x17HeightTilesStruct.proto\x12\x18MAPAPI.Response237923865\"G\n\x11HeightTilesStruct\x12\x32\n\x05\x42lock\x18\x01 \x03(\x0b\x32#.MAPAPI.Response237923865.wallTypes\"A\n\twallTypes\x12\x10\n\x05Side0\x18\x01 \x01(\x05:\x01\x30\x12\x10\n\x05Side1\x18\x02 \x01(\x05:\x01\x30\x12\x10\n\x05Side2\x18\x03 \x01(\x05:\x01\x30')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,13 +28,13 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _HEIGHTTILESSTRUCT = _descriptor.Descriptor(
   name='HeightTilesStruct',
-  full_name='MAPAPI.Response13.HeightTilesStruct',
+  full_name='MAPAPI.Response237923865.HeightTilesStruct',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Block', full_name='MAPAPI.Response13.HeightTilesStruct.Block', index=0,
+      name='Block', full_name='MAPAPI.Response237923865.HeightTilesStruct.Block', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -52,34 +52,34 @@ _HEIGHTTILESSTRUCT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=46,
-  serialized_end=110,
+  serialized_start=53,
+  serialized_end=124,
 )
 
 
 _WALLTYPES = _descriptor.Descriptor(
   name='wallTypes',
-  full_name='MAPAPI.Response13.wallTypes',
+  full_name='MAPAPI.Response237923865.wallTypes',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Side0', full_name='MAPAPI.Response13.wallTypes.Side0', index=0,
+      name='Side0', full_name='MAPAPI.Response237923865.wallTypes.Side0', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Side1', full_name='MAPAPI.Response13.wallTypes.Side1', index=1,
+      name='Side1', full_name='MAPAPI.Response237923865.wallTypes.Side1', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Side2', full_name='MAPAPI.Response13.wallTypes.Side2', index=2,
+      name='Side2', full_name='MAPAPI.Response237923865.wallTypes.Side2', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -97,8 +97,8 @@ _WALLTYPES = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=112,
-  serialized_end=177,
+  serialized_start=126,
+  serialized_end=191,
 )
 
 _HEIGHTTILESSTRUCT.fields_by_name['Block'].message_type = _WALLTYPES
@@ -108,14 +108,14 @@ DESCRIPTOR.message_types_by_name['wallTypes'] = _WALLTYPES
 HeightTilesStruct = _reflection.GeneratedProtocolMessageType('HeightTilesStruct', (_message.Message,), dict(
   DESCRIPTOR = _HEIGHTTILESSTRUCT,
   __module__ = 'HeightTilesStruct_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response13.HeightTilesStruct)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response237923865.HeightTilesStruct)
   ))
 _sym_db.RegisterMessage(HeightTilesStruct)
 
 wallTypes = _reflection.GeneratedProtocolMessageType('wallTypes', (_message.Message,), dict(
   DESCRIPTOR = _WALLTYPES,
   __module__ = 'HeightTilesStruct_pb2'
-  # @@protoc_insertion_point(class_scope:MAPAPI.Response13.wallTypes)
+  # @@protoc_insertion_point(class_scope:MAPAPI.Response237923865.wallTypes)
   ))
 _sym_db.RegisterMessage(wallTypes)
 

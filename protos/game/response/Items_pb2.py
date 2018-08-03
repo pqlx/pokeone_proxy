@@ -3,7 +3,6 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
-from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -18,20 +17,22 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='Items.proto',
-  package='PSXAPI.Response40',
+  package='PSXAPI.Response179873544',
   syntax='proto2',
-  serialized_pb=_b('\n\x0bItems.proto\x12\x11PSXAPI.Response40\"\xf3\x02\n\rInventoryItem\x12\x11\n\x06ItemID\x18\x01 \x01(\x05:\x01\x30\x12\x10\n\x05\x43ount\x18\x02 \x01(\r:\x01\x30\x12\x16\n\x07\x43\x61nHold\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\"\n\x13\x43\x61nUseOutsideBattle\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0e\x43\x61nUseInBattle\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x1c\n\rCanUseOnParty\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x17\n\x08\x43\x61nTrade\x18\x07 \x01(\x08:\x05\x66\x61lse\x12\x35\n\x06Target\x18\x08 \x01(\x0e\x32\x1d.PSXAPI.Response40.ItemTarget:\x06__None\x12\x37\n\x06Pocket\x18\t \x01(\x0e\x32\x1d.PSXAPI.Response40.ItemPocket:\x08Unknown1\x12;\n\x08\x43\x61tegory\x18\n \x01(\x0e\x32\x1f.PSXAPI.Response40.ItemCategory:\x08Unknown0\"6\n\x05Items\x12-\n\x03\x41ll\x18\x01 \x03(\x0b\x32 .PSXAPI.Response40.InventoryItem*w\n\x0cItemCategory\x12\x0c\n\x08Unknown0\x10\x00\x12\x0b\n\x07General\x10\x01\x12\r\n\tPokeball0\x10\x02\x12\r\n\tMedicine0\x10\x03\x12\x0c\n\x08Machine0\x10\x04\x12\n\n\x06\x42\x65rry0\x10\x05\x12\n\n\x06\x42\x61ttle\x10\x06\x12\x08\n\x04Hold\x10\x07*g\n\nItemPocket\x12\x0c\n\x08Unknown1\x10\x00\x12\n\n\x06Items1\x10\x01\x12\r\n\tMedicine1\x10\x02\x12\n\n\x06\x42\x65rry1\x10\x03\x12\x07\n\x03Key\x10\x04\x12\x0c\n\x08Machine1\x10\x05\x12\r\n\tZ_Crystal\x10\x06*/\n\nItemTarget\x12\n\n\x06__None\x10\x00\x12\x0b\n\x07Pokemon\x10\x01\x12\x08\n\x04Move\x10\x02')
+  serialized_pb=_b('\n\x0bItems.proto\x12\x18PSXAPI.Response179873544\"\xd5\x03\n\rInventoryItem\x12\x11\n\x06ItemID\x18\x01 \x01(\x05:\x01\x30\x12\x10\n\x05\x43ount\x18\x02 \x01(\r:\x01\x30\x12\x16\n\x07\x43\x61nHold\x18\x03 \x01(\x08:\x05\x66\x61lse\x12\"\n\x13\x43\x61nUseOutsideBattle\x18\x04 \x01(\x08:\x05\x66\x61lse\x12\x1d\n\x0e\x43\x61nUseInBattle\x18\x05 \x01(\x08:\x05\x66\x61lse\x12\x1c\n\rCanUseOnParty\x18\x06 \x01(\x08:\x05\x66\x61lse\x12\x17\n\x08\x43\x61nTrade\x18\x07 \x01(\x08:\x05\x66\x61lse\x12Y\n\x06Target\x18\x08 \x01(\x0e\x32>.PSXAPI.Response179873544.PREFIX_AGDFASBV1803127255.ItemTarget:\tNoneValue\x12V\n\x06Pocket\x18\t \x01(\x0e\x32=.PSXAPI.Response179873544.PREFIX_AGDFASBV880126639.ItemPocket:\x07Unknown\x12Z\n\x08\x43\x61tegory\x18\n \x01(\x0e\x32?.PSXAPI.Response179873544.PREFIX_AGDFASBV234722029.ItemCategory:\x07Unknown\"\x8e\x01\n\x18PREFIX_AGDFASBV234722029\"r\n\x0cItemCategory\x12\x0b\n\x07Unknown\x10\x00\x12\x0b\n\x07General\x10\x01\x12\x0c\n\x08Pokeball\x10\x02\x12\x0c\n\x08Medicine\x10\x03\x12\x0b\n\x07Machine\x10\x04\x12\t\n\x05\x42\x65rry\x10\x05\x12\n\n\x06\x42\x61ttle\x10\x06\x12\x08\n\x04Hold\x10\x07\"~\n\x18PREFIX_AGDFASBV880126639\"b\n\nItemPocket\x12\x0b\n\x07Unknown\x10\x00\x12\t\n\x05Items\x10\x01\x12\x0c\n\x08Medicine\x10\x02\x12\t\n\x05\x42\x65rry\x10\x03\x12\x07\n\x03Key\x10\x04\x12\x0b\n\x07Machine\x10\x05\x12\r\n\tZ_Crystal\x10\x06\"O\n\x19PREFIX_AGDFASBV1803127255\"2\n\nItemTarget\x12\r\n\tNoneValue\x10\x00\x12\x0b\n\x07Pokemon\x10\x01\x12\x08\n\x04Move\x10\x02\"=\n\x05Items\x12\x34\n\x03\x41ll\x18\x01 \x03(\x0b\x32\'.PSXAPI.Response179873544.InventoryItem')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
-_ITEMCATEGORY = _descriptor.EnumDescriptor(
+
+
+_PREFIX_AGDFASBV234722029_ITEMCATEGORY = _descriptor.EnumDescriptor(
   name='ItemCategory',
-  full_name='PSXAPI.Response40.ItemCategory',
+  full_name='PSXAPI.Response179873544.PREFIX_AGDFASBV234722029.ItemCategory',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='Unknown0', index=0, number=0,
+      name='Unknown', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -39,19 +40,19 @@ _ITEMCATEGORY = _descriptor.EnumDescriptor(
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='Pokeball0', index=2, number=2,
+      name='Pokeball', index=2, number=2,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='Medicine0', index=3, number=3,
+      name='Medicine', index=3, number=3,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='Machine0', index=4, number=4,
+      name='Machine', index=4, number=4,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='Berry0', index=5, number=5,
+      name='Berry', index=5, number=5,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -65,32 +66,31 @@ _ITEMCATEGORY = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=464,
-  serialized_end=583,
+  serialized_start=542,
+  serialized_end=656,
 )
-_sym_db.RegisterEnumDescriptor(_ITEMCATEGORY)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV234722029_ITEMCATEGORY)
 
-ItemCategory = enum_type_wrapper.EnumTypeWrapper(_ITEMCATEGORY)
-_ITEMPOCKET = _descriptor.EnumDescriptor(
+_PREFIX_AGDFASBV880126639_ITEMPOCKET = _descriptor.EnumDescriptor(
   name='ItemPocket',
-  full_name='PSXAPI.Response40.ItemPocket',
+  full_name='PSXAPI.Response179873544.PREFIX_AGDFASBV880126639.ItemPocket',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='Unknown1', index=0, number=0,
+      name='Unknown', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='Items1', index=1, number=1,
+      name='Items', index=1, number=1,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='Medicine1', index=2, number=2,
+      name='Medicine', index=2, number=2,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='Berry1', index=3, number=3,
+      name='Berry', index=3, number=3,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -98,7 +98,7 @@ _ITEMPOCKET = _descriptor.EnumDescriptor(
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='Machine1', index=5, number=5,
+      name='Machine', index=5, number=5,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -108,20 +108,19 @@ _ITEMPOCKET = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=585,
-  serialized_end=688,
+  serialized_start=686,
+  serialized_end=784,
 )
-_sym_db.RegisterEnumDescriptor(_ITEMPOCKET)
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV880126639_ITEMPOCKET)
 
-ItemPocket = enum_type_wrapper.EnumTypeWrapper(_ITEMPOCKET)
-_ITEMTARGET = _descriptor.EnumDescriptor(
+_PREFIX_AGDFASBV1803127255_ITEMTARGET = _descriptor.EnumDescriptor(
   name='ItemTarget',
-  full_name='PSXAPI.Response40.ItemTarget',
+  full_name='PSXAPI.Response179873544.PREFIX_AGDFASBV1803127255.ItemTarget',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='__None', index=0, number=0,
+      name='NoneValue', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
@@ -135,105 +134,84 @@ _ITEMTARGET = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=690,
-  serialized_end=737,
+  serialized_start=815,
+  serialized_end=865,
 )
-_sym_db.RegisterEnumDescriptor(_ITEMTARGET)
-
-ItemTarget = enum_type_wrapper.EnumTypeWrapper(_ITEMTARGET)
-Unknown0 = 0
-General = 1
-Pokeball0 = 2
-Medicine0 = 3
-Machine0 = 4
-Berry0 = 5
-Battle = 6
-Hold = 7
-Unknown1 = 0
-Items1 = 1
-Medicine1 = 2
-Berry1 = 3
-Key = 4
-Machine1 = 5
-Z_Crystal = 6
-__None = 0
-Pokemon = 1
-Move = 2
-
+_sym_db.RegisterEnumDescriptor(_PREFIX_AGDFASBV1803127255_ITEMTARGET)
 
 
 _INVENTORYITEM = _descriptor.Descriptor(
   name='InventoryItem',
-  full_name='PSXAPI.Response40.InventoryItem',
+  full_name='PSXAPI.Response179873544.InventoryItem',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='ItemID', full_name='PSXAPI.Response40.InventoryItem.ItemID', index=0,
+      name='ItemID', full_name='PSXAPI.Response179873544.InventoryItem.ItemID', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Count', full_name='PSXAPI.Response40.InventoryItem.Count', index=1,
+      name='Count', full_name='PSXAPI.Response179873544.InventoryItem.Count', index=1,
       number=2, type=13, cpp_type=3, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanHold', full_name='PSXAPI.Response40.InventoryItem.CanHold', index=2,
+      name='CanHold', full_name='PSXAPI.Response179873544.InventoryItem.CanHold', index=2,
       number=3, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanUseOutsideBattle', full_name='PSXAPI.Response40.InventoryItem.CanUseOutsideBattle', index=3,
+      name='CanUseOutsideBattle', full_name='PSXAPI.Response179873544.InventoryItem.CanUseOutsideBattle', index=3,
       number=4, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanUseInBattle', full_name='PSXAPI.Response40.InventoryItem.CanUseInBattle', index=4,
+      name='CanUseInBattle', full_name='PSXAPI.Response179873544.InventoryItem.CanUseInBattle', index=4,
       number=5, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanUseOnParty', full_name='PSXAPI.Response40.InventoryItem.CanUseOnParty', index=5,
+      name='CanUseOnParty', full_name='PSXAPI.Response179873544.InventoryItem.CanUseOnParty', index=5,
       number=6, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='CanTrade', full_name='PSXAPI.Response40.InventoryItem.CanTrade', index=6,
+      name='CanTrade', full_name='PSXAPI.Response179873544.InventoryItem.CanTrade', index=6,
       number=7, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Target', full_name='PSXAPI.Response40.InventoryItem.Target', index=7,
+      name='Target', full_name='PSXAPI.Response179873544.InventoryItem.Target', index=7,
       number=8, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Pocket', full_name='PSXAPI.Response40.InventoryItem.Pocket', index=8,
+      name='Pocket', full_name='PSXAPI.Response179873544.InventoryItem.Pocket', index=8,
       number=9, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='Category', full_name='PSXAPI.Response40.InventoryItem.Category', index=9,
+      name='Category', full_name='PSXAPI.Response179873544.InventoryItem.Category', index=9,
       number=10, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -251,20 +229,95 @@ _INVENTORYITEM = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=35,
-  serialized_end=406,
+  serialized_start=42,
+  serialized_end=511,
+)
+
+
+_PREFIX_AGDFASBV234722029 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV234722029',
+  full_name='PSXAPI.Response179873544.PREFIX_AGDFASBV234722029',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV234722029_ITEMCATEGORY,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=514,
+  serialized_end=656,
+)
+
+
+_PREFIX_AGDFASBV880126639 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV880126639',
+  full_name='PSXAPI.Response179873544.PREFIX_AGDFASBV880126639',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV880126639_ITEMPOCKET,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=658,
+  serialized_end=784,
+)
+
+
+_PREFIX_AGDFASBV1803127255 = _descriptor.Descriptor(
+  name='PREFIX_AGDFASBV1803127255',
+  full_name='PSXAPI.Response179873544.PREFIX_AGDFASBV1803127255',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _PREFIX_AGDFASBV1803127255_ITEMTARGET,
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=786,
+  serialized_end=865,
 )
 
 
 _ITEMS = _descriptor.Descriptor(
   name='Items',
-  full_name='PSXAPI.Response40.Items',
+  full_name='PSXAPI.Response179873544.Items',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='All', full_name='PSXAPI.Response40.Items.All', index=0,
+      name='All', full_name='PSXAPI.Response179873544.Items.All', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -282,31 +335,55 @@ _ITEMS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=408,
-  serialized_end=462,
+  serialized_start=867,
+  serialized_end=928,
 )
 
-_INVENTORYITEM.fields_by_name['Target'].enum_type = _ITEMTARGET
-_INVENTORYITEM.fields_by_name['Pocket'].enum_type = _ITEMPOCKET
-_INVENTORYITEM.fields_by_name['Category'].enum_type = _ITEMCATEGORY
+_INVENTORYITEM.fields_by_name['Target'].enum_type = _PREFIX_AGDFASBV1803127255_ITEMTARGET
+_INVENTORYITEM.fields_by_name['Pocket'].enum_type = _PREFIX_AGDFASBV880126639_ITEMPOCKET
+_INVENTORYITEM.fields_by_name['Category'].enum_type = _PREFIX_AGDFASBV234722029_ITEMCATEGORY
+_PREFIX_AGDFASBV234722029_ITEMCATEGORY.containing_type = _PREFIX_AGDFASBV234722029
+_PREFIX_AGDFASBV880126639_ITEMPOCKET.containing_type = _PREFIX_AGDFASBV880126639
+_PREFIX_AGDFASBV1803127255_ITEMTARGET.containing_type = _PREFIX_AGDFASBV1803127255
 _ITEMS.fields_by_name['All'].message_type = _INVENTORYITEM
 DESCRIPTOR.message_types_by_name['InventoryItem'] = _INVENTORYITEM
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV234722029'] = _PREFIX_AGDFASBV234722029
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV880126639'] = _PREFIX_AGDFASBV880126639
+DESCRIPTOR.message_types_by_name['PREFIX_AGDFASBV1803127255'] = _PREFIX_AGDFASBV1803127255
 DESCRIPTOR.message_types_by_name['Items'] = _ITEMS
-DESCRIPTOR.enum_types_by_name['ItemCategory'] = _ITEMCATEGORY
-DESCRIPTOR.enum_types_by_name['ItemPocket'] = _ITEMPOCKET
-DESCRIPTOR.enum_types_by_name['ItemTarget'] = _ITEMTARGET
 
 InventoryItem = _reflection.GeneratedProtocolMessageType('InventoryItem', (_message.Message,), dict(
   DESCRIPTOR = _INVENTORYITEM,
   __module__ = 'Items_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response40.InventoryItem)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response179873544.InventoryItem)
   ))
 _sym_db.RegisterMessage(InventoryItem)
+
+PREFIX_AGDFASBV234722029 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV234722029', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV234722029,
+  __module__ = 'Items_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response179873544.PREFIX_AGDFASBV234722029)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV234722029)
+
+PREFIX_AGDFASBV880126639 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV880126639', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV880126639,
+  __module__ = 'Items_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response179873544.PREFIX_AGDFASBV880126639)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV880126639)
+
+PREFIX_AGDFASBV1803127255 = _reflection.GeneratedProtocolMessageType('PREFIX_AGDFASBV1803127255', (_message.Message,), dict(
+  DESCRIPTOR = _PREFIX_AGDFASBV1803127255,
+  __module__ = 'Items_pb2'
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response179873544.PREFIX_AGDFASBV1803127255)
+  ))
+_sym_db.RegisterMessage(PREFIX_AGDFASBV1803127255)
 
 Items = _reflection.GeneratedProtocolMessageType('Items', (_message.Message,), dict(
   DESCRIPTOR = _ITEMS,
   __module__ = 'Items_pb2'
-  # @@protoc_insertion_point(class_scope:PSXAPI.Response40.Items)
+  # @@protoc_insertion_point(class_scope:PSXAPI.Response179873544.Items)
   ))
 _sym_db.RegisterMessage(Items)
 
