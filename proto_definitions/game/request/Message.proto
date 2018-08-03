@@ -1,0 +1,16 @@
+syntax = "proto2";
+package PSXAPI.Request691673898;
+import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+
+message Message {
+   optional PREFIX_AGDFASBV1049698241.MessageEvent Event = 1 [default = Message];
+   optional string Name = 2;
+   optional string Text = 3;
+   repeated .bcl.Guid Pokemon = 4;
+}
+message PREFIX_AGDFASBV1049698241 {
+    enum MessageEvent {
+   Message = 0;
+   Closed = 1;
+} //PREFIX_AGDFASBV
+};

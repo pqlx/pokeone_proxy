@@ -1,0 +1,15 @@
+syntax = "proto2";
+package PSXAPI.Response76302229;
+import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+
+message Transfer {
+   optional PREFIX_AGDFASBV1541032225.TransferResult Result = 1 [default = Failed];
+   optional .bcl.Guid Pokemon = 2;
+   optional int32 Box = 3 [default = 0];
+}
+message PREFIX_AGDFASBV1541032225 {
+    enum TransferResult {
+   Failed = 0;
+   Success = 1;
+} //PREFIX_AGDFASBV
+};

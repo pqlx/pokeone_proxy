@@ -1,0 +1,8 @@
+syntax = "proto2";
+package PSXAPI.Request1537276027;
+import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+
+message Evolve {
+   optional .bcl.Guid Pokemon = 1;
+   optional bool Accept = 2 [default = false];
+}

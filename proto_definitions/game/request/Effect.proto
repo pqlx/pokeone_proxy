@@ -1,0 +1,14 @@
+syntax = "proto2";
+package PSXAPI.Request1311247870;
+import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+
+message Effect {
+   optional PREFIX_AGDFASBV1669458790.EffectAction Action = 1 [default = Cancel];
+   optional .bcl.Guid UID = 2;
+}
+message PREFIX_AGDFASBV1669458790 {
+    enum EffectAction {
+   Cancel = 0;
+   Use = 1;
+} //PREFIX_AGDFASBV
+};

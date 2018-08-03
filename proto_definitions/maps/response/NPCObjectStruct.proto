@@ -1,0 +1,10 @@
+syntax = "proto2";
+package MAPAPI.Response123359262;
+import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+
+message NPCObjectStruct {
+   optional int32 x = 1 [default = 0];
+   optional int32 y = 2 [default = 0];
+   optional int32 z = 3 [default = 0];
+   optional .bcl.Guid ID = 4;
+}

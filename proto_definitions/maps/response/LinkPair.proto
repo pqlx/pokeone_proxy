@@ -1,0 +1,9 @@
+syntax = "proto2";
+package MAPAPI.Response1432085585;
+import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+
+message LinkPair {
+   optional .bcl.Guid Link1 = 1;
+   optional .bcl.Guid Link2 = 2;
+   optional int32 Distance = 3 [default = 0];
+}

@@ -1,0 +1,10 @@
+syntax = "proto2";
+package PSXAPI.Response1810850094;
+import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+
+message LootVote {
+   optional .bcl.Guid VoteID = 1;
+   optional int32 ItemID = 2 [default = 0];
+   optional uint32 Quantity = 3 [default = 0];
+   optional .bcl.TimeSpan Duration = 4;
+}

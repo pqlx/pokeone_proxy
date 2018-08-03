@@ -1,9 +1,0 @@
-syntax = "proto2";
-package PSXAPI.Request1014238239;
-import "protobuf-net/bcl.proto"; // schema for protobuf-net's handling of core .NET types
-
-message UseItem {
-   optional int32 Item = 1 [default = 0];
-   optional .bcl.Guid Pokemon = 2;
-   optional int32 Move = 3 [default = 0];
-}

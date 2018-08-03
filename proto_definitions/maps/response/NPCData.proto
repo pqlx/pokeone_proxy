@@ -1,0 +1,28 @@
+syntax = "proto2";
+package MAPAPI.Response1101234815;
+import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+
+message NPCData {
+   optional int32 x = 1 [default = 0];
+   optional int32 y = 2 [default = 0];
+   optional int32 z = 3 [default = 0];
+   optional .bcl.Guid ID = 4;
+   optional NPCSettingStruct Settings = 5;
+}
+message NPCSettingStruct {
+   optional string NPCName = 1;
+   optional string Facing = 2;
+   optional string SightAction = 3;
+   optional int32 LOS = 4 [default = 0];
+   optional string Path = 5;
+   optional bool Enabled = 6 [default = false];
+   optional bool WalkFast = 7 [default = false];
+   optional bool LookRandomly = 8 [default = false];
+   optional int32 Sprite = 9 [default = 0];
+   optional string Tags = 10;
+   optional string Script = 11;
+   optional string NameColour = 12;
+   optional string StartScript = 13;
+   optional string SpottedSFX = 14;
+   optional bool DontMerge = 15 [default = false];
+}
