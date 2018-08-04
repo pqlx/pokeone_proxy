@@ -16,15 +16,21 @@ class TransferType(Enum):
     REQUEST = 0
     RESPONSE = 1
 
+
 class PacketContext(object):
     """
     Class to give context about a packet
     """
-    __slots__ = ("server", "transfer")
+    __slots__ = ("server", "transfer", "remote_host", "local_host", "port")
 
-    def __init__(self, server: ServerType, transfer: TransferType):
+    def __init__(self, server: Optional[ServerType]=None, transfer: Optional[TransferType]=None, 
+                 remote_host: Optional[str]=None, local_host: Optional[str]=None, 
+                 port: Optional[int]=None):
         self.server = server
         self.transfer = transfer
+        self.remote_host = remote_host
+        self.local_host = local_host
+        self.port = port
     
     @property
     def path(self) -> str:
@@ -34,3 +40,11 @@ class PacketContext(object):
         path = '.'.join([getattr(x, 'name') for x in [self.server, self.transfer] ])
         
         return path.lower()
+    
+    @property
+    def local_authority(self) -> str:
+        return f"{self.local_host}:{self.port}"
+
+    @property
+    def remote_authority(self) -> str:
+        return f"{self.remote_host}:{self.port}"

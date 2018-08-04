@@ -2,9 +2,13 @@ from typing import *
 import sys
 from UI.widgets import Ui_MainWindow
 from UI.Startup import Startup
-from PyQt5.QtWidgets import QApplication, QDialog, QMainWindow, QHeaderView
+from PyQt5.QtWidgets import QApplication, QDialog, QMainWindow, QHeaderView, QTableWidgetItem
 from PyQt5.QtCore import pyqtSignal, pyqtSlot
+from datetime import datetime
 import json
+
+from packet.Packet import Packet
+from packet.PacketContext import PacketContext, ServerType, TransferType
 
 class MainUI(QMainWindow):
     """
@@ -46,11 +50,49 @@ class MainUI(QMainWindow):
         self.selected_packet = x 
 
         self.ui.proxy_packet_edit.document().setPlainText(
-                        json.dumps(
-                            self.packets[x], 
-                            indent=4, 
-                            separators=(',', ': ')
-                        )
+            json.dumps(
+                self.packets[x].proto, 
+                indent=4, 
+                separators=(',', ': ')
+            )
         )
+    
+    def add_packet(self, packet: Packet):
+        """
+        Add a packet entry to the table
+        """
+
+        self.packets.append(packet)
+
+        table = self.ui.proxy_history_table
+
+        table.insertRow(table.rowCount())
+
+        def add_to_current_row(column: int, data: str):
+
+            widget = QTableWidgetItem(data)
+
+            if packet.proto == False:
+                widget.setBackground(QColor(255, 0, 0))
+
+            table.setItem(
+                table.rowCount() - 1,
+                column,
+                widget
+            )
+
+        rowdata = {
+            0: str(table.rowCount()),
+            1: "Game Server",
+            2: datetime.now().strftime('%H:%M:%S'),
+            3: "UP" if packet.ctx.transfer == TransferType.REQUEST else "Down",
+            4: packet.grain,
+            5: packet.ctx.local_authority,
+            6: packet.ctx.remote_authority,
+        }
+
+        for k, v in rowdata.items():
+            add_to_current_row(k, v)
+
         
         
