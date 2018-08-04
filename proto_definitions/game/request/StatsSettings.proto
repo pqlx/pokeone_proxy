@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Request933149580;
+package PSXAPI.Request1766443004;
 
 message StatsSettings {
    optional bool Private = 1 [default = false];

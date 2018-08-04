@@ -1,12 +1,12 @@
 syntax = "proto2";
-package PSXAPI.Response.Payload725007904;
+package PSXAPI.Response.Payload735968563;
 
 message PokemonMove {
-   optional PREFIX_AGDFASBV1287578599.PokemonMoveID Move = 1 [default = none];
+   optional PREFIX_AGDFASBV177020094.PokemonMoveID Move = 1 [default = none];
    optional int32 PP = 2 [default = 0];
    optional int32 MaxPP = 3 [default = 0];
 }
-message PREFIX_AGDFASBV1287578599 {
+message PREFIX_AGDFASBV177020094 {
     enum PokemonMoveID {
    none = 0;
    pound = 1;

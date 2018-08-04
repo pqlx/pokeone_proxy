@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Request601381925;
+package PSXAPI.Request706208706;
 
 message Logout {
 }

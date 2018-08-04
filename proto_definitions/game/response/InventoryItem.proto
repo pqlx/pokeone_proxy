@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Response785789273;
+package PSXAPI.Response531473309;
 
 message InventoryItem {
    optional int32 ItemID = 1 [default = 0];
@@ -9,11 +9,11 @@ message InventoryItem {
    optional bool CanUseInBattle = 5 [default = false];
    optional bool CanUseOnParty = 6 [default = false];
    optional bool CanTrade = 7 [default = false];
-   optional PREFIX_AGDFASBV1286858834.ItemTarget Target = 8 [default = NoneValue];
-   optional PREFIX_AGDFASBV486830740.ItemPocket Pocket = 9 [default = Unknown];
-   optional PREFIX_AGDFASBV1922854532.ItemCategory Category = 10 [default = Unknown];
+   optional PREFIX_AGDFASBV594227048.ItemTarget Target = 8 [default = NoneValue];
+   optional PREFIX_AGDFASBV798248118.ItemPocket Pocket = 9 [default = Unknown];
+   optional PREFIX_AGDFASBV1198469295.ItemCategory Category = 10 [default = Unknown];
 }
-message PREFIX_AGDFASBV1922854532 {
+message PREFIX_AGDFASBV1198469295 {
     enum ItemCategory {
    Unknown = 0;
    General = 1;
@@ -25,7 +25,7 @@ message PREFIX_AGDFASBV1922854532 {
    Hold = 7;
 } //PREFIX_AGDFASBV
 };
-message PREFIX_AGDFASBV486830740 {
+message PREFIX_AGDFASBV798248118 {
     enum ItemPocket {
    Unknown = 0;
    Items = 1;
@@ -36,7 +36,7 @@ message PREFIX_AGDFASBV486830740 {
    Z_Crystal = 6;
 } //PREFIX_AGDFASBV
 };
-message PREFIX_AGDFASBV1286858834 {
+message PREFIX_AGDFASBV594227048 {
     enum ItemTarget {
    NoneValue = 0;
    Pokemon = 1;

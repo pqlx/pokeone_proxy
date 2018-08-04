@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Response.Payload1716600723;
+package PSXAPI.Response.Payload588118177;
 
 message BattleActive {
    repeated BattleMove moves = 1;

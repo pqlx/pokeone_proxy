@@ -1,5 +1,5 @@
 syntax = "proto2";
-package MAPAPI.Response1953207448;
+package MAPAPI.Response505321695;
 import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
 
 message CreateNPC {

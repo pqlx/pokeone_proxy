@@ -1,7 +1,7 @@
 syntax = "proto2";
-package PSXAPI.Response.Payload1725011302;
+package PSXAPI.Response.Payload938793947;
 
-message PREFIX_AGDFASBV1831660003 {
+message PREFIX_AGDFASBV1635742452 {
     enum MapUserAction {
    Set = 0;
    Up = 1;
@@ -14,7 +14,7 @@ message PREFIX_AGDFASBV1831660003 {
 } //PREFIX_AGDFASBV
 };
 message MapUserActionData {
-   optional PREFIX_AGDFASBV1831660003.MapUserAction Action = 1 [default = Set];
+   optional PREFIX_AGDFASBV1635742452.MapUserAction Action = 1 [default = Set];
    optional MapUserPosition Position = 2;
 }
 message MapUserPosition {

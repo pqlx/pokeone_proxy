@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Response1610063222;
+package PSXAPI.Response455365916;
 
 message Area {
    optional string Map = 1;
@@ -13,13 +13,13 @@ message AreaPokemon {
    optional bool Night = 4 [default = false];
    optional bool Morning = 5 [default = false];
    optional bool Evening = 6 [default = false];
-   optional PREFIX_AGDFASBV247256079.PokedexEntryState Pokedex = 7 [default = NoneValue];
+   optional PREFIX_AGDFASBV655426515.PokedexEntryState Pokedex = 7 [default = NoneValue];
 }
 message Areas {
    optional int32 PokemonID = 1 [default = 0];
    repeated Area AreaList = 2;
 }
-message PREFIX_AGDFASBV247256079 {
+message PREFIX_AGDFASBV655426515 {
     enum PokedexEntryState {
    NoneValue = 0;
    Seen = 1;

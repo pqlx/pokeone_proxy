@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Request239316973;
+package PSXAPI.Request647599390;
 
 message FlyMove {
    optional float PosX = 1 [default = 0];

@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Response1810850094;
+package PSXAPI.Response1711336057;
 import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
 
 message LootVote {

@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Response.Payload797266626;
+package PSXAPI.Response.Payload222350428;
 
 message BattleMove {
    optional string move = 1;

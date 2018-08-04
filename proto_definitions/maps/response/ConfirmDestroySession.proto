@@ -1,5 +1,5 @@
 syntax = "proto2";
-package MAPAPI.Response1866251088;
+package MAPAPI.Response131528887;
 
 message ConfirmDestroySession {
    optional string MapName = 1;

@@ -1,8 +1,8 @@
 syntax = "proto2";
-package PSXAPI.Response.Payload137800493;
+package PSXAPI.Response.Payload1696333091;
 import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
 
-message PREFIX_AGDFASBV950684904 {
+message PREFIX_AGDFASBV295407557 {
     enum AbilitySlotType {
    NoneValue = 0;
    Slot1 = 1;
@@ -10,7 +10,7 @@ message PREFIX_AGDFASBV950684904 {
    Hidden = 3;
 } //PREFIX_AGDFASBV
 };
-message PREFIX_AGDFASBV886158338 {
+message PREFIX_AGDFASBV242545142 {
     enum EggState {
    NoneValue = 0;
    Sounds = 1;
@@ -25,26 +25,26 @@ message Pokemon {
    optional int32 Exp = 3 [default = 0];
    optional int32 HP = 4 [default = 0];
    repeated PokemonMove Moves = 5;
-   optional PREFIX_AGDFASBV950684904.AbilitySlotType AbilitySlot = 6 [default = NoneValue];
+   optional PREFIX_AGDFASBV295407557.AbilitySlotType AbilitySlot = 6 [default = NoneValue];
    optional int32 Happiness = 7 [default = 0];
-   optional PREFIX_AGDFASBV357211721.PokemonNatures Nature = 8 [default = NoneValue];
+   optional PREFIX_AGDFASBV2002409216.PokemonNatures Nature = 8 [default = NoneValue];
    optional bool Shiny = 9 [default = false];
    optional PokemonStats IVs = 10;
    optional PokemonStats EVs = 11;
-   optional PREFIX_AGDFASBV1110435884.PokemonGender Gender = 12 [default = NoneValue];
+   optional PREFIX_AGDFASBV1200569999.PokemonGender Gender = 12 [default = NoneValue];
    optional .bcl.Guid OriginalTrainer = 13;
    optional .bcl.Guid Trainer = 14;
    optional string Nickname = 15;
    optional int32 Pokeball = 16 [default = 0];
    optional int32 HoldItem = 17 [default = 0];
    optional int32 Personality = 18 [default = 0];
-   optional PREFIX_AGDFASBV1579469059.PokemonCondition Condition = 19 [default = NoneValue];
+   optional PREFIX_AGDFASBV284868450.PokemonCondition Condition = 19 [default = NoneValue];
    optional PokemonStats EVsCollected = 20;
    optional .bcl.DateTime CaughtDateUtc = 21;
    optional int32 CaughtLevel = 22 [default = 0];
    optional bool NotTradeable = 23 [default = false];
 }
-message PREFIX_AGDFASBV1579469059 {
+message PREFIX_AGDFASBV284868450 {
     enum PokemonCondition {
    NoneValue = 0;
    Fainted = 1;
@@ -64,9 +64,9 @@ message PokemonData {
    optional string Ability = 6;
    optional int32 ExpStart = 7 [default = 0];
    optional int32 ExpNext = 8 [default = 0];
-   optional PREFIX_AGDFASBV886158338.EggState EggState = 9 [default = NoneValue];
+   optional PREFIX_AGDFASBV242545142.EggState EggState = 9 [default = NoneValue];
 }
-message PREFIX_AGDFASBV1110435884 {
+message PREFIX_AGDFASBV1200569999 {
     enum PokemonGender {
    NoneValue = 0;
    Male = 1;
@@ -880,11 +880,11 @@ enum PokemonID {
    marshadow = 802;
 }
 message PokemonMove {
-   optional PREFIX_AGDFASBV1188733231.PokemonMoveID Move = 1 [default = none];
+   optional PREFIX_AGDFASBV1632359486.PokemonMoveID Move = 1 [default = none];
    optional int32 PP = 2 [default = 0];
    optional int32 MaxPP = 3 [default = 0];
 }
-message PREFIX_AGDFASBV1188733231 {
+message PREFIX_AGDFASBV1632359486 {
     enum PokemonMoveID {
    none = 0;
    pound = 1;
@@ -1590,7 +1590,7 @@ message PREFIX_AGDFASBV1188733231 {
    _10000000voltthunderbolt = 719;
 } //PREFIX_AGDFASBV
 };
-message PREFIX_AGDFASBV357211721 {
+message PREFIX_AGDFASBV2002409216 {
     enum PokemonNatures {
    NoneValue = 0;
    adamant = 1;

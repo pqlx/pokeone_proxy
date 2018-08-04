@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Response741141560;
+package PSXAPI.Response521725128;
 
 message Discovered {
    optional string Area = 1;

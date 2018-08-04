@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Request1680692980;
+package PSXAPI.Request1955807299;
 import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
 
 message Talk {

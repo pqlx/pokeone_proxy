@@ -1,7 +1,7 @@
 syntax = "proto2";
-package MAPAPI.Response2112545362;
+package MAPAPI.Response608357130;
 
-message PREFIX_AGDFASBV1149734401 {
+message PREFIX_AGDFASBV1758891163 {
     enum Rarity {
    Common = 0;
    Uncommon = 1;
@@ -13,5 +13,5 @@ message PREFIX_AGDFASBV1149734401 {
 };
 message ZoneItem {
    optional int32 ItemID = 1 [default = 0];
-   optional PREFIX_AGDFASBV1149734401.Rarity ItemRarity = 2 [default = Common];
+   optional PREFIX_AGDFASBV1758891163.Rarity ItemRarity = 2 [default = Common];
 }

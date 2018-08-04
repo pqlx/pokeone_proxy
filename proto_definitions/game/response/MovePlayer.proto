@@ -1,17 +1,17 @@
 syntax = "proto2";
-package PSXAPI.Response243615930;
+package PSXAPI.Response635271806;
 
 message Equip {
    optional int32 Clothe = 1 [default = 0];
    optional int32 Hat = 2 [default = 0];
 }
-message PREFIX_AGDFASBV1910591611 {
+message PREFIX_AGDFASBV1293999515 {
     enum Gender {
    Male = 0;
    Female = 1;
 } //PREFIX_AGDFASBV
 };
-message PREFIX_AGDFASBV1033176750 {
+message PREFIX_AGDFASBV1279865007 {
     enum MemberRank {
    NoneValue = 0;
    Member = 1;
@@ -19,9 +19,9 @@ message PREFIX_AGDFASBV1033176750 {
 };
 message Mount {
    optional int32 MountID = 1 [default = 0];
-   optional PREFIX_AGDFASBV686405618.MountType MountType = 2 [default = NoneValue];
+   optional PREFIX_AGDFASBV522127332.MountType MountType = 2 [default = NoneValue];
 }
-message PREFIX_AGDFASBV686405618 {
+message PREFIX_AGDFASBV522127332 {
     enum MountType {
    NoneValue = 0;
    Surfing = 1;
@@ -34,15 +34,15 @@ message MovePlayer {
    required string Username = 2;
    required int32 X = 3;
    required int32 Y = 4;
-   optional PREFIX_AGDFASBV1418837558.MovePlayerAction Action = 5 [default = Set];
+   optional PREFIX_AGDFASBV736333934.MovePlayerAction Action = 5 [default = Set];
    optional Style Style = 6;
-   optional PREFIX_AGDFASBV1103073431.PlayerDirection Direction = 7 [default = Default];
+   optional PREFIX_AGDFASBV1247907947.PlayerDirection Direction = 7 [default = Default];
    optional Equip Equip = 8;
    optional Mount Mount = 9;
    optional bool Away = 10 [default = false];
    optional bool Battle = 11 [default = false];
-   optional PREFIX_AGDFASBV1033176750.MemberRank MemberRank = 12 [default = NoneValue];
-   optional PREFIX_AGDFASBV1867716523.StaffRank StaffRank = 13 [default = NoneValue];
+   optional PREFIX_AGDFASBV1279865007.MemberRank MemberRank = 12 [default = NoneValue];
+   optional PREFIX_AGDFASBV866323010.StaffRank StaffRank = 13 [default = NoneValue];
    optional string GuildName = 14;
    optional uint32 EmblemId = 15 [default = 0];
    optional uint32 Level = 16 [default = 0];
@@ -52,7 +52,7 @@ message MovePlayer {
    optional bool Lobby = 20 [default = false];
    optional bool FollowShiny = 21 [default = false];
 }
-message PREFIX_AGDFASBV1418837558 {
+message PREFIX_AGDFASBV736333934 {
     enum MovePlayerAction {
    Set = 0;
    Up = 1;
@@ -64,7 +64,7 @@ message PREFIX_AGDFASBV1418837558 {
    Fishing = 7;
 } //PREFIX_AGDFASBV
 };
-message PREFIX_AGDFASBV1103073431 {
+message PREFIX_AGDFASBV1247907947 {
     enum PlayerDirection {
    Default = 0;
    Up = 1;
@@ -73,7 +73,7 @@ message PREFIX_AGDFASBV1103073431 {
    Right = 4;
 } //PREFIX_AGDFASBV
 };
-message PREFIX_AGDFASBV1867716523 {
+message PREFIX_AGDFASBV866323010 {
     enum StaffRank {
    NoneValue = 0;
    Developer = 1;
@@ -82,7 +82,7 @@ message PREFIX_AGDFASBV1867716523 {
 } //PREFIX_AGDFASBV
 };
 message Style {
-   optional PREFIX_AGDFASBV1910591611.Gender Gender = 1 [default = Male];
+   optional PREFIX_AGDFASBV1293999515.Gender Gender = 1 [default = Male];
    optional int32 Skin = 2 [default = 0];
    optional int32 Eyes = 3 [default = 0];
    optional int32 Hair = 4 [default = 0];

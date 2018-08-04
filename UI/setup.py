@@ -15,6 +15,9 @@ class MainUI(QMainWindow):
         self.app = UI.startup.Startup(sys.argv)
         super(MainUI, self).__init__()
 
+        self.packets = []
+        self.selected_packet = -1
+
         
     def setup(self):
         self.ui = UI.ui_main.Ui_MainWindow()
@@ -22,21 +25,19 @@ class MainUI(QMainWindow):
         self.startup_ui()
         
     def startup_ui(self):
-        self.ui.tableWidget.horizontalHeader().setVisible(True)
-        self.ui.tableWidget.resizeRowsToContents()
+        self.ui.proxy_history_table.horizontalHeader().setVisible(True)
+        self.ui.proxy_history_table.resizeRowsToContents()
 
         for n in (1, 2, 4, 5, 6):
-            self.ui.tableWidget.horizontalHeader().setSectionResizeMode(n, QHeaderView.Stretch);
+            self.ui.proxy_history_table.horizontalHeader().setSectionResizeMode(n, QHeaderView.Stretch);
         
     def run(self, startup: Optional[Callable]):
         if startup:
-            self.packet_data = []
-            self.selected_packet = -1
+            
+            self.app.set_signal(lambda: startup(self))
 
-            self.app.set_signal(lambda: startup(self.ui.tableWidget, self.packet_data))
-
-            self.ui.tableWidget.cellActivated.connect(self.table_select)
-            self.ui.tableWidget.cellClicked.connect(self.table_select)
+            self.ui.proxy_history_table.cellActivated.connect(self.table_select)
+            self.ui.proxy_history_table.cellClicked.connect(self.table_select)
             self.show()
             self.app.exec_()
 
@@ -45,9 +46,9 @@ class MainUI(QMainWindow):
             return
         self.selected_packet = x 
 
-        self.ui.textEdit.document().setPlainText(
+        self.ui.proxy_packet_edit.document().setPlainText(
                         json.dumps(
-                            self.packet_data[x], 
+                            self.packets[x], 
                             indent=4, 
                             separators=(',', ': ')
                         )

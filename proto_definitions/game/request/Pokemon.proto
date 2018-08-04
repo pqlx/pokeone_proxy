@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Request218243055;
+package PSXAPI.Request2095374436;
 
 message Pokemon {
    optional int32 Box = 1 [default = 0];

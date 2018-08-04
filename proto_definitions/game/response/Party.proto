@@ -1,8 +1,8 @@
 syntax = "proto2";
-package PSXAPI.Response1917968705;
+package PSXAPI.Response1897533801;
 import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
 
-message PREFIX_AGDFASBV345623728 {
+message PREFIX_AGDFASBV1821754515 {
     enum AbilitySlotType {
    NoneValue = 0;
    Slot1 = 1;
@@ -10,7 +10,7 @@ message PREFIX_AGDFASBV345623728 {
    Hidden = 3;
 } //PREFIX_AGDFASBV
 };
-message PREFIX_AGDFASBV2039421197 {
+message PREFIX_AGDFASBV823661601 {
     enum EggState {
    NoneValue = 0;
    Sounds = 1;
@@ -23,7 +23,7 @@ message Equip {
    optional int32 Clothe = 1 [default = 0];
    optional int32 Hat = 2 [default = 0];
 }
-message PREFIX_AGDFASBV171926646 {
+message PREFIX_AGDFASBV820339760 {
     enum Gender {
    Male = 0;
    Female = 1;
@@ -34,7 +34,7 @@ message InventoryPokemon {
    optional int32 Position = 2 [default = 0];
    optional int32 Box = 3 [default = 0];
    optional PokemonID CanEvolve = 4 [default = missingno];
-   repeated PREFIX_AGDFASBV1650669076.PokemonMoveID CanLearnMove = 5;
+   repeated PREFIX_AGDFASBV19951673.PokemonMoveID CanLearnMove = 5;
 }
 message Party {
    repeated PartyMember Members = 1;
@@ -57,26 +57,26 @@ message Pokemon {
    optional int32 Exp = 3 [default = 0];
    optional int32 HP = 4 [default = 0];
    repeated PokemonMove Moves = 5;
-   optional PREFIX_AGDFASBV345623728.AbilitySlotType AbilitySlot = 6 [default = NoneValue];
+   optional PREFIX_AGDFASBV1821754515.AbilitySlotType AbilitySlot = 6 [default = NoneValue];
    optional int32 Happiness = 7 [default = 0];
-   optional PREFIX_AGDFASBV2051220644.PokemonNatures Nature = 8 [default = NoneValue];
+   optional PREFIX_AGDFASBV56020265.PokemonNatures Nature = 8 [default = NoneValue];
    optional bool Shiny = 9 [default = false];
    optional PokemonStats IVs = 10;
    optional PokemonStats EVs = 11;
-   optional PREFIX_AGDFASBV367965673.PokemonGender Gender = 12 [default = NoneValue];
+   optional PREFIX_AGDFASBV1024701335.PokemonGender Gender = 12 [default = NoneValue];
    optional .bcl.Guid OriginalTrainer = 13;
    optional .bcl.Guid Trainer = 14;
    optional string Nickname = 15;
    optional int32 Pokeball = 16 [default = 0];
    optional int32 HoldItem = 17 [default = 0];
    optional int32 Personality = 18 [default = 0];
-   optional PREFIX_AGDFASBV866181991.PokemonCondition Condition = 19 [default = NoneValue];
+   optional PREFIX_AGDFASBV406068195.PokemonCondition Condition = 19 [default = NoneValue];
    optional PokemonStats EVsCollected = 20;
    optional .bcl.DateTime CaughtDateUtc = 21;
    optional int32 CaughtLevel = 22 [default = 0];
    optional bool NotTradeable = 23 [default = false];
 }
-message PREFIX_AGDFASBV866181991 {
+message PREFIX_AGDFASBV406068195 {
     enum PokemonCondition {
    NoneValue = 0;
    Fainted = 1;
@@ -96,9 +96,9 @@ message PokemonData {
    optional string Ability = 6;
    optional int32 ExpStart = 7 [default = 0];
    optional int32 ExpNext = 8 [default = 0];
-   optional PREFIX_AGDFASBV2039421197.EggState EggState = 9 [default = NoneValue];
+   optional PREFIX_AGDFASBV823661601.EggState EggState = 9 [default = NoneValue];
 }
-message PREFIX_AGDFASBV367965673 {
+message PREFIX_AGDFASBV1024701335 {
     enum PokemonGender {
    NoneValue = 0;
    Male = 1;
@@ -912,11 +912,11 @@ enum PokemonID {
    marshadow = 802;
 }
 message PokemonMove {
-   optional PREFIX_AGDFASBV1650669076.PokemonMoveID Move = 1 [default = none];
+   optional PREFIX_AGDFASBV19951673.PokemonMoveID Move = 1 [default = none];
    optional int32 PP = 2 [default = 0];
    optional int32 MaxPP = 3 [default = 0];
 }
-message PREFIX_AGDFASBV1650669076 {
+message PREFIX_AGDFASBV19951673 {
     enum PokemonMoveID {
    none = 0;
    pound = 1;
@@ -1622,7 +1622,7 @@ message PREFIX_AGDFASBV1650669076 {
    _10000000voltthunderbolt = 719;
 } //PREFIX_AGDFASBV
 };
-message PREFIX_AGDFASBV2051220644 {
+message PREFIX_AGDFASBV56020265 {
     enum PokemonNatures {
    NoneValue = 0;
    adamant = 1;
@@ -1661,7 +1661,7 @@ message PokemonStats {
    optional int32 Speed = 6 [default = 0];
 }
 message Style {
-   optional PREFIX_AGDFASBV171926646.Gender Gender = 1 [default = Male];
+   optional PREFIX_AGDFASBV820339760.Gender Gender = 1 [default = Male];
    optional int32 Skin = 2 [default = 0];
    optional int32 Eyes = 3 [default = 0];
    optional int32 Hair = 4 [default = 0];

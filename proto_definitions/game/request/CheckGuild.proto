@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Request621152527;
+package PSXAPI.Request1105908933;
 
 message CheckGuild {
    required string Name = 1;

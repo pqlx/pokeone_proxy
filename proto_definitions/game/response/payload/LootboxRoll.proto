@@ -1,7 +1,7 @@
 syntax = "proto2";
-package PSXAPI.Response.Payload1019769152;
+package PSXAPI.Response.Payload1644008955;
 
-message PREFIX_AGDFASBV50405465 {
+message PREFIX_AGDFASBV1956884893 {
     enum LootType {
    NoneValue = 0;
    Money = 1;
@@ -16,7 +16,7 @@ message PREFIX_AGDFASBV50405465 {
 } //PREFIX_AGDFASBV
 };
 message LootboxRoll {
-   optional PREFIX_AGDFASBV50405465.LootType LootType = 1 [default = NoneValue];
+   optional PREFIX_AGDFASBV1956884893.LootType LootType = 1 [default = NoneValue];
    optional int32 Num = 2 [default = 0];
    optional bool Duplicate = 3 [default = false];
    optional uint32 DuplicateGold = 4 [default = 0];

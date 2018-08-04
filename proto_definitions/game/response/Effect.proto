@@ -1,11 +1,11 @@
 syntax = "proto2";
-package PSXAPI.Response26075409;
+package PSXAPI.Response276760292;
 
 message Effect {
-   optional PREFIX_AGDFASBV505380969.EffectUpdateType Type = 1 [default = NoneValue];
+   optional PREFIX_AGDFASBV1200470300.EffectUpdateType Type = 1 [default = NoneValue];
    repeated Effect Effects = 2;
 }
-message PREFIX_AGDFASBV505380969 {
+message PREFIX_AGDFASBV1200470300 {
     enum EffectUpdateType {
    NoneValue = 0;
    All = 1;

@@ -1,5 +1,5 @@
 syntax = "proto2";
-package MAPAPI.Response1432085585;
+package MAPAPI.Response2142674279;
 import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
 
 message LinkPair {

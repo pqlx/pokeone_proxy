@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Response.Payload1386963568;
+package PSXAPI.Response.Payload605559948;
 
 message QuestReward {
    optional uint32 Money = 1 [default = 0];

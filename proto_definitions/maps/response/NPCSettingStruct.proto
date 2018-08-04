@@ -1,5 +1,5 @@
 syntax = "proto2";
-package MAPAPI.Response1417731299;
+package MAPAPI.Response1544887186;
 
 message NPCSettingStruct {
    optional string NPCName = 1;

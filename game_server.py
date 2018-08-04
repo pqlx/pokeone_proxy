@@ -1,15 +1,17 @@
 from typing import *
 from proxy import ProxyServer
 from packetparser import packet_decode
-from PyQt5.QtWidgets import QTableWidget, QTableWidgetItem
+from PyQt5.QtWidgets import QTableWidget, QTableWidgetItem, QMainWindow
+from PyQt5.Qt import QColor
 from datetime import datetime
 
 class GameServer(ProxyServer):
 
-    def __init__(self, loop=None, table: Optional[QTableWidget]=None, decoded_packets: list=None):
+    def __init__(self, loop=None, window: QMainWindow=None):
         super().__init__(loop=loop)
-        self.table = table
-        self.decoded_packets = decoded_packets
+        self.window = window
+
+        self.table = window.ui.proxy_history_table
 
     async def handle_send(self, packet: bytes):
         """ Intercept client -> proxy """
@@ -19,7 +21,7 @@ class GameServer(ProxyServer):
         
         grain, decoded = packet_decode(packet, 'game', False)
         
-        self.add_table_entry(grain, decoded, False)
+        self.add_table_entry(grain, packet, decoded, False)
 
         return packet
 
@@ -31,30 +33,59 @@ class GameServer(ProxyServer):
 
         grain, decoded = packet_decode(packet, 'game', True)
 
-        self.add_table_entry(grain, decoded, True)
+        print(decoded)
+        self.add_table_entry(grain, packet, decoded, True)
 
         return packet
 
-    def add_table_entry(self, grain: str, decoded_packet: dict, receiving: bool):
+    def add_table_entry(self, grain: str, original_packet: bytes, decoded_packet: dict, receiving: bool):
+        
+        def remove_bytes_dict(element):
+            if type(element) == list:
+                for i in range(len(element)):
+                    element[i] = remove_bytes_dict(element[i])
+                return element
+            if type(element) == dict:
+                for key in element.keys():
+                    element[key] = remove_bytes_dict(element[key])
+                return element            
+            elif type(element) == bytes:
+                try:
+                    return element.decode('utf-8')
+                except UnicodeDecodeError:
+                    return "< Could not decode bytes >"
+            return element
 
-        if self.decoded_packets != None:
+        remove_bytes_dict(decoded_packet)
+
+        if self.window.packets != None:
             
             packet_data = {
                 "grain": grain,
-                "data": decoded_packet
+                "data": decoded_packet,
+                
             }
-            print(f"Appended {grain}")
-            self.decoded_packets.append(packet_data)
+            if packet_data["data"] in [False, None]:
+                packet_data["original"] = original_packet.decode('utf-8').strip()
+
+            print(f"Appended {grain}")  
+            self.window.packets.append(packet_data)
 
             self.table.insertRow(self.table.rowCount())
 
             def add_to_current_row(column: int, data: str):
+
+                widget = QTableWidgetItem(data)
+
+                if packet_data["data"] in [False, None]:
+                    widget.setBackground(QColor(255, 0, 0))
+
                 self.table.setItem(
                     self.table.rowCount() - 1,
                     column,
-                    QTableWidgetItem(data)
+                    widget
                 )
-            
+
             rowdata = {
                 0: str(self.table.rowCount()),
                 1: "Game Server",

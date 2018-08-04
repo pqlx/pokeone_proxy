@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Response691569430;
+package PSXAPI.Response809536813;
 
 message RegionUpdate {
    optional int32 RegionID = 1 [default = 0];

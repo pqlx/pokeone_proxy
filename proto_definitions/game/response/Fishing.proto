@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Response630706050;
+package PSXAPI.Response12982394;
 
 message Fishing {
 }

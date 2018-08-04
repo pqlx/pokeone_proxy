@@ -1,10 +1,10 @@
 syntax = "proto2";
-package PSXAPI.Request65146253;
+package PSXAPI.Request1595494018;
 
 message Upgrade {
-   optional PREFIX_AGDFASBV1100222149.UpgradeType Type = 1 [default = NoneValue];
+   optional PREFIX_AGDFASBV1954479728.UpgradeType Type = 1 [default = NoneValue];
 }
-message PREFIX_AGDFASBV1100222149 {
+message PREFIX_AGDFASBV1954479728 {
     enum UpgradeType {
    NoneValue = 0;
    Pokebox = 1;

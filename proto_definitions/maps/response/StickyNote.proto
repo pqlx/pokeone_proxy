@@ -1,5 +1,5 @@
 syntax = "proto2";
-package MAPAPI.Response1623491950;
+package MAPAPI.Response558797140;
 
 message StickyNote {
    optional string Note = 1;

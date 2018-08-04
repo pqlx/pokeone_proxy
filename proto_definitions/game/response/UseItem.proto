@@ -1,13 +1,13 @@
 syntax = "proto2";
-package PSXAPI.Response316296740;
+package PSXAPI.Response1246008351;
 import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
 
 message UseItem {
-   optional PREFIX_AGDFASBV1412092039.UseItemResult Result = 1 [default = Failed];
+   optional PREFIX_AGDFASBV586854849.UseItemResult Result = 1 [default = Failed];
    optional int32 Item = 2 [default = 0];
    optional .bcl.Guid Pokemon = 3;
 }
-message PREFIX_AGDFASBV1412092039 {
+message PREFIX_AGDFASBV586854849 {
     enum UseItemResult {
    Failed = 0;
    Success = 1;

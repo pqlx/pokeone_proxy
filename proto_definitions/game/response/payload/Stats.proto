@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Response.Payload1952922114;
+package PSXAPI.Response.Payload2016497114;
 import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
 
 message Stats {

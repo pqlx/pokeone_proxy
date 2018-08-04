@@ -1,11 +1,11 @@
 syntax = "proto2";
-package PSXAPI.Response501659261;
+package PSXAPI.Response1678766345;
 
 message Mount {
    optional int32 MountID = 1 [default = 0];
-   optional PREFIX_AGDFASBV1238358761.MountType MountType = 2 [default = NoneValue];
+   optional PREFIX_AGDFASBV1534897252.MountType MountType = 2 [default = NoneValue];
 }
-message PREFIX_AGDFASBV1238358761 {
+message PREFIX_AGDFASBV1534897252 {
     enum MountType {
    NoneValue = 0;
    Surfing = 1;

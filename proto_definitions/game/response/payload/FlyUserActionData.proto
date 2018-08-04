@@ -1,7 +1,7 @@
 syntax = "proto2";
-package PSXAPI.Response.Payload306231359;
+package PSXAPI.Response.Payload896786709;
 
-message PREFIX_AGDFASBV867716480 {
+message PREFIX_AGDFASBV369121484 {
     enum FlyUserAction {
    Set = 0;
    Move = 1;
@@ -10,7 +10,7 @@ message PREFIX_AGDFASBV867716480 {
 } //PREFIX_AGDFASBV
 };
 message FlyUserActionData {
-   optional PREFIX_AGDFASBV867716480.FlyUserAction Action = 1 [default = Set];
+   optional PREFIX_AGDFASBV369121484.FlyUserAction Action = 1 [default = Set];
    optional FlyUserPosition Position = 2;
 }
 message FlyUserPosition {

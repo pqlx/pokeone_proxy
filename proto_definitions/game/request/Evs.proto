@@ -1,10 +1,10 @@
 syntax = "proto2";
-package PSXAPI.Request1439515700;
+package PSXAPI.Request190519769;
 import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
 
 message Evs {
    optional .bcl.Guid Pokemon = 1;
-   optional PREFIX_AGDFASBV435401762.EvsAction Action = 2 [default = Request];
+   optional PREFIX_AGDFASBV20405893.EvsAction Action = 2 [default = Request];
    optional int32 Hp = 3 [default = 0];
    optional int32 Atk = 4 [default = 0];
    optional int32 Def = 5 [default = 0];
@@ -12,7 +12,7 @@ message Evs {
    optional int32 SpAtk = 7 [default = 0];
    optional int32 SpDef = 8 [default = 0];
 }
-message PREFIX_AGDFASBV435401762 {
+message PREFIX_AGDFASBV20405893 {
     enum EvsAction {
    Request = 0;
    Skill = 1;

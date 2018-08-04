@@ -1,5 +1,5 @@
 syntax = "proto2";
-package MAPAPI.Response1285480207;
+package MAPAPI.Response87796746;
 
 message tileInfo {
    optional int32 PosX = 1 [default = 0];

@@ -1,11 +1,11 @@
 syntax = "proto2";
-package PSXAPI.Response1022154552;
+package PSXAPI.Response536099758;
 
 message BattleItem {
    optional int32 Item = 1 [default = 0];
-   optional PREFIX_AGDFASBV1162696165.BattleItemResult Result = 2 [default = Failed];
+   optional PREFIX_AGDFASBV1467296786.BattleItemResult Result = 2 [default = Failed];
 }
-message PREFIX_AGDFASBV1162696165 {
+message PREFIX_AGDFASBV1467296786 {
     enum BattleItemResult {
    Failed = 0;
    Success = 1;

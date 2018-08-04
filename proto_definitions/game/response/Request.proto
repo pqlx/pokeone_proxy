@@ -1,11 +1,11 @@
 syntax = "proto2";
-package PSXAPI.Response1116683912;
+package PSXAPI.Response1976214640;
 
 message Request {
-   required PREFIX_AGDFASBV802831699.RequestType Type = 1;
+   required PREFIX_AGDFASBV544730485.RequestType Type = 1;
    required string Sender = 2;
 }
-message PREFIX_AGDFASBV802831699 {
+message PREFIX_AGDFASBV544730485 {
     enum RequestType {
    NoneValue = 0;
    Friend = 1;

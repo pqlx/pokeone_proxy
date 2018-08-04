@@ -6,10 +6,11 @@ import traceback
 from PyQt5.QtWidgets import QTableWidget
 
 class ProxyServer(object):
-    __slots__ = ('loop', 'addr')
+    __slots__ = ('loop', 'addr', 'connections', 'localhost')
 
     def __init__(self, loop=None):
         self.loop = loop or asyncio.get_event_loop()
+        self.connections = []
 
     async def handle_send(self, packet: bytes) -> bytes:
         return packet
@@ -27,28 +28,38 @@ class ProxyServer(object):
         
     async def on_client(self, client_reader: asyncio.StreamReader, client_writer: asyncio.StreamWriter):
         try:
-            proxy_reader, proxy_writer = await asyncio.open_connection(*self.addr, loop=self.loop)
-            connection = ProxyConnection(self)
-            self.loop.create_task(connection.pipe(proxy_reader, client_writer, self.handle_recv))
-            self.loop.create_task(connection.pipe(client_reader, proxy_writer, self.handle_send))
+            server_reader, server_writer = await asyncio.open_connection(*self.addr, loop=self.loop)
+
+            connection = ProxyConnection(self, stream_operators=((server_reader, client_reader), (server_writer, client_writer)) )
+
+            connection.pipe_streams()
+
+            self.connections.append(connection)
 
             print("Client connected")
         except Exception as ex:
-            print(ex)
+            print(traceback.format_exc())
             client_writer.close()
 
-class ProxyConnection:
-    __slots__ = ('server', 'is_closed')
+class ProxyConnection(object):
+    __slots__ = ('server', 'is_closed', 'streams', 'loop')
     
-    def __init__(self, server: ProxyServer):
+    def __init__(self, server: ProxyServer, stream_operators: Tuple[Tuple[asyncio.StreamReader, asyncio.StreamReader], Tuple[asyncio.StreamWriter, asyncio.StreamWriter]] ):
         self.server = server
         self.is_closed = False
+        self.streams = stream_operators
 
+        self.loop = server.loop
+        
     def close(self, writer: asyncio.StreamWriter):
         self.is_closed = True
         writer.close()
 
-    async def pipe(self, reader: asyncio.StreamReader, writer: asyncio.StreamWriter, handler: Callable[[bytes], Awaitable]):
+    def pipe_streams(self):
+        self.loop.create_task(self._pipe(self.streams[0][0], self.streams[1][1], self.server.handle_recv))
+        self.loop.create_task(self._pipe(self.streams[0][1], self.streams[1][0], self.server.handle_send))
+
+    async def _pipe(self, reader: asyncio.StreamReader, writer: asyncio.StreamWriter, handler: Callable[[bytes], Awaitable]):
         try:
             while True:
                 packet = await self.server.read_packet(reader)
@@ -57,10 +68,22 @@ class ProxyConnection:
                     self.close(writer)
                     return None
 
-                packet = await handler(packet)
-                writer.write(packet)
-                await writer.drain()
+                await self.send(packet, handler, writer)
         except Exception as exc:
             if not self.is_closed:
                 print(f"[x] {writer.get_extra_info('perrname')} error: {traceback.format_exc()}", file=sys.stderr)
+            else:
+                traceback.print_exc()
         self.close(writer)
+    
+    async def send(packet: bytes, handler: Awaitable, writer: asyncio.StreamWriter):
+        packet = await handler(bytes)
+        writer.write(packet)
+        await writer.drain()
+    
+    async def send_client(packet: bytes):
+        await self.send(packet, self.server.handle_recv, self.streams[1][1])
+
+    async def send_server(packet: bytes):
+        await self.send(packet, self.server.handle_recv, self.streams[1][0])
+        

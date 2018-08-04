@@ -1,11 +1,11 @@
 syntax = "proto2";
-package PSXAPI.Response811223754;
+package PSXAPI.Response1640577335;
 
 message CheckGuild {
    required string Name = 1;
-   optional PREFIX_AGDFASBV379352492.CheckGuildResult Result = 2 [default = Failed];
+   optional PREFIX_AGDFASBV1621565612.CheckGuildResult Result = 2 [default = Failed];
 }
-message PREFIX_AGDFASBV379352492 {
+message PREFIX_AGDFASBV1621565612 {
     enum CheckGuildResult {
    Failed = 0;
    Available = 1;

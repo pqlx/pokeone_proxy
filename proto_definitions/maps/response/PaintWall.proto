@@ -1,5 +1,5 @@
 syntax = "proto2";
-package MAPAPI.Response1810692650;
+package MAPAPI.Response1823941102;
 
 message PaintWall {
    optional int32 Tile = 1 [default = 0];
