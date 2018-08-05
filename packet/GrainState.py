@@ -20,10 +20,8 @@ class GrainState(object):
         self.state = {}
 
         # These grains are special and no payload exists for them, even though the server sends them without a prompt
-        self.special_grains = ["Greeting"]
+        self.special_grains = ["Greeting", "DebugMessage"]
         
-        
-    
     def add(self, grain: str):
 
         if not grain in self.state:

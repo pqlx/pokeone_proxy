@@ -1,0 +1,14 @@
+syntax = "proto2";
+package PSXAPI.Response1865048228;
+
+message Ignore {
+   repeated Ignore List = 1;
+   optional PREFIX_AGDFASBV200635128.IgnoreAction Action = 2 [default = All];
+}
+message PREFIX_AGDFASBV200635128 {
+    enum IgnoreAction {
+   All = 0;
+   Add = 1;
+   Remove = 2;
+} //PREFIX_AGDFASBV
+};

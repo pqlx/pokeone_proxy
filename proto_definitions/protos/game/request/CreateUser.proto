@@ -1,0 +1,8 @@
+syntax = "proto2";
+package PSXAPI.Request681226018;
+
+message CreateUser {
+   required string Name = 1;
+   required string Password = 2;
+   required string EMail = 3;
+}

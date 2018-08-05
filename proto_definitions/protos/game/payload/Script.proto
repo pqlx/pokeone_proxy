@@ -1,0 +1,8 @@
+syntax = "proto2";
+package PSXAPI.Response.Payload595255161;
+import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+
+message Script {
+   optional string Text = 1;
+   optional .bcl.Guid NpcID = 2;
+}

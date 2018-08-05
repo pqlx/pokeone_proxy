@@ -1,0 +1,28 @@
+syntax = "proto2";
+package PSXAPI.Response.Payload586763419;
+
+message FlyUserData {
+   optional int32 FlyMount = 1 [default = 0];
+   optional bool Away = 2 [default = false];
+   optional bool Battle = 3 [default = false];
+   optional PREFIX_AGDFASBV793719516.MemberRank MemberRank = 4 [default = NoneValue];
+   optional PREFIX_AGDFASBV224227368.StaffRank StaffRank = 5 [default = NoneValue];
+   optional string GuildName = 6;
+   optional uint32 EmblemId = 7 [default = 0];
+   optional uint32 Level = 8 [default = 0];
+   optional bool Lobby = 9 [default = false];
+}
+message PREFIX_AGDFASBV793719516 {
+    enum MemberRank {
+   NoneValue = 0;
+   Member = 1;
+} //PREFIX_AGDFASBV
+};
+message PREFIX_AGDFASBV224227368 {
+    enum StaffRank {
+   NoneValue = 0;
+   Developer = 1;
+   GameModerator = 2;
+   Moderator = 3;
+} //PREFIX_AGDFASBV
+};

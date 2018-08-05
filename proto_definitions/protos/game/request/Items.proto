@@ -1,0 +1,5 @@
+syntax = "proto2";
+package PSXAPI.Request2088436738;
+
+message Items {
+}

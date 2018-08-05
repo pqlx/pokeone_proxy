@@ -1,0 +1,8 @@
+syntax = "proto2";
+package MAPAPI.Response485094312;
+
+message HeightChangeStruct {
+   optional int32 X = 1 [default = 0];
+   optional int32 Y = 2 [default = 0];
+   optional int32 Height = 3 [default = 0];
+}

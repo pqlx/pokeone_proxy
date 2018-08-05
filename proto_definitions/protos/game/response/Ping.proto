@@ -1,0 +1,7 @@
+syntax = "proto2";
+package PSXAPI.Response1227182284;
+import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+
+message Ping {
+   required .bcl.DateTime DateTimeUtc = 1;
+}

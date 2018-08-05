@@ -1,0 +1,57 @@
+syntax = "proto2";
+package PSXAPI.Response1910165988;
+
+message FlyUser {
+   optional string Username = 1;
+   repeated FlyUserActionData Actions = 2;
+   optional FlyUserData Data = 3;
+}
+message PREFIX_AGDFASBV1686859715 {
+    enum FlyUserAction {
+   Set = 0;
+   Move = 1;
+   Enter = 2;
+   Leave = 3;
+} //PREFIX_AGDFASBV
+};
+message FlyUserActionData {
+   optional PREFIX_AGDFASBV1686859715.FlyUserAction Action = 1 [default = Set];
+   optional FlyUserPosition Position = 2;
+}
+message FlyUserData {
+   optional int32 FlyMount = 1 [default = 0];
+   optional bool Away = 2 [default = false];
+   optional bool Battle = 3 [default = false];
+   optional PREFIX_AGDFASBV53723797.MemberRank MemberRank = 4 [default = NoneValue];
+   optional PREFIX_AGDFASBV74260316.StaffRank StaffRank = 5 [default = NoneValue];
+   optional string GuildName = 6;
+   optional uint32 EmblemId = 7 [default = 0];
+   optional uint32 Level = 8 [default = 0];
+   optional bool Lobby = 9 [default = false];
+}
+message FlyUserPosition {
+   optional float PosX = 1 [default = 0];
+   optional float PosY = 2 [default = 0];
+   optional float PosZ = 3 [default = 0];
+   optional float RotX = 4 [default = 0];
+   optional float RotY = 5 [default = 0];
+   optional float RotZ = 6 [default = 0];
+   optional float RotW = 7 [default = 0];
+}
+message FlyUsers {
+   repeated FlyUser Users = 1;
+}
+message PREFIX_AGDFASBV53723797 {
+    enum MemberRank {
+   NoneValue = 0;
+   Member = 1;
+} //PREFIX_AGDFASBV
+};
+message PREFIX_AGDFASBV74260316 {
+    enum StaffRank {
+   NoneValue = 0;
+   Developer = 1;
+   GameModerator = 2;
+   Moderator = 3;
+} //PREFIX_AGDFASBV
+};

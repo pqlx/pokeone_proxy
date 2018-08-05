@@ -1,0 +1,15 @@
+syntax = "proto2";
+package PSXAPI.Response.Payload1939933877;
+
+message UserSkins {
+   optional int32 EquipedClothe = 1 [default = 0];
+   optional int32 EquipedHat = 2 [default = 0];
+   optional int32 EquipedMount = 3 [default = 0];
+   optional int32 EquipedSurfMount = 4 [default = 0];
+   optional int32 EquipedFlyMount = 5 [default = 0];
+   repeated int32 Clothes = 6;
+   repeated int32 Hats = 7;
+   repeated int32 Mounts = 8;
+   repeated int32 SurfMounts = 9;
+   repeated int32 FlyMounts = 10;
+}

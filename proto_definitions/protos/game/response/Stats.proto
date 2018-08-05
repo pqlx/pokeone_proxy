@@ -1,0 +1,62 @@
+syntax = "proto2";
+package PSXAPI.Response1960661866;
+
+message Equip {
+   optional int32 Clothe = 1 [default = 0];
+   optional int32 Hat = 2 [default = 0];
+}
+message PREFIX_AGDFASBV893583353 {
+    enum Gender {
+   Male = 0;
+   Female = 1;
+} //PREFIX_AGDFASBV
+};
+message PREFIX_AGDFASBV1342155425 {
+    enum MemberRank {
+   NoneValue = 0;
+   Member = 1;
+} //PREFIX_AGDFASBV
+};
+message PREFIX_AGDFASBV157038117 {
+    enum StaffRank {
+   NoneValue = 0;
+   Developer = 1;
+   GameModerator = 2;
+   Moderator = 3;
+} //PREFIX_AGDFASBV
+};
+message Stats {
+   optional string Username = 1;
+   optional PREFIX_AGDFASBV1188816347.StatsResult Result = 2 [default = Error];
+   repeated int32 Badges = 3;
+   optional Stats Data = 4;
+   repeated int32 LevelRegions = 5;
+   repeated uint32 Levels = 6;
+   optional int32 Region = 7 [default = 0];
+   optional string GuildName = 8;
+   optional uint32 GuildEmblemId = 9 [default = 0];
+   optional bool GuildAdmin = 10 [default = false];
+   optional Style Style = 11;
+   optional Equip Equip = 12;
+   optional PREFIX_AGDFASBV1342155425.MemberRank MemberRank = 13 [default = NoneValue];
+   optional PREFIX_AGDFASBV157038117.StaffRank StaffRank = 14 [default = NoneValue];
+   optional int32 Follow = 15 [default = 0];
+   optional int32 FollowPersonality = 16 [default = 0];
+   optional bool FollowShiny = 17 [default = false];
+   optional bool Online = 18 [default = false];
+}
+message PREFIX_AGDFASBV1188816347 {
+    enum StatsResult {
+   Error = 0;
+   Self = 1;
+   User = 2;
+   Private = 3;
+} //PREFIX_AGDFASBV
+};
+message Style {
+   optional PREFIX_AGDFASBV893583353.Gender Gender = 1 [default = Male];
+   optional int32 Skin = 2 [default = 0];
+   optional int32 Eyes = 3 [default = 0];
+   optional int32 Hair = 4 [default = 0];
+   optional int32 HairColor = 5 [default = 0];
+}

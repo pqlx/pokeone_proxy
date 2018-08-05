@@ -1,0 +1,20 @@
+syntax = "proto2";
+package PSXAPI.Response.Payload1577453533;
+import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+
+message Effect {
+   optional .bcl.Guid UID = 1;
+   optional string Name = 2;
+   optional uint32 EndSteps = 3 [default = 0];
+   optional .bcl.TimeSpan TimeRemaining = 4;
+   optional .bcl.TimeSpan TimeTotal = 5;
+   optional PREFIX_AGDFASBV627773512.EffectUseType Type = 6 [default = Passive];
+   optional bool CanCancel = 7 [default = false];
+}
+message PREFIX_AGDFASBV627773512 {
+    enum EffectUseType {
+   Passive = 0;
+   Active = 1;
+   ActiveTarget = 2;
+} //PREFIX_AGDFASBV
+};

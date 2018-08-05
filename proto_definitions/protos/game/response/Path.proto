@@ -1,0 +1,8 @@
+syntax = "proto2";
+package PSXAPI.Response1044622407;
+import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+
+message Path {
+   optional .bcl.Guid Request = 1;
+   repeated .bcl.Guid Links = 2;
+}

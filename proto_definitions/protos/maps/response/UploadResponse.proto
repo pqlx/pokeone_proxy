@@ -1,0 +1,7 @@
+syntax = "proto2";
+package MAPAPI.Response2051371011;
+
+message UploadResponse {
+   optional string MapName = 1;
+   optional bool Succeeded = 2 [default = false];
+}

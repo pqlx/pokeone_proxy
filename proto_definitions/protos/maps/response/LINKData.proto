@@ -1,0 +1,22 @@
+syntax = "proto2";
+package MAPAPI.Response623333522;
+import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+
+message LINKData {
+   optional int32 x = 1 [default = 0];
+   optional int32 y = 2 [default = 0];
+   optional int32 z = 3 [default = 0];
+   optional .bcl.Guid ID = 4;
+   optional .bcl.Guid DestinationID = 5;
+   optional PREFIX_AGDFASBV537105262.LinkType LINKType = 6 [default = SendAndRecieve];
+   optional int32 Transition = 7 [default = 0];
+   optional string Script = 8;
+}
+message PREFIX_AGDFASBV537105262 {
+    enum LinkType {
+   SendAndRecieve = 0;
+   TileScriptWait = 1;
+   TileScriptImmediate = 2;
+   Default = 3;
+} //PREFIX_AGDFASBV
+};

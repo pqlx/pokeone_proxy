@@ -1,0 +1,7 @@
+syntax = "proto2";
+package MAPAPI.Response1223861913;
+
+message ShiftMap {
+   optional int32 Amount = 1 [default = 0];
+   optional int32 Direction = 2 [default = 0];
+}

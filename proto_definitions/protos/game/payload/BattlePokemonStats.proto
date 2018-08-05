@@ -1,0 +1,10 @@
+syntax = "proto2";
+package PSXAPI.Response.Payload1209036979;
+
+message BattlePokemonStats {
+   optional int32 atk = 1 [default = 0];
+   optional int32 def = 2 [default = 0];
+   optional int32 spa = 3 [default = 0];
+   optional int32 spd = 4 [default = 0];
+   optional int32 spe = 5 [default = 0];
+}

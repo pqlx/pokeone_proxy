@@ -1,0 +1,13 @@
+syntax = "proto2";
+package PSXAPI.Response741079682;
+
+message CheckUser {
+   required string Name = 1;
+   optional PREFIX_AGDFASBV684790328.CheckUserResult Result = 2 [default = Failed];
+}
+message PREFIX_AGDFASBV684790328 {
+    enum CheckUserResult {
+   Failed = 0;
+   Available = 1;
+} //PREFIX_AGDFASBV
+};

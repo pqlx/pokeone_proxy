@@ -1,0 +1,44 @@
+syntax = "proto2";
+package PSXAPI.Response1005409984;
+
+message PREFIX_AGDFASBV1406009845 {
+    enum LootType {
+   NoneValue = 0;
+   Money = 1;
+   Gold = 2;
+   Item = 3;
+   Pokemon = 4;
+   Clothe = 5;
+   Hat = 6;
+   Mount = 7;
+   SurfMount = 8;
+   FlyMount = 9;
+} //PREFIX_AGDFASBV
+};
+message Lootbox {
+   optional PREFIX_AGDFASBV1420995908.LootboxAction Action = 1 [default = NoneValue];
+   optional PREFIX_AGDFASBV689315210.LootboxType Type = 2 [default = NoneValue];
+   optional uint32 Remaining = 3 [default = 0];
+   repeated LootboxRoll Rolls = 4;
+}
+message PREFIX_AGDFASBV1420995908 {
+    enum LootboxAction {
+   NoneValue = 0;
+   Opened = 1;
+   Update = 2;
+} //PREFIX_AGDFASBV
+};
+message LootboxRoll {
+   optional PREFIX_AGDFASBV1406009845.LootType LootType = 1 [default = NoneValue];
+   optional int32 Num = 2 [default = 0];
+   optional bool Duplicate = 3 [default = false];
+   optional uint32 DuplicateGold = 4 [default = 0];
+   optional uint32 DuplicateMoney = 5 [default = 0];
+}
+message PREFIX_AGDFASBV689315210 {
+    enum LootboxType {
+   NoneValue = 0;
+   Small = 1;
+   Normal = 2;
+} //PREFIX_AGDFASBV
+};

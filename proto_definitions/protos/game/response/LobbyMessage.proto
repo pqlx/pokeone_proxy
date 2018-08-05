@@ -1,0 +1,7 @@
+syntax = "proto2";
+package PSXAPI.Response226650300;
+
+message LobbyMessage {
+   optional string Message = 1;
+   optional string Sender = 2;
+}

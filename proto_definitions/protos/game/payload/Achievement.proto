@@ -1,0 +1,9 @@
+syntax = "proto2";
+package PSXAPI.Response.Payload1884944969;
+
+message Achievement {
+   optional string Name = 1;
+   optional string Discription = 2;
+   optional uint32 Points = 3 [default = 0];
+   optional uint32 Required = 4 [default = 0];
+}

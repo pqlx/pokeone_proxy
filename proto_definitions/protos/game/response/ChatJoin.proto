@@ -1,0 +1,14 @@
+syntax = "proto2";
+package PSXAPI.Response855518940;
+
+message ChatJoin {
+   optional PREFIX_AGDFASBV247000292.ChatJoinResult Result = 1 [default = Error];
+   optional string Channel = 2;
+}
+message PREFIX_AGDFASBV247000292 {
+    enum ChatJoinResult {
+   Error = 0;
+   Joined = 1;
+   Left = 2;
+} //PREFIX_AGDFASBV
+};

@@ -1,0 +1,5 @@
+syntax = "proto2";
+package PSXAPI.Request1882455987;
+
+message Time {
+}

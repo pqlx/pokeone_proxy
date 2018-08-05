@@ -1,0 +1,10 @@
+syntax = "proto2";
+package PSXAPI.Response953156872;
+
+message Level {
+   optional uint32 UserLevel = 1 [default = 0];
+   optional uint32 TotalExp = 2 [default = 0];
+   optional uint32 StartExp = 3 [default = 0];
+   optional uint32 RequiredExp = 4 [default = 0];
+   optional bool LevelUp = 5 [default = false];
+}

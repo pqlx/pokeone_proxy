@@ -1,0 +1,14 @@
+syntax = "proto2";
+package PSXAPI.Response.Payload1883229525;
+import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+
+message Friend {
+   optional string Name = 1;
+   optional bool Online = 2 [default = false];
+   optional .bcl.TimeSpan OnlineSince = 3;
+   optional .bcl.TimeSpan FriendSince = 4;
+   optional string Map = 5;
+   optional bool Away = 6 [default = false];
+   optional string Message = 7;
+   optional uint32 Level = 8 [default = 0];
+}

@@ -1,0 +1,18 @@
+syntax = "proto2";
+package PSXAPI.Request825942075;
+
+message Request {
+   required PREFIX_AGDFASBV1878955581.RequestType Type = 1;
+   required string Sender = 2;
+   optional bool Accepted = 3 [default = false];
+}
+message PREFIX_AGDFASBV1878955581 {
+    enum RequestType {
+   NoneValue = 0;
+   Friend = 1;
+   Trade = 2;
+   Battle = 3;
+   Party = 4;
+   Guild = 5;
+} //PREFIX_AGDFASBV
+};

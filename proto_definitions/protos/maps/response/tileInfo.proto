@@ -1,0 +1,15 @@
+syntax = "proto2";
+package MAPAPI.Response87796746;
+
+message tileInfo {
+   optional int32 PosX = 1 [default = 0];
+   optional int32 PosY = 2 [default = 0];
+   optional int32 Type = 3 [default = 0];
+   optional int32 Height = 4 [default = 0];
+   repeated wallTypes Sides = 5;
+}
+message wallTypes {
+   optional int32 Side0 = 1 [default = 0];
+   optional int32 Side1 = 2 [default = 0];
+   optional int32 Side2 = 3 [default = 0];
+}

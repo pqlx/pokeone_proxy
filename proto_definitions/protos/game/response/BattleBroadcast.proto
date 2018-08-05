@@ -1,0 +1,8 @@
+syntax = "proto2";
+package PSXAPI.Response1934866233;
+
+message BattleBroadcast {
+   optional int32 RequestID = 1 [default = 0];
+   optional string Message = 2;
+   optional string Username = 3;
+}

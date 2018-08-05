@@ -1,0 +1,21 @@
+syntax = "proto2";
+package PSXAPI.Response1744041398;
+import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
+
+message GuildMember {
+   optional string Username = 1;
+   optional PREFIX_AGDFASBV1522978511.GuildRank Rank = 2 [default = Unset];
+   optional bool Online = 3 [default = false];
+   optional .bcl.TimeSpan Since = 4;
+   optional bool Removed = 5 [default = false];
+   optional uint32 Level = 6 [default = 0];
+}
+message PREFIX_AGDFASBV1522978511 {
+    enum GuildRank {
+   Unset = 0;
+   Creator = 1;
+   Admin = 2;
+   Moderator = 3;
+   User = 4;
+} //PREFIX_AGDFASBV
+};

@@ -1,0 +1,19 @@
+syntax = "proto2";
+package PSXAPI.Response.Payload1221622064;
+
+message AreaPokemon {
+   optional int32 PokemonID = 1 [default = 0];
+   optional bool Fishing = 2 [default = false];
+   optional bool Day = 3 [default = false];
+   optional bool Night = 4 [default = false];
+   optional bool Morning = 5 [default = false];
+   optional bool Evening = 6 [default = false];
+   optional PREFIX_AGDFASBV396157413.PokedexEntryState Pokedex = 7 [default = NoneValue];
+}
+message PREFIX_AGDFASBV396157413 {
+    enum PokedexEntryState {
+   NoneValue = 0;
+   Seen = 1;
+   Caught = 2;
+} //PREFIX_AGDFASBV
+};

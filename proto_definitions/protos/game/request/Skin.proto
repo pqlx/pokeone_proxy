@@ -1,0 +1,25 @@
+syntax = "proto2";
+package PSXAPI.Request260549709;
+
+message Skin {
+   optional PREFIX_AGDFASBV2075111531.SkinAction Action = 1 [default = NoneValue];
+   optional int32 SpriteID = 2 [default = 0];
+   optional PREFIX_AGDFASBV2112079387.SkinType Type = 3 [default = NoneValue];
+}
+message PREFIX_AGDFASBV2075111531 {
+    enum SkinAction {
+   NoneValue = 0;
+   Buy = 1;
+   Equip = 2;
+} //PREFIX_AGDFASBV
+};
+message PREFIX_AGDFASBV2112079387 {
+    enum SkinType {
+   NoneValue = 0;
+   Clothe = 1;
+   Hat = 2;
+   Mount = 3;
+   Surf = 4;
+   Fly = 5;
+} //PREFIX_AGDFASBV
+};

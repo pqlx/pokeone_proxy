@@ -1,0 +1,7 @@
+syntax = "proto2";
+package PSXAPI.Request1766443004;
+
+message StatsSettings {
+   optional bool Private = 1 [default = false];
+   optional bool ShowAsOffline = 2 [default = false];
+}

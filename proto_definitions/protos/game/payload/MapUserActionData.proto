@@ -1,0 +1,24 @@
+syntax = "proto2";
+package PSXAPI.Response.Payload938793947;
+
+message PREFIX_AGDFASBV1635742452 {
+    enum MapUserAction {
+   Set = 0;
+   Up = 1;
+   Down = 2;
+   Left = 3;
+   Right = 4;
+   Enter = 5;
+   Leave = 6;
+   Fishing = 7;
+} //PREFIX_AGDFASBV
+};
+message MapUserActionData {
+   optional PREFIX_AGDFASBV1635742452.MapUserAction Action = 1 [default = Set];
+   optional MapUserPosition Position = 2;
+}
+message MapUserPosition {
+   optional int32 X = 1 [default = 0];
+   optional int32 Y = 2 [default = 0];
+   optional int32 Height = 3 [default = 0];
+}

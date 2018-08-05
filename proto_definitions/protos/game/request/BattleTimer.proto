@@ -1,0 +1,5 @@
+syntax = "proto2";
+package PSXAPI.Request1374201237;
+
+message BattleTimer {
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+package MAPAPI.Response762498355;
+
+message wallTypes {
+   optional int32 Side0 = 1 [default = 0];
+   optional int32 Side1 = 2 [default = 0];
+   optional int32 Side2 = 3 [default = 0];
+}
