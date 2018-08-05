@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Request1879381735;
+package PSXAPI.Request2050138126;
 
 message LobbyPokemon {
    optional int32 Simultaneously = 1 [default = 0];

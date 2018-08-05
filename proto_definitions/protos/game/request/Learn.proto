@@ -1,14 +1,14 @@
 syntax = "proto2";
-package PSXAPI.Request567276761;
+package PSXAPI.Request940881711;
 import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
 
 message Learn {
    optional .bcl.Guid Pokemon = 1;
    optional bool Accept = 2 [default = false];
-   optional PREFIX_AGDFASBV1790131205.PokemonMoveID Move = 3 [default = none];
+   optional PREFIX_AGDFASBV1933655231.PokemonMoveID Move = 3 [default = none];
    optional int32 Position = 4 [default = 0];
 }
-message PREFIX_AGDFASBV1790131205 {
+message PREFIX_AGDFASBV1933655231 {
     enum PokemonMoveID {
    none = 0;
    pound = 1;

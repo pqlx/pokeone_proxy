@@ -1,17 +1,17 @@
 syntax = "proto2";
-package PSXAPI.Response222214258;
+package PSXAPI.Response1035287922;
 import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
 
 message Move {
    required string Map = 1;
    required int32 X = 2;
    required int32 Y = 3;
-   optional PREFIX_AGDFASBV1270178056.MoveAction Action = 4 [default = Set];
-   optional PREFIX_AGDFASBV1091661580.PlayerDirection Direction = 5 [default = Default];
+   optional PREFIX_AGDFASBV1040209019.MoveAction Action = 4 [default = Set];
+   optional PREFIX_AGDFASBV259811625.PlayerDirection Direction = 5 [default = Default];
    repeated .bcl.Guid Scripts = 6;
    optional int32 Height = 7 [default = 0];
 }
-message PREFIX_AGDFASBV1270178056 {
+message PREFIX_AGDFASBV1040209019 {
     enum MoveAction {
    Set = 0;
    Up = 1;
@@ -20,7 +20,7 @@ message PREFIX_AGDFASBV1270178056 {
    Right = 4;
 } //PREFIX_AGDFASBV
 };
-message PREFIX_AGDFASBV1091661580 {
+message PREFIX_AGDFASBV259811625 {
     enum PlayerDirection {
    Default = 0;
    Up = 1;

@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Request1084890073;
+package PSXAPI.Request2041590208;
 
 message BattleSwitch {
    required int32 RequestID = 1;

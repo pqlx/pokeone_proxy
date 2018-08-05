@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Response154227746;
+package PSXAPI.Response2126090465;
 
 message Achievement {
    optional string ID = 1;

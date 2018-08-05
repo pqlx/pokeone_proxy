@@ -1,11 +1,11 @@
 syntax = "proto2";
-package MAPAPI.Response1849155303;
+package MAPAPI.Response739492155;
 
 message Error {
-   optional PREFIX_AGDFASBV1245934450.ErrorType ErrorType = 1 [default = NoneValue];
+   optional PREFIX_AGDFASBV2064922627.ErrorType ErrorType = 1 [default = NoneValue];
    optional string Message = 2;
 }
-message PREFIX_AGDFASBV1245934450 {
+message PREFIX_AGDFASBV2064922627 {
     enum ErrorType {
    NoneValue = 0;
    InvalidLogin = 1;

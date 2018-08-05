@@ -1,8 +1,8 @@
 syntax = "proto2";
-package PSXAPI.Response1156117151;
+package PSXAPI.Response401051106;
 import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
 
-message PREFIX_AGDFASBV406315913 {
+message PREFIX_AGDFASBV1972389331 {
     enum AbilitySlotType {
    NoneValue = 0;
    Slot1 = 1;
@@ -10,28 +10,28 @@ message PREFIX_AGDFASBV406315913 {
    Hidden = 3;
 } //PREFIX_AGDFASBV
 };
-message PREFIX_AGDFASBV1031375825 {
+message PREFIX_AGDFASBV87431807 {
     enum ActorAvatarType {
    NoneValue = 0;
    User = 1;
    NPC = 2;
 } //PREFIX_AGDFASBV
 };
-message PREFIX_AGDFASBV956923112 {
+message PREFIX_AGDFASBV952883451 {
     enum ActorTeam {
    NoneValue = 0;
    Team1 = 1;
    Team2 = 2;
 } //PREFIX_AGDFASBV
 };
-message PREFIX_AGDFASBV1122604740 {
+message PREFIX_AGDFASBV363960245 {
     enum ActorTimer {
    Disabled = 0;
    NotRequired = 1;
    Enabled = 2;
 } //PREFIX_AGDFASBV
 };
-message PREFIX_AGDFASBV402517384 {
+message PREFIX_AGDFASBV1213111809 {
     enum ActorType {
    NoneValue = 0;
    Leader = 1;
@@ -119,14 +119,14 @@ message BattleSide {
    repeated BattlePokemon pokemon = 3;
 }
 message DailyLootbox {
-   optional PREFIX_AGDFASBV124849208.LootboxType Type = 1 [default = NoneValue];
+   optional PREFIX_AGDFASBV2067958589.LootboxType Type = 1 [default = NoneValue];
    optional .bcl.TimeSpan Timer = 2;
 }
 message Effect {
-   optional PREFIX_AGDFASBV1381315636.EffectUpdateType Type = 1 [default = NoneValue];
+   optional PREFIX_AGDFASBV1053148557.EffectUpdateType Type = 1 [default = NoneValue];
    repeated Effect Effects = 2;
 }
-message PREFIX_AGDFASBV1381315636 {
+message PREFIX_AGDFASBV1053148557 {
     enum EffectUpdateType {
    NoneValue = 0;
    All = 1;
@@ -134,7 +134,7 @@ message PREFIX_AGDFASBV1381315636 {
    Remove = 3;
 } //PREFIX_AGDFASBV
 };
-message PREFIX_AGDFASBV1799202304 {
+message PREFIX_AGDFASBV1398445696 {
     enum EggState {
    NoneValue = 0;
    Sounds = 1;
@@ -159,9 +159,9 @@ message Friend {
 }
 message Friends {
    repeated Friend List = 1;
-   optional PREFIX_AGDFASBV819187543.FriendsAction Action = 2 [default = All];
+   optional PREFIX_AGDFASBV568518044.FriendsAction Action = 2 [default = All];
 }
-message PREFIX_AGDFASBV819187543 {
+message PREFIX_AGDFASBV568518044 {
     enum FriendsAction {
    All = 0;
    Add = 1;
@@ -169,7 +169,7 @@ message PREFIX_AGDFASBV819187543 {
    Update = 3;
 } //PREFIX_AGDFASBV
 };
-message PREFIX_AGDFASBV1014173992 {
+message PREFIX_AGDFASBV1231538802 {
     enum GameDayTime {
    Unset = 0;
    Morning = 1;
@@ -178,7 +178,7 @@ message PREFIX_AGDFASBV1014173992 {
    Night = 4;
 } //PREFIX_AGDFASBV
 };
-message PREFIX_AGDFASBV263841662 {
+message PREFIX_AGDFASBV1383798529 {
     enum GameSeason {
    Unset = 0;
    Spring = 1;
@@ -187,7 +187,7 @@ message PREFIX_AGDFASBV263841662 {
    Winter = 4;
 } //PREFIX_AGDFASBV
 };
-message PREFIX_AGDFASBV1947042956 {
+message PREFIX_AGDFASBV1296254799 {
     enum Gender {
    Male = 0;
    Female = 1;
@@ -198,7 +198,7 @@ message Guild {
    optional string Message = 2;
    optional .bcl.Guid Chat = 3;
    repeated GuildMember Members = 4;
-   optional PREFIX_AGDFASBV785585732.GuildRank Rank = 5 [default = Unset];
+   optional PREFIX_AGDFASBV148892007.GuildRank Rank = 5 [default = Unset];
    optional uint32 EmblemId = 6 [default = 0];
    optional int32 MembersTotalMax = 7 [default = 0];
    optional int32 MembersCurrentMax = 8 [default = 0];
@@ -207,13 +207,13 @@ message Guild {
 }
 message GuildMember {
    optional string Username = 1;
-   optional PREFIX_AGDFASBV785585732.GuildRank Rank = 2 [default = Unset];
+   optional PREFIX_AGDFASBV148892007.GuildRank Rank = 2 [default = Unset];
    optional bool Online = 3 [default = false];
    optional .bcl.TimeSpan Since = 4;
    optional bool Removed = 5 [default = false];
    optional uint32 Level = 6 [default = 0];
 }
-message PREFIX_AGDFASBV785585732 {
+message PREFIX_AGDFASBV148892007 {
     enum GuildRank {
    Unset = 0;
    Creator = 1;
@@ -224,9 +224,9 @@ message PREFIX_AGDFASBV785585732 {
 };
 message Ignore {
    repeated Ignore List = 1;
-   optional PREFIX_AGDFASBV322767107.IgnoreAction Action = 2 [default = All];
+   optional PREFIX_AGDFASBV759347676.IgnoreAction Action = 2 [default = All];
 }
-message PREFIX_AGDFASBV322767107 {
+message PREFIX_AGDFASBV759347676 {
     enum IgnoreAction {
    All = 0;
    Add = 1;
@@ -248,18 +248,18 @@ message InventoryItem {
    optional bool CanUseInBattle = 5 [default = false];
    optional bool CanUseOnParty = 6 [default = false];
    optional bool CanTrade = 7 [default = false];
-   optional PREFIX_AGDFASBV1539393549.ItemTarget Target = 8 [default = NoneValue];
-   optional PREFIX_AGDFASBV1274813873.ItemPocket Pocket = 9 [default = Unknown];
-   optional PREFIX_AGDFASBV941907481.ItemCategory Category = 10 [default = Unknown];
+   optional PREFIX_AGDFASBV159656471.ItemTarget Target = 8 [default = NoneValue];
+   optional PREFIX_AGDFASBV219217518.ItemPocket Pocket = 9 [default = Unknown];
+   optional PREFIX_AGDFASBV1825046021.ItemCategory Category = 10 [default = Unknown];
 }
 message InventoryPokemon {
    optional PokemonData Pokemon = 1;
    optional int32 Position = 2 [default = 0];
    optional int32 Box = 3 [default = 0];
    optional PokemonID CanEvolve = 4 [default = missingno];
-   repeated PREFIX_AGDFASBV732558964.PokemonMoveID CanLearnMove = 5;
+   repeated PREFIX_AGDFASBV218722351.PokemonMoveID CanLearnMove = 5;
 }
-message PREFIX_AGDFASBV941907481 {
+message PREFIX_AGDFASBV1825046021 {
     enum ItemCategory {
    Unknown = 0;
    General = 1;
@@ -271,7 +271,7 @@ message PREFIX_AGDFASBV941907481 {
    Hold = 7;
 } //PREFIX_AGDFASBV
 };
-message PREFIX_AGDFASBV1274813873 {
+message PREFIX_AGDFASBV219217518 {
     enum ItemPocket {
    Unknown = 0;
    Items = 1;
@@ -282,7 +282,7 @@ message PREFIX_AGDFASBV1274813873 {
    Z_Crystal = 6;
 } //PREFIX_AGDFASBV
 };
-message PREFIX_AGDFASBV1539393549 {
+message PREFIX_AGDFASBV159656471 {
     enum ItemTarget {
    NoneValue = 0;
    Pokemon = 1;
@@ -307,25 +307,25 @@ message Lobby {
    optional bool AdjustLevels = 8 [default = false];
    optional bool ItemAllowed = 9 [default = false];
    optional bool IsRanked = 10 [default = false];
-   optional PREFIX_AGDFASBV1122604740.ActorTimer Timer = 11 [default = Disabled];
+   optional PREFIX_AGDFASBV363960245.ActorTimer Timer = 11 [default = Disabled];
    repeated LobbyActor Actors = 12;
 }
 message LobbyActor {
-   optional PREFIX_AGDFASBV402517384.ActorType Type = 1 [default = NoneValue];
+   optional PREFIX_AGDFASBV1213111809.ActorType Type = 1 [default = NoneValue];
    optional string Name = 2;
-   optional PREFIX_AGDFASBV956923112.ActorTeam Team = 3 [default = NoneValue];
+   optional PREFIX_AGDFASBV952883451.ActorTeam Team = 3 [default = NoneValue];
    optional int32 PokemonCount = 4 [default = 0];
    optional int32 ActiveCount = 5 [default = 0];
    optional bool Accepted = 6 [default = false];
-   optional PREFIX_AGDFASBV1031375825.ActorAvatarType AvatarType = 7 [default = NoneValue];
+   optional PREFIX_AGDFASBV87431807.ActorAvatarType AvatarType = 7 [default = NoneValue];
    optional int32 NpcSpriteID = 8 [default = 0];
    optional int32 AverageLevel = 9 [default = 0];
    optional int32 HighestLevel = 10 [default = 0];
    optional bool Self = 11 [default = false];
 }
 message Login {
-   optional PREFIX_AGDFASBV159213235.LoginResult Result = 1 [default = Error];
-   optional PREFIX_AGDFASBV1770812936.LoginError Error = 2 [default = NoneValue];
+   optional PREFIX_AGDFASBV1018301609.LoginResult Result = 1 [default = Error];
+   optional PREFIX_AGDFASBV1953101873.LoginError Error = 2 [default = NoneValue];
    optional string Username = 3;
    optional Move Position = 4;
    optional Inventory Inventory = 5;
@@ -339,8 +339,8 @@ message Login {
    optional Ignore Ignore = 13;
    optional Style Style = 14;
    optional Equip Equip = 15;
-   optional PREFIX_AGDFASBV363586078.MemberRank MemberRank = 16 [default = NoneValue];
-   optional PREFIX_AGDFASBV1997729548.StaffRank StaffRank = 17 [default = NoneValue];
+   optional PREFIX_AGDFASBV991575169.MemberRank MemberRank = 16 [default = NoneValue];
+   optional PREFIX_AGDFASBV1565234396.StaffRank StaffRank = 17 [default = NoneValue];
    optional Mount Mount = 18;
    optional Battle Battle = 19;
    optional bool StatsPrivate = 20 [default = false];
@@ -359,7 +359,7 @@ message Login {
    optional uint32 TotalSteps = 33 [default = 0];
    repeated string DiscoveredAreas = 35;
 }
-message PREFIX_AGDFASBV1770812936 {
+message PREFIX_AGDFASBV1953101873 {
     enum LoginError {
    NoneValue = 0;
    WrongPassword = 1;
@@ -370,13 +370,13 @@ message PREFIX_AGDFASBV1770812936 {
    Unsupported = 6;
 } //PREFIX_AGDFASBV
 };
-message PREFIX_AGDFASBV159213235 {
+message PREFIX_AGDFASBV1018301609 {
     enum LoginResult {
    Error = 0;
    Success = 1;
 } //PREFIX_AGDFASBV
 };
-message PREFIX_AGDFASBV167072591 {
+message PREFIX_AGDFASBV607749924 {
     enum LootType {
    NoneValue = 0;
    Money = 1;
@@ -391,12 +391,12 @@ message PREFIX_AGDFASBV167072591 {
 } //PREFIX_AGDFASBV
 };
 message Lootbox {
-   optional PREFIX_AGDFASBV105834284.LootboxAction Action = 1 [default = NoneValue];
-   optional PREFIX_AGDFASBV124849208.LootboxType Type = 2 [default = NoneValue];
+   optional PREFIX_AGDFASBV2095429085.LootboxAction Action = 1 [default = NoneValue];
+   optional PREFIX_AGDFASBV2067958589.LootboxType Type = 2 [default = NoneValue];
    optional uint32 Remaining = 3 [default = 0];
    repeated LootboxRoll Rolls = 4;
 }
-message PREFIX_AGDFASBV105834284 {
+message PREFIX_AGDFASBV2095429085 {
     enum LootboxAction {
    NoneValue = 0;
    Opened = 1;
@@ -404,13 +404,13 @@ message PREFIX_AGDFASBV105834284 {
 } //PREFIX_AGDFASBV
 };
 message LootboxRoll {
-   optional PREFIX_AGDFASBV167072591.LootType LootType = 1 [default = NoneValue];
+   optional PREFIX_AGDFASBV607749924.LootType LootType = 1 [default = NoneValue];
    optional int32 Num = 2 [default = 0];
    optional bool Duplicate = 3 [default = false];
    optional uint32 DuplicateGold = 4 [default = 0];
    optional uint32 DuplicateMoney = 5 [default = 0];
 }
-message PREFIX_AGDFASBV124849208 {
+message PREFIX_AGDFASBV2067958589 {
     enum LootboxType {
    NoneValue = 0;
    Small = 1;
@@ -422,7 +422,7 @@ message MapUser {
    repeated MapUserActionData Actions = 2;
    optional MapUserData Data = 3;
 }
-message PREFIX_AGDFASBV1171046062 {
+message PREFIX_AGDFASBV482942263 {
     enum MapUserAction {
    Set = 0;
    Up = 1;
@@ -435,18 +435,18 @@ message PREFIX_AGDFASBV1171046062 {
 } //PREFIX_AGDFASBV
 };
 message MapUserActionData {
-   optional PREFIX_AGDFASBV1171046062.MapUserAction Action = 1 [default = Set];
+   optional PREFIX_AGDFASBV482942263.MapUserAction Action = 1 [default = Set];
    optional MapUserPosition Position = 2;
 }
 message MapUserData {
    optional Style Style = 1;
-   optional PREFIX_AGDFASBV55583944.PlayerDirection Direction = 2 [default = Default];
+   optional PREFIX_AGDFASBV852765533.PlayerDirection Direction = 2 [default = Default];
    optional Equip Equip = 3;
    optional Mount Mount = 4;
    optional bool Away = 5 [default = false];
    optional bool Battle = 6 [default = false];
-   optional PREFIX_AGDFASBV363586078.MemberRank MemberRank = 7 [default = NoneValue];
-   optional PREFIX_AGDFASBV1997729548.StaffRank StaffRank = 8 [default = NoneValue];
+   optional PREFIX_AGDFASBV991575169.MemberRank MemberRank = 7 [default = NoneValue];
+   optional PREFIX_AGDFASBV1565234396.StaffRank StaffRank = 8 [default = NoneValue];
    optional string GuildName = 9;
    optional uint32 EmblemId = 10 [default = 0];
    optional uint32 Level = 11 [default = 0];
@@ -464,7 +464,7 @@ message MapUsers {
    repeated MapUser Users = 1;
    optional string Map = 2;
 }
-message PREFIX_AGDFASBV363586078 {
+message PREFIX_AGDFASBV991575169 {
     enum MemberRank {
    NoneValue = 0;
    Member = 1;
@@ -472,9 +472,9 @@ message PREFIX_AGDFASBV363586078 {
 };
 message Mount {
    optional int32 MountID = 1 [default = 0];
-   optional PREFIX_AGDFASBV387514011.MountType MountType = 2 [default = NoneValue];
+   optional PREFIX_AGDFASBV1349744602.MountType MountType = 2 [default = NoneValue];
 }
-message PREFIX_AGDFASBV387514011 {
+message PREFIX_AGDFASBV1349744602 {
     enum MountType {
    NoneValue = 0;
    Surfing = 1;
@@ -486,12 +486,12 @@ message Move {
    required string Map = 1;
    required int32 X = 2;
    required int32 Y = 3;
-   optional PREFIX_AGDFASBV1640211814.MoveAction Action = 4 [default = Set];
-   optional PREFIX_AGDFASBV55583944.PlayerDirection Direction = 5 [default = Default];
+   optional PREFIX_AGDFASBV497512095.MoveAction Action = 4 [default = Set];
+   optional PREFIX_AGDFASBV852765533.PlayerDirection Direction = 5 [default = Default];
    repeated .bcl.Guid Scripts = 6;
    optional int32 Height = 7 [default = 0];
 }
-message PREFIX_AGDFASBV1640211814 {
+message PREFIX_AGDFASBV497512095 {
     enum MoveAction {
    Set = 0;
    Up = 1;
@@ -505,15 +505,15 @@ message MovePlayer {
    required string Username = 2;
    required int32 X = 3;
    required int32 Y = 4;
-   optional PREFIX_AGDFASBV1994935754.MovePlayerAction Action = 5 [default = Set];
+   optional PREFIX_AGDFASBV887943953.MovePlayerAction Action = 5 [default = Set];
    optional Style Style = 6;
-   optional PREFIX_AGDFASBV55583944.PlayerDirection Direction = 7 [default = Default];
+   optional PREFIX_AGDFASBV852765533.PlayerDirection Direction = 7 [default = Default];
    optional Equip Equip = 8;
    optional Mount Mount = 9;
    optional bool Away = 10 [default = false];
    optional bool Battle = 11 [default = false];
-   optional PREFIX_AGDFASBV363586078.MemberRank MemberRank = 12 [default = NoneValue];
-   optional PREFIX_AGDFASBV1997729548.StaffRank StaffRank = 13 [default = NoneValue];
+   optional PREFIX_AGDFASBV991575169.MemberRank MemberRank = 12 [default = NoneValue];
+   optional PREFIX_AGDFASBV1565234396.StaffRank StaffRank = 13 [default = NoneValue];
    optional string GuildName = 14;
    optional uint32 EmblemId = 15 [default = 0];
    optional uint32 Level = 16 [default = 0];
@@ -523,7 +523,7 @@ message MovePlayer {
    optional bool Lobby = 20 [default = false];
    optional bool FollowShiny = 21 [default = false];
 }
-message PREFIX_AGDFASBV1994935754 {
+message PREFIX_AGDFASBV887943953 {
     enum MovePlayerAction {
    Set = 0;
    Up = 1;
@@ -550,7 +550,7 @@ message PartyMember {
    optional Style Style = 8;
    optional string Area = 9;
 }
-message PREFIX_AGDFASBV55583944 {
+message PREFIX_AGDFASBV852765533 {
     enum PlayerDirection {
    Default = 0;
    Up = 1;
@@ -566,9 +566,9 @@ message Pokedex {
 }
 message PokedexEntry {
    optional PokemonID Pokemon = 1 [default = missingno];
-   optional PREFIX_AGDFASBV1838414727.PokedexEntryState State = 2 [default = NoneValue];
+   optional PREFIX_AGDFASBV1558313499.PokedexEntryState State = 2 [default = NoneValue];
 }
-message PREFIX_AGDFASBV1838414727 {
+message PREFIX_AGDFASBV1558313499 {
     enum PokedexEntryState {
    NoneValue = 0;
    Seen = 1;
@@ -581,26 +581,26 @@ message Pokemon {
    optional int32 Exp = 3 [default = 0];
    optional int32 HP = 4 [default = 0];
    repeated PokemonMove Moves = 5;
-   optional PREFIX_AGDFASBV406315913.AbilitySlotType AbilitySlot = 6 [default = NoneValue];
+   optional PREFIX_AGDFASBV1972389331.AbilitySlotType AbilitySlot = 6 [default = NoneValue];
    optional int32 Happiness = 7 [default = 0];
-   optional PREFIX_AGDFASBV412145704.PokemonNatures Nature = 8 [default = NoneValue];
+   optional PREFIX_AGDFASBV1459258564.PokemonNatures Nature = 8 [default = NoneValue];
    optional bool Shiny = 9 [default = false];
    optional PokemonStats IVs = 10;
    optional PokemonStats EVs = 11;
-   optional PREFIX_AGDFASBV820360368.PokemonGender Gender = 12 [default = NoneValue];
+   optional PREFIX_AGDFASBV968224518.PokemonGender Gender = 12 [default = NoneValue];
    optional .bcl.Guid OriginalTrainer = 13;
    optional .bcl.Guid Trainer = 14;
    optional string Nickname = 15;
    optional int32 Pokeball = 16 [default = 0];
    optional int32 HoldItem = 17 [default = 0];
    optional int32 Personality = 18 [default = 0];
-   optional PREFIX_AGDFASBV1592861826.PokemonCondition Condition = 19 [default = NoneValue];
+   optional PREFIX_AGDFASBV1638648581.PokemonCondition Condition = 19 [default = NoneValue];
    optional PokemonStats EVsCollected = 20;
    optional .bcl.DateTime CaughtDateUtc = 21;
    optional int32 CaughtLevel = 22 [default = 0];
    optional bool NotTradeable = 23 [default = false];
 }
-message PREFIX_AGDFASBV1592861826 {
+message PREFIX_AGDFASBV1638648581 {
     enum PokemonCondition {
    NoneValue = 0;
    Fainted = 1;
@@ -620,9 +620,9 @@ message PokemonData {
    optional string Ability = 6;
    optional int32 ExpStart = 7 [default = 0];
    optional int32 ExpNext = 8 [default = 0];
-   optional PREFIX_AGDFASBV1799202304.EggState EggState = 9 [default = NoneValue];
+   optional PREFIX_AGDFASBV1398445696.EggState EggState = 9 [default = NoneValue];
 }
-message PREFIX_AGDFASBV820360368 {
+message PREFIX_AGDFASBV968224518 {
     enum PokemonGender {
    NoneValue = 0;
    Male = 1;
@@ -1436,11 +1436,11 @@ enum PokemonID {
    marshadow = 802;
 }
 message PokemonMove {
-   optional PREFIX_AGDFASBV732558964.PokemonMoveID Move = 1 [default = none];
+   optional PREFIX_AGDFASBV218722351.PokemonMoveID Move = 1 [default = none];
    optional int32 PP = 2 [default = 0];
    optional int32 MaxPP = 3 [default = 0];
 }
-message PREFIX_AGDFASBV732558964 {
+message PREFIX_AGDFASBV218722351 {
     enum PokemonMoveID {
    none = 0;
    pound = 1;
@@ -2146,7 +2146,7 @@ message PREFIX_AGDFASBV732558964 {
    _10000000voltthunderbolt = 719;
 } //PREFIX_AGDFASBV
 };
-message PREFIX_AGDFASBV412145704 {
+message PREFIX_AGDFASBV1459258564 {
     enum PokemonNatures {
    NoneValue = 0;
    adamant = 1;
@@ -2188,9 +2188,9 @@ message Quest {
    optional string ID = 1;
    optional string Name = 2;
    optional string Description = 3;
-   optional PREFIX_AGDFASBV1200072698.QuestType Type = 4 [default = NoneValue];
+   optional PREFIX_AGDFASBV1866622304.QuestType Type = 4 [default = NoneValue];
    optional double Step = 5 [default = 0];
-   optional PREFIX_AGDFASBV563371474.QuestProgressType ProgressType = 6 [default = NoneValue];
+   optional PREFIX_AGDFASBV1261087732.QuestProgressType ProgressType = 6 [default = NoneValue];
    optional int32 ProgressID = 7 [default = 0];
    optional int32 Progress = 8 [default = 0];
    optional int32 Required = 9 [default = 0];
@@ -2206,7 +2206,7 @@ message Quest {
    optional string SourceNPC = 19;
    optional string SourceArea = 20;
 }
-message PREFIX_AGDFASBV563371474 {
+message PREFIX_AGDFASBV1261087732 {
     enum QuestProgressType {
    NoneValue = 0;
    Manual = 1;
@@ -2228,7 +2228,7 @@ message QuestReward {
    optional int32 Badge = 7 [default = 0];
    optional int32 Exp = 8 [default = 0];
 }
-message PREFIX_AGDFASBV1200072698 {
+message PREFIX_AGDFASBV1866622304 {
     enum QuestType {
    NoneValue = 0;
    Main = 1;
@@ -2238,7 +2238,7 @@ message PREFIX_AGDFASBV1200072698 {
    Hidden = 5;
 } //PREFIX_AGDFASBV
 };
-message PREFIX_AGDFASBV1997729548 {
+message PREFIX_AGDFASBV1565234396 {
     enum StaffRank {
    NoneValue = 0;
    Developer = 1;
@@ -2247,7 +2247,7 @@ message PREFIX_AGDFASBV1997729548 {
 } //PREFIX_AGDFASBV
 };
 message Style {
-   optional PREFIX_AGDFASBV1947042956.Gender Gender = 1 [default = Male];
+   optional PREFIX_AGDFASBV1296254799.Gender Gender = 1 [default = Male];
    optional int32 Skin = 2 [default = 0];
    optional int32 Eyes = 3 [default = 0];
    optional int32 Hair = 4 [default = 0];
@@ -2256,10 +2256,10 @@ message Style {
 message Time {
    optional .bcl.DateTime ServerTimeUtc = 1;
    optional .bcl.TimeSpan GameTime = 2;
-   optional PREFIX_AGDFASBV1014173992.GameDayTime GameDayTime = 3 [default = Unset];
-   optional PREFIX_AGDFASBV263841662.GameSeason GameSeason = 4 [default = Unset];
+   optional PREFIX_AGDFASBV1231538802.GameDayTime GameDayTime = 3 [default = Unset];
+   optional PREFIX_AGDFASBV1383798529.GameSeason GameSeason = 4 [default = Unset];
    optional double TimeFactor = 5 [default = 0];
-   optional PREFIX_AGDFASBV639542067.WeatherState Weather = 6 [default = Normal];
+   optional PREFIX_AGDFASBV1963850308.WeatherState Weather = 6 [default = Normal];
 }
 message UserSkins {
    optional int32 EquipedClothe = 1 [default = 0];
@@ -2273,7 +2273,7 @@ message UserSkins {
    repeated int32 SurfMounts = 9;
    repeated int32 FlyMounts = 10;
 }
-message PREFIX_AGDFASBV639542067 {
+message PREFIX_AGDFASBV1963850308 {
     enum WeatherState {
    Normal = 0;
    Rain = 1;

@@ -1,7 +1,0 @@
-syntax = "proto2";
-package PSXAPI.Response.Payload11253928;
-
-message ZMove {
-   optional string move = 1;
-   optional string target = 2;
-}

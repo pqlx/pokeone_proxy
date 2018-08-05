@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Response522317491;
+package PSXAPI.Response1469844309;
 
 message EquipFly {
    optional int32 Skin = 1 [default = 0];

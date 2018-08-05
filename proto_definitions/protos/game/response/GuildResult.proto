@@ -1,7 +1,7 @@
 syntax = "proto2";
-package PSXAPI.Response1463532258;
+package PSXAPI.Response1604020274;
 
-message PREFIX_AGDFASBV1388037016 {
+message PREFIX_AGDFASBV581025151 {
     enum GuildAction {
    Request = 0;
    Create = 1;
@@ -10,7 +10,7 @@ message PREFIX_AGDFASBV1388037016 {
    Emblem = 6;
 } //PREFIX_AGDFASBV
 };
-message PREFIX_AGDFASBV568178412 {
+message PREFIX_AGDFASBV1517503476 {
     enum GuildActionResult {
    Failed = 0;
    Success = 1;
@@ -24,6 +24,6 @@ message PREFIX_AGDFASBV568178412 {
 };
 message GuildResult {
    optional string GuildName = 1;
-   optional PREFIX_AGDFASBV1388037016.GuildAction Action = 2 [default = Request];
-   optional PREFIX_AGDFASBV568178412.GuildActionResult Result = 3 [default = Failed];
+   optional PREFIX_AGDFASBV581025151.GuildAction Action = 2 [default = Request];
+   optional PREFIX_AGDFASBV1517503476.GuildActionResult Result = 3 [default = Failed];
 }

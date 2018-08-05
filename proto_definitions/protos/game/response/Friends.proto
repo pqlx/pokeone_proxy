@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Response945571658;
+package PSXAPI.Response1346990087;
 import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
 
 message Friend {
@@ -14,9 +14,9 @@ message Friend {
 }
 message Friends {
    repeated Friend List = 1;
-   optional PREFIX_AGDFASBV1271030926.FriendsAction Action = 2 [default = All];
+   optional PREFIX_AGDFASBV455268801.FriendsAction Action = 2 [default = All];
 }
-message PREFIX_AGDFASBV1271030926 {
+message PREFIX_AGDFASBV455268801 {
     enum FriendsAction {
    All = 0;
    Add = 1;

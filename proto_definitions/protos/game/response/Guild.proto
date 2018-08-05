@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Response1311651907;
+package PSXAPI.Response1008825274;
 import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
 
 message Guild {
@@ -7,7 +7,7 @@ message Guild {
    optional string Message = 2;
    optional .bcl.Guid Chat = 3;
    repeated GuildMember Members = 4;
-   optional PREFIX_AGDFASBV1223997166.GuildRank Rank = 5 [default = Unset];
+   optional PREFIX_AGDFASBV519304166.GuildRank Rank = 5 [default = Unset];
    optional uint32 EmblemId = 6 [default = 0];
    optional int32 MembersTotalMax = 7 [default = 0];
    optional int32 MembersCurrentMax = 8 [default = 0];
@@ -16,13 +16,13 @@ message Guild {
 }
 message GuildMember {
    optional string Username = 1;
-   optional PREFIX_AGDFASBV1223997166.GuildRank Rank = 2 [default = Unset];
+   optional PREFIX_AGDFASBV519304166.GuildRank Rank = 2 [default = Unset];
    optional bool Online = 3 [default = false];
    optional .bcl.TimeSpan Since = 4;
    optional bool Removed = 5 [default = false];
    optional uint32 Level = 6 [default = 0];
 }
-message PREFIX_AGDFASBV1223997166 {
+message PREFIX_AGDFASBV519304166 {
     enum GuildRank {
    Unset = 0;
    Creator = 1;

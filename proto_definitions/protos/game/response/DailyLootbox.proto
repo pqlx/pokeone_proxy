@@ -1,12 +1,12 @@
 syntax = "proto2";
-package PSXAPI.Response1770426479;
+package PSXAPI.Response1914444274;
 import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
 
 message DailyLootbox {
-   optional PREFIX_AGDFASBV248006518.LootboxType Type = 1 [default = NoneValue];
+   optional PREFIX_AGDFASBV858266386.LootboxType Type = 1 [default = NoneValue];
    optional .bcl.TimeSpan Timer = 2;
 }
-message PREFIX_AGDFASBV248006518 {
+message PREFIX_AGDFASBV858266386 {
     enum LootboxType {
    NoneValue = 0;
    Small = 1;

@@ -1,5 +1,5 @@
 syntax = "proto2";
-package MAPAPI.Response37777391;
+package MAPAPI.Response735733765;
 
 message MapServerMap {
    optional string MapName = 1;

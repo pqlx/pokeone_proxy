@@ -1,14 +1,14 @@
 syntax = "proto2";
-package PSXAPI.Response1632703344;
+package PSXAPI.Response1722311784;
 import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
 
 message Quest {
    optional string ID = 1;
    optional string Name = 2;
    optional string Description = 3;
-   optional PREFIX_AGDFASBV1893231147.QuestType Type = 4 [default = NoneValue];
+   optional PREFIX_AGDFASBV952471738.QuestType Type = 4 [default = NoneValue];
    optional double Step = 5 [default = 0];
-   optional PREFIX_AGDFASBV993518879.QuestProgressType ProgressType = 6 [default = NoneValue];
+   optional PREFIX_AGDFASBV1379473113.QuestProgressType ProgressType = 6 [default = NoneValue];
    optional int32 ProgressID = 7 [default = 0];
    optional int32 Progress = 8 [default = 0];
    optional int32 Required = 9 [default = 0];
@@ -24,7 +24,7 @@ message Quest {
    optional string SourceNPC = 19;
    optional string SourceArea = 20;
 }
-message PREFIX_AGDFASBV993518879 {
+message PREFIX_AGDFASBV1379473113 {
     enum QuestProgressType {
    NoneValue = 0;
    Manual = 1;
@@ -46,7 +46,7 @@ message QuestReward {
    optional int32 Badge = 7 [default = 0];
    optional int32 Exp = 8 [default = 0];
 }
-message PREFIX_AGDFASBV1893231147 {
+message PREFIX_AGDFASBV952471738 {
     enum QuestType {
    NoneValue = 0;
    Main = 1;

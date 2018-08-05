@@ -48,8 +48,9 @@ class ProxyHistoryHandler(object):
             2: packet.ctx.timestamp.strftime('%H:%M:%S'),
             3: packet.ctx.transfer.name.lower().capitalize(),
             4: packet.grain,
-            5: f"{packet.ctx.local_authority[0]}:{packet.ctx.local_authority[1]}",
-            6: f"{packet.ctx.remote_authority[0]}:{packet.ctx.remote_authority[1]}"
+            5: str(packet.ctx.connection.connection_num),
+            6: f"{packet.ctx.local_authority[0]}:{packet.ctx.local_authority[1]}",
+            7: f"{packet.ctx.remote_authority[0]}:{packet.ctx.remote_authority[1]}"
             
         }
 
@@ -65,7 +66,7 @@ class ProxyHistoryHandler(object):
 
         self.packet_edit.document().setPlainText(
             json.dumps(
-                self.packets[x].proto, 
+                self.packets[x].proto if self.packets[x].proto else self.packets[x].proto_base64, 
                 indent=4, 
                 ensure_ascii=False,
                 separators=(',', ': ')

@@ -1,8 +1,8 @@
 syntax = "proto2";
-package PSXAPI.Response311231537;
+package PSXAPI.Response745131920;
 import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
 
-message PREFIX_AGDFASBV1031267943 {
+message PREFIX_AGDFASBV480576164 {
     enum AbilitySlotType {
    NoneValue = 0;
    Slot1 = 1;
@@ -10,7 +10,7 @@ message PREFIX_AGDFASBV1031267943 {
    Hidden = 3;
 } //PREFIX_AGDFASBV
 };
-message PREFIX_AGDFASBV1382753498 {
+message PREFIX_AGDFASBV1489447068 {
     enum EggState {
    NoneValue = 0;
    Sounds = 1;
@@ -20,13 +20,13 @@ message PREFIX_AGDFASBV1382753498 {
 } //PREFIX_AGDFASBV
 };
 message Message {
-   optional PREFIX_AGDFASBV667789747.MessageEvent Event = 1 [default = Message];
+   optional PREFIX_AGDFASBV1243340285.MessageEvent Event = 1 [default = Message];
    optional string Name = 2;
    optional string Text = 3;
    repeated PokemonData Pokemon = 4;
-   optional PREFIX_AGDFASBV2108271224.StaffRank Rank = 5 [default = NoneValue];
+   optional PREFIX_AGDFASBV1987615844.StaffRank Rank = 5 [default = NoneValue];
 }
-message PREFIX_AGDFASBV667789747 {
+message PREFIX_AGDFASBV1243340285 {
     enum MessageEvent {
    Message = 0;
    Closed = 1;
@@ -39,26 +39,26 @@ message Pokemon {
    optional int32 Exp = 3 [default = 0];
    optional int32 HP = 4 [default = 0];
    repeated PokemonMove Moves = 5;
-   optional PREFIX_AGDFASBV1031267943.AbilitySlotType AbilitySlot = 6 [default = NoneValue];
+   optional PREFIX_AGDFASBV480576164.AbilitySlotType AbilitySlot = 6 [default = NoneValue];
    optional int32 Happiness = 7 [default = 0];
-   optional PREFIX_AGDFASBV1325731692.PokemonNatures Nature = 8 [default = NoneValue];
+   optional PREFIX_AGDFASBV200383024.PokemonNatures Nature = 8 [default = NoneValue];
    optional bool Shiny = 9 [default = false];
    optional PokemonStats IVs = 10;
    optional PokemonStats EVs = 11;
-   optional PREFIX_AGDFASBV1629876573.PokemonGender Gender = 12 [default = NoneValue];
+   optional PREFIX_AGDFASBV2013931797.PokemonGender Gender = 12 [default = NoneValue];
    optional .bcl.Guid OriginalTrainer = 13;
    optional .bcl.Guid Trainer = 14;
    optional string Nickname = 15;
    optional int32 Pokeball = 16 [default = 0];
    optional int32 HoldItem = 17 [default = 0];
    optional int32 Personality = 18 [default = 0];
-   optional PREFIX_AGDFASBV569409101.PokemonCondition Condition = 19 [default = NoneValue];
+   optional PREFIX_AGDFASBV1750622496.PokemonCondition Condition = 19 [default = NoneValue];
    optional PokemonStats EVsCollected = 20;
    optional .bcl.DateTime CaughtDateUtc = 21;
    optional int32 CaughtLevel = 22 [default = 0];
    optional bool NotTradeable = 23 [default = false];
 }
-message PREFIX_AGDFASBV569409101 {
+message PREFIX_AGDFASBV1750622496 {
     enum PokemonCondition {
    NoneValue = 0;
    Fainted = 1;
@@ -78,9 +78,9 @@ message PokemonData {
    optional string Ability = 6;
    optional int32 ExpStart = 7 [default = 0];
    optional int32 ExpNext = 8 [default = 0];
-   optional PREFIX_AGDFASBV1382753498.EggState EggState = 9 [default = NoneValue];
+   optional PREFIX_AGDFASBV1489447068.EggState EggState = 9 [default = NoneValue];
 }
-message PREFIX_AGDFASBV1629876573 {
+message PREFIX_AGDFASBV2013931797 {
     enum PokemonGender {
    NoneValue = 0;
    Male = 1;
@@ -894,11 +894,11 @@ enum PokemonID {
    marshadow = 802;
 }
 message PokemonMove {
-   optional PREFIX_AGDFASBV555065277.PokemonMoveID Move = 1 [default = none];
+   optional PREFIX_AGDFASBV325167856.PokemonMoveID Move = 1 [default = none];
    optional int32 PP = 2 [default = 0];
    optional int32 MaxPP = 3 [default = 0];
 }
-message PREFIX_AGDFASBV555065277 {
+message PREFIX_AGDFASBV325167856 {
     enum PokemonMoveID {
    none = 0;
    pound = 1;
@@ -1604,7 +1604,7 @@ message PREFIX_AGDFASBV555065277 {
    _10000000voltthunderbolt = 719;
 } //PREFIX_AGDFASBV
 };
-message PREFIX_AGDFASBV1325731692 {
+message PREFIX_AGDFASBV200383024 {
     enum PokemonNatures {
    NoneValue = 0;
    adamant = 1;
@@ -1642,7 +1642,7 @@ message PokemonStats {
    optional int32 SpDef = 5 [default = 0];
    optional int32 Speed = 6 [default = 0];
 }
-message PREFIX_AGDFASBV2108271224 {
+message PREFIX_AGDFASBV1987615844 {
     enum StaffRank {
    NoneValue = 0;
    Developer = 1;

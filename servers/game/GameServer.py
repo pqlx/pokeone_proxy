@@ -35,15 +35,13 @@ class GameServer(ProxyServer):
         # ... convert data back into bytes
         
         ctx = PacketContext(
-            server=self.servertype,
-            transfer=TransferType.REQUEST,
-            remote_authority=connection.authority,
-            local_authority=self.listening_authority
+            connection=connection,
+            transfer=TransferType.REQUEST
         )
         
         new_packet = Packet(packet, ctx)
 
-        connection.state.add(new_packet.grain)
+        
 
         self.add_packet_to_table(new_packet)
 
@@ -56,17 +54,11 @@ class GameServer(ProxyServer):
         # ... convert data back into bytes
 
         ctx = PacketContext(
-            server=self.servertype,
-            transfer=TransferType.RESPONSE,
-            remote_authority=connection.authority,
-            local_authority=self.listening_authority
+            connection=connection,
+            transfer=TransferType.RESPONSE
         )
 
-        new_packet = Packet(packet)
-
-        if not connection.state.remove(new_packet.grain):
-            ctx.transfer = TransferType.PAYLOAD
-        new_packet.ctx = ctx        
+        new_packet = Packet(packet, ctx)
 
         self.add_packet_to_table(new_packet)
 

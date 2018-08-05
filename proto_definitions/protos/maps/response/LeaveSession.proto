@@ -1,5 +1,5 @@
 syntax = "proto2";
-package MAPAPI.Response171601345;
+package MAPAPI.Response1321715818;
 
 message LeaveSession {
    optional string MapName = 1;

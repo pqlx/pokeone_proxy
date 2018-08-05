@@ -2,6 +2,8 @@ from typing import *
 from enum import Enum
 from datetime import datetime
 
+from servers.game.GameConnection import GameConnection
+
 class ServerType(Enum):
     """
     Describe server type
@@ -15,30 +17,29 @@ class TransferType(Enum):
     """
     REQUEST = 0
     RESPONSE = 1
-    PAYLOAD = 2
 
 
 class PacketContext(object):
     """
     Class to give context about a packet
     """
-    __slots__ = ("server",
+    __slots__ = ("connection",
+                 "server",
                  "transfer",
                  "remote_authority",
                  "local_authority",
-                 "is_payload_response",
                  "timestamp")
 
     def __init__(self, 
-                 server: Optional[ServerType]=None,
                  transfer: Optional[TransferType]=None,
-                 remote_authority: Tuple[Optional[str], Optional[int]]=(None, None),
-                 local_authority: Tuple[Optional[str], Optional[int]]=(None, None),
+                 connection: Optional[GameConnection]=None
                  ):
-        self.server = server
+        self.connection = connection
         self.transfer = transfer
-        self.remote_authority = remote_authority
-        self.local_authority = local_authority
+        if connection:
+            self.server = connection.server.servertype
+            self.remote_authority = connection.authority
+            self.local_authority = connection.server.listening_authority
 
         self.timestamp = datetime.now()
     

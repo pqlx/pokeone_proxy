@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Response1317789099;
+package PSXAPI.Response505506703;
 import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
 
 message Reorder {

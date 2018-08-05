@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Response199018190;
+package PSXAPI.Response559240693;
 
 message Thunder {
 }

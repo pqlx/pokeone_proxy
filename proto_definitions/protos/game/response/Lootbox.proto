@@ -1,7 +1,7 @@
 syntax = "proto2";
-package PSXAPI.Response1005409984;
+package PSXAPI.Response1985088026;
 
-message PREFIX_AGDFASBV1406009845 {
+message PREFIX_AGDFASBV748092781 {
     enum LootType {
    NoneValue = 0;
    Money = 1;
@@ -16,12 +16,12 @@ message PREFIX_AGDFASBV1406009845 {
 } //PREFIX_AGDFASBV
 };
 message Lootbox {
-   optional PREFIX_AGDFASBV1420995908.LootboxAction Action = 1 [default = NoneValue];
-   optional PREFIX_AGDFASBV689315210.LootboxType Type = 2 [default = NoneValue];
+   optional PREFIX_AGDFASBV715806979.LootboxAction Action = 1 [default = NoneValue];
+   optional PREFIX_AGDFASBV1127707997.LootboxType Type = 2 [default = NoneValue];
    optional uint32 Remaining = 3 [default = 0];
    repeated LootboxRoll Rolls = 4;
 }
-message PREFIX_AGDFASBV1420995908 {
+message PREFIX_AGDFASBV715806979 {
     enum LootboxAction {
    NoneValue = 0;
    Opened = 1;
@@ -29,13 +29,13 @@ message PREFIX_AGDFASBV1420995908 {
 } //PREFIX_AGDFASBV
 };
 message LootboxRoll {
-   optional PREFIX_AGDFASBV1406009845.LootType LootType = 1 [default = NoneValue];
+   optional PREFIX_AGDFASBV748092781.LootType LootType = 1 [default = NoneValue];
    optional int32 Num = 2 [default = 0];
    optional bool Duplicate = 3 [default = false];
    optional uint32 DuplicateGold = 4 [default = 0];
    optional uint32 DuplicateMoney = 5 [default = 0];
 }
-message PREFIX_AGDFASBV689315210 {
+message PREFIX_AGDFASBV1127707997 {
     enum LootboxType {
    NoneValue = 0;
    Small = 1;

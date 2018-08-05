@@ -1,11 +1,11 @@
 syntax = "proto2";
-package PSXAPI.Response1736535175;
+package PSXAPI.Response700430562;
 
 message LobbyRemove {
    optional string Name = 1;
-   optional PREFIX_AGDFASBV417065821.LobbyRemoveReason Reason = 2 [default = Left];
+   optional PREFIX_AGDFASBV693077358.LobbyRemoveReason Reason = 2 [default = Left];
 }
-message PREFIX_AGDFASBV417065821 {
+message PREFIX_AGDFASBV693077358 {
     enum LobbyRemoveReason {
    Left = 0;
    Kicked = 1;

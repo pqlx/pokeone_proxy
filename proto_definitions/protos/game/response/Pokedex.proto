@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Response176438805;
+package PSXAPI.Response714597609;
 
 message Pokedex {
    repeated PokedexEntry Entries = 1;
@@ -8,9 +8,9 @@ message Pokedex {
 }
 message PokedexEntry {
    optional PokemonID Pokemon = 1 [default = missingno];
-   optional PREFIX_AGDFASBV597657796.PokedexEntryState State = 2 [default = NoneValue];
+   optional PREFIX_AGDFASBV1527034434.PokedexEntryState State = 2 [default = NoneValue];
 }
-message PREFIX_AGDFASBV597657796 {
+message PREFIX_AGDFASBV1527034434 {
     enum PokedexEntryState {
    NoneValue = 0;
    Seen = 1;

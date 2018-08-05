@@ -1,5 +1,5 @@
 syntax = "proto2";
-package MAPAPI.Response1774075761;
+package MAPAPI.Response44698187;
 import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
 
 message PlayerMouse {

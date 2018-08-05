@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Request1504626893;
+package PSXAPI.Request1150654732;
 
 message LobbySwitch {
 }

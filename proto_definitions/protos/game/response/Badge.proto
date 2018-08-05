@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Response43457609;
+package PSXAPI.Response251550548;
 
 message Badge {
    optional int32 Id = 1 [default = 0];

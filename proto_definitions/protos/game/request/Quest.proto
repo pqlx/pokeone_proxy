@@ -1,11 +1,11 @@
 syntax = "proto2";
-package PSXAPI.Request1298849190;
+package PSXAPI.Request2044906800;
 
 message Quest {
    optional string ID = 1;
-   optional PREFIX_AGDFASBV1258063841.QuestAction Action = 2 [default = NoneValue];
+   optional PREFIX_AGDFASBV1822838376.QuestAction Action = 2 [default = NoneValue];
 }
-message PREFIX_AGDFASBV1258063841 {
+message PREFIX_AGDFASBV1822838376 {
     enum QuestAction {
    NoneValue = 0;
    Complete = 1;

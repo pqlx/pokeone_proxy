@@ -1,12 +1,12 @@
 syntax = "proto2";
-package PSXAPI.Request908170436;
+package PSXAPI.Request1140424311;
 
 message VerifyEmail {
-   optional PREFIX_AGDFASBV953782089.VerifyEmailAction Action = 1 [default = NoneValue];
+   optional PREFIX_AGDFASBV865560746.VerifyEmailAction Action = 1 [default = NoneValue];
    optional string Username = 2;
    optional int32 Code = 3 [default = 0];
 }
-message PREFIX_AGDFASBV953782089 {
+message PREFIX_AGDFASBV865560746 {
     enum VerifyEmailAction {
    NoneValue = 0;
    Verify = 1;

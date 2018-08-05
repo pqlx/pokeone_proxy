@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Request830252917;
+package PSXAPI.Request813717008;
 
 message Stats {
    optional string Username = 1;

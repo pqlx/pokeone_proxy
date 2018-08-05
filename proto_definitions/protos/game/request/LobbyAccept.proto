@@ -1,10 +1,10 @@
 syntax = "proto2";
-package PSXAPI.Request843069560;
+package PSXAPI.Request1106513921;
 
 message LobbyAccept {
-   required PREFIX_AGDFASBV1929715157.LobbyActorState State = 1;
+   required PREFIX_AGDFASBV1390166421.LobbyActorState State = 1;
 }
-message PREFIX_AGDFASBV1929715157 {
+message PREFIX_AGDFASBV1390166421 {
     enum LobbyActorState {
    Idle = 0;
    Accept = 1;

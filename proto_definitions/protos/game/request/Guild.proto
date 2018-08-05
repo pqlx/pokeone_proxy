@@ -1,12 +1,12 @@
 syntax = "proto2";
-package PSXAPI.Request1827450051;
+package PSXAPI.Request1864305595;
 
 message Guild {
-   optional PREFIX_AGDFASBV799181881.GuildAction Action = 1 [default = Request];
+   optional PREFIX_AGDFASBV456173409.GuildAction Action = 1 [default = Request];
    optional string Data = 2;
    optional bytes EmblemData = 3;
 }
-message PREFIX_AGDFASBV799181881 {
+message PREFIX_AGDFASBV456173409 {
     enum GuildAction {
    Request = 0;
    Create = 1;

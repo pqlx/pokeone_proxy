@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Response1373809364;
+package PSXAPI.Response1077353110;
 
 message Money {
    optional uint32 Game = 1 [default = 0];

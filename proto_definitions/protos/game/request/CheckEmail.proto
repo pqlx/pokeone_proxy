@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Request1993581713;
+package PSXAPI.Request534033461;
 
 message CheckEmail {
    required string Email = 1;

@@ -32,7 +32,7 @@ class MainUI(QMainWindow):
         self.ui.proxy_history_table.horizontalHeader().setVisible(True)
         self.ui.proxy_history_table.resizeRowsToContents()
 
-        for n in (1, 2, 4, 5, 6):
+        for n in (1, 2, 3, 4, 6, 7):
             self.ui.proxy_history_table.horizontalHeader().setSectionResizeMode(n, QHeaderView.Stretch);
         
     def run(self, startup: Optional[Callable]):

@@ -81,7 +81,7 @@
                 <number>0</number>
                </property>
                <property name="columnCount">
-                <number>7</number>
+                <number>8</number>
                </property>
                <attribute name="horizontalHeaderVisible">
                 <bool>false</bool>
@@ -155,7 +155,7 @@
                </column>
                <column>
                 <property name="text">
-                 <string>Request/Response/Payload</string>
+                 <string>Packet Type</string>
                 </property>
                 <property name="textAlignment">
                  <set>AlignCenter</set>
@@ -164,6 +164,14 @@
                <column>
                 <property name="text">
                  <string>Grain</string>
+                </property>
+                <property name="textAlignment">
+                 <set>AlignCenter</set>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Connection #</string>
                 </property>
                 <property name="textAlignment">
                  <set>AlignCenter</set>

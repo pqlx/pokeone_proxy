@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Response937996659;
+package PSXAPI.Response2054938056;
 
 message Spin {
    optional int32 ID = 1 [default = 0];
@@ -11,7 +11,7 @@ message Spin {
 message SpinColumn {
    repeated uint32 Symbols = 1;
 }
-message PREFIX_AGDFASBV984244072 {
+message PREFIX_AGDFASBV1648786817 {
     enum SpinMode {
    // this is a composite/flags enumeration
    HorizontalCenter = 1;
@@ -22,7 +22,7 @@ message PREFIX_AGDFASBV984244072 {
 } //PREFIX_AGDFASBV
 };
 message SpinWinningSymbol {
-   optional PREFIX_AGDFASBV984244072.SpinMode Mode = 1 [default = All];
+   optional PREFIX_AGDFASBV1648786817.SpinMode Mode = 1 [default = All];
    optional uint32 ID = 2 [default = 0];
    optional int32 Required = 3 [default = 0];
    optional int32 WinPoints = 4 [default = 0];

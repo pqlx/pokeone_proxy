@@ -63,7 +63,6 @@ class ProxyServer(object):
         """
         
         self.listening_authority = (localhost, port)
-        self.localhost = localhost
         return asyncio.start_server(self.on_client, localhost, port, loop=self.loop)
         
     async def on_client(self, client_reader: asyncio.StreamReader, client_writer: asyncio.StreamWriter):
@@ -79,7 +78,8 @@ class ProxyServer(object):
 
             connection = self.associated_connection(self, 
                 stream_operators=((server_reader, client_reader), (server_writer, client_writer)),
-                authority=authority )
+                authority=authority,
+                connection_num=len(self.connections) + 1 )
 
             self.connections.append(connection)
 

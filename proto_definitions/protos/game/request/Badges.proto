@@ -1,5 +1,5 @@
 syntax = "proto2";
-package PSXAPI.Request585572112;
+package PSXAPI.Request1267680887;
 
 message Badges {
 }

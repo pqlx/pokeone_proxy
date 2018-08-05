@@ -1,14 +1,14 @@
 syntax = "proto2";
-package PSXAPI.Response2117557968;
+package PSXAPI.Response519332110;
 import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
 
 message Script {
    optional .bcl.Guid ScriptID = 1;
-   optional PREFIX_AGDFASBV1101373301.ScriptRequestType Type = 2 [default = Unknown];
-   repeated Script Text = 3;
+   optional PREFIX_AGDFASBV1801646526.ScriptRequestType Type = 2 [default = Unknown];
+   repeated Script_Data Text = 3;
    repeated string Data = 4;
 }
-message PREFIX_AGDFASBV1101373301 {
+message PREFIX_AGDFASBV1801646526 {
     enum ScriptRequestType {
    Unknown = 0;
    NoneValue = 1;
@@ -32,3 +32,7 @@ message PREFIX_AGDFASBV1101373301 {
    Tutor = 19;
 } //PREFIX_AGDFASBV
 };
+message Script_Data {
+   optional string Text = 1;
+   optional .bcl.Guid NpcID = 2;
+}

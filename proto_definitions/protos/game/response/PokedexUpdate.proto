@@ -1,11 +1,11 @@
 syntax = "proto2";
-package PSXAPI.Response318689503;
+package PSXAPI.Response101805264;
 
 message PokedexEntry {
    optional PokemonID Pokemon = 1 [default = missingno];
-   optional PREFIX_AGDFASBV86704676.PokedexEntryState State = 2 [default = NoneValue];
+   optional PREFIX_AGDFASBV1416491573.PokedexEntryState State = 2 [default = NoneValue];
 }
-message PREFIX_AGDFASBV86704676 {
+message PREFIX_AGDFASBV1416491573 {
     enum PokedexEntryState {
    NoneValue = 0;
    Seen = 1;

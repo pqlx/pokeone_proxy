@@ -1,5 +1,5 @@
 syntax = "proto2";
-package MAPAPI.Response1681088192;
+package MAPAPI.Response1692040637;
 
 message Area {
    optional int32 StartX = 1 [default = 0];
@@ -11,10 +11,10 @@ message Area {
    optional string Song = 7;
    optional bool CanDiscover = 8 [default = false];
    optional bool CanReturnTo = 9 [default = false];
-   optional PREFIX_AGDFASBV1897955113.BackgroundType BattleBG = 10 [default = Grass];
-   optional PREFIX_AGDFASBV781464601.EvolutionArea AreaEvolution = 11 [default = NoneValue];
+   optional PREFIX_AGDFASBV1409928228.BackgroundType BattleBG = 10 [default = Grass];
+   optional PREFIX_AGDFASBV347079562.EvolutionArea AreaEvolution = 11 [default = NoneValue];
 }
-message PREFIX_AGDFASBV1897955113 {
+message PREFIX_AGDFASBV1409928228 {
     enum BackgroundType {
    Grass = 0;
    Water = 1;
@@ -29,7 +29,7 @@ message PREFIX_AGDFASBV1897955113 {
    Ocean = 10;
 } //PREFIX_AGDFASBV
 };
-message PREFIX_AGDFASBV781464601 {
+message PREFIX_AGDFASBV347079562 {
     enum EvolutionArea {
    NoneValue = 0;
    MagneticField = 1;

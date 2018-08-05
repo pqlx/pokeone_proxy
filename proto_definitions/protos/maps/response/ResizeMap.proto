@@ -1,5 +1,5 @@
 syntax = "proto2";
-package MAPAPI.Response590205566;
+package MAPAPI.Response649225745;
 
 message ResizeMap {
    optional int32 width = 1 [default = 0];

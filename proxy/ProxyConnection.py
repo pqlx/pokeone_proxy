@@ -12,13 +12,14 @@ class ProxyConnection(object):
     Exposes the `asyncio.StreamReader`s and `asyncio.StreamWriter`s of both the client and the server.
     """
 
-    __slots__ = ('server', 'is_closed', 'streams', 'loop', 'authority')
+    __slots__ = ('server', 'is_closed', 'streams', 'loop', 'authority', 'connection_num')
     
     
 
     def __init__(self, server: 'proxy.ProxyServer.ProxyServer', 
                 stream_operators: Tuple[Tuple[asyncio.StreamReader, asyncio.StreamReader], Tuple[asyncio.StreamWriter, asyncio.StreamWriter]],
-                authority: Tuple[str, int] ):
+                authority: Tuple[str, int],
+                connection_num: Optional[int]=None):
                 
         self.server = server
         self.is_closed = False
@@ -26,6 +27,7 @@ class ProxyConnection(object):
 
         self.loop = server.loop
         self.authority = authority
+        self.connection_num = connection_num
         self.pipe_streams()
         
     def close(self):

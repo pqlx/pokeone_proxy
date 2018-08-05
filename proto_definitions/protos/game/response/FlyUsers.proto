@@ -1,12 +1,12 @@
 syntax = "proto2";
-package PSXAPI.Response1910165988;
+package PSXAPI.Response938692966;
 
 message FlyUser {
    optional string Username = 1;
    repeated FlyUserActionData Actions = 2;
    optional FlyUserData Data = 3;
 }
-message PREFIX_AGDFASBV1686859715 {
+message PREFIX_AGDFASBV1998626908 {
     enum FlyUserAction {
    Set = 0;
    Move = 1;
@@ -15,15 +15,15 @@ message PREFIX_AGDFASBV1686859715 {
 } //PREFIX_AGDFASBV
 };
 message FlyUserActionData {
-   optional PREFIX_AGDFASBV1686859715.FlyUserAction Action = 1 [default = Set];
+   optional PREFIX_AGDFASBV1998626908.FlyUserAction Action = 1 [default = Set];
    optional FlyUserPosition Position = 2;
 }
 message FlyUserData {
    optional int32 FlyMount = 1 [default = 0];
    optional bool Away = 2 [default = false];
    optional bool Battle = 3 [default = false];
-   optional PREFIX_AGDFASBV53723797.MemberRank MemberRank = 4 [default = NoneValue];
-   optional PREFIX_AGDFASBV74260316.StaffRank StaffRank = 5 [default = NoneValue];
+   optional PREFIX_AGDFASBV1520793052.MemberRank MemberRank = 4 [default = NoneValue];
+   optional PREFIX_AGDFASBV1321619005.StaffRank StaffRank = 5 [default = NoneValue];
    optional string GuildName = 6;
    optional uint32 EmblemId = 7 [default = 0];
    optional uint32 Level = 8 [default = 0];
@@ -41,13 +41,13 @@ message FlyUserPosition {
 message FlyUsers {
    repeated FlyUser Users = 1;
 }
-message PREFIX_AGDFASBV53723797 {
+message PREFIX_AGDFASBV1520793052 {
     enum MemberRank {
    NoneValue = 0;
    Member = 1;
 } //PREFIX_AGDFASBV
 };
-message PREFIX_AGDFASBV74260316 {
+message PREFIX_AGDFASBV1321619005 {
     enum StaffRank {
    NoneValue = 0;
    Developer = 1;

@@ -1,5 +1,5 @@
 syntax = "proto2";
-package MAPAPI.Request1432819071;
+package MAPAPI.Request1958470343;
 
 message UploadMap {
    optional string MapName = 1;
