@@ -3,8 +3,7 @@ import logging
 import sys
 import asyncio
 import traceback
-from servers.GameServer import GameServer
-from servers.ServerSelector import ServerSelector
+from servers.game.GameServer import GameServer
 from UI.MainUI import MainUI
 
 from PyQt5.QtWidgets import QTableWidget, QMainWindow
@@ -26,8 +25,8 @@ def start_server(window: QMainWindow):
 
     try:
         
-        game = GameServer(loop, window).start(ServerSelector.select_server("game"), 2012)
-        loop.run_until_complete(game)
+        game = GameServer(loop, window)
+        loop.run_until_complete(game.start(2012))
         loop.run_forever()
     except Exception as exc:
         print(traceback.format_exc(), file=sys.stderr)

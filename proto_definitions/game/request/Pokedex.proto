@@ -1,5 +1,0 @@
-syntax = "proto2";
-package PSXAPI.Request532272500;
-
-message Pokedex {
-}

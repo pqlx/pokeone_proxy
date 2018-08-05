@@ -1,6 +1,0 @@
-syntax = "proto2";
-package PSXAPI.Response66488970;
-
-message BattleSide {
-   optional string Data = 1;
-}

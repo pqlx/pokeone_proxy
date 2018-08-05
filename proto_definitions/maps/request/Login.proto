@@ -1,7 +1,0 @@
-syntax = "proto2";
-package MAPAPI.Request433375682;
-
-message Login {
-   optional string Username = 1;
-   optional string Password = 2;
-}

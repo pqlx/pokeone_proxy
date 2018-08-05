@@ -1,7 +1,0 @@
-syntax = "proto2";
-package MAPAPI.Response131528887;
-
-message ConfirmDestroySession {
-   optional string MapName = 1;
-   optional int32 UserCount = 2 [default = 0];
-}

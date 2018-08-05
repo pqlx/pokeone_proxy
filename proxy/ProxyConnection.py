@@ -1,7 +1,7 @@
 from typing import *
 import asyncio
 import traceback
-from proxy.ProxyServer import ProxyServer
+import proxy.ProxyServer
 
 import sys
 
@@ -12,15 +12,20 @@ class ProxyConnection(object):
     Exposes the `asyncio.StreamReader`s and `asyncio.StreamWriter`s of both the client and the server.
     """
 
-    __slots__ = ('server', 'is_closed', 'streams', 'loop')
+    __slots__ = ('server', 'is_closed', 'streams', 'loop', 'authority')
     
-    def __init__(self, server: ProxyServer, stream_operators: Tuple[Tuple[asyncio.StreamReader, asyncio.StreamReader], Tuple[asyncio.StreamWriter, asyncio.StreamWriter]] ):
+    
+
+    def __init__(self, server: 'proxy.ProxyServer.ProxyServer', 
+                stream_operators: Tuple[Tuple[asyncio.StreamReader, asyncio.StreamReader], Tuple[asyncio.StreamWriter, asyncio.StreamWriter]],
+                authority: Tuple[str, int] ):
+                
         self.server = server
         self.is_closed = False
         self.streams = stream_operators
 
         self.loop = server.loop
-
+        self.authority = authority
         self.pipe_streams()
         
     def close(self):
@@ -37,8 +42,8 @@ class ProxyConnection(object):
         Forward client_reader -> server_writer
                 server_reader -> client_writer
         """
-        self.loop.create_task(self._pipe(self.streams[0][0], self.streams[1][1], self.server.handle_recv))
-        self.loop.create_task(self._pipe(self.streams[0][1], self.streams[1][0], self.server.handle_send))
+        self.loop.create_task(self._pipe(self.streams[0][1], self.streams[1][0], self.server.handle_request))
+        self.loop.create_task(self._pipe(self.streams[0][0], self.streams[1][1], self.server.handle_response))        
 
     async def _pipe(self, reader: asyncio.StreamReader, writer: asyncio.StreamWriter, handler: Callable[[bytes], Awaitable]):
         """
@@ -66,7 +71,7 @@ class ProxyConnection(object):
         Send data to writer after processing it with the intermediary handler
         """
 
-        packet = await handler(packet)
+        packet = await handler(self, packet)
         writer.write(packet)
         await writer.drain()
     
@@ -75,12 +80,12 @@ class ProxyConnection(object):
         Send packet to client
         """
 
-        await self.send(packet, self.server.handle_recv, self.streams[1][1])
+        await self.send(packet, self.server.handle_response, self.streams[1][1])
 
     async def send_server(packet: bytes):
         """
         Send packet to server
         """
 
-        await self.send(packet, self.server.handle_recv, self.streams[1][0])
+        await self.send(packet, self.server.handle_request, self.streams[1][0])
         

@@ -1,7 +1,0 @@
-syntax = "proto2";
-package PSXAPI.Response43457609;
-
-message Badge {
-   optional int32 Id = 1 [default = 0];
-   optional bool Active = 2 [default = false];
-}

@@ -1,6 +1,0 @@
-syntax = "proto2";
-package PSXAPI.Request498249395;
-
-message GuildEmblem {
-   optional string Name = 1;
-}

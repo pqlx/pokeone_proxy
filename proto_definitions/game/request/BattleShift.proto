@@ -1,7 +1,0 @@
-syntax = "proto2";
-package PSXAPI.Request868277791;
-
-message BattleShift {
-   required int32 RequestID = 1;
-   optional int32 Position = 2 [default = 0];
-}

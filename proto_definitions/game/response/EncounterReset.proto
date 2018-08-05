@@ -1,5 +1,0 @@
-syntax = "proto2";
-package PSXAPI.Response370132185;
-
-message EncounterReset {
-}

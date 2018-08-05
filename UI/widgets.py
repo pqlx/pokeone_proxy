@@ -128,7 +128,7 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
-        self.tabWidget.setCurrentIndex(1)
+        self.tabWidget.setCurrentIndex(0)
         self.tabWidget_2.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
@@ -148,7 +148,7 @@ class Ui_MainWindow(object):
         item = self.proxy_history_table.horizontalHeaderItem(4)
         item.setText(_translate("MainWindow", "Grain"))
         item = self.proxy_history_table.horizontalHeaderItem(5)
-        item.setText(_translate("MainWindow", "Client Authority"))
+        item.setText(_translate("MainWindow", "Proxy Authority"))
         item = self.proxy_history_table.horizontalHeaderItem(6)
         item.setText(_translate("MainWindow", "Server Authority"))
         self.pushButton.setText(_translate("MainWindow", "Send to Repeater"))

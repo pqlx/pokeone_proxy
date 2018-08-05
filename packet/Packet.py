@@ -15,7 +15,7 @@ class Packet(object):
 
     __slots__ = ("data", "ctx", "_grain", "_full_grain", "_proto", "_proto_raw", "_proto_base64")
     
-    def __init__(self, data: bytes, ctx: PacketContext):
+    def __init__(self, data: bytes, ctx: Optional[PacketContext]=None):
         self.data = data.decode('utf-8').strip()
         self.ctx = ctx
         self._grain = None
@@ -39,24 +39,28 @@ class Packet(object):
 
     @property
     def proto(self) -> dict:
-        if not self._proto:
+        if self._proto is None:
             self._proto = self.decode_proto()
         return self._proto
     
     @property
     def proto_raw(self) -> bytes:
-        if not self._proto_raw:
+        if self._proto_raw is None:
             self._proto_raw = base64.b64decode(self.proto_base64)
         return self._proto_raw
     
     @property
     def proto_base64(self) -> str:
-        if not self._proto_base64:
+        if self._proto_base64 is None:
             self._set_grain_and_proto_base64()
         return self._proto_base64
 
     def _set_grain_and_proto_base64(self):
-         self._grain, self._proto_base64 = self.data.split(' ')
+         split = self.data.split(' ')
+
+         self._grain = split[0]
+         if len(split) == 2:
+             self._proto_base64 = split[1]
          self._grain = self._grain.replace('.', '') # Prevent potential semi-arbitrary import
         
     def decode_proto(self) -> Union[dict, bool]:

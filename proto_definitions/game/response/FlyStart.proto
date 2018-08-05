@@ -1,7 +1,0 @@
-syntax = "proto2";
-package PSXAPI.Response2121610042;
-
-message FlyStart {
-   optional string StartArea = 1;
-   repeated string LandingAreas = 2;
-}

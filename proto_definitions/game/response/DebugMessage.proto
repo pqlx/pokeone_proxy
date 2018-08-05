@@ -1,6 +1,0 @@
-syntax = "proto2";
-package PSXAPI.Response2068831611;
-
-message DebugMessage {
-   optional string Message = 1;
-}

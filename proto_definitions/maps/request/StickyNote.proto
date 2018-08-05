@@ -1,6 +1,0 @@
-syntax = "proto2";
-package MAPAPI.Request2051889863;
-
-message StickyNote {
-   optional string Note = 1;
-}

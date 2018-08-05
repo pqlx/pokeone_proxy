@@ -18,7 +18,7 @@
     <item row="0" column="0">
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_proxy">
        <attribute name="title">
@@ -155,7 +155,7 @@
                </column>
                <column>
                 <property name="text">
-                 <string>UP/DOWN</string>
+                 <string>Request/Response/Payload</string>
                 </property>
                 <property name="textAlignment">
                  <set>AlignCenter</set>
@@ -171,7 +171,7 @@
                </column>
                <column>
                 <property name="text">
-                 <string>Client Authority</string>
+                 <string>Proxy Authority</string>
                 </property>
                 <property name="textAlignment">
                  <set>AlignCenter</set>

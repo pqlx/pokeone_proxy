@@ -1,8 +1,0 @@
-syntax = "proto2";
-package PSXAPI.Response295624328;
-
-message GuildEmblem {
-   optional string Name = 1;
-   optional bytes Data = 2;
-   optional uint32 EmblemId = 3 [default = 0];
-}

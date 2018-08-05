@@ -1,7 +1,0 @@
-syntax = "proto2";
-package PSXAPI.Response196371428;
-
-message ChatMessage {
-   repeated ChatMessage Messages = 1;
-   optional string Channel = 2;
-}

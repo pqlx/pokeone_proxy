@@ -1,5 +1,5 @@
 from typing import *
-
+from packet.PacketContext import ServerType
 import random
 
 class ServerSelector(object):
@@ -37,11 +37,11 @@ class ServerSelector(object):
         ]
     }
 
-    def select_server(server_type: str) -> str:
+    def select_server(server_type: ServerType) -> str:
         """
         Select a server from the available servers
         """
-        if server_type == "maps":
+        if server_type == ServerType.MAPS:
             operand = ServerSelector.servers["map_servers"]
         else:
             operand = ServerSelector.servers["game_servers"]

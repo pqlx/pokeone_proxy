@@ -1,7 +1,0 @@
-syntax = "proto2";
-package PSXAPI.Request1879381735;
-
-message LobbyPokemon {
-   optional int32 Simultaneously = 1 [default = 0];
-   optional int32 PokemonCount = 2 [default = 0];
-}

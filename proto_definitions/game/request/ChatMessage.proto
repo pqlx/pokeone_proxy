@@ -1,9 +1,0 @@
-syntax = "proto2";
-package PSXAPI.Request640521709;
-import "bcl.proto"; // schema for protobuf-net's handling of core .NET types
-
-message ChatMessage {
-   required string Message = 1;
-   optional string Channel = 2;
-   repeated .bcl.Guid Pokemon = 3;
-}

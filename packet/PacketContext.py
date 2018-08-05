@@ -1,6 +1,6 @@
 from typing import *
 from enum import Enum
-
+from datetime import datetime
 
 class ServerType(Enum):
     """
@@ -15,22 +15,32 @@ class TransferType(Enum):
     """
     REQUEST = 0
     RESPONSE = 1
+    PAYLOAD = 2
 
 
 class PacketContext(object):
     """
     Class to give context about a packet
     """
-    __slots__ = ("server", "transfer", "remote_host", "local_host", "port")
+    __slots__ = ("server",
+                 "transfer",
+                 "remote_authority",
+                 "local_authority",
+                 "is_payload_response",
+                 "timestamp")
 
-    def __init__(self, server: Optional[ServerType]=None, transfer: Optional[TransferType]=None, 
-                 remote_host: Optional[str]=None, local_host: Optional[str]=None, 
-                 port: Optional[int]=None):
+    def __init__(self, 
+                 server: Optional[ServerType]=None,
+                 transfer: Optional[TransferType]=None,
+                 remote_authority: Tuple[Optional[str], Optional[int]]=(None, None),
+                 local_authority: Tuple[Optional[str], Optional[int]]=(None, None),
+                 ):
         self.server = server
         self.transfer = transfer
-        self.remote_host = remote_host
-        self.local_host = local_host
-        self.port = port
+        self.remote_authority = remote_authority
+        self.local_authority = local_authority
+
+        self.timestamp = datetime.now()
     
     @property
     def path(self) -> str:
@@ -40,11 +50,3 @@ class PacketContext(object):
         path = '.'.join([getattr(x, 'name') for x in [self.server, self.transfer] ])
         
         return path.lower()
-    
-    @property
-    def local_authority(self) -> str:
-        return f"{self.local_host}:{self.port}"
-
-    @property
-    def remote_authority(self) -> str:
-        return f"{self.remote_host}:{self.port}"

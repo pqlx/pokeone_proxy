@@ -1,7 +1,0 @@
-syntax = "proto2";
-package PSXAPI.Request2003400274;
-
-message BattleBroadcast {
-   required int32 RequestID = 1;
-   optional string Message = 2;
-}

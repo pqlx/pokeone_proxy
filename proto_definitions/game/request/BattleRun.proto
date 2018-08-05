@@ -1,6 +1,0 @@
-syntax = "proto2";
-package PSXAPI.Request1560108121;
-
-message BattleRun {
-   required int32 RequestID = 1;
-}

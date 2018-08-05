@@ -1,5 +1,0 @@
-syntax = "proto2";
-package PSXAPI.Request1213845810;
-
-message Surf {
-}

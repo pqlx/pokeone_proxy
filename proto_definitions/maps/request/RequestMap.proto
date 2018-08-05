@@ -1,7 +1,0 @@
-syntax = "proto2";
-package MAPAPI.Request1635630496;
-
-message RequestMap {
-   optional string MapName = 1;
-   optional string Hash = 2;
-}
